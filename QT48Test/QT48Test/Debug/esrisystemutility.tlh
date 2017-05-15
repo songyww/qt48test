@@ -1,0 +1,1745 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (a28950e0).
+//
+// e:\vsproject\qt48test\qt48test\debug\esrisystemutility.tlh
+//
+// C++ source equivalent of Win32 type library esrisystemutility.olb
+// compiler-generated file created 06/01/16 at 16:28:41 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("8c215696-ce4b-4afc-9c9c-99632b8cc7d3"))
+/* LIBID */ __esriSystemUtility;
+struct __declspec(uuid("dfbbab84-84e8-46c5-9310-acc472758f64"))
+/* interface */ IEventListenerHelper;
+struct __declspec(uuid("c01bbcd1-410f-46d0-a0a1-475e49abca2b"))
+/* interface */ IARControlEventsHelper;
+struct __declspec(uuid("47934348-782c-42b6-996d-f9432e0c3da7"))
+/* interface */ IGlobeControlEventsHelper;
+struct __declspec(uuid("fd6a24c5-db01-4a2c-8451-3fc638b07c21"))
+/* interface */ IMapControlEvents2Helper;
+struct __declspec(uuid("8edcb28b-b854-49d4-8990-3ed3c5026639"))
+/* interface */ IPageLayoutControlEventsHelper;
+struct __declspec(uuid("dfff0021-30d6-4944-a727-7d8263d3097e"))
+/* interface */ ISceneControlEventsHelper;
+struct __declspec(uuid("c96d805a-2df4-4d9f-9e84-8d43b13cec73"))
+/* interface */ ITOCControlEventsHelper;
+struct __declspec(uuid("b7cd56ca-2716-4f08-8028-79ca43597a8e"))
+/* interface */ IToolbarControlEventsHelper;
+struct /* coclass */ ActiveViewEventsListener;
+struct /* coclass */ GlobeDisplayEventsListener;
+struct /* coclass */ SceneRendererEventsListener;
+struct /* coclass */ SceneGraphEventsDispListener;
+struct /* coclass */ SceneGraphEventsListener;
+struct /* coclass */ ReplicaProgressListener;
+struct /* coclass */ WorkspaceEditEventsListener;
+struct /* coclass */ WorkspaceEventsListener;
+struct /* coclass */ RepairConnectivityProgressEventsListener;
+struct /* coclass */ ObjectClassEventsListener;
+struct /* coclass */ TopologyClassEventsListener;
+struct /* coclass */ RelationshipClassEventsListener;
+struct /* coclass */ ObjectClassSchemaEventsListener;
+struct /* coclass */ VersionEventsListener;
+struct /* coclass */ VersionEvents2Listener;
+struct /* coclass */ DisplayEventsListener;
+struct /* coclass */ TransformEventsListener;
+struct /* coclass */ RasterStatusListener;
+struct /* coclass */ RasterStatus2Listener;
+struct /* coclass */ RasterStatusEventListener;
+struct /* coclass */ RasterStatusEvent2Listener;
+struct /* coclass */ ERasterStatusListener;
+struct /* coclass */ RasterDataManagementEventsListener;
+struct /* coclass */ LayerEventsListener;
+struct /* coclass */ SelectionEventsListener;
+struct /* coclass */ BasicOverposterEventsListener;
+struct /* coclass */ FeatureLayerSelectionEventsListener;
+struct /* coclass */ GraphicsContainerEventsListener;
+struct /* coclass */ AnnotationErrorEventsListener;
+struct /* coclass */ MapEventsListener;
+struct /* coclass */ MapEvents2Listener;
+struct /* coclass */ MapEvents3Listener;
+struct /* coclass */ MapSurroundEventsListener;
+struct /* coclass */ MapFrameEventsListener;
+struct /* coclass */ PageEventsListener;
+struct /* coclass */ GeoReferenceEventsListener;
+struct /* coclass */ RealTimeFeedEventsListener;
+struct /* coclass */ RealTimeFeedManagerEventsListener;
+struct /* coclass */ NetworkLoaderProgressListener;
+struct /* coclass */ ComPropertySheetEventsListener;
+struct /* coclass */ PageLayoutControlEventsListener;
+struct /* coclass */ TOCBuddyEventsListener;
+struct /* coclass */ ARControlEventsListener;
+struct /* coclass */ MapControlEvents2Listener;
+struct /* coclass */ SceneControlEventsListener;
+struct /* coclass */ GlobeControlEventsListener;
+struct /* coclass */ TOCControlEventsListener;
+struct /* coclass */ ToolbarControlEventsListener;
+struct /* coclass */ CustomizeDialogEventsListener;
+struct /* coclass */ FeatureProgressListener;
+struct /* coclass */ OperationProgressListener;
+struct /* coclass */ NAContextEventsListener;
+struct /* coclass */ NAContextEvents2Listener;
+struct /* coclass */ NALayerEventsListener;
+struct /* coclass */ WMSClientEventsListener;
+enum esriDocumentHelperElementTypes;
+enum esriDocumentHelperReplacementObjectTypes;
+enum esriDocumentHelperObjectTypes;
+enum esriElementUpdateTypes;
+struct __declspec(uuid("8123e916-beb4-4e42-a209-b41ea210c84b"))
+/* interface */ IDocumentHelper;
+struct __declspec(uuid("41de3c46-8025-4ca0-8b03-8b658ab40ac9"))
+/* interface */ IDocumentHelper2;
+struct __declspec(uuid("d8d47583-70a8-4a0b-b36f-249e98b59300"))
+/* interface */ IDocumentHelper3;
+struct __declspec(uuid("e220ac2b-c6d9-4aa1-96ff-28c839293d95"))
+/* interface */ IElementHelper;
+struct __declspec(uuid("7a87bf06-6488-4377-aafd-63980a392274"))
+/* interface */ IGUIDHelper;
+struct __declspec(uuid("743bdd53-22b4-4a66-8304-8d7173f0cf06"))
+/* interface */ ICommandLineHelper;
+struct __declspec(uuid("6c76bd80-fa07-11d3-9f75-00c04f8ece3a"))
+/* interface */ ICatHelper;
+struct __declspec(uuid("a9271308-edc1-4ff2-b612-9f6e0c3c776d"))
+/* interface */ IRegisterServer;
+struct __declspec(uuid("7b85ae7d-8f99-4cfd-90d2-6c6758376b14"))
+/* interface */ IRegistryHelper;
+struct __declspec(uuid("50c8ad98-8abc-4f61-b314-ef4f4052ebd7"))
+/* interface */ IComponentCategoryEnum;
+struct __declspec(uuid("b8513067-48da-4f86-a9e4-f59561c722b7"))
+/* interface */ ICreationHelper;
+struct __declspec(uuid("f5f8f94d-fa41-4e2c-968b-8aa2513e9747"))
+/* interface */ ICommandEnum;
+struct __declspec(uuid("ff36faff-c2d9-41d2-9142-e7751ecbe4f1"))
+/* interface */ IAddCommands;
+struct __declspec(uuid("56fe5cdc-cd69-44bd-a70e-170501ed921b"))
+/* interface */ IAssemblyLookup;
+struct __declspec(uuid("01cda130-e0b6-4d2a-b00f-3aaeffe7d684"))
+/* interface */ IAssemblyLookup2;
+struct __declspec(uuid("2858e131-9a6b-4848-8601-aac88e9f04bc"))
+/* interface */ ILibraryLookupInfo;
+struct __declspec(uuid("452bf664-71c6-4a85-8f06-fafe1a1e7fad"))
+/* interface */ ILib83Lookup;
+struct __declspec(uuid("7d169c7e-d4e6-4b1c-9052-0409cae5d774"))
+/* interface */ ILib91Lookup;
+struct __declspec(uuid("7b1ae683-363d-412f-a4d3-0d87edc4b906"))
+/* interface */ ILibLookupExtension;
+enum esriCodeConverterStatus;
+enum esriDevelopmentLanguage;
+struct __declspec(uuid("ac43400b-d8db-491e-b686-2e783dd64891"))
+/* interface */ ICodeConverter;
+struct __declspec(uuid("c62d3eeb-16ba-4c72-8c63-136ac4e19c11"))
+/* interface */ IVB6LibraryLister;
+struct __declspec(uuid("161842fa-c4a8-4152-a864-15d833552611"))
+/* interface */ IVB6ReferenceHandler;
+struct __declspec(uuid("327ce363-f976-4d9e-bcb9-2f96cf6eb35f"))
+/* interface */ IVB6ErrorHandler;
+struct __declspec(uuid("e87fcba4-f179-462c-89fb-b697d63f613e"))
+/* interface */ IErrorMessageBox;
+struct __declspec(uuid("546f3ce0-fc9f-4cf4-9093-86b71ab661de"))
+/* interface */ IErrorDialog;
+struct /* coclass */ CatHelper;
+struct /* coclass */ RegisterServer;
+struct /* coclass */ RegistryHelper;
+struct /* coclass */ ComponentCategoryEnum;
+struct /* coclass */ DocumentHelper;
+struct /* coclass */ GUIDHelper;
+struct /* coclass */ CommandLineHelper;
+struct /* coclass */ CreationHelper;
+struct /* coclass */ CommandEnum;
+struct /* coclass */ AddCommands;
+struct /* coclass */ ErrorMessage;
+struct /* coclass */ ErrorDialog;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IEventListenerHelper, __uuidof(IEventListenerHelper));
+_COM_SMARTPTR_TYPEDEF(IARControlEventsHelper, __uuidof(IARControlEventsHelper));
+_COM_SMARTPTR_TYPEDEF(IGlobeControlEventsHelper, __uuidof(IGlobeControlEventsHelper));
+_COM_SMARTPTR_TYPEDEF(IMapControlEvents2Helper, __uuidof(IMapControlEvents2Helper));
+_COM_SMARTPTR_TYPEDEF(IPageLayoutControlEventsHelper, __uuidof(IPageLayoutControlEventsHelper));
+_COM_SMARTPTR_TYPEDEF(ISceneControlEventsHelper, __uuidof(ISceneControlEventsHelper));
+_COM_SMARTPTR_TYPEDEF(ITOCControlEventsHelper, __uuidof(ITOCControlEventsHelper));
+_COM_SMARTPTR_TYPEDEF(IToolbarControlEventsHelper, __uuidof(IToolbarControlEventsHelper));
+_COM_SMARTPTR_TYPEDEF(IDocumentHelper, __uuidof(IDocumentHelper));
+_COM_SMARTPTR_TYPEDEF(IDocumentHelper2, __uuidof(IDocumentHelper2));
+_COM_SMARTPTR_TYPEDEF(IDocumentHelper3, __uuidof(IDocumentHelper3));
+_COM_SMARTPTR_TYPEDEF(IElementHelper, __uuidof(IElementHelper));
+_COM_SMARTPTR_TYPEDEF(IGUIDHelper, __uuidof(IGUIDHelper));
+_COM_SMARTPTR_TYPEDEF(ICommandLineHelper, __uuidof(ICommandLineHelper));
+_COM_SMARTPTR_TYPEDEF(ICatHelper, __uuidof(ICatHelper));
+_COM_SMARTPTR_TYPEDEF(IRegisterServer, __uuidof(IRegisterServer));
+_COM_SMARTPTR_TYPEDEF(IRegistryHelper, __uuidof(IRegistryHelper));
+_COM_SMARTPTR_TYPEDEF(IComponentCategoryEnum, __uuidof(IComponentCategoryEnum));
+_COM_SMARTPTR_TYPEDEF(ICreationHelper, __uuidof(ICreationHelper));
+_COM_SMARTPTR_TYPEDEF(ICommandEnum, __uuidof(ICommandEnum));
+_COM_SMARTPTR_TYPEDEF(IAddCommands, __uuidof(IAddCommands));
+_COM_SMARTPTR_TYPEDEF(IAssemblyLookup, __uuidof(IAssemblyLookup));
+_COM_SMARTPTR_TYPEDEF(IAssemblyLookup2, __uuidof(IAssemblyLookup2));
+_COM_SMARTPTR_TYPEDEF(ILibraryLookupInfo, __uuidof(ILibraryLookupInfo));
+_COM_SMARTPTR_TYPEDEF(ILib83Lookup, __uuidof(ILib83Lookup));
+_COM_SMARTPTR_TYPEDEF(ILib91Lookup, __uuidof(ILib91Lookup));
+_COM_SMARTPTR_TYPEDEF(ILibLookupExtension, __uuidof(ILibLookupExtension));
+_COM_SMARTPTR_TYPEDEF(ICodeConverter, __uuidof(ICodeConverter));
+_COM_SMARTPTR_TYPEDEF(IVB6LibraryLister, __uuidof(IVB6LibraryLister));
+_COM_SMARTPTR_TYPEDEF(IVB6ReferenceHandler, __uuidof(IVB6ReferenceHandler));
+_COM_SMARTPTR_TYPEDEF(IVB6ErrorHandler, __uuidof(IVB6ErrorHandler));
+_COM_SMARTPTR_TYPEDEF(IErrorMessageBox, __uuidof(IErrorMessageBox));
+_COM_SMARTPTR_TYPEDEF(IErrorDialog, __uuidof(IErrorDialog));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("dfbbab84-84e8-46c5-9310-acc472758f64"))
+IEventListenerHelper : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Startup (
+        void * eventInterface ) = 0;
+      virtual HRESULT __stdcall Shutdown ( ) = 0;
+      virtual HRESULT __stdcall AdviseEvents (
+        /*[in]*/ IUnknown * unkSource,
+        /*[in]*/ struct IUID * uid ) = 0;
+      virtual HRESULT __stdcall UnadviseEvents ( ) = 0;
+};
+
+struct __declspec(uuid("c01bbcd1-410f-46d0-a0a1-475e49abca2b"))
+IARControlEventsHelper : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual void __stdcall OnMouseDown (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y ) = 0;
+      virtual void __stdcall OnBeforeScreenDraw ( ) = 0;
+      virtual void __stdcall OnAfterScreenDraw ( ) = 0;
+      virtual void __stdcall OnDocumentLoaded (
+        /*[in]*/ BSTR sDocument ) = 0;
+      virtual void __stdcall OnDocumentUnloaded ( ) = 0;
+      virtual void __stdcall OnFocusARMapChanged (
+        /*[in]*/ struct IARMap * pNewFocusMap ) = 0;
+      virtual void __stdcall OnCurrentViewChanged (
+        /*[in]*/ IDispatch * pNewCurrentView ) = 0;
+      virtual void __stdcall OnMouseUp (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y ) = 0;
+      virtual void __stdcall OnMouseMove (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y ) = 0;
+      virtual void __stdcall OnDoubleClick (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y ) = 0;
+      virtual void __stdcall OnKeyDown (
+        /*[in]*/ long keyCode,
+        /*[in]*/ long shift ) = 0;
+      virtual void __stdcall OnKeyUp (
+        /*[in]*/ long keyCode,
+        /*[in]*/ long shift ) = 0;
+      virtual void __stdcall OnCurrentToolMessage (
+        /*[in]*/ BSTR sMessage ) = 0;
+      virtual void __stdcall OnAction (
+        /*[in]*/ enum esriARAction action,
+        /*[in]*/ VARIANT data,
+        /*[in,out]*/ VARIANT_BOOL * suppressAction ) = 0;
+};
+
+struct __declspec(uuid("47934348-782c-42b6-996d-f9432e0c3da7"))
+IGlobeControlEventsHelper : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual void __stdcall OnMouseDown (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y ) = 0;
+      virtual void __stdcall OnMouseUp (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y ) = 0;
+      virtual void __stdcall OnMouseMove (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y ) = 0;
+      virtual void __stdcall OnDoubleClick (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y ) = 0;
+      virtual void __stdcall OnKeyDown (
+        /*[in]*/ long keyCode,
+        /*[in]*/ long shift ) = 0;
+      virtual void __stdcall OnKeyUp (
+        /*[in]*/ long keyCode,
+        /*[in]*/ long shift ) = 0;
+      virtual void __stdcall OnGlobeReplaced (
+        VARIANT newGlobe ) = 0;
+};
+
+struct __declspec(uuid("fd6a24c5-db01-4a2c-8451-3fc638b07c21"))
+IMapControlEvents2Helper : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual void __stdcall OnMouseDown (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y,
+        /*[in]*/ double mapX,
+        /*[in]*/ double mapY ) = 0;
+      virtual void __stdcall OnMouseUp (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y,
+        /*[in]*/ double mapX,
+        /*[in]*/ double mapY ) = 0;
+      virtual void __stdcall OnMouseMove (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y,
+        /*[in]*/ double mapX,
+        /*[in]*/ double mapY ) = 0;
+      virtual void __stdcall OnDoubleClick (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y,
+        /*[in]*/ double mapX,
+        /*[in]*/ double mapY ) = 0;
+      virtual void __stdcall OnSelectionChanged ( ) = 0;
+      virtual void __stdcall OnViewRefreshed (
+        /*[in]*/ VARIANT activeView,
+        /*[in]*/ long viewDrawPhase,
+        /*[in]*/ VARIANT layerOrElement,
+        /*[in]*/ VARIANT envelope ) = 0;
+      virtual void __stdcall OnBeforeScreenDraw (
+        /*[in]*/ long hdc ) = 0;
+      virtual void __stdcall OnAfterScreenDraw (
+        /*[in]*/ long hdc ) = 0;
+      virtual void __stdcall OnAfterDraw (
+        /*[in]*/ VARIANT display,
+        /*[in]*/ long viewDrawPhase ) = 0;
+      virtual void __stdcall OnExtentUpdated (
+        /*[in]*/ VARIANT displayTransformation,
+        /*[in]*/ VARIANT_BOOL sizeChanged,
+        /*[in]*/ VARIANT newEnvelope ) = 0;
+      virtual void __stdcall OnFullExtentUpdated (
+        /*[in]*/ VARIANT displayTransformation,
+        /*[in]*/ VARIANT newEnvelope ) = 0;
+      virtual void __stdcall OnOleDrop (
+        /*[in]*/ enum esriControlsDropAction dropAction,
+        /*[in]*/ VARIANT dataObjectHelper,
+        /*[in,out]*/ long * effect,
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y ) = 0;
+      virtual void __stdcall OnKeyDown (
+        /*[in]*/ long keyCode,
+        /*[in]*/ long shift ) = 0;
+      virtual void __stdcall OnKeyUp (
+        /*[in]*/ long keyCode,
+        /*[in]*/ long shift ) = 0;
+      virtual void __stdcall OnMapReplaced (
+        VARIANT newMap ) = 0;
+};
+
+struct __declspec(uuid("8edcb28b-b854-49d4-8990-3ed3c5026639"))
+IPageLayoutControlEventsHelper : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual void __stdcall OnMouseDown (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y,
+        /*[in]*/ double pageX,
+        /*[in]*/ double pageY ) = 0;
+      virtual void __stdcall OnMouseUp (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y,
+        /*[in]*/ double pageX,
+        /*[in]*/ double pageY ) = 0;
+      virtual void __stdcall OnMouseMove (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y,
+        /*[in]*/ double pageX,
+        /*[in]*/ double pageY ) = 0;
+      virtual void __stdcall OnDoubleClick (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y,
+        /*[in]*/ double pageX,
+        /*[in]*/ double pageY ) = 0;
+      virtual void __stdcall OnKeyDown (
+        /*[in]*/ long keyCode,
+        /*[in]*/ long shift ) = 0;
+      virtual void __stdcall OnKeyUp (
+        /*[in]*/ long keyCode,
+        /*[in]*/ long shift ) = 0;
+      virtual void __stdcall OnOleDrop (
+        /*[in]*/ enum esriControlsDropAction dropAction,
+        /*[in]*/ VARIANT dataObjectHelper,
+        /*[in,out]*/ long * effect,
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y ) = 0;
+      virtual void __stdcall OnViewRefreshed (
+        /*[in]*/ VARIANT activeView,
+        /*[in]*/ long viewDrawPhase,
+        /*[in]*/ VARIANT layerOrElement,
+        /*[in]*/ VARIANT envelope ) = 0;
+      virtual void __stdcall OnAfterDraw (
+        /*[in]*/ VARIANT display,
+        /*[in]*/ long viewDrawPhase ) = 0;
+      virtual void __stdcall OnExtentUpdated (
+        /*[in]*/ VARIANT displayTransformation,
+        /*[in]*/ VARIANT_BOOL sizeChanged,
+        /*[in]*/ VARIANT newEnvelope ) = 0;
+      virtual void __stdcall OnFullExtentUpdated (
+        /*[in]*/ VARIANT displayTransformation,
+        /*[in]*/ VARIANT newEnvelope ) = 0;
+      virtual void __stdcall OnFocusMapChanged ( ) = 0;
+      virtual void __stdcall OnPageSizeChanged ( ) = 0;
+      virtual void __stdcall OnPageLayoutReplaced (
+        /*[in]*/ VARIANT newPageLayout ) = 0;
+      virtual void __stdcall OnBeforeScreenDraw (
+        /*[in]*/ long hdc ) = 0;
+      virtual void __stdcall OnAfterScreenDraw (
+        /*[in]*/ long hdc ) = 0;
+};
+
+struct __declspec(uuid("dfff0021-30d6-4944-a727-7d8263d3097e"))
+ISceneControlEventsHelper : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual void __stdcall OnMouseDown (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y ) = 0;
+      virtual void __stdcall OnMouseUp (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y ) = 0;
+      virtual void __stdcall OnMouseMove (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y ) = 0;
+      virtual void __stdcall OnDoubleClick (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y ) = 0;
+      virtual void __stdcall OnKeyDown (
+        /*[in]*/ long keyCode,
+        /*[in]*/ long shift ) = 0;
+      virtual void __stdcall OnKeyUp (
+        /*[in]*/ long keyCode,
+        /*[in]*/ long shift ) = 0;
+      virtual void __stdcall OnSceneReplaced (
+        VARIANT newScene ) = 0;
+};
+
+struct __declspec(uuid("c96d805a-2df4-4d9f-9e84-8d43b13cec73"))
+ITOCControlEventsHelper : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual void __stdcall OnMouseDown (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y ) = 0;
+      virtual void __stdcall OnMouseUp (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y ) = 0;
+      virtual void __stdcall OnMouseMove (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y ) = 0;
+      virtual void __stdcall OnDoubleClick (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y ) = 0;
+      virtual void __stdcall OnKeyDown (
+        /*[in]*/ long keyCode,
+        /*[in]*/ long shift ) = 0;
+      virtual void __stdcall OnKeyUp (
+        /*[in]*/ long keyCode,
+        /*[in]*/ long shift ) = 0;
+      virtual void __stdcall OnBeginLabelEdit (
+        /*[in]*/ long x,
+        /*[in]*/ long y,
+        /*[in,out]*/ VARIANT_BOOL * CanEdit ) = 0;
+      virtual void __stdcall OnEndLabelEdit (
+        /*[in]*/ long x,
+        /*[in]*/ long y,
+        /*[in]*/ BSTR newLabel,
+        /*[in,out]*/ VARIANT_BOOL * CanEdit ) = 0;
+};
+
+struct __declspec(uuid("b7cd56ca-2716-4f08-8028-79ca43597a8e"))
+IToolbarControlEventsHelper : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual void __stdcall OnMouseDown (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y ) = 0;
+      virtual void __stdcall OnMouseUp (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y ) = 0;
+      virtual void __stdcall OnMouseMove (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y ) = 0;
+      virtual void __stdcall OnDoubleClick (
+        /*[in]*/ long button,
+        /*[in]*/ long shift,
+        /*[in]*/ long x,
+        /*[in]*/ long y ) = 0;
+      virtual void __stdcall OnKeyDown (
+        /*[in]*/ long keyCode,
+        /*[in]*/ long shift ) = 0;
+      virtual void __stdcall OnKeyUp (
+        /*[in]*/ long keyCode,
+        /*[in]*/ long shift ) = 0;
+      virtual void __stdcall OnItemClick (
+        /*[in]*/ long index ) = 0;
+};
+
+struct __declspec(uuid("7992b64e-6bf8-46e6-b77b-e529199cffad"))
+ActiveViewEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IActiveViewEvents
+
+struct __declspec(uuid("6df72b99-6eee-41e8-b67c-8d9eb2efd27b"))
+GlobeDisplayEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IGlobeDisplayEvents
+
+struct __declspec(uuid("385d8ce5-0a48-42a9-8a96-77c421ddae27"))
+SceneRendererEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface ISceneRendererEvents
+
+struct __declspec(uuid("4cc22109-f111-42d2-a0bf-278ab38fe4e4"))
+SceneGraphEventsDispListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface ISceneGraphEventsDisp
+
+struct __declspec(uuid("bb5f7712-f6f5-4aad-8881-454af1b304c1"))
+SceneGraphEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface ISceneGraphEvents
+
+struct __declspec(uuid("a607f9b1-3397-42d0-86da-4d31a5d1808c"))
+ReplicaProgressListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IReplicaProgress
+
+struct __declspec(uuid("58d26720-2ea3-498f-8078-e63f180414fb"))
+WorkspaceEditEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IWorkspaceEditEvents
+
+struct __declspec(uuid("2d7514ba-8ce7-4eb5-9d08-8f0724ffccfa"))
+WorkspaceEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IWorkspaceEvents
+
+struct __declspec(uuid("4817f2dd-119a-416c-b633-49320dc8f1f5"))
+RepairConnectivityProgressEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IRepairConnectivityProgressEvents
+
+struct __declspec(uuid("22ecc02b-23d6-47d7-9aad-4c78141d75ee"))
+ObjectClassEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IObjectClassEvents
+
+struct __declspec(uuid("d9c56cbf-c978-47ba-978b-bd2bf38a6c7d"))
+TopologyClassEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface ITopologyClassEvents
+
+struct __declspec(uuid("bfde528f-b60b-438f-bd06-cd1304ae0822"))
+RelationshipClassEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IRelationshipClassEvents
+
+struct __declspec(uuid("b60f5675-6c71-4869-9506-fe0e8a20d5e7"))
+ObjectClassSchemaEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IObjectClassSchemaEvents
+
+struct __declspec(uuid("f52ccb7e-14bf-4a81-99df-e68d79800a63"))
+VersionEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IVersionEvents
+
+struct __declspec(uuid("63543936-8e04-4cae-b183-b8d20fba6686"))
+VersionEvents2Listener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IVersionEvents2
+
+struct __declspec(uuid("76d8ea72-7767-412c-aa3b-6b0e204e00b2"))
+DisplayEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IDisplayEvents
+
+struct __declspec(uuid("40eb9930-b677-4d28-9f54-9cc9622be9d1"))
+TransformEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface ITransformEvents
+
+struct __declspec(uuid("54d33556-1098-4257-90c3-95464587a2ac"))
+RasterStatusListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IRasterStatus
+
+struct __declspec(uuid("6302a46c-879f-47b3-8b04-6307a8da2237"))
+RasterStatus2Listener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IRasterStatus2
+
+struct __declspec(uuid("4e9ab238-d13f-4765-81a1-47361b72c7ba"))
+RasterStatusEventListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IRasterStatusEvent
+
+struct __declspec(uuid("86abd11f-b0bb-49e9-8985-16f5ab301270"))
+RasterStatusEvent2Listener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IRasterStatusEvent2
+
+struct __declspec(uuid("5e2e19c7-9602-413d-8bd9-5e72a9a10221"))
+ERasterStatusListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IERasterStatus
+
+struct __declspec(uuid("bceff158-f855-4c3e-9e10-e0c3512c5c5c"))
+RasterDataManagementEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IRasterDataManagementEvents
+
+struct __declspec(uuid("ad56f818-a618-4f71-b985-6b63818dd205"))
+LayerEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface ILayerEvents
+
+struct __declspec(uuid("9b64a00a-6302-4cee-b40a-7b71d65c519b"))
+SelectionEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface ISelectionEvents
+
+struct __declspec(uuid("49be4ec6-d90d-40a1-bb6a-0d838f2ee93e"))
+BasicOverposterEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IBasicOverposterEvents
+
+struct __declspec(uuid("641e5963-0a0f-4e20-b251-41727a1ba17c"))
+FeatureLayerSelectionEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IFeatureLayerSelectionEvents
+
+struct __declspec(uuid("8c6277be-6c13-44f9-a9b0-ac9e397c9f8b"))
+GraphicsContainerEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IGraphicsContainerEvents
+
+struct __declspec(uuid("5f689826-c59b-4157-ac0f-bcb275e0c295"))
+AnnotationErrorEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IAnnotationErrorEvents
+
+struct __declspec(uuid("ecc47b0e-37e0-4652-a6ef-fbb289b20382"))
+MapEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IMapEvents
+
+struct __declspec(uuid("b9a8e13e-a35f-47e3-ae0e-0ca6573fd862"))
+MapEvents2Listener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IMapEvents2
+
+struct __declspec(uuid("a7cce240-40cd-43ce-9543-2d21a36765e0"))
+MapEvents3Listener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IMapEvents3
+
+struct __declspec(uuid("c2423936-3060-4bac-9239-8d9d2914ac87"))
+MapSurroundEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IMapSurroundEvents
+
+struct __declspec(uuid("458388e0-4494-4137-9028-7c954d2ec043"))
+MapFrameEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IMapFrameEvents
+
+struct __declspec(uuid("7153d344-45fb-462f-a934-f6081e2a7e3d"))
+PageEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IPageEvents
+
+struct __declspec(uuid("551e7e0f-d66d-42ce-b235-4b2054ff2d52"))
+GeoReferenceEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IGeoReferenceEvents
+
+struct __declspec(uuid("5ffd5647-629d-4d96-998c-ef28e0deb616"))
+RealTimeFeedEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IRealTimeFeedEvents
+
+struct __declspec(uuid("aa0a20c1-27d6-4513-b3f7-4a0c738f06b3"))
+RealTimeFeedManagerEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IRealTimeFeedManagerEvents
+
+struct __declspec(uuid("55c9b61d-6ac7-4816-b0e3-cf1ec4cd7dfa"))
+NetworkLoaderProgressListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface INetworkLoaderProgress
+
+struct __declspec(uuid("200fb674-3680-402c-9ab3-4adc3e5b336c"))
+ComPropertySheetEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IComPropertySheetEvents
+
+struct __declspec(uuid("4a1c324c-d5d9-498c-b7e2-93a57ada5c38"))
+PageLayoutControlEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] dispinterface IPageLayoutControlEvents
+
+struct __declspec(uuid("1bf80dc7-83c1-4a96-a03f-9d5d3a53a2f0"))
+TOCBuddyEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface ITOCBuddyEvents
+
+struct __declspec(uuid("46d94040-b8e2-48a1-9429-f1a9731ae50c"))
+ARControlEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] dispinterface IARControlEvents
+
+struct __declspec(uuid("8d966159-26e5-410b-828a-940d42c794a6"))
+MapControlEvents2Listener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] dispinterface IMapControlEvents2
+
+struct __declspec(uuid("a0a047a7-b787-43ea-9ed6-e5bc045ab54c"))
+SceneControlEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] dispinterface ISceneControlEvents
+
+struct __declspec(uuid("a9c46dcb-3891-48d2-889e-2de0aeb148bd"))
+GlobeControlEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] dispinterface IGlobeControlEvents
+
+struct __declspec(uuid("901fdd36-aba6-4166-a127-26956b5aaa5c"))
+TOCControlEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] dispinterface ITOCControlEvents
+
+struct __declspec(uuid("152a4fc4-1162-44f9-80dc-7c4394e3900c"))
+ToolbarControlEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] dispinterface IToolbarControlEvents
+
+struct __declspec(uuid("bc647446-1538-4fdc-aae2-7b31455083fb"))
+CustomizeDialogEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface ICustomizeDialogEvents
+
+struct __declspec(uuid("5e26c0b3-af56-40a9-ab35-0c6e49a73c42"))
+FeatureProgressListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IFeatureProgress
+
+struct __declspec(uuid("5a95e946-7485-4785-864c-0a5c156bcb06"))
+OperationProgressListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IOperationProgress
+
+struct __declspec(uuid("7fb84c04-18dc-48f1-a197-8039230b0512"))
+NAContextEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface INAContextEvents
+
+struct __declspec(uuid("8fa39e6c-4521-4196-b8b3-f2444fb056a5"))
+NAContextEvents2Listener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface INAContextEvents2
+
+struct __declspec(uuid("91035abb-0e5e-4cbf-9d05-9906aa52ddff"))
+NALayerEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface INALayerEvents
+
+struct __declspec(uuid("51173311-c9fa-41e4-836e-449b0f2d45c0"))
+WMSClientEventsListener;
+    // [ default ] interface IUnknown
+    // interface IEventListenerHelper
+    // [ default, source ] interface IWMSClientEvents
+
+enum __declspec(uuid("390ed9b8-d759-44bf-b8ab-3697d45fec84"))
+esriDocumentHelperElementTypes
+{
+    esriDHETName = 0,
+    esriDHETType = 1,
+    esriDHETSize = 2,
+    esriDHETCreated = 3,
+    esriDHETModified = 4,
+    esriDHETAccessed = 5
+};
+
+enum __declspec(uuid("b077238e-a389-4ee0-8995-c148bac1cb59"))
+esriDocumentHelperReplacementObjectTypes
+{
+    esriDHROTStyleGallery = 0,
+    esriDHROTPreview = 1,
+    esriDHROTPageLayout = 2,
+    esriDHROTMap = 3
+};
+
+enum __declspec(uuid("00cc7915-460a-4277-895b-db449f1761cf"))
+esriDocumentHelperObjectTypes
+{
+    esriDHOTStyleGallery = 0,
+    esriDHOTPreview = 1,
+    esriDHOTPageLayout = 2,
+    esriDHOTMap = 3,
+    esriDHOTSafePageLayout = 4,
+    esriDHOTPageLayoutNewMap = 5
+};
+
+enum __declspec(uuid("6c735d8f-3093-44fa-960f-3623e3b977de"))
+esriElementUpdateTypes
+{
+    esriEUTStyleGallery = 0,
+    esriEUTPreview = 1,
+    esriEUTPageLayout = 2,
+    esriEUTMap = 3,
+    esriEUTVBAProject = 4,
+    esriEUTUIControls = 5
+};
+
+struct __declspec(uuid("8123e916-beb4-4e42-a209-b41ea210c84b"))
+IDocumentHelper : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Object (
+        /*[in]*/ BSTR sourceDoc,
+        /*[in]*/ enum esriDocumentHelperObjectTypes objType,
+        /*[out,retval]*/ IUnknown * * ppUnk ) = 0;
+      virtual HRESULT __stdcall get_Map (
+        /*[in]*/ BSTR sourceDoc,
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IMap * * ppMap ) = 0;
+      virtual HRESULT __stdcall ReplaceObject (
+        /*[in]*/ BSTR sourceDoc,
+        /*[in]*/ BSTR targetDoc,
+        /*[in]*/ enum esriDocumentHelperReplacementObjectTypes type ) = 0;
+      virtual HRESULT __stdcall get_MapCount (
+        /*[in]*/ BSTR sourceDoc,
+        /*[out,retval]*/ long * count ) = 0;
+      virtual HRESULT __stdcall Present (
+        /*[in]*/ BSTR sourceDoc,
+        /*[in]*/ BSTR element,
+        /*[out]*/ VARIANT_BOOL * Present ) = 0;
+      virtual HRESULT __stdcall Validate (
+        /*[out]*/ BSTR * result ) = 0;
+      virtual HRESULT __stdcall AddMapToPageLayout (
+        /*[in]*/ struct IMap * pMap,
+        /*[in]*/ struct IPageLayout * pPageLayout ) = 0;
+      virtual HRESULT __stdcall FixBroken (
+        /*[in]*/ BSTR sourceDoc,
+        /*[in]*/ BSTR targetDoc ) = 0;
+      virtual HRESULT __stdcall CopyMapsToPageLayout (
+        /*[in]*/ struct IPageLayout * pSourceLayout,
+        /*[in]*/ struct IPageLayout * pTargetPageLayout ) = 0;
+      virtual HRESULT __stdcall Defragment (
+        /*[in]*/ BSTR sourceDoc,
+        /*[in]*/ BSTR targetDoc ) = 0;
+};
+
+struct __declspec(uuid("41de3c46-8025-4ca0-8b03-8b658ab40ac9"))
+IDocumentHelper2 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall RemoveAllMaps (
+        /*[in]*/ struct IMapDocument * pMapDoc ) = 0;
+      virtual HRESULT __stdcall get_Maps (
+        /*[in]*/ BSTR sourceDoc,
+        /*[out,retval]*/ struct IArray * * ppMaps ) = 0;
+};
+
+struct __declspec(uuid("d8d47583-70a8-4a0b-b36f-249e98b59300"))
+IDocumentHelper3 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall DebugMapPageLayoutStream (
+        /*[in]*/ BSTR bsDocName,
+        /*[in,out]*/ BSTR * bsResult,
+        /*[in,out]*/ BSTR * bsLastGUID ) = 0;
+};
+
+struct __declspec(uuid("e220ac2b-c6d9-4aa1-96ff-28c839293d95"))
+IElementHelper : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall UpdateElement (
+        /*[in]*/ BSTR sourceDoc,
+        /*[in]*/ BSTR targetDoc,
+        /*[in]*/ enum esriElementUpdateTypes type ) = 0;
+      virtual HRESULT __stdcall get_ElementCount (
+        /*[in]*/ BSTR sourceDoc,
+        /*[out,retval]*/ long * count ) = 0;
+      virtual HRESULT __stdcall get_ElementDetail (
+        /*[in]*/ BSTR sourceDoc,
+        /*[in]*/ long index,
+        enum esriDocumentHelperElementTypes type,
+        /*[out,retval]*/ BSTR * detail ) = 0;
+};
+
+struct __declspec(uuid("7a87bf06-6488-4377-aafd-63980a392274"))
+IGUIDHelper : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GUIDString (
+        /*[out,retval]*/ BSTR * bsGUID ) = 0;
+      virtual HRESULT __stdcall CreateComponentCategoryByString (
+        /*[in]*/ BSTR name,
+        /*[in]*/ BSTR catID ) = 0;
+      virtual HRESULT __stdcall RemoveComponentCategoryByString (
+        /*[in]*/ BSTR catID ) = 0;
+};
+
+struct __declspec(uuid("743bdd53-22b4-4a66-8304-8d7173f0cf06"))
+ICommandLineHelper : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_CommandLine (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_ArgumentCount (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Argument (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_ArgumentBySwitch (
+        /*[in]*/ BSTR switchFlag,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_SwitchPresent (
+        /*[in]*/ BSTR switchFlag,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+};
+
+struct __declspec(uuid("6c76bd80-fa07-11d3-9f75-00c04f8ece3a"))
+ICatHelper : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Present (
+        /*[in]*/ BSTR bsCatClass,
+        /*[in]*/ BSTR bsObjClass,
+        /*[out,retval]*/ VARIANT_BOOL * Exists ) = 0;
+};
+
+struct __declspec(uuid("a9271308-edc1-4ff2-b612-9f6e0c3c776d"))
+IRegisterServer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Register (
+        /*[in]*/ BSTR filename ) = 0;
+      virtual HRESULT __stdcall UnRegister (
+        /*[in]*/ BSTR filename ) = 0;
+};
+
+struct __declspec(uuid("7b85ae7d-8f99-4cfd-90d2-6c6758376b14"))
+IRegistryHelper : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CreateReplaceKey (
+        /*[in]*/ long keyType,
+        /*[in]*/ BSTR Parent,
+        /*[in]*/ BSTR key ) = 0;
+      virtual HRESULT __stdcall KeyExists (
+        /*[in]*/ long keyType,
+        /*[in]*/ BSTR key,
+        /*[out,retval]*/ VARIANT_BOOL * Exists ) = 0;
+      virtual HRESULT __stdcall DeleteKey (
+        /*[in]*/ long keyType,
+        /*[in]*/ BSTR Parent,
+        /*[in]*/ BSTR key ) = 0;
+};
+
+struct __declspec(uuid("50c8ad98-8abc-4f61-b314-ef4f4052ebd7"))
+IComponentCategoryEnum : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Reset ( ) = 0;
+      virtual HRESULT __stdcall Next (
+        /*[out]*/ BSTR * name,
+        /*[out,retval]*/ BSTR * ID ) = 0;
+      virtual HRESULT __stdcall NextID (
+        /*[out]*/ BSTR * name,
+        /*[out,retval]*/ GUID * ID ) = 0;
+};
+
+struct __declspec(uuid("b8513067-48da-4f86-a9e4-f59561c722b7"))
+ICreationHelper : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CreateProgID (
+        /*[in]*/ BSTR bsProgID,
+        /*[out,retval]*/ IUnknown * * pUnk ) = 0;
+};
+
+struct __declspec(uuid("f5f8f94d-fa41-4e2c-968b-8aa2513e9747"))
+ICommandEnum : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Reset ( ) = 0;
+      virtual HRESULT __stdcall put_Category (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall Next (
+        /*[out]*/ BSTR * bsID,
+        /*[out,retval]*/ struct ICommand * * ppCommand ) = 0;
+};
+
+struct __declspec(uuid("ff36faff-c2d9-41d2-9142-e7751ecbe4f1"))
+IAddCommands : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_TypeLibrary (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall get_CommandCount (
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall AddMultiCommands (
+        /*[in]*/ BSTR bsComponentCategory ) = 0;
+      virtual HRESULT __stdcall AddCommand (
+        /*[in]*/ BSTR bsComponentCategory,
+        /*[in]*/ BSTR bsCommandCoClass ) = 0;
+      virtual HRESULT __stdcall Reset ( ) = 0;
+      virtual HRESULT __stdcall Next (
+        /*[out,retval]*/ BSTR * bsCommandCoClass ) = 0;
+};
+
+struct __declspec(uuid("56fe5cdc-cd69-44bd-a70e-170501ed921b"))
+IAssemblyLookup : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetAssembly (
+        /*[in,out]*/ BSTR * sObjectName,
+        /*[out,retval]*/ BSTR * __MIDL__IAssemblyLookup0000 ) = 0;
+      virtual HRESULT __stdcall Exists (
+        /*[in,out]*/ BSTR * sAssemblyName,
+        /*[out,retval]*/ VARIANT_BOOL * __MIDL__IAssemblyLookup0001 ) = 0;
+      virtual HRESULT __stdcall GUIDFromName (
+        /*[in,out]*/ BSTR * sAssemblyName,
+        /*[out,retval]*/ BSTR * __MIDL__IAssemblyLookup0002 ) = 0;
+      virtual HRESULT __stdcall NameFromGUID (
+        /*[in,out]*/ BSTR * sGuid,
+        /*[out,retval]*/ BSTR * __MIDL__IAssemblyLookup0003 ) = 0;
+      virtual HRESULT __stdcall IsOCXLib (
+        /*[in,out]*/ BSTR * sAssemblyName,
+        /*[out,retval]*/ VARIANT_BOOL * __MIDL__IAssemblyLookup0004 ) = 0;
+      virtual HRESULT __stdcall GetNames (
+        /*[out,retval]*/ VARIANT * __MIDL__IAssemblyLookup0005 ) = 0;
+};
+
+struct __declspec(uuid("01cda130-e0b6-4d2a-b00f-3aaeffe7d684"))
+IAssemblyLookup2 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetAssemblies (
+        /*[in,out]*/ BSTR * sObjectName,
+        /*[out,retval]*/ VARIANT * __MIDL__IAssemblyLookup20000 ) = 0;
+};
+
+struct __declspec(uuid("2858e131-9a6b-4848-8601-aac88e9f04bc"))
+ILibraryLookupInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ExtensionCount (
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall ExtensionDescription (
+        /*[in,out]*/ long * lIndex,
+        /*[out,retval]*/ BSTR * sDesc ) = 0;
+      virtual HRESULT __stdcall EnumValPrefixCount (
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall EnumValPrefix (
+        /*[in,out]*/ long * lIndex,
+        /*[out,retval]*/ BSTR * sEnumValPrefix ) = 0;
+};
+
+struct __declspec(uuid("452bf664-71c6-4a85-8f06-fafe1a1e7fad"))
+ILib83Lookup : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Exists (
+        /*[in,out]*/ BSTR * sGuid,
+        /*[out,retval]*/ VARIANT_BOOL * __MIDL__ILib83Lookup0000 ) = 0;
+      virtual HRESULT __stdcall GetName (
+        /*[in,out]*/ BSTR * sGuid,
+        /*[out,retval]*/ BSTR * __MIDL__ILib83Lookup0001 ) = 0;
+      virtual HRESULT __stdcall GetNames (
+        /*[out,retval]*/ VARIANT * __MIDL__ILib83Lookup0002 ) = 0;
+};
+
+struct __declspec(uuid("7d169c7e-d4e6-4b1c-9052-0409cae5d774"))
+ILib91Lookup : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Exists (
+        /*[in,out]*/ BSTR * sGuid,
+        /*[out,retval]*/ VARIANT_BOOL * __MIDL__ILib91Lookup0000 ) = 0;
+      virtual HRESULT __stdcall GetName (
+        /*[in,out]*/ BSTR * sGuid,
+        /*[out,retval]*/ BSTR * __MIDL__ILib91Lookup0001 ) = 0;
+      virtual HRESULT __stdcall GetNames (
+        /*[out,retval]*/ VARIANT * __MIDL__ILib91Lookup0002 ) = 0;
+};
+
+struct __declspec(uuid("7b1ae683-363d-412f-a4d3-0d87edc4b906"))
+ILibLookupExtension : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * sDesc ) = 0;
+      virtual HRESULT __stdcall get_OldLibraryCount (
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall OldLibrary (
+        /*[in,out]*/ long * lIndex,
+        /*[in,out]*/ BSTR * sLibName,
+        /*[in,out]*/ BSTR * sGuid ) = 0;
+      virtual HRESULT __stdcall get_NewLibraryCount (
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall NewLibrary (
+        /*[in,out]*/ long * lIndex,
+        /*[in,out]*/ BSTR * sLibName,
+        /*[in,out]*/ BSTR * sGuid ) = 0;
+      virtual HRESULT __stdcall get_EnumValPrefixCount (
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall EnumValPrefix (
+        /*[in,out]*/ long * lIndex,
+        /*[out,retval]*/ BSTR * sEnumValPrefix ) = 0;
+};
+
+enum __declspec(uuid("97edc825-43a0-4947-9c46-bd367929d0cc"))
+esriCodeConverterStatus
+{
+    esriCCSSuccess = 0,
+    esriCCSWarnings = 1,
+    esriCCSFailed = 2
+};
+
+enum __declspec(uuid("91854fc0-65f1-4cd6-9835-d884b93cce61"))
+esriDevelopmentLanguage
+{
+    esriDLVB6 = 0,
+    esriDLVBA = 1,
+    esriDLCpp = 2,
+    esriDLJava = 3,
+    esriDLDelphi = 4,
+    esriDLCSharp = 5,
+    esriDLVBNet = 6
+};
+
+struct __declspec(uuid("ac43400b-d8db-491e-b686-2e783dd64891"))
+ICodeConverter : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_DevelopmentLanguage (
+        /*[in]*/ enum esriDevelopmentLanguage eDevLang ) = 0;
+      virtual HRESULT __stdcall get_DevelopmentLanguage (
+        /*[out,retval]*/ enum esriDevelopmentLanguage * eDevLang ) = 0;
+      virtual HRESULT __stdcall ConvertCode (
+        /*[in,out]*/ BSTR * sCode,
+        /*[in,out]*/ BSTR * sLog,
+        /*[in,out]*/ long * lReplacements,
+        /*[out,retval]*/ enum esriCodeConverterStatus * __MIDL__ICodeConverter0000 ) = 0;
+      virtual HRESULT __stdcall ReplaceLibraries (
+        /*[in,out]*/ BSTR * sCode,
+        /*[in,out]*/ BSTR * sLog,
+        /*[in,out]*/ long * lReplacements,
+        /*[out,retval]*/ enum esriCodeConverterStatus * __MIDL__ICodeConverter0001 ) = 0;
+      virtual HRESULT __stdcall ReplaceLibrary (
+        /*[in,out]*/ BSTR * sCode,
+        /*[in,out]*/ BSTR * sLibName,
+        /*[in,out]*/ BSTR * sLog,
+        /*[in,out]*/ long * lReplacements,
+        /*[out,retval]*/ enum esriCodeConverterStatus * __MIDL__ICodeConverter0002 ) = 0;
+      virtual HRESULT __stdcall ReplaceTagEsris (
+        /*[in,out]*/ BSTR * sCode,
+        /*[in,out]*/ BSTR * sLog,
+        /*[in,out]*/ long * lReplacements,
+        /*[out,retval]*/ enum esriCodeConverterStatus * __MIDL__ICodeConverter0003 ) = 0;
+      virtual HRESULT __stdcall WarnControls (
+        /*[in,out]*/ BSTR * sCode,
+        /*[in,out]*/ BSTR * sLog,
+        /*[in,out]*/ long * lReplacements,
+        /*[out,retval]*/ enum esriCodeConverterStatus * __MIDL__ICodeConverter0004 ) = 0;
+};
+
+struct __declspec(uuid("c62d3eeb-16ba-4c72-8c63-136ac4e19c11"))
+IVB6LibraryLister : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall NewLibrariesUsed (
+        /*[in,out]*/ BSTR * sVBCode,
+        /*[in,out]*/ VARIANT * vDictExistingNames,
+        /*[in,out]*/ BSTR * sLog,
+        /*[out,retval]*/ VARIANT * __MIDL__IVB6LibraryLister0000 ) = 0;
+      virtual HRESULT __stdcall Initialize (
+        /*[in,out]*/ struct IAssemblyLookup * * pAssemblyLookup ) = 0;
+};
+
+struct __declspec(uuid("161842fa-c4a8-4152-a864-15d833552611"))
+IVB6ReferenceHandler : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Initialize (
+        /*[in,out]*/ struct IAssemblyLookup * * pAssemblyLookup,
+        /*[in,out]*/ struct IVB6LibraryLister * * pLibraryLister ) = 0;
+      virtual HRESULT __stdcall CountAdded (
+        /*[out,retval]*/ short * __MIDL__IVB6ReferenceHandler0000 ) = 0;
+      virtual HRESULT __stdcall AddNewReferences (
+        /*[in,out]*/ VARIANT * vCodeModule,
+        /*[in,out]*/ BSTR * sLog,
+        /*[out,retval]*/ enum esriCodeConverterStatus * __MIDL__IVB6ReferenceHandler0001 ) = 0;
+      virtual HRESULT __stdcall AddReference (
+        /*[in,out]*/ BSTR * sAssembly,
+        /*[in,out]*/ BSTR * sGuid,
+        /*[in,out]*/ BSTR * sLog,
+        /*[out,retval]*/ enum esriCodeConverterStatus * __MIDL__IVB6ReferenceHandler0002 ) = 0;
+      virtual HRESULT __stdcall RecordExisting ( ) = 0;
+      virtual HRESULT __stdcall putref_VBProject (
+        /*[in,out]*/ VARIANT * _arg1 ) = 0;
+};
+
+struct __declspec(uuid("327ce363-f976-4d9e-bcb9-2f96cf6eb35f"))
+IVB6ErrorHandler : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall AddErrorHandler (
+        /*[in]*/ VARIANT vbInst ) = 0;
+      virtual HRESULT __stdcall WriteErrorHandlerCall (
+        /*[in]*/ VARIANT pComponent,
+        /*[in]*/ long line,
+        /*[in]*/ BSTR memberName,
+        /*[in]*/ VARIANT_BOOL topLevel ) = 0;
+      virtual HRESULT __stdcall OverWriteErrorHandlerCall (
+        /*[in]*/ VARIANT pComponent,
+        /*[in]*/ long line,
+        /*[in]*/ BSTR memberName,
+        /*[in]*/ VARIANT_BOOL topLevel ) = 0;
+      virtual HRESULT __stdcall get_Version (
+        /*[out,retval]*/ long * lVersion ) = 0;
+      virtual HRESULT __stdcall put_Version (
+        /*[in]*/ long lVersion ) = 0;
+};
+
+struct __declspec(uuid("e87fcba4-f179-462c-89fb-b697d63f613e"))
+IErrorMessageBox : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Show (
+        VARIANT_BOOL Show ) = 0;
+      virtual HRESULT __stdcall get_Visible (
+        /*[out,retval]*/ VARIANT_BOOL * Visible ) = 0;
+      virtual HRESULT __stdcall put_Visible (
+        /*[in]*/ VARIANT_BOOL Visible ) = 0;
+      virtual HRESULT __stdcall get_AutoRaise (
+        /*[out,retval]*/ VARIANT_BOOL * raise ) = 0;
+      virtual HRESULT __stdcall put_AutoRaise (
+        /*[in]*/ VARIANT_BOOL raise ) = 0;
+      virtual HRESULT __stdcall put_Parent (
+        /*[in]*/ long _arg1 ) = 0;
+};
+
+struct __declspec(uuid("546f3ce0-fc9f-4cf4-9093-86b71ab661de"))
+IErrorDialog : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Visible (
+        /*[out,retval]*/ VARIANT_BOOL * Visible ) = 0;
+      virtual HRESULT __stdcall put_Visible (
+        /*[in]*/ VARIANT_BOOL Visible ) = 0;
+      virtual HRESULT __stdcall Clear ( ) = 0;
+      virtual HRESULT __stdcall Hide ( ) = 0;
+      virtual HRESULT __stdcall get_AutoRaise (
+        /*[out,retval]*/ VARIANT_BOOL * raise ) = 0;
+      virtual HRESULT __stdcall put_AutoRaise (
+        /*[in]*/ VARIANT_BOOL raise ) = 0;
+      virtual HRESULT __stdcall AppendErrorText (
+        BSTR ErrorText ) = 0;
+      virtual HRESULT __stdcall get_ErrorText (
+        /*[out,retval]*/ BSTR * Text ) = 0;
+      virtual HRESULT __stdcall put_ErrorText (
+        /*[in]*/ BSTR Text ) = 0;
+      virtual HRESULT __stdcall get_hWnd (
+        /*[out,retval]*/ long * hWnd ) = 0;
+};
+
+struct __declspec(uuid("6c76bd81-fa07-11d3-9f75-00c04f8ece3a"))
+CatHelper;
+    // [ default ] interface IUnknown
+    // interface ICatHelper
+
+struct __declspec(uuid("950f77ff-60d6-4a85-b668-b6e52ed11041"))
+RegisterServer;
+    // [ default ] interface IRegisterServer
+
+struct __declspec(uuid("5e8a0eeb-b880-4e90-a41c-2c98668be59b"))
+RegistryHelper;
+    // [ default ] interface IUnknown
+    // interface IRegistryHelper
+
+struct __declspec(uuid("bc9fee49-dd4c-420b-b142-9afdae517fb2"))
+ComponentCategoryEnum;
+    // [ default ] interface IUnknown
+    // interface IComponentCategoryEnum
+
+struct __declspec(uuid("d658555d-f708-4ea1-bfd6-69c7e09eb632"))
+DocumentHelper;
+    // [ default ] interface IUnknown
+    // interface IDocumentHelper
+    // interface IDocumentHelper2
+    // interface IDocumentHelper3
+    // interface IElementHelper
+
+struct __declspec(uuid("75ae56c3-a345-41ff-8e66-347ec3c5774d"))
+GUIDHelper;
+    // interface IUnknown
+    // [ default ] interface IGUIDHelper
+
+struct __declspec(uuid("7761c39b-0803-48dc-8830-aea3595fcf45"))
+CommandLineHelper;
+    // [ default ] interface IUnknown
+    // interface ICommandLineHelper
+
+struct __declspec(uuid("0e5ab6a2-946c-4284-aa56-a592a42b49f1"))
+CreationHelper;
+    // [ default ] interface IUnknown
+    // interface ICreationHelper
+
+struct __declspec(uuid("c1c936fe-7fba-484c-ae17-fcb8e10d588a"))
+CommandEnum;
+    // [ default ] interface IUnknown
+    // interface ICommandEnum
+
+struct __declspec(uuid("cbe7e68a-8efe-4454-aabc-4d071da778fc"))
+AddCommands;
+    // [ default ] interface IUnknown
+    // interface IAddCommands
+
+struct __declspec(uuid("672fb3aa-c6de-44e0-b767-c53d33ef9879"))
+ErrorMessage;
+    // [ default ] interface IErrorMessageBox
+
+struct __declspec(uuid("40accbda-720a-4b17-980b-b173f791958e"))
+ErrorDialog;
+    // [ default ] interface IErrorDialog
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_esriSystemUtility =
+    {0x8c215696,0xce4b,0x4afc,{0x9c,0x9c,0x99,0x63,0x2b,0x8c,0xc7,0xd3}};
+extern "C" const GUID __declspec(selectany) IID_IEventListenerHelper =
+    {0xdfbbab84,0x84e8,0x46c5,{0x93,0x10,0xac,0xc4,0x72,0x75,0x8f,0x64}};
+extern "C" const GUID __declspec(selectany) IID_IARControlEventsHelper =
+    {0xc01bbcd1,0x410f,0x46d0,{0xa0,0xa1,0x47,0x5e,0x49,0xab,0xca,0x2b}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeControlEventsHelper =
+    {0x47934348,0x782c,0x42b6,{0x99,0x6d,0xf9,0x43,0x2e,0x0c,0x3d,0xa7}};
+extern "C" const GUID __declspec(selectany) IID_IMapControlEvents2Helper =
+    {0xfd6a24c5,0xdb01,0x4a2c,{0x84,0x51,0x3f,0xc6,0x38,0xb0,0x7c,0x21}};
+extern "C" const GUID __declspec(selectany) IID_IPageLayoutControlEventsHelper =
+    {0x8edcb28b,0xb854,0x49d4,{0x89,0x90,0x3e,0xd3,0xc5,0x02,0x66,0x39}};
+extern "C" const GUID __declspec(selectany) IID_ISceneControlEventsHelper =
+    {0xdfff0021,0x30d6,0x4944,{0xa7,0x27,0x7d,0x82,0x63,0xd3,0x09,0x7e}};
+extern "C" const GUID __declspec(selectany) IID_ITOCControlEventsHelper =
+    {0xc96d805a,0x2df4,0x4d9f,{0x9e,0x84,0x8d,0x43,0xb1,0x3c,0xec,0x73}};
+extern "C" const GUID __declspec(selectany) IID_IToolbarControlEventsHelper =
+    {0xb7cd56ca,0x2716,0x4f08,{0x80,0x28,0x79,0xca,0x43,0x59,0x7a,0x8e}};
+extern "C" const GUID __declspec(selectany) CLSID_ActiveViewEventsListener =
+    {0x7992b64e,0x6bf8,0x46e6,{0xb7,0x7b,0xe5,0x29,0x19,0x9c,0xff,0xad}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeDisplayEventsListener =
+    {0x6df72b99,0x6eee,0x41e8,{0xb6,0x7c,0x8d,0x9e,0xb2,0xef,0xd2,0x7b}};
+extern "C" const GUID __declspec(selectany) CLSID_SceneRendererEventsListener =
+    {0x385d8ce5,0x0a48,0x42a9,{0x8a,0x96,0x77,0xc4,0x21,0xdd,0xae,0x27}};
+extern "C" const GUID __declspec(selectany) CLSID_SceneGraphEventsDispListener =
+    {0x4cc22109,0xf111,0x42d2,{0xa0,0xbf,0x27,0x8a,0xb3,0x8f,0xe4,0xe4}};
+extern "C" const GUID __declspec(selectany) CLSID_SceneGraphEventsListener =
+    {0xbb5f7712,0xf6f5,0x4aad,{0x88,0x81,0x45,0x4a,0xf1,0xb3,0x04,0xc1}};
+extern "C" const GUID __declspec(selectany) CLSID_ReplicaProgressListener =
+    {0xa607f9b1,0x3397,0x42d0,{0x86,0xda,0x4d,0x31,0xa5,0xd1,0x80,0x8c}};
+extern "C" const GUID __declspec(selectany) CLSID_WorkspaceEditEventsListener =
+    {0x58d26720,0x2ea3,0x498f,{0x80,0x78,0xe6,0x3f,0x18,0x04,0x14,0xfb}};
+extern "C" const GUID __declspec(selectany) CLSID_WorkspaceEventsListener =
+    {0x2d7514ba,0x8ce7,0x4eb5,{0x9d,0x08,0x8f,0x07,0x24,0xff,0xcc,0xfa}};
+extern "C" const GUID __declspec(selectany) CLSID_RepairConnectivityProgressEventsListener =
+    {0x4817f2dd,0x119a,0x416c,{0xb6,0x33,0x49,0x32,0x0d,0xc8,0xf1,0xf5}};
+extern "C" const GUID __declspec(selectany) CLSID_ObjectClassEventsListener =
+    {0x22ecc02b,0x23d6,0x47d7,{0x9a,0xad,0x4c,0x78,0x14,0x1d,0x75,0xee}};
+extern "C" const GUID __declspec(selectany) CLSID_TopologyClassEventsListener =
+    {0xd9c56cbf,0xc978,0x47ba,{0x97,0x8b,0xbd,0x2b,0xf3,0x8a,0x6c,0x7d}};
+extern "C" const GUID __declspec(selectany) CLSID_RelationshipClassEventsListener =
+    {0xbfde528f,0xb60b,0x438f,{0xbd,0x06,0xcd,0x13,0x04,0xae,0x08,0x22}};
+extern "C" const GUID __declspec(selectany) CLSID_ObjectClassSchemaEventsListener =
+    {0xb60f5675,0x6c71,0x4869,{0x95,0x06,0xfe,0x0e,0x8a,0x20,0xd5,0xe7}};
+extern "C" const GUID __declspec(selectany) CLSID_VersionEventsListener =
+    {0xf52ccb7e,0x14bf,0x4a81,{0x99,0xdf,0xe6,0x8d,0x79,0x80,0x0a,0x63}};
+extern "C" const GUID __declspec(selectany) CLSID_VersionEvents2Listener =
+    {0x63543936,0x8e04,0x4cae,{0xb1,0x83,0xb8,0xd2,0x0f,0xba,0x66,0x86}};
+extern "C" const GUID __declspec(selectany) CLSID_DisplayEventsListener =
+    {0x76d8ea72,0x7767,0x412c,{0xaa,0x3b,0x6b,0x0e,0x20,0x4e,0x00,0xb2}};
+extern "C" const GUID __declspec(selectany) CLSID_TransformEventsListener =
+    {0x40eb9930,0xb677,0x4d28,{0x9f,0x54,0x9c,0xc9,0x62,0x2b,0xe9,0xd1}};
+extern "C" const GUID __declspec(selectany) CLSID_RasterStatusListener =
+    {0x54d33556,0x1098,0x4257,{0x90,0xc3,0x95,0x46,0x45,0x87,0xa2,0xac}};
+extern "C" const GUID __declspec(selectany) CLSID_RasterStatus2Listener =
+    {0x6302a46c,0x879f,0x47b3,{0x8b,0x04,0x63,0x07,0xa8,0xda,0x22,0x37}};
+extern "C" const GUID __declspec(selectany) CLSID_RasterStatusEventListener =
+    {0x4e9ab238,0xd13f,0x4765,{0x81,0xa1,0x47,0x36,0x1b,0x72,0xc7,0xba}};
+extern "C" const GUID __declspec(selectany) CLSID_RasterStatusEvent2Listener =
+    {0x86abd11f,0xb0bb,0x49e9,{0x89,0x85,0x16,0xf5,0xab,0x30,0x12,0x70}};
+extern "C" const GUID __declspec(selectany) CLSID_ERasterStatusListener =
+    {0x5e2e19c7,0x9602,0x413d,{0x8b,0xd9,0x5e,0x72,0xa9,0xa1,0x02,0x21}};
+extern "C" const GUID __declspec(selectany) CLSID_RasterDataManagementEventsListener =
+    {0xbceff158,0xf855,0x4c3e,{0x9e,0x10,0xe0,0xc3,0x51,0x2c,0x5c,0x5c}};
+extern "C" const GUID __declspec(selectany) CLSID_LayerEventsListener =
+    {0xad56f818,0xa618,0x4f71,{0xb9,0x85,0x6b,0x63,0x81,0x8d,0xd2,0x05}};
+extern "C" const GUID __declspec(selectany) CLSID_SelectionEventsListener =
+    {0x9b64a00a,0x6302,0x4cee,{0xb4,0x0a,0x7b,0x71,0xd6,0x5c,0x51,0x9b}};
+extern "C" const GUID __declspec(selectany) CLSID_BasicOverposterEventsListener =
+    {0x49be4ec6,0xd90d,0x40a1,{0xbb,0x6a,0x0d,0x83,0x8f,0x2e,0xe9,0x3e}};
+extern "C" const GUID __declspec(selectany) CLSID_FeatureLayerSelectionEventsListener =
+    {0x641e5963,0x0a0f,0x4e20,{0xb2,0x51,0x41,0x72,0x7a,0x1b,0xa1,0x7c}};
+extern "C" const GUID __declspec(selectany) CLSID_GraphicsContainerEventsListener =
+    {0x8c6277be,0x6c13,0x44f9,{0xa9,0xb0,0xac,0x9e,0x39,0x7c,0x9f,0x8b}};
+extern "C" const GUID __declspec(selectany) CLSID_AnnotationErrorEventsListener =
+    {0x5f689826,0xc59b,0x4157,{0xac,0x0f,0xbc,0xb2,0x75,0xe0,0xc2,0x95}};
+extern "C" const GUID __declspec(selectany) CLSID_MapEventsListener =
+    {0xecc47b0e,0x37e0,0x4652,{0xa6,0xef,0xfb,0xb2,0x89,0xb2,0x03,0x82}};
+extern "C" const GUID __declspec(selectany) CLSID_MapEvents2Listener =
+    {0xb9a8e13e,0xa35f,0x47e3,{0xae,0x0e,0x0c,0xa6,0x57,0x3f,0xd8,0x62}};
+extern "C" const GUID __declspec(selectany) CLSID_MapEvents3Listener =
+    {0xa7cce240,0x40cd,0x43ce,{0x95,0x43,0x2d,0x21,0xa3,0x67,0x65,0xe0}};
+extern "C" const GUID __declspec(selectany) CLSID_MapSurroundEventsListener =
+    {0xc2423936,0x3060,0x4bac,{0x92,0x39,0x8d,0x9d,0x29,0x14,0xac,0x87}};
+extern "C" const GUID __declspec(selectany) CLSID_MapFrameEventsListener =
+    {0x458388e0,0x4494,0x4137,{0x90,0x28,0x7c,0x95,0x4d,0x2e,0xc0,0x43}};
+extern "C" const GUID __declspec(selectany) CLSID_PageEventsListener =
+    {0x7153d344,0x45fb,0x462f,{0xa9,0x34,0xf6,0x08,0x1e,0x2a,0x7e,0x3d}};
+extern "C" const GUID __declspec(selectany) CLSID_GeoReferenceEventsListener =
+    {0x551e7e0f,0xd66d,0x42ce,{0xb2,0x35,0x4b,0x20,0x54,0xff,0x2d,0x52}};
+extern "C" const GUID __declspec(selectany) CLSID_RealTimeFeedEventsListener =
+    {0x5ffd5647,0x629d,0x4d96,{0x99,0x8c,0xef,0x28,0xe0,0xde,0xb6,0x16}};
+extern "C" const GUID __declspec(selectany) CLSID_RealTimeFeedManagerEventsListener =
+    {0xaa0a20c1,0x27d6,0x4513,{0xb3,0xf7,0x4a,0x0c,0x73,0x8f,0x06,0xb3}};
+extern "C" const GUID __declspec(selectany) CLSID_NetworkLoaderProgressListener =
+    {0x55c9b61d,0x6ac7,0x4816,{0xb0,0xe3,0xcf,0x1e,0xc4,0xcd,0x7d,0xfa}};
+extern "C" const GUID __declspec(selectany) CLSID_ComPropertySheetEventsListener =
+    {0x200fb674,0x3680,0x402c,{0x9a,0xb3,0x4a,0xdc,0x3e,0x5b,0x33,0x6c}};
+extern "C" const GUID __declspec(selectany) CLSID_PageLayoutControlEventsListener =
+    {0x4a1c324c,0xd5d9,0x498c,{0xb7,0xe2,0x93,0xa5,0x7a,0xda,0x5c,0x38}};
+extern "C" const GUID __declspec(selectany) CLSID_TOCBuddyEventsListener =
+    {0x1bf80dc7,0x83c1,0x4a96,{0xa0,0x3f,0x9d,0x5d,0x3a,0x53,0xa2,0xf0}};
+extern "C" const GUID __declspec(selectany) CLSID_ARControlEventsListener =
+    {0x46d94040,0xb8e2,0x48a1,{0x94,0x29,0xf1,0xa9,0x73,0x1a,0xe5,0x0c}};
+extern "C" const GUID __declspec(selectany) CLSID_MapControlEvents2Listener =
+    {0x8d966159,0x26e5,0x410b,{0x82,0x8a,0x94,0x0d,0x42,0xc7,0x94,0xa6}};
+extern "C" const GUID __declspec(selectany) CLSID_SceneControlEventsListener =
+    {0xa0a047a7,0xb787,0x43ea,{0x9e,0xd6,0xe5,0xbc,0x04,0x5a,0xb5,0x4c}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeControlEventsListener =
+    {0xa9c46dcb,0x3891,0x48d2,{0x88,0x9e,0x2d,0xe0,0xae,0xb1,0x48,0xbd}};
+extern "C" const GUID __declspec(selectany) CLSID_TOCControlEventsListener =
+    {0x901fdd36,0xaba6,0x4166,{0xa1,0x27,0x26,0x95,0x6b,0x5a,0xaa,0x5c}};
+extern "C" const GUID __declspec(selectany) CLSID_ToolbarControlEventsListener =
+    {0x152a4fc4,0x1162,0x44f9,{0x80,0xdc,0x7c,0x43,0x94,0xe3,0x90,0x0c}};
+extern "C" const GUID __declspec(selectany) CLSID_CustomizeDialogEventsListener =
+    {0xbc647446,0x1538,0x4fdc,{0xaa,0xe2,0x7b,0x31,0x45,0x50,0x83,0xfb}};
+extern "C" const GUID __declspec(selectany) CLSID_FeatureProgressListener =
+    {0x5e26c0b3,0xaf56,0x40a9,{0xab,0x35,0x0c,0x6e,0x49,0xa7,0x3c,0x42}};
+extern "C" const GUID __declspec(selectany) CLSID_OperationProgressListener =
+    {0x5a95e946,0x7485,0x4785,{0x86,0x4c,0x0a,0x5c,0x15,0x6b,0xcb,0x06}};
+extern "C" const GUID __declspec(selectany) CLSID_NAContextEventsListener =
+    {0x7fb84c04,0x18dc,0x48f1,{0xa1,0x97,0x80,0x39,0x23,0x0b,0x05,0x12}};
+extern "C" const GUID __declspec(selectany) CLSID_NAContextEvents2Listener =
+    {0x8fa39e6c,0x4521,0x4196,{0xb8,0xb3,0xf2,0x44,0x4f,0xb0,0x56,0xa5}};
+extern "C" const GUID __declspec(selectany) CLSID_NALayerEventsListener =
+    {0x91035abb,0x0e5e,0x4cbf,{0x9d,0x05,0x99,0x06,0xaa,0x52,0xdd,0xff}};
+extern "C" const GUID __declspec(selectany) CLSID_WMSClientEventsListener =
+    {0x51173311,0xc9fa,0x41e4,{0x83,0x6e,0x44,0x9b,0x0f,0x2d,0x45,0xc0}};
+extern "C" const GUID __declspec(selectany) IID_IDocumentHelper =
+    {0x8123e916,0xbeb4,0x4e42,{0xa2,0x09,0xb4,0x1e,0xa2,0x10,0xc8,0x4b}};
+extern "C" const GUID __declspec(selectany) IID_IDocumentHelper2 =
+    {0x41de3c46,0x8025,0x4ca0,{0x8b,0x03,0x8b,0x65,0x8a,0xb4,0x0a,0xc9}};
+extern "C" const GUID __declspec(selectany) IID_IDocumentHelper3 =
+    {0xd8d47583,0x70a8,0x4a0b,{0xb3,0x6f,0x24,0x9e,0x98,0xb5,0x93,0x00}};
+extern "C" const GUID __declspec(selectany) IID_IElementHelper =
+    {0xe220ac2b,0xc6d9,0x4aa1,{0x96,0xff,0x28,0xc8,0x39,0x29,0x3d,0x95}};
+extern "C" const GUID __declspec(selectany) IID_IGUIDHelper =
+    {0x7a87bf06,0x6488,0x4377,{0xaa,0xfd,0x63,0x98,0x0a,0x39,0x22,0x74}};
+extern "C" const GUID __declspec(selectany) IID_ICommandLineHelper =
+    {0x743bdd53,0x22b4,0x4a66,{0x83,0x04,0x8d,0x71,0x73,0xf0,0xcf,0x06}};
+extern "C" const GUID __declspec(selectany) IID_ICatHelper =
+    {0x6c76bd80,0xfa07,0x11d3,{0x9f,0x75,0x00,0xc0,0x4f,0x8e,0xce,0x3a}};
+extern "C" const GUID __declspec(selectany) IID_IRegisterServer =
+    {0xa9271308,0xedc1,0x4ff2,{0xb6,0x12,0x9f,0x6e,0x0c,0x3c,0x77,0x6d}};
+extern "C" const GUID __declspec(selectany) IID_IRegistryHelper =
+    {0x7b85ae7d,0x8f99,0x4cfd,{0x90,0xd2,0x6c,0x67,0x58,0x37,0x6b,0x14}};
+extern "C" const GUID __declspec(selectany) IID_IComponentCategoryEnum =
+    {0x50c8ad98,0x8abc,0x4f61,{0xb3,0x14,0xef,0x4f,0x40,0x52,0xeb,0xd7}};
+extern "C" const GUID __declspec(selectany) IID_ICreationHelper =
+    {0xb8513067,0x48da,0x4f86,{0xa9,0xe4,0xf5,0x95,0x61,0xc7,0x22,0xb7}};
+extern "C" const GUID __declspec(selectany) IID_ICommandEnum =
+    {0xf5f8f94d,0xfa41,0x4e2c,{0x96,0x8b,0x8a,0xa2,0x51,0x3e,0x97,0x47}};
+extern "C" const GUID __declspec(selectany) IID_IAddCommands =
+    {0xff36faff,0xc2d9,0x41d2,{0x91,0x42,0xe7,0x75,0x1e,0xcb,0xe4,0xf1}};
+extern "C" const GUID __declspec(selectany) IID_IAssemblyLookup =
+    {0x56fe5cdc,0xcd69,0x44bd,{0xa7,0x0e,0x17,0x05,0x01,0xed,0x92,0x1b}};
+extern "C" const GUID __declspec(selectany) IID_IAssemblyLookup2 =
+    {0x01cda130,0xe0b6,0x4d2a,{0xb0,0x0f,0x3a,0xae,0xff,0xe7,0xd6,0x84}};
+extern "C" const GUID __declspec(selectany) IID_ILibraryLookupInfo =
+    {0x2858e131,0x9a6b,0x4848,{0x86,0x01,0xaa,0xc8,0x8e,0x9f,0x04,0xbc}};
+extern "C" const GUID __declspec(selectany) IID_ILib83Lookup =
+    {0x452bf664,0x71c6,0x4a85,{0x8f,0x06,0xfa,0xfe,0x1a,0x1e,0x7f,0xad}};
+extern "C" const GUID __declspec(selectany) IID_ILib91Lookup =
+    {0x7d169c7e,0xd4e6,0x4b1c,{0x90,0x52,0x04,0x09,0xca,0xe5,0xd7,0x74}};
+extern "C" const GUID __declspec(selectany) IID_ILibLookupExtension =
+    {0x7b1ae683,0x363d,0x412f,{0xa4,0xd3,0x0d,0x87,0xed,0xc4,0xb9,0x06}};
+extern "C" const GUID __declspec(selectany) IID_ICodeConverter =
+    {0xac43400b,0xd8db,0x491e,{0xb6,0x86,0x2e,0x78,0x3d,0xd6,0x48,0x91}};
+extern "C" const GUID __declspec(selectany) IID_IVB6LibraryLister =
+    {0xc62d3eeb,0x16ba,0x4c72,{0x8c,0x63,0x13,0x6a,0xc4,0xe1,0x9c,0x11}};
+extern "C" const GUID __declspec(selectany) IID_IVB6ReferenceHandler =
+    {0x161842fa,0xc4a8,0x4152,{0xa8,0x64,0x15,0xd8,0x33,0x55,0x26,0x11}};
+extern "C" const GUID __declspec(selectany) IID_IVB6ErrorHandler =
+    {0x327ce363,0xf976,0x4d9e,{0xbc,0xb9,0x2f,0x96,0xcf,0x6e,0xb3,0x5f}};
+extern "C" const GUID __declspec(selectany) IID_IErrorMessageBox =
+    {0xe87fcba4,0xf179,0x462c,{0x89,0xfb,0xb6,0x97,0xd6,0x3f,0x61,0x3e}};
+extern "C" const GUID __declspec(selectany) IID_IErrorDialog =
+    {0x546f3ce0,0xfc9f,0x4cf4,{0x90,0x93,0x86,0xb7,0x1a,0xb6,0x61,0xde}};
+extern "C" const GUID __declspec(selectany) CLSID_CatHelper =
+    {0x6c76bd81,0xfa07,0x11d3,{0x9f,0x75,0x00,0xc0,0x4f,0x8e,0xce,0x3a}};
+extern "C" const GUID __declspec(selectany) CLSID_RegisterServer =
+    {0x950f77ff,0x60d6,0x4a85,{0xb6,0x68,0xb6,0xe5,0x2e,0xd1,0x10,0x41}};
+extern "C" const GUID __declspec(selectany) CLSID_RegistryHelper =
+    {0x5e8a0eeb,0xb880,0x4e90,{0xa4,0x1c,0x2c,0x98,0x66,0x8b,0xe5,0x9b}};
+extern "C" const GUID __declspec(selectany) CLSID_ComponentCategoryEnum =
+    {0xbc9fee49,0xdd4c,0x420b,{0xb1,0x42,0x9a,0xfd,0xae,0x51,0x7f,0xb2}};
+extern "C" const GUID __declspec(selectany) CLSID_DocumentHelper =
+    {0xd658555d,0xf708,0x4ea1,{0xbf,0xd6,0x69,0xc7,0xe0,0x9e,0xb6,0x32}};
+extern "C" const GUID __declspec(selectany) CLSID_GUIDHelper =
+    {0x75ae56c3,0xa345,0x41ff,{0x8e,0x66,0x34,0x7e,0xc3,0xc5,0x77,0x4d}};
+extern "C" const GUID __declspec(selectany) CLSID_CommandLineHelper =
+    {0x7761c39b,0x0803,0x48dc,{0x88,0x30,0xae,0xa3,0x59,0x5f,0xcf,0x45}};
+extern "C" const GUID __declspec(selectany) CLSID_CreationHelper =
+    {0x0e5ab6a2,0x946c,0x4284,{0xaa,0x56,0xa5,0x92,0xa4,0x2b,0x49,0xf1}};
+extern "C" const GUID __declspec(selectany) CLSID_CommandEnum =
+    {0xc1c936fe,0x7fba,0x484c,{0xae,0x17,0xfc,0xb8,0xe1,0x0d,0x58,0x8a}};
+extern "C" const GUID __declspec(selectany) CLSID_AddCommands =
+    {0xcbe7e68a,0x8efe,0x4454,{0xaa,0xbc,0x4d,0x07,0x1d,0xa7,0x78,0xfc}};
+extern "C" const GUID __declspec(selectany) CLSID_ErrorMessage =
+    {0x672fb3aa,0xc6de,0x44e0,{0xb7,0x67,0xc5,0x3d,0x33,0xef,0x98,0x79}};
+extern "C" const GUID __declspec(selectany) CLSID_ErrorDialog =
+    {0x40accbda,0x720a,0x4b17,{0x98,0x0b,0xb1,0x73,0xf7,0x91,0x95,0x8e}};
+
+#pragma pack(pop)

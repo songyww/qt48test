@@ -1,0 +1,1825 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (f4d17d65).
+//
+// e:\vsproject\qt48test\qt48test\debug\esrigeoanalyst.tlh
+//
+// C++ source equivalent of Win32 type library esrigeoanalyst.olb
+// compiler-generated file created 06/01/16 at 16:28:38 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("5c54042b-b2ed-4889-8c40-2d89c19db41d"))
+/* LIBID */ __esriGeoAnalyst;
+enum esriSpatialAnalystError;
+enum esriRasterEnvSettingEnum;
+enum esriRasterVerifyEnum;
+enum esriRasterGDBCompressionEnum;
+enum esriGeoAnalysisResampleEnum;
+struct __declspec(uuid("3a6957fc-a3f2-4a62-99da-5362833777f3"))
+/* interface */ IRasterOpBase;
+struct __declspec(uuid("3297e9c8-93a1-11d2-9f33-00c04f8ed1d7"))
+/* interface */ IGeoAnalysisEnvironment;
+struct __declspec(uuid("18bdbec1-c45c-11d3-9f5e-00c04f8ed1d7"))
+/* interface */ IGeoDataDescriptor;
+struct __declspec(uuid("3297e9ce-93a1-11d2-9f33-00c04f8ed1d7"))
+/* interface */ IFeatureClassDescriptor;
+struct __declspec(uuid("296e7f60-d1c8-11d2-9f3c-00c04f8ed1d7"))
+/* interface */ IRasterDescriptor;
+struct __declspec(uuid("3297e9c5-93a1-11d2-9f33-00c04f8ed1d7"))
+/* interface */ IRasterAnalysisEnvironment;
+struct __declspec(uuid("5aa98a9d-7f47-4d69-ad97-0fe4893f5dee"))
+/* interface */ IRasterAnalysisGlobalEnvironment;
+struct __declspec(uuid("823763c2-2855-43d2-88cf-321815c17685"))
+/* interface */ IRasterAnalysisGDBEnvironment;
+struct /* coclass */ FeatureClassDescriptor;
+struct /* coclass */ RasterDescriptor;
+struct /* coclass */ RasterAnalysis;
+enum esriGeoAnalysisUnitsEnum;
+enum esriRasterNeighborhoodEnum;
+enum esriGeoAnalysisFilterEnum;
+enum esriGeoAnalysisStatisticsEnum;
+struct __declspec(uuid("3297e9ca-93a1-11d2-9f33-00c04f8ed1d7"))
+/* interface */ IConversionOp;
+struct __declspec(uuid("90c52cfe-8e74-11d4-80f4-00c04fa0702c"))
+/* interface */ IRasterImportOp;
+struct __declspec(uuid("a0c91fcd-43f4-4a9b-8541-fab77b038c83"))
+/* interface */ IRasterImportOp2;
+struct __declspec(uuid("30a4a132-00ac-4f44-bdc6-a020ec43ad37"))
+/* interface */ IRasterExportOp;
+struct __declspec(uuid("640e4db6-f223-11d3-a07f-00c04f68e699"))
+/* interface */ ITransformationOp;
+struct __declspec(uuid("debd3029-7f6f-11d4-b278-00508bcdc779"))
+/* interface */ IRasterConvertHelper;
+struct __declspec(uuid("3297e9cc-93a1-11d2-9f33-00c04f8ed1d7"))
+/* interface */ IRasterNeighborhood;
+struct __declspec(uuid("fdd19da5-0881-4d0a-b7dd-9a7c3ec24702"))
+/* interface */ IRasterNeighborhood2;
+struct __declspec(uuid("6171288b-7d1c-4328-9160-f39ebf7d542f"))
+/* interface */ IGridTableOp;
+struct /* coclass */ RasterConvertHelper;
+struct /* coclass */ RasterNeighborhood;
+struct /* coclass */ RasterConversionOp;
+struct /* coclass */ RasterTransformationOp;
+struct /* coclass */ GridTableOp;
+enum esriGeoAnalysisSemiVariogramEnum;
+enum esriGeoAnalysisSplineEnum;
+enum esriGeoAnalysisTrendEnum;
+enum esriGeoAnalysisVisibilityEnum;
+enum esriGeoAnalysisSlopeEnum;
+enum esriGeoAnalysisEnforceEnum;
+enum esriGeoAnalysisSliceEnum;
+struct __declspec(uuid("4606f163-b47d-11d2-9f3b-00c04f8ed1d7"))
+/* interface */ IRasterModel;
+struct __declspec(uuid("2b1e876d-0be8-11d4-80d6-00c04fa0702c"))
+/* interface */ IRemap;
+struct __declspec(uuid("2b1e876e-0be8-11d4-80d6-00c04fa0702c"))
+/* interface */ IStringRemap;
+struct __declspec(uuid("2b1e876f-0be8-11d4-80d6-00c04fa0702c"))
+/* interface */ INumberRemap;
+struct __declspec(uuid("3297e9cd-93a1-11d2-9f33-00c04f8ed1d7"))
+/* interface */ IRasterRadius;
+struct __declspec(uuid("4606f15f-b47d-11d2-9f3b-00c04f8ed1d7"))
+/* interface */ IGeoAnalysisSemiVariogram;
+struct __declspec(uuid("d3ce7322-9546-11d2-9f34-00c04f8ed1d7"))
+/* interface */ IInterpolationOp;
+struct __declspec(uuid("d91b6722-30a8-4663-b5c5-a3a76c522bab"))
+/* interface */ IInterpolationOp2;
+struct __declspec(uuid("4bc64b50-51ef-4d19-a56d-7c10521dface"))
+/* interface */ IInterpolationOp3;
+struct __declspec(uuid("cad7bfee-1dd7-11d3-9f45-00c04f8ed1d7"))
+/* interface */ IReclassOp;
+struct __declspec(uuid("4606f164-b47d-11d2-9f3b-00c04f8ed1d7"))
+/* interface */ ISurfaceOp;
+struct __declspec(uuid("1b987743-5ec7-4722-8ae3-15d78ad1dd41"))
+/* interface */ ISurfaceOp2;
+struct __declspec(uuid("8608e339-8743-11d4-b278-00508bcdc779"))
+/* interface */ IMathSupportOp;
+struct __declspec(uuid("cc0b70d3-ea20-11d3-9f63-00c04f8ed1d7"))
+/* interface */ IRasterMakerOp;
+struct /* coclass */ StringRemap;
+struct /* coclass */ NumberRemap;
+struct /* coclass */ RasterRadius;
+struct /* coclass */ GeoAnalysisSemiVariogram;
+struct /* coclass */ RasterInterpolationOp;
+struct /* coclass */ RasterMathSupportOp;
+struct /* coclass */ RasterReclassOp;
+struct /* coclass */ RasterSurfaceOp;
+struct /* coclass */ RasterMakerOp;
+struct /* coclass */ RasterModel;
+struct __declspec(uuid("469a6fe2-0bbb-411b-be0c-4bf2ba4d6346"))
+/* interface */ IMLClassifyFunctionArguments;
+struct /* coclass */ MLClassifyFunction;
+struct /* coclass */ MLClassifyFunctionArguments;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IRasterOpBase, __uuidof(IRasterOpBase));
+_COM_SMARTPTR_TYPEDEF(IGeoAnalysisEnvironment, __uuidof(IGeoAnalysisEnvironment));
+_COM_SMARTPTR_TYPEDEF(IGeoDataDescriptor, __uuidof(IGeoDataDescriptor));
+_COM_SMARTPTR_TYPEDEF(IFeatureClassDescriptor, __uuidof(IFeatureClassDescriptor));
+_COM_SMARTPTR_TYPEDEF(IRasterDescriptor, __uuidof(IRasterDescriptor));
+_COM_SMARTPTR_TYPEDEF(IRasterAnalysisEnvironment, __uuidof(IRasterAnalysisEnvironment));
+_COM_SMARTPTR_TYPEDEF(IRasterAnalysisGlobalEnvironment, __uuidof(IRasterAnalysisGlobalEnvironment));
+_COM_SMARTPTR_TYPEDEF(IRasterAnalysisGDBEnvironment, __uuidof(IRasterAnalysisGDBEnvironment));
+_COM_SMARTPTR_TYPEDEF(IConversionOp, __uuidof(IConversionOp));
+_COM_SMARTPTR_TYPEDEF(IRasterImportOp, __uuidof(IRasterImportOp));
+_COM_SMARTPTR_TYPEDEF(IRasterImportOp2, __uuidof(IRasterImportOp2));
+_COM_SMARTPTR_TYPEDEF(IRasterExportOp, __uuidof(IRasterExportOp));
+_COM_SMARTPTR_TYPEDEF(ITransformationOp, __uuidof(ITransformationOp));
+_COM_SMARTPTR_TYPEDEF(IRasterConvertHelper, __uuidof(IRasterConvertHelper));
+_COM_SMARTPTR_TYPEDEF(IRasterNeighborhood, __uuidof(IRasterNeighborhood));
+_COM_SMARTPTR_TYPEDEF(IRasterNeighborhood2, __uuidof(IRasterNeighborhood2));
+_COM_SMARTPTR_TYPEDEF(IGridTableOp, __uuidof(IGridTableOp));
+_COM_SMARTPTR_TYPEDEF(IRasterModel, __uuidof(IRasterModel));
+_COM_SMARTPTR_TYPEDEF(IRemap, __uuidof(IRemap));
+_COM_SMARTPTR_TYPEDEF(IStringRemap, __uuidof(IStringRemap));
+_COM_SMARTPTR_TYPEDEF(INumberRemap, __uuidof(INumberRemap));
+_COM_SMARTPTR_TYPEDEF(IRasterRadius, __uuidof(IRasterRadius));
+_COM_SMARTPTR_TYPEDEF(IGeoAnalysisSemiVariogram, __uuidof(IGeoAnalysisSemiVariogram));
+_COM_SMARTPTR_TYPEDEF(IInterpolationOp, __uuidof(IInterpolationOp));
+_COM_SMARTPTR_TYPEDEF(IInterpolationOp2, __uuidof(IInterpolationOp2));
+_COM_SMARTPTR_TYPEDEF(IInterpolationOp3, __uuidof(IInterpolationOp3));
+_COM_SMARTPTR_TYPEDEF(IReclassOp, __uuidof(IReclassOp));
+_COM_SMARTPTR_TYPEDEF(ISurfaceOp, __uuidof(ISurfaceOp));
+_COM_SMARTPTR_TYPEDEF(ISurfaceOp2, __uuidof(ISurfaceOp2));
+_COM_SMARTPTR_TYPEDEF(IMathSupportOp, __uuidof(IMathSupportOp));
+_COM_SMARTPTR_TYPEDEF(IRasterMakerOp, __uuidof(IRasterMakerOp));
+_COM_SMARTPTR_TYPEDEF(IMLClassifyFunctionArguments, __uuidof(IMLClassifyFunctionArguments));
+
+//
+// Type library items
+//
+
+enum __declspec(uuid("b00d1359-e94a-11d3-a073-00c04f68e699"))
+esriSpatialAnalystError
+{
+    E_SPATIAL_ANALYST_UNKNOWN_ERROR = -2147217408,
+    E_SPATIAL_ANALYST_FILE_NOT_FOUND = -2147217407,
+    E_SPATIAL_ANALYST_FILE_INVALID_EXTENSION = -2147217406,
+    E_SPATIAL_ANALYST_RENDERER_INVALID_BAND_INDEX = -2147217405,
+    E_SPATIAL_ANALYST_FILE_FAILED_TO_RENAME = -2147217404,
+    E_SPATIAL_ANALYST_FILE_FAILED_TO_COPY = -2147217403,
+    GRID_ERR_ARGTYPE = -2147217402,
+    GRID_ERR_GRIDORNUMB = -2147217401,
+    GRID_ERR_OBJTYPE = -2147217400,
+    GRID_ERR_ZONEOBJ = -2147217400,
+    GRID_ERR_SORTTYPE = -2147217398,
+    GRID_ERR_SHAPETYPE = -2147217397,
+    GRID_ERR_SLICETYPE = -2147217396,
+    GRID_ERR_FIELDTYPE = -2147217395,
+    GRID_ERR_NOTVALUEFD = -2147217394,
+    GRID_ERR_NOVAT = -2147217393,
+    GRID_ERR_BADSTA = -2147217392,
+    GRID_ERR_READTABLE = -2147217391,
+    GRID_ERR_READSTA = -2147217390,
+    GRID_ERR_READVAT = -2147217389,
+    GRID_ERR_READVTAB = -2147217388,
+    GRID_ERR_ALLOCMEM = -2147217387,
+    GRID_ERR_ALLOCLUT = -2147217386,
+    GRID_ERR_CELLSIZE = -2147217385,
+    GRID_ERR_CSIZETYPE = -2147217384,
+    GRID_ERR_LUTRANGE = -2147217383,
+    GRID_ERR_MAKEHASH = -2147217382,
+    GRID_ERR_MAKEVTAB = -2147217381,
+    GRID_ERR_LISTELEM = -2147217380,
+    GRID_ERR_STRGRID = -2147217379,
+    GRID_ERR_LEGCLASS = -2147217378,
+    GRID_ERR_INFODIR = -2147217377,
+    GRID_ERR_SEMIVARIO = -2147217376,
+    GRID_ERR_CONTINUE = -2147217375,
+    GRID_ERR_TIMEOUT = -2147217374,
+    GRID_ERR_HASERR = -2147217373,
+    GRID_ERR_LOADFAIL = -2147217372,
+    GRID_ERR_NOLIBINIT = -2147217371,
+    GRID_ERR_NOLIBEXIT = -2147217370,
+    GRID_ERR_NOIRREGNBR = -2147217369,
+    GRID_ERR_MISMATCHSPREF = -2147217368,
+    E_SPATIAL_ANALYST_TREND_FIELD = -2147217367,
+    E_SPATIAL_ANALYST_CONVERSION = -2147217366,
+    E_SPATIAL_ANALYST_OPEN_WORKSPACE = -2147217365,
+    E_SPATIAL_ANALYST_NO_FEATURE_CLASS = -2147217364,
+    E_SPATIAL_ANALYST_NO_FIELD_NAME = -2147217363,
+    E_SPATIAL_ANALYST_EVAL_TYPE = -2147217362,
+    E_SPATIAL_ANALYST_NO_POINTS = -2147217361,
+    E_SPATIAL_ANALYST_INVALID_RECLASS_FIELD = -2147217360,
+    E_SPATIAL_ANALYST_FILE_FAILED_TO_WRITE = -2147217359,
+    E_SPATIAL_ANALYST_INVALID_READ_INDEX = -2147217358,
+    E_SPATIAL_ANALYST_INVALID_DELETE_INDEX = -2147217357,
+    E_SPATIAL_ANALYST_TABLE_NOT_CREATED = -2147217356,
+    E_SPATIAL_ANALYST_NO_DUPLICATES = -2147217355,
+    E_SPATIAL_ANALYST_NO_CONVERTTOCOVERAGE = -2147217354,
+    E_SPATIAL_ANALYST_NOT_FEATURE_CLASS = -2147217353,
+    E_SPATIAL_ANALYST_NULL_OBJECT = -2147217352,
+    E_SPATIAL_ANALYST_RECLASS_BY_SELECT = -2147217351,
+    E_SPATIAL_ANALYST_FEAT_SEARCH_CURSOR = -2147217350,
+    E_SPATIAL_ANALYST_EXTRACT_VARARR = -2147217349,
+    E_SPATIAL_ANALYST_UNBIND_RASTER = -2147217348,
+    E_SPATIAL_ANALYST_UNARY_OPERATION = -2147217347,
+    E_SPATIAL_ANALYST_BINARY_OPERATION = -2147217346,
+    E_SPATIAL_ANALYST_INVALID_FILTER_TYPE = -2147217345,
+    E_SPATIAL_ANALYST_STRING_FIELD_NOT_ALLOWED = -2147217344,
+    E_SPATIAL_ANALYST_BAD_FIELD_INDEX = -2147217343,
+    E_SPATIAL_ANALYST_INVALID_GEOMETRY = -2147217342,
+    E_SPATIAL_ANALYST_OPEN_RDS_FAIL = -2147217341,
+    E_SPATIAL_ANALYST_REFERENCE_FAILED = -2147217340,
+    E_SPATIAL_ANALYST_CREATE_WORKSPACENAME = -2147217339,
+    E_SPATIAL_ANALYST_NO_STRING_FIELD = -2147217338,
+    E_SPATIAL_ANALYST_REMAP_MIXED_FILE = -2147217337,
+    E_SPATIAL_ANALYST_REMAP_BAD_SVALUE = -2147217336,
+    E_SPATIAL_ANALYST_REMAP_FILL_SREMAP = -2147217335,
+    E_SPATIAL_ANALYST_REMAP_NEED_STYPE = -2147217334,
+    E_SPATIAL_ANALYST_REMAP_NEED_NTYPE = -2147217333,
+    E_SPATIAL_ANALYST_REMAP_INVALID_FIND_INDEX = -2147217332,
+    E_SPATIAL_ANALYST_REMAP_RECORD_NOT_FOUND = -2147217331,
+    E_SPATIAL_ANALYST_REMAP_OVERLAP_CONFLICT = -2147217330,
+    E_SPATIAL_ANALYST_REMAP_SIMPLE_CONFLICT = -2147217329,
+    E_SPATIAL_ANALYST_REMAP_DUPLICATE_RECORD = -2147217328,
+    E_SPATIAL_ANALYST_REMAP_FREE_RECORDS = -2147217327,
+    E_SPATIAL_ANALYST_INVALID_NAME_FROM_PATH = -2147217326,
+    E_SPATIAL_ANALYST_OUTPUT_EXISTS = -2147217325,
+    E_SPATIAL_ANALYST_SAVEAS = -2147217324,
+    E_SPATIAL_ANALYST_NO_SPREF = -2147217323,
+    E_SPATIAL_ANALYST_NO_EXTENT = -2147217322,
+    E_SPATIAL_ANALYST_NO_EVALEXP = -2147217321,
+    E_SPATIAL_ANALYST_NOT_EVALUATED = -2147217320,
+    E_SPATIAL_ANALYST_ADDITEM_FAILED = -2147217319,
+    E_SPATIAL_ANALYST_NO_DATASET = -2147217318,
+    E_SPATIAL_ANALYST_SAVEAS_FAILED = -2147217317,
+    E_SPATIAL_ANALYST_NOT_INTEGER = -2147217316,
+    E_SPATIAL_ANALYST_NO_POINT_FILE = -2147217315,
+    E_SPATIAL_ANALYST_CREATE_GRID = -2147217314,
+    E_SPATIAL_ANALYST_ANALYSIS_WINDOW = -2147217313,
+    E_SPATIAL_ANALYST_INIT_SAMPLE_LIST = -2147217312,
+    E_SPATIAL_ANALYST_ESTIMATE_SEMIVAR = -2147217311,
+    E_SPATIAL_ANALYST_WRITE_UNABLE = -2147217310,
+    E_SPATIAL_ANALYST_INVALID_FIELD = -2147217309,
+    E_SPATIAL_ANALYST_INVALID_SEMIVAR_TYPE = -2147217308,
+    E_SPATIAL_ANALYST_COMPOSE_EXPR = -2147217307,
+    E_SPATIAL_ANALYST_FIELD_NOT_ADDED = -2147217306,
+    E_SPATIAL_ANALYST_HIST_FREQUENCY = -2147217305,
+    E_SPATIAL_ANALYST_LICENSENOTAVAILABLE = -2147217304,
+    E_SPATIAL_ANALYST_WASNOTACTIVATED = -2147217303,
+    E_SPATIAL_ANALYST_SHAREDLICENSENOTAVAILABLE = -2147217302,
+    E_SPATIAL_ANALYST_SHAREDWASNOTACTIVATED = -2147217301,
+    E_SPATIAL_ANALYST_EMPTY_RASTER = -2147217300,
+    E_SPATIAL_ANALYST_BIND_SYMBOL_MISMATCH = -2147217299,
+    E_SPATIAL_ANALYST_NULL_FEATURE_COUNT = -2147217298,
+    E_SPATIAL_ANALYST_CANCEL_OP = -2147217297,
+    E_SPATIAL_ANALYST_NODATA_RASTER = -2147217296,
+    E_SPATIAL_ANALYST_INVALID_STATSTYPE = -2147217295,
+    E_SPATIAL_ANALYST_NO_JOINEDFIELD = -2147217294,
+    E_SPATIAL_ANALYST_NO_SUPPORT = -2147217293,
+    E_SPATIAL_ANALYST_INVALID_OUTRFORMAT = -2147217292,
+    E_SPATIAL_ANALYST_INVALID_GEODATASET = -2147217291,
+    E_SPATIAL_ANALYST_INVALID_NAMEFORGRIDENG = -2147217290,
+    E_SPATIAL_ANALYST_NO_BASETABLE = -2147217289,
+    E_SPATIAL_ANALYST_NO_RECS_WITH_QFILTER = -2147217288,
+    E_SPATIAL_ANALYST_INVALID_COMMAND = -2147217287,
+    E_SPATIAL_ANALYST_UNSUPPORTED_FEAT_INPUT = -2147217286,
+    E_SPATIAL_ANALYST_INVALID_PRJS_FOR_CURVATURE = -2147217285,
+    E_SPATIAL_ANALYST_INVALID_BAND_COUNT = -2147217284,
+    E_SPATIAL_ANALYST_NO_FILE_NAME = -2147217283,
+    E_SPATIAL_ANALYST_OUT_FILE_EXISTS = -2147217282,
+    E_SPATIAL_ANALYST_INVALID_REJECT_FRACTION = -2147217281,
+    E_SPATIAL_ANALYST_INVALID_COMPONENT_COUNT = -2147217280,
+    E_SPATIAL_ANALYST_SREMAP_NO_STRING_FIELD = -2147217279,
+    E_SPATIAL_ANALYST_NREMAP_HAS_STRING_FIELD = -2147217278,
+    E_SPATIAL_ANALYST_REMAP_UNSORTED = -2147217277,
+    E_SPATIAL_ANALYST_TOPO_NOT_POSITIVE = -2147217276,
+    E_SPATIAL_ANALYST_TOPO_NOT_NONNEGATIVE = -2147217275,
+    E_SPATIAL_ANALYST_TOPO_UNKNOWN_KEYWORD = -2147217274,
+    E_SPATIAL_ANALYST_TOPO_BAD_CONTOUR_OPTION = -2147217273,
+    E_SPATIAL_ANALYST_TOPO_NO_ELEVDATA = -2147217272,
+    E_SPATIAL_ANALYST_TOPO_MISS_VALUE = -2147217271,
+    E_SPATIAL_ANALYST_TOPO_INVALID_ZLIMITS = -2147217270,
+    E_SPATIAL_ANALYST_NOT_GRID = -2147217269,
+    E_SPATIAL_ANALYST_OBSV_UNSUPPORTED_GEOMETRY = -2147217268,
+    E_SPATIAL_ANALYST_OBSV_EXCESS_POINTS = -2147217267,
+    E_SPATIAL_ANALYST_FIELD_EXISTS = -2147217266,
+    E_SPATIAL_ANALYST_NO_COVERAGE_SUPPORT = -2147217265,
+    E_SPATIAL_ANALYST_RESERVED_FIELD_EXISTS = -2147217264,
+    E_SPATIAL_ANALYST_SIMPLE_POLY_SUPPORT = -2147217263,
+    E_SPATIAL_ANALYST_HDR_FILE_NOT_FOUND = -2147217262,
+    E_SPATIAL_ANALYST_READ_ERROR = -2147217261,
+    E_SPATIAL_ANALYST_TOPO_CONTOUR_TOOMANY_POINTS = -2147217260,
+    E_SPATIAL_ANALYST_TOPO_STREAM_TOOMANY_POINTS = -2147217259,
+    E_SPATIAL_ANALYST_TOPO_BOUND_TOOMANY_POINTS = -2147217258,
+    E_SPATIAL_ANALYST_TOPO_LAKE_TOOMANY_POINTS = -2147217257,
+    E_SPATIAL_ANALYST_GRID_EXECUTE = -2147217256,
+    E_SPATIAL_ANALYST_SYNTAX_ERROR = -2147217255,
+    E_SPATIAL_ANALYST_MEMORY_ALLOC = -2147217254,
+    E_SPATIAL_ANALYST_PRJ_NOTMACTH = -2147217253,
+    E_SPATIAL_ANALYST_PRJ_COPY = -2147217252,
+    E_SPATIAL_ANALYST_NO_ATTRIB_TABLE = -2147217251,
+    E_SPATIAL_ANALYST_INVALID_OUTPUT_EXTENT = -2147217250,
+    E_SPATIAL_ANALYST_EXPRESSION_TOO_LONG = -2147217249,
+    E_SPATIAL_ANALYST_INVALID_NUMERIC_FIELD_LEN = -2147217248,
+    E_SPATIAL_LOCALFUNCTION_ARGUMENTS_OVERSPECIFIED = -2147217247
+};
+
+enum __declspec(uuid("7aca3d0a-0629-11d2-8d24-0000f8780535"))
+esriRasterEnvSettingEnum
+{
+    esriRasterEnvMaxOf = 1,
+    esriRasterEnvMinOf = 2,
+    esriRasterEnvValue = 3
+};
+
+enum __declspec(uuid("3297e9c7-93a1-11d2-9f33-00c04f8ed1d7"))
+esriRasterVerifyEnum
+{
+    esriRasterVerifyOff = 1,
+    esriRasterVerifyOn = 2,
+    esriRasterVerifyError = 3
+};
+
+enum __declspec(uuid("a06a3740-1044-4ecc-ba58-044962dc34ca"))
+esriRasterGDBCompressionEnum
+{
+    esriRasterGDBCompressionNone = 0,
+    esriRasterGDBCompressionLZ77 = 1,
+    esriRasterGDBCompressionJPEG = 2,
+    esriRasterGDBCompressionJPEG2000 = 3,
+    esriRasterGDBCompressionPackBits = 4,
+    esriRasterGDBCompressionLZW = 5,
+    esriRasterGDBCompressionRLE = 6,
+    esriRasterGDBCompressionCCITTG3 = 7,
+    esriRasterGDBCompressionCCITTG4 = 8,
+    esriRasterGDBCompressionCCITTRLE = 9,
+    esriRasterGDBCompressionJPEGYCbCr = 10
+};
+
+enum __declspec(uuid("f67f8f9a-ebd0-11d3-9f94-00c04f8ef00e"))
+esriGeoAnalysisResampleEnum
+{
+    esriGeoAnalysisResampleNearest = 1,
+    esriGeoAnalysisResampleBilinear = 2,
+    esriGeoAnalysisResampleCubic = 3,
+    esriGeoAnalysisResampleSearch = 4
+};
+
+struct __declspec(uuid("3a6957fc-a3f2-4a62-99da-5362833777f3"))
+IRasterOpBase : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall AddOutputDatasetName (
+        /*[in]*/ long index,
+        /*[in]*/ struct IDatasetName * pOutName ) = 0;
+      virtual HRESULT __stdcall putref_OutputDatasetNameArray (
+        /*[in]*/ struct IArray * _arg1 ) = 0;
+};
+
+struct __declspec(uuid("3297e9c8-93a1-11d2-9f33-00c04f8ed1d7"))
+IGeoAnalysisEnvironment : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall putref_OutWorkspace (
+        /*[in]*/ struct IWorkspace * Workspace ) = 0;
+      virtual HRESULT __stdcall get_OutWorkspace (
+        /*[out,retval]*/ struct IWorkspace * * Workspace ) = 0;
+      virtual HRESULT __stdcall putref_OutSpatialReference (
+        /*[in]*/ struct ISpatialReference * SpatialReference ) = 0;
+      virtual HRESULT __stdcall get_OutSpatialReference (
+        /*[out,retval]*/ struct ISpatialReference * * SpatialReference ) = 0;
+};
+
+struct __declspec(uuid("18bdbec1-c45c-11d3-9f5e-00c04f8ed1d7"))
+IGeoDataDescriptor : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CreateFromSelectionSet (
+        /*[in]*/ struct ISelectionSet * SelectionSet,
+        /*[in]*/ struct IQueryFilter * filter,
+        /*[in]*/ BSTR FieldName ) = 0;
+      virtual HRESULT __stdcall get_QueryFilter (
+        /*[out,retval]*/ struct IQueryFilter * * QueryFilter ) = 0;
+      virtual HRESULT __stdcall get_SelectionSet (
+        /*[out,retval]*/ struct ISelectionSet * * SelectionSet ) = 0;
+      virtual HRESULT __stdcall get_Field (
+        /*[out,retval]*/ struct IField * * Field ) = 0;
+      virtual HRESULT __stdcall get_FieldName (
+        /*[out,retval]*/ BSTR * FieldName ) = 0;
+};
+
+struct __declspec(uuid("3297e9ce-93a1-11d2-9f33-00c04f8ed1d7"))
+IFeatureClassDescriptor : IGeoDataDescriptor
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Create (
+        /*[in]*/ struct IFeatureClass * FeatureClass,
+        /*[in]*/ struct IQueryFilter * filter,
+        /*[in]*/ BSTR FieldName ) = 0;
+      virtual HRESULT __stdcall get_FeatureClass (
+        /*[out,retval]*/ struct IFeatureClass * * FeatureClass ) = 0;
+};
+
+struct __declspec(uuid("296e7f60-d1c8-11d2-9f3c-00c04f8ed1d7"))
+IRasterDescriptor : IGeoDataDescriptor
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Create (
+        /*[in]*/ struct IRaster * Raster,
+        /*[in]*/ struct IQueryFilter * filter,
+        /*[in]*/ BSTR FieldName ) = 0;
+      virtual HRESULT __stdcall get_Raster (
+        /*[out,retval]*/ struct IRaster * * Raster ) = 0;
+};
+
+struct __declspec(uuid("3297e9c5-93a1-11d2-9f33-00c04f8ed1d7"))
+IRasterAnalysisEnvironment : IGeoAnalysisEnvironment
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SetCellSize (
+        /*[in]*/ enum esriRasterEnvSettingEnum envType,
+        /*[in]*/ VARIANT * cellSizeProvider = &vtMissing ) = 0;
+      virtual HRESULT __stdcall GetCellSize (
+        /*[out]*/ enum esriRasterEnvSettingEnum * envType,
+        /*[out]*/ double * CellSize ) = 0;
+      virtual HRESULT __stdcall SetExtent (
+        /*[in]*/ enum esriRasterEnvSettingEnum envType,
+        /*[in]*/ VARIANT * extentProvider = &vtMissing,
+        /*[in]*/ VARIANT * snapRasterData = &vtMissing ) = 0;
+      virtual HRESULT __stdcall GetExtent (
+        /*[out]*/ enum esriRasterEnvSettingEnum * envType,
+        /*[out]*/ struct IEnvelope * * Extent ) = 0;
+      virtual HRESULT __stdcall putref_Mask (
+        /*[in]*/ struct IGeoDataset * Mask ) = 0;
+      virtual HRESULT __stdcall get_Mask (
+        /*[out,retval]*/ struct IGeoDataset * * Mask ) = 0;
+      virtual HRESULT __stdcall put_VerifyType (
+        /*[in]*/ enum esriRasterVerifyEnum VerifyType ) = 0;
+      virtual HRESULT __stdcall get_VerifyType (
+        /*[out,retval]*/ enum esriRasterVerifyEnum * VerifyType ) = 0;
+      virtual HRESULT __stdcall get_DefaultOutputRasterPrefix (
+        /*[out,retval]*/ BSTR * rasterPrefix ) = 0;
+      virtual HRESULT __stdcall put_DefaultOutputRasterPrefix (
+        /*[in]*/ BSTR rasterPrefix ) = 0;
+      virtual HRESULT __stdcall get_DefaultOutputVectorPrefix (
+        /*[out,retval]*/ BSTR * vectorPrefix ) = 0;
+      virtual HRESULT __stdcall put_DefaultOutputVectorPrefix (
+        /*[in]*/ BSTR vectorPrefix ) = 0;
+      virtual HRESULT __stdcall SetAsNewDefaultEnvironment ( ) = 0;
+      virtual HRESULT __stdcall RestoreToPreviousDefaultEnvironment ( ) = 0;
+      virtual HRESULT __stdcall Reset ( ) = 0;
+};
+
+struct __declspec(uuid("5aa98a9d-7f47-4d69-ad97-0fe4893f5dee"))
+IRasterAnalysisGlobalEnvironment : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_AvoidDataConversion (
+        /*[in]*/ VARIANT_BOOL bAvoid ) = 0;
+      virtual HRESULT __stdcall get_AvoidDataConversion (
+        /*[out,retval]*/ VARIANT_BOOL * bAvoid ) = 0;
+};
+
+struct __declspec(uuid("823763c2-2855-43d2-88cf-321815c17685"))
+IRasterAnalysisGDBEnvironment : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_GlobeOptimized (
+        /*[in]*/ VARIANT_BOOL GlobeOptimized ) = 0;
+      virtual HRESULT __stdcall get_GlobeOptimized (
+        /*[out,retval]*/ VARIANT_BOOL * GlobeOptimized ) = 0;
+      virtual HRESULT __stdcall put_MosaicType (
+        /*[in]*/ enum rstMosaicOperatorType MosaicType ) = 0;
+      virtual HRESULT __stdcall get_MosaicType (
+        /*[out,retval]*/ enum rstMosaicOperatorType * MosaicType ) = 0;
+      virtual HRESULT __stdcall put_CompressionType (
+        /*[in]*/ enum esriRasterGDBCompressionEnum CompressionType ) = 0;
+      virtual HRESULT __stdcall get_CompressionType (
+        /*[out,retval]*/ enum esriRasterGDBCompressionEnum * CompressionType ) = 0;
+      virtual HRESULT __stdcall put_JpegQuality (
+        /*[in]*/ long JpegQuality ) = 0;
+      virtual HRESULT __stdcall get_JpegQuality (
+        /*[out,retval]*/ long * JpegQuality ) = 0;
+      virtual HRESULT __stdcall put_BuildPyramid (
+        /*[in]*/ VARIANT_BOOL buildParamid ) = 0;
+      virtual HRESULT __stdcall get_BuildPyramid (
+        /*[out,retval]*/ VARIANT_BOOL * buildParamid ) = 0;
+      virtual HRESULT __stdcall put_PyramidResampleType (
+        /*[in]*/ enum esriGeoAnalysisResampleEnum resampleType ) = 0;
+      virtual HRESULT __stdcall get_PyramidResampleType (
+        /*[out,retval]*/ enum esriGeoAnalysisResampleEnum * resampleType ) = 0;
+      virtual HRESULT __stdcall put_PyramidLevel (
+        /*[in]*/ long level ) = 0;
+      virtual HRESULT __stdcall get_PyramidLevel (
+        /*[out,retval]*/ long * level ) = 0;
+      virtual HRESULT __stdcall put_CalculateStatistics (
+        /*[in]*/ VARIANT_BOOL CalculateStatistics ) = 0;
+      virtual HRESULT __stdcall get_CalculateStatistics (
+        /*[out,retval]*/ VARIANT_BOOL * CalculateStatistics ) = 0;
+      virtual HRESULT __stdcall put_XSkipFactor (
+        /*[in]*/ long XSkipFactor ) = 0;
+      virtual HRESULT __stdcall get_XSkipFactor (
+        /*[out,retval]*/ long * XSkipFactor ) = 0;
+      virtual HRESULT __stdcall put_YSkipFactor (
+        /*[in]*/ long YSkipFactor ) = 0;
+      virtual HRESULT __stdcall get_YSkipFactor (
+        /*[out,retval]*/ long * YSkipFactor ) = 0;
+      virtual HRESULT __stdcall put_IgnoredValue (
+        /*[in]*/ BSTR IgnoredValue ) = 0;
+      virtual HRESULT __stdcall get_IgnoredValue (
+        /*[out,retval]*/ BSTR * IgnoredValue ) = 0;
+      virtual HRESULT __stdcall put_TileWidth (
+        /*[in]*/ long TileWidth ) = 0;
+      virtual HRESULT __stdcall get_TileWidth (
+        /*[out,retval]*/ long * TileWidth ) = 0;
+      virtual HRESULT __stdcall put_TileHeight (
+        /*[in]*/ long TileHeight ) = 0;
+      virtual HRESULT __stdcall get_TileHeight (
+        /*[out,retval]*/ long * TileHeight ) = 0;
+      virtual HRESULT __stdcall put_ConfigurationKeyword (
+        /*[in]*/ BSTR configKeyword ) = 0;
+      virtual HRESULT __stdcall get_ConfigurationKeyword (
+        /*[out,retval]*/ BSTR * configKeyword ) = 0;
+      virtual HRESULT __stdcall putref_GDBDomains (
+        /*[in]*/ struct ISpatialReference * domainsSpRef ) = 0;
+      virtual HRESULT __stdcall get_GDBDomains (
+        /*[out,retval]*/ struct ISpatialReference * * domainsSpRef ) = 0;
+};
+
+struct __declspec(uuid("3297e9d3-93a1-11d2-9f33-00c04f8ed1d7"))
+FeatureClassDescriptor;
+    // [ default ] interface IUnknown
+    // interface IGeoDataset
+    // interface IFeatureClassDescriptor
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("296e7f5f-d1c8-11d2-9f3c-00c04f8ed1d7"))
+RasterDescriptor;
+    // [ default ] interface IUnknown
+    // interface IGeoDataset
+    // interface IRasterDescriptor
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("3549c4f9-f9c2-11d3-9f64-00c04f8ed1d7"))
+RasterAnalysis;
+    // [ default ] interface IUnknown
+    // interface IRasterAnalysisEnvironment
+    // interface IRasterAnalysisGDBEnvironment
+    // interface IRasterAnalysisGlobalEnvironment
+    // interface IRasterOpBase
+    // interface IPersistStream
+    // interface IClone
+    // interface ISupportErrorInfo
+
+enum __declspec(uuid("d3ce7329-9546-11d2-9f34-00c04f8ed1d7"))
+esriGeoAnalysisUnitsEnum
+{
+    esriUnitsMap = 1,
+    esriUnitsCells = 2
+};
+
+enum __declspec(uuid("d3ce7328-9546-11d2-9f34-00c04f8ed1d7"))
+esriRasterNeighborhoodEnum
+{
+    esriRectangleNeighborhood = 1,
+    esriCircleNeighborhood = 2,
+    esriAnnulusNeighborhood = 3,
+    esriWedgeNeighborhood = 4,
+    esriIrregularNeighborhood = 5,
+    esriWeightNeighborhood = 6,
+    esriLowPassFilterNeighborhood = 7,
+    esriHighPassFilterNeighborhood = 8
+};
+
+enum __declspec(uuid("fe6ec116-1e85-11d3-9f45-00c04f8ed1d7"))
+esriGeoAnalysisFilterEnum
+{
+    esriGeoAnalysisFilter3x3LowPass = 1,
+    esriGeoAnalysisFilter3x3HighPass = 2
+};
+
+enum __declspec(uuid("08894b81-b1f9-11d1-8d0f-0000f8780535"))
+esriGeoAnalysisStatisticsEnum
+{
+    esriGeoAnalysisStatsMajority = 1,
+    esriGeoAnalysisStatsMaximum = 2,
+    esriGeoAnalysisStatsMean = 3,
+    esriGeoAnalysisStatsMedian = 4,
+    esriGeoAnalysisStatsMinimum = 5,
+    esriGeoAnalysisStatsMinority = 6,
+    esriGeoAnalysisStatsRange = 7,
+    esriGeoAnalysisStatsStd = 8,
+    esriGeoAnalysisStatsSum = 9,
+    esriGeoAnalysisStatsVariety = 10,
+    esriGeoAnalysisStatsLength = 11
+};
+
+struct __declspec(uuid("3297e9ca-93a1-11d2-9f33-00c04f8ed1d7"))
+IConversionOp : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ToRasterDataset (
+        /*[in]*/ struct IGeoDataset * dataset,
+        /*[in]*/ BSTR rasterFormat,
+        /*[in]*/ struct IWorkspace * pWorkspace,
+        /*[in]*/ BSTR name,
+        /*[out,retval]*/ struct IRasterDataset * * rasterDataset ) = 0;
+      virtual HRESULT __stdcall ToFeatureData (
+        /*[in]*/ struct IGeoDataset * dataset,
+        /*[in]*/ enum esriGeometryType geometryType,
+        /*[in]*/ struct IWorkspace * pWorkspace,
+        /*[in]*/ BSTR name,
+        /*[out,retval]*/ struct IGeoDataset * * GeoDataset ) = 0;
+      virtual HRESULT __stdcall RasterDataToPointFeatureData (
+        /*[in]*/ struct IGeoDataset * dataset,
+        /*[in]*/ struct IWorkspace * pWorkspace,
+        /*[in]*/ BSTR name,
+        /*[out,retval]*/ struct IGeoDataset * * GeoDataset ) = 0;
+      virtual HRESULT __stdcall RasterDataToPolygonFeatureData (
+        /*[in]*/ struct IGeoDataset * dataset,
+        /*[in]*/ struct IWorkspace * pWorkspace,
+        /*[in]*/ BSTR name,
+        /*[in]*/ VARIANT_BOOL weeding,
+        /*[out,retval]*/ struct IGeoDataset * * GeoDataset ) = 0;
+      virtual HRESULT __stdcall RasterDataToLineFeatureData (
+        /*[in]*/ struct IGeoDataset * dataset,
+        /*[in]*/ struct IWorkspace * pWorkspace,
+        /*[in]*/ BSTR name,
+        /*[in]*/ VARIANT_BOOL zeroAsBackground,
+        /*[in]*/ VARIANT_BOOL weeding,
+        /*[in]*/ VARIANT * minDangle,
+        /*[out,retval]*/ struct IGeoDataset * * GeoDataset ) = 0;
+};
+
+struct __declspec(uuid("90c52cfe-8e74-11d4-80f4-00c04fa0702c"))
+IRasterImportOp : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ImportFromUSGSDEM (
+        /*[in]*/ BSTR demFile,
+        /*[in]*/ struct IWorkspace * OutWorkspace,
+        /*[in]*/ BSTR outRasterName,
+        /*[in]*/ BSTR OutRasterFormat,
+        /*[out,retval]*/ struct IRasterDataset * * ppOut ) = 0;
+      virtual HRESULT __stdcall ImportFromASCII (
+        /*[in]*/ BSTR asciiFile,
+        /*[in]*/ struct IWorkspace * OutWorkspace,
+        /*[in]*/ BSTR outRasterName,
+        /*[in]*/ BSTR OutRasterFormat,
+        /*[in]*/ VARIANT_BOOL isInteger,
+        /*[out,retval]*/ struct IRasterDataset * * ppOut ) = 0;
+      virtual HRESULT __stdcall ImportFromFLOAT (
+        /*[in]*/ BSTR floatFile,
+        /*[in]*/ struct IWorkspace * OutWorkspace,
+        /*[in]*/ BSTR outRasterName,
+        /*[in]*/ BSTR OutRasterFormat,
+        /*[out,retval]*/ struct IRasterDataset * * ppOut ) = 0;
+};
+
+struct __declspec(uuid("a0c91fcd-43f4-4a9b-8541-fab77b038c83"))
+IRasterImportOp2 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ImportFromUSGSDEM (
+        /*[in]*/ BSTR demFile,
+        /*[in]*/ struct IWorkspace * OutWorkspace,
+        /*[in]*/ BSTR outRasterName,
+        /*[in]*/ BSTR OutRasterFormat,
+        /*[in]*/ VARIANT_BOOL isInteger,
+        /*[in]*/ VARIANT * zFactor,
+        /*[out,retval]*/ struct IRasterDataset * * ppOut ) = 0;
+      virtual HRESULT __stdcall ImportFromASCII (
+        /*[in]*/ BSTR asciiFile,
+        /*[in]*/ struct IWorkspace * OutWorkspace,
+        /*[in]*/ BSTR outRasterName,
+        /*[in]*/ BSTR OutRasterFormat,
+        /*[in]*/ VARIANT_BOOL isInteger,
+        /*[out,retval]*/ struct IRasterDataset * * ppOut ) = 0;
+      virtual HRESULT __stdcall ImportFromFLOAT (
+        /*[in]*/ BSTR floatFile,
+        /*[in]*/ struct IWorkspace * OutWorkspace,
+        /*[in]*/ BSTR outRasterName,
+        /*[in]*/ BSTR OutRasterFormat,
+        /*[out,retval]*/ struct IRasterDataset * * ppOut ) = 0;
+};
+
+struct __declspec(uuid("30a4a132-00ac-4f44-bdc6-a020ec43ad37"))
+IRasterExportOp : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ExportToASCII (
+        /*[in]*/ struct IGeoDataset * dataset,
+        /*[in]*/ BSTR asciiFile ) = 0;
+      virtual HRESULT __stdcall ExportToFloat (
+        /*[in]*/ struct IGeoDataset * dataset,
+        /*[in]*/ BSTR floatFile ) = 0;
+};
+
+struct __declspec(uuid("640e4db6-f223-11d3-a07f-00c04f68e699"))
+ITransformationOp : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Flip (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall Mirror (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall Shift (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ double xShift,
+        /*[in]*/ double yShift,
+        /*[in]*/ VARIANT * pSnapRasterData,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall ReScale (
+        /*[in]*/ struct IGeoDataset * inData,
+        /*[in]*/ double xScale,
+        /*[in]*/ double yScale,
+        /*[out,retval]*/ struct IGeoDataset * * outDataSet ) = 0;
+      virtual HRESULT __stdcall Rotate (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ enum esriGeoAnalysisResampleEnum resampleType,
+        /*[in]*/ double angle,
+        /*[in]*/ VARIANT * origin,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall Clip (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ struct IEnvelope * Rectangle,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall Resample (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ double newCellsize,
+        /*[in]*/ enum esriGeoAnalysisResampleEnum resampleType,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall Warp (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ struct IPointCollection * sourceControlPoints,
+        /*[in]*/ struct IPointCollection * targetControlPoints,
+        /*[in]*/ enum esriGeoTransTypeEnum transformType,
+        /*[in]*/ enum esriGeoAnalysisResampleEnum resampleType,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall Project (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ struct ISpatialReference * newSpatialReference,
+        /*[in]*/ enum esriGeoAnalysisResampleEnum resampleType,
+        /*[in]*/ enum esriRasterPrjMethodTypeEnum PrjMethodType,
+        /*[in]*/ enum esriGeoTransTypeEnum transformType,
+        /*[in]*/ VARIANT * blocksize,
+        /*[in]*/ VARIANT * CellSize,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall ProjectFast (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ struct ISpatialReference * newSpatialReference,
+        /*[in]*/ enum esriGeoAnalysisResampleEnum resampleType,
+        /*[in]*/ VARIANT * CellSize,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall Mosaic (
+        /*[in]*/ struct IRasterBandCollection * collectionOfRasters,
+        /*[in]*/ enum rstMosaicOperatorType MosaicType,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+};
+
+struct __declspec(uuid("debd3029-7f6f-11d4-b278-00508bcdc779"))
+IRasterConvertHelper : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ToRaster1 (
+        /*[in]*/ struct IGeoDataset * pIn1,
+        /*[in]*/ BSTR rasterFormat,
+        /*[in]*/ struct IRasterAnalysisEnvironment * rasterEnv,
+        /*[out,retval]*/ struct IRaster * * ppOut ) = 0;
+      virtual HRESULT __stdcall ToRaster2 (
+        /*[in]*/ struct IGeoDataset * pIn1,
+        /*[in]*/ struct IGeoDataset * pIn2,
+        /*[in]*/ BSTR rasterFormat,
+        /*[in]*/ struct IRasterAnalysisEnvironment * rasterEnv,
+        /*[out]*/ struct IRaster * * ppOut1,
+        /*[out]*/ struct IRaster * * ppOut2 ) = 0;
+      virtual HRESULT __stdcall ToRaster3 (
+        /*[in]*/ struct IGeoDataset * pIn1,
+        /*[in]*/ struct IGeoDataset * pIn2,
+        /*[in]*/ struct IGeoDataset * pIn3,
+        /*[in]*/ BSTR rasterFormat,
+        /*[in]*/ struct IRasterAnalysisEnvironment * rasterEnv,
+        /*[out]*/ struct IRaster * * ppOut1,
+        /*[out]*/ struct IRaster * * ppOut2,
+        /*[out]*/ struct IRaster * * ppOut3 ) = 0;
+      virtual HRESULT __stdcall ToShapefile (
+        /*[in]*/ struct IGeoDataset * pIn,
+        /*[in]*/ enum esriGeometryType geometryType,
+        /*[in]*/ struct IRasterAnalysisEnvironment * rasterEnv,
+        /*[out,retval]*/ struct IFeatureClass * * ppOut ) = 0;
+};
+
+struct __declspec(uuid("3297e9cc-93a1-11d2-9f33-00c04f8ed1d7"))
+IRasterNeighborhood : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SetDefault ( ) = 0;
+      virtual HRESULT __stdcall SetAnnulus (
+        /*[in]*/ double innerRadius,
+        /*[in]*/ double outerRadius,
+        /*[in]*/ enum esriGeoAnalysisUnitsEnum unitsType ) = 0;
+      virtual HRESULT __stdcall SetCircle (
+        /*[in]*/ double radius,
+        /*[in]*/ enum esriGeoAnalysisUnitsEnum unitsType ) = 0;
+      virtual HRESULT __stdcall SetIrregular (
+        /*[in]*/ long height,
+        /*[in]*/ long width,
+        /*[in]*/ VARIANT * entryValues ) = 0;
+      virtual HRESULT __stdcall SetRectangle (
+        /*[in]*/ double width,
+        /*[in]*/ double height,
+        /*[in]*/ enum esriGeoAnalysisUnitsEnum unitsType ) = 0;
+      virtual HRESULT __stdcall SetWedge (
+        /*[in]*/ double radius,
+        /*[in]*/ double startAngle,
+        /*[in]*/ double endAngle,
+        /*[in]*/ enum esriGeoAnalysisUnitsEnum unitsType ) = 0;
+      virtual HRESULT __stdcall SetWeight (
+        /*[in]*/ long height,
+        /*[in]*/ long width,
+        /*[in]*/ VARIANT * entryValues ) = 0;
+};
+
+struct __declspec(uuid("fdd19da5-0881-4d0a-b7dd-9a7c3ec24702"))
+IRasterNeighborhood2 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SetDefault ( ) = 0;
+      virtual HRESULT __stdcall SetAnnulus (
+        /*[in]*/ double innerRadius,
+        /*[in]*/ double outerRadius,
+        /*[in]*/ enum esriGeoAnalysisUnitsEnum unitsType ) = 0;
+      virtual HRESULT __stdcall SetCircle (
+        /*[in]*/ double radius,
+        /*[in]*/ enum esriGeoAnalysisUnitsEnum unitsType ) = 0;
+      virtual HRESULT __stdcall SetIrregular (
+        /*[in]*/ long height,
+        /*[in]*/ long width,
+        /*[in]*/ VARIANT * entryValues ) = 0;
+      virtual HRESULT __stdcall SetRectangle (
+        /*[in]*/ double width,
+        /*[in]*/ double height,
+        /*[in]*/ enum esriGeoAnalysisUnitsEnum unitsType ) = 0;
+      virtual HRESULT __stdcall SetWedge (
+        /*[in]*/ double radius,
+        /*[in]*/ double startAngle,
+        /*[in]*/ double endAngle,
+        /*[in]*/ enum esriGeoAnalysisUnitsEnum unitsType ) = 0;
+      virtual HRESULT __stdcall SetWeight (
+        /*[in]*/ long height,
+        /*[in]*/ long width,
+        /*[in]*/ VARIANT * entryValues ) = 0;
+      virtual HRESULT __stdcall SetHighPassFilter ( ) = 0;
+      virtual HRESULT __stdcall SetLowPassFilter ( ) = 0;
+      virtual HRESULT __stdcall SetIrregularFile (
+        /*[in]*/ BSTR fileName ) = 0;
+      virtual HRESULT __stdcall SetWeightFile (
+        /*[in]*/ BSTR fileName ) = 0;
+};
+
+struct __declspec(uuid("6171288b-7d1c-4328-9160-f39ebf7d542f"))
+IGridTableOp : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall AddField (
+        /*[in]*/ struct IRasterDataset * inputGrid,
+        /*[in]*/ struct IField * Field ) = 0;
+      virtual HRESULT __stdcall DeleteField (
+        /*[in]*/ struct IRasterDataset * inputGrid,
+        /*[in]*/ struct IField * Field ) = 0;
+      virtual HRESULT __stdcall Update (
+        /*[in]*/ struct IRasterDataset * inputGrid,
+        /*[in]*/ struct IQueryFilter * QueryFilter,
+        /*[in]*/ VARIANT_BOOL recycling,
+        /*[out,retval]*/ struct ICursor * * cursor ) = 0;
+};
+
+struct __declspec(uuid("debd302a-7f6f-11d4-b278-00508bcdc779"))
+RasterConvertHelper;
+    // [ default ] interface IUnknown
+    // interface IRasterConvertHelper
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("3297e9d1-93a1-11d2-9f33-00c04f8ed1d7"))
+RasterNeighborhood;
+    // [ default ] interface IUnknown
+    // interface IRasterNeighborhood
+    // interface IRasterNeighborhood2
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("b857257d-fa9c-11d3-9f65-00c04f8ed1d7"))
+RasterConversionOp;
+    // [ default ] interface IUnknown
+    // interface IRasterAnalysisEnvironment
+    // interface IRasterAnalysisGDBEnvironment
+    // interface IRasterAnalysisGlobalEnvironment
+    // interface IRasterOpBase
+    // interface IConversionOp
+    // interface IRasterImportOp
+    // interface IRasterImportOp2
+    // interface IRasterExportOp
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("4606f169-b47d-11d2-9f3b-00c04f8ed1d7"))
+RasterTransformationOp;
+    // [ default ] interface IUnknown
+    // interface IRasterAnalysisEnvironment
+    // interface IRasterAnalysisGDBEnvironment
+    // interface IRasterAnalysisGlobalEnvironment
+    // interface IRasterOpBase
+    // interface ITransformationOp
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("555a5e29-b23d-433a-b189-ffde5dc03032"))
+GridTableOp;
+    // [ default ] interface IUnknown
+    // interface IRasterAnalysisEnvironment
+    // interface IRasterAnalysisGlobalEnvironment
+    // interface IRasterOpBase
+    // interface IGridTableOp
+    // interface ISupportErrorInfo
+
+enum __declspec(uuid("d3ce732c-9546-11d2-9f34-00c04f8ed1d7"))
+esriGeoAnalysisSemiVariogramEnum
+{
+    esriGeoAnalysisNoneVariogram = 1,
+    esriGeoAnalysisSphericalSemiVariogram = 2,
+    esriGeoAnalysisCircularSemiVariogram = 3,
+    esriGeoAnalysisExponentialSemiVariogram = 4,
+    esriGeoAnalysisGaussianSemiVariogram = 5,
+    esriGeoAnalysisLinearSemiVariogram = 6,
+    esriGeoAnalysisUniversal1SemiVariogram = 7,
+    esriGeoAnalysisUniversal2SemiVariogram = 8
+};
+
+enum __declspec(uuid("d3ce732b-9546-11d2-9f34-00c04f8ed1d7"))
+esriGeoAnalysisSplineEnum
+{
+    esriGeoAnalysisTensionSpline = 1,
+    esriGeoAnalysisRegularizedSpline = 2
+};
+
+enum __declspec(uuid("d3ce732a-9546-11d2-9f34-00c04f8ed1d7"))
+esriGeoAnalysisTrendEnum
+{
+    esriGeoAnalysisLinearTrend = 1,
+    esriGeoAnalysisLogisticTrend = 2
+};
+
+enum __declspec(uuid("6c62d0e8-f08f-11d3-a701-0008c7d3af6f"))
+esriGeoAnalysisVisibilityEnum
+{
+    esriGeoAnalysisVisibilityFrequency = 1,
+    esriGeoAnalysisVisibilityObservers = 2,
+    esriGeoAnalysisVisibilityFrequencyUseCurvature = 3,
+    esriGeoAnalysisVisibilityObserversUseCurvature = 4
+};
+
+enum __declspec(uuid("6c62d0e7-f08f-11d3-a701-0008c7d3af6f"))
+esriGeoAnalysisSlopeEnum
+{
+    esriGeoAnalysisSlopeDegrees = 1,
+    esriGeoAnalysisSlopePercentrise = 2
+};
+
+enum __declspec(uuid("50572ed1-a30a-4f9f-bf60-2a2f13d2ccd2"))
+esriGeoAnalysisEnforceEnum
+{
+    esriGeoAnalysisEnforceOff = 0,
+    esriGeoAnalysisEnforceOn = 1,
+    esriGeoAnalysisEnforceOnWithSink = 2
+};
+
+enum __declspec(uuid("cad7bfef-1dd7-11d3-9f45-00c04f8ed1d7"))
+esriGeoAnalysisSliceEnum
+{
+    esriGeoAnalysisSliceEqualInterval = 1,
+    esriGeoAnalysisSliceEqualArea = 2,
+    esriGeoAnalysisSliceNatualBreaks = 3,
+    esriGeoAnalysisSliceStandardDeviation = 4
+};
+
+struct __declspec(uuid("4606f163-b47d-11d2-9f3b-00c04f8ed1d7"))
+IRasterModel : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Script (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall BindRaster (
+        /*[in]*/ struct IRaster * Raster,
+        /*[in]*/ BSTR Symbol ) = 0;
+      virtual HRESULT __stdcall BindFeatureClass (
+        /*[in]*/ struct IFeatureClass * FeatureClass,
+        /*[in]*/ BSTR Symbol ) = 0;
+      virtual HRESULT __stdcall BindTable (
+        /*[in]*/ struct ITable * Table,
+        /*[in]*/ BSTR Symbol ) = 0;
+      virtual HRESULT __stdcall BindString (
+        /*[in]*/ BSTR strName,
+        /*[in]*/ BSTR Symbol ) = 0;
+      virtual HRESULT __stdcall Execute ( ) = 0;
+      virtual HRESULT __stdcall get_BoundRaster (
+        /*[in]*/ BSTR Symbol,
+        /*[out,retval]*/ struct IRaster * * Raster ) = 0;
+      virtual HRESULT __stdcall get_BoundFeatureClass (
+        /*[in]*/ BSTR Symbol,
+        /*[out,retval]*/ struct IFeatureClass * * FeatureClass ) = 0;
+      virtual HRESULT __stdcall get_BoundTable (
+        /*[in]*/ BSTR Symbol,
+        /*[out,retval]*/ struct ITable * * Table ) = 0;
+      virtual HRESULT __stdcall get_BoundUnknown (
+        /*[in]*/ BSTR Symbol,
+        /*[out,retval]*/ IUnknown * * whatever ) = 0;
+      virtual HRESULT __stdcall UnbindSymbol (
+        /*[in]*/ BSTR Symbol ) = 0;
+};
+
+struct __declspec(uuid("2b1e876d-0be8-11d4-80d6-00c04fa0702c"))
+IRemap : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_RecordCount (
+        /*[out,retval]*/ long * RecordCount ) = 0;
+      virtual HRESULT __stdcall put_NoDataTo (
+        /*[in]*/ long _arg1 ) = 0;
+      virtual HRESULT __stdcall QueryRecord (
+        /*[in]*/ long recordIndex,
+        /*[out]*/ BSTR * sInValue,
+        /*[out]*/ BSTR * sOutValue ) = 0;
+      virtual HRESULT __stdcall QueryNoDataTo (
+        /*[out]*/ VARIANT_BOOL * isMapped,
+        /*[out]*/ long * outValue ) = 0;
+      virtual HRESULT __stdcall Validate (
+        /*[out]*/ VARIANT_BOOL * bIsValid,
+        /*[out]*/ BSTR * sErrorInfo ) = 0;
+      virtual HRESULT __stdcall DeleteRecord (
+        /*[in]*/ long recordIndex ) = 0;
+      virtual HRESULT __stdcall Clear ( ) = 0;
+      virtual HRESULT __stdcall LoadFromTable (
+        /*[in]*/ struct ITable * remapTable ) = 0;
+      virtual HRESULT __stdcall SaveAsTable (
+        /*[in]*/ BSTR tableName ) = 0;
+      virtual HRESULT __stdcall RepresentAsTable (
+        /*[out,retval]*/ struct ITable * * ppTable ) = 0;
+      virtual HRESULT __stdcall get_MinOutputValue (
+        /*[out,retval]*/ long * MinValue ) = 0;
+      virtual HRESULT __stdcall HasValueToNoData (
+        /*[out]*/ VARIANT_BOOL * hasToNodata ) = 0;
+};
+
+struct __declspec(uuid("2b1e876e-0be8-11d4-80d6-00c04fa0702c"))
+IStringRemap : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall MapString (
+        /*[in]*/ BSTR inputString,
+        /*[in]*/ long outputValue ) = 0;
+      virtual HRESULT __stdcall MapStringToNoData (
+        /*[in]*/ BSTR inputString ) = 0;
+      virtual HRESULT __stdcall QueryStringRecord (
+        /*[in]*/ long index,
+        /*[out]*/ BSTR * inString,
+        /*[out]*/ long * outValue,
+        /*[out]*/ VARIANT_BOOL * mappedToNoData ) = 0;
+      virtual HRESULT __stdcall QueryStringValue (
+        /*[in]*/ BSTR inString,
+        /*[out]*/ long * outValue,
+        /*[out]*/ VARIANT_BOOL * isNodata ) = 0;
+      virtual HRESULT __stdcall LoadStringsFromTable (
+        /*[in]*/ struct ITable * remapTable,
+        /*[in]*/ BSTR OutFieldName,
+        /*[in]*/ BSTR inFieldName,
+        /*[in]*/ VARIANT mappingFieldName = vtMissing ) = 0;
+};
+
+struct __declspec(uuid("2b1e876f-0be8-11d4-80d6-00c04fa0702c"))
+INumberRemap : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall MapValue (
+        /*[in]*/ double value,
+        /*[in]*/ long outputValue ) = 0;
+      virtual HRESULT __stdcall MapRange (
+        /*[in]*/ double MinValue,
+        /*[in]*/ double MaxValue,
+        /*[in]*/ long outputValue ) = 0;
+      virtual HRESULT __stdcall MapValueToNoData (
+        /*[in]*/ double value ) = 0;
+      virtual HRESULT __stdcall MapRangeToNoData (
+        /*[in]*/ double MinValue,
+        /*[in]*/ double MaxValue ) = 0;
+      virtual HRESULT __stdcall QueryNumberRecord (
+        /*[in]*/ long index,
+        /*[out]*/ double * MinValue,
+        /*[out]*/ double * MaxValue,
+        /*[out]*/ long * outValue,
+        /*[out]*/ VARIANT_BOOL * mappedToNoData ) = 0;
+      virtual HRESULT __stdcall QueryNumberValue (
+        /*[in]*/ double inValue,
+        /*[out]*/ long * outValue,
+        /*[out]*/ VARIANT_BOOL * isNodata ) = 0;
+      virtual HRESULT __stdcall LoadNumbersFromTable (
+        /*[in]*/ struct ITable * remapTable,
+        /*[in]*/ BSTR OutFieldName,
+        /*[in]*/ BSTR fromFieldName,
+        /*[in]*/ VARIANT toFieldName = vtMissing,
+        /*[in]*/ VARIANT mappingFieldName = vtMissing ) = 0;
+      virtual HRESULT __stdcall LoadNumbersFromASCIIFile (
+        /*[in]*/ BSTR remapFile ) = 0;
+};
+
+struct __declspec(uuid("3297e9cd-93a1-11d2-9f33-00c04f8ed1d7"))
+IRasterRadius : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SetFixed (
+        /*[in]*/ double distance,
+        /*[in]*/ VARIANT * minCount = &vtMissing ) = 0;
+      virtual HRESULT __stdcall SetVariable (
+        /*[in]*/ long count,
+        /*[in]*/ VARIANT * maxDistance = &vtMissing ) = 0;
+};
+
+struct __declspec(uuid("4606f15f-b47d-11d2-9f3b-00c04f8ed1d7"))
+IGeoAnalysisSemiVariogram : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall DefineVariogram (
+        /*[in]*/ enum esriGeoAnalysisSemiVariogramEnum Type,
+        /*[in]*/ double aRange,
+        /*[in]*/ double sill,
+        /*[in]*/ double aNugget ) = 0;
+      virtual HRESULT __stdcall put_VariogramType (
+        /*[in]*/ enum esriGeoAnalysisSemiVariogramEnum Type ) = 0;
+      virtual HRESULT __stdcall get_VariogramType (
+        /*[out,retval]*/ enum esriGeoAnalysisSemiVariogramEnum * Type ) = 0;
+      virtual HRESULT __stdcall get_Range (
+        /*[out,retval]*/ double * Range ) = 0;
+      virtual HRESULT __stdcall get_Nugget (
+        /*[out,retval]*/ double * Nugget ) = 0;
+      virtual HRESULT __stdcall get_PartialSill (
+        /*[out,retval]*/ double * sill ) = 0;
+      virtual HRESULT __stdcall put_Lag (
+        /*[in]*/ double Lag ) = 0;
+      virtual HRESULT __stdcall get_Lag (
+        /*[out,retval]*/ double * Lag ) = 0;
+};
+
+struct __declspec(uuid("d3ce7322-9546-11d2-9f34-00c04f8ed1d7"))
+IInterpolationOp : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall IDW (
+        /*[in]*/ struct IGeoDataset * geoData,
+        /*[in]*/ double power,
+        /*[in]*/ struct IRasterRadius * radius,
+        /*[in]*/ VARIANT * barrier,
+        /*[out,retval]*/ struct IGeoDataset * * GeoDataset ) = 0;
+      virtual HRESULT __stdcall Krige (
+        /*[in]*/ struct IGeoDataset * geoData,
+        /*[in]*/ enum esriGeoAnalysisSemiVariogramEnum semiVariogramType,
+        /*[in]*/ struct IRasterRadius * radius,
+        /*[in]*/ VARIANT_BOOL outSemiVariance,
+        /*[in]*/ VARIANT * barrier,
+        /*[out,retval]*/ struct IGeoDataset * * interpolatedRaster ) = 0;
+      virtual HRESULT __stdcall Variogram (
+        /*[in]*/ struct IGeoDataset * geoData,
+        /*[in]*/ struct IGeoAnalysisSemiVariogram * semiVariogram,
+        /*[in]*/ struct IRasterRadius * radius,
+        /*[in]*/ VARIANT_BOOL outSemiVariance,
+        /*[in]*/ VARIANT * barrier,
+        /*[out,retval]*/ struct IGeoDataset * * interpolatedRaster ) = 0;
+      virtual HRESULT __stdcall Spline (
+        /*[in]*/ struct IGeoDataset * geoData,
+        /*[in]*/ enum esriGeoAnalysisSplineEnum splineType,
+        /*[in]*/ VARIANT * weight,
+        /*[in]*/ VARIANT * numPoints,
+        /*[out,retval]*/ struct IGeoDataset * * interpolatedRaster ) = 0;
+      virtual HRESULT __stdcall Trend (
+        /*[in]*/ struct IGeoDataset * geoData,
+        /*[in]*/ enum esriGeoAnalysisTrendEnum trendType,
+        /*[in]*/ long order,
+        /*[out,retval]*/ struct IGeoDataset * * interpolatedRaster ) = 0;
+};
+
+struct __declspec(uuid("d91b6722-30a8-4663-b5c5-a3a76c522bab"))
+IInterpolationOp2 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall IDW (
+        /*[in]*/ struct IGeoDataset * geoData,
+        /*[in]*/ double power,
+        /*[in]*/ struct IRasterRadius * radius,
+        /*[in]*/ VARIANT * barrier,
+        /*[out,retval]*/ struct IGeoDataset * * GeoDataset ) = 0;
+      virtual HRESULT __stdcall Krige (
+        /*[in]*/ struct IGeoDataset * geoData,
+        /*[in]*/ enum esriGeoAnalysisSemiVariogramEnum semiVariogramType,
+        /*[in]*/ struct IRasterRadius * radius,
+        /*[in]*/ VARIANT_BOOL outSemiVariance,
+        /*[in]*/ VARIANT * barrier,
+        /*[out,retval]*/ struct IGeoDataset * * interpolatedRaster ) = 0;
+      virtual HRESULT __stdcall Variogram (
+        /*[in]*/ struct IGeoDataset * geoData,
+        /*[in]*/ struct IGeoAnalysisSemiVariogram * semiVariogram,
+        /*[in]*/ struct IRasterRadius * radius,
+        /*[in]*/ VARIANT_BOOL outSemiVariance,
+        /*[in]*/ VARIANT * barrier,
+        /*[out,retval]*/ struct IGeoDataset * * interpolatedRaster ) = 0;
+      virtual HRESULT __stdcall Spline (
+        /*[in]*/ struct IGeoDataset * geoData,
+        /*[in]*/ enum esriGeoAnalysisSplineEnum splineType,
+        /*[in]*/ VARIANT * weight,
+        /*[in]*/ VARIANT * numPoints,
+        /*[out,retval]*/ struct IGeoDataset * * interpolatedRaster ) = 0;
+      virtual HRESULT __stdcall Trend (
+        /*[in]*/ struct IGeoDataset * geoData,
+        /*[in]*/ enum esriGeoAnalysisTrendEnum trendType,
+        /*[in]*/ long order,
+        /*[out,retval]*/ struct IGeoDataset * * interpolatedRaster ) = 0;
+      virtual HRESULT __stdcall NaturalNeighbor (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall TopoToRasterByFile (
+        /*[in]*/ BSTR paramFile,
+        /*[out]*/ struct IFeatureClass * * outStream,
+        /*[out]*/ struct IFeatureClass * * outSink,
+        /*[out,retval]*/ struct IRasterDataset * * outSurface ) = 0;
+};
+
+struct __declspec(uuid("4bc64b50-51ef-4d19-a56d-7c10521dface"))
+IInterpolationOp3 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall IDW (
+        /*[in]*/ struct IGeoDataset * geoData,
+        /*[in]*/ double power,
+        /*[in]*/ struct IRasterRadius * radius,
+        /*[in]*/ VARIANT * barrier,
+        /*[out,retval]*/ struct IGeoDataset * * GeoDataset ) = 0;
+      virtual HRESULT __stdcall Krige (
+        /*[in]*/ struct IGeoDataset * geoData,
+        /*[in]*/ enum esriGeoAnalysisSemiVariogramEnum semiVariogramType,
+        /*[in]*/ struct IRasterRadius * radius,
+        /*[in]*/ VARIANT_BOOL outSemiVariance,
+        /*[in]*/ VARIANT * barrier,
+        /*[out,retval]*/ struct IGeoDataset * * interpolatedRaster ) = 0;
+      virtual HRESULT __stdcall Variogram (
+        /*[in]*/ struct IGeoDataset * geoData,
+        /*[in]*/ struct IGeoAnalysisSemiVariogram * semiVariogram,
+        /*[in]*/ struct IRasterRadius * radius,
+        /*[in]*/ VARIANT_BOOL outSemiVariance,
+        /*[in]*/ VARIANT * barrier,
+        /*[out,retval]*/ struct IGeoDataset * * interpolatedRaster ) = 0;
+      virtual HRESULT __stdcall Spline (
+        /*[in]*/ struct IGeoDataset * geoData,
+        /*[in]*/ enum esriGeoAnalysisSplineEnum splineType,
+        /*[in]*/ VARIANT * weight,
+        /*[in]*/ VARIANT * numPoints,
+        /*[out,retval]*/ struct IGeoDataset * * interpolatedRaster ) = 0;
+      virtual HRESULT __stdcall Trend (
+        /*[in]*/ struct IGeoDataset * geoData,
+        /*[in]*/ enum esriGeoAnalysisTrendEnum trendType,
+        /*[in]*/ long order,
+        /*[out,retval]*/ struct IGeoDataset * * interpolatedRaster ) = 0;
+      virtual HRESULT __stdcall NaturalNeighbor (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall TopoToRasterByFile (
+        /*[in]*/ BSTR paramFile,
+        /*[out]*/ struct IFeatureClass * * outStream,
+        /*[out]*/ struct IFeatureClass * * outSink,
+        /*[out,retval]*/ struct IRasterDataset * * outSurface ) = 0;
+      virtual HRESULT __stdcall TrendWithRms (
+        /*[in]*/ struct IGeoDataset * geoData,
+        /*[in]*/ enum esriGeoAnalysisTrendEnum trendType,
+        /*[in]*/ long order,
+        BSTR out_rms_file,
+        /*[out,retval]*/ struct IGeoDataset * * interpolatedRaster ) = 0;
+};
+
+struct __declspec(uuid("cad7bfee-1dd7-11d3-9f45-00c04f8ed1d7"))
+IReclassOp : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Reclass (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ struct ITable * remapTable,
+        /*[in]*/ BSTR fromField,
+        /*[in]*/ BSTR toField,
+        /*[in]*/ BSTR OutField,
+        /*[in]*/ VARIANT_BOOL retainMissingValues,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall Slice (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ enum esriGeoAnalysisSliceEnum sliceType,
+        /*[in]*/ long zoneCount,
+        /*[in]*/ VARIANT * baseZone,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall Lookup (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ BSTR FieldName,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall ReclassByRemap (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ struct IRemap * Remap,
+        /*[in]*/ VARIANT_BOOL retainMissingValues,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall ReclassByASCIIFile (
+        /*[in]*/ struct IGeoDataset * inRaster,
+        /*[in]*/ BSTR sRemapFile,
+        /*[in]*/ VARIANT_BOOL retainMissingValues,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+};
+
+struct __declspec(uuid("4606f164-b47d-11d2-9f3b-00c04f8ed1d7"))
+ISurfaceOp : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall HillShade (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ double azimuth,
+        /*[in]*/ double altitude,
+        /*[in]*/ VARIANT_BOOL inModelShadows,
+        /*[in]*/ VARIANT * zFactor,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall Slope (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ enum esriGeoAnalysisSlopeEnum slopeType,
+        /*[in]*/ VARIANT * zFactor,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall Aspect (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall CutFill (
+        /*[in]*/ struct IGeoDataset * beforeGeoDataset,
+        /*[in]*/ struct IGeoDataset * afterGeoDataset,
+        /*[in]*/ VARIANT * zFactor,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall Curvature (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ VARIANT_BOOL profile,
+        /*[in]*/ VARIANT_BOOL plan,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall Contour (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ double interval,
+        /*[in]*/ VARIANT * base,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall ContourList (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ VARIANT * contoursArray,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall ContoursAsPolylines (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ struct IPointCollection * inputPoints,
+        /*[out]*/ struct IGeometryCollection * * contourLines,
+        /*[out]*/ struct IPointCollection * * outputPointsWithElevations ) = 0;
+      virtual HRESULT __stdcall ContourAsPolyline (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ struct IPoint * inputPoint,
+        /*[out]*/ struct IPolyline * * contourLine,
+        /*[out]*/ double * elevation ) = 0;
+      virtual HRESULT __stdcall Visibility (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ struct IGeoDataset * observers,
+        /*[in]*/ enum esriGeoAnalysisVisibilityEnum visType,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+};
+
+struct __declspec(uuid("1b987743-5ec7-4722-8ae3-15d78ad1dd41"))
+ISurfaceOp2 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall HillShade (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ double azimuth,
+        /*[in]*/ double altitude,
+        /*[in]*/ VARIANT_BOOL inModelShadows,
+        /*[in]*/ VARIANT * zFactor,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall Slope (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ enum esriGeoAnalysisSlopeEnum slopeType,
+        /*[in]*/ VARIANT * zFactor,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall Aspect (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall CutFill (
+        /*[in]*/ struct IGeoDataset * beforeGeoDataset,
+        /*[in]*/ struct IGeoDataset * afterGeoDataset,
+        /*[in]*/ VARIANT * zFactor,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall Contour (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ double interval,
+        /*[in]*/ VARIANT * base,
+        /*[in]*/ VARIANT * zFactor,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall Curvature (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ VARIANT_BOOL profile,
+        /*[in]*/ VARIANT_BOOL plan,
+        /*[in]*/ VARIANT * zFactor,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall ContourList (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ VARIANT * contoursArray,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall ContoursAsPolylines (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ struct IPointCollection * inputPoints,
+        /*[out]*/ struct IGeometryCollection * * contourLines,
+        /*[out]*/ struct IPointCollection * * outputPointsWithElevations ) = 0;
+      virtual HRESULT __stdcall ContourAsPolyline (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ struct IPoint * inputPoint,
+        /*[out]*/ struct IPolyline * * contourLine,
+        /*[out]*/ double * elevation ) = 0;
+      virtual HRESULT __stdcall Visibility (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[in]*/ struct IGeoDataset * observers,
+        /*[in]*/ enum esriGeoAnalysisVisibilityEnum visType,
+        /*[in]*/ VARIANT * pZFactor,
+        /*[in]*/ VARIANT * pRefractivityCoefficient,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+};
+
+struct __declspec(uuid("8608e339-8743-11d4-b278-00508bcdc779"))
+IMathSupportOp : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Divide (
+        /*[in]*/ struct IGeoDataset * geoDataset1,
+        /*[in]*/ struct IGeoDataset * geoDataset2,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall Minus (
+        /*[in]*/ struct IGeoDataset * geoDataset1,
+        /*[in]*/ struct IGeoDataset * geoDataset2,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall Plus (
+        /*[in]*/ struct IGeoDataset * geoDataset1,
+        /*[in]*/ struct IGeoDataset * geoDataset2,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall Times (
+        /*[in]*/ struct IGeoDataset * geoDataset1,
+        /*[in]*/ struct IGeoDataset * geoDataset2,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall Int (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall Float (
+        /*[in]*/ struct IGeoDataset * GeoDataset,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+};
+
+struct __declspec(uuid("cc0b70d3-ea20-11d3-9f63-00c04f8ed1d7"))
+IRasterMakerOp : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall MakeConstant (
+        /*[in]*/ double value,
+        /*[in]*/ VARIANT_BOOL treatAsInteger,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall MakeNormal (
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+      virtual HRESULT __stdcall MakeRandom (
+        /*[in]*/ VARIANT seed,
+        /*[out,retval]*/ struct IGeoDataset * * outGeoDataset ) = 0;
+};
+
+struct __declspec(uuid("2b1e876b-0be8-11d4-80d6-00c04fa0702c"))
+StringRemap;
+    // [ default ] interface IUnknown
+    // interface IRemap
+    // interface IStringRemap
+    // interface IClone
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("2b1e876c-0be8-11d4-80d6-00c04fa0702c"))
+NumberRemap;
+    // [ default ] interface IUnknown
+    // interface IRemap
+    // interface INumberRemap
+    // interface IClone
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("3297e9d2-93a1-11d2-9f33-00c04f8ed1d7"))
+RasterRadius;
+    // [ default ] interface IUnknown
+    // interface IRasterRadius
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("e73c39ec-6f70-482c-9cde-aff5d4f003e9"))
+GeoAnalysisSemiVariogram;
+    // [ default ] interface IUnknown
+    // interface IGeoAnalysisSemiVariogram
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("d3ce7332-9546-11d2-9f34-00c04f8ed1d7"))
+RasterInterpolationOp;
+    // [ default ] interface IUnknown
+    // interface IRasterAnalysisEnvironment
+    // interface IRasterAnalysisGlobalEnvironment
+    // interface IRasterOpBase
+    // interface IInterpolationOp
+    // interface IInterpolationOp2
+    // interface IInterpolationOp3
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("2ef07b2a-8744-11d4-b278-00508bcdc779"))
+RasterMathSupportOp;
+    // [ default ] interface IUnknown
+    // interface IRasterAnalysisEnvironment
+    // interface IRasterAnalysisGlobalEnvironment
+    // interface IRasterOpBase
+    // interface IMathSupportOp
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("fe6ec115-1e85-11d3-9f45-00c04f8ed1d7"))
+RasterReclassOp;
+    // [ default ] interface IUnknown
+    // interface IRasterAnalysisEnvironment
+    // interface IRasterAnalysisGlobalEnvironment
+    // interface IRasterOpBase
+    // interface IReclassOp
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("cd568b5f-ca31-11d2-9f3c-00c04f8ed1d7"))
+RasterSurfaceOp;
+    // [ default ] interface IUnknown
+    // interface IRasterAnalysisEnvironment
+    // interface IRasterAnalysisGlobalEnvironment
+    // interface IRasterOpBase
+    // interface ISurfaceOp
+    // interface ISurfaceOp2
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("e965d7e7-ebe0-11d3-9f63-00c04f8ed1d7"))
+RasterMakerOp;
+    // [ default ] interface IUnknown
+    // interface IRasterAnalysisEnvironment
+    // interface IRasterAnalysisGlobalEnvironment
+    // interface IRasterOpBase
+    // interface IRasterMakerOp
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("4606f162-b47d-11d2-9f3b-00c04f8ed1d7"))
+RasterModel;
+    // [ default ] interface IUnknown
+    // interface IRasterAnalysisEnvironment
+    // interface IRasterAnalysisGlobalEnvironment
+    // interface IRasterOpBase
+    // interface IRasterModel
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("469a6fe2-0bbb-411b-be0c-4bf2ba4d6346"))
+IMLClassifyFunctionArguments : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Raster (
+        /*[out,retval]*/ IUnknown * * ppRaster ) = 0;
+      virtual HRESULT __stdcall putref_Raster (
+        /*[in]*/ IUnknown * ppRaster ) = 0;
+      virtual HRESULT __stdcall get_SignatureFile (
+        /*[out,retval]*/ BSTR * pFile ) = 0;
+      virtual HRESULT __stdcall put_SignatureFile (
+        /*[in]*/ BSTR pFile ) = 0;
+};
+
+struct __declspec(uuid("5803078b-af97-4388-9b9e-7657ae76a310"))
+MLClassifyFunction;
+    // [ default ] interface IUnknown
+    // interface IRasterFunction
+    // interface IPersist
+    // interface IPersistStream
+    // interface IXMLSerialize
+    // interface IXMLVersionSupport
+
+struct __declspec(uuid("c1570587-e9ea-43cc-b938-545b1ef289fe"))
+MLClassifyFunctionArguments;
+    // [ default ] interface IUnknown
+    // interface IRasterFunctionArguments
+    // interface IMLClassifyFunctionArguments
+    // interface IPersist
+    // interface IPersistStream
+    // interface IXMLSerialize
+    // interface IXMLVersionSupport
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_esriGeoAnalyst =
+    {0x5c54042b,0xb2ed,0x4889,{0x8c,0x40,0x2d,0x89,0xc1,0x9d,0xb4,0x1d}};
+extern "C" const GUID __declspec(selectany) IID_IRasterOpBase =
+    {0x3a6957fc,0xa3f2,0x4a62,{0x99,0xda,0x53,0x62,0x83,0x37,0x77,0xf3}};
+extern "C" const GUID __declspec(selectany) IID_IGeoAnalysisEnvironment =
+    {0x3297e9c8,0x93a1,0x11d2,{0x9f,0x33,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) IID_IGeoDataDescriptor =
+    {0x18bdbec1,0xc45c,0x11d3,{0x9f,0x5e,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) IID_IFeatureClassDescriptor =
+    {0x3297e9ce,0x93a1,0x11d2,{0x9f,0x33,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) IID_IRasterDescriptor =
+    {0x296e7f60,0xd1c8,0x11d2,{0x9f,0x3c,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) IID_IRasterAnalysisEnvironment =
+    {0x3297e9c5,0x93a1,0x11d2,{0x9f,0x33,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) IID_IRasterAnalysisGlobalEnvironment =
+    {0x5aa98a9d,0x7f47,0x4d69,{0xad,0x97,0x0f,0xe4,0x89,0x3f,0x5d,0xee}};
+extern "C" const GUID __declspec(selectany) IID_IRasterAnalysisGDBEnvironment =
+    {0x823763c2,0x2855,0x43d2,{0x88,0xcf,0x32,0x18,0x15,0xc1,0x76,0x85}};
+extern "C" const GUID __declspec(selectany) CLSID_FeatureClassDescriptor =
+    {0x3297e9d3,0x93a1,0x11d2,{0x9f,0x33,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) CLSID_RasterDescriptor =
+    {0x296e7f5f,0xd1c8,0x11d2,{0x9f,0x3c,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) CLSID_RasterAnalysis =
+    {0x3549c4f9,0xf9c2,0x11d3,{0x9f,0x64,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) IID_IConversionOp =
+    {0x3297e9ca,0x93a1,0x11d2,{0x9f,0x33,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) IID_IRasterImportOp =
+    {0x90c52cfe,0x8e74,0x11d4,{0x80,0xf4,0x00,0xc0,0x4f,0xa0,0x70,0x2c}};
+extern "C" const GUID __declspec(selectany) IID_IRasterImportOp2 =
+    {0xa0c91fcd,0x43f4,0x4a9b,{0x85,0x41,0xfa,0xb7,0x7b,0x03,0x8c,0x83}};
+extern "C" const GUID __declspec(selectany) IID_IRasterExportOp =
+    {0x30a4a132,0x00ac,0x4f44,{0xbd,0xc6,0xa0,0x20,0xec,0x43,0xad,0x37}};
+extern "C" const GUID __declspec(selectany) IID_ITransformationOp =
+    {0x640e4db6,0xf223,0x11d3,{0xa0,0x7f,0x00,0xc0,0x4f,0x68,0xe6,0x99}};
+extern "C" const GUID __declspec(selectany) IID_IRasterConvertHelper =
+    {0xdebd3029,0x7f6f,0x11d4,{0xb2,0x78,0x00,0x50,0x8b,0xcd,0xc7,0x79}};
+extern "C" const GUID __declspec(selectany) IID_IRasterNeighborhood =
+    {0x3297e9cc,0x93a1,0x11d2,{0x9f,0x33,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) IID_IRasterNeighborhood2 =
+    {0xfdd19da5,0x0881,0x4d0a,{0xb7,0xdd,0x9a,0x7c,0x3e,0xc2,0x47,0x02}};
+extern "C" const GUID __declspec(selectany) IID_IGridTableOp =
+    {0x6171288b,0x7d1c,0x4328,{0x91,0x60,0xf3,0x9e,0xbf,0x7d,0x54,0x2f}};
+extern "C" const GUID __declspec(selectany) CLSID_RasterConvertHelper =
+    {0xdebd302a,0x7f6f,0x11d4,{0xb2,0x78,0x00,0x50,0x8b,0xcd,0xc7,0x79}};
+extern "C" const GUID __declspec(selectany) CLSID_RasterNeighborhood =
+    {0x3297e9d1,0x93a1,0x11d2,{0x9f,0x33,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) CLSID_RasterConversionOp =
+    {0xb857257d,0xfa9c,0x11d3,{0x9f,0x65,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) CLSID_RasterTransformationOp =
+    {0x4606f169,0xb47d,0x11d2,{0x9f,0x3b,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) CLSID_GridTableOp =
+    {0x555a5e29,0xb23d,0x433a,{0xb1,0x89,0xff,0xde,0x5d,0xc0,0x30,0x32}};
+extern "C" const GUID __declspec(selectany) IID_IRasterModel =
+    {0x4606f163,0xb47d,0x11d2,{0x9f,0x3b,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) IID_IRemap =
+    {0x2b1e876d,0x0be8,0x11d4,{0x80,0xd6,0x00,0xc0,0x4f,0xa0,0x70,0x2c}};
+extern "C" const GUID __declspec(selectany) IID_IStringRemap =
+    {0x2b1e876e,0x0be8,0x11d4,{0x80,0xd6,0x00,0xc0,0x4f,0xa0,0x70,0x2c}};
+extern "C" const GUID __declspec(selectany) IID_INumberRemap =
+    {0x2b1e876f,0x0be8,0x11d4,{0x80,0xd6,0x00,0xc0,0x4f,0xa0,0x70,0x2c}};
+extern "C" const GUID __declspec(selectany) IID_IRasterRadius =
+    {0x3297e9cd,0x93a1,0x11d2,{0x9f,0x33,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) IID_IGeoAnalysisSemiVariogram =
+    {0x4606f15f,0xb47d,0x11d2,{0x9f,0x3b,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) IID_IInterpolationOp =
+    {0xd3ce7322,0x9546,0x11d2,{0x9f,0x34,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) IID_IInterpolationOp2 =
+    {0xd91b6722,0x30a8,0x4663,{0xb5,0xc5,0xa3,0xa7,0x6c,0x52,0x2b,0xab}};
+extern "C" const GUID __declspec(selectany) IID_IInterpolationOp3 =
+    {0x4bc64b50,0x51ef,0x4d19,{0xa5,0x6d,0x7c,0x10,0x52,0x1d,0xfa,0xce}};
+extern "C" const GUID __declspec(selectany) IID_IReclassOp =
+    {0xcad7bfee,0x1dd7,0x11d3,{0x9f,0x45,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) IID_ISurfaceOp =
+    {0x4606f164,0xb47d,0x11d2,{0x9f,0x3b,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) IID_ISurfaceOp2 =
+    {0x1b987743,0x5ec7,0x4722,{0x8a,0xe3,0x15,0xd7,0x8a,0xd1,0xdd,0x41}};
+extern "C" const GUID __declspec(selectany) IID_IMathSupportOp =
+    {0x8608e339,0x8743,0x11d4,{0xb2,0x78,0x00,0x50,0x8b,0xcd,0xc7,0x79}};
+extern "C" const GUID __declspec(selectany) IID_IRasterMakerOp =
+    {0xcc0b70d3,0xea20,0x11d3,{0x9f,0x63,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) CLSID_StringRemap =
+    {0x2b1e876b,0x0be8,0x11d4,{0x80,0xd6,0x00,0xc0,0x4f,0xa0,0x70,0x2c}};
+extern "C" const GUID __declspec(selectany) CLSID_NumberRemap =
+    {0x2b1e876c,0x0be8,0x11d4,{0x80,0xd6,0x00,0xc0,0x4f,0xa0,0x70,0x2c}};
+extern "C" const GUID __declspec(selectany) CLSID_RasterRadius =
+    {0x3297e9d2,0x93a1,0x11d2,{0x9f,0x33,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) CLSID_GeoAnalysisSemiVariogram =
+    {0xe73c39ec,0x6f70,0x482c,{0x9c,0xde,0xaf,0xf5,0xd4,0xf0,0x03,0xe9}};
+extern "C" const GUID __declspec(selectany) CLSID_RasterInterpolationOp =
+    {0xd3ce7332,0x9546,0x11d2,{0x9f,0x34,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) CLSID_RasterMathSupportOp =
+    {0x2ef07b2a,0x8744,0x11d4,{0xb2,0x78,0x00,0x50,0x8b,0xcd,0xc7,0x79}};
+extern "C" const GUID __declspec(selectany) CLSID_RasterReclassOp =
+    {0xfe6ec115,0x1e85,0x11d3,{0x9f,0x45,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) CLSID_RasterSurfaceOp =
+    {0xcd568b5f,0xca31,0x11d2,{0x9f,0x3c,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) CLSID_RasterMakerOp =
+    {0xe965d7e7,0xebe0,0x11d3,{0x9f,0x63,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) CLSID_RasterModel =
+    {0x4606f162,0xb47d,0x11d2,{0x9f,0x3b,0x00,0xc0,0x4f,0x8e,0xd1,0xd7}};
+extern "C" const GUID __declspec(selectany) IID_IMLClassifyFunctionArguments =
+    {0x469a6fe2,0x0bbb,0x411b,{0xbe,0x0c,0x4b,0xf2,0xba,0x4d,0x63,0x46}};
+extern "C" const GUID __declspec(selectany) CLSID_MLClassifyFunction =
+    {0x5803078b,0xaf97,0x4388,{0x9b,0x9e,0x76,0x57,0xae,0x76,0xa3,0x10}};
+extern "C" const GUID __declspec(selectany) CLSID_MLClassifyFunctionArguments =
+    {0xc1570587,0xe9ea,0x43cc,{0xb9,0x38,0x54,0x5b,0x1e,0xf2,0x89,0xfe}};
+
+#pragma pack(pop)

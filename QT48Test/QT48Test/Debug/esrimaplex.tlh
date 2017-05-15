@@ -1,0 +1,256 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (ef06c02d).
+//
+// e:\vsproject\qt48test\qt48test\debug\esrimaplex.tlh
+//
+// C++ source equivalent of Win32 type library esrimaplex.olb
+// compiler-generated file created 06/01/16 at 16:28:39 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("aee93e77-d204-4e9f-8cf8-5c90ec49f424"))
+/* LIBID */ __esriMaplex;
+struct __declspec(uuid("20664808-0e3a-1eee-9f83-fee34e5a6ea5"))
+/* interface */ IMaplexAnnotateMap;
+struct /* coclass */ MaplexAnnotateMap;
+struct /* coclass */ MaplexAnnotateFeature;
+enum esriMaplexTextPathType;
+struct __declspec(uuid("20664808-b1b4-ad3d-90dd-08a009ec732a"))
+/* interface */ IMaplexPlacedLabel;
+struct __declspec(uuid("20664808-3fe5-17a9-8ddf-0ea039e4139d"))
+/* interface */ IEnumMaplexPlacedLabel;
+struct __declspec(uuid("20664808-0a3b-1eec-9fd3-feef422a6ea5"))
+/* interface */ IMaplexOverposter;
+struct /* coclass */ MaplexOverposter;
+struct /* coclass */ MaplexPlacedLabel;
+struct /* coclass */ EnumMaplexPlacedLabel;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IMaplexAnnotateMap, __uuidof(IMaplexAnnotateMap));
+_COM_SMARTPTR_TYPEDEF(IMaplexPlacedLabel, __uuidof(IMaplexPlacedLabel));
+_COM_SMARTPTR_TYPEDEF(IEnumMaplexPlacedLabel, __uuidof(IEnumMaplexPlacedLabel));
+_COM_SMARTPTR_TYPEDEF(IMaplexOverposter, __uuidof(IMaplexOverposter));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("20664808-0e3a-1eee-9f83-fee34e5a6ea5"))
+IMaplexAnnotateMap : IUnknown
+{};
+
+struct __declspec(uuid("20664808-14ec-11d2-a27e-080009b6f22b"))
+MaplexAnnotateMap;
+    // [ default ] interface IUnknown
+    // interface IAnnotateMap
+    // interface IAnnotateMap2
+    // interface IMaplexAnnotateMap
+    // interface IConnectionPointContainer
+    // interface IPersist
+    // interface IPersistStream
+    // interface ISupportErrorInfo
+    // [ default, source ] interface IAnnotationErrorEvents
+
+struct __declspec(uuid("20664808-c2f5-1dd2-9a30-0ec04f6bc630"))
+MaplexAnnotateFeature;
+    // [ default ] interface IUnknown
+    // interface IAnnotateFeature
+    // interface IAnnotateFeature2
+
+enum __declspec(uuid("7eb2a566-f436-46e4-b181-8ee70de57d58"))
+esriMaplexTextPathType
+{
+    esriMaplexSimpleTextPath = 0,
+    esriMaplexOverposterTextPath = 1,
+    esriMaplexWordTextPath = 2
+};
+
+struct __declspec(uuid("20664808-b1b4-ad3d-90dd-08a009ec732a"))
+IMaplexPlacedLabel : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ObjectType (
+        /*[out,retval]*/ enum esriPlacedObjectType * type ) = 0;
+      virtual HRESULT __stdcall put_ObjectType (
+        /*[in]*/ enum esriPlacedObjectType type ) = 0;
+      virtual HRESULT __stdcall get_Label (
+        /*[out,retval]*/ BSTR * Label ) = 0;
+      virtual HRESULT __stdcall put_Label (
+        /*[in]*/ BSTR Label ) = 0;
+      virtual HRESULT __stdcall get_TextPath (
+        /*[out,retval]*/ struct IGeometry * * shape ) = 0;
+      virtual HRESULT __stdcall put_TextPath (
+        /*[in]*/ struct IGeometry * shape ) = 0;
+      virtual HRESULT __stdcall get_TextPathType (
+        /*[out,retval]*/ enum esriMaplexTextPathType * TextPathType ) = 0;
+      virtual HRESULT __stdcall put_TextPathType (
+        /*[in]*/ enum esriMaplexTextPathType TextPathType ) = 0;
+      virtual HRESULT __stdcall get_FeatureID (
+        /*[out,retval]*/ long * FeatureID ) = 0;
+      virtual HRESULT __stdcall put_FeatureID (
+        /*[in]*/ long FeatureID ) = 0;
+      virtual HRESULT __stdcall get_PlacementCode (
+        /*[out,retval]*/ enum esriPlacementCode * PlacementCode ) = 0;
+      virtual HRESULT __stdcall put_PlacementCode (
+        /*[in]*/ enum esriPlacementCode PlacementCode ) = 0;
+      virtual HRESULT __stdcall get_ClassIndex (
+        /*[out,retval]*/ long * index ) = 0;
+      virtual HRESULT __stdcall put_ClassIndex (
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall get_Size (
+        /*[out,retval]*/ double * Size ) = 0;
+      virtual HRESULT __stdcall put_Size (
+        /*[in]*/ double Size ) = 0;
+      virtual HRESULT __stdcall get_CharacterWidth (
+        /*[out,retval]*/ double * width ) = 0;
+      virtual HRESULT __stdcall put_CharacterWidth (
+        /*[in]*/ double width ) = 0;
+      virtual HRESULT __stdcall get_WordSpacing (
+        /*[out,retval]*/ double * spacing ) = 0;
+      virtual HRESULT __stdcall put_WordSpacing (
+        /*[in]*/ double spacing ) = 0;
+      virtual HRESULT __stdcall get_CharacterSpacing (
+        /*[out,retval]*/ double * spacing ) = 0;
+      virtual HRESULT __stdcall put_CharacterSpacing (
+        /*[in]*/ double spacing ) = 0;
+      virtual HRESULT __stdcall get_Leading (
+        /*[out,retval]*/ double * Leading ) = 0;
+      virtual HRESULT __stdcall put_Leading (
+        /*[in]*/ double Leading ) = 0;
+      virtual HRESULT __stdcall get_HorizontalAlignment (
+        /*[out,retval]*/ enum esriTextHorizontalAlignment * alignment ) = 0;
+      virtual HRESULT __stdcall put_HorizontalAlignment (
+        /*[in]*/ enum esriTextHorizontalAlignment alignment ) = 0;
+      virtual HRESULT __stdcall get_AnchorPoint (
+        /*[out,retval]*/ struct IPoint * * AnchorPoint ) = 0;
+      virtual HRESULT __stdcall put_AnchorPoint (
+        /*[in]*/ struct IPoint * AnchorPoint ) = 0;
+      virtual HRESULT __stdcall get_Bounds (
+        /*[out,retval]*/ struct IPolygon * * Bounds ) = 0;
+      virtual HRESULT __stdcall put_Bounds (
+        /*[in]*/ struct IPolygon * Bounds ) = 0;
+      virtual HRESULT __stdcall put_CJKCharactersRotation (
+        /*[in]*/ VARIANT_BOOL Rotation ) = 0;
+      virtual HRESULT __stdcall get_CJKCharactersRotation (
+        /*[out,retval]*/ VARIANT_BOOL * Rotation ) = 0;
+};
+
+struct __declspec(uuid("20664808-3fe5-17a9-8ddf-0ea039e4139d"))
+IEnumMaplexPlacedLabel : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Next (
+        /*[out,retval]*/ struct IMaplexPlacedLabel * * Label ) = 0;
+      virtual HRESULT __stdcall Reset ( ) = 0;
+};
+
+struct __declspec(uuid("20664808-0a3b-1eec-9fd3-feef422a6ea5"))
+IMaplexOverposter : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Initialize (
+        /*[in]*/ struct IEnvelope * extent,
+        /*[in]*/ struct IDisplay * display,
+        /*[in]*/ struct ISpatialReference * spatialReference,
+        /*[in]*/ struct IMaplexOverposterProperties * overposterProps,
+        /*[in]*/ struct ITrackCancel * trackCancel ) = 0;
+      virtual HRESULT __stdcall get_Capabilities (
+        /*[in]*/ struct ILayer * layer,
+        /*[out,retval]*/ enum esriOverposterCaps * caps ) = 0;
+      virtual HRESULT __stdcall get_ClassCount (
+        /*[out,retval]*/ long * count ) = 0;
+      virtual HRESULT __stdcall AddClass (
+        /*[in]*/ struct ILabelEngineLayerProperties * props,
+        /*[out,retval]*/ long * ClassIndex ) = 0;
+      virtual HRESULT __stdcall ResetClasses ( ) = 0;
+      virtual HRESULT __stdcall AddFeature (
+        /*[in]*/ long ClassIndex,
+        /*[in]*/ struct IGeometry * featureShape,
+        /*[in]*/ struct ISymbol * featureSymbol,
+        /*[in]*/ long FeatureID,
+        /*[in]*/ BSTR Label,
+        /*[in]*/ double labelAngle,
+        /*[in]*/ long mapLevel ) = 0;
+      virtual HRESULT __stdcall AddBarriers (
+        /*[in]*/ enum esriBasicOverposterWeight weight,
+        /*[in]*/ struct IGeometryCollection * barriers ) = 0;
+      virtual HRESULT __stdcall AddSymbol (
+        /*[in]*/ long ClassIndex,
+        /*[in]*/ struct ISymbol * symbol,
+        /*[in]*/ struct IGeometry * geometry,
+        /*[in]*/ long FeatureID ) = 0;
+      virtual HRESULT __stdcall PlaceLabels ( ) = 0;
+      virtual HRESULT __stdcall get_PlacedLabelCount (
+        /*[out,retval]*/ long * count ) = 0;
+      virtual HRESULT __stdcall get_UnplacedLabelCount (
+        /*[out,retval]*/ long * count ) = 0;
+      virtual HRESULT __stdcall get_PlacedLabels (
+        /*[out,retval]*/ struct IEnumMaplexPlacedLabel * * labels ) = 0;
+      virtual HRESULT __stdcall get_UnplacedLabels (
+        /*[out,retval]*/ struct IEnumMaplexPlacedLabel * * labels ) = 0;
+};
+
+struct __declspec(uuid("20664808-38e2-11d1-8809-080009ec732a"))
+MaplexOverposter;
+    // [ default ] interface IUnknown
+    // interface IMaplexOverposter
+
+struct __declspec(uuid("20664808-82fa-ac15-f40c-0dabc9eed31a"))
+MaplexPlacedLabel;
+    // [ default ] interface IUnknown
+    // interface IMaplexPlacedLabel
+
+struct __declspec(uuid("20664808-4eb1-1fab-823d-1ca3b6ed938d"))
+EnumMaplexPlacedLabel;
+    // [ default ] interface IUnknown
+    // interface IEnumMaplexPlacedLabel
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_esriMaplex =
+    {0xaee93e77,0xd204,0x4e9f,{0x8c,0xf8,0x5c,0x90,0xec,0x49,0xf4,0x24}};
+extern "C" const GUID __declspec(selectany) IID_IMaplexAnnotateMap =
+    {0x20664808,0x0e3a,0x1eee,{0x9f,0x83,0xfe,0xe3,0x4e,0x5a,0x6e,0xa5}};
+extern "C" const GUID __declspec(selectany) CLSID_MaplexAnnotateMap =
+    {0x20664808,0x14ec,0x11d2,{0xa2,0x7e,0x08,0x00,0x09,0xb6,0xf2,0x2b}};
+extern "C" const GUID __declspec(selectany) CLSID_MaplexAnnotateFeature =
+    {0x20664808,0xc2f5,0x1dd2,{0x9a,0x30,0x0e,0xc0,0x4f,0x6b,0xc6,0x30}};
+extern "C" const GUID __declspec(selectany) IID_IMaplexPlacedLabel =
+    {0x20664808,0xb1b4,0xad3d,{0x90,0xdd,0x08,0xa0,0x09,0xec,0x73,0x2a}};
+extern "C" const GUID __declspec(selectany) IID_IEnumMaplexPlacedLabel =
+    {0x20664808,0x3fe5,0x17a9,{0x8d,0xdf,0x0e,0xa0,0x39,0xe4,0x13,0x9d}};
+extern "C" const GUID __declspec(selectany) IID_IMaplexOverposter =
+    {0x20664808,0x0a3b,0x1eec,{0x9f,0xd3,0xfe,0xef,0x42,0x2a,0x6e,0xa5}};
+extern "C" const GUID __declspec(selectany) CLSID_MaplexOverposter =
+    {0x20664808,0x38e2,0x11d1,{0x88,0x09,0x08,0x00,0x09,0xec,0x73,0x2a}};
+extern "C" const GUID __declspec(selectany) CLSID_MaplexPlacedLabel =
+    {0x20664808,0x82fa,0xac15,{0xf4,0x0c,0x0d,0xab,0xc9,0xee,0xd3,0x1a}};
+extern "C" const GUID __declspec(selectany) CLSID_EnumMaplexPlacedLabel =
+    {0x20664808,0x4eb1,0x1fab,{0x82,0x3d,0x1c,0xa3,0xb6,0xed,0x93,0x8d}};
+
+#pragma pack(pop)

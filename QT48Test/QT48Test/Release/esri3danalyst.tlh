@@ -1,0 +1,3270 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (d73e89d8).
+//
+// e:\vsproject\qt48test\qt48test\release\esri3danalyst.tlh
+//
+// C++ source equivalent of Win32 type library esri3danalyst.olb
+// compiler-generated file created 12/01/16 at 15:39:16 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("639fe90a-cc9a-48c6-ac1d-105fe50915b5"))
+/* LIBID */ __esri3DAnalyst;
+struct __declspec(uuid("787f54e2-ba26-11d2-92f8-44d1f8c00000"))
+/* interface */ IScene;
+struct __declspec(uuid("37576410-c469-11d2-b1da-00c04fa33d14"))
+/* interface */ ISceneGraph;
+struct __declspec(uuid("cb6f53c2-c46b-11d2-b1da-00c04fa33d14"))
+/* interface */ ISceneRenderer;
+struct __declspec(uuid("bc6f44cc-21e8-11d4-a383-00c04f6bc619"))
+/* interface */ I3DProperties;
+enum esriBaseOption;
+enum esriExtrusionType;
+enum esriRenderVisibility;
+enum esriRenderMode;
+enum esri3DFaceCulling;
+struct __declspec(uuid("03485a91-59d0-11d3-8172-0080c7597e71"))
+/* interface */ ISceneViewer;
+struct __declspec(uuid("b3fa596f-ada3-11d2-9fae-00c04f8ece3d"))
+/* interface */ ICamera;
+enum esri3DProjectionType;
+enum esriCameraMovementType;
+enum esri3DOutputImageType;
+enum esriScenePickMode;
+struct __declspec(uuid("768d13f2-9a2d-11d4-b270-00508bcdde28"))
+/* interface */ IHit3DSet;
+struct __declspec(uuid("bbf1af30-a6ec-11d5-b2a0-00508bcdde28"))
+/* interface */ IAnimationType;
+struct __declspec(uuid("767c9b53-5a8e-11d5-b295-00508bcdde28"))
+/* interface */ IKeyframe;
+struct __declspec(uuid("bd3c7aad-a869-11d5-b2a0-00508bcdde28"))
+/* interface */ IBookmarkToKeyframe;
+struct __declspec(uuid("bbf1af31-a6ec-11d5-b2a0-00508bcdde28"))
+/* interface */ IAnimationTrack;
+struct /* coclass */ AnimationTrack;
+struct /* coclass */ LayerKeyframe;
+struct /* coclass */ SceneKeyframe;
+struct /* coclass */ AnimationTypeCamera;
+struct /* coclass */ AnimationTypeLayer;
+struct /* coclass */ AnimationTypeScene;
+struct __declspec(uuid("a4c0b647-82ad-11d5-b29b-00508bcdde28"))
+/* interface */ ISxAnimationEnvironment;
+struct __declspec(uuid("f406fe81-1101-47eb-9a45-5c4f64b9a0f0"))
+/* interface */ ISxAnimationEnvironment2;
+struct /* coclass */ SxAnimationEnvironment;
+enum esriDisplayType;
+enum esriEyeType;
+enum esriStereoViewType;
+struct __declspec(uuid("44e9928e-bf72-4838-b956-2940d0564f3f"))
+/* interface */ ICamera2;
+struct __declspec(uuid("98daaab4-83ba-4046-b843-98cbe98a6547"))
+/* interface */ ICamera3;
+struct __declspec(uuid("1a8927bc-9f9a-44ba-a921-3c3ac1aa476c"))
+/* interface */ IStereoCamera;
+struct /* coclass */ Camera;
+struct __declspec(uuid("bcdb3324-9afa-11d5-b29f-00508bcdde28"))
+/* interface */ IBookmark3D;
+struct /* coclass */ Bookmark3D;
+struct __declspec(uuid("4d8ca7d2-0aaa-4502-adc7-0388051c5f5c"))
+/* interface */ IViewers3D;
+struct __declspec(uuid("ec4e4b1c-5a64-499d-a475-bc2ddc237838"))
+/* interface */ IBasicScene;
+struct __declspec(uuid("020719a9-5b19-4835-ab76-47908247b6bc"))
+/* interface */ IBasicScene2;
+struct __declspec(uuid("ef879196-01de-11d4-ab69-0008c73fd50c"))
+/* interface */ IGraphicsContainer3D;
+struct __declspec(uuid("79103a54-1e53-11d4-a109-00c04f8ece27"))
+/* interface */ IGraphicsSelection;
+struct __declspec(uuid("bcdb3325-9afa-11d5-b29f-00508bcdde28"))
+/* interface */ ISceneBookmarks;
+struct __declspec(uuid("d530208f-48a9-45d0-b5c9-a1474987b113"))
+/* interface */ ISceneBookmarks2;
+struct __declspec(uuid("fa3dba5b-a879-11d5-b2a0-00508bcdde28"))
+/* interface */ IAnimationTracks;
+struct /* coclass */ Scene;
+struct /* coclass */ GraphicsLayer3D;
+struct __declspec(uuid("bbc7c2e8-1fb3-11d4-ab72-0008c73fd50c"))
+/* interface */ ISceneRendererEvents;
+enum esriTextureFormatType;
+struct __declspec(uuid("4a4cece5-f53a-11d3-80d9-00c04fa0adf8"))
+/* interface */ IFeature3DProperties;
+struct __declspec(uuid("ff699cbe-9340-4724-9b4c-f88979314bc0"))
+/* interface */ IFeature3DProperties2;
+struct __declspec(uuid("7646fd6d-a031-4ddf-9fa3-38bd170a238b"))
+/* interface */ I3DProperties2;
+struct __declspec(uuid("3c8a34c5-937a-4607-ab07-f5ed3470d443"))
+/* interface */ I3DProperties3;
+struct /* coclass */ Basic3DProperties;
+struct /* coclass */ Tin3DProperties;
+struct /* coclass */ Raster3DProperties;
+struct /* coclass */ Feature3DProperties;
+struct __declspec(uuid("3044c30e-37d0-11d4-a167-444553547777"))
+/* interface */ IVRMLExporter;
+enum esri3DAxis;
+enum esriSceneNodeType;
+enum esriSceneGeomNodeType;
+enum esriSceneTraversalFlag;
+struct __declspec(uuid("c256fa92-63ab-4e4e-b2da-e4e7a896db98"))
+/* interface */ ISceneGraph2;
+struct __declspec(uuid("bd62a8fa-8833-11d4-ab87-0008c73fd50c"))
+/* interface */ IMessageDispatcher;
+struct __declspec(uuid("f7873924-9a19-11d4-b270-00508bcdde28"))
+/* interface */ IHit3D;
+struct __declspec(uuid("1d1c669a-13de-11d4-80df-00c04fa0adf8"))
+/* interface */ ISceneGraphEvents;
+struct __declspec(uuid("1d1c669b-13de-11d4-80df-00c04fa0adf8"))
+/* interface */ ISceneGraphEventsDisp;
+struct __declspec(uuid("8d8094ee-063a-4bad-9873-6bb2445aca4d"))
+/* interface */ ISceneGraphLayerEvents;
+struct __declspec(uuid("bbf9e0fe-06f7-4dae-a9fa-05e465ea0e72"))
+/* interface */ ISceneGraphLayerEventsDisp;
+struct /* coclass */ SceneGraph;
+struct /* coclass */ SceneGraphEvents;
+struct /* coclass */ MessageDispatcher;
+struct /* coclass */ Hit3D;
+struct /* coclass */ Hit3DSet;
+struct /* coclass */ SceneGraphLayerEvents;
+struct __declspec(uuid("0aa361c1-06a2-11d5-9163-0080c7074326"))
+/* interface */ ILayerRenderers;
+struct __declspec(uuid("ea6581ec-082d-435c-8f73-b4161ca06f20"))
+/* interface */ I3DViewer;
+struct __declspec(uuid("5e20043d-fb3d-4ff2-85c0-8bb7ac983242"))
+/* interface */ ISceneViewer2;
+struct __declspec(uuid("3455fdb6-ee56-455e-a44e-28a0c76d3196"))
+/* interface */ IRasterSurface;
+struct /* coclass */ RasterSurface;
+struct __declspec(uuid("3044c30b-37d0-11d4-a167-444553547777"))
+/* interface */ ISceneExporter3d;
+struct /* coclass */ VRMLExporter;
+struct __declspec(uuid("4251ba07-9106-11d5-b29f-00508bcdde28"))
+/* interface */ ISceneVideoExporter;
+struct __declspec(uuid("26eb3a30-9e6d-443c-b904-79b16c5028aa"))
+/* interface */ IVideoExporterProperties;
+struct __declspec(uuid("4251ba08-9106-11d5-b29f-00508bcdde28"))
+/* interface */ IAVIExporter;
+struct __declspec(uuid("206fda1e-5622-4189-9f9a-486cd52e3457"))
+/* interface */ IQuickTimeExporter;
+struct /* coclass */ AVIExporter;
+struct /* coclass */ QuickTimeExporter;
+enum esriSimple3DMarkerStyle;
+enum esri3DMarkerType;
+enum esriSimple3DLineStyle;
+enum esriColladaExportErrorReturnCodes;
+struct __declspec(uuid("95e48b87-336e-4062-9b68-eb8ec9177ab8"))
+/* interface */ IImport3DFile;
+struct __declspec(uuid("733ff31f-1c9c-4b3a-947a-288222c35e12"))
+/* interface */ IImport3DFile2;
+struct __declspec(uuid("141ced35-f903-47b3-9ea3-210b751583e7"))
+/* interface */ IImport3DFileRoots;
+struct __declspec(uuid("8ca5fc21-a755-400f-b47e-cbff35f4ff46"))
+/* interface */ IImport3DApplication;
+struct __declspec(uuid("3b7066dc-bd50-41be-b4fb-89c857ef73e6"))
+/* interface */ IExportColladaFile;
+struct __declspec(uuid("e9f95f61-2bec-11d6-a4cd-444553547777"))
+/* interface */ IGeometryMaterial;
+struct __declspec(uuid("b7685a34-2bc8-11d6-a4cc-444553547777"))
+/* interface */ IGeometryMaterialList;
+struct __declspec(uuid("821003c1-2c6b-11d6-a4ce-444553547777"))
+/* interface */ IGeneralMultiPatchCreator;
+struct __declspec(uuid("773f7276-aefb-11d5-8112-00c04fa0adf8"))
+/* interface */ IMarker3DPlacement;
+struct __declspec(uuid("773f726f-aefb-11d5-8112-00c04fa0adf8"))
+/* interface */ ISimpleMarker3DSymbol;
+struct __declspec(uuid("773f7272-aefb-11d5-8112-00c04fa0adf8"))
+/* interface */ IMarker3DSymbol;
+struct __declspec(uuid("6e8ec8f8-e90a-11d5-a129-00508bd60cb9"))
+/* interface */ ICharacterMarker3DSymbol;
+struct __declspec(uuid("470b7273-3552-11d6-a12d-00508bd60cb9"))
+/* interface */ ILine3DPlacement;
+struct __declspec(uuid("470b7274-3552-11d6-a12d-00508bd60cb9"))
+/* interface */ ISimpleLine3DSymbol;
+struct __declspec(uuid("3f6d8301-5a5a-4b84-969f-433af07ee1a3"))
+/* interface */ ITextureFillSymbol;
+struct __declspec(uuid("d47a4da5-6d42-11d6-a13e-00508bd60cb9"))
+/* interface */ ITextureLineSymbol;
+struct __declspec(uuid("40aae3c0-9552-4768-965f-b9c219b5876b"))
+/* interface */ IBillboardDisplay;
+struct /* coclass */ SimpleMarker3DSymbol;
+struct /* coclass */ ExportColladaFile;
+struct /* coclass */ Marker3DSymbol;
+struct /* coclass */ CharacterMarker3DSymbol;
+struct /* coclass */ SimpleLine3DSymbol;
+struct /* coclass */ TextureFillSymbol;
+struct /* coclass */ TextureLineSymbol;
+struct /* coclass */ Import3DFile;
+struct /* coclass */ GeometryMaterial;
+struct /* coclass */ GeometryMaterialList;
+struct /* coclass */ GeneralMultiPatchCreator;
+enum esri3DServerType;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(I3DProperties, __uuidof(I3DProperties));
+_COM_SMARTPTR_TYPEDEF(ISceneRenderer, __uuidof(ISceneRenderer));
+_COM_SMARTPTR_TYPEDEF(IHit3DSet, __uuidof(IHit3DSet));
+_COM_SMARTPTR_TYPEDEF(IStereoCamera, __uuidof(IStereoCamera));
+_COM_SMARTPTR_TYPEDEF(IGraphicsContainer3D, __uuidof(IGraphicsContainer3D));
+_COM_SMARTPTR_TYPEDEF(IGraphicsSelection, __uuidof(IGraphicsSelection));
+_COM_SMARTPTR_TYPEDEF(ISceneRendererEvents, __uuidof(ISceneRendererEvents));
+_COM_SMARTPTR_TYPEDEF(IFeature3DProperties, __uuidof(IFeature3DProperties));
+_COM_SMARTPTR_TYPEDEF(IFeature3DProperties2, __uuidof(IFeature3DProperties2));
+_COM_SMARTPTR_TYPEDEF(I3DProperties2, __uuidof(I3DProperties2));
+_COM_SMARTPTR_TYPEDEF(I3DProperties3, __uuidof(I3DProperties3));
+_COM_SMARTPTR_TYPEDEF(IVRMLExporter, __uuidof(IVRMLExporter));
+_COM_SMARTPTR_TYPEDEF(IMessageDispatcher, __uuidof(IMessageDispatcher));
+_COM_SMARTPTR_TYPEDEF(IHit3D, __uuidof(IHit3D));
+_COM_SMARTPTR_TYPEDEF(ISceneGraphLayerEvents, __uuidof(ISceneGraphLayerEvents));
+_COM_SMARTPTR_TYPEDEF(ISceneGraphLayerEventsDisp, __uuidof(ISceneGraphLayerEventsDisp));
+_COM_SMARTPTR_TYPEDEF(ILayerRenderers, __uuidof(ILayerRenderers));
+_COM_SMARTPTR_TYPEDEF(IRasterSurface, __uuidof(IRasterSurface));
+_COM_SMARTPTR_TYPEDEF(IVideoExporterProperties, __uuidof(IVideoExporterProperties));
+_COM_SMARTPTR_TYPEDEF(IAVIExporter, __uuidof(IAVIExporter));
+_COM_SMARTPTR_TYPEDEF(IQuickTimeExporter, __uuidof(IQuickTimeExporter));
+_COM_SMARTPTR_TYPEDEF(IImport3DFile, __uuidof(IImport3DFile));
+_COM_SMARTPTR_TYPEDEF(IImport3DFile2, __uuidof(IImport3DFile2));
+_COM_SMARTPTR_TYPEDEF(IImport3DFileRoots, __uuidof(IImport3DFileRoots));
+_COM_SMARTPTR_TYPEDEF(IImport3DApplication, __uuidof(IImport3DApplication));
+_COM_SMARTPTR_TYPEDEF(IExportColladaFile, __uuidof(IExportColladaFile));
+_COM_SMARTPTR_TYPEDEF(IGeometryMaterial, __uuidof(IGeometryMaterial));
+_COM_SMARTPTR_TYPEDEF(IGeometryMaterialList, __uuidof(IGeometryMaterialList));
+_COM_SMARTPTR_TYPEDEF(IGeneralMultiPatchCreator, __uuidof(IGeneralMultiPatchCreator));
+_COM_SMARTPTR_TYPEDEF(IMarker3DPlacement, __uuidof(IMarker3DPlacement));
+_COM_SMARTPTR_TYPEDEF(ISimpleMarker3DSymbol, __uuidof(ISimpleMarker3DSymbol));
+_COM_SMARTPTR_TYPEDEF(IMarker3DSymbol, __uuidof(IMarker3DSymbol));
+_COM_SMARTPTR_TYPEDEF(ICharacterMarker3DSymbol, __uuidof(ICharacterMarker3DSymbol));
+_COM_SMARTPTR_TYPEDEF(ILine3DPlacement, __uuidof(ILine3DPlacement));
+_COM_SMARTPTR_TYPEDEF(ISimpleLine3DSymbol, __uuidof(ISimpleLine3DSymbol));
+_COM_SMARTPTR_TYPEDEF(ITextureFillSymbol, __uuidof(ITextureFillSymbol));
+_COM_SMARTPTR_TYPEDEF(ITextureLineSymbol, __uuidof(ITextureLineSymbol));
+_COM_SMARTPTR_TYPEDEF(IBillboardDisplay, __uuidof(IBillboardDisplay));
+_COM_SMARTPTR_TYPEDEF(IScene, __uuidof(IScene));
+_COM_SMARTPTR_TYPEDEF(IAnimationType, __uuidof(IAnimationType));
+_COM_SMARTPTR_TYPEDEF(IKeyframe, __uuidof(IKeyframe));
+_COM_SMARTPTR_TYPEDEF(IBookmarkToKeyframe, __uuidof(IBookmarkToKeyframe));
+_COM_SMARTPTR_TYPEDEF(IAnimationTrack, __uuidof(IAnimationTrack));
+_COM_SMARTPTR_TYPEDEF(ISxAnimationEnvironment, __uuidof(ISxAnimationEnvironment));
+_COM_SMARTPTR_TYPEDEF(ISxAnimationEnvironment2, __uuidof(ISxAnimationEnvironment2));
+_COM_SMARTPTR_TYPEDEF(ISceneExporter3d, __uuidof(ISceneExporter3d));
+_COM_SMARTPTR_TYPEDEF(ISceneGraph, __uuidof(ISceneGraph));
+_COM_SMARTPTR_TYPEDEF(ICamera, __uuidof(ICamera));
+_COM_SMARTPTR_TYPEDEF(ISceneViewer, __uuidof(ISceneViewer));
+_COM_SMARTPTR_TYPEDEF(ICamera2, __uuidof(ICamera2));
+_COM_SMARTPTR_TYPEDEF(ICamera3, __uuidof(ICamera3));
+_COM_SMARTPTR_TYPEDEF(IBookmark3D, __uuidof(IBookmark3D));
+_COM_SMARTPTR_TYPEDEF(IViewers3D, __uuidof(IViewers3D));
+_COM_SMARTPTR_TYPEDEF(IBasicScene, __uuidof(IBasicScene));
+_COM_SMARTPTR_TYPEDEF(IBasicScene2, __uuidof(IBasicScene2));
+_COM_SMARTPTR_TYPEDEF(ISceneBookmarks, __uuidof(ISceneBookmarks));
+_COM_SMARTPTR_TYPEDEF(ISceneBookmarks2, __uuidof(ISceneBookmarks2));
+_COM_SMARTPTR_TYPEDEF(IAnimationTracks, __uuidof(IAnimationTracks));
+_COM_SMARTPTR_TYPEDEF(ISceneGraph2, __uuidof(ISceneGraph2));
+_COM_SMARTPTR_TYPEDEF(ISceneGraphEvents, __uuidof(ISceneGraphEvents));
+_COM_SMARTPTR_TYPEDEF(ISceneGraphEventsDisp, __uuidof(ISceneGraphEventsDisp));
+_COM_SMARTPTR_TYPEDEF(I3DViewer, __uuidof(I3DViewer));
+_COM_SMARTPTR_TYPEDEF(ISceneViewer2, __uuidof(ISceneViewer2));
+_COM_SMARTPTR_TYPEDEF(ISceneVideoExporter, __uuidof(ISceneVideoExporter));
+
+//
+// Type library items
+//
+
+enum __declspec(uuid("bc6f44c9-21e8-11d4-a383-00c04f6bc619"))
+esriBaseOption
+{
+    esriBaseExpression = 0,
+    esriBaseSurface = 1,
+    esriBaseShape = 2
+};
+
+enum __declspec(uuid("b7a0a263-24f7-11d3-9f4d-00c04f6bc5f4"))
+esriExtrusionType
+{
+    esriExtrusionNone = 0,
+    esriExtrusionMinZ = 1,
+    esriExtrusionMaxZ = 2,
+    esriExtrusionBase = 3,
+    esriExtrusionAbsolute = 4
+};
+
+enum __declspec(uuid("bc6f44ca-21e8-11d4-a383-00c04f6bc619"))
+esriRenderVisibility
+{
+    esriRenderAlways = 0,
+    esriRenderWhenStopped = 1,
+    esriRenderWhenNavigating = 2
+};
+
+enum __declspec(uuid("bc6f44cb-21e8-11d4-a383-00c04f6bc619"))
+esriRenderMode
+{
+    esriRenderCache = 0,
+    esriRenderImmediate = 1
+};
+
+enum __declspec(uuid("3b3b5bdb-b1df-11d4-b275-00508bcdde28"))
+esri3DFaceCulling
+{
+    esriFaceCullingNone = 0,
+    esriFaceCullingFront = 1,
+    esriFaceCullingBack = 2,
+    esriFaceCullingDefinedByShape = 3
+};
+
+struct __declspec(uuid("bc6f44cc-21e8-11d4-a383-00c04f6bc619"))
+I3DProperties : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_BaseOption (
+        /*[out,retval]*/ enum esriBaseOption * pBaseOption ) = 0;
+      virtual HRESULT __stdcall put_BaseOption (
+        /*[in]*/ enum esriBaseOption pBaseOption ) = 0;
+      virtual HRESULT __stdcall get_BaseExpressionString (
+        /*[out,retval]*/ BSTR * pBaseExpression ) = 0;
+      virtual HRESULT __stdcall put_BaseExpressionString (
+        /*[in]*/ BSTR pBaseExpression ) = 0;
+      virtual HRESULT __stdcall get_BaseSurface (
+        /*[out,retval]*/ struct IFunctionalSurface * * ppBase ) = 0;
+      virtual HRESULT __stdcall putref_BaseSurface (
+        /*[in]*/ struct IFunctionalSurface * ppBase ) = 0;
+      virtual HRESULT __stdcall get_BaseName (
+        /*[out,retval]*/ struct IName * * Name ) = 0;
+      virtual HRESULT __stdcall get_ZFactor (
+        /*[out,retval]*/ double * pZFactor ) = 0;
+      virtual HRESULT __stdcall put_ZFactor (
+        /*[in]*/ double pZFactor ) = 0;
+      virtual HRESULT __stdcall get_OffsetExpressionString (
+        /*[out,retval]*/ BSTR * pOffset ) = 0;
+      virtual HRESULT __stdcall put_OffsetExpressionString (
+        /*[in]*/ BSTR pOffset ) = 0;
+      virtual HRESULT __stdcall get_ExtrusionType (
+        /*[out,retval]*/ enum esriExtrusionType * pType ) = 0;
+      virtual HRESULT __stdcall put_ExtrusionType (
+        /*[in]*/ enum esriExtrusionType pType ) = 0;
+      virtual HRESULT __stdcall get_ExtrusionExpressionString (
+        /*[out,retval]*/ BSTR * pExtrusion ) = 0;
+      virtual HRESULT __stdcall put_ExtrusionExpressionString (
+        /*[in]*/ BSTR pExtrusion ) = 0;
+      virtual HRESULT __stdcall get_RenderVisibility (
+        /*[out,retval]*/ enum esriRenderVisibility * pRenderOption ) = 0;
+      virtual HRESULT __stdcall put_RenderVisibility (
+        /*[in]*/ enum esriRenderVisibility pRenderOption ) = 0;
+      virtual HRESULT __stdcall get_RenderRefreshRate (
+        /*[out,retval]*/ double * pRefresh ) = 0;
+      virtual HRESULT __stdcall put_RenderRefreshRate (
+        /*[in]*/ double pRefresh ) = 0;
+      virtual HRESULT __stdcall get_Illuminate (
+        /*[out,retval]*/ VARIANT_BOOL * pIlluminate ) = 0;
+      virtual HRESULT __stdcall put_Illuminate (
+        /*[in]*/ VARIANT_BOOL pIlluminate ) = 0;
+      virtual HRESULT __stdcall get_RenderMode (
+        /*[out,retval]*/ enum esriRenderMode * pRenderMode ) = 0;
+      virtual HRESULT __stdcall put_RenderMode (
+        /*[in]*/ enum esriRenderMode pRenderMode ) = 0;
+      virtual HRESULT __stdcall get_SmoothShading (
+        /*[out,retval]*/ VARIANT_BOOL * pbSmoothShading ) = 0;
+      virtual HRESULT __stdcall put_SmoothShading (
+        /*[in]*/ VARIANT_BOOL pbSmoothShading ) = 0;
+      virtual HRESULT __stdcall get_MaxTextureMemory (
+        /*[out,retval]*/ long * pMaxTextureMemory ) = 0;
+      virtual HRESULT __stdcall put_MaxTextureMemory (
+        /*[in]*/ long pMaxTextureMemory ) = 0;
+      virtual HRESULT __stdcall get_MaxRasterColumns (
+        /*[out,retval]*/ long * pMaxRasterColumns ) = 0;
+      virtual HRESULT __stdcall put_MaxRasterColumns (
+        /*[in]*/ long pMaxRasterColumns ) = 0;
+      virtual HRESULT __stdcall get_MaxRasterRows (
+        /*[out,retval]*/ long * pMaxRasterRows ) = 0;
+      virtual HRESULT __stdcall put_MaxRasterRows (
+        /*[in]*/ long pMaxRasterRows ) = 0;
+      virtual HRESULT __stdcall put_DepthPriorityValue (
+        /*[in]*/ short DepthPriorityValue ) = 0;
+      virtual HRESULT __stdcall get_DepthPriorityValue (
+        /*[out,retval]*/ short * DepthPriorityValue ) = 0;
+      virtual HRESULT __stdcall put_FaceCulling (
+        /*[in]*/ enum esri3DFaceCulling pCullingMode ) = 0;
+      virtual HRESULT __stdcall get_FaceCulling (
+        /*[out,retval]*/ enum esri3DFaceCulling * pCullingMode ) = 0;
+      virtual HRESULT __stdcall Apply3DProperties (
+        /*[in]*/ IUnknown * Owner ) = 0;
+};
+
+struct __declspec(uuid("cb6f53c2-c46b-11d2-b1da-00c04fa33d14"))
+ISceneRenderer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_CallRecording (
+        /*[out,retval]*/ VARIANT_BOOL * pbCallFlag ) = 0;
+      virtual HRESULT __stdcall put_CallRecording (
+        /*[in]*/ VARIANT_BOOL pbCallFlag ) = 0;
+      virtual HRESULT __stdcall StartRecording (
+        /*[in]*/ VARIANT_BOOL bImmediateMode ) = 0;
+      virtual HRESULT __stdcall Record (
+        /*[in]*/ struct IDisplay3D * pDisplay,
+        /*[in]*/ IUnknown * pGeoNode,
+        /*[in]*/ struct ITrackCancel * pTrackCancel ) = 0;
+      virtual HRESULT __stdcall get_DddProperties (
+        /*[out,retval]*/ struct I3DProperties * * ppFilter ) = 0;
+      virtual HRESULT __stdcall putref_DddProperties (
+        /*[in]*/ struct I3DProperties * ppFilter ) = 0;
+      virtual HRESULT __stdcall Locate (
+        /*[in]*/ long hint,
+        /*[in]*/ struct IRay * pQueryRay,
+        /*[in]*/ VARIANT_BOOL bGetTransformed,
+        /*[in]*/ IUnknown * pGeoNode,
+        /*[out]*/ struct IPoint * * ppPoint,
+        /*[out]*/ IUnknown * * ppObject ) = 0;
+      virtual HRESULT __stdcall putref_Represents (
+        /*[in]*/ IUnknown * ppObject ) = 0;
+      virtual HRESULT __stdcall get_Represents (
+        /*[out,retval]*/ IUnknown * * ppObject ) = 0;
+      virtual HRESULT __stdcall get_AccumulatedExtent (
+        /*[out,retval]*/ struct IEnvelope * * ppExtent ) = 0;
+      virtual HRESULT __stdcall QueryAccumulatedExtent (
+        /*[in]*/ struct IEnvelope * pExtent ) = 0;
+};
+
+enum __declspec(uuid("6b3e9526-8d56-11d3-ab47-0008c73fd50c"))
+esri3DProjectionType
+{
+    esriPerspectiveProjection = 1,
+    esriOrthoProjection = 2
+};
+
+enum __declspec(uuid("375db970-5c9e-11d3-a401-0004ac1b1d86"))
+esriCameraMovementType
+{
+    esriCameraMoveAway = 1,
+    esriCameraMoveToward = 2,
+    esriCameraMoveLeft = 3,
+    esriCameraMoveRight = 4,
+    esriCameraMoveUp = 5,
+    esriCameraMoveDown = 6
+};
+
+enum __declspec(uuid("496574ac-8e81-11d3-a013-00c04f8ece27"))
+esri3DOutputImageType
+{
+    BMP = 1,
+    JPEG = 2
+};
+
+enum __declspec(uuid("842e49ba-11b9-11d4-80de-00c04fa0adf8"))
+esriScenePickMode
+{
+    esriScenePickGeography = 1,
+    esriScenePickGraphics = 2,
+    esriScenePickAll = 3,
+    esriScenePickAllPlus = 4,
+    esriScenePickPlane = 5,
+    esriScenePickSphere = 6,
+    esriScenePickGlobeSphere = 7,
+    esriScenePickMask = 15,
+    esriScenePickFastLocation = 16
+};
+
+struct __declspec(uuid("768d13f2-9a2d-11d4-b270-00508bcdde28"))
+IHit3DSet : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall putref_Hits (
+        /*[in]*/ struct IArray * ppHits ) = 0;
+      virtual HRESULT __stdcall get_Hits (
+        /*[out,retval]*/ struct IArray * * ppHits ) = 0;
+      virtual HRESULT __stdcall Topmost (
+        /*[in]*/ double factor ) = 0;
+      virtual HRESULT __stdcall OnePerLayer ( ) = 0;
+};
+
+struct __declspec(uuid("4fedc9cb-a7be-11d5-b2a0-00508bcdde28"))
+AnimationTrack;
+    // [ default ] interface IUnknown
+    // interface IAnimationTrack
+    // interface IAGAnimationTrack
+    // interface IAGAnimationTrackKeyframes
+    // interface IPersistStream
+
+struct __declspec(uuid("24aa4277-adf3-11d5-b2a0-00508bcdde28"))
+LayerKeyframe;
+    // [ default ] interface IUnknown
+    // interface IKeyframe
+    // interface IAGKeyframe
+    // interface IClone
+
+struct __declspec(uuid("24aa4278-adf3-11d5-b2a0-00508bcdde28"))
+SceneKeyframe;
+    // [ default ] interface IUnknown
+    // interface IKeyframe
+    // interface IAGKeyframe
+    // interface IClone
+
+struct __declspec(uuid("500f4707-a798-11d5-b2a0-00508bcdde28"))
+AnimationTypeCamera;
+    // [ default ] interface IUnknown
+    // interface IAnimationType
+    // interface IAGAnimationType
+    // interface IAGAnimationTypeUI
+
+struct __declspec(uuid("24aa4279-adf3-11d5-b2a0-00508bcdde28"))
+AnimationTypeLayer;
+    // [ default ] interface IUnknown
+    // interface IAnimationType
+    // interface IAGAnimationType
+    // interface IAGAnimationTypeUI
+
+struct __declspec(uuid("24aa427a-adf3-11d5-b2a0-00508bcdde28"))
+AnimationTypeScene;
+    // [ default ] interface IUnknown
+    // interface IAnimationType
+    // interface IAGAnimationType
+    // interface IAGAnimationTypeUI
+
+struct __declspec(uuid("592d0b58-82ad-11d5-b29b-00508bcdde28"))
+SxAnimationEnvironment;
+    // [ default ] interface IUnknown
+    // interface ISxAnimationEnvironment2
+    // interface IAGAnimationEnvironment
+    // interface IPersistStream
+
+enum __declspec(uuid("23a87c63-bf1f-4276-bbed-5ec44676c3da"))
+esriDisplayType
+{
+    esriNonstereoDisplay = 1,
+    esriStereoDisplay = 2
+};
+
+enum __declspec(uuid("4f13a052-2dff-4b31-acf5-4c97843e24f1"))
+esriEyeType
+{
+    esriLeftEye = 1,
+    esriRightEye = 2
+};
+
+enum __declspec(uuid("29260e10-cfff-4a99-adb2-7f54d6e71876"))
+esriStereoViewType
+{
+    esriRedBlueStereoView = 1,
+    esriQuadBufferedStereoView = 2,
+    esriFreeStereoView = 3
+};
+
+struct __declspec(uuid("1a8927bc-9f9a-44ba-a921-3c3ac1aa476c"))
+IStereoCamera : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_EyeType (
+        /*[out,retval]*/ enum esriEyeType * pType ) = 0;
+      virtual HRESULT __stdcall put_EyeType (
+        /*[in]*/ enum esriEyeType pType ) = 0;
+      virtual HRESULT __stdcall get_StereoViewType (
+        /*[out,retval]*/ enum esriStereoViewType * pType ) = 0;
+      virtual HRESULT __stdcall put_StereoViewType (
+        /*[in]*/ enum esriStereoViewType pType ) = 0;
+      virtual HRESULT __stdcall get_EyeSeparation (
+        /*[out,retval]*/ double * EyeSeparation ) = 0;
+      virtual HRESULT __stdcall put_EyeSeparation (
+        /*[in]*/ double EyeSeparation ) = 0;
+      virtual HRESULT __stdcall get_Parallax (
+        /*[out,retval]*/ double * pParallax ) = 0;
+      virtual HRESULT __stdcall put_Parallax (
+        /*[in]*/ double pParallax ) = 0;
+      virtual HRESULT __stdcall get_LRviewFirst (
+        /*[out,retval]*/ enum esriEyeType * pView ) = 0;
+      virtual HRESULT __stdcall put_LRviewFirst (
+        /*[in]*/ enum esriEyeType pView ) = 0;
+      virtual HRESULT __stdcall get_IsStereoSupported (
+        /*[out,retval]*/ VARIANT_BOOL * pbStereo ) = 0;
+};
+
+struct __declspec(uuid("b3fa5970-ada3-11d2-9fae-00c04f8ece3d"))
+Camera;
+    // [ default ] interface IUnknown
+    // interface ICamera
+    // interface ICamera2
+    // interface ICamera3
+    // interface IStereoCamera
+
+struct __declspec(uuid("bcdb3323-9afa-11d5-b29f-00508bcdde28"))
+Bookmark3D;
+    // [ default ] interface IUnknown
+    // interface IBookmark3D
+    // interface IKeyframe
+    // interface IAGKeyframe
+    // interface IBookmarkToKeyframe
+    // interface IPersistStream
+    // interface IClone
+
+struct __declspec(uuid("ef879196-01de-11d4-ab69-0008c73fd50c"))
+IGraphicsContainer3D : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Next (
+        /*[out,retval]*/ struct IElement * * ppElement ) = 0;
+      virtual HRESULT __stdcall Reset ( ) = 0;
+      virtual HRESULT __stdcall get_ElementCount (
+        /*[out,retval]*/ long * pCount ) = 0;
+      virtual HRESULT __stdcall get_Element (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IElement * * ppElement ) = 0;
+      virtual HRESULT __stdcall BeginBatchUpdate ( ) = 0;
+      virtual HRESULT __stdcall EndBatchUpdate ( ) = 0;
+      virtual HRESULT __stdcall AddElement (
+        /*[in]*/ struct IElement * Element ) = 0;
+      virtual HRESULT __stdcall AddElements (
+        /*[in]*/ struct IElementCollection * elements ) = 0;
+      virtual HRESULT __stdcall DeleteElement (
+        /*[in]*/ struct IElement * Element ) = 0;
+      virtual HRESULT __stdcall DeleteAllElements ( ) = 0;
+      virtual HRESULT __stdcall MoveElementToGroup (
+        /*[in]*/ struct IElement * pElement,
+        /*[in]*/ struct IGroupElement * pGroup ) = 0;
+      virtual HRESULT __stdcall MoveElementFromGroup (
+        /*[in]*/ struct IGroupElement * pGroup,
+        /*[in]*/ struct IElement * pElement ) = 0;
+      virtual HRESULT __stdcall LocateElements (
+        /*[in]*/ struct IPoint * pPoint,
+        /*[in]*/ double tolerance,
+        /*[out,retval]*/ struct IEnumElement * * ppElements ) = 0;
+      virtual HRESULT __stdcall LocateElementsByEnvelope (
+        /*[in]*/ struct IEnvelope * pEnvelope,
+        /*[out,retval]*/ struct IEnumElement * * ppElements ) = 0;
+};
+
+struct __declspec(uuid("79103a54-1e53-11d4-a109-00c04f8ece27"))
+IGraphicsSelection : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SelectElement (
+        /*[in]*/ struct IElement * pElement ) = 0;
+      virtual HRESULT __stdcall SelectElements (
+        /*[in]*/ struct IEnumElement * pElements ) = 0;
+      virtual HRESULT __stdcall SelectAllElements ( ) = 0;
+      virtual HRESULT __stdcall UnselectElement (
+        /*[in]*/ struct IElement * pElement ) = 0;
+      virtual HRESULT __stdcall UnselectElements (
+        /*[in]*/ struct IEnumElement * pElements ) = 0;
+      virtual HRESULT __stdcall UnselectAllElements ( ) = 0;
+      virtual HRESULT __stdcall DeleteAllSelectedElements ( ) = 0;
+      virtual HRESULT __stdcall SwitchSelection ( ) = 0;
+      virtual HRESULT __stdcall get_SelectedElements (
+        /*[out,retval]*/ struct IEnumElement * * pElements ) = 0;
+      virtual HRESULT __stdcall get_SelectedElementCount (
+        /*[out,retval]*/ long * pCount ) = 0;
+      virtual HRESULT __stdcall get_SelectedElementsExtent (
+        /*[out,retval]*/ struct IEnvelope * * ppExtent ) = 0;
+      virtual HRESULT __stdcall ElementSelected (
+        /*[in]*/ struct IElement * Element,
+        /*[out,retval]*/ VARIANT_BOOL * pbIsSelected ) = 0;
+};
+
+struct __declspec(uuid("b7a0a25c-24f7-11d3-9f4d-00c04f6bc5f4"))
+Scene;
+    // [ default ] interface IUnknown
+    // interface IScene
+    // interface IBasicScene2
+    // interface IActiveView
+    // interface IBasicMap
+    // interface IMap
+    // interface IMapLayers2
+    // interface ISelectionEvents
+    // interface ITableCollection
+    // interface IStandaloneTableCollection
+    // interface IRelationshipClassCollection
+    // interface ISceneBookmarks
+    // interface IAnimationTracks
+    // interface IAGAnimationTracks
+    // interface ISupportErrorInfo
+    // interface IConnectionPointContainer
+    // interface IPersistStream
+    // interface IMapTimeDisplay
+    // interface IMapTimeDisplay2
+    // [ default, source ] interface IActiveViewEvents
+
+struct __declspec(uuid("4c87a8f0-01e3-11d4-ab69-0008c73fd50c"))
+GraphicsLayer3D;
+    // [ default ] interface IUnknown
+    // interface ILayer
+    // interface IGraphicsLayer
+    // interface IGraphicsContainer
+    // interface IGraphicsContainer3D
+    // interface IGraphicsSelection
+    // interface ILayerExtensions
+    // interface ILayerEvents
+    // interface ILayerEffects
+    // interface IGeoDataset
+    // interface IConnectionPointContainer
+    // interface IPersistStream
+    // [ default, source ] interface ISceneRendererEvents
+    // [ source ] interface IActiveViewEvents
+    // interface IPublishLayer
+
+struct __declspec(uuid("bbc7c2e8-1fb3-11d4-ab72-0008c73fd50c"))
+ISceneRendererEvents : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SelectionChanged (
+        /*[in]*/ struct ISceneRenderer * pSource ) = 0;
+};
+
+enum __declspec(uuid("9fd11988-d9e9-451a-a1f6-8b04dfcae085"))
+esriTextureFormatType
+{
+    esriTextureNone = 1,
+    esriTextureRGBA = 2,
+    esriTextureJPEG = 3,
+    esriTextureDXT = 4
+};
+
+struct __declspec(uuid("4a4cece5-f53a-11d3-80d9-00c04fa0adf8"))
+IFeature3DProperties : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Locate (
+        /*[in]*/ long hint,
+        /*[in]*/ struct IRay * pQueryRay,
+        /*[out]*/ struct IFeature * * ppFeat,
+        /*[out]*/ struct IPoint * * ppPoint ) = 0;
+      virtual HRESULT __stdcall ApplyFeatureProperties (
+        /*[in]*/ struct IFeature * feature,
+        /*[out]*/ struct IGeometry * * newGeometry,
+        /*[in]*/ VARIANT_BOOL ignoreOffsetAndScale ) = 0;
+      virtual HRESULT __stdcall PrepareQueryFilter (
+        /*[in]*/ struct IFeatureClass * pFc,
+        /*[in]*/ struct IQueryFilter * pQueryFilter ) = 0;
+};
+
+struct __declspec(uuid("ff699cbe-9340-4724-9b4c-f88979314bc0"))
+IFeature3DProperties2 : IFeature3DProperties
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall LocateSymbolized (
+        /*[in]*/ long hint,
+        /*[in]*/ struct IRay * pQueryRay,
+        /*[in]*/ struct IFeatureLayer * pLayer,
+        /*[out]*/ struct IFeature * * ppFeat,
+        /*[out]*/ struct IPoint * * ppPoint ) = 0;
+};
+
+struct __declspec(uuid("7646fd6d-a031-4ddf-9fa3-38bd170a238b"))
+I3DProperties2 : I3DProperties
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_TextureDownsamplingFactor (
+        /*[out,retval]*/ double * texResamplingFactor ) = 0;
+      virtual HRESULT __stdcall put_TextureDownsamplingFactor (
+        /*[in]*/ double texResamplingFactor ) = 0;
+      virtual HRESULT __stdcall put_TextureCompressionType (
+        /*[in]*/ enum esriTextureFormatType Type ) = 0;
+      virtual HRESULT __stdcall get_TextureCompressionType (
+        /*[out,retval]*/ enum esriTextureFormatType * Type ) = 0;
+      virtual HRESULT __stdcall put_TextureDisplayType (
+        /*[in]*/ enum esriTextureFormatType Type ) = 0;
+      virtual HRESULT __stdcall get_TextureDisplayType (
+        /*[out,retval]*/ enum esriTextureFormatType * Type ) = 0;
+};
+
+struct __declspec(uuid("3c8a34c5-937a-4607-ab07-f5ed3470d443"))
+I3DProperties3 : I3DProperties2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_AlphaThreshold (
+        /*[in]*/ double threshold ) = 0;
+      virtual HRESULT __stdcall get_AlphaThreshold (
+        /*[out,retval]*/ double * threshold ) = 0;
+};
+
+struct __declspec(uuid("a5a8dc61-268c-11d4-914a-0080c7074326"))
+Basic3DProperties;
+    // [ default ] interface IUnknown
+    // interface IDataLayerExtension
+    // interface I3DProperties
+    // interface I3DProperties2
+    // interface I3DProperties3
+    // interface IPersistStream
+
+struct __declspec(uuid("b7a0a25d-24f7-11d3-9f4d-00c04f6bc5f4"))
+Tin3DProperties;
+    // [ default ] interface IUnknown
+    // interface IDataLayerExtension
+    // interface I3DProperties
+    // interface I3DProperties2
+    // interface I3DProperties3
+    // interface IPersistStream
+
+struct __declspec(uuid("4a4cece3-f53a-11d3-80d9-00c04fa0adf8"))
+Raster3DProperties;
+    // [ default ] interface IUnknown
+    // interface IDataLayerExtension
+    // interface I3DProperties
+    // interface I3DProperties2
+    // interface I3DProperties3
+    // interface IPersistStream
+
+struct __declspec(uuid("4a4cece4-f53a-11d3-80d9-00c04fa0adf8"))
+Feature3DProperties;
+    // [ default ] interface IUnknown
+    // interface IDataLayerExtension
+    // interface IFeature3DProperties
+    // interface IFeature3DProperties2
+    // interface I3DProperties
+    // interface I3DProperties2
+    // interface I3DProperties3
+    // interface IPersistStream
+
+struct __declspec(uuid("3044c30e-37d0-11d4-a167-444553547777"))
+IVRMLExporter : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Indentation (
+        /*[in]*/ VARIANT_BOOL pIndentation ) = 0;
+      virtual HRESULT __stdcall get_Indentation (
+        /*[out,retval]*/ VARIANT_BOOL * pIndentation ) = 0;
+      virtual HRESULT __stdcall put_SaveOnlyVisible (
+        /*[in]*/ VARIANT_BOOL pSaveOnlyVisible ) = 0;
+      virtual HRESULT __stdcall get_SaveOnlyVisible (
+        /*[out,retval]*/ VARIANT_BOOL * pSaveOnlyVisible ) = 0;
+      virtual HRESULT __stdcall put_IsYUp (
+        /*[in]*/ VARIANT_BOOL pIsYUp ) = 0;
+      virtual HRESULT __stdcall get_IsYUp (
+        /*[out,retval]*/ VARIANT_BOOL * pIsYUp ) = 0;
+      virtual HRESULT __stdcall put_MoveToOrigin (
+        /*[in]*/ VARIANT_BOOL pbMoveToOrigin ) = 0;
+      virtual HRESULT __stdcall get_MoveToOrigin (
+        /*[out,retval]*/ VARIANT_BOOL * pbMoveToOrigin ) = 0;
+      virtual HRESULT __stdcall put_UseGeoVRML (
+        /*[in]*/ VARIANT_BOOL pbUseGeoVRML ) = 0;
+      virtual HRESULT __stdcall get_UseGeoVRML (
+        /*[out,retval]*/ VARIANT_BOOL * pbUseGeoVRML ) = 0;
+      virtual HRESULT __stdcall put_UseElevationGrid (
+        /*[in]*/ VARIANT_BOOL pbUseElevationGrid ) = 0;
+      virtual HRESULT __stdcall get_UseElevationGrid (
+        /*[out,retval]*/ VARIANT_BOOL * pbUseElevationGrid ) = 0;
+      virtual HRESULT __stdcall put_Quality (
+        /*[in]*/ int Quality ) = 0;
+      virtual HRESULT __stdcall get_Quality (
+        /*[out,retval]*/ int * Quality ) = 0;
+};
+
+enum __declspec(uuid("ebfd6ae7-04c7-11d4-ab45-0008c7df4b00"))
+esri3DAxis
+{
+    esriXAxis = 0,
+    esriYAxis = 1,
+    esriZAxis = 2
+};
+
+enum __declspec(uuid("e929de93-f54c-11d3-ab40-0008c7df4b00"))
+esriSceneNodeType
+{
+    esriSceneAnyNode = 0,
+    esriSceneGroupNode = 1,
+    esriSceneGeometryNode = 2,
+    esriSceneChoiceNode = 3,
+    esriSceneTransformNode = 4,
+    esriSceneLayerNode = 5,
+    esriSceneTileNode = 6
+};
+
+enum __declspec(uuid("ddc9e8e1-1a2b-11d4-ab48-0008c7df4b00"))
+esriSceneGeomNodeType
+{
+    esriSceneGeomGeographyNode = 0,
+    esriSceneGeomGraphicsNode = 1
+};
+
+enum __declspec(uuid("84bdea7f-f5d8-11d3-ab40-0008c7df4b00"))
+esriSceneTraversalFlag
+{
+    esriSceneDrawTraversal = 1,
+    esriScenePickTraversal = 2,
+    esriSceneImmediateDrawTraversal = 4,
+    esriSceneTransparencyTraversal = 8,
+    esriSceneDrawWhileNavigateTraversal = 16,
+    esriSceneDrawWhileStillTraversal = 32,
+    esriSceneLightingTraversal = 64,
+    esriSceneSmoothShadingTraversal = 128,
+    esriSceneNeedMBBUpdateTraversal = 256
+};
+
+struct __declspec(uuid("bd62a8fa-8833-11d4-ab87-0008c73fd50c"))
+IMessageDispatcher : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_CancelOnEscPress (
+        /*[out,retval]*/ VARIANT_BOOL * pbCancelOnEscPress ) = 0;
+      virtual HRESULT __stdcall put_CancelOnEscPress (
+        /*[in]*/ VARIANT_BOOL pbCancelOnEscPress ) = 0;
+      virtual HRESULT __stdcall get_CancelOnClick (
+        /*[out,retval]*/ VARIANT_BOOL * pbCancelOnClick ) = 0;
+      virtual HRESULT __stdcall put_CancelOnClick (
+        /*[in]*/ VARIANT_BOOL pbCancelOnClick ) = 0;
+      virtual HRESULT __stdcall get_Cancelled (
+        /*[in]*/ OLE_HANDLE hWnd,
+        /*[out,retval]*/ VARIANT_BOOL * pbCancelled ) = 0;
+      virtual HRESULT __stdcall Dispatch (
+        /*[in]*/ OLE_HANDLE hWnd,
+        /*[in]*/ VARIANT_BOOL bSingle,
+        /*[out]*/ VARIANT * pbCancelled ) = 0;
+      virtual HRESULT __stdcall Remove (
+        /*[in]*/ OLE_HANDLE hWnd,
+        /*[in]*/ VARIANT_BOOL bSingle,
+        /*[out]*/ VARIANT * pbCancelled ) = 0;
+};
+
+struct __declspec(uuid("f7873924-9a19-11d4-b270-00508bcdde28"))
+IHit3D : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall putref_Point (
+        /*[in]*/ struct IPoint * ppPoint ) = 0;
+      virtual HRESULT __stdcall get_Point (
+        /*[out,retval]*/ struct IPoint * * ppPoint ) = 0;
+      virtual HRESULT __stdcall putref_Owner (
+        /*[in]*/ IUnknown * ppOwner ) = 0;
+      virtual HRESULT __stdcall get_Owner (
+        /*[out,retval]*/ IUnknown * * ppOwner ) = 0;
+      virtual HRESULT __stdcall putref_Object (
+        /*[in]*/ IUnknown * ppObject ) = 0;
+      virtual HRESULT __stdcall get_Object (
+        /*[out,retval]*/ IUnknown * * ppObject ) = 0;
+      virtual HRESULT __stdcall put_DistanceToObserver (
+        /*[in]*/ double pDistanceToObs ) = 0;
+      virtual HRESULT __stdcall get_DistanceToObserver (
+        /*[out,retval]*/ double * pDistanceToObs ) = 0;
+      virtual HRESULT __stdcall put_DistanceToRay (
+        /*[in]*/ double pDistanceToRay ) = 0;
+      virtual HRESULT __stdcall get_DistanceToRay (
+        /*[out,retval]*/ double * pDistanceToRay ) = 0;
+      virtual HRESULT __stdcall SetDepthRange (
+        /*[in]*/ double dMin,
+        /*[in]*/ double dMax ) = 0;
+      virtual HRESULT __stdcall GetDepthRange (
+        /*[out]*/ double * pDMin,
+        /*[out]*/ double * pDMax ) = 0;
+      virtual HRESULT __stdcall put_ExactHit (
+        /*[in]*/ VARIANT_BOOL hit ) = 0;
+      virtual HRESULT __stdcall get_ExactHit (
+        /*[out,retval]*/ VARIANT_BOOL * hit ) = 0;
+};
+
+struct __declspec(uuid("8d8094ee-063a-4bad-9873-6bb2445aca4d"))
+ISceneGraphLayerEvents : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ObjectChanged (
+        /*[in]*/ IUnknown * pObj ) = 0;
+};
+
+struct __declspec(uuid("bbf9e0fe-06f7-4dae-a9fa-05e465ea0e72"))
+ISceneGraphLayerEventsDisp : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ObjectChanged (
+        /*[in]*/ IUnknown * pObj ) = 0;
+};
+
+struct __declspec(uuid("477ff406-c469-11d2-b1da-00c04fa33d14"))
+SceneGraph;
+    // [ default ] interface IUnknown
+    // interface IActiveViewEvents
+    // interface ISceneRendererEvents
+    // interface ISceneGraph
+    // interface IViewers3D
+    // interface ISupportErrorInfo
+    // interface IConnectionPointContainer
+    // interface IScreenDisplay
+    // interface IScreenDisplay2
+    // interface IDisplay3D
+    // interface ITimeDisplay
+    // interface ITimeDisplay2
+    // [ default, source ] interface ISceneGraphEventsDisp
+    // [ source ] interface ISceneGraphEvents
+    // [ source ] interface ITimeDisplayEvents
+    // [ source ] interface ISceneGraphLayerEvents
+    // [ source ] interface ISceneGraphLayerEventsDisp
+
+struct __declspec(uuid("a1bf0693-63a1-4276-89ef-4951dd0cb37f"))
+SceneGraphEvents;
+    // [ default ] interface IUnknown
+    // [ default, source ] interface ISceneGraphEvents
+
+struct __declspec(uuid("517b7bc6-8833-11d4-ab87-0008c73fd50c"))
+MessageDispatcher;
+    // [ default ] interface IUnknown
+    // interface IMessageDispatcher
+
+struct __declspec(uuid("f7873923-9a19-11d4-b270-00508bcdde28"))
+Hit3D;
+    // [ default ] interface IUnknown
+    // interface IHit3D
+
+struct __declspec(uuid("768d13f1-9a2d-11d4-b270-00508bcdde28"))
+Hit3DSet;
+    // [ default ] interface IUnknown
+    // interface IHit3DSet
+
+struct __declspec(uuid("d902df6c-2c21-4f6d-8291-b2bb0a458eb8"))
+SceneGraphLayerEvents;
+    // [ default ] interface IUnknown
+    // [ default, source ] interface ISceneGraphLayerEvents
+
+struct __declspec(uuid("0aa361c1-06a2-11d5-9163-0080c7074326"))
+ILayerRenderers : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_RendererCount (
+        /*[out,retval]*/ long * RendererCount ) = 0;
+      virtual HRESULT __stdcall GetRenderer (
+        /*[in]*/ long index,
+        /*[out,retval]*/ IUnknown * * Renderer ) = 0;
+      virtual HRESULT __stdcall AddRenderer (
+        /*[in]*/ IUnknown * Renderer ) = 0;
+      virtual HRESULT __stdcall InsertRenderer (
+        /*[in]*/ IUnknown * Renderer,
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall RemoveRenderer (
+        /*[in]*/ IUnknown * Renderer ) = 0;
+      virtual HRESULT __stdcall ClearRenderers ( ) = 0;
+};
+
+struct __declspec(uuid("3455fdb6-ee56-455e-a44e-28a0c76d3196"))
+IRasterSurface : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_RasterBand (
+        /*[in]*/ struct IRasterBand * RasterBand ) = 0;
+      virtual HRESULT __stdcall get_RasterBand (
+        /*[out,retval]*/ struct IRasterBand * * RasterBand ) = 0;
+      virtual HRESULT __stdcall PutRaster (
+        /*[in]*/ struct IRaster * Raster,
+        /*[in]*/ long bandIndex ) = 0;
+      virtual HRESULT __stdcall get_Raster (
+        /*[out,retval]*/ struct IRaster * * Raster ) = 0;
+      virtual HRESULT __stdcall put_SampleDistance (
+        /*[in]*/ double pSampleDistance ) = 0;
+      virtual HRESULT __stdcall get_SampleDistance (
+        /*[out,retval]*/ double * pSampleDistance ) = 0;
+};
+
+struct __declspec(uuid("95ef6781-3de4-4f97-84b4-6db6ef90b67b"))
+RasterSurface;
+    // [ default ] interface IUnknown
+    // interface IRasterSurface
+    // interface IFunctionalSurface
+    // interface IFunctionalSurface2
+    // interface ISurface
+
+struct __declspec(uuid("3044c312-37d0-11d4-a167-444553547777"))
+VRMLExporter;
+    // [ default ] interface IUnknown
+    // interface ISceneExporter3d
+    // interface IVRMLExporter
+
+struct __declspec(uuid("26eb3a30-9e6d-443c-b904-79b16c5028aa"))
+IVideoExporterProperties : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsInstalled (
+        /*[out,retval]*/ VARIANT_BOOL * pbIsInstalled ) = 0;
+      virtual HRESULT __stdcall get_CodecList (
+        /*[out,retval]*/ struct IStringArray * * ppCodecs ) = 0;
+      virtual HRESULT __stdcall get_CodecCodeList (
+        /*[out,retval]*/ struct IStringArray * * ppCodecCodes ) = 0;
+      virtual HRESULT __stdcall put_Codec (
+        /*[in]*/ BSTR pCodecName ) = 0;
+      virtual HRESULT __stdcall get_Codec (
+        /*[out,retval]*/ BSTR * pCodecName ) = 0;
+      virtual HRESULT __stdcall put_CodecCode (
+        /*[in]*/ BSTR pCodecCode ) = 0;
+      virtual HRESULT __stdcall get_CodecCode (
+        /*[out,retval]*/ BSTR * pCodecCode ) = 0;
+      virtual HRESULT __stdcall put_ColorDepth (
+        /*[in]*/ short pColorDepth ) = 0;
+      virtual HRESULT __stdcall get_ColorDepth (
+        /*[out,retval]*/ short * pColorDepth ) = 0;
+      virtual HRESULT __stdcall put_Quality (
+        /*[in]*/ int pQualityPercent ) = 0;
+      virtual HRESULT __stdcall get_Quality (
+        /*[out,retval]*/ int * pQualityPercent ) = 0;
+      virtual HRESULT __stdcall put_KeyFrameRate (
+        /*[in]*/ long pKeyFrameRate ) = 0;
+      virtual HRESULT __stdcall get_KeyFrameRate (
+        /*[out,retval]*/ long * pKeyFrameRate ) = 0;
+      virtual HRESULT __stdcall put_DataRate (
+        /*[in]*/ long pDataRate ) = 0;
+      virtual HRESULT __stdcall get_DataRate (
+        /*[out,retval]*/ long * pDataRate ) = 0;
+      virtual HRESULT __stdcall put_FrameDuration (
+        /*[in]*/ long pFrameDuration ) = 0;
+      virtual HRESULT __stdcall get_FrameDuration (
+        /*[out,retval]*/ long * pFrameDuration ) = 0;
+      virtual HRESULT __stdcall put_RecordWindow (
+        /*[in]*/ VARIANT_BOOL pbRecordAppWindow ) = 0;
+      virtual HRESULT __stdcall get_RecordWindow (
+        /*[out,retval]*/ VARIANT_BOOL * pbRecordAppWindow ) = 0;
+      virtual HRESULT __stdcall put_RecordOffScreen (
+        /*[in]*/ VARIANT_BOOL pbRecordOffScreen ) = 0;
+      virtual HRESULT __stdcall get_RecordOffScreen (
+        /*[out,retval]*/ VARIANT_BOOL * pbRecordOffScreen ) = 0;
+      virtual HRESULT __stdcall put_ShowSettingsDialog (
+        /*[in]*/ VARIANT_BOOL pbShowSettingsDialog ) = 0;
+      virtual HRESULT __stdcall get_ShowSettingsDialog (
+        /*[out,retval]*/ VARIANT_BOOL * pbShowSettingsDialog ) = 0;
+};
+
+struct __declspec(uuid("4251ba08-9106-11d5-b29f-00508bcdde28"))
+IAVIExporter : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Quality (
+        /*[in]*/ int pQualityPercent ) = 0;
+      virtual HRESULT __stdcall get_Quality (
+        /*[out,retval]*/ int * pQualityPercent ) = 0;
+};
+
+struct __declspec(uuid("206fda1e-5622-4189-9f9a-486cd52e3457"))
+IQuickTimeExporter : IUnknown
+{};
+
+struct __declspec(uuid("4251ba06-9106-11d5-b29f-00508bcdde28"))
+AVIExporter;
+    // [ default ] interface IUnknown
+    // interface ISceneExporter3d
+    // interface ISceneVideoExporter
+    // interface IVideoExporterProperties
+    // interface IAVIExporter
+
+struct __declspec(uuid("bc9f9a95-6d45-438d-b0fe-e7337510fcc2"))
+QuickTimeExporter;
+    // [ default ] interface IUnknown
+    // interface ISceneExporter3d
+    // interface ISceneVideoExporter
+    // interface IVideoExporterProperties
+
+enum __declspec(uuid("773f7271-aefb-11d5-8112-00c04fa0adf8"))
+esriSimple3DMarkerStyle
+{
+    esriS3DMSTetra = 0,
+    esriS3DMSCube = 1,
+    esriS3DMSCone = 2,
+    esriS3DMSCylinder = 3,
+    esriS3DMSDiamond = 4,
+    esriS3DMSSphere = 5,
+    esriS3DMSSphereFrame = 6
+};
+
+enum __declspec(uuid("773f7277-aefb-11d5-8112-00c04fa0adf8"))
+esri3DMarkerType
+{
+    esri3DMTSimple = 0,
+    esri3DMTGeometry = 1,
+    esri3DMTGeomMaterial = 2
+};
+
+enum __declspec(uuid("bd4d2677-45bd-11d6-a12d-00508bd60cb9"))
+esriSimple3DLineStyle
+{
+    esriS3DLSTube = 0,
+    esriS3DLSStrip = 1,
+    esriS3DLSWall = 2
+};
+
+enum __declspec(uuid("0b9dc269-5166-4364-83b8-c6ce1292c49a"))
+esriColladaExportErrorReturnCodes
+{
+    E_FILEALREADYEXISTS = -2147220735,
+    E_FILECOULDNOTBEWRITTEN = -2147220734,
+    E_COLLADAXMLERROR = -2147220733
+};
+
+struct __declspec(uuid("95e48b87-336e-4062-9b68-eb8ec9177ab8"))
+IImport3DFile : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsValidFile (
+        /*[in]*/ BSTR FilePath,
+        /*[out,retval]*/ VARIANT_BOOL * pValid ) = 0;
+      virtual HRESULT __stdcall CreateFromFile (
+        /*[in]*/ BSTR FilePath ) = 0;
+      virtual HRESULT __stdcall get_Geometry (
+        /*[out,retval]*/ struct IGeometry * * ppGeometry ) = 0;
+      virtual HRESULT __stdcall get_CanBrowse (
+        /*[out,retval]*/ VARIANT_BOOL * pCanBrowse ) = 0;
+      virtual HRESULT __stdcall get_FileDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall get_FileExtension (
+        /*[out,retval]*/ BSTR * pFileExtention ) = 0;
+};
+
+struct __declspec(uuid("733ff31f-1c9c-4b3a-947a-288222c35e12"))
+IImport3DFile2 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsValidFile (
+        /*[in]*/ BSTR FilePath,
+        /*[out,retval]*/ VARIANT_BOOL * pValid ) = 0;
+      virtual HRESULT __stdcall CreateFromFile (
+        /*[in]*/ BSTR FilePath ) = 0;
+      virtual HRESULT __stdcall get_Geometry (
+        /*[out,retval]*/ struct IGeometry * * ppGeometry ) = 0;
+      virtual HRESULT __stdcall get_CanBrowse (
+        /*[out,retval]*/ VARIANT_BOOL * pCanBrowse ) = 0;
+      virtual HRESULT __stdcall get_FileDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall get_FileExtension (
+        /*[out,retval]*/ BSTR * pFileExtention ) = 0;
+      virtual HRESULT __stdcall GetPlacementPreferences (
+        /*[out]*/ double * normalizedAnchorX,
+        /*[out]*/ double * normalizedAnchorY,
+        /*[out]*/ double * normalizedAnchorZ,
+        /*[out]*/ VARIANT_BOOL * bIsBillboard ) = 0;
+};
+
+struct __declspec(uuid("141ced35-f903-47b3-9ea3-210b751583e7"))
+IImport3DFileRoots : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsValidFile (
+        /*[in]*/ BSTR FilePath,
+        /*[out,retval]*/ VARIANT_BOOL * pValid ) = 0;
+      virtual HRESULT __stdcall get_RootCountFromFile (
+        /*[in]*/ BSTR FilePath,
+        /*[out,retval]*/ long * pCount ) = 0;
+      virtual HRESULT __stdcall get_RootGeometry (
+        /*[in]*/ long rootIndex,
+        /*[out,retval]*/ struct IGeometry * * ppGeometry ) = 0;
+      virtual HRESULT __stdcall ReleaseCurrentFile ( ) = 0;
+};
+
+struct __declspec(uuid("8ca5fc21-a755-400f-b47e-cbff35f4ff46"))
+IImport3DApplication : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsValidApplication (
+        /*[in]*/ VARIANT * pApplication,
+        /*[out,retval]*/ VARIANT_BOOL * pValid ) = 0;
+      virtual HRESULT __stdcall get_ApplicationGeometry (
+        /*[in]*/ VARIANT * pApplication,
+        /*[in]*/ VARIANT_BOOL onlySelected,
+        /*[out,retval]*/ struct IGeometry * * ppGeometry ) = 0;
+};
+
+struct __declspec(uuid("3b7066dc-bd50-41be-b4fb-89c857ef73e6"))
+IExportColladaFile : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall MultipatchToCollada (
+        /*[in]*/ struct IMultiPatch * pMultiPatch,
+        /*[in]*/ BSTR bsFileDirectory,
+        /*[in]*/ BSTR bsFilename,
+        /*[in]*/ VARIANT_BOOL bCompressIndexes ) = 0;
+      virtual HRESULT __stdcall MultipatchToCollada2 (
+        /*[in]*/ struct IMultiPatch * pMultiPatch,
+        /*[in]*/ BSTR bsFileDirectory,
+        /*[in]*/ BSTR bsFilename,
+        /*[in]*/ VARIANT_BOOL bCompressIndexes,
+        /*[in]*/ struct IRgbColor * pColor ) = 0;
+};
+
+struct __declspec(uuid("e9f95f61-2bec-11d6-a4cd-444553547777"))
+IGeometryMaterial : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SetColor (
+        /*[in]*/ double red,
+        /*[in]*/ double green,
+        /*[in]*/ double blue ) = 0;
+      virtual HRESULT __stdcall GetColor (
+        /*[out]*/ double * pRed,
+        /*[out]*/ double * pGreen,
+        /*[out]*/ double * pBlue ) = 0;
+      virtual HRESULT __stdcall putref_Color (
+        /*[in]*/ struct IRgbColor * ppRgbColor ) = 0;
+      virtual HRESULT __stdcall get_Color (
+        /*[out,retval]*/ struct IRgbColor * * ppRgbColor ) = 0;
+      virtual HRESULT __stdcall put_Transparency (
+        /*[in]*/ double pTransparency ) = 0;
+      virtual HRESULT __stdcall get_Transparency (
+        /*[out,retval]*/ double * pTransparency ) = 0;
+      virtual HRESULT __stdcall put_TextureImage (
+        /*[in]*/ BSTR pFilePath ) = 0;
+      virtual HRESULT __stdcall get_TextureImage (
+        /*[out,retval]*/ BSTR * pFilePath ) = 0;
+      virtual HRESULT __stdcall ClearTextureImage ( ) = 0;
+      virtual HRESULT __stdcall putref_TransparentTextureColor (
+        /*[in]*/ struct IRgbColor * ppRgbColor ) = 0;
+      virtual HRESULT __stdcall get_TransparentTextureColor (
+        /*[out,retval]*/ struct IRgbColor * * ppRgbColor ) = 0;
+      virtual HRESULT __stdcall get_HasTransparentTextureColor (
+        /*[out,retval]*/ VARIANT_BOOL * pHasTransparentColor ) = 0;
+      virtual HRESULT __stdcall ClearTransparentTextureColor ( ) = 0;
+      virtual HRESULT __stdcall get_TextureColorPalette (
+        /*[out]*/ struct IArray * * ppRgbColors ) = 0;
+};
+
+struct __declspec(uuid("b7685a34-2bc8-11d6-a4cc-444553547777"))
+IGeometryMaterialList : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pCount ) = 0;
+      virtual HRESULT __stdcall AddMaterial (
+        /*[in]*/ struct IGeometryMaterial * pMaterial ) = 0;
+      virtual HRESULT __stdcall InsertMaterial (
+        /*[in]*/ long index,
+        /*[in]*/ struct IGeometryMaterial * pMaterial ) = 0;
+      virtual HRESULT __stdcall RemoveMaterial (
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall EmptyList ( ) = 0;
+      virtual HRESULT __stdcall get_GeometryMaterial (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IGeometryMaterial * * pGeometryMaterial ) = 0;
+};
+
+struct __declspec(uuid("821003c1-2c6b-11d6-a4ce-444553547777"))
+IGeneralMultiPatchCreator : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Init (
+        /*[in]*/ long PointCount,
+        /*[in]*/ long partCount,
+        /*[in]*/ VARIANT_BOOL hasMs,
+        /*[in]*/ VARIANT_BOOL hasIDs,
+        /*[in]*/ VARIANT_BOOL hasNormals,
+        /*[in]*/ long TexturePointCount,
+        /*[in]*/ struct IGeometryMaterialList * pGeometryMaterialList ) = 0;
+      virtual HRESULT __stdcall SetPatchPointIndex (
+        /*[in]*/ long patch,
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall SetPatchType (
+        /*[in]*/ long patch,
+        /*[in]*/ enum esriPatchType Type ) = 0;
+      virtual HRESULT __stdcall SetPatchPriority (
+        /*[in]*/ long patch,
+        /*[in]*/ long priority ) = 0;
+      virtual HRESULT __stdcall SetMaterialIndex (
+        /*[in]*/ long patch,
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall SetPoint (
+        /*[in]*/ long index,
+        /*[in]*/ struct IPoint * pPoint ) = 0;
+      virtual HRESULT __stdcall SetWKSPointZ (
+        /*[in]*/ long index,
+        /*[in]*/ WKSPointZ * pPoint ) = 0;
+      virtual HRESULT __stdcall SetM (
+        /*[in]*/ long index,
+        /*[in]*/ double mValue ) = 0;
+      virtual HRESULT __stdcall SetNormal (
+        /*[in]*/ long index,
+        /*[in]*/ struct IVector3D * pVector ) = 0;
+      virtual HRESULT __stdcall SetPatchTexturePointIndex (
+        /*[in]*/ long part,
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall SetTexturePoint (
+        /*[in]*/ long index,
+        /*[in]*/ struct IPoint * pPoint ) = 0;
+      virtual HRESULT __stdcall SetTextureWKSPoint (
+        /*[in]*/ long index,
+        /*[in]*/ WKSPoint * pPoint ) = 0;
+      virtual HRESULT __stdcall SetID (
+        /*[in]*/ long index,
+        /*[in]*/ long ID ) = 0;
+      virtual HRESULT __stdcall ClearResources ( ) = 0;
+      virtual HRESULT __stdcall CreateMultiPatch (
+        /*[out,retval]*/ struct IGeometry * * pGeometry ) = 0;
+};
+
+struct __declspec(uuid("773f7276-aefb-11d5-8112-00c04fa0adf8"))
+IMarker3DPlacement : IMarkerSymbol
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Units (
+        /*[out,retval]*/ enum esriUnits * unitsCode ) = 0;
+      virtual HRESULT __stdcall put_Units (
+        /*[in]*/ enum esriUnits unitsCode ) = 0;
+      virtual HRESULT __stdcall get_NormalizedOriginOffset (
+        /*[out,retval]*/ struct IVector3D * * offset ) = 0;
+      virtual HRESULT __stdcall putref_NormalizedOriginOffset (
+        /*[in]*/ struct IVector3D * offset ) = 0;
+      virtual HRESULT __stdcall get_ZOffset (
+        /*[out,retval]*/ double * ZOffset ) = 0;
+      virtual HRESULT __stdcall put_ZOffset (
+        /*[in]*/ double ZOffset ) = 0;
+      virtual HRESULT __stdcall get_Shape (
+        /*[out,retval]*/ struct IGeometry * * Shape ) = 0;
+      virtual HRESULT __stdcall ApplyToPoint (
+        /*[in]*/ struct IPoint * inShape,
+        /*[out]*/ struct IGeometry * * outShape,
+        /*[in]*/ double enforcedZ,
+        /*[in]*/ double unitFactor,
+        /*[in]*/ double zScale ) = 0;
+      virtual HRESULT __stdcall QueryRotationAngles (
+        /*[out]*/ double * xAngle,
+        /*[out]*/ double * yAngle,
+        /*[out]*/ double * zAngle ) = 0;
+      virtual HRESULT __stdcall SetRotationAngles (
+        /*[in]*/ double xAngle,
+        /*[in]*/ double yAngle,
+        /*[in]*/ double zAngle ) = 0;
+      virtual HRESULT __stdcall get_Width (
+        /*[out,retval]*/ double * Width ) = 0;
+      virtual HRESULT __stdcall put_Width (
+        /*[in]*/ double Width ) = 0;
+      virtual HRESULT __stdcall get_Depth (
+        /*[out,retval]*/ double * Depth ) = 0;
+      virtual HRESULT __stdcall put_Depth (
+        /*[in]*/ double Depth ) = 0;
+      virtual HRESULT __stdcall get_MaintainAspectRatio (
+        /*[out,retval]*/ VARIANT_BOOL * bAspectRatio ) = 0;
+      virtual HRESULT __stdcall put_MaintainAspectRatio (
+        /*[in]*/ VARIANT_BOOL bAspectRatio ) = 0;
+};
+
+struct __declspec(uuid("773f726f-aefb-11d5-8112-00c04fa0adf8"))
+ISimpleMarker3DSymbol : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Style (
+        /*[out,retval]*/ enum esriSimple3DMarkerStyle * Style ) = 0;
+      virtual HRESULT __stdcall put_Style (
+        /*[in]*/ enum esriSimple3DMarkerStyle Style ) = 0;
+      virtual HRESULT __stdcall get_ResolutionQuality (
+        /*[out,retval]*/ double * Quality ) = 0;
+      virtual HRESULT __stdcall put_ResolutionQuality (
+        /*[in]*/ double Quality ) = 0;
+};
+
+struct __declspec(uuid("773f7272-aefb-11d5-8112-00c04fa0adf8"))
+IMarker3DSymbol : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall putref_Shape (
+        /*[in]*/ struct IGeometry * Shape ) = 0;
+      virtual HRESULT __stdcall get_Shape (
+        /*[out,retval]*/ struct IGeometry * * Shape ) = 0;
+      virtual HRESULT __stdcall get_UseMaterialDraping (
+        /*[out,retval]*/ VARIANT_BOOL * useDraping ) = 0;
+      virtual HRESULT __stdcall put_UseMaterialDraping (
+        /*[in]*/ VARIANT_BOOL useDraping ) = 0;
+      virtual HRESULT __stdcall get_MaterialCount (
+        /*[out,retval]*/ long * cMaterials ) = 0;
+      virtual HRESULT __stdcall CreateFromFile (
+        /*[in]*/ BSTR FileName ) = 0;
+      virtual HRESULT __stdcall get_Thumbnail (
+        /*[out,retval]*/ struct IPicture * * Thumbnail ) = 0;
+      virtual HRESULT __stdcall putref_Thumbnail (
+        /*[in]*/ struct IPicture * Thumbnail ) = 0;
+      virtual HRESULT __stdcall RestrictAccessToShape ( ) = 0;
+      virtual HRESULT __stdcall get_IsRestricted (
+        /*[out,retval]*/ VARIANT_BOOL * IsRestricted ) = 0;
+};
+
+struct __declspec(uuid("6e8ec8f8-e90a-11d5-a129-00508bd60cb9"))
+ICharacterMarker3DSymbol : IMarkerSymbol
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Font (
+        /*[out,retval]*/ IFontDisp * * fontDisp ) = 0;
+      virtual HRESULT __stdcall put_Font (
+        /*[in]*/ IFontDisp * fontDisp ) = 0;
+      virtual HRESULT __stdcall get_CharacterIndex (
+        /*[out,retval]*/ long * charIndex ) = 0;
+      virtual HRESULT __stdcall put_CharacterIndex (
+        /*[in]*/ long charIndex ) = 0;
+      virtual HRESULT __stdcall get_VerticalOrientation (
+        /*[out,retval]*/ VARIANT_BOOL * bVertical ) = 0;
+      virtual HRESULT __stdcall put_VerticalOrientation (
+        /*[in]*/ VARIANT_BOOL bVertical ) = 0;
+};
+
+struct __declspec(uuid("470b7273-3552-11d6-a12d-00508bd60cb9"))
+ILine3DPlacement : ILineSymbol
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Units (
+        /*[out,retval]*/ enum esriUnits * unitsCode ) = 0;
+      virtual HRESULT __stdcall put_Units (
+        /*[in]*/ enum esriUnits unitsCode ) = 0;
+      virtual HRESULT __stdcall ApplyToLine (
+        /*[in]*/ struct IGeometry * inShape,
+        /*[out]*/ struct IGeometry * * outShape,
+        /*[in]*/ double enforcedZ,
+        /*[in]*/ double zScale ) = 0;
+};
+
+struct __declspec(uuid("470b7274-3552-11d6-a12d-00508bd60cb9"))
+ISimpleLine3DSymbol : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Style (
+        /*[out,retval]*/ enum esriSimple3DLineStyle * Style ) = 0;
+      virtual HRESULT __stdcall put_Style (
+        /*[in]*/ enum esriSimple3DLineStyle Style ) = 0;
+      virtual HRESULT __stdcall get_ResolutionQuality (
+        /*[out,retval]*/ double * Quality ) = 0;
+      virtual HRESULT __stdcall put_ResolutionQuality (
+        /*[in]*/ double Quality ) = 0;
+};
+
+struct __declspec(uuid("3f6d8301-5a5a-4b84-969f-433af07ee1a3"))
+ITextureFillSymbol : IFillSymbol
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Texture (
+        /*[out,retval]*/ struct IGeometryMaterial * * Texture ) = 0;
+      virtual HRESULT __stdcall putref_Texture (
+        /*[in]*/ struct IGeometryMaterial * Texture ) = 0;
+      virtual HRESULT __stdcall put_BitmapTransparencyColor (
+        /*[in]*/ struct IColor * Color ) = 0;
+      virtual HRESULT __stdcall get_BitmapTransparencyColor (
+        /*[out,retval]*/ struct IColor * * Color ) = 0;
+      virtual HRESULT __stdcall get_Angle (
+        /*[out,retval]*/ double * Angle ) = 0;
+      virtual HRESULT __stdcall put_Angle (
+        /*[in]*/ double Angle ) = 0;
+      virtual HRESULT __stdcall get_Size (
+        /*[out,retval]*/ double * pSize ) = 0;
+      virtual HRESULT __stdcall put_Size (
+        /*[in]*/ double pSize ) = 0;
+      virtual HRESULT __stdcall CreateFillSymbolFromFile (
+        /*[in]*/ BSTR FileName ) = 0;
+};
+
+struct __declspec(uuid("d47a4da5-6d42-11d6-a13e-00508bd60cb9"))
+ITextureLineSymbol : ILineSymbol
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Texture (
+        /*[out,retval]*/ struct IGeometryMaterial * * Texture ) = 0;
+      virtual HRESULT __stdcall putref_Texture (
+        /*[in]*/ struct IGeometryMaterial * Texture ) = 0;
+      virtual HRESULT __stdcall put_BitmapTransparencyColor (
+        /*[in]*/ struct IColor * Color ) = 0;
+      virtual HRESULT __stdcall get_BitmapTransparencyColor (
+        /*[out,retval]*/ struct IColor * * Color ) = 0;
+      virtual HRESULT __stdcall CreateLineSymbolFromFile (
+        /*[in]*/ BSTR FileName ) = 0;
+      virtual HRESULT __stdcall get_TextureFillSymbol (
+        /*[out,retval]*/ struct ITextureFillSymbol * * textureFillSym ) = 0;
+      virtual HRESULT __stdcall get_VerticalOrientation (
+        /*[out,retval]*/ VARIANT_BOOL * bVertical ) = 0;
+      virtual HRESULT __stdcall put_VerticalOrientation (
+        /*[in]*/ VARIANT_BOOL bVertical ) = 0;
+};
+
+struct __declspec(uuid("40aae3c0-9552-4768-965f-b9c219b5876b"))
+IBillboardDisplay : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_BillboardDisplay (
+        /*[out,retval]*/ VARIANT_BOOL * pBillboard ) = 0;
+      virtual HRESULT __stdcall put_BillboardDisplay (
+        /*[in]*/ VARIANT_BOOL pBillboard ) = 0;
+};
+
+struct __declspec(uuid("773f7270-aefb-11d5-8112-00c04fa0adf8"))
+SimpleMarker3DSymbol;
+    // [ default ] interface IUnknown
+    // interface ISimpleMarker3DSymbol
+    // interface IMarker3DPlacement
+    // interface IMapLevel
+    // interface ISymbol
+    // interface IPropertySupport
+    // interface IPersistStream
+    // interface IPersist
+    // interface IClone
+    // interface IDisplayName
+    // interface ISymbol3D
+    // interface IBillboardDisplay
+
+struct __declspec(uuid("122c5327-9e2b-4f51-bae2-c70dc528c11a"))
+ExportColladaFile;
+    // [ default ] interface IUnknown
+    // interface IExportColladaFile
+
+struct __declspec(uuid("773f7274-aefb-11d5-8112-00c04fa0adf8"))
+Marker3DSymbol;
+    // [ default ] interface IUnknown
+    // interface IMarker3DSymbol
+    // interface IMarker3DPlacement
+    // interface IMapLevel
+    // interface ISymbol
+    // interface IPropertySupport
+    // interface IPersistStream
+    // interface IPersist
+    // interface IClone
+    // interface IDisplayName
+    // interface ISymbol3D
+    // interface IBillboardDisplay
+
+struct __declspec(uuid("6e8ec8f7-e90a-11d5-a129-00508bd60cb9"))
+CharacterMarker3DSymbol;
+    // [ default ] interface IUnknown
+    // interface ICharacterMarker3DSymbol
+    // interface IMarker3DPlacement
+    // interface IMapLevel
+    // interface ISymbol
+    // interface IPropertySupport
+    // interface IPersistStream
+    // interface IPersist
+    // interface IClone
+    // interface IDisplayName
+    // interface ISymbol3D
+    // interface IBillboardDisplay
+
+struct __declspec(uuid("470b7275-3552-11d6-a12d-00508bd60cb9"))
+SimpleLine3DSymbol;
+    // [ default ] interface IUnknown
+    // interface ISimpleLine3DSymbol
+    // interface ILine3DPlacement
+    // interface IMapLevel
+    // interface ISymbol
+    // interface IPropertySupport
+    // interface IPersistStream
+    // interface IPersist
+    // interface IClone
+    // interface IDisplayName
+    // interface ISymbol3D
+
+struct __declspec(uuid("8d738780-c069-42e0-9dfa-2b7b61707ba9"))
+TextureFillSymbol;
+    // [ default ] interface IUnknown
+    // interface ITextureFillSymbol
+    // interface IMapLevel
+    // interface ISymbol
+    // interface IPropertySupport
+    // interface IPersistStream
+    // interface IPersist
+    // interface IClone
+    // interface IDisplayName
+    // interface ISymbol3D
+
+struct __declspec(uuid("b5710c9c-a9bc-4a16-b578-54be176ed57b"))
+TextureLineSymbol;
+    // [ default ] interface IUnknown
+    // interface ITextureLineSymbol
+    // interface IMapLevel
+    // interface ISymbol
+    // interface IPropertySupport
+    // interface IPersistStream
+    // interface IPersist
+    // interface IClone
+    // interface IDisplayName
+    // interface ILine3DPlacement
+    // interface ISymbol3D
+
+struct __declspec(uuid("f7491560-b744-11d5-a3ef-444553547777"))
+Import3DFile;
+    // [ default ] interface IUnknown
+    // interface IImport3DFile
+    // interface IImport3DFileRoots
+    // interface IImport3DApplication
+
+struct __declspec(uuid("0e6f4b27-2bd0-11d6-a4cc-444553547777"))
+GeometryMaterial;
+    // [ default ] interface IUnknown
+    // interface IGeometryMaterial
+    // interface IPersistStream
+    // interface IPersist
+
+struct __declspec(uuid("0e6f4b2c-2bd0-11d6-a4cc-444553547777"))
+GeometryMaterialList;
+    // [ default ] interface IUnknown
+    // interface IGeometryMaterialList
+
+struct __declspec(uuid("776b5584-2c7f-11d6-a4ce-444553547777"))
+GeneralMultiPatchCreator;
+    // [ default ] interface IUnknown
+    // interface IGeneralMultiPatchCreator
+
+enum __declspec(uuid("8f35e558-3f0b-49ee-a5cd-e4d30aabde65"))
+esri3DServerType
+{
+    esri3DServerScene = 0,
+    esri3DServerGlobe = 1,
+    esri3DServerSceneAddTerrain = 2
+};
+
+struct __declspec(uuid("787f54e2-ba26-11d2-92f8-44d1f8c00000"))
+IScene : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Extent (
+        /*[out,retval]*/ struct IEnvelope * * pExtent ) = 0;
+      virtual HRESULT __stdcall SuggestExaggerationFactor (
+        /*[in]*/ double aspectRatio,
+        /*[out]*/ double * ExaggerationFactor ) = 0;
+      virtual HRESULT __stdcall get_ExaggerationFactor (
+        /*[out,retval]*/ double * ExaggerationFactor ) = 0;
+      virtual HRESULT __stdcall put_ExaggerationFactor (
+        /*[in]*/ double ExaggerationFactor ) = 0;
+      virtual HRESULT __stdcall Applies (
+        /*[in]*/ IUnknown * Object,
+        /*[out,retval]*/ VARIANT_BOOL * Applies ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * descr ) = 0;
+      virtual HRESULT __stdcall put_Description (
+        /*[in]*/ BSTR descr ) = 0;
+      virtual HRESULT __stdcall get_AreaOfInterest (
+        /*[out,retval]*/ struct IEnvelope * * aoi ) = 0;
+      virtual HRESULT __stdcall put_AreaOfInterest (
+        /*[in]*/ struct IEnvelope * aoi ) = 0;
+      virtual HRESULT __stdcall get_LayerCount (
+        /*[out,retval]*/ long * pcLayers ) = 0;
+      virtual HRESULT __stdcall get_Layer (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct ILayer * * ppLayer ) = 0;
+      virtual HRESULT __stdcall get_Layers (
+        /*[in]*/ struct IUID * uid,
+        /*[in]*/ VARIANT_BOOL recursive,
+        /*[out,retval]*/ struct IEnumLayer * * Layers ) = 0;
+      virtual HRESULT __stdcall AddLayer (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ VARIANT_BOOL autoArrange ) = 0;
+      virtual HRESULT __stdcall AddLayers (
+        /*[in]*/ struct IEnumLayer * Layers,
+        /*[in]*/ VARIANT_BOOL autoArrange ) = 0;
+      virtual HRESULT __stdcall DeleteLayer (
+        /*[in]*/ struct ILayer * Layer ) = 0;
+      virtual HRESULT __stdcall MoveLayer (
+        /*[in]*/ struct ILayer * Layer,
+        /*[in]*/ long toIndex ) = 0;
+      virtual HRESULT __stdcall ClearLayers ( ) = 0;
+      virtual HRESULT __stdcall get_SpatialReference (
+        /*[out,retval]*/ struct ISpatialReference * * spatialRef ) = 0;
+      virtual HRESULT __stdcall putref_SpatialReference (
+        /*[in]*/ struct ISpatialReference * spatialRef ) = 0;
+      virtual HRESULT __stdcall ProposeSpatialReference (
+        /*[in]*/ struct ISpatialReference * pProposedSR,
+        /*[out]*/ VARIANT_BOOL * pbChanged ) = 0;
+      virtual HRESULT __stdcall get_BasicGraphicsLayer (
+        /*[out,retval]*/ struct IGraphicsLayer * * ppLayer ) = 0;
+      virtual HRESULT __stdcall get_ActiveGraphicsLayer (
+        /*[out,retval]*/ struct ILayer * * ppLayer ) = 0;
+      virtual HRESULT __stdcall putref_ActiveGraphicsLayer (
+        /*[in]*/ struct ILayer * ppLayer ) = 0;
+      virtual HRESULT __stdcall DelayEvents (
+        /*[in]*/ VARIANT_BOOL delay ) = 0;
+      virtual HRESULT __stdcall get_SelectionCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall SelectFeature (
+        /*[in]*/ struct ILayer * Layer,
+        /*[in]*/ struct IFeature * pFeature ) = 0;
+      virtual HRESULT __stdcall ClearSelection ( ) = 0;
+      virtual HRESULT __stdcall get_FeatureSelection (
+        /*[out,retval]*/ struct ISelection * * selection ) = 0;
+      virtual HRESULT __stdcall putref_FeatureSelection (
+        /*[in]*/ struct ISelection * selection ) = 0;
+      virtual HRESULT __stdcall SelectByShape (
+        /*[in]*/ struct IGeometry * Shape,
+        /*[in]*/ struct ISelectionEnvironment * env,
+        /*[in]*/ VARIANT_BOOL justOne ) = 0;
+      virtual HRESULT __stdcall RecalculateExtent ( ) = 0;
+      virtual HRESULT __stdcall get_SceneGraph (
+        /*[out,retval]*/ struct ISceneGraph * * ppSceneGraph ) = 0;
+      virtual HRESULT __stdcall SetDefaultBackgroundColor (
+        /*[in]*/ float red,
+        /*[in]*/ float green,
+        /*[in]*/ float blue ) = 0;
+      virtual HRESULT __stdcall GetDefaultBackgroundColor (
+        /*[out]*/ float * red,
+        /*[out]*/ float * green,
+        /*[out]*/ float * blue ) = 0;
+};
+
+struct __declspec(uuid("bbf1af30-a6ec-11d5-b2a0-00508bcdde28"))
+IAnimationType : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_CLSID (
+        /*[out,retval]*/ struct IUID * * ppCLSID ) = 0;
+      virtual HRESULT __stdcall get_KeyframeCLSID (
+        /*[out,retval]*/ struct IUID * * ppCLSID ) = 0;
+      virtual HRESULT __stdcall get_AppliesToObject (
+        /*[in]*/ VARIANT pObject,
+        /*[out,retval]*/ VARIANT_BOOL * pbApplies ) = 0;
+      virtual HRESULT __stdcall get_PropertyCount (
+        /*[out,retval]*/ long * pPropCount ) = 0;
+      virtual HRESULT __stdcall get_PropertyType (
+        /*[in]*/ long index,
+        /*[out,retval]*/ enum esriAnimationPropertyType * pPropType ) = 0;
+      virtual HRESULT __stdcall get_PropertyName (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * pPropName ) = 0;
+      virtual HRESULT __stdcall get_IsEnumProperty (
+        /*[in]*/ long index,
+        /*[out,retval]*/ VARIANT_BOOL * pbIsEnum ) = 0;
+      virtual HRESULT __stdcall get_EnumPropertyValueName (
+        /*[in]*/ long index,
+        /*[in]*/ long Value,
+        /*[out,retval]*/ BSTR * pValueName ) = 0;
+      virtual HRESULT __stdcall get_EnumPropertyMinValue (
+        /*[in]*/ long index,
+        /*[out,retval]*/ long * pMinValue ) = 0;
+      virtual HRESULT __stdcall get_EnumPropertyMaxValue (
+        /*[in]*/ long index,
+        /*[out,retval]*/ long * pMaxValue ) = 0;
+      virtual HRESULT __stdcall get_ObjectArray (
+        /*[in]*/ struct IScene * pScene,
+        /*[out,retval]*/ struct IArray * * ppObjects ) = 0;
+      virtual HRESULT __stdcall get_AnimationObjectID (
+        /*[in]*/ struct IScene * pScene,
+        /*[in]*/ VARIANT pObject,
+        /*[out,retval]*/ long * pObjectID ) = 0;
+      virtual HRESULT __stdcall get_AnimationObjectByID (
+        /*[in]*/ struct IScene * pScene,
+        /*[in]*/ long objectID,
+        /*[out,retval]*/ VARIANT * ppObject ) = 0;
+      virtual HRESULT __stdcall get_AnimationObjectName (
+        /*[in]*/ struct IScene * pScene,
+        /*[in]*/ VARIANT pObject,
+        /*[out,retval]*/ BSTR * pName ) = 0;
+      virtual HRESULT __stdcall ResetObject (
+        /*[in]*/ struct IScene * pScene,
+        /*[in]*/ VARIANT pObject ) = 0;
+};
+
+struct __declspec(uuid("767c9b53-5a8e-11d5-b295-00508bcdde28"))
+IKeyframe : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall get_ActiveProperties (
+        /*[out,retval]*/ struct ILongArray * * ppActiveProps ) = 0;
+      virtual HRESULT __stdcall put_ActiveProperties (
+        /*[in]*/ struct ILongArray * ppActiveProps ) = 0;
+      virtual HRESULT __stdcall get_IsActiveProperty (
+        /*[in]*/ long propIndex,
+        /*[out,retval]*/ VARIANT_BOOL * pbIsActiveProp ) = 0;
+      virtual HRESULT __stdcall put_IsActiveProperty (
+        /*[in]*/ long propIndex,
+        /*[in]*/ VARIANT_BOOL pbIsActiveProp ) = 0;
+      virtual HRESULT __stdcall get_PropertyValueInt (
+        /*[in]*/ long propIndex,
+        /*[out,retval]*/ int * pIntValue ) = 0;
+      virtual HRESULT __stdcall get_PropertyValueLong (
+        /*[in]*/ long propIndex,
+        /*[out,retval]*/ long * pLongValue ) = 0;
+      virtual HRESULT __stdcall get_PropertyValueDouble (
+        /*[in]*/ long propIndex,
+        /*[out,retval]*/ double * pDoubleValue ) = 0;
+      virtual HRESULT __stdcall get_PropertyValueBoolean (
+        /*[in]*/ long propIndex,
+        /*[out,retval]*/ VARIANT_BOOL * pBoolValue ) = 0;
+      virtual HRESULT __stdcall get_PropertyValuePoint (
+        /*[in]*/ long propIndex,
+        /*[out,retval]*/ struct IPoint * * ppPoint ) = 0;
+      virtual HRESULT __stdcall get_PropertyValueExtent (
+        /*[in]*/ long propIndex,
+        /*[out,retval]*/ struct IEnvelope * * ppExtent ) = 0;
+      virtual HRESULT __stdcall get_PropertyValueRGBColor (
+        /*[in]*/ long propIndex,
+        /*[out,retval]*/ struct IColor * * ppColor ) = 0;
+      virtual HRESULT __stdcall put_PropertyValueInt (
+        /*[in]*/ long propIndex,
+        /*[in]*/ int pIntValue ) = 0;
+      virtual HRESULT __stdcall put_PropertyValueLong (
+        /*[in]*/ long propIndex,
+        /*[in]*/ long pLongValue ) = 0;
+      virtual HRESULT __stdcall put_PropertyValueDouble (
+        /*[in]*/ long propIndex,
+        /*[in]*/ double pDoubleValue ) = 0;
+      virtual HRESULT __stdcall put_PropertyValueBoolean (
+        /*[in]*/ long propIndex,
+        /*[in]*/ VARIANT_BOOL pBoolValue ) = 0;
+      virtual HRESULT __stdcall put_PropertyValuePoint (
+        /*[in]*/ long propIndex,
+        /*[in]*/ struct IPoint * ppPoint ) = 0;
+      virtual HRESULT __stdcall put_PropertyValueExtent (
+        /*[in]*/ long propIndex,
+        /*[in]*/ struct IEnvelope * ppExtent ) = 0;
+      virtual HRESULT __stdcall put_PropertyValueRGBColor (
+        /*[in]*/ long propIndex,
+        /*[in]*/ struct IColor * ppColor ) = 0;
+      virtual HRESULT __stdcall put_TimeStamp (
+        /*[in]*/ double pTimeStamp ) = 0;
+      virtual HRESULT __stdcall get_TimeStamp (
+        /*[out,retval]*/ double * pTimeStamp ) = 0;
+      virtual HRESULT __stdcall get_AnimationType (
+        /*[out,retval]*/ struct IAnimationType * * ppAnimationType ) = 0;
+      virtual HRESULT __stdcall Apply (
+        /*[in]*/ struct IScene * pScene,
+        /*[in]*/ VARIANT pObject ) = 0;
+      virtual HRESULT __stdcall CaptureProperties (
+        /*[in]*/ struct IScene * pScene,
+        /*[in]*/ VARIANT pObject ) = 0;
+      virtual HRESULT __stdcall Interpolate (
+        /*[in]*/ struct IScene * pScene,
+        /*[in]*/ VARIANT pObject,
+        /*[in]*/ long propertyIndex,
+        /*[in]*/ double time,
+        /*[in]*/ struct IKeyframe * pNextKeyframe,
+        /*[in]*/ struct IKeyframe * pPrevKeyframe,
+        /*[in]*/ struct IKeyframe * pAfterNextKeyframe ) = 0;
+      virtual HRESULT __stdcall get_ObjectNeedsRefresh (
+        /*[out,retval]*/ VARIANT_BOOL * pNeedsRefresh ) = 0;
+      virtual HRESULT __stdcall RefreshObject (
+        /*[in]*/ struct IScene * pScene,
+        /*[in]*/ VARIANT pObject ) = 0;
+};
+
+struct __declspec(uuid("bd3c7aad-a869-11d5-b2a0-00508bcdde28"))
+IBookmarkToKeyframe : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ConvertToKeyframe (
+        /*[out,retval]*/ struct IKeyframe * * ppOutKeyframe ) = 0;
+};
+
+struct __declspec(uuid("bbf1af31-a6ec-11d5-b2a0-00508bcdde28"))
+IAnimationTrack : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ActiveProperties (
+        /*[out,retval]*/ struct ILongArray * * ppActiveProps ) = 0;
+      virtual HRESULT __stdcall put_ActiveProperties (
+        /*[in]*/ struct ILongArray * ppActiveProps ) = 0;
+      virtual HRESULT __stdcall get_IsActiveProperty (
+        /*[in]*/ long propIndex,
+        /*[out,retval]*/ VARIANT_BOOL * pbIsActiveProp ) = 0;
+      virtual HRESULT __stdcall put_IsActiveProperty (
+        /*[in]*/ long propIndex,
+        /*[in]*/ VARIANT_BOOL pbIsActiveProp ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall get_AnimationType (
+        /*[out,retval]*/ struct IAnimationType * * ppAnimationType ) = 0;
+      virtual HRESULT __stdcall putref_AnimationType (
+        /*[in]*/ struct IAnimationType * ppAnimationType ) = 0;
+      virtual HRESULT __stdcall get_KeyframeCount (
+        /*[out,retval]*/ long * pKeyframeCount ) = 0;
+      virtual HRESULT __stdcall get_Keyframe (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IKeyframe * * ppKeyframe ) = 0;
+      virtual HRESULT __stdcall get_IsCycle (
+        /*[out,retval]*/ VARIANT_BOOL * pbIsCycle ) = 0;
+      virtual HRESULT __stdcall put_IsCycle (
+        /*[in]*/ VARIANT_BOOL pbIsCycle ) = 0;
+      virtual HRESULT __stdcall get_BeginTime (
+        /*[out,retval]*/ double * pBeginTime ) = 0;
+      virtual HRESULT __stdcall put_BeginTime (
+        /*[in]*/ double pBeginTime ) = 0;
+      virtual HRESULT __stdcall get_EndTime (
+        /*[out,retval]*/ double * pEndTime ) = 0;
+      virtual HRESULT __stdcall put_EndTime (
+        /*[in]*/ double pEndTime ) = 0;
+      virtual HRESULT __stdcall get_IsEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pbIsEnabled ) = 0;
+      virtual HRESULT __stdcall put_IsEnabled (
+        /*[in]*/ VARIANT_BOOL pbIsEnabled ) = 0;
+      virtual HRESULT __stdcall put_EvenTimeStamps (
+        /*[in]*/ VARIANT_BOOL pbEvenTimeStamps ) = 0;
+      virtual HRESULT __stdcall get_EvenTimeStamps (
+        /*[out,retval]*/ VARIANT_BOOL * pbEvenTimeStamps ) = 0;
+      virtual HRESULT __stdcall put_ApplyToAllViewers (
+        /*[in]*/ VARIANT_BOOL pbApplyToAllViewers ) = 0;
+      virtual HRESULT __stdcall get_ApplyToAllViewers (
+        /*[out,retval]*/ VARIANT_BOOL * pbApplyToAllViewers ) = 0;
+      virtual HRESULT __stdcall get_AttachedObjectsCount (
+        /*[out,retval]*/ long * pObjectCount ) = 0;
+      virtual HRESULT __stdcall get_AttachedObjects (
+        /*[out,retval]*/ struct IArray * * ppObjectArray ) = 0;
+      virtual HRESULT __stdcall get_IsAttached (
+        /*[in]*/ IUnknown * pObject,
+        /*[out,retval]*/ VARIANT_BOOL * pbIsAttached ) = 0;
+      virtual HRESULT __stdcall put_AttachedObjects (
+        /*[in]*/ struct IArray * ppObjectArray ) = 0;
+      virtual HRESULT __stdcall AttachObject (
+        /*[in]*/ IUnknown * pObject ) = 0;
+      virtual HRESULT __stdcall DetachObject (
+        /*[in]*/ IUnknown * pObject ) = 0;
+      virtual HRESULT __stdcall DetachAllObjects ( ) = 0;
+      virtual HRESULT __stdcall ResetAttachedObjects (
+        /*[in]*/ struct IScene * pScene ) = 0;
+      virtual HRESULT __stdcall InsertKeyframe (
+        /*[in]*/ struct IKeyframe * pKeyframe,
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall RemoveKeyframe (
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall RemoveAllKeyframes ( ) = 0;
+      virtual HRESULT __stdcall FindKeyframe (
+        /*[in]*/ BSTR Name,
+        /*[out]*/ struct IKeyframe * * ppKeyframe ) = 0;
+      virtual HRESULT __stdcall MoveKeyframe (
+        /*[in]*/ long originIndex,
+        /*[in]*/ long destinationIndex ) = 0;
+      virtual HRESULT __stdcall SortKeyframes ( ) = 0;
+      virtual HRESULT __stdcall ResetTimeStamps ( ) = 0;
+      virtual HRESULT __stdcall SaveObjectProperties (
+        /*[in]*/ struct IScene * pScene,
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall RestoreObjectProperties (
+        /*[in]*/ struct IScene * pScene,
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall InterpolateObjectProperties (
+        /*[in]*/ struct IScene * pScene,
+        /*[in]*/ double time ) = 0;
+};
+
+struct __declspec(uuid("a4c0b647-82ad-11d5-b29b-00508bcdde28"))
+ISxAnimationEnvironment : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_SelectedAnimationType (
+        /*[out,retval]*/ struct IAnimationType * * ppAnimType ) = 0;
+      virtual HRESULT __stdcall putref_SelectedAnimationType (
+        /*[in]*/ struct IAnimationType * ppAnimType ) = 0;
+      virtual HRESULT __stdcall get_SelectedTracks (
+        /*[out,retval]*/ struct IArray * * ppTracks ) = 0;
+      virtual HRESULT __stdcall putref_SelectedTracks (
+        /*[in]*/ struct IArray * ppTracks ) = 0;
+      virtual HRESULT __stdcall get_SelectedKeyframes (
+        /*[out,retval]*/ struct ILongArray * * ppIndices ) = 0;
+      virtual HRESULT __stdcall putref_SelectedKeyframes (
+        /*[in]*/ struct ILongArray * ppIndices ) = 0;
+      virtual HRESULT __stdcall get_State (
+        /*[out,retval]*/ enum esriAnimationState * pState ) = 0;
+      virtual HRESULT __stdcall put_State (
+        /*[in]*/ enum esriAnimationState pState ) = 0;
+      virtual HRESULT __stdcall get_AnimationDuration (
+        /*[out,retval]*/ double * pSeconds ) = 0;
+      virtual HRESULT __stdcall put_AnimationDuration (
+        /*[in]*/ double pSeconds ) = 0;
+      virtual HRESULT __stdcall get_IsIntervalPlay (
+        /*[out,retval]*/ VARIANT_BOOL * pbIsInterval ) = 0;
+      virtual HRESULT __stdcall put_IsIntervalPlay (
+        /*[in]*/ VARIANT_BOOL pbIsInterval ) = 0;
+      virtual HRESULT __stdcall GetPlayInterval (
+        /*[out]*/ double * pBeginTime,
+        /*[out]*/ double * pEndTime ) = 0;
+      virtual HRESULT __stdcall PutPlayInterval (
+        /*[in]*/ double BeginTime,
+        /*[in]*/ double EndTime ) = 0;
+      virtual HRESULT __stdcall get_AnimationControlsHWnd (
+        /*[out,retval]*/ OLE_HANDLE * pHwnd ) = 0;
+      virtual HRESULT __stdcall put_AnimationControlsHWnd (
+        /*[in]*/ OLE_HANDLE pHwnd ) = 0;
+};
+
+struct __declspec(uuid("f406fe81-1101-47eb-9a45-5c4f64b9a0f0"))
+ISxAnimationEnvironment2 : ISxAnimationEnvironment
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_PlayTime (
+        /*[out,retval]*/ double * pTime ) = 0;
+      virtual HRESULT __stdcall put_PlayTime (
+        /*[in]*/ double pTime ) = 0;
+      virtual HRESULT __stdcall get_PlayInAllViewers (
+        /*[out,retval]*/ VARIANT_BOOL * pbPlayInAll ) = 0;
+      virtual HRESULT __stdcall put_PlayInAllViewers (
+        /*[in]*/ VARIANT_BOOL pbPlayInAll ) = 0;
+      virtual HRESULT __stdcall get_PlayMode (
+        /*[out,retval]*/ enum esriAnimationPlayMode * pPlayMode ) = 0;
+      virtual HRESULT __stdcall put_PlayMode (
+        /*[in]*/ enum esriAnimationPlayMode pPlayMode ) = 0;
+};
+
+struct __declspec(uuid("3044c30b-37d0-11d4-a167-444553547777"))
+ISceneExporter3d : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_Filter (
+        /*[out,retval]*/ BSTR * Filter ) = 0;
+      virtual HRESULT __stdcall get_FileExtension (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall put_ExportFileName (
+        /*[in]*/ BSTR FileName ) = 0;
+      virtual HRESULT __stdcall get_ExportFileName (
+        /*[out,retval]*/ BSTR * FileName ) = 0;
+      virtual HRESULT __stdcall ExportScene (
+        /*[in]*/ struct IScene * pScene ) = 0;
+};
+
+struct __declspec(uuid("37576410-c469-11d2-b1da-00c04fa33d14"))
+ISceneGraph : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Scene (
+        /*[out,retval]*/ struct IScene * * pVal ) = 0;
+      virtual HRESULT __stdcall putref_Scene (
+        /*[in]*/ struct IScene * pVal ) = 0;
+      virtual HRESULT __stdcall get_IsEmpty (
+        /*[out,retval]*/ VARIANT_BOOL * bIsEmpty ) = 0;
+      virtual HRESULT __stdcall AddSimpleGraphics (
+        /*[in]*/ struct ISceneRenderer * pRecorder ) = 0;
+      virtual HRESULT __stdcall AddSimpleActor (
+        /*[in]*/ struct ISceneRenderer * pRecorder,
+        /*[in]*/ struct IGeoDataset * pGeoDataset ) = 0;
+      virtual HRESULT __stdcall BeginCompositeActor (
+        /*[in]*/ struct ICompositeLayer * pGroupLayer ) = 0;
+      virtual HRESULT __stdcall EndCompositeActor ( ) = 0;
+      virtual HRESULT __stdcall Remove (
+        /*[in]*/ IUnknown * pObject,
+        /*[in]*/ VARIANT_BOOL bUpdateExtent ) = 0;
+      virtual HRESULT __stdcall Invalidate (
+        /*[in]*/ IUnknown * pObject,
+        /*[in]*/ VARIANT_BOOL bInvalidateGeography,
+        /*[in]*/ VARIANT_BOOL bInvalidateSelection ) = 0;
+      virtual HRESULT __stdcall put_ImmediateMode (
+        /*[in]*/ VARIANT_BOOL pbIsAllImmediate ) = 0;
+      virtual HRESULT __stdcall get_ImmediateMode (
+        /*[out,retval]*/ VARIANT_BOOL * pbIsAllImmediate ) = 0;
+      virtual HRESULT __stdcall SetOwnerVisibility (
+        /*[in]*/ IUnknown * pObject,
+        /*[in]*/ VARIANT_BOOL visible ) = 0;
+      virtual HRESULT __stdcall SetOwnerNavigationVisibility (
+        /*[in]*/ IUnknown * pObject,
+        /*[in]*/ VARIANT_BOOL visibleWhenNavigating,
+        /*[in]*/ VARIANT_BOOL visibleWhenStill ) = 0;
+      virtual HRESULT __stdcall SetOwnerLightingOption (
+        /*[in]*/ IUnknown * pObject,
+        /*[in]*/ VARIANT_BOOL lighting ) = 0;
+      virtual HRESULT __stdcall SetOwnerShadingMode (
+        /*[in]*/ IUnknown * pObject,
+        /*[in]*/ VARIANT_BOOL bIsSmooth ) = 0;
+      virtual HRESULT __stdcall SetOwnerDepthPriority (
+        /*[in]*/ IUnknown * pObject,
+        /*[in]*/ short depthPriority ) = 0;
+      virtual HRESULT __stdcall SetOwnerTimeThreshold (
+        /*[in]*/ IUnknown * pObject,
+        /*[in]*/ double timeThreshold ) = 0;
+      virtual HRESULT __stdcall SetOwnerImmediateMode (
+        /*[in]*/ IUnknown * pObject,
+        /*[in]*/ VARIANT_BOOL bIsLayerImmediate ) = 0;
+      virtual HRESULT __stdcall SetOwnerFaceCulling (
+        /*[in]*/ IUnknown * pObject,
+        /*[in]*/ enum esri3DFaceCulling cullingMode ) = 0;
+      virtual HRESULT __stdcall SetOwnerTransparencyState (
+        /*[in]*/ IUnknown * pObject,
+        /*[in]*/ VARIANT_BOOL bIsTransparent ) = 0;
+      virtual HRESULT __stdcall GetOwnerTransparency (
+        /*[in]*/ IUnknown * pObject,
+        /*[out]*/ long * pTranspPercent ) = 0;
+      virtual HRESULT __stdcall put_OwnerExtrusion (
+        /*[in]*/ IUnknown * pObject,
+        /*[in]*/ VARIANT_BOOL _arg2 ) = 0;
+      virtual HRESULT __stdcall get_Extent (
+        /*[out,retval]*/ struct IEnvelope * * ppExtent ) = 0;
+      virtual HRESULT __stdcall get_GeographySelectionExtent (
+        /*[out,retval]*/ struct IEnvelope * * ppExtent ) = 0;
+      virtual HRESULT __stdcall get_OwnerExtent (
+        /*[in]*/ IUnknown * pOwner,
+        /*[in]*/ VARIANT_BOOL bSelectionOnly,
+        /*[out,retval]*/ struct IEnvelope * * ppExtent ) = 0;
+      virtual HRESULT __stdcall RegisterViewer (
+        /*[in]*/ struct ISceneViewer * pViewer ) = 0;
+      virtual HRESULT __stdcall UnregisterViewer (
+        /*[in]*/ struct ISceneViewer * pViewer ) = 0;
+      virtual HRESULT __stdcall FindViewer (
+        /*[in]*/ BSTR Caption,
+        /*[out,retval]*/ struct ISceneViewer * * ppViewer ) = 0;
+      virtual HRESULT __stdcall GetAllViewers (
+        /*[out,retval]*/ struct IArray * * ppViewers ) = 0;
+      virtual HRESULT __stdcall putref_ActiveViewer (
+        /*[in]*/ struct ISceneViewer * ppViewer ) = 0;
+      virtual HRESULT __stdcall get_ActiveViewer (
+        /*[out,retval]*/ struct ISceneViewer * * ppViewer ) = 0;
+      virtual HRESULT __stdcall putref_CurrentViewer (
+        /*[in]*/ struct ISceneViewer * ppViewer ) = 0;
+      virtual HRESULT __stdcall get_CurrentViewer (
+        /*[out,retval]*/ struct ISceneViewer * * ppViewer ) = 0;
+      virtual HRESULT __stdcall ReplayFrame (
+        /*[in]*/ struct ICamera * Camera ) = 0;
+      virtual HRESULT __stdcall SetupProjection (
+        /*[in]*/ struct ICamera * pCamera ) = 0;
+      virtual HRESULT __stdcall RefreshViewers ( ) = 0;
+      virtual HRESULT __stdcall EnableRefresh (
+        /*[in]*/ VARIANT_BOOL bEnable ) = 0;
+      virtual HRESULT __stdcall SetBackgroundColor (
+        /*[in]*/ float red,
+        /*[in]*/ float green,
+        /*[in]*/ float blue ) = 0;
+      virtual HRESULT __stdcall GetBackgroundColor (
+        /*[out]*/ float * pRed,
+        /*[out]*/ float * pGreen,
+        /*[out]*/ float * pBlue ) = 0;
+      virtual HRESULT __stdcall putref_SelectionColor (
+        /*[in]*/ struct IColor * pSelectionColor ) = 0;
+      virtual HRESULT __stdcall get_SelectionColor (
+        /*[out,retval]*/ struct IColor * * pSelectionColor ) = 0;
+      virtual HRESULT __stdcall get_IsNavigating (
+        /*[out,retval]*/ VARIANT_BOOL * pbIsNavigating ) = 0;
+      virtual HRESULT __stdcall put_IsNavigating (
+        /*[in]*/ VARIANT_BOOL pbIsNavigating ) = 0;
+      virtual HRESULT __stdcall put_GestureEnabled (
+        /*[in]*/ VARIANT_BOOL pbEnabled ) = 0;
+      virtual HRESULT __stdcall get_GestureEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pbEnabled ) = 0;
+      virtual HRESULT __stdcall Locate (
+        /*[in]*/ struct ISceneViewer * pViewer,
+        /*[in]*/ long x,
+        /*[in]*/ long y,
+        /*[in]*/ enum esriScenePickMode mode,
+        /*[in]*/ VARIANT_BOOL bGetTransformed,
+        /*[out]*/ struct IPoint * * ppPt,
+        /*[out]*/ IUnknown * * ppOwner,
+        /*[out]*/ IUnknown * * ppObject ) = 0;
+      virtual HRESULT __stdcall LocateMultiple (
+        /*[in]*/ struct ISceneViewer * pViewer,
+        /*[in]*/ long x,
+        /*[in]*/ long y,
+        /*[in]*/ enum esriScenePickMode mode,
+        /*[in]*/ VARIANT_BOOL bGetTransformed,
+        /*[out]*/ struct IHit3DSet * * ppHits ) = 0;
+      virtual HRESULT __stdcall get_VerticalExaggeration (
+        /*[out,retval]*/ double * pZFactor ) = 0;
+      virtual HRESULT __stdcall put_VerticalExaggeration (
+        /*[in]*/ double pZFactor ) = 0;
+      virtual HRESULT __stdcall get_SunVector (
+        /*[out,retval]*/ struct IVector3D * * ppSun ) = 0;
+      virtual HRESULT __stdcall put_SunVector (
+        /*[in]*/ struct IVector3D * ppSun ) = 0;
+      virtual HRESULT __stdcall get_Contrast (
+        /*[out,retval]*/ long * pContrast ) = 0;
+      virtual HRESULT __stdcall put_Contrast (
+        /*[in]*/ long pContrast ) = 0;
+      virtual HRESULT __stdcall Clear (
+        /*[in]*/ VARIANT_BOOL bKeepBasicGraph ) = 0;
+      virtual HRESULT __stdcall LockViewers (
+        /*[in]*/ VARIANT_BOOL lock ) = 0;
+      virtual HRESULT __stdcall GetDrawingTimeInfo (
+        /*[out]*/ double * pLastFrameDuration,
+        /*[out]*/ double * pMeanFrameRate ) = 0;
+      virtual HRESULT __stdcall GetOwnerSymbols (
+        /*[in]*/ IUnknown * pOwner,
+        /*[out]*/ struct IArray * * ppSymbols,
+        /*[out]*/ struct ILongArray * * ppDisplayListIDs ) = 0;
+      virtual HRESULT __stdcall RecordSymbol (
+        /*[in]*/ struct ISymbol * pSymbol,
+        /*[in]*/ long glList,
+        /*[in]*/ VARIANT_BOOL bIsExtruded,
+        /*[in]*/ VARIANT_BOOL bLighting,
+        /*[in]*/ int layerTransparencyPercent,
+        /*[in]*/ VARIANT_BOOL bOptimizeState ) = 0;
+      virtual HRESULT __stdcall get_IsRecordingMessageEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pbIsEnabled ) = 0;
+      virtual HRESULT __stdcall put_IsRecordingMessageEnabled (
+        /*[in]*/ VARIANT_BOOL pbIsEnabled ) = 0;
+};
+
+struct __declspec(uuid("b3fa596f-ada3-11d2-9fae-00c04f8ece3d"))
+ICamera : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Observer (
+        /*[out,retval]*/ struct IPoint * * Observer ) = 0;
+      virtual HRESULT __stdcall put_Observer (
+        /*[in]*/ struct IPoint * Observer ) = 0;
+      virtual HRESULT __stdcall get_Target (
+        /*[out,retval]*/ struct IPoint * * Target ) = 0;
+      virtual HRESULT __stdcall put_Target (
+        /*[in]*/ struct IPoint * Target ) = 0;
+      virtual HRESULT __stdcall get_UpDirection (
+        /*[out,retval]*/ struct IVector3D * * upVector ) = 0;
+      virtual HRESULT __stdcall put_UpDirection (
+        /*[in]*/ struct IVector3D * upVector ) = 0;
+      virtual HRESULT __stdcall get_ViewingDistance (
+        /*[out,retval]*/ double * distance ) = 0;
+      virtual HRESULT __stdcall put_ViewingDistance (
+        /*[in]*/ double distance ) = 0;
+      virtual HRESULT __stdcall get_ViewFieldAngle (
+        /*[out,retval]*/ double * ViewFieldAngle ) = 0;
+      virtual HRESULT __stdcall put_ViewFieldAngle (
+        /*[in]*/ double ViewFieldAngle ) = 0;
+      virtual HRESULT __stdcall get_RollAngle (
+        /*[out,retval]*/ double * RollAngle ) = 0;
+      virtual HRESULT __stdcall put_RollAngle (
+        /*[in]*/ double RollAngle ) = 0;
+      virtual HRESULT __stdcall get_ProjectionType (
+        /*[out,retval]*/ enum esri3DProjectionType * ProjectionType ) = 0;
+      virtual HRESULT __stdcall put_ProjectionType (
+        /*[in]*/ enum esri3DProjectionType ProjectionType ) = 0;
+      virtual HRESULT __stdcall get_IsUsable (
+        /*[out,retval]*/ VARIANT_BOOL * isValid ) = 0;
+      virtual HRESULT __stdcall get_Inclination (
+        /*[out,retval]*/ double * Inclination ) = 0;
+      virtual HRESULT __stdcall put_Inclination (
+        /*[in]*/ double Inclination ) = 0;
+      virtual HRESULT __stdcall get_Azimuth (
+        /*[out,retval]*/ double * Azimuth ) = 0;
+      virtual HRESULT __stdcall put_Azimuth (
+        /*[in]*/ double Azimuth ) = 0;
+      virtual HRESULT __stdcall Rotate (
+        /*[in]*/ double Angle ) = 0;
+      virtual HRESULT __stdcall PolarUpdate (
+        /*[in]*/ double distanceFactor,
+        /*[in]*/ double dAzimuth,
+        /*[in]*/ double dInclination,
+        /*[in]*/ VARIANT_BOOL bLimitInclination ) = 0;
+      virtual HRESULT __stdcall Apply ( ) = 0;
+      virtual HRESULT __stdcall SetViewport (
+        /*[in]*/ long x,
+        /*[in]*/ long y,
+        /*[in]*/ long Width,
+        /*[in]*/ long height ) = 0;
+      virtual HRESULT __stdcall GetViewport (
+        /*[in]*/ long * x,
+        /*[in]*/ long * y,
+        /*[in]*/ long * Width,
+        /*[in]*/ long * height ) = 0;
+      virtual HRESULT __stdcall SetBackgroundColor (
+        /*[in]*/ float red,
+        /*[in]*/ float green,
+        /*[in]*/ float blue ) = 0;
+      virtual HRESULT __stdcall GetBackgroundColor (
+        /*[out]*/ float * pRed,
+        /*[out]*/ float * pGreen,
+        /*[out]*/ float * pBlue ) = 0;
+      virtual HRESULT __stdcall RecalcUp ( ) = 0;
+      virtual HRESULT __stdcall PropertiesChanged ( ) = 0;
+      virtual HRESULT __stdcall SetDefaultsMBB (
+        /*[in]*/ struct IEnvelope * pExtent ) = 0;
+      virtual HRESULT __stdcall SetDefaultsSphere (
+        /*[in]*/ struct IPoint * pCenter,
+        /*[in]*/ double radius ) = 0;
+      virtual HRESULT __stdcall QueryViewingPlatformMBB (
+        /*[in]*/ struct IEnvelope * pExtent,
+        /*[out]*/ double * pNearPlane,
+        /*[out]*/ double * pFarPlane,
+        /*[out]*/ double * pAngle,
+        /*[out]*/ double * pAspect ) = 0;
+      virtual HRESULT __stdcall QueryViewingPlatformSphere (
+        /*[in]*/ struct IPoint * pCenter,
+        /*[in]*/ double radius,
+        /*[out]*/ double * pNearPlane,
+        /*[out]*/ double * pFarPlane,
+        /*[out]*/ double * pAngle,
+        /*[out]*/ double * pAspect ) = 0;
+      virtual HRESULT __stdcall QueryOrthoViewingPlatform (
+        /*[in]*/ struct IEnvelope * pInExtent,
+        /*[in]*/ struct IEnvelope * pOutExtent,
+        /*[out]*/ double * pScale ) = 0;
+      virtual HRESULT __stdcall get_OrthoViewingExtent (
+        /*[out,retval]*/ struct IEnvelope * * ppVisExtent ) = 0;
+      virtual HRESULT __stdcall ReplayFrame (
+        /*[in]*/ struct ISceneGraph * pSceneGraph ) = 0;
+      virtual HRESULT __stdcall CanSeeMBB (
+        /*[in]*/ struct IEnvelope * pExtent,
+        /*[out,retval]*/ VARIANT_BOOL * canSee ) = 0;
+      virtual HRESULT __stdcall CanSeeSphere (
+        /*[in]*/ struct IPoint * pCenter,
+        /*[in]*/ double radius,
+        /*[out,retval]*/ VARIANT_BOOL * canSee ) = 0;
+      virtual HRESULT __stdcall QueryDistanceToMBB (
+        /*[in]*/ struct IEnvelope * pExtent,
+        /*[out]*/ double * distance ) = 0;
+      virtual HRESULT __stdcall QueryDistanceToSphere (
+        /*[in]*/ struct IPoint * pCenter,
+        /*[in]*/ double radius,
+        /*[out]*/ double * distance ) = 0;
+      virtual HRESULT __stdcall QueryDistanceToSphereCenter (
+        /*[in]*/ struct IPoint * pCenter,
+        /*[in]*/ double radius,
+        /*[out]*/ double * distance ) = 0;
+      virtual HRESULT __stdcall QueryIdentifyVector (
+        /*[in]*/ long dx,
+        /*[in]*/ long dy,
+        /*[in]*/ struct IVector3D * pIdentifyVect ) = 0;
+      virtual HRESULT __stdcall GetIdentifyVector (
+        /*[in]*/ struct IPoint * pCursor,
+        /*[out,retval]*/ struct IVector3D * * result ) = 0;
+      virtual HRESULT __stdcall GetIdentifyRay (
+        /*[in]*/ long dx,
+        /*[in]*/ long dy,
+        /*[out,retval]*/ struct IRay * * ppRay ) = 0;
+      virtual HRESULT __stdcall Move (
+        /*[in]*/ enum esriCameraMovementType direction,
+        /*[in]*/ double factor ) = 0;
+      virtual HRESULT __stdcall Pan (
+        /*[in]*/ struct IPoint * startPoint,
+        /*[in]*/ struct IPoint * endPoint ) = 0;
+      virtual HRESULT __stdcall LevelTargetToObs ( ) = 0;
+      virtual HRESULT __stdcall LevelObsToTarget ( ) = 0;
+      virtual HRESULT __stdcall HTurnAround (
+        /*[in]*/ double dAzimuth ) = 0;
+      virtual HRESULT __stdcall Zoom (
+        /*[in]*/ double ratio ) = 0;
+      virtual HRESULT __stdcall ZoomToRect (
+        /*[in]*/ struct IEnvelope * pExtent ) = 0;
+      virtual HRESULT __stdcall get_Scale (
+        /*[out,retval]*/ double * pScale ) = 0;
+      virtual HRESULT __stdcall put_MultiPhaseRendering (
+        /*[in]*/ VARIANT_BOOL pbMultiPhase ) = 0;
+      virtual HRESULT __stdcall get_MultiPhaseRendering (
+        /*[out,retval]*/ VARIANT_BOOL * pbMultiPhase ) = 0;
+      virtual HRESULT __stdcall put_VerticalExaggeration (
+        /*[in]*/ double _arg1 ) = 0;
+      virtual HRESULT __stdcall SetCoordOrigin (
+        /*[in]*/ double xOrig,
+        /*[in]*/ double yOrig,
+        /*[in]*/ double zOrig ) = 0;
+};
+
+struct __declspec(uuid("03485a91-59d0-11d3-8172-0080c7597e71"))
+ISceneViewer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Caption (
+        /*[out,retval]*/ BSTR * pCaption ) = 0;
+      virtual HRESULT __stdcall put_Caption (
+        /*[in]*/ BSTR pCaption ) = 0;
+      virtual HRESULT __stdcall get_SceneGraph (
+        /*[out,retval]*/ struct ISceneGraph * * ppSceneGraph ) = 0;
+      virtual HRESULT __stdcall putref_SceneGraph (
+        /*[in]*/ struct ISceneGraph * ppSceneGraph ) = 0;
+      virtual HRESULT __stdcall get_Camera (
+        /*[out,retval]*/ struct ICamera * * ppCamera ) = 0;
+      virtual HRESULT __stdcall putref_Camera (
+        /*[in]*/ struct ICamera * ppCamera ) = 0;
+      virtual HRESULT __stdcall MakeCurrent ( ) = 0;
+      virtual HRESULT __stdcall Redraw (
+        /*[in]*/ VARIANT_BOOL cameraMoved ) = 0;
+      virtual HRESULT __stdcall DrawToMetafile (
+        /*[in]*/ OLE_HANDLE hDC,
+        /*[in]*/ float resolutionFactor,
+        /*[in]*/ long left,
+        /*[in]*/ long top,
+        /*[in]*/ long right,
+        /*[in]*/ long bottom,
+        /*[in]*/ VARIANT_BOOL bOffScreen ) = 0;
+      virtual HRESULT __stdcall GetSnapshot (
+        /*[in]*/ long Width,
+        /*[in]*/ long height,
+        /*[in]*/ enum esri3DOutputImageType Type,
+        /*[in]*/ BSTR FileName ) = 0;
+      virtual HRESULT __stdcall GetScreenShot (
+        /*[in]*/ enum esri3DOutputImageType Type,
+        /*[in]*/ BSTR FileName ) = 0;
+      virtual HRESULT __stdcall get_hWnd (
+        /*[out,retval]*/ OLE_HANDLE * pHwnd ) = 0;
+      virtual HRESULT __stdcall put_hWnd (
+        /*[in]*/ OLE_HANDLE pHwnd ) = 0;
+      virtual HRESULT __stdcall get_hDC (
+        /*[out,retval]*/ OLE_HANDLE * pHDC ) = 0;
+      virtual HRESULT __stdcall put_hRC (
+        /*[in]*/ OLE_HANDLE pHRC ) = 0;
+      virtual HRESULT __stdcall get_hRC (
+        /*[out,retval]*/ OLE_HANDLE * pHRC ) = 0;
+      virtual HRESULT __stdcall put_GestureSensitivity (
+        /*[in]*/ long pcPixels ) = 0;
+      virtual HRESULT __stdcall get_GestureSensitivity (
+        /*[out,retval]*/ long * pcPixels ) = 0;
+      virtual HRESULT __stdcall put_GestureEnabled (
+        /*[in]*/ VARIANT_BOOL pbEnabled ) = 0;
+      virtual HRESULT __stdcall get_GestureEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pbEnabled ) = 0;
+      virtual HRESULT __stdcall ClearGesture ( ) = 0;
+      virtual HRESULT __stdcall OverrideDefaultHandler ( ) = 0;
+};
+
+struct __declspec(uuid("44e9928e-bf72-4838-b956-2940d0564f3f"))
+ICamera2 : ICamera
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SetupProjection (
+        /*[in]*/ struct IEnvelope * Extent,
+        /*[in]*/ WKSPointZ * origin ) = 0;
+      virtual HRESULT __stdcall SetupProjectionForSelection (
+        /*[in]*/ struct IEnvelope * Extent,
+        /*[in]*/ WKSPointZ * origin ) = 0;
+      virtual HRESULT __stdcall SetupPerspectiveProjetion (
+        /*[in]*/ double nearPlane,
+        /*[in]*/ double farPlane,
+        /*[in]*/ double vAngle,
+        /*[in]*/ double vAspect,
+        /*[in]*/ VARIANT_BOOL bUpdateViewport ) = 0;
+      virtual HRESULT __stdcall get_DisplayType (
+        /*[out,retval]*/ enum esriDisplayType * pType ) = 0;
+      virtual HRESULT __stdcall put_DisplayType (
+        /*[in]*/ enum esriDisplayType pType ) = 0;
+};
+
+struct __declspec(uuid("98daaab4-83ba-4046-b843-98cbe98a6547"))
+ICamera3 : ICamera2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_OrthoViewingExtent (
+        /*[in]*/ struct IEnvelope * _arg1 ) = 0;
+};
+
+struct __declspec(uuid("bcdb3324-9afa-11d5-b29f-00508bcdde28"))
+IBookmark3D : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall Capture (
+        /*[in]*/ struct ICamera * pCamera ) = 0;
+      virtual HRESULT __stdcall Apply (
+        /*[in]*/ struct ISceneViewer * pViewer,
+        /*[in]*/ VARIANT_BOOL bAnimate,
+        /*[in]*/ double animDuration ) = 0;
+};
+
+struct __declspec(uuid("4d8ca7d2-0aaa-4502-adc7-0388051c5f5c"))
+IViewers3D : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Scene (
+        /*[out,retval]*/ struct IScene * * pVal ) = 0;
+      virtual HRESULT __stdcall putref_Scene (
+        /*[in]*/ struct IScene * pVal ) = 0;
+      virtual HRESULT __stdcall RegisterViewer (
+        /*[in]*/ struct ISceneViewer * pViewer ) = 0;
+      virtual HRESULT __stdcall UnregisterViewer (
+        /*[in]*/ struct ISceneViewer * pViewer ) = 0;
+      virtual HRESULT __stdcall FindViewer (
+        /*[in]*/ BSTR Caption,
+        /*[out,retval]*/ struct ISceneViewer * * ppViewer ) = 0;
+      virtual HRESULT __stdcall GetAllViewers (
+        /*[out,retval]*/ struct IArray * * ppViewers ) = 0;
+      virtual HRESULT __stdcall putref_ActiveViewer (
+        /*[in]*/ struct ISceneViewer * ppViewer ) = 0;
+      virtual HRESULT __stdcall get_ActiveViewer (
+        /*[out,retval]*/ struct ISceneViewer * * ppViewer ) = 0;
+      virtual HRESULT __stdcall RefreshViewers ( ) = 0;
+      virtual HRESULT __stdcall get_IsNavigating (
+        /*[out,retval]*/ VARIANT_BOOL * pbIsNavigating ) = 0;
+      virtual HRESULT __stdcall put_IsNavigating (
+        /*[in]*/ VARIANT_BOOL pbIsNavigating ) = 0;
+      virtual HRESULT __stdcall put_GestureEnabled (
+        /*[in]*/ VARIANT_BOOL pbEnabled ) = 0;
+      virtual HRESULT __stdcall get_GestureEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pbEnabled ) = 0;
+      virtual HRESULT __stdcall SetBackgroundColor (
+        /*[in]*/ float red,
+        /*[in]*/ float green,
+        /*[in]*/ float blue ) = 0;
+      virtual HRESULT __stdcall GetBackgroundColor (
+        /*[out]*/ float * pRed,
+        /*[out]*/ float * pGreen,
+        /*[out]*/ float * pBlue ) = 0;
+      virtual HRESULT __stdcall putref_CurrentViewer (
+        /*[in]*/ struct ISceneViewer * ppViewer ) = 0;
+      virtual HRESULT __stdcall get_CurrentViewer (
+        /*[out,retval]*/ struct ISceneViewer * * ppViewer ) = 0;
+      virtual HRESULT __stdcall ReplayFrame (
+        /*[in]*/ struct ICamera * Camera ) = 0;
+};
+
+struct __declspec(uuid("ec4e4b1c-5a64-499d-a475-bc2ddc237838"))
+IBasicScene : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_BasicDisplay (
+        /*[out,retval]*/ struct IViewers3D * * pDisplay ) = 0;
+      virtual HRESULT __stdcall SaveAnimation (
+        /*[in]*/ BSTR pFilename ) = 0;
+      virtual HRESULT __stdcall LoadAnimation (
+        /*[in]*/ BSTR pFilename ) = 0;
+};
+
+struct __declspec(uuid("020719a9-5b19-4835-ab76-47908247b6bc"))
+IBasicScene2 : IBasicScene
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_AnimationExtension (
+        /*[out,retval]*/ struct IAnimationExtension * * ppAnimExt ) = 0;
+      virtual HRESULT __stdcall put_AnimationExtension (
+        /*[in]*/ struct IAnimationExtension * ppAnimExt ) = 0;
+};
+
+struct __declspec(uuid("bcdb3325-9afa-11d5-b29f-00508bcdde28"))
+ISceneBookmarks : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Bookmarks (
+        /*[out,retval]*/ struct IArray * * ppBookmarks ) = 0;
+      virtual HRESULT __stdcall AddBookmark (
+        /*[in]*/ struct IBookmark3D * pBookmark ) = 0;
+      virtual HRESULT __stdcall FindBookmark (
+        /*[in]*/ BSTR Name,
+        /*[out]*/ struct IBookmark3D * * ppBookmark ) = 0;
+      virtual HRESULT __stdcall RemoveBookmark (
+        /*[in]*/ struct IBookmark3D * bookmark ) = 0;
+      virtual HRESULT __stdcall RemoveAllBookmarks ( ) = 0;
+      virtual HRESULT __stdcall get_BookmarkCount (
+        /*[out,retval]*/ long * pBookmarkCount ) = 0;
+      virtual HRESULT __stdcall SaveBookmarks (
+        /*[in]*/ struct IStream * pStm ) = 0;
+      virtual HRESULT __stdcall LoadBookmarks (
+        /*[in]*/ struct IStream * pStm ) = 0;
+};
+
+struct __declspec(uuid("d530208f-48a9-45d0-b5c9-a1474987b113"))
+ISceneBookmarks2 : ISceneBookmarks
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall MoveBookmarkTo (
+        /*[in]*/ struct IBookmark3D * bookmark,
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall SortBookmarks (
+        /*[in]*/ VARIANT_BOOL ascending ) = 0;
+};
+
+struct __declspec(uuid("fa3dba5b-a879-11d5-b2a0-00508bcdde28"))
+IAnimationTracks : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_AnimationTypes (
+        /*[out,retval]*/ struct IArray * * ppAnimationTypes ) = 0;
+      virtual HRESULT __stdcall get_TrackCount (
+        /*[out,retval]*/ long * pCount ) = 0;
+      virtual HRESULT __stdcall get_Tracks (
+        /*[out,retval]*/ struct IArray * * ppTracks ) = 0;
+      virtual HRESULT __stdcall get_TracksOfType (
+        /*[in]*/ struct IAnimationType * pType,
+        /*[out,retval]*/ struct IArray * * ppTracks ) = 0;
+      virtual HRESULT __stdcall AddTrack (
+        /*[in]*/ struct IAnimationTrack * pTrack ) = 0;
+      virtual HRESULT __stdcall FindTrack (
+        /*[in]*/ BSTR Name,
+        /*[out]*/ struct IAnimationTrack * * ppTrack ) = 0;
+      virtual HRESULT __stdcall RemoveTrack (
+        /*[in]*/ struct IAnimationTrack * pTrack ) = 0;
+      virtual HRESULT __stdcall RemoveAllTracks ( ) = 0;
+      virtual HRESULT __stdcall SaveTracks (
+        /*[in]*/ struct IStream * pStm ) = 0;
+      virtual HRESULT __stdcall LoadTracks (
+        /*[in]*/ struct IStream * pStm ) = 0;
+      virtual HRESULT __stdcall DetachObject (
+        /*[in]*/ IUnknown * pObject ) = 0;
+      virtual HRESULT __stdcall RefreshAttachedObjects ( ) = 0;
+      virtual HRESULT __stdcall ApplyTracks (
+        /*[in]*/ struct ISceneViewer * pViewer,
+        /*[in]*/ double time,
+        /*[in]*/ double duration ) = 0;
+      virtual HRESULT __stdcall ChangePriority (
+        /*[in]*/ struct IAnimationTrack * pTrack,
+        /*[in]*/ VARIANT_BOOL bAbsolute,
+        /*[in]*/ VARIANT_BOOL bInSameType,
+        /*[in]*/ long changeInIndex ) = 0;
+};
+
+struct __declspec(uuid("c256fa92-63ab-4e4e-b2da-e4e7a896db98"))
+ISceneGraph2 : ISceneGraph
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall QueryLocation (
+        /*[in]*/ struct ISceneViewer * pViewer,
+        /*[in]*/ long x,
+        /*[in]*/ long y,
+        /*[in]*/ enum esriScenePickMode mode,
+        /*[in]*/ VARIANT_BOOL bGetTransformed,
+        /*[in]*/ struct IPoint * pPt ) = 0;
+};
+
+struct __declspec(uuid("1d1c669a-13de-11d4-80df-00c04fa0adf8"))
+ISceneGraphEvents : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ActiveViewerChanged (
+        /*[in]*/ struct ISceneViewer * pViewer ) = 0;
+      virtual HRESULT __stdcall ViewerAdded (
+        /*[in]*/ struct ISceneViewer * pViewer ) = 0;
+      virtual HRESULT __stdcall ViewerRemoved (
+        /*[in]*/ struct ISceneViewer * pViewer ) = 0;
+      virtual HRESULT __stdcall InteractionStopped ( ) = 0;
+      virtual HRESULT __stdcall RecordingStarted (
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall RecordingStopped ( ) = 0;
+      virtual HRESULT __stdcall BeforeDraw (
+        /*[in]*/ struct ISceneViewer * pViewer,
+        /*[out,retval]*/ VARIANT_BOOL * pbHandled ) = 0;
+      virtual HRESULT __stdcall AfterDraw (
+        /*[in]*/ struct ISceneViewer * pViewer ) = 0;
+};
+
+struct __declspec(uuid("1d1c669b-13de-11d4-80df-00c04fa0adf8"))
+ISceneGraphEventsDisp : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ActiveViewerChanged (
+        /*[in]*/ struct ISceneViewer * pViewer ) = 0;
+      virtual HRESULT __stdcall ViewerAdded (
+        /*[in]*/ struct ISceneViewer * pViewer ) = 0;
+      virtual HRESULT __stdcall ViewerRemoved (
+        /*[in]*/ struct ISceneViewer * pViewer ) = 0;
+      virtual HRESULT __stdcall InteractionStopped ( ) = 0;
+      virtual HRESULT __stdcall RecordingStarted (
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall RecordingStopped ( ) = 0;
+      virtual HRESULT __stdcall BeforeDraw (
+        /*[in]*/ struct ISceneViewer * pViewer,
+        /*[out,retval]*/ VARIANT_BOOL * pbHandled ) = 0;
+      virtual HRESULT __stdcall AfterDraw (
+        /*[in]*/ struct ISceneViewer * pViewer ) = 0;
+};
+
+struct __declspec(uuid("ea6581ec-082d-435c-8f73-b4161ca06f20"))
+I3DViewer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Caption (
+        /*[out,retval]*/ BSTR * pCaption ) = 0;
+      virtual HRESULT __stdcall put_Caption (
+        /*[in]*/ BSTR pCaption ) = 0;
+      virtual HRESULT __stdcall get_Camera (
+        /*[out,retval]*/ struct ICamera * * ppCamera ) = 0;
+      virtual HRESULT __stdcall putref_Camera (
+        /*[in]*/ struct ICamera * ppCamera ) = 0;
+      virtual HRESULT __stdcall MakeCurrent ( ) = 0;
+      virtual HRESULT __stdcall Redraw (
+        /*[in]*/ VARIANT_BOOL bCameraMoved ) = 0;
+      virtual HRESULT __stdcall DrawToMetafile (
+        /*[in]*/ OLE_HANDLE hDC,
+        /*[in]*/ float resolutionFactor,
+        /*[in]*/ long left,
+        /*[in]*/ long top,
+        /*[in]*/ long right,
+        /*[in]*/ long bottom,
+        /*[in]*/ VARIANT_BOOL bOffScreen ) = 0;
+      virtual HRESULT __stdcall GetSnapshot (
+        /*[in]*/ long Width,
+        /*[in]*/ long height,
+        /*[in]*/ enum esri3DOutputImageType Type,
+        /*[in]*/ BSTR FileName ) = 0;
+      virtual HRESULT __stdcall GetScreenShot (
+        /*[in]*/ enum esri3DOutputImageType Type,
+        /*[in]*/ BSTR FileName ) = 0;
+      virtual HRESULT __stdcall get_hWnd (
+        /*[out,retval]*/ OLE_HANDLE * pHwnd ) = 0;
+      virtual HRESULT __stdcall put_hWnd (
+        /*[in]*/ OLE_HANDLE pHwnd ) = 0;
+      virtual HRESULT __stdcall get_hDC (
+        /*[out,retval]*/ OLE_HANDLE * pHDC ) = 0;
+      virtual HRESULT __stdcall put_hRC (
+        /*[in]*/ OLE_HANDLE pHRC ) = 0;
+      virtual HRESULT __stdcall get_hRC (
+        /*[out,retval]*/ OLE_HANDLE * pHRC ) = 0;
+      virtual HRESULT __stdcall put_GestureSensitivity (
+        /*[in]*/ long pcPixels ) = 0;
+      virtual HRESULT __stdcall get_GestureSensitivity (
+        /*[out,retval]*/ long * pcPixels ) = 0;
+      virtual HRESULT __stdcall put_GestureEnabled (
+        /*[in]*/ VARIANT_BOOL pbEnabled ) = 0;
+      virtual HRESULT __stdcall get_GestureEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pbEnabled ) = 0;
+      virtual HRESULT __stdcall ClearGesture ( ) = 0;
+      virtual HRESULT __stdcall OverrideDefaultHandler ( ) = 0;
+      virtual HRESULT __stdcall put_FullScreenEnabled (
+        /*[in]*/ VARIANT_BOOL pbEnabled ) = 0;
+      virtual HRESULT __stdcall get_FullScreenEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pbEnabled ) = 0;
+      virtual HRESULT __stdcall get_IsFullScreen (
+        /*[out,retval]*/ VARIANT_BOOL * pbIsFullScreen ) = 0;
+      virtual HRESULT __stdcall SetFullScreen (
+        /*[in]*/ VARIANT_BOOL bFullScreen ) = 0;
+};
+
+struct __declspec(uuid("5e20043d-fb3d-4ff2-85c0-8bb7ac983242"))
+ISceneViewer2 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Caption (
+        /*[out,retval]*/ BSTR * pCaption ) = 0;
+      virtual HRESULT __stdcall put_Caption (
+        /*[in]*/ BSTR pCaption ) = 0;
+      virtual HRESULT __stdcall get_SceneGraph (
+        /*[out,retval]*/ struct ISceneGraph * * ppSceneGraph ) = 0;
+      virtual HRESULT __stdcall putref_SceneGraph (
+        /*[in]*/ struct ISceneGraph * ppSceneGraph ) = 0;
+      virtual HRESULT __stdcall get_Camera (
+        /*[out,retval]*/ struct ICamera * * ppCamera ) = 0;
+      virtual HRESULT __stdcall putref_Camera (
+        /*[in]*/ struct ICamera * ppCamera ) = 0;
+      virtual HRESULT __stdcall MakeCurrent ( ) = 0;
+      virtual HRESULT __stdcall Redraw (
+        /*[in]*/ VARIANT_BOOL cameraMoved ) = 0;
+      virtual HRESULT __stdcall DrawToMetafile (
+        /*[in]*/ OLE_HANDLE hDC,
+        /*[in]*/ float resolutionFactor,
+        /*[in]*/ long left,
+        /*[in]*/ long top,
+        /*[in]*/ long right,
+        /*[in]*/ long bottom,
+        /*[in]*/ VARIANT_BOOL bOffScreen ) = 0;
+      virtual HRESULT __stdcall GetSnapshot (
+        /*[in]*/ long Width,
+        /*[in]*/ long height,
+        /*[in]*/ enum esri3DOutputImageType Type,
+        /*[in]*/ BSTR FileName ) = 0;
+      virtual HRESULT __stdcall GetScreenShot (
+        /*[in]*/ enum esri3DOutputImageType Type,
+        /*[in]*/ BSTR FileName ) = 0;
+      virtual HRESULT __stdcall get_hWnd (
+        /*[out,retval]*/ OLE_HANDLE * pHwnd ) = 0;
+      virtual HRESULT __stdcall put_hWnd (
+        /*[in]*/ OLE_HANDLE pHwnd ) = 0;
+      virtual HRESULT __stdcall get_hDC (
+        /*[out,retval]*/ OLE_HANDLE * pHDC ) = 0;
+      virtual HRESULT __stdcall put_hRC (
+        /*[in]*/ OLE_HANDLE pHRC ) = 0;
+      virtual HRESULT __stdcall get_hRC (
+        /*[out,retval]*/ OLE_HANDLE * pHRC ) = 0;
+      virtual HRESULT __stdcall put_GestureSensitivity (
+        /*[in]*/ long pcPixels ) = 0;
+      virtual HRESULT __stdcall get_GestureSensitivity (
+        /*[out,retval]*/ long * pcPixels ) = 0;
+      virtual HRESULT __stdcall put_GestureEnabled (
+        /*[in]*/ VARIANT_BOOL pbEnabled ) = 0;
+      virtual HRESULT __stdcall get_GestureEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pbEnabled ) = 0;
+      virtual HRESULT __stdcall ClearGesture ( ) = 0;
+      virtual HRESULT __stdcall OverrideDefaultHandler ( ) = 0;
+      virtual HRESULT __stdcall put_NorthArrowEnabled (
+        /*[in]*/ VARIANT_BOOL pbNorthArrow ) = 0;
+      virtual HRESULT __stdcall get_NorthArrowEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pbNorthArrow ) = 0;
+};
+
+struct __declspec(uuid("4251ba07-9106-11d5-b29f-00508bcdde28"))
+ISceneVideoExporter : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall putref_Viewer (
+        /*[in]*/ struct ISceneViewer * _arg1 ) = 0;
+      virtual HRESULT __stdcall put_VideoDuration (
+        /*[in]*/ double pSeconds ) = 0;
+      virtual HRESULT __stdcall get_VideoDuration (
+        /*[out,retval]*/ double * pSeconds ) = 0;
+      virtual HRESULT __stdcall put_FrameRate (
+        /*[in]*/ int pImagesPerSecond ) = 0;
+      virtual HRESULT __stdcall get_FrameRate (
+        /*[out,retval]*/ int * pImagesPerSecond ) = 0;
+      virtual HRESULT __stdcall put_UseCustomSize (
+        /*[in]*/ VARIANT_BOOL pbUseCustomSize ) = 0;
+      virtual HRESULT __stdcall get_UseCustomSize (
+        /*[out,retval]*/ VARIANT_BOOL * pbUseCustomSize ) = 0;
+      virtual HRESULT __stdcall PutCustomSize (
+        /*[in]*/ int Width,
+        /*[in]*/ int height ) = 0;
+      virtual HRESULT __stdcall GetCustomSize (
+        /*[out]*/ int * pWidth,
+        /*[out]*/ int * pHeight ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_esri3DAnalyst =
+    {0x639fe90a,0xcc9a,0x48c6,{0xac,0x1d,0x10,0x5f,0xe5,0x09,0x15,0xb5}};
+extern "C" const GUID __declspec(selectany) IID_I3DProperties =
+    {0xbc6f44cc,0x21e8,0x11d4,{0xa3,0x83,0x00,0xc0,0x4f,0x6b,0xc6,0x19}};
+extern "C" const GUID __declspec(selectany) IID_ISceneRenderer =
+    {0xcb6f53c2,0xc46b,0x11d2,{0xb1,0xda,0x00,0xc0,0x4f,0xa3,0x3d,0x14}};
+extern "C" const GUID __declspec(selectany) IID_IHit3DSet =
+    {0x768d13f2,0x9a2d,0x11d4,{0xb2,0x70,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) CLSID_AnimationTrack =
+    {0x4fedc9cb,0xa7be,0x11d5,{0xb2,0xa0,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) CLSID_LayerKeyframe =
+    {0x24aa4277,0xadf3,0x11d5,{0xb2,0xa0,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) CLSID_SceneKeyframe =
+    {0x24aa4278,0xadf3,0x11d5,{0xb2,0xa0,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) CLSID_AnimationTypeCamera =
+    {0x500f4707,0xa798,0x11d5,{0xb2,0xa0,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) CLSID_AnimationTypeLayer =
+    {0x24aa4279,0xadf3,0x11d5,{0xb2,0xa0,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) CLSID_AnimationTypeScene =
+    {0x24aa427a,0xadf3,0x11d5,{0xb2,0xa0,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) CLSID_SxAnimationEnvironment =
+    {0x592d0b58,0x82ad,0x11d5,{0xb2,0x9b,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) IID_IStereoCamera =
+    {0x1a8927bc,0x9f9a,0x44ba,{0xa9,0x21,0x3c,0x3a,0xc1,0xaa,0x47,0x6c}};
+extern "C" const GUID __declspec(selectany) CLSID_Camera =
+    {0xb3fa5970,0xada3,0x11d2,{0x9f,0xae,0x00,0xc0,0x4f,0x8e,0xce,0x3d}};
+extern "C" const GUID __declspec(selectany) CLSID_Bookmark3D =
+    {0xbcdb3323,0x9afa,0x11d5,{0xb2,0x9f,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) IID_IGraphicsContainer3D =
+    {0xef879196,0x01de,0x11d4,{0xab,0x69,0x00,0x08,0xc7,0x3f,0xd5,0x0c}};
+extern "C" const GUID __declspec(selectany) IID_IGraphicsSelection =
+    {0x79103a54,0x1e53,0x11d4,{0xa1,0x09,0x00,0xc0,0x4f,0x8e,0xce,0x27}};
+extern "C" const GUID __declspec(selectany) CLSID_Scene =
+    {0xb7a0a25c,0x24f7,0x11d3,{0x9f,0x4d,0x00,0xc0,0x4f,0x6b,0xc5,0xf4}};
+extern "C" const GUID __declspec(selectany) CLSID_GraphicsLayer3D =
+    {0x4c87a8f0,0x01e3,0x11d4,{0xab,0x69,0x00,0x08,0xc7,0x3f,0xd5,0x0c}};
+extern "C" const GUID __declspec(selectany) IID_ISceneRendererEvents =
+    {0xbbc7c2e8,0x1fb3,0x11d4,{0xab,0x72,0x00,0x08,0xc7,0x3f,0xd5,0x0c}};
+extern "C" const GUID __declspec(selectany) IID_IFeature3DProperties =
+    {0x4a4cece5,0xf53a,0x11d3,{0x80,0xd9,0x00,0xc0,0x4f,0xa0,0xad,0xf8}};
+extern "C" const GUID __declspec(selectany) IID_IFeature3DProperties2 =
+    {0xff699cbe,0x9340,0x4724,{0x9b,0x4c,0xf8,0x89,0x79,0x31,0x4b,0xc0}};
+extern "C" const GUID __declspec(selectany) IID_I3DProperties2 =
+    {0x7646fd6d,0xa031,0x4ddf,{0x9f,0xa3,0x38,0xbd,0x17,0x0a,0x23,0x8b}};
+extern "C" const GUID __declspec(selectany) IID_I3DProperties3 =
+    {0x3c8a34c5,0x937a,0x4607,{0xab,0x07,0xf5,0xed,0x34,0x70,0xd4,0x43}};
+extern "C" const GUID __declspec(selectany) CLSID_Basic3DProperties =
+    {0xa5a8dc61,0x268c,0x11d4,{0x91,0x4a,0x00,0x80,0xc7,0x07,0x43,0x26}};
+extern "C" const GUID __declspec(selectany) CLSID_Tin3DProperties =
+    {0xb7a0a25d,0x24f7,0x11d3,{0x9f,0x4d,0x00,0xc0,0x4f,0x6b,0xc5,0xf4}};
+extern "C" const GUID __declspec(selectany) CLSID_Raster3DProperties =
+    {0x4a4cece3,0xf53a,0x11d3,{0x80,0xd9,0x00,0xc0,0x4f,0xa0,0xad,0xf8}};
+extern "C" const GUID __declspec(selectany) CLSID_Feature3DProperties =
+    {0x4a4cece4,0xf53a,0x11d3,{0x80,0xd9,0x00,0xc0,0x4f,0xa0,0xad,0xf8}};
+extern "C" const GUID __declspec(selectany) IID_IVRMLExporter =
+    {0x3044c30e,0x37d0,0x11d4,{0xa1,0x67,0x44,0x45,0x53,0x54,0x77,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IMessageDispatcher =
+    {0xbd62a8fa,0x8833,0x11d4,{0xab,0x87,0x00,0x08,0xc7,0x3f,0xd5,0x0c}};
+extern "C" const GUID __declspec(selectany) IID_IHit3D =
+    {0xf7873924,0x9a19,0x11d4,{0xb2,0x70,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) IID_ISceneGraphLayerEvents =
+    {0x8d8094ee,0x063a,0x4bad,{0x98,0x73,0x6b,0xb2,0x44,0x5a,0xca,0x4d}};
+extern "C" const GUID __declspec(selectany) IID_ISceneGraphLayerEventsDisp =
+    {0xbbf9e0fe,0x06f7,0x4dae,{0xa9,0xfa,0x05,0xe4,0x65,0xea,0x0e,0x72}};
+extern "C" const GUID __declspec(selectany) CLSID_SceneGraph =
+    {0x477ff406,0xc469,0x11d2,{0xb1,0xda,0x00,0xc0,0x4f,0xa3,0x3d,0x14}};
+extern "C" const GUID __declspec(selectany) CLSID_SceneGraphEvents =
+    {0xa1bf0693,0x63a1,0x4276,{0x89,0xef,0x49,0x51,0xdd,0x0c,0xb3,0x7f}};
+extern "C" const GUID __declspec(selectany) CLSID_MessageDispatcher =
+    {0x517b7bc6,0x8833,0x11d4,{0xab,0x87,0x00,0x08,0xc7,0x3f,0xd5,0x0c}};
+extern "C" const GUID __declspec(selectany) CLSID_Hit3D =
+    {0xf7873923,0x9a19,0x11d4,{0xb2,0x70,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) CLSID_Hit3DSet =
+    {0x768d13f1,0x9a2d,0x11d4,{0xb2,0x70,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) CLSID_SceneGraphLayerEvents =
+    {0xd902df6c,0x2c21,0x4f6d,{0x82,0x91,0xb2,0xbb,0x0a,0x45,0x8e,0xb8}};
+extern "C" const GUID __declspec(selectany) IID_ILayerRenderers =
+    {0x0aa361c1,0x06a2,0x11d5,{0x91,0x63,0x00,0x80,0xc7,0x07,0x43,0x26}};
+extern "C" const GUID __declspec(selectany) IID_IRasterSurface =
+    {0x3455fdb6,0xee56,0x455e,{0xa4,0x4e,0x28,0xa0,0xc7,0x6d,0x31,0x96}};
+extern "C" const GUID __declspec(selectany) CLSID_RasterSurface =
+    {0x95ef6781,0x3de4,0x4f97,{0x84,0xb4,0x6d,0xb6,0xef,0x90,0xb6,0x7b}};
+extern "C" const GUID __declspec(selectany) CLSID_VRMLExporter =
+    {0x3044c312,0x37d0,0x11d4,{0xa1,0x67,0x44,0x45,0x53,0x54,0x77,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IVideoExporterProperties =
+    {0x26eb3a30,0x9e6d,0x443c,{0xb9,0x04,0x79,0xb1,0x6c,0x50,0x28,0xaa}};
+extern "C" const GUID __declspec(selectany) IID_IAVIExporter =
+    {0x4251ba08,0x9106,0x11d5,{0xb2,0x9f,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) IID_IQuickTimeExporter =
+    {0x206fda1e,0x5622,0x4189,{0x9f,0x9a,0x48,0x6c,0xd5,0x2e,0x34,0x57}};
+extern "C" const GUID __declspec(selectany) CLSID_AVIExporter =
+    {0x4251ba06,0x9106,0x11d5,{0xb2,0x9f,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) CLSID_QuickTimeExporter =
+    {0xbc9f9a95,0x6d45,0x438d,{0xb0,0xfe,0xe7,0x33,0x75,0x10,0xfc,0xc2}};
+extern "C" const GUID __declspec(selectany) IID_IImport3DFile =
+    {0x95e48b87,0x336e,0x4062,{0x9b,0x68,0xeb,0x8e,0xc9,0x17,0x7a,0xb8}};
+extern "C" const GUID __declspec(selectany) IID_IImport3DFile2 =
+    {0x733ff31f,0x1c9c,0x4b3a,{0x94,0x7a,0x28,0x82,0x22,0xc3,0x5e,0x12}};
+extern "C" const GUID __declspec(selectany) IID_IImport3DFileRoots =
+    {0x141ced35,0xf903,0x47b3,{0x9e,0xa3,0x21,0x0b,0x75,0x15,0x83,0xe7}};
+extern "C" const GUID __declspec(selectany) IID_IImport3DApplication =
+    {0x8ca5fc21,0xa755,0x400f,{0xb4,0x7e,0xcb,0xff,0x35,0xf4,0xff,0x46}};
+extern "C" const GUID __declspec(selectany) IID_IExportColladaFile =
+    {0x3b7066dc,0xbd50,0x41be,{0xb4,0xfb,0x89,0xc8,0x57,0xef,0x73,0xe6}};
+extern "C" const GUID __declspec(selectany) IID_IGeometryMaterial =
+    {0xe9f95f61,0x2bec,0x11d6,{0xa4,0xcd,0x44,0x45,0x53,0x54,0x77,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IGeometryMaterialList =
+    {0xb7685a34,0x2bc8,0x11d6,{0xa4,0xcc,0x44,0x45,0x53,0x54,0x77,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IGeneralMultiPatchCreator =
+    {0x821003c1,0x2c6b,0x11d6,{0xa4,0xce,0x44,0x45,0x53,0x54,0x77,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IMarker3DPlacement =
+    {0x773f7276,0xaefb,0x11d5,{0x81,0x12,0x00,0xc0,0x4f,0xa0,0xad,0xf8}};
+extern "C" const GUID __declspec(selectany) IID_ISimpleMarker3DSymbol =
+    {0x773f726f,0xaefb,0x11d5,{0x81,0x12,0x00,0xc0,0x4f,0xa0,0xad,0xf8}};
+extern "C" const GUID __declspec(selectany) IID_IMarker3DSymbol =
+    {0x773f7272,0xaefb,0x11d5,{0x81,0x12,0x00,0xc0,0x4f,0xa0,0xad,0xf8}};
+extern "C" const GUID __declspec(selectany) IID_ICharacterMarker3DSymbol =
+    {0x6e8ec8f8,0xe90a,0x11d5,{0xa1,0x29,0x00,0x50,0x8b,0xd6,0x0c,0xb9}};
+extern "C" const GUID __declspec(selectany) IID_ILine3DPlacement =
+    {0x470b7273,0x3552,0x11d6,{0xa1,0x2d,0x00,0x50,0x8b,0xd6,0x0c,0xb9}};
+extern "C" const GUID __declspec(selectany) IID_ISimpleLine3DSymbol =
+    {0x470b7274,0x3552,0x11d6,{0xa1,0x2d,0x00,0x50,0x8b,0xd6,0x0c,0xb9}};
+extern "C" const GUID __declspec(selectany) IID_ITextureFillSymbol =
+    {0x3f6d8301,0x5a5a,0x4b84,{0x96,0x9f,0x43,0x3a,0xf0,0x7e,0xe1,0xa3}};
+extern "C" const GUID __declspec(selectany) IID_ITextureLineSymbol =
+    {0xd47a4da5,0x6d42,0x11d6,{0xa1,0x3e,0x00,0x50,0x8b,0xd6,0x0c,0xb9}};
+extern "C" const GUID __declspec(selectany) IID_IBillboardDisplay =
+    {0x40aae3c0,0x9552,0x4768,{0x96,0x5f,0xb9,0xc2,0x19,0xb5,0x87,0x6b}};
+extern "C" const GUID __declspec(selectany) CLSID_SimpleMarker3DSymbol =
+    {0x773f7270,0xaefb,0x11d5,{0x81,0x12,0x00,0xc0,0x4f,0xa0,0xad,0xf8}};
+extern "C" const GUID __declspec(selectany) CLSID_ExportColladaFile =
+    {0x122c5327,0x9e2b,0x4f51,{0xba,0xe2,0xc7,0x0d,0xc5,0x28,0xc1,0x1a}};
+extern "C" const GUID __declspec(selectany) CLSID_Marker3DSymbol =
+    {0x773f7274,0xaefb,0x11d5,{0x81,0x12,0x00,0xc0,0x4f,0xa0,0xad,0xf8}};
+extern "C" const GUID __declspec(selectany) CLSID_CharacterMarker3DSymbol =
+    {0x6e8ec8f7,0xe90a,0x11d5,{0xa1,0x29,0x00,0x50,0x8b,0xd6,0x0c,0xb9}};
+extern "C" const GUID __declspec(selectany) CLSID_SimpleLine3DSymbol =
+    {0x470b7275,0x3552,0x11d6,{0xa1,0x2d,0x00,0x50,0x8b,0xd6,0x0c,0xb9}};
+extern "C" const GUID __declspec(selectany) CLSID_TextureFillSymbol =
+    {0x8d738780,0xc069,0x42e0,{0x9d,0xfa,0x2b,0x7b,0x61,0x70,0x7b,0xa9}};
+extern "C" const GUID __declspec(selectany) CLSID_TextureLineSymbol =
+    {0xb5710c9c,0xa9bc,0x4a16,{0xb5,0x78,0x54,0xbe,0x17,0x6e,0xd5,0x7b}};
+extern "C" const GUID __declspec(selectany) CLSID_Import3DFile =
+    {0xf7491560,0xb744,0x11d5,{0xa3,0xef,0x44,0x45,0x53,0x54,0x77,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_GeometryMaterial =
+    {0x0e6f4b27,0x2bd0,0x11d6,{0xa4,0xcc,0x44,0x45,0x53,0x54,0x77,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_GeometryMaterialList =
+    {0x0e6f4b2c,0x2bd0,0x11d6,{0xa4,0xcc,0x44,0x45,0x53,0x54,0x77,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_GeneralMultiPatchCreator =
+    {0x776b5584,0x2c7f,0x11d6,{0xa4,0xce,0x44,0x45,0x53,0x54,0x77,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IScene =
+    {0x787f54e2,0xba26,0x11d2,{0x92,0xf8,0x44,0xd1,0xf8,0xc0,0x00,0x00}};
+extern "C" const GUID __declspec(selectany) IID_IAnimationType =
+    {0xbbf1af30,0xa6ec,0x11d5,{0xb2,0xa0,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) IID_IKeyframe =
+    {0x767c9b53,0x5a8e,0x11d5,{0xb2,0x95,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) IID_IBookmarkToKeyframe =
+    {0xbd3c7aad,0xa869,0x11d5,{0xb2,0xa0,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) IID_IAnimationTrack =
+    {0xbbf1af31,0xa6ec,0x11d5,{0xb2,0xa0,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) IID_ISxAnimationEnvironment =
+    {0xa4c0b647,0x82ad,0x11d5,{0xb2,0x9b,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) IID_ISxAnimationEnvironment2 =
+    {0xf406fe81,0x1101,0x47eb,{0x9a,0x45,0x5c,0x4f,0x64,0xb9,0xa0,0xf0}};
+extern "C" const GUID __declspec(selectany) IID_ISceneExporter3d =
+    {0x3044c30b,0x37d0,0x11d4,{0xa1,0x67,0x44,0x45,0x53,0x54,0x77,0x77}};
+extern "C" const GUID __declspec(selectany) IID_ISceneGraph =
+    {0x37576410,0xc469,0x11d2,{0xb1,0xda,0x00,0xc0,0x4f,0xa3,0x3d,0x14}};
+extern "C" const GUID __declspec(selectany) IID_ICamera =
+    {0xb3fa596f,0xada3,0x11d2,{0x9f,0xae,0x00,0xc0,0x4f,0x8e,0xce,0x3d}};
+extern "C" const GUID __declspec(selectany) IID_ISceneViewer =
+    {0x03485a91,0x59d0,0x11d3,{0x81,0x72,0x00,0x80,0xc7,0x59,0x7e,0x71}};
+extern "C" const GUID __declspec(selectany) IID_ICamera2 =
+    {0x44e9928e,0xbf72,0x4838,{0xb9,0x56,0x29,0x40,0xd0,0x56,0x4f,0x3f}};
+extern "C" const GUID __declspec(selectany) IID_ICamera3 =
+    {0x98daaab4,0x83ba,0x4046,{0xb8,0x43,0x98,0xcb,0xe9,0x8a,0x65,0x47}};
+extern "C" const GUID __declspec(selectany) IID_IBookmark3D =
+    {0xbcdb3324,0x9afa,0x11d5,{0xb2,0x9f,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) IID_IViewers3D =
+    {0x4d8ca7d2,0x0aaa,0x4502,{0xad,0xc7,0x03,0x88,0x05,0x1c,0x5f,0x5c}};
+extern "C" const GUID __declspec(selectany) IID_IBasicScene =
+    {0xec4e4b1c,0x5a64,0x499d,{0xa4,0x75,0xbc,0x2d,0xdc,0x23,0x78,0x38}};
+extern "C" const GUID __declspec(selectany) IID_IBasicScene2 =
+    {0x020719a9,0x5b19,0x4835,{0xab,0x76,0x47,0x90,0x82,0x47,0xb6,0xbc}};
+extern "C" const GUID __declspec(selectany) IID_ISceneBookmarks =
+    {0xbcdb3325,0x9afa,0x11d5,{0xb2,0x9f,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) IID_ISceneBookmarks2 =
+    {0xd530208f,0x48a9,0x45d0,{0xb5,0xc9,0xa1,0x47,0x49,0x87,0xb1,0x13}};
+extern "C" const GUID __declspec(selectany) IID_IAnimationTracks =
+    {0xfa3dba5b,0xa879,0x11d5,{0xb2,0xa0,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) IID_ISceneGraph2 =
+    {0xc256fa92,0x63ab,0x4e4e,{0xb2,0xda,0xe4,0xe7,0xa8,0x96,0xdb,0x98}};
+extern "C" const GUID __declspec(selectany) IID_ISceneGraphEvents =
+    {0x1d1c669a,0x13de,0x11d4,{0x80,0xdf,0x00,0xc0,0x4f,0xa0,0xad,0xf8}};
+extern "C" const GUID __declspec(selectany) IID_ISceneGraphEventsDisp =
+    {0x1d1c669b,0x13de,0x11d4,{0x80,0xdf,0x00,0xc0,0x4f,0xa0,0xad,0xf8}};
+extern "C" const GUID __declspec(selectany) IID_I3DViewer =
+    {0xea6581ec,0x082d,0x435c,{0x8f,0x73,0xb4,0x16,0x1c,0xa0,0x6f,0x20}};
+extern "C" const GUID __declspec(selectany) IID_ISceneViewer2 =
+    {0x5e20043d,0xfb3d,0x4ff2,{0x85,0xc0,0x8b,0xb7,0xac,0x98,0x32,0x42}};
+extern "C" const GUID __declspec(selectany) IID_ISceneVideoExporter =
+    {0x4251ba07,0x9106,0x11d5,{0xb2,0x9f,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+
+#pragma pack(pop)

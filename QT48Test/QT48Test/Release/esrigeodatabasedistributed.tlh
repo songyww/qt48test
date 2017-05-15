@@ -1,0 +1,2124 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (b5be2b73).
+//
+// e:\vsproject\qt48test\qt48test\release\esrigeodatabasedistributed.tlh
+//
+// C++ source equivalent of Win32 type library esrigeodatabasedistributed.olb
+// compiler-generated file created 12/01/16 at 15:39:11 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("a7c74158-1062-4664-b404-8694d490fcd1"))
+/* LIBID */ __esriGeoDatabaseDistributed;
+struct __declspec(uuid("b3924a28-0d3a-47c6-9d63-71544f1634da"))
+/* interface */ IEnumModifiedClassInfo;
+struct __declspec(uuid("0952a2d7-fa43-4740-aea5-d6c902eb6a2c"))
+/* interface */ IModifiedClassInfo;
+struct __declspec(uuid("bfd3912e-421e-477b-b324-5e66c552ac1b"))
+/* interface */ IExportSchema;
+struct __declspec(uuid("d14b724a-ac95-4cd2-9242-7235f4fb5587"))
+/* interface */ ISchemaChanges;
+struct __declspec(uuid("52b0879b-28c4-4904-a402-91378488b867"))
+/* interface */ IEnumSchemaChange;
+struct __declspec(uuid("b5ccf6d9-d034-4177-8827-f1493785de8f"))
+/* interface */ ISchemaChangeInfo;
+enum esriSchemaChangeType;
+struct __declspec(uuid("be88729b-0719-45b6-a60b-c977e4041c7b"))
+/* interface */ IImportSchema;
+struct __declspec(uuid("e94e335a-e1f0-4a55-9e8d-e6492b033333"))
+/* interface */ ISchemaChangesInit;
+struct __declspec(uuid("80effd28-c665-47d2-aa21-c4196efcc9d3"))
+/* interface */ IXMLDocumentVersion;
+enum esriDataChangeType;
+enum esriReplicaProgress;
+enum esriOperationProgress;
+enum esriReplicaMessageType;
+enum esriExportGenerationsOption;
+enum esriReExportGenerationsOption;
+struct __declspec(uuid("5435d16a-5aa0-427f-bdad-24bd6aabf858"))
+/* interface */ IReplicaProgress;
+struct __declspec(uuid("7e1f4a6f-a857-475f-82ea-a089122dbdd4"))
+/* interface */ IOperationProgress;
+struct __declspec(uuid("cf7e4cf0-e0c0-4302-ab42-c32899835602"))
+/* interface */ IDataExtraction;
+struct __declspec(uuid("8612b096-c19b-4197-80ac-86961ac9426c"))
+/* interface */ IReplicaDataChanges;
+struct __declspec(uuid("e513366a-6fe2-42d4-ac95-40dec7122f57"))
+/* interface */ IReplicaDataChangesInit;
+struct __declspec(uuid("92267ee9-0766-43ea-ba8b-7dfd5c8e8517"))
+/* interface */ IReplicaDataChangesInit2;
+struct __declspec(uuid("e0951743-0d52-42ff-ab5e-32d07b5b8951"))
+/* interface */ IDataChanges;
+enum esriExportDataChangesOption;
+struct __declspec(uuid("e290f6a3-535f-49a9-8fd4-c60fc44bf109"))
+/* interface */ IExportDataChanges;
+struct __declspec(uuid("8ec3471a-80e3-4552-9cc7-dfce334cc809"))
+/* interface */ IExportDataChanges2;
+struct __declspec(uuid("51ddd7ac-b00b-420a-adb9-30540c7e81d4"))
+/* interface */ IVersionDataChangesInit;
+struct __declspec(uuid("a598405f-8302-42b8-a6a2-121cbb2b3e0a"))
+/* interface */ IDeltaDataChanges;
+struct __declspec(uuid("288ac87d-ed18-460b-b720-dc4d082da610"))
+/* interface */ IDeltaDataChanges2;
+struct __declspec(uuid("725451c9-cd9d-4431-8020-c9ed11bb40f0"))
+/* interface */ IDeltaDataChangesInit;
+struct __declspec(uuid("4c7fd0cf-fa09-4d49-b168-4767cf945c14"))
+/* interface */ IDeltaDataChangesInit2;
+struct __declspec(uuid("cb41732d-ec82-4e84-bfc1-a9a1135b02b5"))
+/* interface */ IDeltaDataChangesRelease;
+struct __declspec(uuid("1f88e412-18ce-4324-a1e5-d1a32d5dff4a"))
+/* interface */ IGdbXmlExport;
+struct __declspec(uuid("56cb26fb-6abf-4eb7-9f39-9ec7248c0873"))
+/* interface */ IGdbXmlImport;
+struct __declspec(uuid("17ce60d7-24f8-49cc-8fc4-94471dbaf723"))
+/* interface */ IGdbXmlExportEvents;
+struct __declspec(uuid("077f55bf-9a00-44b3-9d6f-5e1d0fc822e7"))
+/* interface */ IGdbSchemaCreator;
+struct __declspec(uuid("5f8f332e-316d-4fc0-9454-b2628cb9d546"))
+/* interface */ IDataChanges2;
+struct __declspec(uuid("a289bd00-e42e-4820-9af0-c9bc64f707a8"))
+/* interface */ IDataChanges3;
+struct __declspec(uuid("bf34062d-82cb-47db-be39-8c8902e8a05a"))
+/* interface */ IDataChangesInfo;
+struct __declspec(uuid("fafbfa81-b7bd-4c25-a456-0108e11ea25b"))
+/* interface */ IDataChangesExt;
+struct __declspec(uuid("3eea0fb7-0478-400b-bf5c-122ea29c50a4"))
+/* interface */ IImportDataChanges;
+struct __declspec(uuid("27fa7510-e45d-49a2-8d57-7753db605d04"))
+/* interface */ IImportDataChanges2;
+struct __declspec(uuid("a2f2dba2-0515-4fa3-882c-3633480bd24a"))
+/* interface */ IImportDataChanges3;
+struct __declspec(uuid("28c7af79-0a93-4ed1-832b-d1e1aec0ff75"))
+/* interface */ IReplicasExporter;
+struct __declspec(uuid("387adb2e-328b-464d-b6d6-548d0fd4447d"))
+/* interface */ ITableDataChangesInfo;
+struct __declspec(uuid("244f9cd3-873d-42af-88a9-3f740079d4f9"))
+/* interface */ ITablesDataChanges;
+struct __declspec(uuid("b2573e22-0229-4f28-b33e-85573f974240"))
+/* interface */ IEnumTableDataChanges;
+struct /* coclass */ DataChangesExporter;
+struct /* coclass */ DataChangesImporter;
+struct /* coclass */ DataExtraction;
+struct /* coclass */ DataChanges;
+struct /* coclass */ CheckOutDataChanges;
+struct /* coclass */ DeltaDataChanges;
+struct /* coclass */ GdbExporter;
+struct /* coclass */ GdbImporter;
+struct /* coclass */ GdbSchemaCreator;
+struct /* coclass */ VersionDataChanges;
+struct /* coclass */ TableDataChangesInfo;
+struct /* coclass */ TablesDataChanges;
+struct /* coclass */ OperationProgress;
+struct /* coclass */ ReplicaSchemaExporter;
+struct /* coclass */ ReplicaSchemaImporter;
+struct /* coclass */ SchemaChanges;
+struct /* coclass */ SchemaChangeInfo;
+struct /* coclass */ ReplicasExporter;
+enum esriCheckInSourceType;
+struct __declspec(uuid("d0571ebd-d55c-46ef-90a1-246c40486dca"))
+/* interface */ ICheckOut;
+struct __declspec(uuid("15c5f91a-a992-42c6-a64e-53b4965fca46"))
+/* interface */ ICheckIn;
+struct __declspec(uuid("27fce3ee-891d-407d-a36f-4d37ad14b3f6"))
+/* interface */ ICheckIn2;
+struct __declspec(uuid("73987267-11c4-477b-ae52-3dfb7dc62918"))
+/* interface */ ICheckInDataSynchronizer;
+struct __declspec(uuid("bb18b086-729b-4990-ab3e-a457cc584548"))
+/* interface */ ICheckInDataSynchronizer2;
+struct __declspec(uuid("059a0b29-8d46-475f-a4d8-77f220ec2cbb"))
+/* interface */ IReplicaValidation;
+struct __declspec(uuid("90b7c766-754e-47e9-bc42-7c03a336c82f"))
+/* interface */ IReplicaValidation2;
+struct /* coclass */ CheckOut;
+struct /* coclass */ CheckIn;
+struct /* coclass */ CheckInDataSynchronizer;
+struct /* coclass */ ReplicaValidator;
+struct /* coclass */ ReplicaProgress;
+enum esriDisconnectedEditingError;
+struct __declspec(uuid("ce6fe713-7b5a-4e27-808f-97ecfa588f2b"))
+/* interface */ IReplicaMessageHandler;
+enum esriReplicaSynchronizeDirection;
+struct __declspec(uuid("37d98d2a-97e0-4252-86ac-af3395581877"))
+/* interface */ IReplicaMessageHandler2;
+struct /* coclass */ ReplicationDataChanges;
+struct /* coclass */ ArchivingDataChanges;
+struct /* coclass */ ReplicaMessageHandler;
+struct __declspec(uuid("bdfd716d-e902-4907-9c97-65da73f02ae9"))
+/* interface */ IGDSData;
+enum esriGDSTransportType;
+struct __declspec(uuid("fc23fbc0-dc6a-41fc-8914-36677fba6855"))
+/* interface */ IGDSExportOptions;
+enum esriGDSExportFormat;
+struct __declspec(uuid("b59deddd-065f-4c9f-942a-af79e8ab3fbc"))
+/* interface */ IGeoDataServer;
+enum esriGDSImportFormat;
+enum esriGDSReplicaImportSource;
+struct __declspec(uuid("6babaf1e-d1a3-487f-bde1-58a206503dbc"))
+/* interface */ IGDSQueryResultPortion;
+struct __declspec(uuid("841bdc30-fe10-46af-b67b-582252bc16b8"))
+/* interface */ IGeoDataServerInit;
+struct __declspec(uuid("f3b8e8ca-fdcc-4f3b-a581-ab11258cb801"))
+/* interface */ IGeoDataServerObjects;
+struct __declspec(uuid("ab9f2c3d-9298-480b-a57c-4afcc8d7c498"))
+/* interface */ IReplicationAgent;
+enum esriReplicationAgentReconcilePolicy;
+struct __declspec(uuid("fe61bef1-7ae3-45c6-84de-a9d6019a4d77"))
+/* interface */ IReplicationAgentCancelControl;
+enum esriGeoDataServerMessageCodeEnum;
+struct __declspec(uuid("74a172d5-7d99-41e1-9840-415193b5f58c"))
+/* interface */ IGDSData2;
+struct __declspec(uuid("5906a736-62ed-4fb6-b84f-191131dfab07"))
+/* interface */ IGeoDataServer2;
+struct __declspec(uuid("fc1d0cbb-38ee-44b7-be6e-80049e06f855"))
+/* interface */ IReplicationAgent2;
+struct /* coclass */ GeoDataServerConfigurationFactory;
+struct /* coclass */ GeoDataServer;
+struct /* coclass */ GDSData;
+struct /* coclass */ GDSExportOptions;
+struct /* coclass */ GDSQueryResultPortion;
+struct /* coclass */ ReplicationAgent;
+enum esriGeoDataServerErrors;
+struct /* coclass */ GeoDataServerLP;
+struct /* coclass */ GeoDataServerIP;
+struct /* coclass */ GeoDataServerObjectDescription;
+struct __declspec(uuid("ca2b76eb-ffe1-46d7-9e13-99a7184ab450"))
+/* interface */ IWFSServer;
+enum esriWFSHttpVerb;
+enum esriWFSServerMessageCodeEnum;
+struct /* coclass */ WFSServer;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IModifiedClassInfo, __uuidof(IModifiedClassInfo));
+_COM_SMARTPTR_TYPEDEF(IEnumModifiedClassInfo, __uuidof(IEnumModifiedClassInfo));
+_COM_SMARTPTR_TYPEDEF(ISchemaChangesInit, __uuidof(ISchemaChangesInit));
+_COM_SMARTPTR_TYPEDEF(IXMLDocumentVersion, __uuidof(IXMLDocumentVersion));
+_COM_SMARTPTR_TYPEDEF(IReplicaProgress, __uuidof(IReplicaProgress));
+_COM_SMARTPTR_TYPEDEF(IOperationProgress, __uuidof(IOperationProgress));
+_COM_SMARTPTR_TYPEDEF(IDataExtraction, __uuidof(IDataExtraction));
+_COM_SMARTPTR_TYPEDEF(IReplicaDataChanges, __uuidof(IReplicaDataChanges));
+_COM_SMARTPTR_TYPEDEF(IReplicaDataChangesInit, __uuidof(IReplicaDataChangesInit));
+_COM_SMARTPTR_TYPEDEF(IReplicaDataChangesInit2, __uuidof(IReplicaDataChangesInit2));
+_COM_SMARTPTR_TYPEDEF(IDataChanges, __uuidof(IDataChanges));
+_COM_SMARTPTR_TYPEDEF(IExportDataChanges, __uuidof(IExportDataChanges));
+_COM_SMARTPTR_TYPEDEF(IExportDataChanges2, __uuidof(IExportDataChanges2));
+_COM_SMARTPTR_TYPEDEF(IVersionDataChangesInit, __uuidof(IVersionDataChangesInit));
+_COM_SMARTPTR_TYPEDEF(IDeltaDataChanges, __uuidof(IDeltaDataChanges));
+_COM_SMARTPTR_TYPEDEF(IDeltaDataChanges2, __uuidof(IDeltaDataChanges2));
+_COM_SMARTPTR_TYPEDEF(IDeltaDataChangesInit, __uuidof(IDeltaDataChangesInit));
+_COM_SMARTPTR_TYPEDEF(IDeltaDataChangesInit2, __uuidof(IDeltaDataChangesInit2));
+_COM_SMARTPTR_TYPEDEF(IDeltaDataChangesRelease, __uuidof(IDeltaDataChangesRelease));
+_COM_SMARTPTR_TYPEDEF(IGdbXmlExport, __uuidof(IGdbXmlExport));
+_COM_SMARTPTR_TYPEDEF(IGdbXmlImport, __uuidof(IGdbXmlImport));
+_COM_SMARTPTR_TYPEDEF(IGdbXmlExportEvents, __uuidof(IGdbXmlExportEvents));
+_COM_SMARTPTR_TYPEDEF(IGdbSchemaCreator, __uuidof(IGdbSchemaCreator));
+_COM_SMARTPTR_TYPEDEF(IDataChanges2, __uuidof(IDataChanges2));
+_COM_SMARTPTR_TYPEDEF(IDataChanges3, __uuidof(IDataChanges3));
+_COM_SMARTPTR_TYPEDEF(IDataChangesInfo, __uuidof(IDataChangesInfo));
+_COM_SMARTPTR_TYPEDEF(IDataChangesExt, __uuidof(IDataChangesExt));
+_COM_SMARTPTR_TYPEDEF(IImportDataChanges, __uuidof(IImportDataChanges));
+_COM_SMARTPTR_TYPEDEF(IImportDataChanges2, __uuidof(IImportDataChanges2));
+_COM_SMARTPTR_TYPEDEF(IImportDataChanges3, __uuidof(IImportDataChanges3));
+_COM_SMARTPTR_TYPEDEF(IReplicasExporter, __uuidof(IReplicasExporter));
+_COM_SMARTPTR_TYPEDEF(ITableDataChangesInfo, __uuidof(ITableDataChangesInfo));
+_COM_SMARTPTR_TYPEDEF(ITablesDataChanges, __uuidof(ITablesDataChanges));
+_COM_SMARTPTR_TYPEDEF(IEnumTableDataChanges, __uuidof(IEnumTableDataChanges));
+_COM_SMARTPTR_TYPEDEF(ICheckOut, __uuidof(ICheckOut));
+_COM_SMARTPTR_TYPEDEF(ICheckIn, __uuidof(ICheckIn));
+_COM_SMARTPTR_TYPEDEF(ICheckIn2, __uuidof(ICheckIn2));
+_COM_SMARTPTR_TYPEDEF(ICheckInDataSynchronizer, __uuidof(ICheckInDataSynchronizer));
+_COM_SMARTPTR_TYPEDEF(ICheckInDataSynchronizer2, __uuidof(ICheckInDataSynchronizer2));
+_COM_SMARTPTR_TYPEDEF(IReplicaValidation, __uuidof(IReplicaValidation));
+_COM_SMARTPTR_TYPEDEF(IReplicaValidation2, __uuidof(IReplicaValidation2));
+_COM_SMARTPTR_TYPEDEF(IReplicaMessageHandler, __uuidof(IReplicaMessageHandler));
+_COM_SMARTPTR_TYPEDEF(IReplicaMessageHandler2, __uuidof(IReplicaMessageHandler2));
+_COM_SMARTPTR_TYPEDEF(IGDSData, __uuidof(IGDSData));
+_COM_SMARTPTR_TYPEDEF(IGDSExportOptions, __uuidof(IGDSExportOptions));
+_COM_SMARTPTR_TYPEDEF(IGDSQueryResultPortion, __uuidof(IGDSQueryResultPortion));
+_COM_SMARTPTR_TYPEDEF(IGeoDataServer, __uuidof(IGeoDataServer));
+_COM_SMARTPTR_TYPEDEF(IGeoDataServerInit, __uuidof(IGeoDataServerInit));
+_COM_SMARTPTR_TYPEDEF(IGeoDataServerObjects, __uuidof(IGeoDataServerObjects));
+_COM_SMARTPTR_TYPEDEF(IReplicationAgent, __uuidof(IReplicationAgent));
+_COM_SMARTPTR_TYPEDEF(IReplicationAgentCancelControl, __uuidof(IReplicationAgentCancelControl));
+_COM_SMARTPTR_TYPEDEF(IGDSData2, __uuidof(IGDSData2));
+_COM_SMARTPTR_TYPEDEF(IGeoDataServer2, __uuidof(IGeoDataServer2));
+_COM_SMARTPTR_TYPEDEF(IReplicationAgent2, __uuidof(IReplicationAgent2));
+_COM_SMARTPTR_TYPEDEF(IWFSServer, __uuidof(IWFSServer));
+_COM_SMARTPTR_TYPEDEF(IExportSchema, __uuidof(IExportSchema));
+_COM_SMARTPTR_TYPEDEF(ISchemaChanges, __uuidof(ISchemaChanges));
+_COM_SMARTPTR_TYPEDEF(IImportSchema, __uuidof(IImportSchema));
+_COM_SMARTPTR_TYPEDEF(IEnumSchemaChange, __uuidof(IEnumSchemaChange));
+_COM_SMARTPTR_TYPEDEF(ISchemaChangeInfo, __uuidof(ISchemaChangeInfo));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("0952a2d7-fa43-4740-aea5-d6c902eb6a2c"))
+IModifiedClassInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ChildClassName (
+        /*[out,retval]*/ BSTR * cClassName ) = 0;
+      virtual HRESULT __stdcall get_ClassID (
+        /*[out,retval]*/ long * ChildClassID ) = 0;
+      virtual HRESULT __stdcall get_ParentClassName (
+        /*[out,retval]*/ BSTR * rName ) = 0;
+      virtual HRESULT __stdcall get_DatasetType (
+        /*[out,retval]*/ enum esriDatasetType * dType ) = 0;
+      virtual HRESULT __stdcall get_ParentDatabase (
+        /*[out,retval]*/ BSTR * ParentDatabase ) = 0;
+      virtual HRESULT __stdcall get_ParentOwner (
+        /*[out,retval]*/ BSTR * ParentOwner ) = 0;
+};
+
+struct __declspec(uuid("b3924a28-0d3a-47c6-9d63-71544f1634da"))
+IEnumModifiedClassInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Reset ( ) = 0;
+      virtual HRESULT __stdcall Next (
+        /*[out,retval]*/ struct IModifiedClassInfo * * ModifiedClassInfo ) = 0;
+};
+
+enum __declspec(uuid("0b30afe3-171e-4dff-b7f5-1a88cb377611"))
+esriSchemaChangeType
+{
+    esriSchemaChangeTypeNoChange = 0,
+    esriSchemaChangeTypeAny = 1,
+    esriSchemaChangeTypeNewFeatureDataset = 2,
+    esriSchemaChangeTypeUpdateFeatureDataset = 3,
+    esriSchemaChangeTypeDeleteFeatureDataset = 4,
+    esriSchemaChangeTypeNewTable = 5,
+    esriSchemaChangeTypeDeleteTable = 6,
+    esriSchemaChangeTypeUpdateTable = 7,
+    esriSchemaChangeTypeNewRelationshipClass = 8,
+    esriSchemaChangeTypeDeleteRelationshipClass = 9,
+    esriSchemaChangeTypeUpdateRelationshipClass = 10,
+    esriSchemaChangeTypeNewField = 11,
+    esriSchemaChangeTypeUpdateField = 12,
+    esriSchemaChangeTypeDeleteField = 13,
+    esriSchemaChangeTypeNewDomain = 14,
+    esriSchemaChangeTypeUpdateDomain = 15,
+    esriSchemaChangeTypeDeleteDomain = 16,
+    esriSchemaChangeTypeUpdateFields = 17,
+    esriSchemaChangeTypeUpdateDomains = 18,
+    esriSchemaChangeTypeNewGeometricNetwork = 19,
+    esriSchemaChangeTypeUpdateGeometricNetwork = 20,
+    esriSchemaChangeTypeDeleteGeometricNetwork = 21,
+    esriSchemaChangeTypeNewTopology = 22,
+    esriSchemaChangeTypeUpdateTopology = 23,
+    esriSchemaChangeTypeDeleteTopology = 24
+};
+
+struct __declspec(uuid("e94e335a-e1f0-4a55-9e8d-e6492b033333"))
+ISchemaChangesInit : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Init (
+        /*[in]*/ struct IReplica * Replica,
+        /*[in]*/ struct IWorkspaceName * TargetWorkspaceName ) = 0;
+      virtual HRESULT __stdcall InitFromSchemaDocument (
+        /*[in]*/ BSTR xmlFile,
+        /*[in]*/ struct IWorkspaceName * TargetWorkspaceName ) = 0;
+      virtual HRESULT __stdcall InitFromSchemaDifferencesDocument (
+        /*[in]*/ BSTR xmlFile,
+        /*[in]*/ struct IWorkspaceName * TargetWorkspaceName ) = 0;
+};
+
+struct __declspec(uuid("80effd28-c665-47d2-aa21-c4196efcc9d3"))
+IXMLDocumentVersion : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_NamespaceToExportTo (
+        /*[in]*/ BSTR _arg1 ) = 0;
+};
+
+enum __declspec(uuid("e728f862-d47e-4e20-83aa-998b508b7494"))
+esriDataChangeType
+{
+    esriDataChangeTypeInsert = 0,
+    esriDataChangeTypeUpdate = 1,
+    esriDataChangeTypeDelete = 2
+};
+
+enum __declspec(uuid("a0f34b0f-a2fa-410b-a1e5-4ca8f9289086"))
+esriReplicaProgress
+{
+    esriRPExtractSchema = 1,
+    esriRPExtractData = 2,
+    esriRPExtractSchemaAndData = 4,
+    esriRPFetchRelatedObjects = 8,
+    esriRPFetchRelatedNObjects = 16,
+    esriRPBuildGeometricNetworks = 32,
+    esriRPFetchTopologyObjects = 64,
+    esriRPRegisteringCheckOut = 128,
+    esriRPCreateCOVersions = 256,
+    esriRPTransferChanges = 512,
+    esriRPUpdateRelatedObjects = 1024,
+    esriRPRebuildCIConnectivity = 2048,
+    esriRPReconcileWithParent = 4096,
+    esriRPUnregisteringCheckOut = 8192,
+    esriRPCreatingCheckOut = 16384,
+    esriRPSynchronizingCheckOut = 32768,
+    esriRPSynchronizingReplica = 65536,
+    esriRPCreatingReplica = 131072,
+    esriRPRegisteringReplica = 262144,
+    esriRPCreatingSchemaCheckOut = 524288,
+    esriRPExportingToXML = 1048576,
+    esriRPSavingToXMLFile = 2097152,
+    esriRPImportingDataChanges = 4194304
+};
+
+enum __declspec(uuid("3f73727d-f80c-47c9-ac5a-f9eb0b39fa76"))
+esriOperationProgress
+{
+    esriImportXMLWorkspace = 1,
+    esriImportXMLWorkspaceSchema = 2,
+    esriExtractSchema = 4,
+    esriExtractData = 8,
+    esriBuildGeometricNetworks = 16,
+    esriBuildTopologies = 32,
+    esriExportXMLWorkspace = 64,
+    esriExportXMLWorkspaceSchema = 128,
+    esriExportXMLWorkspaceDefinition = 256,
+    esriExportXMLWorkspaceData = 512,
+    esriImportXMLWorkspaceData = 1024,
+    esriXMLRegisterReplica = 2048
+};
+
+enum __declspec(uuid("137689e3-0102-4eb0-bd67-464e4082d0df"))
+esriReplicaMessageType
+{
+    esriReplicaMessageTypeDC = 1,
+    esriReplicaMessageTypeAck = 2,
+    esriReplicaMessageTypeDCWFD = 3
+};
+
+enum __declspec(uuid("e453e13f-3de9-495f-9c16-a2e56f220cfb"))
+esriExportGenerationsOption
+{
+    esriExportGenerationsUnAcknowledged = 1,
+    esriExportGenerationsNew = 2,
+    esriExportGenerationsAll = 3,
+    esriExportGenerationsNone = 4
+};
+
+enum __declspec(uuid("3124af69-f861-4d9b-b4ef-ea4cd1ebd96b"))
+esriReExportGenerationsOption
+{
+    esriReExportGenerationsAllUnAcknowledged = 1,
+    esriReExportGenerationsLastUnAcknowledged = 2
+};
+
+struct __declspec(uuid("5435d16a-5aa0-427f-bdad-24bd6aabf858"))
+IReplicaProgress : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Startup (
+        /*[in]*/ enum esriReplicaProgress rProgress ) = 0;
+      virtual HRESULT __stdcall put_CurrentReplicaOperation (
+        /*[in]*/ enum esriReplicaProgress _arg1 ) = 0;
+      virtual HRESULT __stdcall put_ReplicaOperations (
+        /*[in]*/ long _arg1 ) = 0;
+      virtual HRESULT __stdcall put_ReplicaObjectCount (
+        /*[in]*/ long _arg1 ) = 0;
+};
+
+struct __declspec(uuid("7e1f4a6f-a857-475f-82ea-a089122dbdd4"))
+IOperationProgress : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Startup (
+        /*[in]*/ enum esriOperationProgress rProgress ) = 0;
+      virtual HRESULT __stdcall put_CurrentOperation (
+        /*[in]*/ enum esriOperationProgress _arg1 ) = 0;
+      virtual HRESULT __stdcall put_Operations (
+        /*[in]*/ long _arg1 ) = 0;
+      virtual HRESULT __stdcall put_ObjectCount (
+        /*[in]*/ long _arg1 ) = 0;
+};
+
+struct __declspec(uuid("cf7e4cf0-e0c0-4302-ab42-c32899835602"))
+IDataExtraction : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Extract (
+        /*[in]*/ struct IReplicaDescription * rDDescription,
+        /*[in]*/ VARIANT_BOOL transferRelObjects ) = 0;
+      virtual HRESULT __stdcall ExtractSchema (
+        /*[in]*/ struct IReplicaDescription * rSDescription,
+        /*[in]*/ struct ISpatialReference * outputSpatialReference ) = 0;
+};
+
+struct __declspec(uuid("8612b096-c19b-4197-80ac-86961ac9426c"))
+IReplicaDataChanges : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Workspace (
+        /*[out,retval]*/ struct IWorkspace * * pWorkspace ) = 0;
+};
+
+struct __declspec(uuid("e513366a-6fe2-42d4-ac95-40dec7122f57"))
+IReplicaDataChangesInit : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Init (
+        /*[in]*/ struct IReplica * Replica,
+        /*[in]*/ struct IWorkspaceName * checkoutWorkspace ) = 0;
+};
+
+struct __declspec(uuid("92267ee9-0766-43ea-ba8b-7dfd5c8e8517"))
+IReplicaDataChangesInit2 : IReplicaDataChangesInit
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Init2 (
+        /*[in]*/ struct IReplica * Replica,
+        /*[in]*/ struct IWorkspaceName * checkoutWorkspace,
+        /*[in]*/ enum esriExportGenerationsOption GenOption ) = 0;
+};
+
+struct __declspec(uuid("e0951743-0d52-42ff-ab5e-32d07b5b8951"))
+IDataChanges : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetModifiedClassesInfo (
+        /*[out,retval]*/ struct IEnumModifiedClassInfo * * enumModifiedClasses ) = 0;
+      virtual HRESULT __stdcall Extract (
+        /*[in]*/ BSTR tableName,
+        /*[in]*/ enum esriDataChangeType changeType,
+        /*[out,retval]*/ struct IDifferenceCursor * * cursor ) = 0;
+      virtual HRESULT __stdcall get_ParentWorkspaceName (
+        /*[out,retval]*/ struct IWorkspaceName * * ParentWorkspaceName ) = 0;
+      virtual HRESULT __stdcall get_ParentReplicaID (
+        /*[out,retval]*/ long * ParentReplicaID ) = 0;
+      virtual HRESULT __stdcall get_ReplicaGuid (
+        /*[out,retval]*/ BSTR * ReplicaGuid ) = 0;
+};
+
+enum __declspec(uuid("25ac77e6-179e-4e6b-bb1e-c6c02d342a80"))
+esriExportDataChangesOption
+{
+    esriExportToAccess = 1,
+    esriExportToXML = 2,
+    esriExportToFileGDB = 3
+};
+
+struct __declspec(uuid("e290f6a3-535f-49a9-8fd4-c60fc44bf109"))
+IExportDataChanges : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ExportDataChanges (
+        /*[in]*/ BSTR exportFileName,
+        /*[in]*/ enum esriExportDataChangesOption exportOption,
+        /*[in]*/ struct IDataChanges * DataChanges,
+        /*[in]*/ VARIANT_BOOL OverwriteIfExists ) = 0;
+};
+
+struct __declspec(uuid("8ec3471a-80e3-4552-9cc7-dfce334cc809"))
+IExportDataChanges2 : IExportDataChanges
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ExportDataChanges2 (
+        /*[in]*/ BSTR exportFileName,
+        /*[in]*/ enum esriExportDataChangesOption exportOption,
+        /*[in]*/ struct IDataChanges * DataChanges,
+        /*[in]*/ VARIANT_BOOL OverwriteIfExists,
+        /*[in]*/ VARIANT_BOOL Compressed,
+        /*[in]*/ VARIANT_BOOL BinaryGeometry,
+        /*[in]*/ VARIANT_BOOL LastSend ) = 0;
+      virtual HRESULT __stdcall ReExportDataChanges (
+        /*[in]*/ BSTR exportFileName,
+        /*[in]*/ enum esriExportDataChangesOption exportOption,
+        /*[in]*/ struct IReplica2 * SourceReplica,
+        /*[in]*/ enum esriReExportGenerationsOption GenOption,
+        /*[in]*/ VARIANT_BOOL OverwriteIfExists,
+        /*[in]*/ VARIANT_BOOL Compressed,
+        /*[in]*/ VARIANT_BOOL BinaryGeometry ) = 0;
+};
+
+struct __declspec(uuid("51ddd7ac-b00b-420a-adb9-30540c7e81d4"))
+IVersionDataChangesInit : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Init (
+        /*[in]*/ struct IWorkspaceName * SourceVersionedWorkspace,
+        /*[in]*/ struct IWorkspaceName * TargetVersionedWorkspace ) = 0;
+};
+
+struct __declspec(uuid("a598405f-8302-42b8-a6a2-121cbb2b3e0a"))
+IDeltaDataChanges : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Container (
+        /*[out,retval]*/ IUnknown * * Container ) = 0;
+};
+
+struct __declspec(uuid("288ac87d-ed18-460b-b720-dc4d082da610"))
+IDeltaDataChanges2 : IDeltaDataChanges
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ReplicaMessageType (
+        /*[out,retval]*/ enum esriReplicaMessageType * MessageType ) = 0;
+};
+
+struct __declspec(uuid("725451c9-cd9d-4431-8020-c9ed11bb40f0"))
+IDeltaDataChangesInit : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Init (
+        /*[in]*/ BSTR changesFileName,
+        /*[in]*/ enum esriExportDataChangesOption exportOption ) = 0;
+};
+
+struct __declspec(uuid("4c7fd0cf-fa09-4d49-b168-4767cf945c14"))
+IDeltaDataChangesInit2 : IDeltaDataChangesInit
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Init2 (
+        /*[in]*/ BSTR changesFileName,
+        /*[in]*/ enum esriExportDataChangesOption exportOption,
+        /*[in]*/ VARIANT_BOOL RandomAccess ) = 0;
+};
+
+struct __declspec(uuid("cb41732d-ec82-4e84-bfc1-a9a1135b02b5"))
+IDeltaDataChangesRelease : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_MajorVersion (
+        /*[out,retval]*/ long * versionNumber ) = 0;
+      virtual HRESULT __stdcall get_MinorVersion (
+        /*[out,retval]*/ long * versionNumber ) = 0;
+      virtual HRESULT __stdcall get_BugfixVersion (
+        /*[out,retval]*/ long * versionNumber ) = 0;
+};
+
+struct __declspec(uuid("1f88e412-18ce-4324-a1e5-d1a32d5dff4a"))
+IGdbXmlExport : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ExportWorkspace (
+        /*[in]*/ struct IWorkspace * Workspace,
+        /*[in]*/ BSTR outFile,
+        /*[in]*/ VARIANT_BOOL BinaryGeometry,
+        /*[in]*/ VARIANT_BOOL Compressed,
+        /*[in]*/ VARIANT_BOOL retrieveMetadata ) = 0;
+      virtual HRESULT __stdcall ExportWorkspaceSchema (
+        /*[in]*/ struct IWorkspace * Workspace,
+        /*[in]*/ BSTR outFile,
+        /*[in]*/ VARIANT_BOOL Compressed,
+        /*[in]*/ VARIANT_BOOL retrieveMetadata ) = 0;
+      virtual HRESULT __stdcall ExportDatasets (
+        /*[in]*/ struct IEnumNameMapping * EnumNameMapping,
+        /*[in]*/ BSTR outFile,
+        /*[in]*/ VARIANT_BOOL BinaryGeometry,
+        /*[in]*/ VARIANT_BOOL Compressed,
+        /*[in]*/ VARIANT_BOOL retrieveMetadata ) = 0;
+      virtual HRESULT __stdcall ExportDatasetsSchema (
+        /*[in]*/ struct IEnumNameMapping * EnumNameMapping,
+        /*[in]*/ BSTR outFile,
+        /*[in]*/ VARIANT_BOOL Compressed,
+        /*[in]*/ VARIANT_BOOL retrieveMetadata ) = 0;
+      virtual HRESULT __stdcall ExportRecordSet (
+        /*[in]*/ struct ITableName * pTableName,
+        /*[in]*/ BSTR outFile,
+        /*[in]*/ VARIANT_BOOL BinaryGeometry,
+        /*[in]*/ VARIANT_BOOL Compressed ) = 0;
+};
+
+struct __declspec(uuid("56cb26fb-6abf-4eb7-9f39-9ec7248c0873"))
+IGdbXmlImport : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GenerateNameMapping (
+        /*[in]*/ BSTR inFile,
+        /*[in]*/ struct IWorkspace * Workspace,
+        /*[out]*/ struct IEnumNameMapping * * EnumNameMapping,
+        /*[out,retval]*/ VARIANT_BOOL * HasConflict ) = 0;
+      virtual HRESULT __stdcall ImportWorkspace (
+        /*[in]*/ BSTR inFile,
+        /*[in]*/ struct IEnumNameMapping * EnumNameMapping,
+        /*[in]*/ struct IWorkspace * pWorkspace,
+        /*[in]*/ VARIANT_BOOL schemaOnly ) = 0;
+      virtual HRESULT __stdcall ImportRecordSet (
+        /*[in]*/ BSTR inFile,
+        /*[in]*/ struct IFields * SourceFields,
+        /*[in]*/ struct IFields * TargetMappedFields,
+        /*[in]*/ struct ITable * pTable ) = 0;
+      virtual HRESULT __stdcall GetRecordSetFields (
+        /*[in]*/ BSTR inFile,
+        /*[out,retval]*/ struct IFields * * Fields ) = 0;
+};
+
+struct __declspec(uuid("17ce60d7-24f8-49cc-8fc4-94471dbaf723"))
+IGdbXmlExportEvents : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall BeforeStartElement (
+        /*[in]*/ BSTR Element,
+        /*[in]*/ BSTR URL,
+        /*[in]*/ IUnknown * Object,
+        struct IXMLWriter * pXMLWriter ) = 0;
+      virtual HRESULT __stdcall AfterEndElement (
+        /*[in]*/ BSTR Element,
+        /*[in]*/ BSTR URL,
+        /*[in]*/ IUnknown * Object,
+        struct IXMLWriter * pXMLWriter ) = 0;
+};
+
+struct __declspec(uuid("077f55bf-9a00-44b3-9d6f-5e1d0fc822e7"))
+IGdbSchemaCreator : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GenerateNameMapping (
+        /*[in]*/ struct IWorkspace * pWorkspace,
+        /*[in]*/ struct IArray * pDataElements,
+        /*[in]*/ struct IArray * pDomains,
+        /*[out]*/ struct IEnumNameMapping * * ppENM,
+        /*[out]*/ VARIANT_BOOL * pHasConflict ) = 0;
+      virtual HRESULT __stdcall CreateSchema (
+        /*[in]*/ struct IWorkspace * pWorkspace,
+        /*[in]*/ struct IEnumNameMapping * pENM ) = 0;
+};
+
+struct __declspec(uuid("5f8f332e-316d-4fc0-9454-b2628cb9d546"))
+IDataChanges2 : IDataChanges
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ChangesModelType (
+        /*[out,retval]*/ enum esriReplicaModelType * ModelType ) = 0;
+};
+
+struct __declspec(uuid("a289bd00-e42e-4820-9af0-c9bc64f707a8"))
+IDataChanges3 : IDataChanges2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_GenerationNumbers (
+        /*[out]*/ long * sourceGenBegin,
+        /*[out]*/ long * sourceGenEnd,
+        /*[out]*/ long * targetGen ) = 0;
+      virtual HRESULT __stdcall get_ReplicaState (
+        /*[out,retval]*/ enum esriReplicaState * ReplicaState ) = 0;
+};
+
+struct __declspec(uuid("bf34062d-82cb-47db-be39-8c8902e8a05a"))
+IDataChangesInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ChangedIDs (
+        /*[in]*/ BSTR className,
+        /*[in]*/ enum esriDataChangeType diffType,
+        /*[out,retval]*/ struct IFIDSet * * ppFIDSet ) = 0;
+};
+
+struct __declspec(uuid("fafbfa81-b7bd-4c25-a456-0108e11ea25b"))
+IDataChangesExt : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ExtractOriginalRows (
+        /*[in]*/ BSTR tableName,
+        /*[in]*/ struct IFIDSet * IDs,
+        /*[out,retval]*/ struct ICursor * * OriginalRows ) = 0;
+};
+
+struct __declspec(uuid("3eea0fb7-0478-400b-bf5c-122ea29c50a4"))
+IImportDataChanges : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ImportDataChanges (
+        /*[in]*/ struct IWorkspaceName * WorkspaceName,
+        /*[in]*/ struct IDeltaDataChanges * DeltaDataChanges,
+        /*[in]*/ VARIANT_BOOL ReconcileWithParent,
+        /*[in]*/ VARIANT_BOOL acceptDefaultConflictResolution,
+        /*[out,retval]*/ VARIANT_BOOL * pConflictDetected ) = 0;
+};
+
+struct __declspec(uuid("27fa7510-e45d-49a2-8d57-7753db605d04"))
+IImportDataChanges2 : IImportDataChanges
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ImportDataChanges2 (
+        /*[in]*/ struct IWorkspaceName * WorkspaceName,
+        /*[in]*/ struct IDeltaDataChanges * DeltaDataChanges,
+        /*[in]*/ VARIANT_BOOL ReconcileWithParent,
+        /*[in]*/ enum esriReplicaReconcilePolicyType reconcilePolicy,
+        /*[in]*/ VARIANT_BOOL columnLevel,
+        /*[in]*/ VARIANT_BOOL createOIDMappingTable,
+        /*[out,retval]*/ VARIANT_BOOL * pConflictDetected ) = 0;
+};
+
+struct __declspec(uuid("a2f2dba2-0515-4fa3-882c-3633480bd24a"))
+IImportDataChanges3 : IImportDataChanges2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ImportDataChanges3 (
+        /*[in]*/ struct IWorkspaceName * WorkspaceName,
+        /*[in]*/ struct IDataChanges * DataChanges,
+        /*[in]*/ VARIANT_BOOL ReconcileWithParent,
+        /*[in]*/ enum esriReplicaReconcilePolicyType reconcilePolicy,
+        /*[in]*/ VARIANT_BOOL columnLevel,
+        /*[in]*/ VARIANT_BOOL createOIDMappingTable,
+        /*[in]*/ VARIANT_BOOL PreserveGlobalIDs,
+        /*[out,retval]*/ VARIANT_BOOL * pConflictDetected ) = 0;
+};
+
+struct __declspec(uuid("28c7af79-0a93-4ed1-832b-d1e1aec0ff75"))
+IReplicasExporter : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ExportReplicasInfo (
+        /*[in]*/ struct IWorkspace * pFromWS,
+        /*[in]*/ struct IWorkspace * pDestWS,
+        /*[in]*/ BSTR fcName,
+        /*[in]*/ struct ISpatialReference * SR,
+        /*[out,retval]*/ struct IFeatureClass * * ppFC ) = 0;
+};
+
+struct __declspec(uuid("387adb2e-328b-464d-b6d6-548d0fd4447d"))
+ITableDataChangesInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Init (
+        /*[in]*/ BSTR TargetName,
+        /*[in]*/ struct ITable * Inserts,
+        /*[in]*/ struct ITable * Updates,
+        /*[in]*/ struct ITable * Deletes ) = 0;
+      virtual HRESULT __stdcall SetFilter (
+        /*[in]*/ enum esriDataChangeType changeType,
+        /*[in]*/ struct IQueryFilter * Filter ) = 0;
+      virtual HRESULT __stdcall GetFilter (
+        /*[in]*/ enum esriDataChangeType changeType,
+        /*[out,retval]*/ struct IQueryFilter * * Filter ) = 0;
+      virtual HRESULT __stdcall get_TargetName (
+        /*[out,retval]*/ BSTR * TargetName ) = 0;
+      virtual HRESULT __stdcall get_Inserts (
+        /*[out,retval]*/ struct ITable * * Table ) = 0;
+      virtual HRESULT __stdcall get_Updates (
+        /*[out,retval]*/ struct ITable * * Table ) = 0;
+      virtual HRESULT __stdcall get_Deletes (
+        /*[out,retval]*/ struct ITable * * Deletes ) = 0;
+      virtual HRESULT __stdcall SetDeletedIDs (
+        /*[in]*/ struct ILongArray * DeletedIDs,
+        /*[in]*/ struct IStringArray * DeletedGIDs ) = 0;
+      virtual HRESULT __stdcall GetDeletedIDs (
+        /*[out]*/ struct ILongArray * * DeletedIDs,
+        /*[out]*/ struct IStringArray * * DeletedGIDs ) = 0;
+};
+
+struct __declspec(uuid("244f9cd3-873d-42af-88a9-3f740079d4f9"))
+ITablesDataChanges : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Init (
+        /*[in]*/ enum esriReplicaModelType ModelType ) = 0;
+      virtual HRESULT __stdcall Add (
+        /*[in]*/ struct ITableDataChangesInfo * TableDataChanges ) = 0;
+      virtual HRESULT __stdcall Remove (
+        /*[in]*/ BSTR TargetName ) = 0;
+      virtual HRESULT __stdcall FindTableChangesInfo (
+        /*[in]*/ BSTR TargetName,
+        /*[out,retval]*/ struct ITableDataChangesInfo * * TableDataChanges ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Count ) = 0;
+};
+
+struct __declspec(uuid("b2573e22-0229-4f28-b33e-85573f974240"))
+IEnumTableDataChanges : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Next (
+        /*[out,retval]*/ struct ITableDataChangesInfo * * TableDataChanges ) = 0;
+      virtual HRESULT __stdcall Reset ( ) = 0;
+};
+
+struct __declspec(uuid("fe5e515a-fc19-45e8-8e2d-46ede0554e52"))
+DataChangesExporter;
+    // [ default ] interface IUnknown
+    // interface IExportDataChanges
+    // interface IExportDataChanges2
+
+struct __declspec(uuid("ce014faf-2b6d-4d74-8177-00980ba739ae"))
+DataChangesImporter;
+    // [ default ] interface IUnknown
+    // interface IImportDataChanges
+    // interface IImportDataChanges2
+    // [ default, source ] interface IFeatureProgress
+    // [ source ] interface IReplicaProgress
+
+struct __declspec(uuid("8ba238f5-aa25-423b-9c59-4ab4988e8bc6"))
+DataExtraction;
+    // [ default ] interface IUnknown
+    // interface IDataExtraction
+    // [ default, source ] interface IFeatureProgress
+    // [ source ] interface IReplicaProgress
+    // interface IXMLDocumentVersion
+
+struct __declspec(uuid("a1cb6e77-022b-4886-a41a-7f97aa08a722"))
+DataChanges;
+    // [ default ] interface IUnknown
+    // interface IDataChanges
+
+struct __declspec(uuid("9fe24070-7df5-4f93-a52d-eb32bcb8bf88"))
+CheckOutDataChanges;
+    // [ default ] interface IUnknown
+    // interface IDataChanges
+    // interface IDataChanges2
+    // interface IReplicaDataChanges
+    // interface IReplicaDataChangesInit
+
+struct __declspec(uuid("50ffe4dc-0e25-4d5b-9bdf-d6a2b3169ca6"))
+DeltaDataChanges;
+    // [ default ] interface IUnknown
+    // interface IDataChanges
+    // interface IDataChanges2
+    // interface IDeltaDataChanges
+    // interface IDeltaDataChanges2
+    // interface IDeltaDataChangesInit
+    // interface IDeltaDataChangesInit2
+    // interface IDeltaDataChangesRelease
+
+struct __declspec(uuid("1143edd2-a736-4129-8345-e237f7bc1b19"))
+GdbExporter;
+    // [ default ] interface IUnknown
+    // interface IGdbXmlExport
+    // [ default, source ] interface IFeatureProgress
+    // [ source ] interface IOperationProgress
+    // [ source ] interface IGdbXmlExportEvents
+    // interface IXMLDocumentVersion
+
+struct __declspec(uuid("109ca64f-de77-46f0-9d73-720bff4111a3"))
+GdbImporter;
+    // [ default ] interface IUnknown
+    // interface IGdbXmlImport
+    // interface ISupportErrorInfo
+    // [ default, source ] interface IFeatureProgress
+    // [ source ] interface IOperationProgress
+
+struct __declspec(uuid("3705e682-7e35-4a8d-b4b0-02a8e768c632"))
+GdbSchemaCreator;
+    // [ default ] interface IUnknown
+    // interface IGdbSchemaCreator
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("c20cf99c-7021-496b-a0c5-34afc905e5b8"))
+VersionDataChanges;
+    // [ default ] interface IUnknown
+    // interface IDataChanges
+    // interface IVersionDataChangesInit
+    // interface IDataChangesInfo
+
+struct __declspec(uuid("e7f8c959-e5d8-453d-af20-28c609ccc27d"))
+TableDataChangesInfo;
+    // [ default ] interface IUnknown
+    // interface ITableDataChangesInfo
+
+struct __declspec(uuid("8bb5759a-ef1f-4119-8eb4-89524aca69e0"))
+TablesDataChanges;
+    // [ default ] interface IUnknown
+    // interface IDataChanges
+    // interface IDataChanges2
+    // interface ITablesDataChanges
+    // interface IEnumTableDataChanges
+
+struct __declspec(uuid("06c8603d-2650-4888-b60b-258d09a46ca4"))
+OperationProgress;
+    // [ default ] interface IUnknown
+    // [ default, source ] interface IOperationProgress
+
+struct __declspec(uuid("b3c4fbd5-e496-479a-b567-5b2d3e5790ea"))
+ReplicaSchemaExporter;
+    // [ default ] interface IUnknown
+    // interface IExportSchema
+
+struct __declspec(uuid("82823fc8-f978-4e83-a84e-fff5a96ae6c5"))
+ReplicaSchemaImporter;
+    // [ default ] interface IUnknown
+    // interface IImportSchema
+
+struct __declspec(uuid("ed337be8-c03c-4d0b-a29f-727565609b4e"))
+SchemaChanges;
+    // [ default ] interface IUnknown
+    // interface ISchemaChanges
+    // interface ISchemaChangesInit
+
+struct __declspec(uuid("26c46e0a-fea6-498d-aed9-ed0a3eb53cfd"))
+SchemaChangeInfo;
+    // [ default ] interface IUnknown
+    // interface ISchemaChangeInfo
+    // interface IXMLSerialize
+    // interface IXMLVersionSupport
+
+struct __declspec(uuid("6e482c9f-8bbb-4832-9576-ebde86f32ca0"))
+ReplicasExporter;
+    // [ default ] interface IUnknown
+    // interface IReplicasExporter
+
+enum __declspec(uuid("e5318b21-a7ed-4c8d-bc5d-197ed15a4001"))
+esriCheckInSourceType
+{
+    esriPersonalDeltaFile = 1,
+    esriXMLDeltaFile = 2,
+    esriCheckOutGDB = 3,
+    esriFileGDBDelta = 4
+};
+
+struct __declspec(uuid("d0571ebd-d55c-46ef-90a1-246c40486dca"))
+ICheckOut : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CheckOutData (
+        /*[in]*/ struct IReplicaDescription * rDDescriptions,
+        /*[in]*/ VARIANT_BOOL transferRelObjects,
+        /*[in]*/ BSTR checkoutName ) = 0;
+      virtual HRESULT __stdcall CheckOutSchema (
+        /*[in]*/ struct IReplicaDescription * rDDescription,
+        /*[in]*/ BSTR checkoutName ) = 0;
+};
+
+struct __declspec(uuid("15c5f91a-a992-42c6-a64e-53b4965fca46"))
+ICheckIn : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CheckInFromGDB (
+        /*[in]*/ struct IWorkspaceName * parentDB,
+        /*[in]*/ BSTR checkoutName,
+        /*[in]*/ struct IWorkspaceName * checkOutDB,
+        /*[in]*/ VARIANT_BOOL reconcileCheckout,
+        /*[in]*/ VARIANT_BOOL createOIDMappingTable,
+        /*[out,retval]*/ VARIANT_BOOL * conflicts_detected ) = 0;
+      virtual HRESULT __stdcall CheckInFromDeltaFile (
+        /*[in]*/ struct IWorkspaceName * parentDB,
+        /*[in]*/ BSTR checkoutName,
+        /*[in]*/ BSTR fileName,
+        /*[in]*/ enum esriExportDataChangesOption dcOption,
+        /*[in]*/ VARIANT_BOOL reconcileCheckout,
+        /*[in]*/ VARIANT_BOOL createOIDMappingTable,
+        /*[out,retval]*/ VARIANT_BOOL * conflicts_detected ) = 0;
+};
+
+struct __declspec(uuid("27fce3ee-891d-407d-a36f-4d37ad14b3f6"))
+ICheckIn2 : ICheckIn
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CheckInFromGDB2 (
+        /*[in]*/ struct IWorkspaceName * parentDB,
+        /*[in]*/ BSTR checkoutName,
+        /*[in]*/ struct IWorkspaceName * checkOutDB,
+        /*[in]*/ VARIANT_BOOL reconcileCheckout,
+        /*[in]*/ enum esriReplicaReconcilePolicyType childReconcilePolicy,
+        /*[in]*/ VARIANT_BOOL columnLevel,
+        /*[in]*/ VARIANT_BOOL createOIDMappingTable,
+        /*[out,retval]*/ VARIANT_BOOL * conflicts_detected ) = 0;
+      virtual HRESULT __stdcall CheckInFromDeltaFile2 (
+        /*[in]*/ struct IWorkspaceName * parentDB,
+        /*[in]*/ BSTR checkoutName,
+        /*[in]*/ BSTR fileName,
+        /*[in]*/ enum esriExportDataChangesOption dcOption,
+        /*[in]*/ VARIANT_BOOL reconcileCheckout,
+        /*[in]*/ enum esriReplicaReconcilePolicyType childReconcilePolicy,
+        /*[in]*/ VARIANT_BOOL columnLevel,
+        /*[in]*/ VARIANT_BOOL createOIDMappingTable,
+        /*[out,retval]*/ VARIANT_BOOL * conflicts_detected ) = 0;
+};
+
+struct __declspec(uuid("73987267-11c4-477b-ae52-3dfb7dc62918"))
+ICheckInDataSynchronizer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Synchronize (
+        /*[in]*/ struct IDataChanges * DataChanges,
+        /*[in]*/ BSTR editVersionName,
+        /*[in]*/ struct IWorkspaceName * ParentWorkspace,
+        /*[in]*/ VARIANT_BOOL reconcileCheckout,
+        /*[in]*/ VARIANT_BOOL createOIDMappingTable,
+        /*[out,retval]*/ VARIANT_BOOL * conflictsDetected ) = 0;
+};
+
+struct __declspec(uuid("bb18b086-729b-4990-ab3e-a457cc584548"))
+ICheckInDataSynchronizer2 : ICheckInDataSynchronizer
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Synchronize2 (
+        /*[in]*/ struct IDataChanges * DataChanges,
+        /*[in]*/ BSTR editVersionName,
+        /*[in]*/ struct IWorkspaceName * ParentWorkspace,
+        /*[in]*/ VARIANT_BOOL reconcileCheckout,
+        /*[in]*/ enum esriReplicaReconcilePolicyType reconcilePolicy,
+        /*[in]*/ VARIANT_BOOL columnLevel,
+        /*[in]*/ VARIANT_BOOL createOIDMappingTable,
+        /*[out,retval]*/ VARIANT_BOOL * conflictsDetected ) = 0;
+};
+
+struct __declspec(uuid("059a0b29-8d46-475f-a4d8-77f220ec2cbb"))
+IReplicaValidation : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ValidateReplicaPair (
+        /*[in]*/ struct IWorkspaceName * parentDB,
+        /*[in]*/ BSTR ReplicaName,
+        /*[in]*/ struct IWorkspaceName * checkOutDB,
+        /*[out,retval]*/ VARIANT_BOOL * isValid ) = 0;
+      virtual HRESULT __stdcall ValidateDeltaFile (
+        /*[in]*/ struct IWorkspaceName * parentDB,
+        /*[in]*/ BSTR ReplicaName,
+        /*[in]*/ BSTR DeltaFileName,
+        /*[in]*/ enum esriCheckInSourceType sourceType,
+        /*[out,retval]*/ VARIANT_BOOL * isValid ) = 0;
+};
+
+struct __declspec(uuid("90b7c766-754e-47e9-bc42-7c03a336c82f"))
+IReplicaValidation2 : IReplicaValidation
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ValidateReplicaSchema (
+        /*[in]*/ struct IReplica * Replica ) = 0;
+};
+
+struct __declspec(uuid("de0ddadd-814d-4c8a-acfe-691e499ed8f3"))
+CheckOut;
+    // [ default ] interface IUnknown
+    // interface ICheckOut
+    // [ default, source ] interface IFeatureProgress
+    // [ source ] interface IReplicaProgress
+
+struct __declspec(uuid("db456bf9-03ac-4a72-9162-1e8fd73de22e"))
+CheckIn;
+    // [ default ] interface IUnknown
+    // interface ICheckIn
+    // interface ICheckIn2
+    // [ default, source ] interface IFeatureProgress
+    // [ source ] interface IReplicaProgress
+
+struct __declspec(uuid("0b998a30-b009-41c6-a086-6dc29ba71cd4"))
+CheckInDataSynchronizer;
+    // [ default ] interface IUnknown
+    // interface ICheckInDataSynchronizer
+    // interface ICheckInDataSynchronizer2
+    // [ default, source ] interface IFeatureProgress
+    // [ source ] interface IReplicaProgress
+
+struct __declspec(uuid("fd8c8ade-6425-474e-ae33-70d3f098077a"))
+ReplicaValidator;
+    // [ default ] interface IUnknown
+    // interface IReplicaValidation
+    // interface IReplicaValidation2
+
+struct __declspec(uuid("cbd8cb96-30e1-4f82-8e90-885b86aa8ec9"))
+ReplicaProgress;
+    // [ default ] interface IUnknown
+    // [ default, source ] interface IReplicaProgress
+
+enum __declspec(uuid("c32846ad-806d-4c46-afc1-a4395e7242f4"))
+esriDisconnectedEditingError
+{
+    S_DE_OK = 0,
+    E_CHECK_OUT_NON_VERSIONED_DATA = -2147219455,
+    E_CHECK_IN_INVALID_GEODATABASE = -2147219454,
+    E_GEODATABASE_HAS_CHECK_OUT = -2147219453,
+    E_INVALID_REPLICA_DESCRIPTION = -2147219452,
+    E_CHECK_OUT_NOT_SUPPORTED_IN_RELEASE = -2147219451,
+    E_CHECK_IN_NOT_SUPPORTED_IN_RELEASE = -2147219450,
+    E_CAN_NOT_REUSE_SCHEMA_OF_VERSIONED_DATA = -2147219449,
+    E_CHECK_OUT_INVALID_DATA = -2147219448,
+    E_CAN_NOT_REUSE_SCHEMA_WITH_OUTPUT_SPATIAL_REFERENCE = -2147219447,
+    E_CHECK_OUT_UNREGISTER_FAILED = -2147219446,
+    E_CHECK_OUT_INVALID_SOURCE_WORKSPACE = -2147219445,
+    E_SYNCHRONIZE_INVALID_RELEASES = -2147219444,
+    E_UPDATEGRAM_TOPOLOGY_DEFINITION_ACCESSING = -2147219443
+};
+
+struct __declspec(uuid("ce6fe713-7b5a-4e27-808f-97ecfa588f2b"))
+IReplicaMessageHandler : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Init (
+        /*[in]*/ BSTR MsgFileName,
+        /*[in]*/ enum esriExportDataChangesOption MsgExportOption ) = 0;
+      virtual HRESULT __stdcall get_ReplicaGuid (
+        /*[out,retval]*/ BSTR * GUID ) = 0;
+      virtual HRESULT __stdcall get_MessageType (
+        /*[out,retval]*/ enum esriReplicaMessageType * MsgType ) = 0;
+      virtual HRESULT __stdcall get_MyGenerationNumber (
+        /*[out,retval]*/ long * GenerationNumber ) = 0;
+      virtual HRESULT __stdcall get_SibGenerationNumber (
+        /*[out,retval]*/ long * SibGen ) = 0;
+      virtual HRESULT __stdcall get_DeltaDataChanges (
+        /*[out,retval]*/ struct IDeltaDataChanges * * DeltaDC ) = 0;
+};
+
+enum __declspec(uuid("91a05d7a-0696-47d6-b421-2359daa3c4b5"))
+esriReplicaSynchronizeDirection
+{
+    esriReplicaSynchronizeFromReplica1ToReplica2 = 1,
+    esriReplicaSynchronizeFromReplica2ToReplica1 = 2,
+    esriReplicaSynchronizeBoth = 3
+};
+
+struct __declspec(uuid("37d98d2a-97e0-4252-86ac-af3395581877"))
+IReplicaMessageHandler2 : IReplicaMessageHandler
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_MyTime (
+        /*[out,retval]*/ VARIANT * MyTime ) = 0;
+      virtual HRESULT __stdcall get_SibTime (
+        /*[out,retval]*/ VARIANT * SibTime ) = 0;
+      virtual HRESULT __stdcall get_SibMyTime (
+        /*[out,retval]*/ VARIANT * SibMyTime ) = 0;
+};
+
+struct __declspec(uuid("0b2a0b89-dc53-43db-b14b-4df0f3f5c0de"))
+ReplicationDataChanges;
+    // [ default ] interface IUnknown
+    // interface IDataChanges3
+    // interface IReplicaDataChangesInit
+    // interface IReplicaDataChangesInit2
+    // interface IReplicaDataChanges
+
+struct __declspec(uuid("2638a9a0-c033-4714-a8ee-e8c9e1c2c0fd"))
+ArchivingDataChanges;
+    // [ default ] interface IUnknown
+    // interface IDataChanges3
+    // interface IReplicaDataChangesInit
+    // interface IReplicaDataChangesInit2
+    // interface IReplicaDataChanges
+
+struct __declspec(uuid("bf4e20ad-2bd9-47b2-8256-364dc4548326"))
+ReplicaMessageHandler;
+    // [ default ] interface IUnknown
+    // interface IReplicaMessageHandler
+    // interface IReplicaMessageHandler2
+
+enum __declspec(uuid("b308ffc7-4f9a-4cc2-82e6-b97930ba1f86"))
+esriGDSTransportType
+{
+    esriGDSTransportTypeEmbedded = 0,
+    esriGDSTransportTypeUrl = 1,
+    esriGDSTransportTypeUpload = 2
+};
+
+struct __declspec(uuid("bdfd716d-e902-4907-9c97-65da73f02ae9"))
+IGDSData : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Compressed (
+        /*[out,retval]*/ VARIANT_BOOL * comp ) = 0;
+      virtual HRESULT __stdcall put_Compressed (
+        /*[in]*/ VARIANT_BOOL comp ) = 0;
+      virtual HRESULT __stdcall get_TransportType (
+        /*[out,retval]*/ enum esriGDSTransportType * pTransport ) = 0;
+      virtual HRESULT __stdcall put_TransportType (
+        /*[in]*/ enum esriGDSTransportType pTransport ) = 0;
+      virtual HRESULT __stdcall get_URL (
+        /*[out,retval]*/ BSTR * URL ) = 0;
+      virtual HRESULT __stdcall put_URL (
+        /*[in]*/ BSTR URL ) = 0;
+      virtual HRESULT __stdcall get_EmbeddedData (
+        /*[out,retval]*/ SAFEARRAY * * data ) = 0;
+      virtual HRESULT __stdcall put_EmbeddedData (
+        /*[in]*/ SAFEARRAY * * data ) = 0;
+      virtual HRESULT __stdcall putref_ConnectionProperties (
+        /*[in]*/ struct IPropertySet * connProps ) = 0;
+      virtual HRESULT __stdcall get_ConnectionProperties (
+        /*[out,retval]*/ struct IPropertySet * * connProps ) = 0;
+};
+
+enum __declspec(uuid("a4dd1041-7f9e-4920-949e-d1a603c544cd"))
+esriGDSExportFormat
+{
+    esriGDSExportFormatPersonalGdb = 0,
+    esriGDSExportFormatXml = 1,
+    esriGDSExportFormatFileGDB = 2,
+    esriGDSExportFormatFileGDBTransport = 3
+};
+
+struct __declspec(uuid("fc23fbc0-dc6a-41fc-8914-36677fba6855"))
+IGDSExportOptions : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ExportFormat (
+        /*[out,retval]*/ enum esriGDSExportFormat * ExportFormat ) = 0;
+      virtual HRESULT __stdcall put_ExportFormat (
+        /*[in]*/ enum esriGDSExportFormat ExportFormat ) = 0;
+      virtual HRESULT __stdcall get_Compressed (
+        /*[out,retval]*/ VARIANT_BOOL * comp ) = 0;
+      virtual HRESULT __stdcall put_Compressed (
+        /*[in]*/ VARIANT_BOOL comp ) = 0;
+      virtual HRESULT __stdcall get_BinaryGeometry (
+        /*[out,retval]*/ VARIANT_BOOL * BinaryGeometry ) = 0;
+      virtual HRESULT __stdcall put_BinaryGeometry (
+        /*[in]*/ VARIANT_BOOL BinaryGeometry ) = 0;
+};
+
+enum __declspec(uuid("fa4183fe-3d94-461e-bdc7-18dfc14735f4"))
+esriGDSImportFormat
+{
+    esriGDSImportFormatXmlWorkspace = 0,
+    esriGDSImportFormatFileGDB = 1,
+    esriGDSImportFormatPersonalGdb = 2
+};
+
+enum __declspec(uuid("ac6c973a-0362-4df1-ba44-c165b1bc4f30"))
+esriGDSReplicaImportSource
+{
+    esriGDSReplicaImportSourceDeltaXmlFile = 0,
+    esriGDSReplicaImportSourceDeltaPersonalGDB = 1,
+    esriGDSReplicaImportSourceDeltaFileGDB = 2
+};
+
+struct __declspec(uuid("6babaf1e-d1a3-487f-bde1-58a206503dbc"))
+IGDSQueryResultPortion : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Records (
+        /*[out,retval]*/ struct IRecordSet * * recordSet ) = 0;
+      virtual HRESULT __stdcall putref_Records (
+        /*[in]*/ struct IRecordSet * recordSet ) = 0;
+};
+
+struct __declspec(uuid("b59deddd-065f-4c9f-942a-af79e8ab3fbc"))
+IGeoDataServer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_MaxRecordCount (
+        /*[out,retval]*/ long * maxCount ) = 0;
+      virtual HRESULT __stdcall get_DataElements (
+        /*[in]*/ struct IDEBrowseOptions * pBrowseOptions,
+        /*[out,retval]*/ struct IDataElements * * DataElements ) = 0;
+      virtual HRESULT __stdcall get_Versions (
+        /*[out,retval]*/ struct IGPVersionInfos * * versionInfos ) = 0;
+      virtual HRESULT __stdcall get_Replicas (
+        /*[out,retval]*/ struct IGPReplicas * * Replicas ) = 0;
+      virtual HRESULT __stdcall get_DefaultWorkingVersion (
+        /*[out,retval]*/ BSTR * DefaultWorkingVersion ) = 0;
+      virtual HRESULT __stdcall get_WrappedWorkspaceType (
+        /*[out,retval]*/ enum esriWorkspaceType * wsType ) = 0;
+      virtual HRESULT __stdcall ExtractData (
+        /*[in]*/ BSTR versionName,
+        /*[in]*/ struct IGPReplicaDescription * replicaDesc,
+        /*[in]*/ struct IGDSExportOptions * options,
+        /*[in]*/ enum esriGDSTransportType TransportType,
+        /*[out,retval]*/ struct IGDSData * * result ) = 0;
+      virtual HRESULT __stdcall CreateReplica (
+        /*[in]*/ BSTR parentVersion,
+        /*[in]*/ BSTR ReplicaName,
+        /*[in]*/ struct IGPReplicaDescription * replicaDesc,
+        /*[in]*/ struct IGPReplicaOptions * repOptions,
+        /*[in]*/ struct IGDSExportOptions * exportOptions,
+        /*[in]*/ enum esriGDSTransportType TransportType,
+        /*[out,retval]*/ struct IGDSData * * result ) = 0;
+      virtual HRESULT __stdcall ExpandReplicaDatasets (
+        /*[in]*/ struct IGPReplicaDatasets * repDatasets,
+        /*[out,retval]*/ struct IGPReplicaDatasets * * expandedRepDatasets ) = 0;
+      virtual HRESULT __stdcall ImportData (
+        /*[in]*/ struct IGDSData * pData,
+        /*[in]*/ enum esriGDSImportFormat fmt ) = 0;
+      virtual HRESULT __stdcall ExportReplicaDataChanges (
+        /*[in]*/ BSTR ReplicaName,
+        /*[in]*/ struct IGDSExportOptions * options,
+        /*[in]*/ enum esriGDSTransportType TransportType,
+        /*[in]*/ enum esriExportGenerationsOption generationsToExport,
+        /*[in]*/ VARIANT_BOOL switchRole,
+        /*[out,retval]*/ struct IGDSData * * result ) = 0;
+      virtual HRESULT __stdcall ReExportReplicaDataChanges (
+        /*[in]*/ BSTR ReplicaName,
+        /*[in]*/ struct IGDSExportOptions * options,
+        /*[in]*/ enum esriGDSTransportType TransportType,
+        /*[in]*/ enum esriReExportGenerationsOption gensToExport,
+        /*[out,retval]*/ struct IGDSData * * result ) = 0;
+      virtual HRESULT __stdcall ImportReplicaDataChanges (
+        /*[in]*/ enum esriGDSReplicaImportSource sourceType,
+        /*[in]*/ enum esriReplicaReconcilePolicyType reconcilePolicy,
+        /*[in]*/ VARIANT_BOOL columnLevel,
+        /*[in]*/ struct IGDSData * data,
+        /*[out,retval]*/ VARIANT_BOOL * conflictsFound ) = 0;
+      virtual HRESULT __stdcall ExportAcknowledgement (
+        /*[in]*/ BSTR ReplicaName,
+        /*[in]*/ enum esriGDSTransportType TransportType,
+        /*[out,retval]*/ struct IGDSData * * result ) = 0;
+      virtual HRESULT __stdcall ImportAcknowledgement (
+        /*[in]*/ struct IGDSData * data ) = 0;
+      virtual HRESULT __stdcall UnregisterReplica (
+        /*[in]*/ BSTR ReplicaName ) = 0;
+      virtual HRESULT __stdcall TableSearch (
+        /*[in]*/ BSTR versionName,
+        /*[in]*/ BSTR tableName,
+        /*[in]*/ struct IQueryFilter * queryFilter,
+        /*[in]*/ struct IResultPortionInfo * queryRange,
+        /*[out,retval]*/ struct IGDSQueryResultPortion * * resultPortion ) = 0;
+      virtual HRESULT __stdcall GetNextResultPortion (
+        /*[in]*/ struct IResultPortionInfo * desiredRange,
+        /*[out,retval]*/ struct IGDSQueryResultPortion * * resultPortion ) = 0;
+      virtual HRESULT __stdcall ExportReplicaSchema (
+        /*[in]*/ BSTR ReplicaName,
+        /*[in]*/ enum esriGDSTransportType TransportType,
+        /*[out,retval]*/ struct IGDSData * * replicaSchemaDoc ) = 0;
+      virtual HRESULT __stdcall CompareReplicaSchema (
+        /*[in]*/ struct IGDSData * relativeReplicaSchemaDoc,
+        /*[in]*/ enum esriGDSTransportType TransportType,
+        /*[out,retval]*/ struct IGDSData * * schemaChangesDoc ) = 0;
+      virtual HRESULT __stdcall ImportReplicaSchemaChanges (
+        /*[in]*/ struct IGDSData * schemaChangesDoc ) = 0;
+};
+
+struct __declspec(uuid("841bdc30-fe10-46af-b67b-582252bc16b8"))
+IGeoDataServerInit : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall InitFromMap (
+        /*[in]*/ BSTR filePath ) = 0;
+      virtual HRESULT __stdcall InitFromFile (
+        /*[in]*/ BSTR file ) = 0;
+      virtual HRESULT __stdcall InitFromConnectionString (
+        /*[in]*/ BSTR connectionString ) = 0;
+      virtual HRESULT __stdcall InitWithWorkspace (
+        /*[in]*/ struct IWorkspace * pWorkspace ) = 0;
+      virtual HRESULT __stdcall put_PhysicalOutputDirectory (
+        /*[in]*/ BSTR dirPath ) = 0;
+      virtual HRESULT __stdcall get_PhysicalOutputDirectory (
+        /*[out,retval]*/ BSTR * dirPath ) = 0;
+      virtual HRESULT __stdcall put_VirtualOutputDirectory (
+        /*[in]*/ BSTR dirPath ) = 0;
+      virtual HRESULT __stdcall get_VirtualOutputDirectory (
+        /*[out,retval]*/ BSTR * dirPath ) = 0;
+      virtual HRESULT __stdcall get_MaxRecordCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall put_MaxRecordCount (
+        /*[in]*/ long Count ) = 0;
+};
+
+struct __declspec(uuid("f3b8e8ca-fdcc-4f3b-a581-ab11258cb801"))
+IGeoDataServerObjects : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_DefaultWorkingWorkspace (
+        /*[out,retval]*/ struct IWorkspace * * Workspace ) = 0;
+};
+
+enum __declspec(uuid("7e526e13-3cef-4752-9924-47739236656d"))
+esriReplicationAgentReconcilePolicy
+{
+    esriRADetectConflicts = 0,
+    esriRAResolveConflictsInFavorOfReplica1 = 1,
+    esriRAResolveConflictsInFavorOfReplica2 = 2,
+    esriRAResolveConflictsNone = 3
+};
+
+struct __declspec(uuid("ab9f2c3d-9298-480b-a57c-4afcc8d7c498"))
+IReplicationAgent : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CreateReplica (
+        /*[in]*/ BSTR versionName,
+        /*[in]*/ struct IGeoDataServer * srcGDS,
+        /*[in]*/ struct IGeoDataServer * destGDS,
+        /*[in]*/ BSTR ReplicaName,
+        /*[in]*/ struct IGPReplicaDescription * desc,
+        /*[in]*/ struct IGPReplicaOptions * repOptions ) = 0;
+      virtual HRESULT __stdcall SynchronizeReplica (
+        /*[in]*/ struct IGeoDataServer * gds1,
+        /*[in]*/ struct IGeoDataServer * gds2,
+        /*[in]*/ struct IGPReplica * rep1,
+        /*[in]*/ struct IGPReplica * rep2,
+        /*[in]*/ enum esriReplicationAgentReconcilePolicy pol,
+        /*[in]*/ enum esriReplicaSynchronizeDirection dir,
+        /*[in]*/ VARIANT_BOOL columnLevel,
+        /*[out,retval]*/ VARIANT_BOOL * conflictsDetected ) = 0;
+      virtual HRESULT __stdcall ExtractData (
+        /*[in]*/ BSTR versionName,
+        /*[in]*/ struct IGeoDataServer * srcGDS,
+        /*[in]*/ struct IGeoDataServer * destGDS,
+        /*[in]*/ struct IGPReplicaDescription * desc ) = 0;
+};
+
+struct __declspec(uuid("fe61bef1-7ae3-45c6-84de-a9d6019a4d77"))
+IReplicationAgentCancelControl : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall putref_CancelTracker (
+        /*[in]*/ struct ITrackCancel * _arg1 ) = 0;
+};
+
+enum __declspec(uuid("c2020484-3487-45e6-ac98-e8f64d71fd51"))
+esriGeoDataServerMessageCodeEnum
+{
+    esriGeoDataServerMessageCode_NotLicensed = 90000,
+    esriGeoDataServerMessageCode_ConstructStart = 90001,
+    esriGeoDataServerMessageCode_ConstructFinish = 90002,
+    esriGeoDataServerMessageCode_ErrorInvalidConfiguration = 90003,
+    esriGeoDataServerMessageCode_ErrorUnableToInitFromGdb = 90004,
+    esriGeoDataServerMessageCode_ConnectedToWS = 90005,
+    esriGeoDataServerMessageCode_RequestNotSupported = 90006,
+    esriGeoDataServerMessageCode_CapabilityNotSupported = 90007,
+    esriGeoDataServerMessageCode_InitFromMapStarts = 90008,
+    esriGeoDataServerMessageCode_InitFromMapEnded = 90009,
+    esriGeoDataServerMessageCode_ErrorInvalidOutputDir = 90010,
+    esriGeoDataServerMessageCode_ErrorInvalidVirtualDir = 90011
+};
+
+struct __declspec(uuid("74a172d5-7d99-41e1-9840-415193b5f58c"))
+IGDSData2 : IGDSData
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_UploadID (
+        /*[out,retval]*/ BSTR * UploadID ) = 0;
+      virtual HRESULT __stdcall put_UploadID (
+        /*[in]*/ BSTR UploadID ) = 0;
+};
+
+struct __declspec(uuid("5906a736-62ed-4fb6-b84f-191131dfab07"))
+IGeoDataServer2 : IGeoDataServer
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ExpandReplicaDatasets2 (
+        /*[in]*/ struct IGPReplicaDatasets * GPReplicaDatasets,
+        /*[in]*/ struct IGPReplicaOptions * ReplicaOptions,
+        /*[out,retval]*/ struct IGPReplicaDatasets * * ExpandGPReplicaDatasets ) = 0;
+      virtual HRESULT __stdcall get_Replica (
+        /*[in]*/ BSTR ReplicaName,
+        /*[out,retval]*/ struct IGPReplica * * GPReplica ) = 0;
+};
+
+struct __declspec(uuid("fc1d0cbb-38ee-44b7-be6e-80049e06f855"))
+IReplicationAgent2 : IReplicationAgent
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CreateReplica2 (
+        /*[in]*/ BSTR versionName,
+        /*[in]*/ struct IGeoDataServer * srcGDS,
+        /*[in]*/ struct IGeoDataServer * destGDS,
+        /*[in]*/ BSTR ReplicaName,
+        /*[in]*/ struct IGPReplicaDescription * desc,
+        /*[in]*/ struct IGPReplicaOptions * repOptions,
+        /*[in]*/ BSTR layersFolder ) = 0;
+};
+
+struct __declspec(uuid("7d7ddcaa-3f9c-4290-9351-3b8ebcef9c65"))
+GeoDataServerConfigurationFactory;
+    // [ default ] interface IUnknown
+    // interface IConfigurationFactory2
+    // interface ILogSupport
+
+struct __declspec(uuid("a61f2a53-878a-4703-ab50-50fc0b8feeef"))
+GeoDataServer;
+    // [ default ] interface IUnknown
+    // interface IGeoDataServer
+    // interface IGeoDataServer2
+    // interface IGeoDataServerInit
+    // interface IObjectConstruct
+    // interface IRequestHandler
+    // interface IRequestHandler2
+    // interface IGeoDataServerObjects
+    // interface IObjectActivate
+    // interface ILogSupport
+    // interface ISupportErrorInfo
+    // interface IServerObject
+    // interface IServerObjectExtensionManager
+    // interface IRESTRequestHandler
+
+struct __declspec(uuid("8b77e69c-2a95-42e3-88e3-22a612b69752"))
+GDSData;
+    // [ default ] interface IUnknown
+    // interface IGDSData
+    // interface IXMLSerialize
+    // interface IPersistStream
+    // interface IPersist
+    // interface IClone
+    // interface IXMLVersionSupport
+
+struct __declspec(uuid("14b1aa05-52e9-4a46-8e1f-901da5a9a4f7"))
+GDSExportOptions;
+    // [ default ] interface IUnknown
+    // interface IGDSExportOptions
+    // interface IXMLSerialize
+    // interface IPersistStream
+    // interface IPersist
+    // interface IXMLVersionSupport
+
+struct __declspec(uuid("a53bea9a-142f-4aa7-82ee-f8c3f7ed9f1b"))
+GDSQueryResultPortion;
+    // [ default ] interface IUnknown
+    // interface IGDSQueryResultPortion
+    // interface IResultPortion
+    // interface IXMLSerialize
+    // interface IPersistStream
+    // interface IPersist
+    // interface IXMLVersionSupport
+
+struct __declspec(uuid("f530afcd-d953-4a5c-a00d-4f6749357f00"))
+ReplicationAgent;
+    // [ default ] interface IUnknown
+    // interface IReplicationAgent
+    // interface IReplicationAgent2
+    // interface IReplicationAgentCancelControl
+    // [ default, source ] interface IFeatureProgress
+
+enum __declspec(uuid("d59e455f-14f6-416a-83bf-f24e490ab3f7"))
+esriGeoDataServerErrors
+{
+    GDS_E_IMPORTXMLWS_CONFLICTS_FOUND = -2147208551,
+    GDS_E_CANTEXPORT_TO_NONCOMPRESSED_FILEGDB = -2147208550,
+    GDS_E_REQUESTEDCOUNT_TOO_LARGE = -2147208549,
+    GDS_E_INVALID_FORMAT_FOR_CREATEREPLICA = -2147208548,
+    GDS_E_MISSING_PARAMETER = -2147208547,
+    GDS_E_CANTIMPORT_ACKMSG_AS_DATACHANGESMSG = -2147208546,
+    GDS_E_INVALID_COUNT_REQUESTED = -2147208545,
+    GDS_E_INVALID_START_INDEX = -2147208544,
+    GDS_E_NULL_QUERYID = -2147208543,
+    GDS_E_INVALID_RECONCILE_POLICY_FOR_DIRECTION = -2147208542,
+    GDS_E_REPLICAS_DONT_MATCH = -2147208541,
+    GDS_E_SYNCH_DIRECTION_BOTH_INVALID_FOR_CHECKOUTS = -2147208540,
+    GDS_E_IMPORTDATAWS_CONFLICTS_FOUND = -2147208539
+};
+
+struct __declspec(uuid("15bcf3a2-ed45-4d22-a368-9f0123f9f8a9"))
+GeoDataServerLP;
+    // [ default ] interface IUnknown
+    // interface IAGSServerObject
+    // interface IAGSServerObject2
+    // interface IGeoDataServer
+    // interface IGeoDataServer2
+
+struct __declspec(uuid("74f9a30c-d127-4880-88b9-d79de091b8a6"))
+GeoDataServerIP;
+    // [ default ] interface IUnknown
+    // interface IAGSServerObject
+    // interface IAGSServerObject2
+    // interface IGeoDataServer
+    // interface IGeoDataServer2
+
+struct __declspec(uuid("60e1a6ae-af1b-4b41-866f-870fd2f607d9"))
+GeoDataServerObjectDescription;
+    // [ default ] interface IUnknown
+    // interface IServerObjectDescription
+
+enum __declspec(uuid("983ba0ce-e3c1-4840-b6da-aeb8b74123f4"))
+esriWFSHttpVerb
+{
+    esriWFSGet = 0,
+    esriWFSPost = 1
+};
+
+struct __declspec(uuid("ca2b76eb-ffe1-46d7-9e13-99a7184ab450"))
+IWFSServer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetData (
+        /*[in]*/ enum esriWFSHttpVerb httpVerb,
+        /*[in]*/ BSTR request,
+        /*[out,retval]*/ BSTR * responseUrl ) = 0;
+      virtual HRESULT __stdcall SetParameter (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR value ) = 0;
+};
+
+enum __declspec(uuid("f131682a-913d-4a2e-8b31-f0e026a2a677"))
+esriWFSServerMessageCodeEnum
+{
+    esriWFSServerMessageCode_SkippedDataset = 92000,
+    esriWFSServerMessageCode_FailedToGenerateTransactionResponse = 92001,
+    esriWFSServerMessageCode_FailedToDeleteLock = 92002,
+    esriWFSServerMessageCode_FailedToDeleteOutstandingTransactionVersions = 92003,
+    esriWFSServerMessageCode_NotLicensed = 92004,
+    esriWFSServerMessageCode_GetRequest = 92005,
+    esriWFSServerMessageCode_PostRequest = 92006,
+    esriWFSServerMessageCode_WFSExceptionReport = 92007,
+    esriWFSServerMessageCode_Debug = 92008,
+    esriWFSServerMessageCode_FailedToReleaseLocks = 92009,
+    esriWFSServerMessageCode_ConstructStart = 92010,
+    esriWFSServerMessageCode_ErrorInvalidAppSchemaNamespace = 92011,
+    esriWFSServerMessageCode_ErrorInvalidAppSchemaPrefix = 92012,
+    esriWFSServerMessageCode_ErrorInvalidDefaultLockExpiration = 92013,
+    esriWFSServerMessageCode_ErrorPublishedWorkspaceIsntVersioned = 92014,
+    esriWFSServerMessageCode_ConstructEnded = 92015,
+    esriWFSServerMessageCode_ErrorInvalid10AxisOrder = 92016,
+    esriWFSServerMessageCode_ErrorInvalid11AxisOrder = 92017,
+    esriWFSServerMessageCode_ErrorInvalidUseSRSNameFormat = 92018,
+    esriWFSServerMessageCode_FailedToReconcileAgainstSelf = 92019,
+    esriWFSServerMessageCode_FailedToStopEditing = 92020,
+    esriWFSServerMessageCode_ServerTooBusyToProcessTransaction = 92021,
+    esriWFSServerMessageCode_FailedToImportTransactionChanges = 92022,
+    esriWFSServerMessageCode_FailedCreatingTransactionResponse = 92023,
+    esriWFSServerMessageCode_TransactionFailedStoppingEditOperation = 92024,
+    esriWFSServerMessageCode_FailedToStartEditing = 92025,
+    esriWFSServerMessageCode_ConflictDetected = 92026
+};
+
+struct __declspec(uuid("e3743059-d297-4c6a-9a4a-30bdf5035f2d"))
+WFSServer;
+    // [ default ] interface IUnknown
+    // interface IServerObjectExtension
+    // interface IObjectConstruct
+    // interface IObjectActivate
+    // interface ILogSupport
+    // interface IWFSServer
+    // interface IServerObjectConfigurationManager
+    // interface IServerObjectConfigurationManager2
+    // interface IWebRequestHandler
+
+struct __declspec(uuid("bfd3912e-421e-477b-b324-5e66c552ac1b"))
+IExportSchema : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ExportSchema (
+        /*[in]*/ BSTR exportFileName,
+        /*[in]*/ struct IReplica * Replica ) = 0;
+      virtual HRESULT __stdcall ExportSchemaDifferences (
+        /*[in]*/ BSTR exportFileName,
+        /*[in]*/ struct ISchemaChanges * SchemaChanges ) = 0;
+};
+
+struct __declspec(uuid("d14b724a-ac95-4cd2-9242-7235f4fb5587"))
+ISchemaChanges : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetChanges (
+        /*[out,retval]*/ struct IEnumSchemaChange * * SchemaChanges ) = 0;
+      virtual HRESULT __stdcall get_FromReplica (
+        /*[out,retval]*/ struct IGPReplica * * FromReplica ) = 0;
+      virtual HRESULT __stdcall get_ToReplica (
+        /*[out,retval]*/ struct IGPReplica * * ToReplica ) = 0;
+};
+
+struct __declspec(uuid("be88729b-0719-45b6-a60b-c977e4041c7b"))
+IImportSchema : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ImportSchema (
+        /*[in]*/ struct ISchemaChanges * SchemaChanges ) = 0;
+};
+
+struct __declspec(uuid("52b0879b-28c4-4904-a402-91378488b867"))
+IEnumSchemaChange : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Reset ( ) = 0;
+      virtual HRESULT __stdcall Next (
+        /*[out,retval]*/ struct ISchemaChangeInfo * * SchemaChangeInfo ) = 0;
+      virtual HRESULT __stdcall GetDomainChanges (
+        /*[in]*/ BSTR domainName,
+        /*[out,retval]*/ struct ISchemaChangeInfo * * ppInfo ) = 0;
+      virtual HRESULT __stdcall GetDatasetChanges (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ enum esriDatasetType dsType,
+        /*[out,retval]*/ struct ISchemaChangeInfo * * ppInfo ) = 0;
+      virtual HRESULT __stdcall HasChanges (
+        /*[out,retval]*/ VARIANT_BOOL * pHasSchemaChanges ) = 0;
+      virtual HRESULT __stdcall get_ToReplica (
+        /*[out,retval]*/ struct IReplica * * ToReplica ) = 0;
+};
+
+struct __declspec(uuid("b5ccf6d9-d034-4177-8827-f1493785de8f"))
+ISchemaChangeInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_SchemaChangeType (
+        /*[out,retval]*/ enum esriSchemaChangeType * SchemaChangeType ) = 0;
+      virtual HRESULT __stdcall get_FromObject (
+        /*[out,retval]*/ IUnknown * * ChangedObject ) = 0;
+      virtual HRESULT __stdcall get_ToObject (
+        /*[out,retval]*/ IUnknown * * TargetObject ) = 0;
+      virtual HRESULT __stdcall get_ToParent (
+        /*[out,retval]*/ IUnknown * * Parent ) = 0;
+      virtual HRESULT __stdcall get_ApplySchemaChange (
+        /*[out,retval]*/ VARIANT_BOOL * ApplySchemaChange ) = 0;
+      virtual HRESULT __stdcall put_ApplySchemaChange (
+        /*[in]*/ VARIANT_BOOL ApplySchemaChange ) = 0;
+      virtual HRESULT __stdcall GetChanges (
+        /*[out,retval]*/ struct IEnumSchemaChange * * SchemaChanges ) = 0;
+      virtual HRESULT __stdcall get_ExtendedProperties (
+        /*[out,retval]*/ struct IPropertySet * * ExtendedProperties ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_esriGeoDatabaseDistributed =
+    {0xa7c74158,0x1062,0x4664,{0xb4,0x04,0x86,0x94,0xd4,0x90,0xfc,0xd1}};
+extern "C" const GUID __declspec(selectany) IID_IModifiedClassInfo =
+    {0x0952a2d7,0xfa43,0x4740,{0xae,0xa5,0xd6,0xc9,0x02,0xeb,0x6a,0x2c}};
+extern "C" const GUID __declspec(selectany) IID_IEnumModifiedClassInfo =
+    {0xb3924a28,0x0d3a,0x47c6,{0x9d,0x63,0x71,0x54,0x4f,0x16,0x34,0xda}};
+extern "C" const GUID __declspec(selectany) IID_ISchemaChangesInit =
+    {0xe94e335a,0xe1f0,0x4a55,{0x9e,0x8d,0xe6,0x49,0x2b,0x03,0x33,0x33}};
+extern "C" const GUID __declspec(selectany) IID_IXMLDocumentVersion =
+    {0x80effd28,0xc665,0x47d2,{0xaa,0x21,0xc4,0x19,0x6e,0xfc,0xc9,0xd3}};
+extern "C" const GUID __declspec(selectany) IID_IReplicaProgress =
+    {0x5435d16a,0x5aa0,0x427f,{0xbd,0xad,0x24,0xbd,0x6a,0xab,0xf8,0x58}};
+extern "C" const GUID __declspec(selectany) IID_IOperationProgress =
+    {0x7e1f4a6f,0xa857,0x475f,{0x82,0xea,0xa0,0x89,0x12,0x2d,0xbd,0xd4}};
+extern "C" const GUID __declspec(selectany) IID_IDataExtraction =
+    {0xcf7e4cf0,0xe0c0,0x4302,{0xab,0x42,0xc3,0x28,0x99,0x83,0x56,0x02}};
+extern "C" const GUID __declspec(selectany) IID_IReplicaDataChanges =
+    {0x8612b096,0xc19b,0x4197,{0x80,0xac,0x86,0x96,0x1a,0xc9,0x42,0x6c}};
+extern "C" const GUID __declspec(selectany) IID_IReplicaDataChangesInit =
+    {0xe513366a,0x6fe2,0x42d4,{0xac,0x95,0x40,0xde,0xc7,0x12,0x2f,0x57}};
+extern "C" const GUID __declspec(selectany) IID_IReplicaDataChangesInit2 =
+    {0x92267ee9,0x0766,0x43ea,{0xba,0x8b,0x7d,0xfd,0x5c,0x8e,0x85,0x17}};
+extern "C" const GUID __declspec(selectany) IID_IDataChanges =
+    {0xe0951743,0x0d52,0x42ff,{0xab,0x5e,0x32,0xd0,0x7b,0x5b,0x89,0x51}};
+extern "C" const GUID __declspec(selectany) IID_IExportDataChanges =
+    {0xe290f6a3,0x535f,0x49a9,{0x8f,0xd4,0xc6,0x0f,0xc4,0x4b,0xf1,0x09}};
+extern "C" const GUID __declspec(selectany) IID_IExportDataChanges2 =
+    {0x8ec3471a,0x80e3,0x4552,{0x9c,0xc7,0xdf,0xce,0x33,0x4c,0xc8,0x09}};
+extern "C" const GUID __declspec(selectany) IID_IVersionDataChangesInit =
+    {0x51ddd7ac,0xb00b,0x420a,{0xad,0xb9,0x30,0x54,0x0c,0x7e,0x81,0xd4}};
+extern "C" const GUID __declspec(selectany) IID_IDeltaDataChanges =
+    {0xa598405f,0x8302,0x42b8,{0xa6,0xa2,0x12,0x1c,0xbb,0x2b,0x3e,0x0a}};
+extern "C" const GUID __declspec(selectany) IID_IDeltaDataChanges2 =
+    {0x288ac87d,0xed18,0x460b,{0xb7,0x20,0xdc,0x4d,0x08,0x2d,0xa6,0x10}};
+extern "C" const GUID __declspec(selectany) IID_IDeltaDataChangesInit =
+    {0x725451c9,0xcd9d,0x4431,{0x80,0x20,0xc9,0xed,0x11,0xbb,0x40,0xf0}};
+extern "C" const GUID __declspec(selectany) IID_IDeltaDataChangesInit2 =
+    {0x4c7fd0cf,0xfa09,0x4d49,{0xb1,0x68,0x47,0x67,0xcf,0x94,0x5c,0x14}};
+extern "C" const GUID __declspec(selectany) IID_IDeltaDataChangesRelease =
+    {0xcb41732d,0xec82,0x4e84,{0xbf,0xc1,0xa9,0xa1,0x13,0x5b,0x02,0xb5}};
+extern "C" const GUID __declspec(selectany) IID_IGdbXmlExport =
+    {0x1f88e412,0x18ce,0x4324,{0xa1,0xe5,0xd1,0xa3,0x2d,0x5d,0xff,0x4a}};
+extern "C" const GUID __declspec(selectany) IID_IGdbXmlImport =
+    {0x56cb26fb,0x6abf,0x4eb7,{0x9f,0x39,0x9e,0xc7,0x24,0x8c,0x08,0x73}};
+extern "C" const GUID __declspec(selectany) IID_IGdbXmlExportEvents =
+    {0x17ce60d7,0x24f8,0x49cc,{0x8f,0xc4,0x94,0x47,0x1d,0xba,0xf7,0x23}};
+extern "C" const GUID __declspec(selectany) IID_IGdbSchemaCreator =
+    {0x077f55bf,0x9a00,0x44b3,{0x9d,0x6f,0x5e,0x1d,0x0f,0xc8,0x22,0xe7}};
+extern "C" const GUID __declspec(selectany) IID_IDataChanges2 =
+    {0x5f8f332e,0x316d,0x4fc0,{0x94,0x54,0xb2,0x62,0x8c,0xb9,0xd5,0x46}};
+extern "C" const GUID __declspec(selectany) IID_IDataChanges3 =
+    {0xa289bd00,0xe42e,0x4820,{0x9a,0xf0,0xc9,0xbc,0x64,0xf7,0x07,0xa8}};
+extern "C" const GUID __declspec(selectany) IID_IDataChangesInfo =
+    {0xbf34062d,0x82cb,0x47db,{0xbe,0x39,0x8c,0x89,0x02,0xe8,0xa0,0x5a}};
+extern "C" const GUID __declspec(selectany) IID_IDataChangesExt =
+    {0xfafbfa81,0xb7bd,0x4c25,{0xa4,0x56,0x01,0x08,0xe1,0x1e,0xa2,0x5b}};
+extern "C" const GUID __declspec(selectany) IID_IImportDataChanges =
+    {0x3eea0fb7,0x0478,0x400b,{0xbf,0x5c,0x12,0x2e,0xa2,0x9c,0x50,0xa4}};
+extern "C" const GUID __declspec(selectany) IID_IImportDataChanges2 =
+    {0x27fa7510,0xe45d,0x49a2,{0x8d,0x57,0x77,0x53,0xdb,0x60,0x5d,0x04}};
+extern "C" const GUID __declspec(selectany) IID_IImportDataChanges3 =
+    {0xa2f2dba2,0x0515,0x4fa3,{0x88,0x2c,0x36,0x33,0x48,0x0b,0xd2,0x4a}};
+extern "C" const GUID __declspec(selectany) IID_IReplicasExporter =
+    {0x28c7af79,0x0a93,0x4ed1,{0x83,0x2b,0xd1,0xe1,0xae,0xc0,0xff,0x75}};
+extern "C" const GUID __declspec(selectany) IID_ITableDataChangesInfo =
+    {0x387adb2e,0x328b,0x464d,{0xb6,0xd6,0x54,0x8d,0x0f,0xd4,0x44,0x7d}};
+extern "C" const GUID __declspec(selectany) IID_ITablesDataChanges =
+    {0x244f9cd3,0x873d,0x42af,{0x88,0xa9,0x3f,0x74,0x00,0x79,0xd4,0xf9}};
+extern "C" const GUID __declspec(selectany) IID_IEnumTableDataChanges =
+    {0xb2573e22,0x0229,0x4f28,{0xb3,0x3e,0x85,0x57,0x3f,0x97,0x42,0x40}};
+extern "C" const GUID __declspec(selectany) CLSID_DataChangesExporter =
+    {0xfe5e515a,0xfc19,0x45e8,{0x8e,0x2d,0x46,0xed,0xe0,0x55,0x4e,0x52}};
+extern "C" const GUID __declspec(selectany) CLSID_DataChangesImporter =
+    {0xce014faf,0x2b6d,0x4d74,{0x81,0x77,0x00,0x98,0x0b,0xa7,0x39,0xae}};
+extern "C" const GUID __declspec(selectany) CLSID_DataExtraction =
+    {0x8ba238f5,0xaa25,0x423b,{0x9c,0x59,0x4a,0xb4,0x98,0x8e,0x8b,0xc6}};
+extern "C" const GUID __declspec(selectany) CLSID_DataChanges =
+    {0xa1cb6e77,0x022b,0x4886,{0xa4,0x1a,0x7f,0x97,0xaa,0x08,0xa7,0x22}};
+extern "C" const GUID __declspec(selectany) CLSID_CheckOutDataChanges =
+    {0x9fe24070,0x7df5,0x4f93,{0xa5,0x2d,0xeb,0x32,0xbc,0xb8,0xbf,0x88}};
+extern "C" const GUID __declspec(selectany) CLSID_DeltaDataChanges =
+    {0x50ffe4dc,0x0e25,0x4d5b,{0x9b,0xdf,0xd6,0xa2,0xb3,0x16,0x9c,0xa6}};
+extern "C" const GUID __declspec(selectany) CLSID_GdbExporter =
+    {0x1143edd2,0xa736,0x4129,{0x83,0x45,0xe2,0x37,0xf7,0xbc,0x1b,0x19}};
+extern "C" const GUID __declspec(selectany) CLSID_GdbImporter =
+    {0x109ca64f,0xde77,0x46f0,{0x9d,0x73,0x72,0x0b,0xff,0x41,0x11,0xa3}};
+extern "C" const GUID __declspec(selectany) CLSID_GdbSchemaCreator =
+    {0x3705e682,0x7e35,0x4a8d,{0xb4,0xb0,0x02,0xa8,0xe7,0x68,0xc6,0x32}};
+extern "C" const GUID __declspec(selectany) CLSID_VersionDataChanges =
+    {0xc20cf99c,0x7021,0x496b,{0xa0,0xc5,0x34,0xaf,0xc9,0x05,0xe5,0xb8}};
+extern "C" const GUID __declspec(selectany) CLSID_TableDataChangesInfo =
+    {0xe7f8c959,0xe5d8,0x453d,{0xaf,0x20,0x28,0xc6,0x09,0xcc,0xc2,0x7d}};
+extern "C" const GUID __declspec(selectany) CLSID_TablesDataChanges =
+    {0x8bb5759a,0xef1f,0x4119,{0x8e,0xb4,0x89,0x52,0x4a,0xca,0x69,0xe0}};
+extern "C" const GUID __declspec(selectany) CLSID_OperationProgress =
+    {0x06c8603d,0x2650,0x4888,{0xb6,0x0b,0x25,0x8d,0x09,0xa4,0x6c,0xa4}};
+extern "C" const GUID __declspec(selectany) CLSID_ReplicaSchemaExporter =
+    {0xb3c4fbd5,0xe496,0x479a,{0xb5,0x67,0x5b,0x2d,0x3e,0x57,0x90,0xea}};
+extern "C" const GUID __declspec(selectany) CLSID_ReplicaSchemaImporter =
+    {0x82823fc8,0xf978,0x4e83,{0xa8,0x4e,0xff,0xf5,0xa9,0x6a,0xe6,0xc5}};
+extern "C" const GUID __declspec(selectany) CLSID_SchemaChanges =
+    {0xed337be8,0xc03c,0x4d0b,{0xa2,0x9f,0x72,0x75,0x65,0x60,0x9b,0x4e}};
+extern "C" const GUID __declspec(selectany) CLSID_SchemaChangeInfo =
+    {0x26c46e0a,0xfea6,0x498d,{0xae,0xd9,0xed,0x0a,0x3e,0xb5,0x3c,0xfd}};
+extern "C" const GUID __declspec(selectany) CLSID_ReplicasExporter =
+    {0x6e482c9f,0x8bbb,0x4832,{0x95,0x76,0xeb,0xde,0x86,0xf3,0x2c,0xa0}};
+extern "C" const GUID __declspec(selectany) IID_ICheckOut =
+    {0xd0571ebd,0xd55c,0x46ef,{0x90,0xa1,0x24,0x6c,0x40,0x48,0x6d,0xca}};
+extern "C" const GUID __declspec(selectany) IID_ICheckIn =
+    {0x15c5f91a,0xa992,0x42c6,{0xa6,0x4e,0x53,0xb4,0x96,0x5f,0xca,0x46}};
+extern "C" const GUID __declspec(selectany) IID_ICheckIn2 =
+    {0x27fce3ee,0x891d,0x407d,{0xa3,0x6f,0x4d,0x37,0xad,0x14,0xb3,0xf6}};
+extern "C" const GUID __declspec(selectany) IID_ICheckInDataSynchronizer =
+    {0x73987267,0x11c4,0x477b,{0xae,0x52,0x3d,0xfb,0x7d,0xc6,0x29,0x18}};
+extern "C" const GUID __declspec(selectany) IID_ICheckInDataSynchronizer2 =
+    {0xbb18b086,0x729b,0x4990,{0xab,0x3e,0xa4,0x57,0xcc,0x58,0x45,0x48}};
+extern "C" const GUID __declspec(selectany) IID_IReplicaValidation =
+    {0x059a0b29,0x8d46,0x475f,{0xa4,0xd8,0x77,0xf2,0x20,0xec,0x2c,0xbb}};
+extern "C" const GUID __declspec(selectany) IID_IReplicaValidation2 =
+    {0x90b7c766,0x754e,0x47e9,{0xbc,0x42,0x7c,0x03,0xa3,0x36,0xc8,0x2f}};
+extern "C" const GUID __declspec(selectany) CLSID_CheckOut =
+    {0xde0ddadd,0x814d,0x4c8a,{0xac,0xfe,0x69,0x1e,0x49,0x9e,0xd8,0xf3}};
+extern "C" const GUID __declspec(selectany) CLSID_CheckIn =
+    {0xdb456bf9,0x03ac,0x4a72,{0x91,0x62,0x1e,0x8f,0xd7,0x3d,0xe2,0x2e}};
+extern "C" const GUID __declspec(selectany) CLSID_CheckInDataSynchronizer =
+    {0x0b998a30,0xb009,0x41c6,{0xa0,0x86,0x6d,0xc2,0x9b,0xa7,0x1c,0xd4}};
+extern "C" const GUID __declspec(selectany) CLSID_ReplicaValidator =
+    {0xfd8c8ade,0x6425,0x474e,{0xae,0x33,0x70,0xd3,0xf0,0x98,0x07,0x7a}};
+extern "C" const GUID __declspec(selectany) CLSID_ReplicaProgress =
+    {0xcbd8cb96,0x30e1,0x4f82,{0x8e,0x90,0x88,0x5b,0x86,0xaa,0x8e,0xc9}};
+extern "C" const GUID __declspec(selectany) IID_IReplicaMessageHandler =
+    {0xce6fe713,0x7b5a,0x4e27,{0x80,0x8f,0x97,0xec,0xfa,0x58,0x8f,0x2b}};
+extern "C" const GUID __declspec(selectany) IID_IReplicaMessageHandler2 =
+    {0x37d98d2a,0x97e0,0x4252,{0x86,0xac,0xaf,0x33,0x95,0x58,0x18,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_ReplicationDataChanges =
+    {0x0b2a0b89,0xdc53,0x43db,{0xb1,0x4b,0x4d,0xf0,0xf3,0xf5,0xc0,0xde}};
+extern "C" const GUID __declspec(selectany) CLSID_ArchivingDataChanges =
+    {0x2638a9a0,0xc033,0x4714,{0xa8,0xee,0xe8,0xc9,0xe1,0xc2,0xc0,0xfd}};
+extern "C" const GUID __declspec(selectany) CLSID_ReplicaMessageHandler =
+    {0xbf4e20ad,0x2bd9,0x47b2,{0x82,0x56,0x36,0x4d,0xc4,0x54,0x83,0x26}};
+extern "C" const GUID __declspec(selectany) IID_IGDSData =
+    {0xbdfd716d,0xe902,0x4907,{0x9c,0x97,0x65,0xda,0x73,0xf0,0x2a,0xe9}};
+extern "C" const GUID __declspec(selectany) IID_IGDSExportOptions =
+    {0xfc23fbc0,0xdc6a,0x41fc,{0x89,0x14,0x36,0x67,0x7f,0xba,0x68,0x55}};
+extern "C" const GUID __declspec(selectany) IID_IGDSQueryResultPortion =
+    {0x6babaf1e,0xd1a3,0x487f,{0xbd,0xe1,0x58,0xa2,0x06,0x50,0x3d,0xbc}};
+extern "C" const GUID __declspec(selectany) IID_IGeoDataServer =
+    {0xb59deddd,0x065f,0x4c9f,{0x94,0x2a,0xaf,0x79,0xe8,0xab,0x3f,0xbc}};
+extern "C" const GUID __declspec(selectany) IID_IGeoDataServerInit =
+    {0x841bdc30,0xfe10,0x46af,{0xb6,0x7b,0x58,0x22,0x52,0xbc,0x16,0xb8}};
+extern "C" const GUID __declspec(selectany) IID_IGeoDataServerObjects =
+    {0xf3b8e8ca,0xfdcc,0x4f3b,{0xa5,0x81,0xab,0x11,0x25,0x8c,0xb8,0x01}};
+extern "C" const GUID __declspec(selectany) IID_IReplicationAgent =
+    {0xab9f2c3d,0x9298,0x480b,{0xa5,0x7c,0x4a,0xfc,0xc8,0xd7,0xc4,0x98}};
+extern "C" const GUID __declspec(selectany) IID_IReplicationAgentCancelControl =
+    {0xfe61bef1,0x7ae3,0x45c6,{0x84,0xde,0xa9,0xd6,0x01,0x9a,0x4d,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IGDSData2 =
+    {0x74a172d5,0x7d99,0x41e1,{0x98,0x40,0x41,0x51,0x93,0xb5,0xf5,0x8c}};
+extern "C" const GUID __declspec(selectany) IID_IGeoDataServer2 =
+    {0x5906a736,0x62ed,0x4fb6,{0xb8,0x4f,0x19,0x11,0x31,0xdf,0xab,0x07}};
+extern "C" const GUID __declspec(selectany) IID_IReplicationAgent2 =
+    {0xfc1d0cbb,0x38ee,0x44b7,{0xbe,0x6e,0x80,0x04,0x9e,0x06,0xf8,0x55}};
+extern "C" const GUID __declspec(selectany) CLSID_GeoDataServerConfigurationFactory =
+    {0x7d7ddcaa,0x3f9c,0x4290,{0x93,0x51,0x3b,0x8e,0xbc,0xef,0x9c,0x65}};
+extern "C" const GUID __declspec(selectany) CLSID_GeoDataServer =
+    {0xa61f2a53,0x878a,0x4703,{0xab,0x50,0x50,0xfc,0x0b,0x8f,0xee,0xef}};
+extern "C" const GUID __declspec(selectany) CLSID_GDSData =
+    {0x8b77e69c,0x2a95,0x42e3,{0x88,0xe3,0x22,0xa6,0x12,0xb6,0x97,0x52}};
+extern "C" const GUID __declspec(selectany) CLSID_GDSExportOptions =
+    {0x14b1aa05,0x52e9,0x4a46,{0x8e,0x1f,0x90,0x1d,0xa5,0xa9,0xa4,0xf7}};
+extern "C" const GUID __declspec(selectany) CLSID_GDSQueryResultPortion =
+    {0xa53bea9a,0x142f,0x4aa7,{0x82,0xee,0xf8,0xc3,0xf7,0xed,0x9f,0x1b}};
+extern "C" const GUID __declspec(selectany) CLSID_ReplicationAgent =
+    {0xf530afcd,0xd953,0x4a5c,{0xa0,0x0d,0x4f,0x67,0x49,0x35,0x7f,0x00}};
+extern "C" const GUID __declspec(selectany) CLSID_GeoDataServerLP =
+    {0x15bcf3a2,0xed45,0x4d22,{0xa3,0x68,0x9f,0x01,0x23,0xf9,0xf8,0xa9}};
+extern "C" const GUID __declspec(selectany) CLSID_GeoDataServerIP =
+    {0x74f9a30c,0xd127,0x4880,{0x88,0xb9,0xd7,0x9d,0xe0,0x91,0xb8,0xa6}};
+extern "C" const GUID __declspec(selectany) CLSID_GeoDataServerObjectDescription =
+    {0x60e1a6ae,0xaf1b,0x4b41,{0x86,0x6f,0x87,0x0f,0xd2,0xf6,0x07,0xd9}};
+extern "C" const GUID __declspec(selectany) IID_IWFSServer =
+    {0xca2b76eb,0xffe1,0x46d7,{0x9e,0x13,0x99,0xa7,0x18,0x4a,0xb4,0x50}};
+extern "C" const GUID __declspec(selectany) CLSID_WFSServer =
+    {0xe3743059,0xd297,0x4c6a,{0x9a,0x4a,0x30,0xbd,0xf5,0x03,0x5f,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_IExportSchema =
+    {0xbfd3912e,0x421e,0x477b,{0xb3,0x24,0x5e,0x66,0xc5,0x52,0xac,0x1b}};
+extern "C" const GUID __declspec(selectany) IID_ISchemaChanges =
+    {0xd14b724a,0xac95,0x4cd2,{0x92,0x42,0x72,0x35,0xf4,0xfb,0x55,0x87}};
+extern "C" const GUID __declspec(selectany) IID_IImportSchema =
+    {0xbe88729b,0x0719,0x45b6,{0xa6,0x0b,0xc9,0x77,0xe4,0x04,0x1c,0x7b}};
+extern "C" const GUID __declspec(selectany) IID_IEnumSchemaChange =
+    {0x52b0879b,0x28c4,0x4904,{0xa4,0x02,0x91,0x37,0x84,0x88,0xb8,0x67}};
+extern "C" const GUID __declspec(selectany) IID_ISchemaChangeInfo =
+    {0xb5ccf6d9,0xd034,0x4177,{0x88,0x27,0xf1,0x49,0x37,0x85,0xde,0x8f}};
+
+#pragma pack(pop)

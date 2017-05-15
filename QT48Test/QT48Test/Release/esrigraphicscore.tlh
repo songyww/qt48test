@@ -1,0 +1,32 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (519f8749).
+//
+// e:\vsproject\qt48test\qt48test\release\esrigraphicscore.tlh
+//
+// C++ source equivalent of Win32 type library esrigraphicscore.olb
+// compiler-generated file created 12/01/16 at 15:39:09 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("36a362e4-e848-4a8c-980e-ad42e5e099c5"))
+/* LIBID */ __esriGraphicsCore;
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_esriGraphicsCore =
+    {0x36a362e4,0xe848,0x4a8c,{0x98,0x0e,0xad,0x42,0xe5,0xe0,0x99,0xc5}};
+
+#pragma pack(pop)

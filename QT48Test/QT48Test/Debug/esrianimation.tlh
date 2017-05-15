@@ -1,0 +1,1481 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (246ba41c).
+//
+// e:\vsproject\qt48test\qt48test\debug\esrianimation.tlh
+//
+// C++ source equivalent of Win32 type library esrianimation.olb
+// compiler-generated file created 06/01/16 at 16:28:39 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("643d491a-d5bd-4788-b610-a0f53cba0940"))
+/* LIBID */ __esriAnimation;
+struct __declspec(uuid("943729a4-bbc6-4c3c-b041-44973bed92f1"))
+/* interface */ IAGAnimationProtectNames;
+struct __declspec(uuid("79dd6360-268d-47ee-a4fc-384f2cbe1aa5"))
+/* interface */ IAGAnimationTrack;
+struct __declspec(uuid("17559cca-0532-4c48-9031-b26d0fe80585"))
+/* interface */ IAGAnimationType;
+enum esriAnimationClass;
+enum esriAnimationPropertyType;
+struct __declspec(uuid("ac5655cd-56cf-4c9f-a1c0-a9f80ba453ea"))
+/* interface */ IAGAnimationContainer;
+struct __declspec(uuid("b71421ea-e25e-49dd-a07e-40dc9d6bd575"))
+/* interface */ IAGAnimationTracks;
+struct __declspec(uuid("6e6babc1-3f0a-47f1-bbaa-53ad04e6311d"))
+/* interface */ IAGAnimationEnvironment;
+enum esriAnimationState;
+enum esriAnimationPlayMode;
+enum esriAnimationPlayType;
+struct __declspec(uuid("d0f357c6-b826-4f9a-9c62-cb919fcb84a8"))
+/* interface */ IAGAnimationUtils;
+struct __declspec(uuid("a09e0261-ae4f-4351-a482-72a3f805380b"))
+/* interface */ IAGGroupAnimationOptions;
+struct __declspec(uuid("a5f484f6-9e72-4a6b-9464-e6f7be897b13"))
+/* interface */ IAGImportPathOptions;
+enum esriFlyFromPathType;
+enum esriPathAngleCalculation;
+struct __declspec(uuid("7c35dc01-7cdf-463e-9b7a-87c9ae769bef"))
+/* interface */ IAGKeyframe;
+struct __declspec(uuid("4359310c-a461-47b6-80ed-902f8d1df790"))
+/* interface */ IAnimationExtension;
+struct /* coclass */ AGAnimationTrackContainer;
+struct /* coclass */ AnimationExtension;
+struct __declspec(uuid("8e578405-2413-420d-9f26-84129e717ef5"))
+/* interface */ IAGAnimationTypeUI;
+struct __declspec(uuid("30a602cf-d150-44ef-8dc1-1d68b3cbfe04"))
+/* interface */ IAGKeyframeUI;
+struct __declspec(uuid("bd570576-2130-4593-9c5f-c79e1c22788e"))
+/* interface */ IAGKeyframeInterval;
+struct __declspec(uuid("8d9fe1b4-25fe-4586-b011-c60f36ea0a8b"))
+/* interface */ IAGAnimationTrackKeyframes;
+struct __declspec(uuid("cc771129-d078-47e8-86ff-7517e1dc6bf3"))
+/* interface */ IAGAnimationTrackExtensions;
+struct /* coclass */ AGAnimationTrack;
+struct /* coclass */ AGAnimationEnvironment;
+struct __declspec(uuid("c6c65fc9-4041-4e16-83c6-9f3c9dc13dbd"))
+/* interface */ IVideoExporter;
+struct __declspec(uuid("cebd50af-a7ec-4c98-b74d-a6b2937b1f06"))
+/* interface */ IVideoExporter2;
+struct __declspec(uuid("618a11e0-2f95-4f40-97ad-6cd0f7a2df2c"))
+/* interface */ ISequentialImageExporter;
+struct /* coclass */ AnimationExporterAVI;
+struct __declspec(uuid("0fa6256f-496a-47b3-9f56-4f52d75689f2"))
+/* interface */ IAnimationEvents;
+struct /* coclass */ AnimationExporterQT;
+struct /* coclass */ AnimationExporterSeqImages;
+struct __declspec(uuid("22a2663f-5edb-4ce3-9f97-53db2d3d4caa"))
+/* interface */ IAGAnimationPlayer;
+struct __declspec(uuid("3bd31712-38e4-4b6f-9ef5-bd46f90276a9"))
+/* interface */ IVideoExportUtils;
+struct __declspec(uuid("b082ac71-d735-48f5-b918-8def9129bb2c"))
+/* interface */ IVideoExportUtils2;
+struct __declspec(uuid("35156eb9-b407-4b85-beaf-0dd7158bb3c0"))
+/* interface */ IAnimationContentEvents;
+struct /* coclass */ AGImportPathOptions;
+struct /* coclass */ AGGroupAnimationOptions;
+struct /* coclass */ AGAnimationUtils;
+struct /* coclass */ AnimationEventsHelper;
+struct /* coclass */ AnimationContentEventsHelper;
+struct __declspec(uuid("6ecfe5f7-1227-4565-ac21-626316a84d0a"))
+/* interface */ ITimeWindow;
+struct __declspec(uuid("1160695c-2726-41cd-bacb-6b486035484c"))
+/* interface */ ITimeLayerTrackExtension;
+struct __declspec(uuid("d787b54e-6ad9-4d7f-9b1d-8bcb667f6a46"))
+/* interface */ IAnimationTypeTimeLayer;
+struct __declspec(uuid("592c4701-b0b2-4963-b2d2-537bf48d7e61"))
+/* interface */ IAnimationTypeTime;
+struct /* coclass */ MapViewKeyframe;
+struct /* coclass */ MapLayerKeyframe;
+struct /* coclass */ AnimationTypeMapView;
+struct /* coclass */ AnimationTypeMapLayer;
+struct /* coclass */ AnimationTypeTimeLayer;
+struct /* coclass */ TimeLayerKeyframe;
+struct /* coclass */ TimeWindow;
+struct /* coclass */ TimeLayerTrackExtension;
+struct /* coclass */ TimeKeyframe;
+struct /* coclass */ AnimationTypeTime;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IAGAnimationProtectNames, __uuidof(IAGAnimationProtectNames));
+_COM_SMARTPTR_TYPEDEF(IAGAnimationTypeUI, __uuidof(IAGAnimationTypeUI));
+_COM_SMARTPTR_TYPEDEF(IAGKeyframeUI, __uuidof(IAGKeyframeUI));
+_COM_SMARTPTR_TYPEDEF(IAGAnimationTrackExtensions, __uuidof(IAGAnimationTrackExtensions));
+_COM_SMARTPTR_TYPEDEF(ISequentialImageExporter, __uuidof(ISequentialImageExporter));
+_COM_SMARTPTR_TYPEDEF(IAnimationEvents, __uuidof(IAnimationEvents));
+_COM_SMARTPTR_TYPEDEF(IAnimationContentEvents, __uuidof(IAnimationContentEvents));
+_COM_SMARTPTR_TYPEDEF(ITimeWindow, __uuidof(ITimeWindow));
+_COM_SMARTPTR_TYPEDEF(IAGAnimationTrack, __uuidof(IAGAnimationTrack));
+_COM_SMARTPTR_TYPEDEF(ITimeLayerTrackExtension, __uuidof(ITimeLayerTrackExtension));
+_COM_SMARTPTR_TYPEDEF(IAnimationTypeTimeLayer, __uuidof(IAnimationTypeTimeLayer));
+_COM_SMARTPTR_TYPEDEF(IAnimationTypeTime, __uuidof(IAnimationTypeTime));
+_COM_SMARTPTR_TYPEDEF(IAGAnimationType, __uuidof(IAGAnimationType));
+_COM_SMARTPTR_TYPEDEF(IAGAnimationEnvironment, __uuidof(IAGAnimationEnvironment));
+_COM_SMARTPTR_TYPEDEF(IAGAnimationContainer, __uuidof(IAGAnimationContainer));
+_COM_SMARTPTR_TYPEDEF(IAGAnimationTracks, __uuidof(IAGAnimationTracks));
+_COM_SMARTPTR_TYPEDEF(IAGGroupAnimationOptions, __uuidof(IAGGroupAnimationOptions));
+_COM_SMARTPTR_TYPEDEF(IAGImportPathOptions, __uuidof(IAGImportPathOptions));
+_COM_SMARTPTR_TYPEDEF(IAGKeyframe, __uuidof(IAGKeyframe));
+_COM_SMARTPTR_TYPEDEF(IAGAnimationUtils, __uuidof(IAGAnimationUtils));
+_COM_SMARTPTR_TYPEDEF(IAnimationExtension, __uuidof(IAnimationExtension));
+_COM_SMARTPTR_TYPEDEF(IAGKeyframeInterval, __uuidof(IAGKeyframeInterval));
+_COM_SMARTPTR_TYPEDEF(IAGAnimationTrackKeyframes, __uuidof(IAGAnimationTrackKeyframes));
+_COM_SMARTPTR_TYPEDEF(IVideoExporter, __uuidof(IVideoExporter));
+_COM_SMARTPTR_TYPEDEF(IVideoExporter2, __uuidof(IVideoExporter2));
+_COM_SMARTPTR_TYPEDEF(IAGAnimationPlayer, __uuidof(IAGAnimationPlayer));
+_COM_SMARTPTR_TYPEDEF(IVideoExportUtils, __uuidof(IVideoExportUtils));
+_COM_SMARTPTR_TYPEDEF(IVideoExportUtils2, __uuidof(IVideoExportUtils2));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("943729a4-bbc6-4c3c-b041-44973bed92f1"))
+IAGAnimationProtectNames : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall BeginTime ( ) = 0;
+      virtual HRESULT __stdcall EndTime ( ) = 0;
+      virtual HRESULT __stdcall Period ( ) = 0;
+};
+
+enum __declspec(uuid("f0d0f21f-03c2-4ad1-8685-866c30a9ff86"))
+esriAnimationClass
+{
+    esriAnimationClassGeneric = 0,
+    esriAnimationClassView = 1,
+    esriAnimationClassLayer = 2,
+    esriAnimationClassTimeLayer = 3,
+    esriAnimationClassTime = 4
+};
+
+enum __declspec(uuid("bbf1af2f-a6ec-11d5-b2a0-00508bcdde28"))
+esriAnimationPropertyType
+{
+    esriAnimationPropertyInt = 1,
+    esriAnimationPropertyLong = 2,
+    esriAnimationPropertyDouble = 3,
+    esriAnimationPropertyBoolean = 4,
+    esriAnimationPropertyPoint = 5,
+    esriAnimationPropertyExtent = 6,
+    esriAnimationPropertyRGBColor = 7,
+    esriAnimationPropertyString = 8,
+    esriAnimationPropertyDate = 9
+};
+
+enum __declspec(uuid("ff747b2b-8b5b-11d5-b29e-00508bcdde28"))
+esriAnimationState
+{
+    esriAnimationInvalidState = 0,
+    esriAnimationStopped = 1,
+    esriAnimationPlaying = 2,
+    esriAnimationPausedPlay = 3,
+    esriAnimationRecording = 4,
+    esriAnimationPausedRecord = 5
+};
+
+enum __declspec(uuid("acb7936d-c114-4211-98c6-393e67db63e0"))
+esriAnimationPlayMode
+{
+    esriAnimationPlayOnceForward = 0,
+    esriAnimationPlayOnceReverse = 1,
+    esriAnimationPlayLoopForward = 2,
+    esriAnimationPlayLoopReverse = 3
+};
+
+enum __declspec(uuid("2f53c69d-9fc6-4ef2-b707-07f2e99c34d5"))
+esriAnimationPlayType
+{
+    esriAnimationPlayTypeDuration = 0,
+    esriAnimationPlayTypeFrames = 2
+};
+
+enum __declspec(uuid("05823856-f0b4-4a21-b447-39514f863be9"))
+esriFlyFromPathType
+{
+    esriFlyFromPathObsAndTarget = 0,
+    esriFlyFromPathObserver = 1,
+    esriFlyFromPathTarget = 2
+};
+
+enum __declspec(uuid("08f3cdf7-c70a-11d5-b2a2-00508bcdde28"))
+esriPathAngleCalculation
+{
+    esriAngleUseAbsolute = 1,
+    esriAngleAddRelative = 2
+};
+
+struct __declspec(uuid("14f90f79-8c45-4f32-b19f-82e12a7b2a7c"))
+AGAnimationTrackContainer;
+    // [ default ] interface IUnknown
+    // interface IAGAnimationTracks
+    // interface IPersistStream
+
+struct __declspec(uuid("e4f593da-3675-4778-95ee-fe8197bb43ea"))
+AnimationExtension;
+    // [ default ] interface IUnknown
+    // interface IExtension
+    // interface IAnimationExtension
+    // interface IActiveViewEvents
+    // interface IPersistStream
+    // interface IConnectionPointContainer
+    // interface IExtensionAccelerators
+
+struct __declspec(uuid("8e578405-2413-420d-9f26-84129e717ef5"))
+IAGAnimationTypeUI : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ColumnCount (
+        /*[in]*/ long propIndex,
+        /*[out,retval]*/ long * count ) = 0;
+      virtual HRESULT __stdcall get_ColumnName (
+        /*[in]*/ long propIndex,
+        /*[in]*/ long columnIndex,
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_ChoiceList (
+        /*[in]*/ long propIndex,
+        /*[in]*/ long columnIndex,
+        /*[out,retval]*/ struct IStringArray * * ppChoiceList ) = 0;
+};
+
+struct __declspec(uuid("30a602cf-d150-44ef-8dc1-1d68b3cbfe04"))
+IAGKeyframeUI : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetText (
+        /*[in]*/ long propIndex,
+        /*[in]*/ long columnIndex,
+        /*[out,retval]*/ BSTR * text ) = 0;
+      virtual HRESULT __stdcall SetText (
+        /*[in]*/ long propIndex,
+        /*[in]*/ long columnIndex,
+        /*[in]*/ BSTR text ) = 0;
+};
+
+struct __declspec(uuid("cc771129-d078-47e8-86ff-7517e1dc6bf3"))
+IAGAnimationTrackExtensions : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ExtensionCount (
+        /*[out,retval]*/ long * count ) = 0;
+      virtual HRESULT __stdcall get_Extension (
+        /*[in]*/ long index,
+        /*[out,retval]*/ IUnknown * * ext ) = 0;
+      virtual HRESULT __stdcall AddExtension (
+        /*[in]*/ IUnknown * ext ) = 0;
+      virtual HRESULT __stdcall RemoveExtension (
+        /*[in]*/ long index ) = 0;
+};
+
+struct __declspec(uuid("0705b589-ec1c-43fb-8278-ba3e034c15c0"))
+AGAnimationTrack;
+    // [ default ] interface IUnknown
+    // interface IAGAnimationTrack
+    // interface IAGAnimationTrackKeyframes
+    // interface IAGAnimationTrackExtensions
+    // interface IPersistStream
+
+struct __declspec(uuid("204eb00f-bebe-435e-bc6c-390ec5d0b60c"))
+AGAnimationEnvironment;
+    // [ default ] interface IUnknown
+    // interface IAGAnimationEnvironment
+    // interface IPersistStream
+
+struct __declspec(uuid("618a11e0-2f95-4f40-97ad-6cd0f7a2df2c"))
+ISequentialImageExporter : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_FolderName (
+        /*[in]*/ BSTR pFolderName ) = 0;
+      virtual HRESULT __stdcall get_FolderName (
+        /*[out,retval]*/ BSTR * pFolderName ) = 0;
+      virtual HRESULT __stdcall put_ImagePrefix (
+        /*[in]*/ BSTR pImagePrefix ) = 0;
+      virtual HRESULT __stdcall get_ImagePrefix (
+        /*[out,retval]*/ BSTR * pImagePrefix ) = 0;
+      virtual HRESULT __stdcall put_ImageFormat (
+        /*[in]*/ BSTR pImageFormat ) = 0;
+      virtual HRESULT __stdcall get_ImageFormat (
+        /*[out,retval]*/ BSTR * pImageFormat ) = 0;
+      virtual HRESULT __stdcall put_ImagesPerSecond (
+        /*[in]*/ long pImagesPerSecond ) = 0;
+      virtual HRESULT __stdcall get_ImagesPerSecond (
+        /*[out,retval]*/ long * pImagesPerSecond ) = 0;
+      virtual HRESULT __stdcall get_ImageCount (
+        /*[out,retval]*/ long * pImageCount ) = 0;
+      virtual HRESULT __stdcall get_FolderSize (
+        /*[out,retval]*/ long * pFolderSize ) = 0;
+};
+
+struct __declspec(uuid("4463eab5-ffa6-49a3-8e39-97f4bdf0904a"))
+AnimationExporterAVI;
+    // [ default ] interface IUnknown
+    // interface IVideoExporter
+    // interface IVideoExporter2
+    // interface IConnectionPointContainer
+    // [ default, source ] interface IAnimationEvents
+
+struct __declspec(uuid("0fa6256f-496a-47b3-9f56-4f52d75689f2"))
+IAnimationEvents : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall StateChanged (
+        /*[in]*/ enum esriAnimationState newState ) = 0;
+      virtual HRESULT __stdcall BeforeFrame (
+        /*[in]*/ double relativeTime ) = 0;
+      virtual HRESULT __stdcall AfterFrame (
+        /*[in]*/ double relativeTime ) = 0;
+      virtual HRESULT __stdcall BeforeRecord ( ) = 0;
+};
+
+struct __declspec(uuid("b645cdad-ac53-470c-8e75-c63e94440c20"))
+AnimationExporterQT;
+    // [ default ] interface IUnknown
+    // interface IVideoExporter
+    // interface IVideoExporter2
+    // interface IConnectionPointContainer
+    // [ default, source ] interface IAnimationEvents
+
+struct __declspec(uuid("f0a18e60-f2bd-441d-9e0b-767d6a01d78b"))
+AnimationExporterSeqImages;
+    // [ default ] interface IUnknown
+    // interface ISequentialImageExporter
+    // interface IVideoExporter2
+    // interface IConnectionPointContainer
+    // [ default, source ] interface IAnimationEvents
+
+struct __declspec(uuid("35156eb9-b407-4b85-beaf-0dd7158bb3c0"))
+IAnimationContentEvents : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall AnimationChanged ( ) = 0;
+};
+
+struct __declspec(uuid("aef1c592-a90a-4cf8-9917-aed751c4f6ca"))
+AGImportPathOptions;
+    // [ default ] interface IUnknown
+    // interface IAGImportPathOptions
+
+struct __declspec(uuid("16a27ccc-735a-4015-b870-7249fd15a607"))
+AGGroupAnimationOptions;
+    // [ default ] interface IUnknown
+    // interface IAGGroupAnimationOptions
+
+struct __declspec(uuid("2835514b-1a02-4142-8474-31d48d9063a8"))
+AGAnimationUtils;
+    // [ default ] interface IUnknown
+    // interface IAGAnimationPlayer
+    // interface IAGAnimationUtils
+    // interface IVideoExportUtils2
+    // interface IConnectionPointContainer
+    // [ default, source ] interface IAnimationEvents
+
+struct __declspec(uuid("ef6de832-da87-45d5-a3de-6a9d87d0c3d1"))
+AnimationEventsHelper;
+    // [ default ] interface IUnknown
+    // [ default, source ] interface IAnimationEvents
+
+struct __declspec(uuid("8d9de3ed-e1a2-4369-b14d-0f9f0abfbd42"))
+AnimationContentEventsHelper;
+    // [ default ] interface IUnknown
+    // [ default, source ] interface IAnimationContentEvents
+
+struct __declspec(uuid("6ecfe5f7-1227-4565-ac21-626316a84d0a"))
+ITimeWindow : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_StartField (
+        /*[out,retval]*/ BSTR * pField ) = 0;
+      virtual HRESULT __stdcall put_StartField (
+        /*[in]*/ BSTR pField ) = 0;
+      virtual HRESULT __stdcall get_EndField (
+        /*[out,retval]*/ BSTR * pField ) = 0;
+      virtual HRESULT __stdcall put_EndField (
+        /*[in]*/ BSTR pField ) = 0;
+      virtual HRESULT __stdcall get_StartFieldFormat (
+        /*[out,retval]*/ BSTR * pField ) = 0;
+      virtual HRESULT __stdcall put_StartFieldFormat (
+        /*[in]*/ BSTR pField ) = 0;
+      virtual HRESULT __stdcall get_EndFieldFormat (
+        /*[out,retval]*/ BSTR * pFieldFormat ) = 0;
+      virtual HRESULT __stdcall put_EndFieldFormat (
+        /*[in]*/ BSTR pFieldFormat ) = 0;
+      virtual HRESULT __stdcall get_AnimateCumulatively (
+        /*[out,retval]*/ VARIANT_BOOL * pAnimateFieldsCumulatively ) = 0;
+      virtual HRESULT __stdcall put_AnimateCumulatively (
+        /*[in]*/ VARIANT_BOOL pAnimateFieldsCumulatively ) = 0;
+      virtual HRESULT __stdcall get_DefinitionQuery (
+        /*[out,retval]*/ BSTR * pQuery ) = 0;
+      virtual HRESULT __stdcall put_DefinitionQuery (
+        /*[in]*/ BSTR pQuery ) = 0;
+};
+
+struct __declspec(uuid("63b8d8b8-85fb-44e9-9c30-2030f5c19762"))
+MapViewKeyframe;
+    // [ default ] interface IUnknown
+    // interface IAGKeyframe
+    // interface IAGKeyframeUI
+    // interface IClone
+
+struct __declspec(uuid("a6a38cd6-e11f-49a5-bc21-e8bfba7f2bd6"))
+MapLayerKeyframe;
+    // [ default ] interface IUnknown
+    // interface IAGKeyframe
+    // interface IAGKeyframeUI
+    // interface IClone
+
+struct __declspec(uuid("fd22a714-0eef-4312-8703-d81e5476e28a"))
+AnimationTypeMapView;
+    // [ default ] interface IUnknown
+    // interface IAGAnimationType
+    // interface IAGAnimationTypeUI
+
+struct __declspec(uuid("0a965644-11f1-4901-a0cf-9989bfd27b6d"))
+AnimationTypeMapLayer;
+    // [ default ] interface IUnknown
+    // interface IAGAnimationType
+    // interface IAGAnimationTypeUI
+
+struct __declspec(uuid("a85b10a9-9eab-4f93-9259-5fbae98000eb"))
+AnimationTypeTimeLayer;
+    // [ default ] interface IUnknown
+    // interface IAGAnimationType
+    // interface IAGAnimationTypeUI
+    // interface IAnimationTypeTimeLayer
+
+struct __declspec(uuid("1c11f69b-b438-486f-9c79-d98d9f23d15a"))
+TimeLayerKeyframe;
+    // [ default ] interface IUnknown
+    // interface IAGKeyframe
+    // interface IAGKeyframeUI
+    // interface IClone
+    // interface IAGKeyframeInterval
+
+struct __declspec(uuid("01ba3b3a-80ab-423b-bb7c-93137cdaafe5"))
+TimeWindow;
+    // [ default ] interface IUnknown
+    // interface ITimeWindow
+    // interface IPersistStream
+    // interface IClone
+
+struct __declspec(uuid("99df44c5-02d3-4cf2-ad42-59fd26b614fa"))
+TimeLayerTrackExtension;
+    // [ default ] interface IUnknown
+    // interface ITimeLayerTrackExtension
+    // interface IClone
+    // interface IPersistStream
+
+struct __declspec(uuid("2b084a6e-39fb-427a-8183-2a346cf9e6f9"))
+TimeKeyframe;
+    // [ default ] interface IUnknown
+    // interface IAGKeyframe
+    // interface IAGKeyframeUI
+    // interface IClone
+    // interface IAGKeyframeInterval
+
+struct __declspec(uuid("302ebe2c-6c06-4b40-ae6e-c67600c39d68"))
+AnimationTypeTime;
+    // [ default ] interface IUnknown
+    // interface IAGAnimationType
+    // interface IAGAnimationTypeUI
+    // interface IAnimationTypeTime
+
+struct __declspec(uuid("79dd6360-268d-47ee-a4fc-384f2cbe1aa5"))
+IAGAnimationTrack : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall get_AnimationType (
+        /*[out,retval]*/ struct IAGAnimationType * * ppAnimationType ) = 0;
+      virtual HRESULT __stdcall putref_AnimationType (
+        /*[in]*/ struct IAGAnimationType * ppAnimationType ) = 0;
+      virtual HRESULT __stdcall get_IsCycle (
+        /*[out,retval]*/ VARIANT_BOOL * pbIsCycle ) = 0;
+      virtual HRESULT __stdcall put_IsCycle (
+        /*[in]*/ VARIANT_BOOL pbIsCycle ) = 0;
+      virtual HRESULT __stdcall get_BeginTime (
+        /*[out,retval]*/ double * pBeginTime ) = 0;
+      virtual HRESULT __stdcall put_BeginTime (
+        /*[in]*/ double pBeginTime ) = 0;
+      virtual HRESULT __stdcall get_EndTime (
+        /*[out,retval]*/ double * pEndTime ) = 0;
+      virtual HRESULT __stdcall put_EndTime (
+        /*[in]*/ double pEndTime ) = 0;
+      virtual HRESULT __stdcall get_IsEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pbIsEnabled ) = 0;
+      virtual HRESULT __stdcall put_IsEnabled (
+        /*[in]*/ VARIANT_BOOL pbIsEnabled ) = 0;
+      virtual HRESULT __stdcall put_ApplyToAllViewers (
+        /*[in]*/ VARIANT_BOOL pbApplyToAllViewers ) = 0;
+      virtual HRESULT __stdcall get_ApplyToAllViewers (
+        /*[out,retval]*/ VARIANT_BOOL * pbApplyToAllViewers ) = 0;
+      virtual HRESULT __stdcall get_AttachedObjectsCount (
+        /*[out,retval]*/ long * pObjectCount ) = 0;
+      virtual HRESULT __stdcall get_AttachedObjects (
+        /*[out,retval]*/ struct IArray * * ppObjectArray ) = 0;
+      virtual HRESULT __stdcall get_IsAttached (
+        /*[in]*/ IUnknown * pObject,
+        /*[out,retval]*/ VARIANT_BOOL * pbIsAttached ) = 0;
+      virtual HRESULT __stdcall put_AttachedObjects (
+        /*[in]*/ struct IArray * ppObjectArray ) = 0;
+      virtual HRESULT __stdcall AttachObject (
+        /*[in]*/ IUnknown * pObject ) = 0;
+      virtual HRESULT __stdcall DetachObject (
+        /*[in]*/ IUnknown * pObject ) = 0;
+      virtual HRESULT __stdcall DetachAllObjects ( ) = 0;
+      virtual HRESULT __stdcall ResetAttachedObjects (
+        /*[in]*/ struct IAGAnimationContainer * pContainer ) = 0;
+      virtual HRESULT __stdcall InterpolateObjectProperties (
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[in]*/ double time ) = 0;
+      virtual HRESULT __stdcall get_AnimationObjectContainer (
+        /*[out,retval]*/ struct IAGAnimationContainer * * ppContainer ) = 0;
+      virtual HRESULT __stdcall putref_AnimationObjectContainer (
+        /*[in]*/ struct IAGAnimationContainer * ppContainer ) = 0;
+};
+
+struct __declspec(uuid("1160695c-2726-41cd-bacb-6b486035484c"))
+ITimeLayerTrackExtension : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetTimeWindow (
+        /*[in]*/ struct IAGAnimationTrack * pTrack,
+        /*[in]*/ IUnknown * pObject,
+        /*[out,retval]*/ struct ITimeWindow * * ppTimeWindow ) = 0;
+      virtual HRESULT __stdcall get_TimeWindows (
+        /*[out,retval]*/ struct IArray * * ppTimeWindows ) = 0;
+      virtual HRESULT __stdcall get_AttachedObjects (
+        /*[out,retval]*/ struct IArray * * ppObjectArray ) = 0;
+      virtual HRESULT __stdcall UpdateTrackExtension (
+        /*[in]*/ struct IAGAnimationTrack * pTrack ) = 0;
+      virtual HRESULT __stdcall put_ShowTrackName (
+        VARIANT_BOOL pShowTrackName ) = 0;
+      virtual HRESULT __stdcall get_ShowTrackName (
+        /*[out,retval]*/ VARIANT_BOOL * pShowTrackName ) = 0;
+      virtual HRESULT __stdcall put_ShowTrackTime (
+        VARIANT_BOOL pShowTrackTime ) = 0;
+      virtual HRESULT __stdcall get_ShowTrackTime (
+        /*[out,retval]*/ VARIANT_BOOL * pShowTrackTime ) = 0;
+};
+
+struct __declspec(uuid("d787b54e-6ad9-4d7f-9b1d-8bcb667f6a46"))
+IAnimationTypeTimeLayer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetTimeWindow (
+        struct IAGAnimationTrack * pTrack,
+        IUnknown * pObject,
+        struct ITimeWindow * * ppTimeWindow ) = 0;
+      virtual HRESULT __stdcall AssignTimeRange (
+        /*[in]*/ struct IAGAnimationTrack * pTrack ) = 0;
+      virtual HRESULT __stdcall GetMDDatasetView (
+        /*[in]*/ IUnknown * pUnk,
+        /*[out,retval]*/ struct IMDDatasetView * * ppMDView ) = 0;
+      virtual HRESULT __stdcall GetTable (
+        /*[in]*/ IUnknown * pUnk,
+        /*[out,retval]*/ struct ITable * * ppTable ) = 0;
+      virtual HRESULT __stdcall GetTimeLayerTrackExtension (
+        /*[in]*/ struct IAGAnimationTrack * pTrack,
+        /*[out,retval]*/ struct ITimeLayerTrackExtension * * ppTrackExtension ) = 0;
+};
+
+struct __declspec(uuid("592c4701-b0b2-4963-b2d2-537bf48d7e61"))
+IAnimationTypeTime : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall AssignTimeRange (
+        /*[in]*/ struct IAGAnimationTrack * pTrack ) = 0;
+};
+
+struct __declspec(uuid("17559cca-0532-4c48-9031-b26d0fe80585"))
+IAGAnimationType : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_AnimationClass (
+        /*[out,retval]*/ enum esriAnimationClass * pClass ) = 0;
+      virtual HRESULT __stdcall get_CLSID (
+        /*[out,retval]*/ struct IUID * * ppCLSID ) = 0;
+      virtual HRESULT __stdcall get_KeyframeCLSID (
+        /*[out,retval]*/ struct IUID * * ppCLSID ) = 0;
+      virtual HRESULT __stdcall get_AppliesToObject (
+        /*[in]*/ VARIANT pObject,
+        /*[out,retval]*/ VARIANT_BOOL * pbApplies ) = 0;
+      virtual HRESULT __stdcall get_PropertyCount (
+        /*[out,retval]*/ long * pPropCount ) = 0;
+      virtual HRESULT __stdcall get_PropertyName (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * pPropName ) = 0;
+      virtual HRESULT __stdcall get_PropertyType (
+        /*[in]*/ long index,
+        /*[out,retval]*/ enum esriAnimationPropertyType * pPropType ) = 0;
+      virtual HRESULT __stdcall get_ObjectArray (
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[out,retval]*/ struct IArray * * ppObjects ) = 0;
+      virtual HRESULT __stdcall get_AnimationObjectID (
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[in]*/ VARIANT pObject,
+        /*[out,retval]*/ long * pObjectID ) = 0;
+      virtual HRESULT __stdcall get_AnimationObjectByID (
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[in]*/ long objectID,
+        /*[out,retval]*/ VARIANT * ppObject ) = 0;
+      virtual HRESULT __stdcall get_AnimationObjectName (
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[in]*/ VARIANT pObject,
+        /*[out,retval]*/ BSTR * pName ) = 0;
+      virtual HRESULT __stdcall ResetObject (
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[in]*/ VARIANT pObject ) = 0;
+      virtual HRESULT __stdcall UpdateTrackExtensions (
+        /*[in]*/ struct IAGAnimationTrack * pTrack ) = 0;
+};
+
+struct __declspec(uuid("6e6babc1-3f0a-47f1-bbaa-53ad04e6311d"))
+IAGAnimationEnvironment : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_SelectedAGAnimationType (
+        /*[out,retval]*/ struct IAGAnimationType * * ppAnimType ) = 0;
+      virtual HRESULT __stdcall putref_SelectedAGAnimationType (
+        /*[in]*/ struct IAGAnimationType * ppAnimType ) = 0;
+      virtual HRESULT __stdcall get_SelectedTracks (
+        /*[out,retval]*/ struct IArray * * ppTracks ) = 0;
+      virtual HRESULT __stdcall putref_SelectedTracks (
+        /*[in]*/ struct IArray * ppTracks ) = 0;
+      virtual HRESULT __stdcall get_SelectedKeyframes (
+        /*[out,retval]*/ struct ILongArray * * ppIndices ) = 0;
+      virtual HRESULT __stdcall putref_SelectedKeyframes (
+        /*[in]*/ struct ILongArray * ppIndices ) = 0;
+      virtual HRESULT __stdcall get_State (
+        /*[out,retval]*/ enum esriAnimationState * pState ) = 0;
+      virtual HRESULT __stdcall put_State (
+        /*[in]*/ enum esriAnimationState pState ) = 0;
+      virtual HRESULT __stdcall get_AnimationDuration (
+        /*[out,retval]*/ double * pSeconds ) = 0;
+      virtual HRESULT __stdcall put_AnimationDuration (
+        /*[in]*/ double pSeconds ) = 0;
+      virtual HRESULT __stdcall get_NumberofFrames (
+        /*[out,retval]*/ long * pFrames ) = 0;
+      virtual HRESULT __stdcall put_NumberofFrames (
+        /*[in]*/ long pFrames ) = 0;
+      virtual HRESULT __stdcall get_IsIntervalPlay (
+        /*[out,retval]*/ VARIANT_BOOL * pbIsInterval ) = 0;
+      virtual HRESULT __stdcall put_IsIntervalPlay (
+        /*[in]*/ VARIANT_BOOL pbIsInterval ) = 0;
+      virtual HRESULT __stdcall GetPlayInterval (
+        /*[out]*/ double * pBeginTime,
+        /*[out]*/ double * pEndTime ) = 0;
+      virtual HRESULT __stdcall PutPlayInterval (
+        /*[in]*/ double BeginTime,
+        /*[in]*/ double EndTime ) = 0;
+      virtual HRESULT __stdcall GetPlayIntervalFrames (
+        /*[out]*/ long * pBeginFrame,
+        /*[out]*/ long * pEndFrame ) = 0;
+      virtual HRESULT __stdcall PutPlayIntervalFrames (
+        /*[in]*/ long beginFrame,
+        /*[in]*/ long EndFrame ) = 0;
+      virtual HRESULT __stdcall get_AnimationControlsHWnd (
+        /*[out,retval]*/ OLE_HANDLE * phWnd ) = 0;
+      virtual HRESULT __stdcall put_AnimationControlsHWnd (
+        /*[in]*/ OLE_HANDLE phWnd ) = 0;
+      virtual HRESULT __stdcall get_PlayTime (
+        /*[out,retval]*/ double * pTime ) = 0;
+      virtual HRESULT __stdcall put_PlayTime (
+        /*[in]*/ double pTime ) = 0;
+      virtual HRESULT __stdcall get_PlayInAllViewers (
+        /*[out,retval]*/ VARIANT_BOOL * pbPlayInAll ) = 0;
+      virtual HRESULT __stdcall put_PlayInAllViewers (
+        /*[in]*/ VARIANT_BOOL pbPlayInAll ) = 0;
+      virtual HRESULT __stdcall get_PlayMode (
+        /*[out,retval]*/ enum esriAnimationPlayMode * pPlayMode ) = 0;
+      virtual HRESULT __stdcall put_PlayMode (
+        /*[in]*/ enum esriAnimationPlayMode pPlayMode ) = 0;
+      virtual HRESULT __stdcall get_PlayType (
+        /*[out,retval]*/ enum esriAnimationPlayType * pPlayType ) = 0;
+      virtual HRESULT __stdcall put_PlayType (
+        /*[in]*/ enum esriAnimationPlayType pPlayType ) = 0;
+      virtual HRESULT __stdcall put_RestoreState (
+        /*[in]*/ VARIANT_BOOL pRestoreState ) = 0;
+      virtual HRESULT __stdcall get_RestoreState (
+        /*[out,retval]*/ VARIANT_BOOL * pRestoreState ) = 0;
+};
+
+struct __declspec(uuid("ac5655cd-56cf-4c9f-a1c0-a9f80ba453ea"))
+IAGAnimationContainer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_AnimationTypes (
+        /*[out,retval]*/ struct IArray * * ppAnimationTypes ) = 0;
+      virtual HRESULT __stdcall get_CurrentView (
+        /*[out,retval]*/ IUnknown * * ppCurrentView ) = 0;
+      virtual HRESULT __stdcall get_AllViews (
+        /*[out,retval]*/ struct IArray * * ppViews ) = 0;
+      virtual HRESULT __stdcall get_ViewController (
+        /*[in]*/ IUnknown * pViewer,
+        /*[out,retval]*/ IUnknown * * ppController ) = 0;
+      virtual HRESULT __stdcall RefreshViews (
+        /*[in]*/ VARIANT_BOOL bRefreshAllViewers ) = 0;
+      virtual HRESULT __stdcall RefreshObject (
+        /*[in]*/ IUnknown * pObject ) = 0;
+      virtual HRESULT __stdcall SaveViewerStates ( ) = 0;
+      virtual HRESULT __stdcall RestoreViewerStates (
+        /*[in]*/ VARIANT_BOOL bApplyRestored ) = 0;
+      virtual HRESULT __stdcall PutIsAnimating (
+        /*[in]*/ VARIANT_BOOL bAnimating,
+        /*[in]*/ VARIANT_BOOL bFullQuality ) = 0;
+      virtual HRESULT __stdcall get_IsGestureEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pbGestureEnabled ) = 0;
+      virtual HRESULT __stdcall put_IsGestureEnabled (
+        /*[in]*/ VARIANT_BOOL pbGestureEnabled ) = 0;
+      virtual HRESULT __stdcall get_WindowHandle (
+        /*[in]*/ IUnknown * pView,
+        /*[out,retval]*/ OLE_HANDLE * phWnd ) = 0;
+      virtual HRESULT __stdcall get_AnimationFileExtension (
+        /*[out,retval]*/ BSTR * pExt ) = 0;
+      virtual HRESULT __stdcall get_AnimationFileFilter (
+        /*[in]*/ VARIANT_BOOL bAllVersions,
+        /*[out,retval]*/ BSTR * pFilter ) = 0;
+      virtual HRESULT __stdcall get_SpatialBookmarks (
+        /*[out,retval]*/ struct IArray * * ppBookmarks ) = 0;
+      virtual HRESULT __stdcall RemoveAllAnimationTimeStrings (
+        /*[in]*/ struct IAGAnimationTracks * pTracks ) = 0;
+      virtual HRESULT __stdcall RemoveTrackTimeDisplay (
+        /*[in]*/ struct IAGAnimationTrack * pTrack ) = 0;
+      virtual HRESULT __stdcall put_AnimationTime (
+        /*[in]*/ struct IStringArray * _arg1 ) = 0;
+      virtual HRESULT __stdcall DrawGraphsToDC (
+        /*[in]*/ OLE_HANDLE hDC ) = 0;
+      virtual HRESULT __stdcall DrawPageLayoutToDC (
+        /*[in]*/ OLE_HANDLE hDC ) = 0;
+};
+
+struct __declspec(uuid("b71421ea-e25e-49dd-a07e-40dc9d6bd575"))
+IAGAnimationTracks : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_AnimationObjectContainer (
+        /*[out,retval]*/ struct IAGAnimationContainer * * ppContainer ) = 0;
+      virtual HRESULT __stdcall putref_AnimationObjectContainer (
+        /*[in]*/ struct IAGAnimationContainer * ppContainer ) = 0;
+      virtual HRESULT __stdcall get_TrackCount (
+        /*[out,retval]*/ long * pCount ) = 0;
+      virtual HRESULT __stdcall get_AGTracks (
+        /*[out,retval]*/ struct IArray * * ppTracks ) = 0;
+      virtual HRESULT __stdcall get_TracksOfType (
+        /*[in]*/ struct IAGAnimationType * pType,
+        /*[out,retval]*/ struct IArray * * ppTracks ) = 0;
+      virtual HRESULT __stdcall CreateTrack (
+        /*[in]*/ struct IAGAnimationType * pType,
+        /*[out,retval]*/ struct IAGAnimationTrack * * ppTrack ) = 0;
+      virtual HRESULT __stdcall AddTrack (
+        /*[in]*/ struct IAGAnimationTrack * pTrack ) = 0;
+      virtual HRESULT __stdcall FindTrack (
+        /*[in]*/ BSTR Name,
+        /*[out]*/ struct IAGAnimationTrack * * ppTrack ) = 0;
+      virtual HRESULT __stdcall RemoveTrack (
+        /*[in]*/ struct IAGAnimationTrack * pTrack ) = 0;
+      virtual HRESULT __stdcall RemoveAllTracks ( ) = 0;
+      virtual HRESULT __stdcall SaveTracks (
+        /*[in]*/ struct IStream * pStm ) = 0;
+      virtual HRESULT __stdcall LoadTracks (
+        /*[in]*/ struct IStream * pStm ) = 0;
+      virtual HRESULT __stdcall DetachObject (
+        /*[in]*/ IUnknown * pObject ) = 0;
+      virtual HRESULT __stdcall RefreshAttachedObjects ( ) = 0;
+      virtual HRESULT __stdcall ApplyTracks (
+        /*[in]*/ VARIANT_BOOL bApplyToAllViewers,
+        /*[in]*/ double time ) = 0;
+      virtual HRESULT __stdcall ChangePriority (
+        /*[in]*/ struct IAGAnimationTrack * pTrack,
+        /*[in]*/ VARIANT_BOOL bAbsolute,
+        /*[in]*/ VARIANT_BOOL bInSameType,
+        /*[in]*/ long changeInIndex ) = 0;
+};
+
+struct __declspec(uuid("a09e0261-ae4f-4351-a482-72a3f805380b"))
+IAGGroupAnimationOptions : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_AnimationTracks (
+        /*[out,retval]*/ struct IAGAnimationTracks * * ppTracks ) = 0;
+      virtual HRESULT __stdcall putref_AnimationTracks (
+        /*[in]*/ struct IAGAnimationTracks * ppTracks ) = 0;
+      virtual HRESULT __stdcall get_AnimationEnvironment (
+        /*[out,retval]*/ struct IAGAnimationEnvironment * * ppEnvironment ) = 0;
+      virtual HRESULT __stdcall putref_AnimationEnvironment (
+        /*[in]*/ struct IAGAnimationEnvironment * ppEnvironment ) = 0;
+      virtual HRESULT __stdcall get_LayerSet (
+        /*[out,retval]*/ struct IArray * * ppLayerSet ) = 0;
+      virtual HRESULT __stdcall putref_LayerSet (
+        /*[in]*/ struct IArray * ppLayerSet ) = 0;
+      virtual HRESULT __stdcall get_TrackBaseName (
+        /*[out,retval]*/ BSTR * pTrackName ) = 0;
+      virtual HRESULT __stdcall put_TrackBaseName (
+        /*[in]*/ BSTR pTrackName ) = 0;
+      virtual HRESULT __stdcall GetVisibilitySettings (
+        /*[out]*/ VARIANT_BOOL * pbOneLayer,
+        /*[out]*/ VARIANT_BOOL * pbAppear,
+        /*[out]*/ VARIANT_BOOL * pbReverse ) = 0;
+      virtual HRESULT __stdcall PutVisibilitySettings (
+        /*[in]*/ VARIANT_BOOL bOneLayer,
+        /*[in]*/ VARIANT_BOOL bAppear,
+        /*[in]*/ VARIANT_BOOL bReverse ) = 0;
+      virtual HRESULT __stdcall get_FadingPercentage (
+        /*[out,retval]*/ int * pFadePercent ) = 0;
+      virtual HRESULT __stdcall put_FadingPercentage (
+        /*[in]*/ int pFadePercent ) = 0;
+      virtual HRESULT __stdcall get_Blending (
+        /*[out,retval]*/ VARIANT_BOOL * pbBlend ) = 0;
+      virtual HRESULT __stdcall put_Blending (
+        /*[in]*/ VARIANT_BOOL pbBlend ) = 0;
+      virtual HRESULT __stdcall get_CycleAnimation (
+        /*[out,retval]*/ VARIANT_BOOL * pbIsCycle ) = 0;
+      virtual HRESULT __stdcall put_CycleAnimation (
+        /*[in]*/ VARIANT_BOOL pbIsCycle ) = 0;
+      virtual HRESULT __stdcall GetTrackInterval (
+        /*[out]*/ double * pBeginTime,
+        /*[out]*/ double * pEndTime ) = 0;
+      virtual HRESULT __stdcall PutTrackInterval (
+        /*[in]*/ double BeginTime,
+        /*[in]*/ double EndTime ) = 0;
+      virtual HRESULT __stdcall get_OverwriteExisting (
+        /*[out,retval]*/ VARIANT_BOOL * pbOverwrite ) = 0;
+      virtual HRESULT __stdcall put_OverwriteExisting (
+        /*[in]*/ VARIANT_BOOL pbOverwrite ) = 0;
+};
+
+struct __declspec(uuid("a5f484f6-9e72-4a6b-9464-e6f7be897b13"))
+IAGImportPathOptions : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_BasicMap (
+        /*[out,retval]*/ struct IBasicMap * * ppMap ) = 0;
+      virtual HRESULT __stdcall putref_BasicMap (
+        /*[in]*/ struct IBasicMap * ppMap ) = 0;
+      virtual HRESULT __stdcall get_AnimationTracks (
+        /*[out,retval]*/ struct IAGAnimationTracks * * ppTracks ) = 0;
+      virtual HRESULT __stdcall putref_AnimationTracks (
+        /*[in]*/ struct IAGAnimationTracks * ppTracks ) = 0;
+      virtual HRESULT __stdcall get_AnimationEnvironment (
+        /*[out,retval]*/ struct IAGAnimationEnvironment * * ppEnvironment ) = 0;
+      virtual HRESULT __stdcall putref_AnimationEnvironment (
+        /*[in]*/ struct IAGAnimationEnvironment * ppEnvironment ) = 0;
+      virtual HRESULT __stdcall get_AnimationType (
+        /*[out,retval]*/ struct IAGAnimationType * * ppAnimType ) = 0;
+      virtual HRESULT __stdcall putref_AnimationType (
+        /*[in]*/ struct IAGAnimationType * ppAnimType ) = 0;
+      virtual HRESULT __stdcall get_PathGeometry (
+        /*[out,retval]*/ struct IGeometry * * ppPathGeometry ) = 0;
+      virtual HRESULT __stdcall put_PathGeometry (
+        /*[in]*/ struct IGeometry * ppPathGeometry ) = 0;
+      virtual HRESULT __stdcall get_VerticalOffset (
+        /*[out,retval]*/ double * pElevOffsetMeters ) = 0;
+      virtual HRESULT __stdcall put_VerticalOffset (
+        /*[in]*/ double pElevOffsetMeters ) = 0;
+      virtual HRESULT __stdcall get_AnimatedObject (
+        /*[out,retval]*/ IUnknown * * ppAnimObj ) = 0;
+      virtual HRESULT __stdcall putref_AnimatedObject (
+        /*[in]*/ IUnknown * ppAnimObj ) = 0;
+      virtual HRESULT __stdcall get_ConversionType (
+        /*[out,retval]*/ enum esriFlyFromPathType * pConversionType ) = 0;
+      virtual HRESULT __stdcall put_ConversionType (
+        /*[in]*/ enum esriFlyFromPathType pConversionType ) = 0;
+      virtual HRESULT __stdcall get_ReversePath (
+        /*[out,retval]*/ VARIANT_BOOL * pbReverse ) = 0;
+      virtual HRESULT __stdcall put_ReversePath (
+        /*[in]*/ VARIANT_BOOL pbReverse ) = 0;
+      virtual HRESULT __stdcall get_SimplificationFactor (
+        /*[out,retval]*/ double * pSimplFactor ) = 0;
+      virtual HRESULT __stdcall put_SimplificationFactor (
+        /*[in]*/ double pSimplFactor ) = 0;
+      virtual HRESULT __stdcall get_LookaheadFactor (
+        /*[out,retval]*/ double * pLookaheadFactor ) = 0;
+      virtual HRESULT __stdcall put_LookaheadFactor (
+        /*[in]*/ double pLookaheadFactor ) = 0;
+      virtual HRESULT __stdcall GetAngleCalculationMethods (
+        /*[out]*/ enum esriPathAngleCalculation * pAzimuthMethod,
+        /*[out]*/ enum esriPathAngleCalculation * pInclinationMethod,
+        /*[out]*/ enum esriPathAngleCalculation * pRollMethod ) = 0;
+      virtual HRESULT __stdcall PutAngleCalculationMethods (
+        /*[in]*/ enum esriPathAngleCalculation azimuthMethod,
+        /*[in]*/ enum esriPathAngleCalculation inclinationMethod,
+        /*[in]*/ enum esriPathAngleCalculation rollMethod ) = 0;
+      virtual HRESULT __stdcall GetAngleCalculationValues (
+        /*[out]*/ double * pAzimuthValue,
+        /*[out]*/ double * pInclinationValue,
+        /*[out]*/ double * pRollValue ) = 0;
+      virtual HRESULT __stdcall PutAngleCalculationValues (
+        /*[in]*/ double azimuthValue,
+        /*[in]*/ double inclinationValue,
+        /*[in]*/ double rollValue ) = 0;
+      virtual HRESULT __stdcall get_RollFactor (
+        /*[out,retval]*/ double * pRollFactor ) = 0;
+      virtual HRESULT __stdcall put_RollFactor (
+        /*[in]*/ double pRollFactor ) = 0;
+      virtual HRESULT __stdcall get_OverwriteExisting (
+        /*[out,retval]*/ VARIANT_BOOL * pbOverwrite ) = 0;
+      virtual HRESULT __stdcall put_OverwriteExisting (
+        /*[in]*/ VARIANT_BOOL pbOverwrite ) = 0;
+      virtual HRESULT __stdcall get_TrackName (
+        /*[out,retval]*/ BSTR * pTrackName ) = 0;
+      virtual HRESULT __stdcall put_TrackName (
+        /*[in]*/ BSTR pTrackName ) = 0;
+};
+
+struct __declspec(uuid("7c35dc01-7cdf-463e-9b7a-87c9ae769bef"))
+IAGKeyframe : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall get_ActiveProperties (
+        /*[out,retval]*/ struct ILongArray * * ppActiveProps ) = 0;
+      virtual HRESULT __stdcall put_ActiveProperties (
+        /*[in]*/ struct ILongArray * ppActiveProps ) = 0;
+      virtual HRESULT __stdcall get_IsActiveProperty (
+        /*[in]*/ long propIndex,
+        /*[out,retval]*/ VARIANT_BOOL * pbIsActiveProp ) = 0;
+      virtual HRESULT __stdcall put_IsActiveProperty (
+        /*[in]*/ long propIndex,
+        /*[in]*/ VARIANT_BOOL pbIsActiveProp ) = 0;
+      virtual HRESULT __stdcall get_PropertyValue (
+        /*[in]*/ long propIndex,
+        /*[out,retval]*/ VARIANT * pValue ) = 0;
+      virtual HRESULT __stdcall put_PropertyValue (
+        /*[in]*/ long propIndex,
+        /*[in]*/ VARIANT pValue ) = 0;
+      virtual HRESULT __stdcall put_TimeStamp (
+        /*[in]*/ double pTimeStamp ) = 0;
+      virtual HRESULT __stdcall get_TimeStamp (
+        /*[out,retval]*/ double * pTimeStamp ) = 0;
+      virtual HRESULT __stdcall get_AnimationType (
+        /*[out,retval]*/ struct IAGAnimationType * * ppAnimationType ) = 0;
+      virtual HRESULT __stdcall Apply (
+        /*[in]*/ struct IAGAnimationTrack * pTrack,
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[in]*/ VARIANT pObject ) = 0;
+      virtual HRESULT __stdcall CaptureProperties (
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[in]*/ VARIANT pObject ) = 0;
+      virtual HRESULT __stdcall Interpolate (
+        /*[in]*/ struct IAGAnimationTrack * pTrack,
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[in]*/ VARIANT pObject,
+        /*[in]*/ long propertyIndex,
+        /*[in]*/ double time,
+        /*[in]*/ struct IAGKeyframe * pNextKeyframe,
+        /*[in]*/ struct IAGKeyframe * pPrevKeyframe,
+        /*[in]*/ struct IAGKeyframe * pAfterNextKeyframe ) = 0;
+      virtual HRESULT __stdcall get_ObjectNeedsRefresh (
+        /*[out,retval]*/ VARIANT_BOOL * pNeedsRefresh ) = 0;
+      virtual HRESULT __stdcall RefreshObject (
+        /*[in]*/ struct IAGAnimationTrack * pTrack,
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[in]*/ VARIANT pObject ) = 0;
+};
+
+struct __declspec(uuid("d0f357c6-b826-4f9a-9c62-cb919fcb84a8"))
+IAGAnimationUtils : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CreateLayerGroupAnimation (
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[in]*/ struct IAGGroupAnimationOptions * pOptions ) = 0;
+      virtual HRESULT __stdcall CreateFlybyFromPath (
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[in]*/ struct IAGImportPathOptions * pOptions ) = 0;
+      virtual HRESULT __stdcall KeyframeFromBookmark (
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[in]*/ struct ISpatialBookmark * pBookmark,
+        /*[out]*/ struct IAGKeyframe * * ppKeyframe ) = 0;
+      virtual HRESULT __stdcall CaptureCurrentView (
+        /*[in]*/ struct IAGAnimationTracks * pTracks,
+        /*[in]*/ struct IAGAnimationEnvironment * pEnvironment ) = 0;
+      virtual HRESULT __stdcall CalculateDisplayFrames (
+        /*[in]*/ struct IAGAnimationTracks * pTracks,
+        /*[out]*/ long * pFrames ) = 0;
+      virtual HRESULT __stdcall SaveAnimationFile (
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[in]*/ BSTR pFilename,
+        /*[in]*/ enum esriArcGISVersion version ) = 0;
+      virtual HRESULT __stdcall LoadAnimationFile (
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[in]*/ BSTR pFilename ) = 0;
+};
+
+struct __declspec(uuid("4359310c-a461-47b6-80ed-902f8d1df790"))
+IAnimationExtension : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_AnimationEnvironment (
+        /*[out,retval]*/ struct IAGAnimationEnvironment * * ppAnimEnv ) = 0;
+      virtual HRESULT __stdcall get_AnimationTracks (
+        /*[out,retval]*/ struct IAGAnimationTracks * * ppTracks ) = 0;
+      virtual HRESULT __stdcall AnimationContentsModified ( ) = 0;
+};
+
+struct __declspec(uuid("bd570576-2130-4593-9c5f-c79e1c22788e"))
+IAGKeyframeInterval : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_AnimationInterval (
+        /*[in]*/ struct IAGKeyframe * pNextKeyframe,
+        /*[out,retval]*/ double * pInterval ) = 0;
+      virtual HRESULT __stdcall GetDisplayTime (
+        /*[out]*/ BSTR * pDisplayTime ) = 0;
+};
+
+struct __declspec(uuid("8d9fe1b4-25fe-4586-b011-c60f36ea0a8b"))
+IAGAnimationTrackKeyframes : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ActiveProperties (
+        /*[out,retval]*/ struct ILongArray * * ppActiveProps ) = 0;
+      virtual HRESULT __stdcall put_ActiveProperties (
+        /*[in]*/ struct ILongArray * ppActiveProps ) = 0;
+      virtual HRESULT __stdcall get_IsActiveProperty (
+        /*[in]*/ long propIndex,
+        /*[out,retval]*/ VARIANT_BOOL * pbIsActiveProp ) = 0;
+      virtual HRESULT __stdcall put_IsActiveProperty (
+        /*[in]*/ long propIndex,
+        /*[in]*/ VARIANT_BOOL pbIsActiveProp ) = 0;
+      virtual HRESULT __stdcall get_KeyframeCount (
+        /*[out,retval]*/ long * pKeyframeCount ) = 0;
+      virtual HRESULT __stdcall get_Keyframe (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IAGKeyframe * * ppKeyframe ) = 0;
+      virtual HRESULT __stdcall CreateKeyframe (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IAGKeyframe * * ppKeyframe ) = 0;
+      virtual HRESULT __stdcall InsertKeyframe (
+        /*[in]*/ struct IAGKeyframe * pKeyframe,
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall RemoveKeyframe (
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall RemoveAllKeyframes ( ) = 0;
+      virtual HRESULT __stdcall FindKeyframe (
+        /*[in]*/ BSTR Name,
+        /*[out]*/ struct IAGKeyframe * * ppKeyframe ) = 0;
+      virtual HRESULT __stdcall MoveKeyframe (
+        /*[in]*/ long originIndex,
+        /*[in]*/ long destinationIndex ) = 0;
+      virtual HRESULT __stdcall SortKeyframes ( ) = 0;
+      virtual HRESULT __stdcall ResetTimeStamps ( ) = 0;
+      virtual HRESULT __stdcall SaveObjectProperties (
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall RestoreObjectProperties (
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall put_EvenTimeStamps (
+        /*[in]*/ VARIANT_BOOL pbEvenTimeStamps ) = 0;
+      virtual HRESULT __stdcall get_EvenTimeStamps (
+        /*[out,retval]*/ VARIANT_BOOL * pbEvenTimeStamps ) = 0;
+      virtual HRESULT __stdcall get_LastInterpolatedKeyframe (
+        /*[out,retval]*/ struct IAGKeyframe * * ppKeyframe ) = 0;
+};
+
+struct __declspec(uuid("c6c65fc9-4041-4e16-83c6-9f3c9dc13dbd"))
+IVideoExporter : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall ExportAnimation (
+        /*[in]*/ struct IAGAnimationTracks * pTracks,
+        /*[in]*/ struct IAGAnimationEnvironment * pAnimEnv,
+        /*[in]*/ struct IStatusBar * pStatusBar ) = 0;
+      virtual HRESULT __stdcall get_Filter (
+        /*[out,retval]*/ BSTR * Filter ) = 0;
+      virtual HRESULT __stdcall get_FileExtension (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall put_ExportFileName (
+        /*[in]*/ BSTR fileName ) = 0;
+      virtual HRESULT __stdcall get_ExportFileName (
+        /*[out,retval]*/ BSTR * fileName ) = 0;
+      virtual HRESULT __stdcall put_FrameRate (
+        /*[in]*/ int pImagesPerSecond ) = 0;
+      virtual HRESULT __stdcall get_FrameRate (
+        /*[out,retval]*/ int * pImagesPerSecond ) = 0;
+      virtual HRESULT __stdcall put_UseCustomSize (
+        /*[in]*/ VARIANT_BOOL pbUseCustomSize ) = 0;
+      virtual HRESULT __stdcall get_UseCustomSize (
+        /*[out,retval]*/ VARIANT_BOOL * pbUseCustomSize ) = 0;
+      virtual HRESULT __stdcall PutCustomSize (
+        /*[in]*/ int width,
+        /*[in]*/ int height ) = 0;
+      virtual HRESULT __stdcall GetCustomSize (
+        /*[out]*/ int * pWidth,
+        /*[out]*/ int * pHeight ) = 0;
+      virtual HRESULT __stdcall get_IsInstalled (
+        /*[out,retval]*/ VARIANT_BOOL * pbIsInstalled ) = 0;
+      virtual HRESULT __stdcall get_CodecList (
+        /*[out,retval]*/ struct IStringArray * * ppCodecs ) = 0;
+      virtual HRESULT __stdcall get_CodecCodeList (
+        /*[out,retval]*/ struct IStringArray * * ppCodecCodes ) = 0;
+      virtual HRESULT __stdcall put_Codec (
+        /*[in]*/ BSTR pCodecName ) = 0;
+      virtual HRESULT __stdcall get_Codec (
+        /*[out,retval]*/ BSTR * pCodecName ) = 0;
+      virtual HRESULT __stdcall put_CodecCode (
+        /*[in]*/ BSTR pCodecCode ) = 0;
+      virtual HRESULT __stdcall get_CodecCode (
+        /*[out,retval]*/ BSTR * pCodecCode ) = 0;
+      virtual HRESULT __stdcall put_ColorDepth (
+        /*[in]*/ short pColorDepth ) = 0;
+      virtual HRESULT __stdcall get_ColorDepth (
+        /*[out,retval]*/ short * pColorDepth ) = 0;
+      virtual HRESULT __stdcall put_Quality (
+        /*[in]*/ int pQualityPercent ) = 0;
+      virtual HRESULT __stdcall get_Quality (
+        /*[out,retval]*/ int * pQualityPercent ) = 0;
+      virtual HRESULT __stdcall put_KeyFrameRate (
+        /*[in]*/ long pKeyFrameRate ) = 0;
+      virtual HRESULT __stdcall get_KeyFrameRate (
+        /*[out,retval]*/ long * pKeyFrameRate ) = 0;
+      virtual HRESULT __stdcall put_DataRate (
+        /*[in]*/ long pDataRate ) = 0;
+      virtual HRESULT __stdcall get_DataRate (
+        /*[out,retval]*/ long * pDataRate ) = 0;
+      virtual HRESULT __stdcall put_FrameDuration (
+        /*[in]*/ long pFrameDuration ) = 0;
+      virtual HRESULT __stdcall get_FrameDuration (
+        /*[out,retval]*/ long * pFrameDuration ) = 0;
+      virtual HRESULT __stdcall put_RecordWindow (
+        /*[in]*/ VARIANT_BOOL pbRecordAppWindow ) = 0;
+      virtual HRESULT __stdcall get_RecordWindow (
+        /*[out,retval]*/ VARIANT_BOOL * pbRecordAppWindow ) = 0;
+      virtual HRESULT __stdcall put_RecordOffScreen (
+        /*[in]*/ VARIANT_BOOL pbRecordOffScreen ) = 0;
+      virtual HRESULT __stdcall get_RecordOffScreen (
+        /*[out,retval]*/ VARIANT_BOOL * pbRecordOffScreen ) = 0;
+      virtual HRESULT __stdcall put_ShowSettingsDialog (
+        /*[in]*/ VARIANT_BOOL pbShowSettingsDialog ) = 0;
+      virtual HRESULT __stdcall get_ShowSettingsDialog (
+        /*[out,retval]*/ VARIANT_BOOL * pbShowSettingsDialog ) = 0;
+      virtual HRESULT __stdcall put_ResizeExportWindow (
+        /*[in]*/ VARIANT_BOOL pbResizeExportWindow ) = 0;
+      virtual HRESULT __stdcall get_ResizeExportWindow (
+        /*[out,retval]*/ VARIANT_BOOL * pbResizeExportWindow ) = 0;
+};
+
+struct __declspec(uuid("cebd50af-a7ec-4c98-b74d-a6b2937b1f06"))
+IVideoExporter2 : IVideoExporter
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_UseFrameExport (
+        /*[in]*/ VARIANT_BOOL pbUseFrameExport ) = 0;
+      virtual HRESULT __stdcall get_UseFrameExport (
+        /*[out,retval]*/ VARIANT_BOOL * pbUseFrameExport ) = 0;
+      virtual HRESULT __stdcall put_StartFrame (
+        /*[in]*/ long pStartFrame ) = 0;
+      virtual HRESULT __stdcall get_StartFrame (
+        /*[out,retval]*/ long * pStartFrame ) = 0;
+      virtual HRESULT __stdcall put_EndFrame (
+        /*[in]*/ long pEndFrame ) = 0;
+      virtual HRESULT __stdcall get_EndFrame (
+        /*[out,retval]*/ long * pEndFrame ) = 0;
+      virtual HRESULT __stdcall put_TotalFrames (
+        /*[in]*/ long pTotalFrames ) = 0;
+      virtual HRESULT __stdcall get_TotalFrames (
+        /*[out,retval]*/ long * pTotalFrames ) = 0;
+      virtual HRESULT __stdcall put_UseTwoStageExport (
+        /*[in]*/ VARIANT_BOOL pbUseTwoStageExport ) = 0;
+      virtual HRESULT __stdcall get_UseTwoStageExport (
+        /*[out,retval]*/ VARIANT_BOOL * pbUseTwoStageExport ) = 0;
+      virtual HRESULT __stdcall put_UseExportFromImages (
+        /*[in]*/ VARIANT_BOOL pbUseExportFromImages ) = 0;
+      virtual HRESULT __stdcall get_UseExportFromImages (
+        /*[out,retval]*/ VARIANT_BOOL * pbUseExportFromImages ) = 0;
+      virtual HRESULT __stdcall put_ImageFolderName (
+        /*[in]*/ BSTR pImageFolderName ) = 0;
+      virtual HRESULT __stdcall get_ImageFolderName (
+        /*[out,retval]*/ BSTR * pImageFolderName ) = 0;
+      virtual HRESULT __stdcall put_ImageFormat (
+        /*[in]*/ BSTR pImageFormat ) = 0;
+      virtual HRESULT __stdcall get_ImageFormat (
+        /*[out,retval]*/ BSTR * pImageFormat ) = 0;
+      virtual HRESULT __stdcall ExportVideoFromImages (
+        /*[in]*/ double duration ) = 0;
+      virtual HRESULT __stdcall put_WriteAGVFile (
+        /*[in]*/ VARIANT_BOOL pbWriteAGVFile ) = 0;
+      virtual HRESULT __stdcall get_WriteAGVFile (
+        /*[out,retval]*/ VARIANT_BOOL * pbWriteAGVFile ) = 0;
+      virtual HRESULT __stdcall ExportVideoFromTimeSlider ( ) = 0;
+};
+
+struct __declspec(uuid("22a2663f-5edb-4ce3-9f97-53db2d3d4caa"))
+IAGAnimationPlayer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall PlayAnimation (
+        /*[in]*/ struct IAGAnimationTracks * pTracks,
+        /*[in]*/ struct IAGAnimationEnvironment * pEnvironment,
+        /*[in]*/ struct IStatusBar * pStatusBar ) = 0;
+      virtual HRESULT __stdcall RecordAnimation (
+        /*[in]*/ struct IAGAnimationTracks * pTracks,
+        /*[in]*/ struct IAGAnimationEnvironment * pEnvironment,
+        /*[in]*/ VARIANT_BOOL bOverwrite ) = 0;
+      virtual HRESULT __stdcall PauseAnimation ( ) = 0;
+      virtual HRESULT __stdcall StopAnimation ( ) = 0;
+};
+
+struct __declspec(uuid("3bd31712-38e4-4b6f-9ef5-bd46f90276a9"))
+IVideoExportUtils : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetOffScreenBitmap (
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[out]*/ long * * ppInfo,
+        /*[out]*/ long * * ppBitmap ) = 0;
+      virtual HRESULT __stdcall GetWindowBitmap (
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[out]*/ long * * ppInfo,
+        /*[out]*/ long * * ppBitmap ) = 0;
+      virtual HRESULT __stdcall RestorePreviousContext (
+        /*[in]*/ struct IAGAnimationContainer * pContainer ) = 0;
+      virtual HRESULT __stdcall GetOffScreenBitmapHandle (
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[out]*/ OLE_HANDLE * phBitmap ) = 0;
+      virtual HRESULT __stdcall GetWindowBitmapHandle (
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[out]*/ OLE_HANDLE * phBitmap ) = 0;
+      virtual HRESULT __stdcall GetOffScreenTiledBitmap (
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[in]*/ struct tagRECT * pOutputRect,
+        /*[out]*/ long * * ppInfo,
+        /*[out]*/ long * * ppBitmap ) = 0;
+      virtual HRESULT __stdcall GetOffScreenTiledBitmapHandle (
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[in]*/ struct tagRECT * pOutputRect,
+        /*[out]*/ OLE_HANDLE * phBitmap ) = 0;
+      virtual HRESULT __stdcall get_BBoxNavigationMode (
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[out,retval]*/ VARIANT_BOOL * pbBBoxMode ) = 0;
+      virtual HRESULT __stdcall put_BBoxNavigationMode (
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[in]*/ VARIANT_BOOL pbBBoxMode ) = 0;
+};
+
+struct __declspec(uuid("b082ac71-d735-48f5-b918-8def9129bb2c"))
+IVideoExportUtils2 : IVideoExportUtils
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetCameraProperties (
+        /*[in]*/ struct IAGAnimationContainer * pContainer,
+        /*[out]*/ struct IDoubleArray * * ppCameraProps ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_esriAnimation =
+    {0x643d491a,0xd5bd,0x4788,{0xb6,0x10,0xa0,0xf5,0x3c,0xba,0x09,0x40}};
+extern "C" const GUID __declspec(selectany) IID_IAGAnimationProtectNames =
+    {0x943729a4,0xbbc6,0x4c3c,{0xb0,0x41,0x44,0x97,0x3b,0xed,0x92,0xf1}};
+extern "C" const GUID __declspec(selectany) CLSID_AGAnimationTrackContainer =
+    {0x14f90f79,0x8c45,0x4f32,{0xb1,0x9f,0x82,0xe1,0x2a,0x7b,0x2a,0x7c}};
+extern "C" const GUID __declspec(selectany) CLSID_AnimationExtension =
+    {0xe4f593da,0x3675,0x4778,{0x95,0xee,0xfe,0x81,0x97,0xbb,0x43,0xea}};
+extern "C" const GUID __declspec(selectany) IID_IAGAnimationTypeUI =
+    {0x8e578405,0x2413,0x420d,{0x9f,0x26,0x84,0x12,0x9e,0x71,0x7e,0xf5}};
+extern "C" const GUID __declspec(selectany) IID_IAGKeyframeUI =
+    {0x30a602cf,0xd150,0x44ef,{0x8d,0xc1,0x1d,0x68,0xb3,0xcb,0xfe,0x04}};
+extern "C" const GUID __declspec(selectany) IID_IAGAnimationTrackExtensions =
+    {0xcc771129,0xd078,0x47e8,{0x86,0xff,0x75,0x17,0xe1,0xdc,0x6b,0xf3}};
+extern "C" const GUID __declspec(selectany) CLSID_AGAnimationTrack =
+    {0x0705b589,0xec1c,0x43fb,{0x82,0x78,0xba,0x3e,0x03,0x4c,0x15,0xc0}};
+extern "C" const GUID __declspec(selectany) CLSID_AGAnimationEnvironment =
+    {0x204eb00f,0xbebe,0x435e,{0xbc,0x6c,0x39,0x0e,0xc5,0xd0,0xb6,0x0c}};
+extern "C" const GUID __declspec(selectany) IID_ISequentialImageExporter =
+    {0x618a11e0,0x2f95,0x4f40,{0x97,0xad,0x6c,0xd0,0xf7,0xa2,0xdf,0x2c}};
+extern "C" const GUID __declspec(selectany) CLSID_AnimationExporterAVI =
+    {0x4463eab5,0xffa6,0x49a3,{0x8e,0x39,0x97,0xf4,0xbd,0xf0,0x90,0x4a}};
+extern "C" const GUID __declspec(selectany) IID_IAnimationEvents =
+    {0x0fa6256f,0x496a,0x47b3,{0x9f,0x56,0x4f,0x52,0xd7,0x56,0x89,0xf2}};
+extern "C" const GUID __declspec(selectany) CLSID_AnimationExporterQT =
+    {0xb645cdad,0xac53,0x470c,{0x8e,0x75,0xc6,0x3e,0x94,0x44,0x0c,0x20}};
+extern "C" const GUID __declspec(selectany) CLSID_AnimationExporterSeqImages =
+    {0xf0a18e60,0xf2bd,0x441d,{0x9e,0x0b,0x76,0x7d,0x6a,0x01,0xd7,0x8b}};
+extern "C" const GUID __declspec(selectany) IID_IAnimationContentEvents =
+    {0x35156eb9,0xb407,0x4b85,{0xbe,0xaf,0x0d,0xd7,0x15,0x8b,0xb3,0xc0}};
+extern "C" const GUID __declspec(selectany) CLSID_AGImportPathOptions =
+    {0xaef1c592,0xa90a,0x4cf8,{0x99,0x17,0xae,0xd7,0x51,0xc4,0xf6,0xca}};
+extern "C" const GUID __declspec(selectany) CLSID_AGGroupAnimationOptions =
+    {0x16a27ccc,0x735a,0x4015,{0xb8,0x70,0x72,0x49,0xfd,0x15,0xa6,0x07}};
+extern "C" const GUID __declspec(selectany) CLSID_AGAnimationUtils =
+    {0x2835514b,0x1a02,0x4142,{0x84,0x74,0x31,0xd4,0x8d,0x90,0x63,0xa8}};
+extern "C" const GUID __declspec(selectany) CLSID_AnimationEventsHelper =
+    {0xef6de832,0xda87,0x45d5,{0xa3,0xde,0x6a,0x9d,0x87,0xd0,0xc3,0xd1}};
+extern "C" const GUID __declspec(selectany) CLSID_AnimationContentEventsHelper =
+    {0x8d9de3ed,0xe1a2,0x4369,{0xb1,0x4d,0x0f,0x9f,0x0a,0xbf,0xbd,0x42}};
+extern "C" const GUID __declspec(selectany) IID_ITimeWindow =
+    {0x6ecfe5f7,0x1227,0x4565,{0xac,0x21,0x62,0x63,0x16,0xa8,0x4d,0x0a}};
+extern "C" const GUID __declspec(selectany) CLSID_MapViewKeyframe =
+    {0x63b8d8b8,0x85fb,0x44e9,{0x9c,0x30,0x20,0x30,0xf5,0xc1,0x97,0x62}};
+extern "C" const GUID __declspec(selectany) CLSID_MapLayerKeyframe =
+    {0xa6a38cd6,0xe11f,0x49a5,{0xbc,0x21,0xe8,0xbf,0xba,0x7f,0x2b,0xd6}};
+extern "C" const GUID __declspec(selectany) CLSID_AnimationTypeMapView =
+    {0xfd22a714,0x0eef,0x4312,{0x87,0x03,0xd8,0x1e,0x54,0x76,0xe2,0x8a}};
+extern "C" const GUID __declspec(selectany) CLSID_AnimationTypeMapLayer =
+    {0x0a965644,0x11f1,0x4901,{0xa0,0xcf,0x99,0x89,0xbf,0xd2,0x7b,0x6d}};
+extern "C" const GUID __declspec(selectany) CLSID_AnimationTypeTimeLayer =
+    {0xa85b10a9,0x9eab,0x4f93,{0x92,0x59,0x5f,0xba,0xe9,0x80,0x00,0xeb}};
+extern "C" const GUID __declspec(selectany) CLSID_TimeLayerKeyframe =
+    {0x1c11f69b,0xb438,0x486f,{0x9c,0x79,0xd9,0x8d,0x9f,0x23,0xd1,0x5a}};
+extern "C" const GUID __declspec(selectany) CLSID_TimeWindow =
+    {0x01ba3b3a,0x80ab,0x423b,{0xbb,0x7c,0x93,0x13,0x7c,0xda,0xaf,0xe5}};
+extern "C" const GUID __declspec(selectany) CLSID_TimeLayerTrackExtension =
+    {0x99df44c5,0x02d3,0x4cf2,{0xad,0x42,0x59,0xfd,0x26,0xb6,0x14,0xfa}};
+extern "C" const GUID __declspec(selectany) CLSID_TimeKeyframe =
+    {0x2b084a6e,0x39fb,0x427a,{0x81,0x83,0x2a,0x34,0x6c,0xf9,0xe6,0xf9}};
+extern "C" const GUID __declspec(selectany) CLSID_AnimationTypeTime =
+    {0x302ebe2c,0x6c06,0x4b40,{0xae,0x6e,0xc6,0x76,0x00,0xc3,0x9d,0x68}};
+extern "C" const GUID __declspec(selectany) IID_IAGAnimationTrack =
+    {0x79dd6360,0x268d,0x47ee,{0xa4,0xfc,0x38,0x4f,0x2c,0xbe,0x1a,0xa5}};
+extern "C" const GUID __declspec(selectany) IID_ITimeLayerTrackExtension =
+    {0x1160695c,0x2726,0x41cd,{0xba,0xcb,0x6b,0x48,0x60,0x35,0x48,0x4c}};
+extern "C" const GUID __declspec(selectany) IID_IAnimationTypeTimeLayer =
+    {0xd787b54e,0x6ad9,0x4d7f,{0x9b,0x1d,0x8b,0xcb,0x66,0x7f,0x6a,0x46}};
+extern "C" const GUID __declspec(selectany) IID_IAnimationTypeTime =
+    {0x592c4701,0xb0b2,0x4963,{0xb2,0xd2,0x53,0x7b,0xf4,0x8d,0x7e,0x61}};
+extern "C" const GUID __declspec(selectany) IID_IAGAnimationType =
+    {0x17559cca,0x0532,0x4c48,{0x90,0x31,0xb2,0x6d,0x0f,0xe8,0x05,0x85}};
+extern "C" const GUID __declspec(selectany) IID_IAGAnimationEnvironment =
+    {0x6e6babc1,0x3f0a,0x47f1,{0xbb,0xaa,0x53,0xad,0x04,0xe6,0x31,0x1d}};
+extern "C" const GUID __declspec(selectany) IID_IAGAnimationContainer =
+    {0xac5655cd,0x56cf,0x4c9f,{0xa1,0xc0,0xa9,0xf8,0x0b,0xa4,0x53,0xea}};
+extern "C" const GUID __declspec(selectany) IID_IAGAnimationTracks =
+    {0xb71421ea,0xe25e,0x49dd,{0xa0,0x7e,0x40,0xdc,0x9d,0x6b,0xd5,0x75}};
+extern "C" const GUID __declspec(selectany) IID_IAGGroupAnimationOptions =
+    {0xa09e0261,0xae4f,0x4351,{0xa4,0x82,0x72,0xa3,0xf8,0x05,0x38,0x0b}};
+extern "C" const GUID __declspec(selectany) IID_IAGImportPathOptions =
+    {0xa5f484f6,0x9e72,0x4a6b,{0x94,0x64,0xe6,0xf7,0xbe,0x89,0x7b,0x13}};
+extern "C" const GUID __declspec(selectany) IID_IAGKeyframe =
+    {0x7c35dc01,0x7cdf,0x463e,{0x9b,0x7a,0x87,0xc9,0xae,0x76,0x9b,0xef}};
+extern "C" const GUID __declspec(selectany) IID_IAGAnimationUtils =
+    {0xd0f357c6,0xb826,0x4f9a,{0x9c,0x62,0xcb,0x91,0x9f,0xcb,0x84,0xa8}};
+extern "C" const GUID __declspec(selectany) IID_IAnimationExtension =
+    {0x4359310c,0xa461,0x47b6,{0x80,0xed,0x90,0x2f,0x8d,0x1d,0xf7,0x90}};
+extern "C" const GUID __declspec(selectany) IID_IAGKeyframeInterval =
+    {0xbd570576,0x2130,0x4593,{0x9c,0x5f,0xc7,0x9e,0x1c,0x22,0x78,0x8e}};
+extern "C" const GUID __declspec(selectany) IID_IAGAnimationTrackKeyframes =
+    {0x8d9fe1b4,0x25fe,0x4586,{0xb0,0x11,0xc6,0x0f,0x36,0xea,0x0a,0x8b}};
+extern "C" const GUID __declspec(selectany) IID_IVideoExporter =
+    {0xc6c65fc9,0x4041,0x4e16,{0x83,0xc6,0x9f,0x3c,0x9d,0xc1,0x3d,0xbd}};
+extern "C" const GUID __declspec(selectany) IID_IVideoExporter2 =
+    {0xcebd50af,0xa7ec,0x4c98,{0xb7,0x4d,0xa6,0xb2,0x93,0x7b,0x1f,0x06}};
+extern "C" const GUID __declspec(selectany) IID_IAGAnimationPlayer =
+    {0x22a2663f,0x5edb,0x4ce3,{0x9f,0x97,0x53,0xdb,0x2d,0x3d,0x4c,0xaa}};
+extern "C" const GUID __declspec(selectany) IID_IVideoExportUtils =
+    {0x3bd31712,0x38e4,0x4b6f,{0x9e,0xf5,0xbd,0x46,0xf9,0x02,0x76,0xa9}};
+extern "C" const GUID __declspec(selectany) IID_IVideoExportUtils2 =
+    {0xb082ac71,0xd735,0x48f5,{0xb9,0x18,0x8d,0xef,0x91,0x29,0xbb,0x2c}};
+
+#pragma pack(pop)

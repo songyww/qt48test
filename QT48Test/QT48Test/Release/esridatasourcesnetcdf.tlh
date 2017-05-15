@@ -1,0 +1,341 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (227a4604).
+//
+// e:\vsproject\qt48test\qt48test\release\esridatasourcesnetcdf.tlh
+//
+// C++ source equivalent of Win32 type library esridatasourcesnetcdf.olb
+// compiler-generated file created 12/01/16 at 15:39:11 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("28ed84cd-fb06-41a0-9a55-e196441d169a"))
+/* LIBID */ __esriDataSourcesNetCDF;
+struct __declspec(uuid("00e0f03e-d94d-4cb0-a711-7f7c59c51196"))
+/* interface */ IProtectNamesDataSourcesNetCDF;
+struct /* coclass */ NetCDFWorkspaceFactory;
+enum esriNetCDFError;
+struct __declspec(uuid("4656178f-0eda-4446-9d51-900e96efd27c"))
+/* interface */ IMDDatasetView;
+struct __declspec(uuid("88b7b494-1c1d-4b6c-a1db-28900afa96ec"))
+/* interface */ IMDWorkspace;
+struct __declspec(uuid("08cebfb9-db3e-433b-bf80-84adf3424fb0"))
+/* interface */ IMDRasterDatasetView;
+struct __declspec(uuid("6c4f3247-039e-4d7b-a815-df16a04b9827"))
+/* interface */ IMDTableView;
+struct __declspec(uuid("f065307e-3adf-4b57-b59d-4ba1465bb40c"))
+/* interface */ IMDFeatureClassView;
+struct __declspec(uuid("2d289ea0-e56e-44e9-bdb7-1bc829222cc3"))
+/* interface */ INetCDFWorkspace;
+struct /* coclass */ NetCDFWorkspace;
+struct /* coclass */ NetCDFRasterDatasetName;
+struct /* coclass */ NetCDFTableName;
+struct /* coclass */ NetCDFFeatureClassName;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IProtectNamesDataSourcesNetCDF, __uuidof(IProtectNamesDataSourcesNetCDF));
+_COM_SMARTPTR_TYPEDEF(IMDDatasetView, __uuidof(IMDDatasetView));
+_COM_SMARTPTR_TYPEDEF(IMDWorkspace, __uuidof(IMDWorkspace));
+_COM_SMARTPTR_TYPEDEF(IMDRasterDatasetView, __uuidof(IMDRasterDatasetView));
+_COM_SMARTPTR_TYPEDEF(IMDTableView, __uuidof(IMDTableView));
+_COM_SMARTPTR_TYPEDEF(IMDFeatureClassView, __uuidof(IMDFeatureClassView));
+_COM_SMARTPTR_TYPEDEF(INetCDFWorkspace, __uuidof(INetCDFWorkspace));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("00e0f03e-d94d-4cb0-a711-7f7c59c51196"))
+IProtectNamesDataSourcesNetCDF : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Variable ( ) = 0;
+};
+
+struct __declspec(uuid("df61a9e1-b8e2-498f-bde5-98de42e801f9"))
+NetCDFWorkspaceFactory;
+    // [ default ] interface IUnknown
+    // interface IWorkspaceFactory
+    // interface IWorkspaceFactory2
+    // interface ISupportErrorInfo
+
+enum __declspec(uuid("284ae68a-f345-4de0-84a9-7f1cf72a1e36"))
+esriNetCDFError
+{
+    E_NETCDF_FILE_NOT_FOUND = -2147217407,
+    E_NETCDF_FILE_INVALID_EXTENSION = -2147217406,
+    E_NETCDF_RENDERER_INVALID_BAND_INDEX = -2147217405,
+    E_NETCDF_FILE_FAILED_TO_RENAME = -2147217404,
+    E_NETCDF_FILE_FAILED_TO_COPY = -2147217403,
+    E_NETCDF_ACCESS_IS_DENIED = -2147217402,
+    E_NETCDF_DATASET_EXIST = -2147217401,
+    E_NETCDF_UNKNOWN_ERROR = -2147217408
+};
+
+struct __declspec(uuid("4656178f-0eda-4446-9d51-900e96efd27c"))
+IMDDatasetView : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SelectDimensionByValue (
+        /*[in]*/ BSTR dim,
+        /*[in]*/ VARIANT vValue ) = 0;
+      virtual HRESULT __stdcall SelectDimensionByIndex (
+        /*[in]*/ BSTR dim,
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall GetDimensionValue (
+        /*[in]*/ BSTR dim,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall GetDimensionIndex (
+        /*[in]*/ BSTR dim,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetSelectedDimensions (
+        /*[out,retval]*/ struct IStringArray * * ppNames ) = 0;
+      virtual HRESULT __stdcall GetSelectedDimensionValues (
+        /*[out,retval]*/ struct IVariantArray * * ppValues ) = 0;
+      virtual HRESULT __stdcall GetSelectedDimensionIndices (
+        /*[out,retval]*/ struct ILongArray * * ppIndices ) = 0;
+      virtual HRESULT __stdcall ClearSelectedDimensions ( ) = 0;
+      virtual HRESULT __stdcall GetDimensions (
+        /*[out,retval]*/ struct IStringArray * * ppDims ) = 0;
+};
+
+struct __declspec(uuid("88b7b494-1c1d-4b6c-a1db-28900afa96ec"))
+IMDWorkspace : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CreateView (
+        /*[in]*/ BSTR viewName,
+        /*[in]*/ struct IMDDatasetView * pView,
+        /*[out,retval]*/ struct IDataset * * ppOut ) = 0;
+};
+
+struct __declspec(uuid("08cebfb9-db3e-433b-bf80-84adf3424fb0"))
+IMDRasterDatasetView : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_XDimension (
+        /*[out,retval]*/ BSTR * pXDim ) = 0;
+      virtual HRESULT __stdcall put_XDimension (
+        /*[in]*/ BSTR pXDim ) = 0;
+      virtual HRESULT __stdcall get_YDimension (
+        /*[out,retval]*/ BSTR * pYDim ) = 0;
+      virtual HRESULT __stdcall put_YDimension (
+        /*[in]*/ BSTR pYDim ) = 0;
+      virtual HRESULT __stdcall get_BandDimension (
+        /*[out,retval]*/ BSTR * pBandDim ) = 0;
+      virtual HRESULT __stdcall put_BandDimension (
+        /*[in]*/ BSTR pBandDim ) = 0;
+      virtual HRESULT __stdcall get_Variable (
+        /*[out,retval]*/ BSTR * pVar ) = 0;
+      virtual HRESULT __stdcall put_Variable (
+        /*[in]*/ BSTR pVar ) = 0;
+};
+
+struct __declspec(uuid("6c4f3247-039e-4d7b-a815-df16a04b9827"))
+IMDTableView : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_VariableList (
+        /*[out,retval]*/ struct IStringArray * * ppVars ) = 0;
+      virtual HRESULT __stdcall put_VariableList (
+        /*[in]*/ struct IStringArray * ppVars ) = 0;
+      virtual HRESULT __stdcall get_DimensionList (
+        /*[out,retval]*/ struct IStringArray * * ppDims ) = 0;
+      virtual HRESULT __stdcall put_DimensionList (
+        /*[in]*/ struct IStringArray * ppDims ) = 0;
+};
+
+struct __declspec(uuid("f065307e-3adf-4b57-b59d-4ba1465bb40c"))
+IMDFeatureClassView : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_VariableList (
+        /*[out,retval]*/ struct IStringArray * * ppVars ) = 0;
+      virtual HRESULT __stdcall put_VariableList (
+        /*[in]*/ struct IStringArray * ppVars ) = 0;
+      virtual HRESULT __stdcall get_XDimension (
+        /*[out,retval]*/ BSTR * pXDim ) = 0;
+      virtual HRESULT __stdcall put_XDimension (
+        /*[in]*/ BSTR pXDim ) = 0;
+      virtual HRESULT __stdcall get_YDimension (
+        /*[out,retval]*/ BSTR * pYDim ) = 0;
+      virtual HRESULT __stdcall put_YDimension (
+        /*[in]*/ BSTR pYDim ) = 0;
+      virtual HRESULT __stdcall get_RowDimensionList (
+        /*[out,retval]*/ struct IStringArray * * ppRowDims ) = 0;
+      virtual HRESULT __stdcall put_RowDimensionList (
+        /*[in]*/ struct IStringArray * ppRowDims ) = 0;
+      virtual HRESULT __stdcall get_ZItem (
+        /*[out,retval]*/ BSTR * pZItem ) = 0;
+      virtual HRESULT __stdcall put_ZItem (
+        /*[in]*/ BSTR pZItem ) = 0;
+      virtual HRESULT __stdcall get_MItem (
+        /*[out,retval]*/ BSTR * pMItem ) = 0;
+      virtual HRESULT __stdcall put_MItem (
+        /*[in]*/ BSTR pMItem ) = 0;
+};
+
+struct __declspec(uuid("2d289ea0-e56e-44e9-bdb7-1bc829222cc3"))
+INetCDFWorkspace : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetVariables (
+        /*[out,retval]*/ struct IStringArray * * ppOut ) = 0;
+      virtual HRESULT __stdcall GetDimensions (
+        /*[out,retval]*/ struct IStringArray * * ppOut ) = 0;
+      virtual HRESULT __stdcall GetAttributeNames (
+        /*[in]*/ BSTR varName,
+        /*[out,retval]*/ struct IStringArray * * ppAttNames ) = 0;
+      virtual HRESULT __stdcall GetDimensionSize (
+        /*[in]*/ BSTR dimName,
+        /*[out,retval]*/ long * dimSize ) = 0;
+      virtual HRESULT __stdcall GetDimensionsByVariable (
+        /*[in]*/ BSTR varName,
+        /*[out,retval]*/ struct IStringArray * * ppOut ) = 0;
+      virtual HRESULT __stdcall GetVariablesByDimension (
+        /*[in]*/ BSTR dimName,
+        /*[out,retval]*/ struct IStringArray * * ppOut ) = 0;
+      virtual HRESULT __stdcall GetDimensionValue (
+        /*[in]*/ BSTR dimName,
+        /*[in]*/ long index,
+        /*[out,retval]*/ VARIANT * vValue ) = 0;
+      virtual HRESULT __stdcall GetDimensionIndex (
+        /*[in]*/ BSTR dimName,
+        /*[in]*/ VARIANT vValue,
+        /*[out,retval]*/ long * index ) = 0;
+      virtual HRESULT __stdcall GetAttributeValue (
+        /*[in]*/ BSTR varName,
+        /*[in]*/ BSTR attName,
+        /*[in]*/ long valueIndex,
+        /*[out,retval]*/ VARIANT * pValue ) = 0;
+      virtual HRESULT __stdcall GetDimensionValues (
+        /*[in]*/ BSTR dimName,
+        /*[out,retval]*/ struct IVariantArray * * ppValues ) = 0;
+      virtual HRESULT __stdcall GetSpatialReference (
+        /*[in]*/ BSTR varName,
+        /*[in]*/ BSTR xDim,
+        /*[in]*/ BSTR yDim,
+        /*[out,retval]*/ struct ISpatialReference * * ppSpatRef ) = 0;
+      virtual HRESULT __stdcall GetFieldType (
+        /*[in]*/ BSTR name,
+        /*[out,retval]*/ enum esriFieldType * fieldType ) = 0;
+      virtual HRESULT __stdcall GetValueFromIndex (
+        /*[in]*/ long index,
+        /*[in]*/ BSTR name,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall GetIndexFromValue (
+        /*[in]*/ BSTR name,
+        /*[in]*/ VARIANT value,
+        /*[out,retval]*/ long * index ) = 0;
+};
+
+struct __declspec(uuid("434116cc-611e-44be-a194-e4594c2fc926"))
+NetCDFWorkspace;
+    // [ default ] interface IUnknown
+    // interface IWorkspace
+    // interface INetCDFWorkspace
+    // interface IMDWorkspace
+    // interface IDataset
+    // interface ISupportErrorInfo
+    // interface IWorkspaceProperties
+
+struct __declspec(uuid("8cb4aa2b-58ce-438f-8cd8-f5f0bef41aaf"))
+NetCDFRasterDatasetName;
+    // [ default ] interface IUnknown
+    // interface IName
+    // interface IDatasetName
+    // interface IPersistStream
+    // interface IRasterDatasetName
+    // interface IMDDatasetView
+    // interface IMDRasterDatasetView
+    // interface IMetadata
+    // interface IMetadataEdit
+    // interface INativeTypeInfo
+    // interface IDatasetNameFileStat
+    // interface IDatasetNameFileSize
+
+struct __declspec(uuid("2d597a23-a989-43c1-9b1b-19e75bbfb78f"))
+NetCDFTableName;
+    // [ default ] interface IUnknown
+    // interface IName
+    // interface IDatasetName
+    // interface ITableName
+    // interface IPersistStream
+    // interface IMDDatasetView
+    // interface IMDTableView
+
+struct __declspec(uuid("ee5ef168-7b62-4ed5-89bb-ff73d390af93"))
+NetCDFFeatureClassName;
+    // [ default ] interface IUnknown
+    // interface IName
+    // interface IDatasetName
+    // interface IPersistStream
+    // interface IMDDatasetView
+    // interface IMDFeatureClassView
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_esriDataSourcesNetCDF =
+    {0x28ed84cd,0xfb06,0x41a0,{0x9a,0x55,0xe1,0x96,0x44,0x1d,0x16,0x9a}};
+extern "C" const GUID __declspec(selectany) IID_IProtectNamesDataSourcesNetCDF =
+    {0x00e0f03e,0xd94d,0x4cb0,{0xa7,0x11,0x7f,0x7c,0x59,0xc5,0x11,0x96}};
+extern "C" const GUID __declspec(selectany) CLSID_NetCDFWorkspaceFactory =
+    {0xdf61a9e1,0xb8e2,0x498f,{0xbd,0xe5,0x98,0xde,0x42,0xe8,0x01,0xf9}};
+extern "C" const GUID __declspec(selectany) IID_IMDDatasetView =
+    {0x4656178f,0x0eda,0x4446,{0x9d,0x51,0x90,0x0e,0x96,0xef,0xd2,0x7c}};
+extern "C" const GUID __declspec(selectany) IID_IMDWorkspace =
+    {0x88b7b494,0x1c1d,0x4b6c,{0xa1,0xdb,0x28,0x90,0x0a,0xfa,0x96,0xec}};
+extern "C" const GUID __declspec(selectany) IID_IMDRasterDatasetView =
+    {0x08cebfb9,0xdb3e,0x433b,{0xbf,0x80,0x84,0xad,0xf3,0x42,0x4f,0xb0}};
+extern "C" const GUID __declspec(selectany) IID_IMDTableView =
+    {0x6c4f3247,0x039e,0x4d7b,{0xa8,0x15,0xdf,0x16,0xa0,0x4b,0x98,0x27}};
+extern "C" const GUID __declspec(selectany) IID_IMDFeatureClassView =
+    {0xf065307e,0x3adf,0x4b57,{0xb5,0x9d,0x4b,0xa1,0x46,0x5b,0xb4,0x0c}};
+extern "C" const GUID __declspec(selectany) IID_INetCDFWorkspace =
+    {0x2d289ea0,0xe56e,0x44e9,{0xbd,0xb7,0x1b,0xc8,0x29,0x22,0x2c,0xc3}};
+extern "C" const GUID __declspec(selectany) CLSID_NetCDFWorkspace =
+    {0x434116cc,0x611e,0x44be,{0xa1,0x94,0xe4,0x59,0x4c,0x2f,0xc9,0x26}};
+extern "C" const GUID __declspec(selectany) CLSID_NetCDFRasterDatasetName =
+    {0x8cb4aa2b,0x58ce,0x438f,{0x8c,0xd8,0xf5,0xf0,0xbe,0xf4,0x1a,0xaf}};
+extern "C" const GUID __declspec(selectany) CLSID_NetCDFTableName =
+    {0x2d597a23,0xa989,0x43c1,{0x9b,0x1b,0x19,0xe7,0x5b,0xbf,0xb7,0x8f}};
+extern "C" const GUID __declspec(selectany) CLSID_NetCDFFeatureClassName =
+    {0xee5ef168,0x7b62,0x4ed5,{0x89,0xbb,0xff,0x73,0xd3,0x90,0xaf,0x93}};
+
+#pragma pack(pop)

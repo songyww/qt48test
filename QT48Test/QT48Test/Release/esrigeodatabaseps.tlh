@@ -1,0 +1,32 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (ad968ace).
+//
+// e:\vsproject\qt48test\qt48test\release\esrigeodatabaseps.tlh
+//
+// C++ source equivalent of Win32 type library esrigeodatabaseps.olb
+// compiler-generated file created 12/01/16 at 15:39:10 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("69512848-b1d3-4d8f-8631-9a4b756c8e54"))
+/* LIBID */ __esriGeoDatabasePS;
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_esriGeoDatabasePS =
+    {0x69512848,0xb1d3,0x4d8f,{0x86,0x31,0x9a,0x4b,0x75,0x6c,0x8e,0x54}};
+
+#pragma pack(pop)

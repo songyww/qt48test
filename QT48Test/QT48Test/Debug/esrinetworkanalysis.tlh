@@ -1,0 +1,1094 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (251fe262).
+//
+// e:\vsproject\qt48test\qt48test\debug\esrinetworkanalysis.tlh
+//
+// C++ source equivalent of Win32 type library esrinetworkanalysis.olb
+// compiler-generated file created 06/01/16 at 16:28:38 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("9d130258-c75f-41ef-892a-692b073e1aac"))
+/* LIBID */ __esriNetworkAnalysis;
+struct __declspec(uuid("54fb1502-a640-11d0-9cc9-00805f74d243"))
+/* interface */ INetSolver;
+struct __declspec(uuid("803b5ff0-0ab3-11d1-9cd6-00805f74d243"))
+/* interface */ INetElementBarriers;
+struct __declspec(uuid("16d930c2-18a8-11d3-9f4b-00c04f68e627"))
+/* interface */ ISelectionSetBarriers;
+struct __declspec(uuid("54fb1501-a640-11d0-9cc9-00805f74d243"))
+/* interface */ ITraceFlowSolver;
+struct __declspec(uuid("19f99c8e-a089-11d0-9cc9-00805f74d243"))
+/* interface */ IJunctionFlag;
+struct __declspec(uuid("19f99c8f-a089-11d0-9cc9-00805f74d243"))
+/* interface */ IEdgeFlag;
+enum esriFlowMethod;
+enum esriFlowElements;
+enum esriShortestPathObjFn;
+enum esriWeightFilterType;
+struct __declspec(uuid("f187bbf8-59b1-11d4-a682-0008c7d3bbfa"))
+/* interface */ INetElementBarriers2;
+struct __declspec(uuid("d940e0c1-5918-4601-bafd-0ff949657b22"))
+/* interface */ INetElementBarriersGEN;
+struct __declspec(uuid("19f99c8d-a089-11d0-9cc9-00805f74d243"))
+/* interface */ INetFlag;
+struct __declspec(uuid("2424eb71-97d9-4e66-9772-1bdf3d72261a"))
+/* interface */ IEIDInfo;
+struct __declspec(uuid("70f98340-ccf3-4293-8b1c-7ca1e3bcf97a"))
+/* interface */ IEnumEIDInfo;
+struct __declspec(uuid("212ad7b8-747a-11d4-a68d-0008c7d3bbfa"))
+/* interface */ IEIDHelper;
+struct __declspec(uuid("857dc0c9-c156-11d2-babe-00c04fa33c20"))
+/* interface */ IFlagDisplay;
+struct __declspec(uuid("08855cab-c158-11d2-babe-00c04fa33c20"))
+/* interface */ IEdgeFlagDisplay;
+struct __declspec(uuid("9b908d33-c1ce-11d2-babe-00c04fa33c20"))
+/* interface */ IJunctionFlagDisplay;
+struct __declspec(uuid("246c27a0-276c-4fbb-8d61-1163159e7f4b"))
+/* interface */ IPointToEID;
+struct __declspec(uuid("625024ca-7e97-41df-abf5-f1c434b7dbc2"))
+/* interface */ ITraceFlowSolverGEN;
+struct __declspec(uuid("f00759f5-60c0-4077-bd1b-61b49c47ac7a"))
+/* interface */ INetSolverWeightsGEN;
+struct /* coclass */ PointToEID;
+struct /* coclass */ EIDHelper;
+struct /* coclass */ JunctionFlag;
+struct /* coclass */ EdgeFlag;
+struct /* coclass */ EIDInfo;
+struct /* coclass */ EnumEIDInfo;
+struct /* coclass */ EdgeFlagDisplay;
+struct /* coclass */ JunctionFlagDisplay;
+struct /* coclass */ TraceFlowSolver;
+struct /* coclass */ NetElementBarriers;
+struct /* coclass */ SelectionSetBarriers;
+struct __declspec(uuid("9241e22e-72a1-11d3-9f66-00c04f68e627"))
+/* interface */ INetSolverWeights;
+struct __declspec(uuid("5343121e-1232-11d4-9f8b-00c04f68e627"))
+/* interface */ ITraceFlowSolver2;
+enum esriNetworkLoaderProgress;
+enum esriNetworkLoaderFeatureClassCheck;
+enum esriNetworkLoaderFieldCheck;
+struct __declspec(uuid("8f313d14-49de-11d3-9f5a-00c04f68e627"))
+/* interface */ INetworkLoaderProps;
+struct __declspec(uuid("3b310ed4-772a-11d1-b25b-0000f878229e"))
+/* interface */ INetworkLoader;
+struct __declspec(uuid("df31f749-148d-11d4-a0ea-00c04f6bdf0e"))
+/* interface */ INetworkLoader2;
+struct __declspec(uuid("3e11f7be-9c8e-4ce3-b282-91740166259f"))
+/* interface */ INetworkLoader3;
+struct __declspec(uuid("183685e8-379d-4651-ab2b-3cb39a51f291"))
+/* interface */ INetworkBuilder;
+struct __declspec(uuid("629029a4-1554-446e-adaf-cb8f5836585f"))
+/* interface */ INetworkBuilder2;
+struct __declspec(uuid("ac358b50-ab44-11d2-b2bc-0000f878229e"))
+/* interface */ INetworkLoaderProgress;
+struct __declspec(uuid("232cf977-baf2-4f6d-8a79-ffab1f2ae7ad"))
+/* interface */ IStringPair;
+struct /* coclass */ NetworkLoader;
+struct /* coclass */ StringPair;
+enum esriUtilityNetworkErrors;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(INetElementBarriers, __uuidof(INetElementBarriers));
+_COM_SMARTPTR_TYPEDEF(ISelectionSetBarriers, __uuidof(ISelectionSetBarriers));
+_COM_SMARTPTR_TYPEDEF(INetSolver, __uuidof(INetSolver));
+_COM_SMARTPTR_TYPEDEF(IJunctionFlag, __uuidof(IJunctionFlag));
+_COM_SMARTPTR_TYPEDEF(IEdgeFlag, __uuidof(IEdgeFlag));
+_COM_SMARTPTR_TYPEDEF(ITraceFlowSolver, __uuidof(ITraceFlowSolver));
+_COM_SMARTPTR_TYPEDEF(INetElementBarriers2, __uuidof(INetElementBarriers2));
+_COM_SMARTPTR_TYPEDEF(INetElementBarriersGEN, __uuidof(INetElementBarriersGEN));
+_COM_SMARTPTR_TYPEDEF(INetFlag, __uuidof(INetFlag));
+_COM_SMARTPTR_TYPEDEF(IEIDInfo, __uuidof(IEIDInfo));
+_COM_SMARTPTR_TYPEDEF(IEnumEIDInfo, __uuidof(IEnumEIDInfo));
+_COM_SMARTPTR_TYPEDEF(IEIDHelper, __uuidof(IEIDHelper));
+_COM_SMARTPTR_TYPEDEF(IFlagDisplay, __uuidof(IFlagDisplay));
+_COM_SMARTPTR_TYPEDEF(IEdgeFlagDisplay, __uuidof(IEdgeFlagDisplay));
+_COM_SMARTPTR_TYPEDEF(IJunctionFlagDisplay, __uuidof(IJunctionFlagDisplay));
+_COM_SMARTPTR_TYPEDEF(IPointToEID, __uuidof(IPointToEID));
+_COM_SMARTPTR_TYPEDEF(ITraceFlowSolverGEN, __uuidof(ITraceFlowSolverGEN));
+_COM_SMARTPTR_TYPEDEF(INetSolverWeightsGEN, __uuidof(INetSolverWeightsGEN));
+_COM_SMARTPTR_TYPEDEF(INetSolverWeights, __uuidof(INetSolverWeights));
+_COM_SMARTPTR_TYPEDEF(ITraceFlowSolver2, __uuidof(ITraceFlowSolver2));
+_COM_SMARTPTR_TYPEDEF(INetworkLoaderProps, __uuidof(INetworkLoaderProps));
+_COM_SMARTPTR_TYPEDEF(INetworkLoader, __uuidof(INetworkLoader));
+_COM_SMARTPTR_TYPEDEF(INetworkLoader2, __uuidof(INetworkLoader2));
+_COM_SMARTPTR_TYPEDEF(INetworkLoader3, __uuidof(INetworkLoader3));
+_COM_SMARTPTR_TYPEDEF(INetworkBuilder, __uuidof(INetworkBuilder));
+_COM_SMARTPTR_TYPEDEF(INetworkBuilder2, __uuidof(INetworkBuilder2));
+_COM_SMARTPTR_TYPEDEF(INetworkLoaderProgress, __uuidof(INetworkLoaderProgress));
+_COM_SMARTPTR_TYPEDEF(IStringPair, __uuidof(IStringPair));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("803b5ff0-0ab3-11d1-9cd6-00805f74d243"))
+INetElementBarriers : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall putref_Network (
+        /*[in]*/ struct INetwork * Network ) = 0;
+      virtual HRESULT __stdcall get_Network (
+        /*[out,retval]*/ struct INetwork * * Network ) = 0;
+      virtual HRESULT __stdcall put_ElementType (
+        /*[in]*/ enum esriElementType ElementType ) = 0;
+      virtual HRESULT __stdcall get_ElementType (
+        /*[out,retval]*/ enum esriElementType * ElementType ) = 0;
+      virtual HRESULT __stdcall SetBarriers (
+        /*[in]*/ long UserClassID,
+        /*[in]*/ long Count,
+        /*[in]*/ long * userIDs ) = 0;
+};
+
+struct __declspec(uuid("16d930c2-18a8-11d3-9f4b-00c04f68e627"))
+ISelectionSetBarriers : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Add (
+        /*[in]*/ long UserClassID,
+        /*[in]*/ long UserID ) = 0;
+      virtual HRESULT __stdcall Not ( ) = 0;
+};
+
+struct __declspec(uuid("54fb1502-a640-11d0-9cc9-00805f74d243"))
+INetSolver : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall putref_SourceNetwork (
+        /*[in]*/ struct INetwork * _arg1 ) = 0;
+      virtual HRESULT __stdcall putref_ElementBarriers (
+        /*[in]*/ enum esriElementType ElementType,
+        /*[in]*/ struct INetElementBarriers * _arg2 ) = 0;
+      virtual HRESULT __stdcall putref_SelectionSetBarriers (
+        /*[in]*/ struct ISelectionSetBarriers * _arg1 ) = 0;
+      virtual HRESULT __stdcall DisableElementClass (
+        /*[in]*/ long classID ) = 0;
+};
+
+struct __declspec(uuid("19f99c8e-a089-11d0-9cc9-00805f74d243"))
+IJunctionFlag : IUnknown
+{};
+
+struct __declspec(uuid("19f99c8f-a089-11d0-9cc9-00805f74d243"))
+IEdgeFlag : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Position (
+        /*[out,retval]*/ float * Position ) = 0;
+      virtual HRESULT __stdcall put_Position (
+        /*[in]*/ float Position ) = 0;
+      virtual HRESULT __stdcall get_TwoWay (
+        /*[out,retval]*/ VARIANT_BOOL * TwoWay ) = 0;
+      virtual HRESULT __stdcall put_TwoWay (
+        /*[in]*/ VARIANT_BOOL TwoWay ) = 0;
+};
+
+enum __declspec(uuid("23950878-02d5-11d1-9cd5-00805f74d243"))
+esriFlowMethod
+{
+    esriFMUpstream = 0,
+    esriFMDownstream = 1,
+    esriFMConnected = 2
+};
+
+enum __declspec(uuid("3f5f65b0-cda3-11d1-b274-0000f878229e"))
+esriFlowElements
+{
+    esriFEJunctions = 0,
+    esriFEEdges = 1,
+    esriFEJunctionsAndEdges = 2,
+    esriFENone = 3
+};
+
+enum __declspec(uuid("869a05b8-6627-11d3-9f63-00c04f68e627"))
+esriShortestPathObjFn
+{
+    esriSPObjFnMinSum = 0,
+    esriSPObjFnMinMax = 1
+};
+
+struct __declspec(uuid("54fb1501-a640-11d0-9cc9-00805f74d243"))
+ITraceFlowSolver : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_TraceIndeterminateFlow (
+        /*[in]*/ VARIANT_BOOL _arg1 ) = 0;
+      virtual HRESULT __stdcall PutJunctionOrigins (
+        /*[in]*/ long junctionOriginCount,
+        /*[in]*/ struct IJunctionFlag * * junctionOrigins ) = 0;
+      virtual HRESULT __stdcall PutEdgeOrigins (
+        /*[in]*/ long edgeOriginCount,
+        /*[in]*/ struct IEdgeFlag * * edgeOrigins ) = 0;
+      virtual HRESULT __stdcall FindFlowElements (
+        /*[in]*/ enum esriFlowMethod flowMethod,
+        /*[in]*/ enum esriFlowElements flowElements,
+        /*[out]*/ struct IEnumNetEID * * junctionEIDs,
+        /*[out]*/ struct IEnumNetEID * * edgeEIDs ) = 0;
+      virtual HRESULT __stdcall FindFlowEndElements (
+        /*[in]*/ enum esriFlowMethod flowMethod,
+        /*[in]*/ enum esriFlowElements flowElements,
+        /*[out]*/ struct IEnumNetEID * * junctionEIDs,
+        /*[out]*/ struct IEnumNetEID * * edgeEIDs ) = 0;
+      virtual HRESULT __stdcall FindPath (
+        /*[in]*/ enum esriFlowMethod flowMethod,
+        /*[in]*/ enum esriShortestPathObjFn objFn,
+        /*[out]*/ struct IEnumNetEID * * junctionEIDs,
+        /*[out]*/ struct IEnumNetEID * * edgeEIDs,
+        /*[in]*/ long Count,
+        /*[in,out]*/ VARIANT * segmentCosts ) = 0;
+      virtual HRESULT __stdcall FindCircuits (
+        /*[in]*/ enum esriFlowElements flowElements,
+        /*[out]*/ struct IEnumNetEID * * junctionEIDs,
+        /*[out]*/ struct IEnumNetEID * * edgeEIDs ) = 0;
+      virtual HRESULT __stdcall FindCommonAncestors (
+        /*[in]*/ enum esriFlowElements flowElements,
+        /*[out]*/ struct IEnumNetEID * * junctionEIDs,
+        /*[out]*/ struct IEnumNetEID * * edgeEIDs ) = 0;
+};
+
+enum __declspec(uuid("ed2ccd36-1e17-11d3-9f4c-00c04f68e627"))
+esriWeightFilterType
+{
+    esriWFNone = 0,
+    esriWFRange = 1
+};
+
+struct __declspec(uuid("f187bbf8-59b1-11d4-a682-0008c7d3bbfa"))
+INetElementBarriers2 : INetElementBarriers
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SetBarriersByEID (
+        /*[in]*/ long Count,
+        /*[in]*/ long * eIDs ) = 0;
+};
+
+struct __declspec(uuid("d940e0c1-5918-4601-bafd-0ff949657b22"))
+INetElementBarriersGEN : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall putref_Network (
+        /*[in]*/ struct INetwork * Network ) = 0;
+      virtual HRESULT __stdcall get_Network (
+        /*[out,retval]*/ struct INetwork * * Network ) = 0;
+      virtual HRESULT __stdcall put_ElementType (
+        /*[in]*/ enum esriElementType ElementType ) = 0;
+      virtual HRESULT __stdcall get_ElementType (
+        /*[out,retval]*/ enum esriElementType * ElementType ) = 0;
+      virtual HRESULT __stdcall SetBarriers (
+        /*[in]*/ long UserClassID,
+        /*[in]*/ SAFEARRAY * * userIDs ) = 0;
+      virtual HRESULT __stdcall SetBarriersByEID (
+        /*[in]*/ SAFEARRAY * * eIDs ) = 0;
+};
+
+struct __declspec(uuid("19f99c8d-a089-11d0-9cc9-00805f74d243"))
+INetFlag : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Label (
+        /*[out,retval]*/ BSTR * Label ) = 0;
+      virtual HRESULT __stdcall put_Label (
+        /*[in]*/ BSTR Label ) = 0;
+      virtual HRESULT __stdcall get_UserClassID (
+        /*[out,retval]*/ long * UserClassID ) = 0;
+      virtual HRESULT __stdcall put_UserClassID (
+        /*[in]*/ long UserClassID ) = 0;
+      virtual HRESULT __stdcall get_UserID (
+        /*[out,retval]*/ long * UserID ) = 0;
+      virtual HRESULT __stdcall put_UserID (
+        /*[in]*/ long UserID ) = 0;
+      virtual HRESULT __stdcall get_UserSubID (
+        /*[out,retval]*/ long * UserID ) = 0;
+      virtual HRESULT __stdcall put_UserSubID (
+        /*[in]*/ long UserID ) = 0;
+      virtual HRESULT __stdcall put_ClientClassID (
+        /*[in]*/ long ClientClassID ) = 0;
+      virtual HRESULT __stdcall get_ClientClassID (
+        /*[out,retval]*/ long * ClientClassID ) = 0;
+      virtual HRESULT __stdcall put_ClientID (
+        /*[in]*/ long ClientID ) = 0;
+      virtual HRESULT __stdcall get_ClientID (
+        /*[out,retval]*/ long * ClientID ) = 0;
+};
+
+struct __declspec(uuid("2424eb71-97d9-4e66-9772-1bdf3d72261a"))
+IEIDInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Geometry (
+        /*[out,retval]*/ struct IGeometry * * Geometry ) = 0;
+      virtual HRESULT __stdcall get_Feature (
+        /*[out,retval]*/ struct IFeature * * Feature ) = 0;
+      virtual HRESULT __stdcall get_EID (
+        /*[out,retval]*/ long * EID ) = 0;
+};
+
+struct __declspec(uuid("70f98340-ccf3-4293-8b1c-7ca1e3bcf97a"))
+IEnumEIDInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Reset ( ) = 0;
+      virtual HRESULT __stdcall Next (
+        /*[out,retval]*/ struct IEIDInfo * * NextEidInfo ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Count ) = 0;
+};
+
+struct __declspec(uuid("212ad7b8-747a-11d4-a68d-0008c7d3bbfa"))
+IEIDHelper : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall putref_GeometricNetwork (
+        /*[in]*/ struct IGeometricNetwork * _arg1 ) = 0;
+      virtual HRESULT __stdcall AddField (
+        /*[in]*/ BSTR field ) = 0;
+      virtual HRESULT __stdcall ClearFields ( ) = 0;
+      virtual HRESULT __stdcall put_ReturnGeometries (
+        /*[in]*/ VARIANT_BOOL _arg1 ) = 0;
+      virtual HRESULT __stdcall put_ReturnFeatures (
+        /*[in]*/ VARIANT_BOOL _arg1 ) = 0;
+      virtual HRESULT __stdcall putref_OutputSpatialReference (
+        /*[in]*/ struct ISpatialReference * _arg1 ) = 0;
+      virtual HRESULT __stdcall put_PartialComplexEdgeGeometry (
+        /*[in]*/ VARIANT_BOOL _arg1 ) = 0;
+      virtual HRESULT __stdcall CreateEnumEIDInfo (
+        /*[in]*/ struct IEnumNetEID * netEIDs,
+        /*[out,retval]*/ struct IEnumEIDInfo * * enumInfo ) = 0;
+      virtual HRESULT __stdcall putref_DisplayEnvelope (
+        /*[in]*/ struct IEnvelope * _arg1 ) = 0;
+};
+
+struct __declspec(uuid("857dc0c9-c156-11d2-babe-00c04fa33c20"))
+IFlagDisplay : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_FID (
+        /*[out,retval]*/ long * FID ) = 0;
+      virtual HRESULT __stdcall put_FID (
+        /*[in]*/ long FID ) = 0;
+      virtual HRESULT __stdcall get_SubID (
+        /*[out,retval]*/ long * SubID ) = 0;
+      virtual HRESULT __stdcall put_SubID (
+        /*[in]*/ long SubID ) = 0;
+      virtual HRESULT __stdcall get_FeatureClassID (
+        /*[out,retval]*/ long * fClassID ) = 0;
+      virtual HRESULT __stdcall put_FeatureClassID (
+        /*[in]*/ long fClassID ) = 0;
+      virtual HRESULT __stdcall get_Symbol (
+        /*[out,retval]*/ struct ISymbol * * Symbol ) = 0;
+      virtual HRESULT __stdcall putref_Symbol (
+        /*[in]*/ struct ISymbol * Symbol ) = 0;
+      virtual HRESULT __stdcall get_Geometry (
+        /*[out,retval]*/ struct IGeometry * * Geometry ) = 0;
+      virtual HRESULT __stdcall putref_Geometry (
+        /*[in]*/ struct IGeometry * Geometry ) = 0;
+      virtual HRESULT __stdcall get_ClientClassID (
+        /*[out,retval]*/ long * ClientClassID ) = 0;
+      virtual HRESULT __stdcall put_ClientClassID (
+        /*[in]*/ long ClientClassID ) = 0;
+      virtual HRESULT __stdcall get_ClientFID (
+        /*[out,retval]*/ long * ClientFID ) = 0;
+      virtual HRESULT __stdcall put_ClientFID (
+        /*[in]*/ long ClientFID ) = 0;
+};
+
+struct __declspec(uuid("08855cab-c158-11d2-babe-00c04fa33c20"))
+IEdgeFlagDisplay : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Percentage (
+        /*[out,retval]*/ double * Percentage ) = 0;
+      virtual HRESULT __stdcall put_Percentage (
+        /*[in]*/ double Percentage ) = 0;
+};
+
+struct __declspec(uuid("9b908d33-c1ce-11d2-babe-00c04fa33c20"))
+IJunctionFlagDisplay : IUnknown
+{};
+
+struct __declspec(uuid("246c27a0-276c-4fbb-8d61-1163159e7f4b"))
+IPointToEID : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_SnapTolerance (
+        /*[in]*/ double _arg1 ) = 0;
+      virtual HRESULT __stdcall putref_GeometricNetwork (
+        /*[in]*/ struct IGeometricNetwork * _arg1 ) = 0;
+      virtual HRESULT __stdcall putref_SourceMap (
+        /*[in]*/ struct IMap * _arg1 ) = 0;
+      virtual HRESULT __stdcall GetNearestEdge (
+        /*[in]*/ struct IPoint * inputPoint,
+        /*[out]*/ long * nearestEdgeEID,
+        /*[out]*/ struct IPoint * * location,
+        /*[out]*/ double * percent ) = 0;
+      virtual HRESULT __stdcall GetNearestJunction (
+        /*[in]*/ struct IPoint * inputPoint,
+        /*[out]*/ long * nearestJunctionEID,
+        /*[out]*/ struct IPoint * * location ) = 0;
+};
+
+struct __declspec(uuid("625024ca-7e97-41df-abf5-f1c434b7dbc2"))
+ITraceFlowSolverGEN : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_TraceIndeterminateFlow (
+        /*[in]*/ VARIANT_BOOL _arg1 ) = 0;
+      virtual HRESULT __stdcall PutJunctionOrigins (
+        /*[in]*/ SAFEARRAY * * junctionOrigins ) = 0;
+      virtual HRESULT __stdcall PutEdgeOrigins (
+        /*[in]*/ SAFEARRAY * * edgeOrigins ) = 0;
+      virtual HRESULT __stdcall FindFlowElements (
+        /*[in]*/ enum esriFlowMethod flowMethod,
+        /*[in]*/ enum esriFlowElements flowElements,
+        /*[out]*/ struct IEnumNetEID * * junctionEIDs,
+        /*[out]*/ struct IEnumNetEID * * edgeEIDs ) = 0;
+      virtual HRESULT __stdcall FindFlowEndElements (
+        /*[in]*/ enum esriFlowMethod flowMethod,
+        /*[in]*/ enum esriFlowElements flowElements,
+        /*[out]*/ struct IEnumNetEID * * junctionEIDs,
+        /*[out]*/ struct IEnumNetEID * * edgeEIDs ) = 0;
+      virtual HRESULT __stdcall FindPath (
+        /*[in]*/ enum esriFlowMethod flowMethod,
+        /*[in]*/ enum esriShortestPathObjFn objFn,
+        /*[out]*/ struct IEnumNetEID * * junctionEIDs,
+        /*[out]*/ struct IEnumNetEID * * edgeEIDs,
+        /*[in]*/ long Count,
+        /*[in,out]*/ SAFEARRAY * * segmentCosts ) = 0;
+      virtual HRESULT __stdcall FindCircuits (
+        /*[in]*/ enum esriFlowElements flowElements,
+        /*[out]*/ struct IEnumNetEID * * junctionEIDs,
+        /*[out]*/ struct IEnumNetEID * * edgeEIDs ) = 0;
+      virtual HRESULT __stdcall FindCommonAncestors (
+        /*[in]*/ enum esriFlowElements flowElements,
+        /*[out]*/ struct IEnumNetEID * * junctionEIDs,
+        /*[out]*/ struct IEnumNetEID * * edgeEIDs ) = 0;
+      virtual HRESULT __stdcall FindFlowUnreachedElements (
+        /*[in]*/ enum esriFlowMethod flowMethod,
+        /*[in]*/ enum esriFlowElements flowElements,
+        /*[out]*/ struct IEnumNetEID * * junctionEIDs,
+        /*[out]*/ struct IEnumNetEID * * edgeEIDs ) = 0;
+      virtual HRESULT __stdcall FindSource (
+        /*[in]*/ enum esriFlowMethod flowMethod,
+        /*[in]*/ enum esriShortestPathObjFn objFn,
+        /*[out]*/ struct IEnumNetEID * * junctionEIDs,
+        /*[out]*/ struct IEnumNetEID * * edgeEIDs,
+        /*[in]*/ long Count,
+        /*[in,out]*/ SAFEARRAY * * segmentCosts ) = 0;
+      virtual HRESULT __stdcall FindAccumulation (
+        /*[in]*/ enum esriFlowMethod flowMethod,
+        /*[in]*/ enum esriFlowElements flowElements,
+        /*[out]*/ struct IEnumNetEID * * junctionEIDs,
+        /*[out]*/ struct IEnumNetEID * * edgeEIDs,
+        /*[out]*/ VARIANT * pTotalCost ) = 0;
+};
+
+struct __declspec(uuid("f00759f5-60c0-4077-bd1b-61b49c47ac7a"))
+INetSolverWeightsGEN : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall putref_JunctionWeight (
+        /*[in]*/ struct INetWeight * _arg1 ) = 0;
+      virtual HRESULT __stdcall putref_FromToEdgeWeight (
+        /*[in]*/ struct INetWeight * _arg1 ) = 0;
+      virtual HRESULT __stdcall putref_ToFromEdgeWeight (
+        /*[in]*/ struct INetWeight * _arg1 ) = 0;
+      virtual HRESULT __stdcall putref_JunctionFilterWeight (
+        /*[in]*/ struct INetWeight * _arg1 ) = 0;
+      virtual HRESULT __stdcall putref_FromToEdgeFilterWeight (
+        /*[in]*/ struct INetWeight * _arg1 ) = 0;
+      virtual HRESULT __stdcall putref_ToFromEdgeFilterWeight (
+        /*[in]*/ struct INetWeight * _arg1 ) = 0;
+      virtual HRESULT __stdcall SetFilterType (
+        /*[in]*/ enum esriElementType ElementType,
+        /*[in]*/ enum esriWeightFilterType weightFilterType,
+        /*[in]*/ VARIANT_BOOL applyNotOperator ) = 0;
+      virtual HRESULT __stdcall SetFilterRanges (
+        /*[in]*/ enum esriElementType ElementType,
+        /*[in]*/ SAFEARRAY * * fromValues,
+        /*[in]*/ SAFEARRAY * * toValues ) = 0;
+};
+
+struct __declspec(uuid("98465810-305b-45c7-8cdd-55086a131c28"))
+PointToEID;
+    // [ default ] interface IUnknown
+    // interface IPointToEID
+
+struct __declspec(uuid("dbb7f81e-7479-11d4-a68d-0008c7d3bbfa"))
+EIDHelper;
+    // [ default ] interface IUnknown
+    // interface IEIDHelper
+
+struct __declspec(uuid("027e741c-981b-11d1-b264-0000f878229e"))
+JunctionFlag;
+    // [ default ] interface IUnknown
+    // interface IJunctionFlag
+    // interface INetFlag
+
+struct __declspec(uuid("027e741b-981b-11d1-b264-0000f878229e"))
+EdgeFlag;
+    // [ default ] interface IUnknown
+    // interface IEdgeFlag
+    // interface INetFlag
+
+struct __declspec(uuid("d62ca0fa-412c-4e60-8d53-4028d644238a"))
+EIDInfo;
+    // [ default ] interface IUnknown
+    // interface IEIDInfo
+
+struct __declspec(uuid("8a00bc75-4428-403d-8be3-0288b3a324e8"))
+EnumEIDInfo;
+    // [ default ] interface IUnknown
+    // interface IEnumEIDInfo
+
+struct __declspec(uuid("c7b5a5ef-c211-11d2-babe-00c04fa33c20"))
+EdgeFlagDisplay;
+    // [ default ] interface IUnknown
+    // interface IFlagDisplay
+    // interface IEdgeFlagDisplay
+    // interface IFeatureDraw
+    // interface ISupportErrorInfo
+    // interface IPersistStream
+    // interface IDocumentVersionSupportGEN
+
+struct __declspec(uuid("ed830eed-c211-11d2-babe-00c04fa33c20"))
+JunctionFlagDisplay;
+    // [ default ] interface IUnknown
+    // interface IFlagDisplay
+    // interface IJunctionFlagDisplay
+    // interface IFeatureDraw
+    // interface IPersistStream
+    // interface IDocumentVersionSupportGEN
+
+struct __declspec(uuid("a475f830-e126-11d0-9cd3-00805f74d243"))
+TraceFlowSolver;
+    // [ default ] interface IUnknown
+    // interface INetSolverWeightsGEN
+    // interface ITraceFlowSolverGEN
+    // interface INetSolver
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("ef9aeb60-ec72-11d2-9f42-00c04f68e627"))
+NetElementBarriers;
+    // [ default ] interface IUnknown
+    // interface INetElementBarriersGEN
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("e63fc9c2-189c-11d3-9f4b-00c04f68e627"))
+SelectionSetBarriers;
+    // [ default ] interface IUnknown
+    // interface ISelectionSetBarriers
+
+struct __declspec(uuid("9241e22e-72a1-11d3-9f66-00c04f68e627"))
+INetSolverWeights : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall putref_JunctionWeight (
+        /*[in]*/ struct INetWeight * _arg1 ) = 0;
+      virtual HRESULT __stdcall putref_FromToEdgeWeight (
+        /*[in]*/ struct INetWeight * _arg1 ) = 0;
+      virtual HRESULT __stdcall putref_ToFromEdgeWeight (
+        /*[in]*/ struct INetWeight * _arg1 ) = 0;
+      virtual HRESULT __stdcall putref_JunctionFilterWeight (
+        /*[in]*/ struct INetWeight * _arg1 ) = 0;
+      virtual HRESULT __stdcall putref_FromToEdgeFilterWeight (
+        /*[in]*/ struct INetWeight * _arg1 ) = 0;
+      virtual HRESULT __stdcall putref_ToFromEdgeFilterWeight (
+        /*[in]*/ struct INetWeight * _arg1 ) = 0;
+      virtual HRESULT __stdcall SetFilterType (
+        /*[in]*/ enum esriElementType ElementType,
+        /*[in]*/ enum esriWeightFilterType weightFilterType,
+        /*[in]*/ VARIANT_BOOL applyNotOperator ) = 0;
+      virtual HRESULT __stdcall SetFilterRanges (
+        /*[in]*/ enum esriElementType ElementType,
+        /*[in]*/ long rangeCount,
+        /*[in]*/ VARIANT * fromValues,
+        /*[in]*/ VARIANT * toValues ) = 0;
+};
+
+struct __declspec(uuid("5343121e-1232-11d4-9f8b-00c04f68e627"))
+ITraceFlowSolver2 : ITraceFlowSolver
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall FindFlowUnreachedElements (
+        /*[in]*/ enum esriFlowMethod flowMethod,
+        /*[in]*/ enum esriFlowElements flowElements,
+        /*[out]*/ struct IEnumNetEID * * junctionEIDs,
+        /*[out]*/ struct IEnumNetEID * * edgeEIDs ) = 0;
+      virtual HRESULT __stdcall FindSource (
+        /*[in]*/ enum esriFlowMethod flowMethod,
+        /*[in]*/ enum esriShortestPathObjFn objFn,
+        /*[out]*/ struct IEnumNetEID * * junctionEIDs,
+        /*[out]*/ struct IEnumNetEID * * edgeEIDs,
+        /*[in]*/ long Count,
+        /*[in,out]*/ VARIANT * segmentCosts ) = 0;
+      virtual HRESULT __stdcall FindAccumulation (
+        /*[in]*/ enum esriFlowMethod flowMethod,
+        /*[in]*/ enum esriFlowElements flowElements,
+        /*[out]*/ struct IEnumNetEID * * junctionEIDs,
+        /*[out]*/ struct IEnumNetEID * * edgeEIDs,
+        /*[out]*/ VARIANT * pTotalCost ) = 0;
+};
+
+enum __declspec(uuid("5b0ebc9c-dcd7-11d2-9f3e-00c04f68e627"))
+esriNetworkLoaderProgress
+{
+    esriNLPOpenFeatureClasses = 0,
+    esriNLPSnapSimpleFeatures = 1,
+    esriNLPSnapComplexFeatures = 2,
+    esriNLPCreateGeometricNetwork = 3,
+    esriNLPExtractAttributes = 4,
+    esriNLPComputeTopology = 5,
+    esriNLPAddJunctions = 6,
+    esriNLPAddEdges = 7,
+    esriNLPSetDefaultFlowDirections = 8,
+    esriNLPWriteTopology = 9,
+    esriNLPRebuildingBaseNetwork = 10,
+    esriNLPRebuildingChildNetworks = 11
+};
+
+enum __declspec(uuid("cb47da9c-9e47-11d4-9fc5-00c04f68e627"))
+esriNetworkLoaderFeatureClassCheck
+{
+    esriNLFCCValid = 0,
+    esriNLFCCCannotOpen = -1,
+    esriNLFCCInAnotherNetwork = -2,
+    esriNLFCCInvalidFeatureType = -3,
+    esriNLFCCInvalidShapeType = -4,
+    esriNLFCCRegisteredAsVersioned = -5,
+    esriNLFCCInTopology = -6,
+    esriNLFCCIsCompressedReadOnly = -7,
+    esriNLFCCInTerrain = -8,
+    esriNLFCCUnknownError = -255
+};
+
+enum __declspec(uuid("841ae80b-9d6e-11d4-9fc5-00c04f68e627"))
+esriNetworkLoaderFieldCheck
+{
+    esriNLFCValid = 0,
+    esriNLFCNotFound = -1,
+    esriNLFCInvalidType = -2,
+    esriNLFCInvalidDomain = -3,
+    esriNLFCUnknownError = -255
+};
+
+struct __declspec(uuid("8f313d14-49de-11d3-9f5a-00c04f68e627"))
+INetworkLoaderProps : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_DefaultEnabledDomain (
+        /*[out,retval]*/ BSTR * DefaultEnabledDomain ) = 0;
+      virtual HRESULT __stdcall get_DefaultEnabledField (
+        /*[out,retval]*/ BSTR * DefaultEnabledField ) = 0;
+      virtual HRESULT __stdcall get_DefaultAncillaryRoleDomain (
+        /*[out,retval]*/ BSTR * DefaultAncillaryRoleDomain ) = 0;
+      virtual HRESULT __stdcall get_DefaultAncillaryRoleField (
+        /*[out,retval]*/ BSTR * DefaultAncillaryRoleField ) = 0;
+};
+
+struct __declspec(uuid("3b310ed4-772a-11d1-b25b-0000f878229e"))
+INetworkLoader : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_NetworkType (
+        /*[in]*/ enum esriNetworkType _arg1 ) = 0;
+      virtual HRESULT __stdcall put_SnapTolerance (
+        /*[in]*/ double _arg1 ) = 0;
+      virtual HRESULT __stdcall put_NetworkName (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall putref_FeatureDatasetName (
+        /*[in]*/ struct IDatasetName * _arg1 ) = 0;
+      virtual HRESULT __stdcall AddFeatureClass (
+        /*[in]*/ BSTR featureClassName,
+        /*[in]*/ enum esriFeatureType newFeatureType,
+        /*[in]*/ struct IUID * newClsID,
+        /*[in]*/ VARIANT_BOOL canChangeGeometry ) = 0;
+      virtual HRESULT __stdcall AddWeight (
+        /*[in]*/ BSTR networkWeightName,
+        /*[in]*/ enum esriWeightType weightType,
+        /*[in]*/ long bitGateSize ) = 0;
+      virtual HRESULT __stdcall AddWeightAssociation (
+        /*[in]*/ BSTR networkWeightName,
+        /*[in]*/ BSTR featureClassName,
+        /*[in]*/ BSTR fieldName ) = 0;
+      virtual HRESULT __stdcall PutAncillaryRole (
+        /*[in]*/ BSTR featureClassName,
+        /*[in]*/ enum esriNetworkClassAncillaryRole ancillaryRole,
+        /*[in]*/ BSTR ancillaryRoleFieldName ) = 0;
+      virtual HRESULT __stdcall PutEnabledDisabledFieldName (
+        /*[in]*/ BSTR featureClassName,
+        /*[in]*/ BSTR enabledDisabledFieldName ) = 0;
+      virtual HRESULT __stdcall LoadNetwork ( ) = 0;
+};
+
+struct __declspec(uuid("df31f749-148d-11d4-a0ea-00c04f6bdf0e"))
+INetworkLoader2 : INetworkLoader
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_ConfigurationKeyword (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall get_MinSnapTolerance (
+        /*[out,retval]*/ double * pMinSnapTolerance ) = 0;
+      virtual HRESULT __stdcall CanUseFeatureClass (
+        /*[in]*/ BSTR featureClassName,
+        /*[out,retval]*/ enum esriNetworkLoaderFeatureClassCheck * pUseCode ) = 0;
+      virtual HRESULT __stdcall CheckEnabledDisabledField (
+        /*[in]*/ BSTR featureClassName,
+        /*[in]*/ BSTR fieldName,
+        /*[out,retval]*/ enum esriNetworkLoaderFieldCheck * pCheckCode ) = 0;
+      virtual HRESULT __stdcall CheckAncillaryRoleField (
+        /*[in]*/ BSTR featureClassName,
+        /*[in]*/ BSTR fieldName,
+        /*[out,retval]*/ enum esriNetworkLoaderFieldCheck * pCheckCode ) = 0;
+      virtual HRESULT __stdcall put_PreserveEnabledValues (
+        /*[in]*/ VARIANT_BOOL _arg1 ) = 0;
+      virtual HRESULT __stdcall get_ErrorTableName (
+        /*[out,retval]*/ BSTR * pErrorTableName ) = 0;
+      virtual HRESULT __stdcall get_TotalNumInvalidFeatures (
+        /*[out,retval]*/ long * pTotalNumInvalidFeatures ) = 0;
+      virtual HRESULT __stdcall get_NumInvalidFeatures (
+        /*[in]*/ BSTR featureClassName,
+        /*[out,retval]*/ long * pNumInvalidFeatures ) = 0;
+};
+
+struct __declspec(uuid("3e11f7be-9c8e-4ce3-b282-91740166259f"))
+INetworkLoader3 : INetworkLoader2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_UseXYsForSnapping (
+        /*[in]*/ VARIANT_BOOL _arg1 ) = 0;
+      virtual HRESULT __stdcall get_CanUseZs (
+        /*[out,retval]*/ VARIANT_BOOL * CanUseZs ) = 0;
+      virtual HRESULT __stdcall put_UseZs (
+        /*[in]*/ VARIANT_BOOL _arg1 ) = 0;
+      virtual HRESULT __stdcall put_ZSnapTolerance (
+        /*[in]*/ double _arg1 ) = 0;
+      virtual HRESULT __stdcall get_MaxSnapTolerance (
+        /*[out,retval]*/ double * MaxSnapTolerance ) = 0;
+      virtual HRESULT __stdcall get_DefaultSnapTolerance (
+        /*[out,retval]*/ double * DefaultSnapTolerance ) = 0;
+      virtual HRESULT __stdcall get_MinZSnapTolerance (
+        /*[out,retval]*/ double * MinZSnapTolerance ) = 0;
+      virtual HRESULT __stdcall get_MaxZSnapTolerance (
+        /*[out,retval]*/ double * MaxZSnapTolerance ) = 0;
+      virtual HRESULT __stdcall get_DefaultZSnapTolerance (
+        /*[out,retval]*/ double * DefaultZSnapTolerance ) = 0;
+};
+
+struct __declspec(uuid("183685e8-379d-4651-ab2b-3cb39a51f291"))
+INetworkBuilder : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall RebuildNetwork (
+        /*[in]*/ struct IGeometricNetwork * GeometricNetwork,
+        /*[in]*/ BSTR configKeyword,
+        /*[in]*/ BSTR logFilePath ) = 0;
+};
+
+struct __declspec(uuid("629029a4-1554-446e-adaf-cb8f5836585f"))
+INetworkBuilder2 : INetworkBuilder
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall AddWeightToNetwork (
+        /*[in]*/ struct IGeometricNetwork * GeometricNetwork,
+        /*[in]*/ BSTR weightName,
+        /*[in]*/ enum esriWeightType weightType,
+        /*[in]*/ long bitGateSize,
+        /*[in]*/ struct ISet * weightAssociations ) = 0;
+      virtual HRESULT __stdcall DeleteWeightFromNetwork (
+        /*[in]*/ struct IGeometricNetwork * pGeometricNetwork,
+        /*[in]*/ BSTR weightName ) = 0;
+};
+
+struct __declspec(uuid("ac358b50-ab44-11d2-b2bc-0000f878229e"))
+INetworkLoaderProgress : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall PutMessage (
+        /*[in]*/ enum esriNetworkLoaderProgress networkLoaderProgress,
+        /*[in]*/ BSTR extraMessage ) = 0;
+      virtual HRESULT __stdcall put_MaxFeatures (
+        /*[in]*/ long _arg1 ) = 0;
+      virtual HRESULT __stdcall put_StepValue (
+        /*[in]*/ long _arg1 ) = 0;
+      virtual HRESULT __stdcall Step ( ) = 0;
+      virtual HRESULT __stdcall get_IsCancelled (
+        /*[out,retval]*/ VARIANT_BOOL * pbIsCancelled ) = 0;
+};
+
+struct __declspec(uuid("232cf977-baf2-4f6d-8a79-ffab1f2ae7ad"))
+IStringPair : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_FirstString (
+        /*[out,retval]*/ BSTR * FirstString ) = 0;
+      virtual HRESULT __stdcall get_SecondString (
+        /*[out,retval]*/ BSTR * SecondString ) = 0;
+      virtual HRESULT __stdcall put_FirstString (
+        BSTR FirstString ) = 0;
+      virtual HRESULT __stdcall put_SecondString (
+        BSTR SecondString ) = 0;
+};
+
+struct __declspec(uuid("3b310ed6-772a-11d1-b25b-0000f878229e"))
+NetworkLoader;
+    // [ default ] interface IUnknown
+    // interface INetworkLoader
+    // interface INetworkLoader2
+    // interface INetworkLoader3
+    // interface INetworkLoaderProps
+    // interface ISupportErrorInfo
+    // [ default, source ] interface INetworkLoaderProgress
+
+struct __declspec(uuid("5f08be6d-b06c-43db-9900-f9ba0d837ccd"))
+StringPair;
+    // [ default ] interface IUnknown
+    // interface IStringPair
+
+enum __declspec(uuid("75b4bff8-903c-11d3-a638-0008c7d3bbfa"))
+esriUtilityNetworkErrors
+{
+    NETWORKANALYSIS_E_INVALID_GEOMETRICINDEX = -2147220911,
+    NETWORKANALYSIS_E_INVALID_INDEX = -2147220910,
+    NETWORKANALYSIS_E_INVALID_FILTERTYPE = -2147220909,
+    NETWORKANALYSIS_E_INVALID_FEATURELAYER = -2147220908,
+    NETWORKANALYSIS_E_INVALID_DOCUMENT = -2147220907,
+    NETWORKANALYSIS_E_INVALID_PERCENTAGE = -2147220906,
+    NETWORKANALYSIS_E_INVALID_FEATURE = -2147220905,
+    NETWORKANALYSIS_E_INVALID_ELEMENT_TYPE = -2147220864,
+    NETWORKANALYSIS_E_MULTIPLE_NETWORK = -2147220863,
+    NETWORKANALYSIS_E_INVALID_USER_CLASS_ID = -2147220862,
+    NETWORKANALYSIS_E_NO_JUNCTION_WEIGHT_FILTER = -2147220861,
+    NETWORKANALYSIS_E_NO_EDGE_WEIGHT_FILTER = -2147220860,
+    NETWORKANALYSIS_E_INVALID_WEIGHT_FILTER_TYPE = -2147220859,
+    NETWORKANALYSIS_E_INVALID_FLOW_METHOD = -2147220858,
+    NETWORKANALYSIS_E_INVALID_FLOW_ELEMENTS = -2147220857,
+    NETWORKANALYSIS_E_INVALID_PATH_OBJECTIVE = -2147220856,
+    NETWORKANALYSIS_E_INVALID_USER_ID = -2147220855,
+    NETWORKANALYSIS_E_INVALID_USER_SUB_ID = -2147220854,
+    NETWORKANALYSIS_E_INVALID_NETWORK = -2147220853,
+    NETWORKANALYSIS_E_MISMATCH_ELEMENT_TYPE = -2147220852,
+    NETWORKANALYSIS_E_NO_PATH_ORIGINS = -2147220851,
+    NETWORKANALYSIS_E_BOTH_PATH_ORIGINS = -2147220850,
+    NETWORKLOADER_E_INVALID_FEATURE_DATASET_NAME = -2147220735,
+    NETWORKLOADER_E_INVALID_FEATURE_CLASS_NAME = -2147220734,
+    NETWORKLOADER_E_INVALID_NETWORK_NAME = -2147220733,
+    NETWORKLOADER_E_INVALID_FIELD_NAME = -2147220732,
+    NETWORKLOADER_E_INVALID_WEIGHT_NAME = -2147220731,
+    NETWORKLOADER_E_INVALID_Z_USE_CONDITION = -2147220730,
+    NETWORKLOADER_E_INVALID_WEIGHT_TYPE = -2147220729,
+    NETWORKLOADER_E_UNSUPPORTED_NETWORK_TYPE = -2147220719,
+    NETWORKLOADER_E_INVALID_FEATURE_TYPE = -2147220718,
+    NETWORKLOADER_E_INVALID_SHAPE_TYPE = -2147220717,
+    NETWORKLOADER_E_INVALID_ENABLED_FIELD_TYPE = -2147220716,
+    NETWORKLOADER_E_INVALID_ENABLED_FIELD_DOMAIN = -2147220715,
+    NETWORKLOADER_E_INVALID_ANCILLARY_ROLE = -2147220714,
+    NETWORKLOADER_E_INVALID_ANCILLARY_ROLE_FIELD_TYPE = -2147220713,
+    NETWORKLOADER_E_INVALID_ANCILLARY_ROLE_FIELD_DOMAIN = -2147220712,
+    NETWORKLOADER_E_INVALID_SNAP_TOLERANCE = -2147220703,
+    NETWORKLOADER_E_INVALID_BITGATE_SIZE = -2147220702,
+    NETWORKLOADER_E_CANNOT_OPEN_FEATURE_DATASET = -2147220479,
+    NETWORKLOADER_E_CANNOT_OPEN_FEATURE_CLASS = -2147220478,
+    NETWORKLOADER_E_CANNOT_READ_FEATURE_CLASS = -2147220477,
+    NETWORKLOADER_E_CANNOT_UPDATE_FEATURE_CLASS = -2147220476,
+    NETWORKLOADER_E_CANNOT_ACQUIRE_LOGICAL_NETWORK = -2147220475,
+    NETWORKLOADER_E_CANNOT_CREATE_GEOMETRIC_NETWORK = -2147220463,
+    NETWORKLOADER_E_CANNOT_ADD_FEATURE_CLASS = -2147220462,
+    NETWORKLOADER_E_CANNOT_CREATE_ENABLED_FIELD = -2147220461,
+    NETWORKLOADER_E_CANNOT_UPDATE_ENABLED_FIELD = -2147220460,
+    NETWORKLOADER_E_CANNOT_CREATE_ANCILLARY_ROLE_FIELD = -2147220459,
+    NETWORKLOADER_E_CANNOT_UPDATE_ANCILLARY_ROLE_FIELD = -2147220458,
+    NETWORKLOADER_E_CANNOT_OPEN_ORPHAN_JUNCTION_CLASS = -2147220457,
+    NETWORKLOADER_E_CANNOT_ADD_ORPHAN_JUNCTION_ROW = -2147220456,
+    NETWORKLOADER_E_CANNOT_CREATE_ERROR_TABLE = -2147220447,
+    NETWORKLOADER_E_CANNOT_UPDATE_ERROR_TABLE = -2147220446,
+    NETWORKLOADER_E_CANNOT_ADD_JUNCTION_ELEMENT = -2147220431,
+    NETWORKLOADER_E_CANNOT_ADD_EDGE_ELEMENT = -2147220430,
+    NETWORKLOADER_E_CANNOT_CREATE_INDEX = -2147220429,
+    NETWORKLOADER_E_CANNOT_DROP_INDEX = -2147220428,
+    NETWORKLOADER_E_CANNOT_OPEN_LOG_FILE = -2147220427,
+    NETWORKLOADER_E_CANNOT_ACCESS_TEMP_FILE = -2147220416,
+    NETWORKLOADER_E_UNKNOWN_ERROR = -2147220225
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_esriNetworkAnalysis =
+    {0x9d130258,0xc75f,0x41ef,{0x89,0x2a,0x69,0x2b,0x07,0x3e,0x1a,0xac}};
+extern "C" const GUID __declspec(selectany) IID_INetElementBarriers =
+    {0x803b5ff0,0x0ab3,0x11d1,{0x9c,0xd6,0x00,0x80,0x5f,0x74,0xd2,0x43}};
+extern "C" const GUID __declspec(selectany) IID_ISelectionSetBarriers =
+    {0x16d930c2,0x18a8,0x11d3,{0x9f,0x4b,0x00,0xc0,0x4f,0x68,0xe6,0x27}};
+extern "C" const GUID __declspec(selectany) IID_INetSolver =
+    {0x54fb1502,0xa640,0x11d0,{0x9c,0xc9,0x00,0x80,0x5f,0x74,0xd2,0x43}};
+extern "C" const GUID __declspec(selectany) IID_IJunctionFlag =
+    {0x19f99c8e,0xa089,0x11d0,{0x9c,0xc9,0x00,0x80,0x5f,0x74,0xd2,0x43}};
+extern "C" const GUID __declspec(selectany) IID_IEdgeFlag =
+    {0x19f99c8f,0xa089,0x11d0,{0x9c,0xc9,0x00,0x80,0x5f,0x74,0xd2,0x43}};
+extern "C" const GUID __declspec(selectany) IID_ITraceFlowSolver =
+    {0x54fb1501,0xa640,0x11d0,{0x9c,0xc9,0x00,0x80,0x5f,0x74,0xd2,0x43}};
+extern "C" const GUID __declspec(selectany) IID_INetElementBarriers2 =
+    {0xf187bbf8,0x59b1,0x11d4,{0xa6,0x82,0x00,0x08,0xc7,0xd3,0xbb,0xfa}};
+extern "C" const GUID __declspec(selectany) IID_INetElementBarriersGEN =
+    {0xd940e0c1,0x5918,0x4601,{0xba,0xfd,0x0f,0xf9,0x49,0x65,0x7b,0x22}};
+extern "C" const GUID __declspec(selectany) IID_INetFlag =
+    {0x19f99c8d,0xa089,0x11d0,{0x9c,0xc9,0x00,0x80,0x5f,0x74,0xd2,0x43}};
+extern "C" const GUID __declspec(selectany) IID_IEIDInfo =
+    {0x2424eb71,0x97d9,0x4e66,{0x97,0x72,0x1b,0xdf,0x3d,0x72,0x26,0x1a}};
+extern "C" const GUID __declspec(selectany) IID_IEnumEIDInfo =
+    {0x70f98340,0xccf3,0x4293,{0x8b,0x1c,0x7c,0xa1,0xe3,0xbc,0xf9,0x7a}};
+extern "C" const GUID __declspec(selectany) IID_IEIDHelper =
+    {0x212ad7b8,0x747a,0x11d4,{0xa6,0x8d,0x00,0x08,0xc7,0xd3,0xbb,0xfa}};
+extern "C" const GUID __declspec(selectany) IID_IFlagDisplay =
+    {0x857dc0c9,0xc156,0x11d2,{0xba,0xbe,0x00,0xc0,0x4f,0xa3,0x3c,0x20}};
+extern "C" const GUID __declspec(selectany) IID_IEdgeFlagDisplay =
+    {0x08855cab,0xc158,0x11d2,{0xba,0xbe,0x00,0xc0,0x4f,0xa3,0x3c,0x20}};
+extern "C" const GUID __declspec(selectany) IID_IJunctionFlagDisplay =
+    {0x9b908d33,0xc1ce,0x11d2,{0xba,0xbe,0x00,0xc0,0x4f,0xa3,0x3c,0x20}};
+extern "C" const GUID __declspec(selectany) IID_IPointToEID =
+    {0x246c27a0,0x276c,0x4fbb,{0x8d,0x61,0x11,0x63,0x15,0x9e,0x7f,0x4b}};
+extern "C" const GUID __declspec(selectany) IID_ITraceFlowSolverGEN =
+    {0x625024ca,0x7e97,0x41df,{0xab,0xf5,0xf1,0xc4,0x34,0xb7,0xdb,0xc2}};
+extern "C" const GUID __declspec(selectany) IID_INetSolverWeightsGEN =
+    {0xf00759f5,0x60c0,0x4077,{0xbd,0x1b,0x61,0xb4,0x9c,0x47,0xac,0x7a}};
+extern "C" const GUID __declspec(selectany) CLSID_PointToEID =
+    {0x98465810,0x305b,0x45c7,{0x8c,0xdd,0x55,0x08,0x6a,0x13,0x1c,0x28}};
+extern "C" const GUID __declspec(selectany) CLSID_EIDHelper =
+    {0xdbb7f81e,0x7479,0x11d4,{0xa6,0x8d,0x00,0x08,0xc7,0xd3,0xbb,0xfa}};
+extern "C" const GUID __declspec(selectany) CLSID_JunctionFlag =
+    {0x027e741c,0x981b,0x11d1,{0xb2,0x64,0x00,0x00,0xf8,0x78,0x22,0x9e}};
+extern "C" const GUID __declspec(selectany) CLSID_EdgeFlag =
+    {0x027e741b,0x981b,0x11d1,{0xb2,0x64,0x00,0x00,0xf8,0x78,0x22,0x9e}};
+extern "C" const GUID __declspec(selectany) CLSID_EIDInfo =
+    {0xd62ca0fa,0x412c,0x4e60,{0x8d,0x53,0x40,0x28,0xd6,0x44,0x23,0x8a}};
+extern "C" const GUID __declspec(selectany) CLSID_EnumEIDInfo =
+    {0x8a00bc75,0x4428,0x403d,{0x8b,0xe3,0x02,0x88,0xb3,0xa3,0x24,0xe8}};
+extern "C" const GUID __declspec(selectany) CLSID_EdgeFlagDisplay =
+    {0xc7b5a5ef,0xc211,0x11d2,{0xba,0xbe,0x00,0xc0,0x4f,0xa3,0x3c,0x20}};
+extern "C" const GUID __declspec(selectany) CLSID_JunctionFlagDisplay =
+    {0xed830eed,0xc211,0x11d2,{0xba,0xbe,0x00,0xc0,0x4f,0xa3,0x3c,0x20}};
+extern "C" const GUID __declspec(selectany) CLSID_TraceFlowSolver =
+    {0xa475f830,0xe126,0x11d0,{0x9c,0xd3,0x00,0x80,0x5f,0x74,0xd2,0x43}};
+extern "C" const GUID __declspec(selectany) CLSID_NetElementBarriers =
+    {0xef9aeb60,0xec72,0x11d2,{0x9f,0x42,0x00,0xc0,0x4f,0x68,0xe6,0x27}};
+extern "C" const GUID __declspec(selectany) CLSID_SelectionSetBarriers =
+    {0xe63fc9c2,0x189c,0x11d3,{0x9f,0x4b,0x00,0xc0,0x4f,0x68,0xe6,0x27}};
+extern "C" const GUID __declspec(selectany) IID_INetSolverWeights =
+    {0x9241e22e,0x72a1,0x11d3,{0x9f,0x66,0x00,0xc0,0x4f,0x68,0xe6,0x27}};
+extern "C" const GUID __declspec(selectany) IID_ITraceFlowSolver2 =
+    {0x5343121e,0x1232,0x11d4,{0x9f,0x8b,0x00,0xc0,0x4f,0x68,0xe6,0x27}};
+extern "C" const GUID __declspec(selectany) IID_INetworkLoaderProps =
+    {0x8f313d14,0x49de,0x11d3,{0x9f,0x5a,0x00,0xc0,0x4f,0x68,0xe6,0x27}};
+extern "C" const GUID __declspec(selectany) IID_INetworkLoader =
+    {0x3b310ed4,0x772a,0x11d1,{0xb2,0x5b,0x00,0x00,0xf8,0x78,0x22,0x9e}};
+extern "C" const GUID __declspec(selectany) IID_INetworkLoader2 =
+    {0xdf31f749,0x148d,0x11d4,{0xa0,0xea,0x00,0xc0,0x4f,0x6b,0xdf,0x0e}};
+extern "C" const GUID __declspec(selectany) IID_INetworkLoader3 =
+    {0x3e11f7be,0x9c8e,0x4ce3,{0xb2,0x82,0x91,0x74,0x01,0x66,0x25,0x9f}};
+extern "C" const GUID __declspec(selectany) IID_INetworkBuilder =
+    {0x183685e8,0x379d,0x4651,{0xab,0x2b,0x3c,0xb3,0x9a,0x51,0xf2,0x91}};
+extern "C" const GUID __declspec(selectany) IID_INetworkBuilder2 =
+    {0x629029a4,0x1554,0x446e,{0xad,0xaf,0xcb,0x8f,0x58,0x36,0x58,0x5f}};
+extern "C" const GUID __declspec(selectany) IID_INetworkLoaderProgress =
+    {0xac358b50,0xab44,0x11d2,{0xb2,0xbc,0x00,0x00,0xf8,0x78,0x22,0x9e}};
+extern "C" const GUID __declspec(selectany) IID_IStringPair =
+    {0x232cf977,0xbaf2,0x4f6d,{0x8a,0x79,0xff,0xab,0x1f,0x2a,0xe7,0xad}};
+extern "C" const GUID __declspec(selectany) CLSID_NetworkLoader =
+    {0x3b310ed6,0x772a,0x11d1,{0xb2,0x5b,0x00,0x00,0xf8,0x78,0x22,0x9e}};
+extern "C" const GUID __declspec(selectany) CLSID_StringPair =
+    {0x5f08be6d,0xb06c,0x43db,{0x99,0x00,0xf9,0xba,0x0d,0x83,0x7c,0xcd}};
+
+#pragma pack(pop)

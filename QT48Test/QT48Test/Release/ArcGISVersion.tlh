@@ -1,0 +1,106 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (77cd40c5).
+//
+// e:\vsproject\qt48test\qt48test\release\ArcGISVersion.tlh
+//
+// C++ source equivalent of Win32 type library 6FCCEDE0-179D-4D12-B586-58C88D26CA78
+// compiler-generated file created 12/01/16 at 15:39:09 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("6fccede0-179d-4d12-b586-58c88d26ca78"))
+/* LIBID */ __ArcGISVersionLib;
+enum esriVersionProductCode;
+struct __declspec(uuid("18f07a02-956a-4d44-979b-b006ecc81d93"))
+/* interface */ IEnumVersions;
+struct __declspec(uuid("4b666ca0-021e-408c-9abe-a1cc182729fa"))
+/* interface */ IArcGISVersion;
+struct /* coclass */ VersionManager;
+struct __declspec(uuid("a4092e33-e459-4b9c-b04e-263fb7a8e1d1"))
+/* interface */ IVersionHost;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IEnumVersions, __uuidof(IEnumVersions));
+_COM_SMARTPTR_TYPEDEF(IArcGISVersion, __uuidof(IArcGISVersion));
+_COM_SMARTPTR_TYPEDEF(IVersionHost, __uuidof(IVersionHost));
+
+//
+// Type library items
+//
+
+enum __declspec(uuid("aaf29278-0f67-488e-9ad5-209cce93ed4b"))
+esriVersionProductCode
+{
+    esriArcGIS = 0,
+    esriArcGISDesktop = 1,
+    esriArcGISEngine = 2,
+    esriArcGISReader = 3,
+    esriArcGISExplorer = 4,
+    esriArcGISServer = 5
+};
+
+struct __declspec(uuid("18f07a02-956a-4d44-979b-b006ecc81d93"))
+IEnumVersions : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Reset ( ) = 0;
+      virtual HRESULT __stdcall Next (
+        /*[out]*/ enum esriVersionProductCode * pCode,
+        /*[out]*/ BSTR * pVer,
+        /*[out]*/ BSTR * path ) = 0;
+};
+
+struct __declspec(uuid("4b666ca0-021e-408c-9abe-a1cc182729fa"))
+IArcGISVersion : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall LoadVersion (
+        /*[in]*/ enum esriVersionProductCode productCode,
+        /*[in]*/ BSTR engineVersion,
+        /*[out,retval]*/ VARIANT_BOOL * succeeded ) = 0;
+      virtual HRESULT __stdcall GetActiveVersion (
+        /*[out]*/ enum esriVersionProductCode * pCode,
+        /*[out]*/ BSTR * pVer,
+        /*[out]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall GetVersions (
+        /*[out]*/ struct IEnumVersions * * ppVersions ) = 0;
+      virtual HRESULT __stdcall ProductNameFromCode (
+        /*[in]*/ enum esriVersionProductCode __MIDL__IArcGISVersion0000,
+        /*[out,retval]*/ BSTR * pProductName ) = 0;
+};
+
+struct __declspec(uuid("d0705d7d-0270-4607-bcdb-1d4f18624748"))
+VersionManager;
+    // [ default ] interface IUnknown
+    // interface IArcGISVersion
+    // interface IVersionHost
+    // interface IEnumVersions
+
+struct __declspec(uuid("a4092e33-e459-4b9c-b04e-263fb7a8e1d1"))
+IVersionHost : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CreateObject (
+        /*[in]*/ GUID clsid,
+        /*[out,retval]*/ IUnknown * * ppv ) = 0;
+};
+
+#pragma pack(pop)

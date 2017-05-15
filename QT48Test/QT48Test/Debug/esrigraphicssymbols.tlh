@@ -1,0 +1,32 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (49ad0a58).
+//
+// e:\vsproject\qt48test\qt48test\debug\esrigraphicssymbols.tlh
+//
+// C++ source equivalent of Win32 type library esrigraphicssymbols.olb
+// compiler-generated file created 06/01/16 at 16:28:35 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("7e525645-57c6-4fd0-9ba9-137c9343a78f"))
+/* LIBID */ __esriGraphicsSymbols;
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_esriGraphicsSymbols =
+    {0x7e525645,0x57c6,0x4fd0,{0x9b,0xa9,0x13,0x7c,0x93,0x43,0xa7,0x8f}};
+
+#pragma pack(pop)

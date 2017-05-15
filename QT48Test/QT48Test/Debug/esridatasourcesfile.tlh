@@ -1,0 +1,3235 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (06250f19).
+//
+// e:\vsproject\qt48test\qt48test\debug\esridatasourcesfile.tlh
+//
+// C++ source equivalent of Win32 type library esridatasourcesfile.olb
+// compiler-generated file created 06/01/16 at 16:28:36 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("1ce6ac65-43f5-4529-8fc0-d7ed298e4f1a"))
+/* LIBID */ __esriDataSourcesFile;
+enum esriCoverageToleranceType;
+enum esriArcInfoItemType;
+enum esriCoverageType;
+enum esriCoverageFeatureClassType;
+enum esriFeatureClassTopology;
+enum esriCoveragePrecisionType;
+struct __declspec(uuid("b5e470d2-ceab-11d2-b0dc-0000f8780820"))
+/* interface */ IArcInfoItem;
+struct __declspec(uuid("b5e470d3-ceab-11d2-b0dc-0000f8780820"))
+/* interface */ IArcInfoItemEdit;
+struct __declspec(uuid("b5e470d4-ceab-11d2-b0dc-0000f8780820"))
+/* interface */ IArcInfoItems;
+struct __declspec(uuid("b5e470d5-ceab-11d2-b0dc-0000f8780820"))
+/* interface */ IArcInfoItemsEdit;
+struct __declspec(uuid("d3ec3d31-cffe-11d2-b0dc-0000f8780820"))
+/* interface */ IArcInfoTable;
+struct __declspec(uuid("99d56004-bb97-4606-a141-6bb061f87940"))
+/* interface */ IArcInfoTable2;
+struct __declspec(uuid("4e471bb1-06fa-11d3-9f31-00c04f79927c"))
+/* interface */ ICoverageFeatureClass;
+struct __declspec(uuid("2da3b82a-b02a-11d4-9f5a-00c04f79927c"))
+/* interface */ ICoverageFeatureClass2;
+struct __declspec(uuid("d42131e1-d187-11d2-b0dc-0000f8780820"))
+/* interface */ ICoverage;
+struct __declspec(uuid("d1e706bc-6eee-11d4-9f55-00c04f79927c"))
+/* interface */ ICoverage2;
+struct __declspec(uuid("730e2ff7-e3b4-11d2-9f30-00c04f79927c"))
+/* interface */ IArcInfoWorkspace;
+struct __declspec(uuid("215b5973-795c-499f-b3ff-798c1cd4dbe6"))
+/* interface */ IInfoTableOnlyWorkspaceEdit;
+struct __declspec(uuid("de61a107-0e08-11d3-9f31-00c04f79927c"))
+/* interface */ ICoverageFeatureClassName;
+struct __declspec(uuid("de61a108-0e08-11d3-9f31-00c04f79927c"))
+/* interface */ ICoverageName;
+struct __declspec(uuid("a476810a-0c8d-469a-8332-7b3c1cfb8923"))
+/* interface */ IArcInfoWorkspaceUtil;
+struct /* coclass */ ArcInfoWorkspaceFactory;
+struct /* coclass */ ArcInfoItems;
+struct /* coclass */ ArcInfoItem;
+struct /* coclass */ CoverageFeatureClassName;
+struct /* coclass */ CoverageName;
+struct /* coclass */ PCCoverageWorkspaceFactory;
+struct /* coclass */ StreetMapWorkspaceFactory;
+struct /* coclass */ SDCWorkspaceFactory;
+struct /* coclass */ SDCNetworkSource;
+struct /* coclass */ SDCNetworkAttribute;
+struct /* coclass */ ShapefileWorkspaceFactory;
+struct /* coclass */ VpfWorkspaceFactory;
+struct /* coclass */ TinWorkspaceFactory;
+struct /* coclass */ GeoRSSWorkspaceFactory;
+struct __declspec(uuid("628022fd-e7df-11d4-a2a8-444553547777"))
+/* interface */ ICadSettings;
+struct /* coclass */ CadWorkspaceFactory;
+struct __declspec(uuid("e37f71aa-bfb1-11d2-9b20-00c04fa33299"))
+/* interface */ ICadDrawingLayers;
+struct /* coclass */ CadDrawingName;
+enum esriCadTransform;
+struct __declspec(uuid("e37f71ab-bfb1-11d2-9b20-00c04fa33299"))
+/* interface */ ICadTransformations;
+struct __declspec(uuid("6c1d6540-4930-11d3-9b39-00c04fa33299"))
+/* interface */ ICadDrawingDataset;
+struct __declspec(uuid("76b47b11-ac32-11d4-a226-444553547777"))
+/* interface */ ICadDrawingWorkspace;
+struct __declspec(uuid("989b9737-fecf-467d-8544-d3b3ee30e60c"))
+/* dual interface */ ISdcExporter;
+struct /* coclass */ SdcExporter;
+struct __declspec(uuid("f8b65fed-5850-11d7-b321-008048db11de"))
+/* dual interface */ ISMRouterPoint;
+struct __declspec(uuid("f8b65ff0-5850-11d7-b321-008048db11de"))
+/* dual interface */ ISMRouterEnvelope;
+struct __declspec(uuid("f8b65ff3-5850-11d7-b321-008048db11de"))
+/* dual interface */ ISMPointsCollection;
+struct __declspec(uuid("f8b65ff6-5850-11d7-b321-008048db11de"))
+/* dual interface */ ISMNetAttribute;
+enum esriSMNetAttributeType;
+struct __declspec(uuid("b1a5376c-dfdf-48dd-a472-076808c0c73e"))
+/* dual interface */ ISMNetAttribute2;
+enum esriSMNetAttributeUsageType;
+struct __declspec(uuid("f8b65ff9-5850-11d7-b321-008048db11de"))
+/* dual interface */ ISMNetAttributesCollection;
+struct __declspec(uuid("f8b65ffc-5850-11d7-b321-008048db11de"))
+/* dual interface */ ISMNetBarrier;
+struct __declspec(uuid("f8b65fff-5850-11d7-b321-008048db11de"))
+/* dual interface */ ISMNetBarriersCollection;
+struct __declspec(uuid("f8b66002-5850-11d7-b321-008048db11de"))
+/* dual interface */ ISMRoadPreferences;
+enum esriSMRoadType;
+struct __declspec(uuid("f8b66005-5850-11d7-b321-008048db11de"))
+/* dual interface */ ISMSpeedGroup;
+struct __declspec(uuid("1e436c24-cf57-4aca-bbd3-ffddb1151fa7"))
+/* dual interface */ ISMSpeedGroup2;
+struct __declspec(uuid("f8b66008-5850-11d7-b321-008048db11de"))
+/* dual interface */ ISMSpeedGroups;
+struct __declspec(uuid("f8b6600b-5850-11d7-b321-008048db11de"))
+/* dual interface */ ISMTripPlanSettings;
+struct __declspec(uuid("f8b66011-5850-11d7-b321-008048db11de"))
+/* dual interface */ ISMFlag;
+enum esriSMStreetSideType;
+struct __declspec(uuid("8a4bb863-0c3f-4897-aa09-1479a4b76a6f"))
+/* dual interface */ ISMFlagCreator;
+struct __declspec(uuid("0e8f6257-745f-4de3-b651-6ecf14728c5c"))
+/* dual interface */ ISMFlagCreator2;
+struct __declspec(uuid("f8b66014-5850-11d7-b321-008048db11de"))
+/* dual interface */ ISMStop;
+struct __declspec(uuid("f8b66017-5850-11d7-b321-008048db11de"))
+/* dual interface */ ISMStopsCollection;
+struct __declspec(uuid("f8b6601a-5850-11d7-b321-008048db11de"))
+/* dual interface */ ISMDirItem;
+enum esriSMDirItemType;
+enum esriSMAzimuthType;
+struct __declspec(uuid("f8b6601d-5850-11d7-b321-008048db11de"))
+/* dual interface */ ISMDirections;
+struct __declspec(uuid("f8b66020-5850-11d7-b321-008048db11de"))
+/* dual interface */ ISMRouter;
+struct __declspec(uuid("122fc3ae-a421-4922-9459-dff9d3631333"))
+/* dual interface */ ISMBreakTracker;
+struct __declspec(uuid("198dc955-519b-41ec-af33-1090d356c674"))
+/* dual interface */ ISMNetAttributesAccess;
+struct __declspec(uuid("f8b66023-5850-11d7-b321-008048db11de"))
+/* dual interface */ ISMRouterFactory;
+struct __declspec(uuid("c8128b1a-23c3-4e21-93eb-50739b68f17a"))
+/* dual interface */ ISMRoutingMetaData;
+struct __declspec(uuid("3df8d708-18e9-4d3c-bc69-54190a3577d8"))
+/* dual interface */ ISMRestriction;
+enum esriSMRestrictionType;
+struct __declspec(uuid("a386707f-fb42-4d0e-af12-3c1feb26f771"))
+/* dual interface */ ISMRouterSetup;
+enum esriSMBacktrackPolicy;
+enum esriSMDirectionsLengthUnits;
+struct __declspec(uuid("06efa9d2-490c-4325-bf15-3f73f4492f34"))
+/* dual interface */ ISMRouterSetup2;
+struct /* coclass */ SMRouterPoint;
+struct /* coclass */ SMRouterEnvelope;
+struct /* coclass */ SMPointsCollection;
+struct /* coclass */ SMNetAttribute;
+struct /* coclass */ SMNetAttributesCollection;
+struct /* coclass */ SMNetBarrier;
+struct /* coclass */ SMNetBarriersCollection;
+struct /* coclass */ SMRoadPreferences;
+struct /* coclass */ SMSpeedGroup;
+struct /* coclass */ SMSpeedGroups;
+struct /* coclass */ SMTripPlanSettings;
+struct /* coclass */ SMFlag;
+struct /* coclass */ SMStop;
+struct /* coclass */ SMStopsCollection;
+struct /* coclass */ SMDirItem;
+struct /* coclass */ SMDirections;
+struct /* coclass */ SMRouter;
+struct /* coclass */ SMRouterFactory;
+struct /* coclass */ SMNetAttributesAccess;
+struct /* coclass */ SMFlagCreator;
+struct /* coclass */ SMRestriction;
+enum esriDataLicenseType;
+struct __declspec(uuid("c1d85fc8-f132-4187-b897-623c647c9213"))
+/* interface */ IUsageModeOption;
+struct __declspec(uuid("07713846-9da7-45f8-886f-3eb2f0a30187"))
+/* interface */ IUsageModeInfo;
+struct __declspec(uuid("0db7a450-5fed-441b-bb3a-db6e24d6cda3"))
+/* interface */ IMetaInfo;
+struct __declspec(uuid("37474491-1c04-4669-99b5-825cf67294c5"))
+/* interface */ IDataLicenseInfo;
+struct __declspec(uuid("2d5b7a40-f25b-4490-b36c-edd367df33d0"))
+/* interface */ IDataLicenseManager;
+struct /* coclass */ LicensedDataExtension;
+struct __declspec(uuid("6ec9d0c5-c3c5-4a2c-b9b3-5959209f427c"))
+/* interface */ IDECadDrawingDataset;
+struct __declspec(uuid("6850e61d-eda7-45ff-9291-25af6c10c556"))
+/* interface */ IDECadDrawingDatasetType;
+struct /* coclass */ DECadDrawingDatasetType;
+struct /* coclass */ DECadDrawingDataset;
+struct __declspec(uuid("ea30b18d-2d75-4593-bf44-b3620f41d8db"))
+/* interface */ IGPLayer;
+struct __declspec(uuid("8547ff12-e020-4c17-893b-bda0176f0c3b"))
+/* interface */ IGPLayerType;
+struct __declspec(uuid("991993e4-7dfd-4e23-bca0-689b174e3030"))
+/* interface */ IDELayer;
+struct __declspec(uuid("4e458cd7-d677-4e02-a827-2c5f1874ff88"))
+/* interface */ IDEShapeFile;
+struct __declspec(uuid("cba6712b-e7c5-4013-9bc7-9656bfb0de41"))
+/* interface */ IDEDbaseTable;
+struct __declspec(uuid("2a3e65fd-9d5b-4baa-8a3b-39824fc8c587"))
+/* interface */ IDELayerType;
+struct __declspec(uuid("c7d6c9e2-278e-4f86-a349-f80baac7a733"))
+/* interface */ IDEShapeFileType;
+struct __declspec(uuid("5b5c7610-a953-11d5-9321-0080c71a3226"))
+/* interface */ IDEDbaseTableType;
+struct __declspec(uuid("5348d943-c798-434a-9e72-ac97ca802a71"))
+/* interface */ IDETextFile;
+struct __declspec(uuid("72835efa-d940-430f-87e3-6e9b3d121023"))
+/* interface */ IDETextFileType;
+struct /* coclass */ DELayerType;
+struct __declspec(uuid("5cea7586-5550-418a-a6cb-9b8e67133c43"))
+/* interface */ IDEFileType;
+struct /* coclass */ DEShapeFileType;
+struct /* coclass */ DEDbaseTableType;
+struct /* coclass */ DELayer;
+struct __declspec(uuid("df006d6f-661e-46ca-a591-d3c6cb5d94d3"))
+/* interface */ IDEFile;
+struct /* coclass */ DEShapeFile;
+struct /* coclass */ DEDbaseTable;
+struct __declspec(uuid("49b7bb60-02c3-49de-9642-a0b07215da63"))
+/* interface */ IDECatalogRoot;
+struct __declspec(uuid("3dd1a87b-30b2-4a02-abd2-205c5363ae4b"))
+/* interface */ IDERemoteDatabaseFolder;
+struct __declspec(uuid("bc5edbfd-375c-40a2-b9c2-ea8dfe2de1e0"))
+/* interface */ IDESpatialReferencesFolder;
+struct __declspec(uuid("ae51f9d8-5864-4cf2-8186-736af8c4022c"))
+/* interface */ IDEDiskConnection;
+struct __declspec(uuid("4368e06b-e887-43b6-ab24-1ff4fed5837b"))
+/* interface */ IDEFolder;
+struct __declspec(uuid("f69ca920-cfbb-11d5-933d-0080c71a3226"))
+/* interface */ IDEPrjFile;
+struct __declspec(uuid("81daeed8-ef11-40eb-a617-60e4d4654fd8"))
+/* interface */ IDEMapDocument;
+struct __declspec(uuid("4ba00494-ab4c-45b5-b7ff-7e3b9e595bf1"))
+/* interface */ IDECatalogRootType;
+struct __declspec(uuid("bd15433a-67d7-4fdb-b0ca-42ef470f704e"))
+/* interface */ IDEDiskConnectionType;
+struct __declspec(uuid("b2dfe80e-7ee0-4aaa-bee0-498593374743"))
+/* interface */ IDEFolderType;
+struct __declspec(uuid("ae8c96f0-cfbe-11d5-933d-0080c71a3226"))
+/* interface */ IDEPrjFileType;
+struct __declspec(uuid("5826a85f-d7cd-4b32-a2d9-0eccfde297a2"))
+/* interface */ IDEMapDocumentType;
+struct __declspec(uuid("ef94d455-32d3-4d10-b080-fe7508c05dc9"))
+/* interface */ IDERemoteDatabaseFolderType;
+struct __declspec(uuid("e2b9400d-655c-4976-b3dd-04f31c48bb81"))
+/* interface */ IDESpatialReferencesFolderType;
+struct /* coclass */ DECatalogRootType;
+struct /* coclass */ DEDiskConnectionType;
+struct /* coclass */ DEFolderType;
+struct /* coclass */ DEFileType;
+struct /* coclass */ DEPrjFileType;
+struct /* coclass */ DEMapDocumentType;
+struct /* coclass */ DERemoteDatabaseFolderType;
+struct /* coclass */ DESpatialReferencesFolderType;
+struct /* coclass */ DECatalogRoot;
+struct /* coclass */ DEDiskConnection;
+struct /* coclass */ DEFolder;
+struct /* coclass */ DEFile;
+struct /* coclass */ DEMapDocument;
+struct /* coclass */ DERemoteDatabaseFolder;
+struct /* coclass */ DESpatialReferencesFolder;
+struct /* coclass */ DEPrjFile;
+struct /* coclass */ DETextFile;
+struct /* coclass */ DETextFileType;
+struct __declspec(uuid("b0b62284-0080-4ea3-9716-de5293a73f6e"))
+/* interface */ IDETin;
+struct __declspec(uuid("0853eb47-69e4-4309-a8ba-5d14b356362b"))
+/* interface */ IDETinType;
+struct /* coclass */ DETinType;
+struct /* coclass */ DETin;
+struct __declspec(uuid("1508d058-f970-487c-afbe-31db1c3ed594"))
+/* interface */ IDELasDataset;
+struct __declspec(uuid("e4c66c0c-69ea-466b-84c7-eb6acab69490"))
+/* interface */ IDELasDatasetType;
+struct /* coclass */ DELasDatasetType;
+struct /* coclass */ DELasDataset;
+struct __declspec(uuid("bde67d8b-bf5e-45ec-a3fd-09ac77efe850"))
+/* interface */ IDECoverage;
+struct __declspec(uuid("25ea15b1-7425-452b-8fb6-ca3f8d088129"))
+/* interface */ IDECoverageFeatureClass;
+struct __declspec(uuid("dc3b7fdb-ce0f-4aee-945c-0755f89109e4"))
+/* interface */ IDEArcInfoTable;
+struct __declspec(uuid("c95b22e0-a3c3-11d5-931c-0080c71a3226"))
+/* interface */ IGPArcInfoItem;
+struct __declspec(uuid("1c1d3491-9e02-4283-be2f-b8177cc8f01f"))
+/* interface */ IDEArcInfoUtilities;
+struct __declspec(uuid("ab6143ed-a1ea-4193-b97c-f8be9a6c4c83"))
+/* interface */ IDECoverageType;
+struct __declspec(uuid("943db542-3a26-40e3-9a26-3342655bd3a2"))
+/* interface */ IDECoverageFeatureClassType;
+struct __declspec(uuid("2864d010-402b-4b4e-b27c-db2cb238ffe4"))
+/* interface */ IDEArcInfoTableType;
+struct __declspec(uuid("82c365f0-7956-47ec-86f3-b8d628837712"))
+/* interface */ IGPArcInfoItemType;
+struct /* coclass */ DECoverageType;
+struct /* coclass */ DECoverageFeatureClassType;
+struct /* coclass */ DEArcInfoTableType;
+struct /* coclass */ GPArcInfoItemType;
+struct /* coclass */ DECoverage;
+struct /* coclass */ DECoverageFeatureClass;
+struct /* coclass */ DEArcInfoTable;
+struct /* coclass */ GPArcInfoItem;
+struct /* coclass */ DEArcInfoUtilities;
+struct __declspec(uuid("a30b5d18-63ed-493a-90e5-75dc2d55d79c"))
+/* interface */ IDEVPFTable;
+struct __declspec(uuid("dbb10ac8-bbbd-44af-aad6-a689af24dbfb"))
+/* interface */ IDEVPFTableType;
+struct /* coclass */ DEVPFTableType;
+struct /* coclass */ DEVPFTable;
+struct __declspec(uuid("26785829-6d41-457c-b953-08fed1e16eda"))
+/* interface */ IDEVPFCoverage;
+struct __declspec(uuid("ba80d3fd-b1c8-4111-b3db-037d6ea3d9eb"))
+/* interface */ IDEVPFCoverageType;
+struct /* coclass */ DEVPFCoverageType;
+struct /* coclass */ DEVPFCoverage;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IArcInfoItem, __uuidof(IArcInfoItem));
+_COM_SMARTPTR_TYPEDEF(IArcInfoItemEdit, __uuidof(IArcInfoItemEdit));
+_COM_SMARTPTR_TYPEDEF(IArcInfoItems, __uuidof(IArcInfoItems));
+_COM_SMARTPTR_TYPEDEF(IArcInfoItemsEdit, __uuidof(IArcInfoItemsEdit));
+_COM_SMARTPTR_TYPEDEF(IArcInfoTable, __uuidof(IArcInfoTable));
+_COM_SMARTPTR_TYPEDEF(IArcInfoTable2, __uuidof(IArcInfoTable2));
+_COM_SMARTPTR_TYPEDEF(ICoverageFeatureClass, __uuidof(ICoverageFeatureClass));
+_COM_SMARTPTR_TYPEDEF(ICoverageFeatureClass2, __uuidof(ICoverageFeatureClass2));
+_COM_SMARTPTR_TYPEDEF(ICoverage, __uuidof(ICoverage));
+_COM_SMARTPTR_TYPEDEF(ICoverage2, __uuidof(ICoverage2));
+_COM_SMARTPTR_TYPEDEF(IArcInfoWorkspace, __uuidof(IArcInfoWorkspace));
+_COM_SMARTPTR_TYPEDEF(IInfoTableOnlyWorkspaceEdit, __uuidof(IInfoTableOnlyWorkspaceEdit));
+_COM_SMARTPTR_TYPEDEF(ICoverageFeatureClassName, __uuidof(ICoverageFeatureClassName));
+_COM_SMARTPTR_TYPEDEF(ICoverageName, __uuidof(ICoverageName));
+_COM_SMARTPTR_TYPEDEF(IArcInfoWorkspaceUtil, __uuidof(IArcInfoWorkspaceUtil));
+_COM_SMARTPTR_TYPEDEF(ICadSettings, __uuidof(ICadSettings));
+_COM_SMARTPTR_TYPEDEF(ICadDrawingLayers, __uuidof(ICadDrawingLayers));
+_COM_SMARTPTR_TYPEDEF(ICadTransformations, __uuidof(ICadTransformations));
+_COM_SMARTPTR_TYPEDEF(ICadDrawingDataset, __uuidof(ICadDrawingDataset));
+_COM_SMARTPTR_TYPEDEF(ICadDrawingWorkspace, __uuidof(ICadDrawingWorkspace));
+_COM_SMARTPTR_TYPEDEF(ISdcExporter, __uuidof(ISdcExporter));
+_COM_SMARTPTR_TYPEDEF(ISMRouterPoint, __uuidof(ISMRouterPoint));
+_COM_SMARTPTR_TYPEDEF(ISMRouterEnvelope, __uuidof(ISMRouterEnvelope));
+_COM_SMARTPTR_TYPEDEF(ISMPointsCollection, __uuidof(ISMPointsCollection));
+_COM_SMARTPTR_TYPEDEF(ISMNetAttribute, __uuidof(ISMNetAttribute));
+_COM_SMARTPTR_TYPEDEF(ISMNetAttribute2, __uuidof(ISMNetAttribute2));
+_COM_SMARTPTR_TYPEDEF(ISMNetAttributesCollection, __uuidof(ISMNetAttributesCollection));
+_COM_SMARTPTR_TYPEDEF(ISMNetBarrier, __uuidof(ISMNetBarrier));
+_COM_SMARTPTR_TYPEDEF(ISMNetBarriersCollection, __uuidof(ISMNetBarriersCollection));
+_COM_SMARTPTR_TYPEDEF(ISMRoadPreferences, __uuidof(ISMRoadPreferences));
+_COM_SMARTPTR_TYPEDEF(ISMSpeedGroup, __uuidof(ISMSpeedGroup));
+_COM_SMARTPTR_TYPEDEF(ISMSpeedGroup2, __uuidof(ISMSpeedGroup2));
+_COM_SMARTPTR_TYPEDEF(ISMSpeedGroups, __uuidof(ISMSpeedGroups));
+_COM_SMARTPTR_TYPEDEF(ISMTripPlanSettings, __uuidof(ISMTripPlanSettings));
+_COM_SMARTPTR_TYPEDEF(ISMFlag, __uuidof(ISMFlag));
+_COM_SMARTPTR_TYPEDEF(ISMFlagCreator, __uuidof(ISMFlagCreator));
+_COM_SMARTPTR_TYPEDEF(ISMFlagCreator2, __uuidof(ISMFlagCreator2));
+_COM_SMARTPTR_TYPEDEF(ISMStop, __uuidof(ISMStop));
+_COM_SMARTPTR_TYPEDEF(ISMStopsCollection, __uuidof(ISMStopsCollection));
+_COM_SMARTPTR_TYPEDEF(ISMDirItem, __uuidof(ISMDirItem));
+_COM_SMARTPTR_TYPEDEF(ISMDirections, __uuidof(ISMDirections));
+_COM_SMARTPTR_TYPEDEF(ISMBreakTracker, __uuidof(ISMBreakTracker));
+_COM_SMARTPTR_TYPEDEF(ISMNetAttributesAccess, __uuidof(ISMNetAttributesAccess));
+_COM_SMARTPTR_TYPEDEF(ISMRouter, __uuidof(ISMRouter));
+_COM_SMARTPTR_TYPEDEF(ISMRouterFactory, __uuidof(ISMRouterFactory));
+_COM_SMARTPTR_TYPEDEF(ISMRoutingMetaData, __uuidof(ISMRoutingMetaData));
+_COM_SMARTPTR_TYPEDEF(ISMRestriction, __uuidof(ISMRestriction));
+_COM_SMARTPTR_TYPEDEF(ISMRouterSetup, __uuidof(ISMRouterSetup));
+_COM_SMARTPTR_TYPEDEF(ISMRouterSetup2, __uuidof(ISMRouterSetup2));
+_COM_SMARTPTR_TYPEDEF(IUsageModeOption, __uuidof(IUsageModeOption));
+_COM_SMARTPTR_TYPEDEF(IUsageModeInfo, __uuidof(IUsageModeInfo));
+_COM_SMARTPTR_TYPEDEF(IMetaInfo, __uuidof(IMetaInfo));
+_COM_SMARTPTR_TYPEDEF(IDataLicenseInfo, __uuidof(IDataLicenseInfo));
+_COM_SMARTPTR_TYPEDEF(IDataLicenseManager, __uuidof(IDataLicenseManager));
+_COM_SMARTPTR_TYPEDEF(IDECadDrawingDataset, __uuidof(IDECadDrawingDataset));
+_COM_SMARTPTR_TYPEDEF(IDECadDrawingDatasetType, __uuidof(IDECadDrawingDatasetType));
+_COM_SMARTPTR_TYPEDEF(IGPLayer, __uuidof(IGPLayer));
+_COM_SMARTPTR_TYPEDEF(IGPLayerType, __uuidof(IGPLayerType));
+_COM_SMARTPTR_TYPEDEF(IDELayer, __uuidof(IDELayer));
+_COM_SMARTPTR_TYPEDEF(IDEShapeFile, __uuidof(IDEShapeFile));
+_COM_SMARTPTR_TYPEDEF(IDEDbaseTable, __uuidof(IDEDbaseTable));
+_COM_SMARTPTR_TYPEDEF(IDELayerType, __uuidof(IDELayerType));
+_COM_SMARTPTR_TYPEDEF(IDEShapeFileType, __uuidof(IDEShapeFileType));
+_COM_SMARTPTR_TYPEDEF(IDEDbaseTableType, __uuidof(IDEDbaseTableType));
+_COM_SMARTPTR_TYPEDEF(IDETextFile, __uuidof(IDETextFile));
+_COM_SMARTPTR_TYPEDEF(IDETextFileType, __uuidof(IDETextFileType));
+_COM_SMARTPTR_TYPEDEF(IDEFileType, __uuidof(IDEFileType));
+_COM_SMARTPTR_TYPEDEF(IDEFile, __uuidof(IDEFile));
+_COM_SMARTPTR_TYPEDEF(IDECatalogRoot, __uuidof(IDECatalogRoot));
+_COM_SMARTPTR_TYPEDEF(IDERemoteDatabaseFolder, __uuidof(IDERemoteDatabaseFolder));
+_COM_SMARTPTR_TYPEDEF(IDESpatialReferencesFolder, __uuidof(IDESpatialReferencesFolder));
+_COM_SMARTPTR_TYPEDEF(IDEDiskConnection, __uuidof(IDEDiskConnection));
+_COM_SMARTPTR_TYPEDEF(IDEFolder, __uuidof(IDEFolder));
+_COM_SMARTPTR_TYPEDEF(IDEPrjFile, __uuidof(IDEPrjFile));
+_COM_SMARTPTR_TYPEDEF(IDEMapDocument, __uuidof(IDEMapDocument));
+_COM_SMARTPTR_TYPEDEF(IDECatalogRootType, __uuidof(IDECatalogRootType));
+_COM_SMARTPTR_TYPEDEF(IDEDiskConnectionType, __uuidof(IDEDiskConnectionType));
+_COM_SMARTPTR_TYPEDEF(IDEFolderType, __uuidof(IDEFolderType));
+_COM_SMARTPTR_TYPEDEF(IDEPrjFileType, __uuidof(IDEPrjFileType));
+_COM_SMARTPTR_TYPEDEF(IDEMapDocumentType, __uuidof(IDEMapDocumentType));
+_COM_SMARTPTR_TYPEDEF(IDERemoteDatabaseFolderType, __uuidof(IDERemoteDatabaseFolderType));
+_COM_SMARTPTR_TYPEDEF(IDESpatialReferencesFolderType, __uuidof(IDESpatialReferencesFolderType));
+_COM_SMARTPTR_TYPEDEF(IDETin, __uuidof(IDETin));
+_COM_SMARTPTR_TYPEDEF(IDETinType, __uuidof(IDETinType));
+_COM_SMARTPTR_TYPEDEF(IDELasDataset, __uuidof(IDELasDataset));
+_COM_SMARTPTR_TYPEDEF(IDELasDatasetType, __uuidof(IDELasDatasetType));
+_COM_SMARTPTR_TYPEDEF(IDECoverage, __uuidof(IDECoverage));
+_COM_SMARTPTR_TYPEDEF(IDECoverageFeatureClass, __uuidof(IDECoverageFeatureClass));
+_COM_SMARTPTR_TYPEDEF(IDEArcInfoTable, __uuidof(IDEArcInfoTable));
+_COM_SMARTPTR_TYPEDEF(IGPArcInfoItem, __uuidof(IGPArcInfoItem));
+_COM_SMARTPTR_TYPEDEF(IDEArcInfoUtilities, __uuidof(IDEArcInfoUtilities));
+_COM_SMARTPTR_TYPEDEF(IDECoverageType, __uuidof(IDECoverageType));
+_COM_SMARTPTR_TYPEDEF(IDECoverageFeatureClassType, __uuidof(IDECoverageFeatureClassType));
+_COM_SMARTPTR_TYPEDEF(IDEArcInfoTableType, __uuidof(IDEArcInfoTableType));
+_COM_SMARTPTR_TYPEDEF(IGPArcInfoItemType, __uuidof(IGPArcInfoItemType));
+_COM_SMARTPTR_TYPEDEF(IDEVPFTable, __uuidof(IDEVPFTable));
+_COM_SMARTPTR_TYPEDEF(IDEVPFTableType, __uuidof(IDEVPFTableType));
+_COM_SMARTPTR_TYPEDEF(IDEVPFCoverage, __uuidof(IDEVPFCoverage));
+_COM_SMARTPTR_TYPEDEF(IDEVPFCoverageType, __uuidof(IDEVPFCoverageType));
+
+//
+// Type library items
+//
+
+enum __declspec(uuid("3178ff61-d258-11d2-b0dd-0000f8780820"))
+esriCoverageToleranceType
+{
+    esriCTTFuzzy = 1,
+    esriCTTGeneralize = 2,
+    esriCTTNodeMatch = 3,
+    esriCTTDangle = 4,
+    esriCTTTicMatch = 5,
+    esriCTTEdit = 6,
+    esriCTTNodeSnap = 7,
+    esriCTTWeed = 8,
+    esriCTTGrain = 9,
+    esriCTTSnap = 10
+};
+
+enum __declspec(uuid("b5e470d1-ceab-11d2-b0dc-0000f8780820"))
+esriArcInfoItemType
+{
+    esriItemTypeDate = 1,
+    esriItemTypeCharacter = 2,
+    esriItemTypeInteger = 3,
+    esriItemTypeNumber = 4,
+    esriItemTypeBinary = 5,
+    esriItemTypeFloat = 6,
+    esriItemTypeLeadFill = 7,
+    esriItemTypePacked = 8,
+    esriItemTypeZeroFill = 9,
+    esriItemTypeOverpunch = 10,
+    esriItemTypeTrailingSign = 11,
+    esriItemTypeOID = 12,
+    esriItemTypeGeometry = 13,
+    esriItemTypeBlob = 14
+};
+
+enum __declspec(uuid("137dfcdc-144d-11d3-9f31-00c04f79927c"))
+esriCoverageType
+{
+    esriEmptyCoverage = 0,
+    esriAnnotationCoverage = 1,
+    esriPointCoverage = 2,
+    esriLineCoverage = 3,
+    esriPolygonCoverage = 4,
+    esriPreliminaryPolygonCoverage = 5
+};
+
+enum __declspec(uuid("231b58a1-e78f-11d2-9f30-00c04f79927c"))
+esriCoverageFeatureClassType
+{
+    esriCFCTPoint = 1,
+    esriCFCTArc = 2,
+    esriCFCTPolygon = 3,
+    esriCFCTNode = 4,
+    esriCFCTTic = 5,
+    esriCFCTAnnotation = 6,
+    esriCFCTSection = 7,
+    esriCFCTRoute = 8,
+    esriCFCTLink = 9,
+    esriCFCTRegion = 11,
+    esriCFCTLabel = 51,
+    esriCFCTFile = 666
+};
+
+enum __declspec(uuid("2320941b-0d81-11d3-9f31-00c04f79927c"))
+esriFeatureClassTopology
+{
+    esriFCTNotApplicable = 0,
+    esriFCTPreliminary = 1,
+    esriFCTExists = 2,
+    esriFCTUnknown = 3
+};
+
+enum __declspec(uuid("14c62fff-e3b7-11d2-9f30-00c04f79927c"))
+esriCoveragePrecisionType
+{
+    esriCoveragePrecisionSingle = 1,
+    esriCoveragePrecisionDouble = 2
+};
+
+struct __declspec(uuid("b5e470d2-ceab-11d2-b0dc-0000f8780820"))
+IArcInfoItem : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_StartPosition (
+        /*[out,retval]*/ long * StartPosition ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_Width (
+        /*[out,retval]*/ long * Width ) = 0;
+      virtual HRESULT __stdcall get_OutputWidth (
+        /*[out,retval]*/ long * OutputWidth ) = 0;
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ enum esriArcInfoItemType * Type ) = 0;
+      virtual HRESULT __stdcall get_NumberDecimals (
+        /*[out,retval]*/ long * NumberDecimals ) = 0;
+      virtual HRESULT __stdcall get_AlternateName (
+        /*[out,retval]*/ BSTR * AlternateName ) = 0;
+      virtual HRESULT __stdcall get_IsRedefined (
+        /*[out,retval]*/ VARIANT_BOOL * IsRedefined ) = 0;
+      virtual HRESULT __stdcall get_IsPseudo (
+        /*[out,retval]*/ VARIANT_BOOL * IsPseudo ) = 0;
+      virtual HRESULT __stdcall get_IsIndexed (
+        /*[out,retval]*/ VARIANT_BOOL * IsIndexed ) = 0;
+};
+
+struct __declspec(uuid("b5e470d3-ceab-11d2-b0dc-0000f8780820"))
+IArcInfoItemEdit : IArcInfoItem
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_StartPosition (
+        /*[in]*/ long _arg1 ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall put_Width (
+        /*[in]*/ long _arg1 ) = 0;
+      virtual HRESULT __stdcall put_OutputWidth (
+        /*[in]*/ long _arg1 ) = 0;
+      virtual HRESULT __stdcall put_Type (
+        /*[in]*/ enum esriArcInfoItemType _arg1 ) = 0;
+      virtual HRESULT __stdcall put_NumberDecimals (
+        /*[in]*/ long _arg1 ) = 0;
+      virtual HRESULT __stdcall put_AlternateName (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall put_IsRedefined (
+        /*[in]*/ VARIANT_BOOL _arg1 ) = 0;
+      virtual HRESULT __stdcall put_IsPseudo (
+        /*[in]*/ VARIANT_BOOL _arg1 ) = 0;
+      virtual HRESULT __stdcall put_IsIndexed (
+        /*[in]*/ VARIANT_BOOL _arg1 ) = 0;
+};
+
+struct __declspec(uuid("b5e470d4-ceab-11d2-b0dc-0000f8780820"))
+IArcInfoItems : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ItemCount (
+        /*[out,retval]*/ long * numItems ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IArcInfoItem * * Item ) = 0;
+      virtual HRESULT __stdcall FindItem (
+        /*[in]*/ BSTR Name,
+        /*[out]*/ long * index ) = 0;
+};
+
+struct __declspec(uuid("b5e470d5-ceab-11d2-b0dc-0000f8780820"))
+IArcInfoItemsEdit : IArcInfoItems
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_ItemCount (
+        /*[in]*/ long _arg1 ) = 0;
+      virtual HRESULT __stdcall put_Item (
+        /*[in]*/ long index,
+        /*[in]*/ struct IArcInfoItem * _arg2 ) = 0;
+      virtual HRESULT __stdcall AddItem (
+        /*[in]*/ struct IArcInfoItem * Item ) = 0;
+      virtual HRESULT __stdcall DeleteItem (
+        /*[in]*/ struct IArcInfoItem * Item ) = 0;
+      virtual HRESULT __stdcall DeleteAllItems ( ) = 0;
+};
+
+struct __declspec(uuid("d3ec3d31-cffe-11d2-b0dc-0000f8780820"))
+IArcInfoTable : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall FindItem (
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ long * itemIndex ) = 0;
+      virtual HRESULT __stdcall get_ItemSet (
+        /*[out,retval]*/ struct IArcInfoItems * * ItemSet ) = 0;
+      virtual HRESULT __stdcall AddItem (
+        /*[in]*/ struct IArcInfoItem * Item,
+        /*[in]*/ BSTR startItem ) = 0;
+      virtual HRESULT __stdcall DeleteItem (
+        /*[in]*/ BSTR itemName ) = 0;
+      virtual HRESULT __stdcall AddIndex (
+        /*[in]*/ BSTR itemName ) = 0;
+      virtual HRESULT __stdcall DeleteIndex (
+        /*[in]*/ BSTR itemName ) = 0;
+      virtual HRESULT __stdcall AlterItem (
+        /*[in]*/ BSTR itemName,
+        /*[in]*/ struct IArcInfoItem * Item ) = 0;
+};
+
+struct __declspec(uuid("99d56004-bb97-4606-a141-6bb061f87940"))
+IArcInfoTable2 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall External (
+        /*[in]*/ BSTR externalname ) = 0;
+};
+
+struct __declspec(uuid("4e471bb1-06fa-11d3-9f31-00c04f79927c"))
+ICoverageFeatureClass : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_FeatureClassType (
+        /*[out,retval]*/ enum esriCoverageFeatureClassType * FeatureClassType ) = 0;
+      virtual HRESULT __stdcall get_Topology (
+        /*[out,retval]*/ enum esriFeatureClassTopology * Topology ) = 0;
+      virtual HRESULT __stdcall get_HasFAT (
+        /*[out,retval]*/ VARIANT_BOOL * HasFAT ) = 0;
+};
+
+struct __declspec(uuid("2da3b82a-b02a-11d4-9f5a-00c04f79927c"))
+ICoverageFeatureClass2 : ICoverageFeatureClass
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Copy (
+        /*[in]*/ BSTR copyName,
+        /*[in]*/ struct IFeatureDataset * copyFeatureDataset,
+        /*[out,retval]*/ struct IFeatureClass * * copyFeatureClass ) = 0;
+};
+
+struct __declspec(uuid("d42131e1-d187-11d2-b0dc-0000f8780820"))
+ICoverage : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Tolerance (
+        /*[in]*/ enum esriCoverageToleranceType toleranceType,
+        /*[out,retval]*/ double * toleranceValue ) = 0;
+      virtual HRESULT __stdcall get_ToleranceStatus (
+        /*[in]*/ enum esriCoverageToleranceType toleranceType,
+        /*[out,retval]*/ VARIANT_BOOL * isVerified ) = 0;
+      virtual HRESULT __stdcall put_Tolerance (
+        /*[in]*/ enum esriCoverageToleranceType toleranceType,
+        /*[in]*/ double toleranceValue ) = 0;
+      virtual HRESULT __stdcall Build (
+        /*[in]*/ enum esriCoverageFeatureClassType FeatureClassType,
+        /*[in]*/ BSTR subclassName ) = 0;
+      virtual HRESULT __stdcall Clean (
+        /*[in]*/ double dangleTolerance,
+        /*[in]*/ double fuzzyTolerance,
+        /*[in]*/ enum esriCoverageFeatureClassType FeatureClassType ) = 0;
+      virtual HRESULT __stdcall CreateFeatureClass (
+        /*[in]*/ enum esriCoverageFeatureClassType FeatureClassType,
+        /*[in]*/ BSTR subclassName,
+        /*[out,retval]*/ struct IFeatureClass * * featureClass ) = 0;
+};
+
+struct __declspec(uuid("d1e706bc-6eee-11d4-9f55-00c04f79927c"))
+ICoverage2 : ICoverage
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Extent (
+        /*[in]*/ struct IEnvelope * _arg1 ) = 0;
+      virtual HRESULT __stdcall RefreshSpatialProperties ( ) = 0;
+};
+
+struct __declspec(uuid("730e2ff7-e3b4-11d2-9f30-00c04f79927c"))
+IArcInfoWorkspace : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CreateCoverage (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR templateCoverage,
+        /*[in]*/ enum esriCoveragePrecisionType precision,
+        /*[out,retval]*/ struct IFeatureDataset * * featureDataset ) = 0;
+      virtual HRESULT __stdcall CreateInfoTable (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ struct IArcInfoItems * ItemSet,
+        /*[out,retval]*/ struct ITable * * Table ) = 0;
+};
+
+struct __declspec(uuid("215b5973-795c-499f-b3ff-798c1cd4dbe6"))
+IInfoTableOnlyWorkspaceEdit : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall StartEditingTablesOnly (
+        /*[in]*/ VARIANT_BOOL withUndoRedo ) = 0;
+};
+
+struct __declspec(uuid("de61a107-0e08-11d3-9f31-00c04f79927c"))
+ICoverageFeatureClassName : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_FeatureClassType (
+        /*[out,retval]*/ enum esriCoverageFeatureClassType * FeatureClassType ) = 0;
+      virtual HRESULT __stdcall put_FeatureClassType (
+        /*[in]*/ enum esriCoverageFeatureClassType FeatureClassType ) = 0;
+      virtual HRESULT __stdcall get_Topology (
+        /*[out,retval]*/ enum esriFeatureClassTopology * Topology ) = 0;
+      virtual HRESULT __stdcall put_Topology (
+        /*[in]*/ enum esriFeatureClassTopology Topology ) = 0;
+      virtual HRESULT __stdcall get_HasFAT (
+        /*[out,retval]*/ VARIANT_BOOL * HasFAT ) = 0;
+      virtual HRESULT __stdcall put_HasFAT (
+        /*[in]*/ VARIANT_BOOL HasFAT ) = 0;
+};
+
+struct __declspec(uuid("de61a108-0e08-11d3-9f31-00c04f79927c"))
+ICoverageName : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_CoverageType (
+        /*[out,retval]*/ enum esriCoverageType * CoverageType ) = 0;
+      virtual HRESULT __stdcall put_CoverageType (
+        /*[in]*/ enum esriCoverageType CoverageType ) = 0;
+};
+
+struct __declspec(uuid("a476810a-0c8d-469a-8332-7b3c1cfb8923"))
+IArcInfoWorkspaceUtil : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetInfoTableName (
+        /*[in]*/ BSTR prefix,
+        /*[out,retval]*/ BSTR * pTableName ) = 0;
+};
+
+struct __declspec(uuid("1d887452-d9f2-11d1-aa81-00c04fa33a15"))
+ArcInfoWorkspaceFactory;
+    // [ default ] interface IUnknown
+    // interface IWorkspaceFactory
+    // interface IWorkspaceFactory2
+    // interface ISupportErrorInfo
+    // interface IParseNameString
+
+struct __declspec(uuid("5bb90fa2-d013-11d2-b0dc-0000f8780820"))
+ArcInfoItems;
+    // [ default ] interface IUnknown
+    // interface IArcInfoItems
+    // interface IArcInfoItemsEdit
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("5bb90fa1-d013-11d2-b0dc-0000f8780820"))
+ArcInfoItem;
+    // [ default ] interface IUnknown
+    // interface IArcInfoItem
+    // interface IArcInfoItemEdit
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("72f77de8-122a-11d3-9f31-00c04f79927c"))
+CoverageFeatureClassName;
+    // interface IName
+    // [ default ] interface IUnknown
+    // interface ICoverageFeatureClassName
+    // interface IDatasetName
+    // interface IDatasetName2
+    // interface IDatasetNameFileStat
+    // interface IFeatureClassName
+    // interface IMetadata
+    // interface IMetadataEdit
+    // interface INativeTypeInfo
+    // interface ITableName
+    // interface IModelInfo
+    // interface IObjectClassName
+    // interface ITopologyClassName
+
+struct __declspec(uuid("1e921c72-122f-11d3-9f31-00c04f79927c"))
+CoverageName;
+    // interface IName
+    // [ default ] interface IUnknown
+    // interface ICoverageName
+    // interface IDatasetName
+    // interface IDatasetNameFileStat
+    // interface IFeatureDatasetName
+    // interface IMetadata
+    // interface IMetadataEdit
+    // interface INativeTypeInfo
+    // interface IFeatureDatasetName2
+    // interface IDatasetContainerName
+
+struct __declspec(uuid("6de812d2-9ab6-11d2-b0d7-0000f8780820"))
+PCCoverageWorkspaceFactory;
+    // [ default ] interface IUnknown
+    // interface IWorkspaceFactory
+    // interface IWorkspaceFactory2
+
+struct __declspec(uuid("ae2469e8-e110-4cd6-b3f4-a756cbf921ca"))
+StreetMapWorkspaceFactory;
+    // [ default ] interface IUnknown
+    // interface IPlugInWorkspaceFactoryHelper
+    // interface IWorkspaceFactory
+    // interface IWorkspaceFactory2
+
+struct __declspec(uuid("34dae34f-dbe2-409c-8f85-ddbb46138011"))
+SDCWorkspaceFactory;
+    // [ default ] interface IUnknown
+    // interface IWorkspaceFactory
+    // interface IWorkspaceFactory2
+    // interface IPlugInWorkspaceFactoryHelper
+    // interface IPlugInCreateWorkspace
+    // interface IParseNameString
+
+struct __declspec(uuid("5be00c09-a03f-4a69-b678-985108a500d3"))
+SDCNetworkSource;
+    // [ default ] interface IUnknown
+    // interface INetworkSource
+    // interface IGPDescribe
+
+struct __declspec(uuid("a2ab1fba-aa5f-485e-97fe-79d0f5ff9984"))
+SDCNetworkAttribute;
+    // [ default ] interface IUnknown
+    // interface INetworkAttribute
+    // interface IGPDescribe
+
+struct __declspec(uuid("a06adb96-d95c-11d1-aa81-00c04fa33a15"))
+ShapefileWorkspaceFactory;
+    // [ default ] interface IUnknown
+    // interface IWorkspaceFactory
+    // interface IWorkspaceFactory2
+
+struct __declspec(uuid("397847f9-c865-11d3-9b56-00c04fa33299"))
+VpfWorkspaceFactory;
+    // [ default ] interface IUnknown
+    // interface IWorkspaceFactory
+    // interface IWorkspaceFactory2
+    // interface IParseNameString
+
+struct __declspec(uuid("ad4e89d9-00a5-11d2-b1ca-00c04f8edeff"))
+TinWorkspaceFactory;
+    // [ default ] interface IUnknown
+    // interface IWorkspaceFactory
+    // interface IWorkspaceFactory2
+
+struct __declspec(uuid("894af6a1-157a-47ba-bdec-3cf98d4cce74"))
+GeoRSSWorkspaceFactory;
+    // [ default ] interface IUnknown
+    // interface IPlugInWorkspaceFactoryHelper
+    // interface IWorkspaceFactory
+    // interface IWorkspaceFactory2
+
+struct __declspec(uuid("628022fd-e7df-11d4-a2a8-444553547777"))
+ICadSettings : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_EnableAllDgnFileExtensions (
+        /*[out,retval]*/ VARIANT_BOOL * pEnabled ) = 0;
+      virtual HRESULT __stdcall put_EnableAllDgnFileExtensions (
+        /*[in]*/ VARIANT_BOOL pEnabled ) = 0;
+};
+
+struct __declspec(uuid("9e2c27ce-62c6-11d2-9aed-00c04fa33299"))
+CadWorkspaceFactory;
+    // [ default ] interface IUnknown
+    // interface IWorkspaceFactory
+    // interface IWorkspaceFactory2
+    // interface ICadSettings
+
+struct __declspec(uuid("e37f71aa-bfb1-11d2-9b20-00c04fa33299"))
+ICadDrawingLayers : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_DrawingLayerCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_DrawingLayerName (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * FilePath ) = 0;
+      virtual HRESULT __stdcall get_DrawingLayerVisible (
+        /*[in]*/ long index,
+        /*[out,retval]*/ VARIANT_BOOL * visible ) = 0;
+      virtual HRESULT __stdcall put_DrawingLayerVisible (
+        /*[in]*/ long index,
+        /*[in]*/ VARIANT_BOOL visible ) = 0;
+      virtual HRESULT __stdcall get_OriginalDrawingLayerVisible (
+        /*[in]*/ long index,
+        /*[out,retval]*/ VARIANT_BOOL * visible ) = 0;
+};
+
+struct __declspec(uuid("d4224309-a5cb-11d2-9b10-00c04fa33299"))
+CadDrawingName;
+    // [ default ] interface IUnknown
+    // interface IName
+    // interface IDatasetName
+    // interface IPersistStream
+    // interface IMetadata
+    // interface IMetadataEdit
+    // interface INativeTypeInfo
+
+enum __declspec(uuid("3b85b1f6-d1a4-11d2-9b29-00c04fa33299"))
+esriCadTransform
+{
+    esriCadTransformByWorldFile = 0,
+    esriCadTransformByPoints = 1,
+    esriCadTransformByRst = 2
+};
+
+struct __declspec(uuid("e37f71ab-bfb1-11d2-9b20-00c04fa33299"))
+ICadTransformations : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_EnableTransformations (
+        /*[out,retval]*/ VARIANT_BOOL * enabled ) = 0;
+      virtual HRESULT __stdcall put_EnableTransformations (
+        /*[in]*/ VARIANT_BOOL enabled ) = 0;
+      virtual HRESULT __stdcall get_WorldFileName (
+        /*[out,retval]*/ BSTR * FilePath ) = 0;
+      virtual HRESULT __stdcall put_WorldFileName (
+        /*[in]*/ BSTR FilePath ) = 0;
+      virtual HRESULT __stdcall get_TransformMode (
+        /*[out,retval]*/ enum esriCadTransform * mode ) = 0;
+      virtual HRESULT __stdcall put_TransformMode (
+        /*[in]*/ enum esriCadTransform mode ) = 0;
+      virtual HRESULT __stdcall GetFromToTransform (
+        /*[out]*/ WKSPoint * fromPoint1,
+        /*[out]*/ WKSPoint * fromPoint2,
+        /*[out]*/ WKSPoint * toPoint1,
+        /*[out]*/ WKSPoint * toPoint2 ) = 0;
+      virtual HRESULT __stdcall SetFromToTransform (
+        /*[in]*/ WKSPoint * fromPoint1,
+        /*[in]*/ WKSPoint * fromPoint2,
+        /*[in]*/ WKSPoint * toPoint1,
+        /*[in]*/ WKSPoint * toPoint2 ) = 0;
+      virtual HRESULT __stdcall GetTransformation (
+        /*[out]*/ WKSPoint * from,
+        /*[out]*/ WKSPoint * to,
+        /*[out]*/ double * angle,
+        /*[out]*/ double * scale ) = 0;
+      virtual HRESULT __stdcall SetTransformation (
+        /*[in]*/ WKSPoint * from,
+        /*[in]*/ WKSPoint * to,
+        /*[in]*/ double angle,
+        /*[in]*/ double scale ) = 0;
+};
+
+struct __declspec(uuid("6c1d6540-4930-11d3-9b39-00c04fa33299"))
+ICadDrawingDataset : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_FilePath (
+        /*[out,retval]*/ BSTR * FilePath ) = 0;
+      virtual HRESULT __stdcall get_Is2d (
+        /*[out,retval]*/ VARIANT_BOOL * Is2d ) = 0;
+      virtual HRESULT __stdcall get_Is3d (
+        /*[out,retval]*/ VARIANT_BOOL * Is3d ) = 0;
+      virtual HRESULT __stdcall get_IsAutoCad (
+        /*[out,retval]*/ VARIANT_BOOL * IsAutoCad ) = 0;
+      virtual HRESULT __stdcall get_IsDgn (
+        /*[out,retval]*/ VARIANT_BOOL * IsDgn ) = 0;
+      virtual HRESULT __stdcall get_Exists (
+        /*[out,retval]*/ VARIANT_BOOL * Exists ) = 0;
+};
+
+struct __declspec(uuid("76b47b11-ac32-11d4-a226-444553547777"))
+ICadDrawingWorkspace : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall OpenCadDrawingDataset (
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ struct ICadDrawingDataset * * dataset ) = 0;
+};
+
+struct __declspec(uuid("989b9737-fecf-467d-8544-d3b3ee30e60c"))
+ISdcExporter : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Export (
+        /*[in]*/ struct ICursor * cursor,
+        /*[in]*/ BSTR outputRootname,
+        /*[in]*/ GUID * Key,
+        /*[in]*/ struct ITrackCancel * trackCancel,
+        /*[out,retval]*/ struct IDataset * * sdcDataset ) = 0;
+};
+
+struct __declspec(uuid("3c8b1a03-64b8-4e29-86ad-d4c4cb371ec1"))
+SdcExporter;
+    // [ default ] interface IUnknown
+    // interface ISdcExporter
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("f8b65fed-5850-11d7-b321-008048db11de"))
+ISMRouterPoint : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_X (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_X (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_Y (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_Y (
+        /*[in]*/ double pVal ) = 0;
+};
+
+struct __declspec(uuid("f8b65ff0-5850-11d7-b321-008048db11de"))
+ISMRouterEnvelope : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Top (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_Top (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_Bottom (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_Bottom (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_Left (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_Left (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_Right (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_Right (
+        /*[in]*/ double pVal ) = 0;
+};
+
+struct __declspec(uuid("f8b65ff3-5850-11d7-b321-008048db11de"))
+ISMPointsCollection : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Position,
+        /*[out,retval]*/ struct ISMRouterPoint * * pVal ) = 0;
+      virtual HRESULT __stdcall Add (
+        /*[in]*/ struct ISMRouterPoint * pItem ) = 0;
+      virtual HRESULT __stdcall Insert (
+        /*[in]*/ long Position,
+        /*[in]*/ struct ISMRouterPoint * pItem ) = 0;
+      virtual HRESULT __stdcall Remove (
+        /*[in]*/ long Position ) = 0;
+      virtual HRESULT __stdcall Clear ( ) = 0;
+};
+
+enum __declspec(uuid("bc0cd721-585e-11d7-b321-008048db11de"))
+esriSMNetAttributeType
+{
+    esriSMNetAttrInteger = 1,
+    esriSMNetAttrFloat = 2,
+    esriSMNetAttrDouble = 3,
+    esriSMNetAttrBoolean = 4,
+    esriSMNetAttrString = 5,
+    esriSMNetAttrShape = 6
+};
+
+struct __declspec(uuid("f8b65ff6-5850-11d7-b321-008048db11de"))
+ISMNetAttribute : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ enum esriSMNetAttributeType * pVal ) = 0;
+};
+
+enum __declspec(uuid("a0178b94-45c2-4318-b152-5e088fb94279"))
+esriSMNetAttributeUsageType
+{
+    esriSMNAUTCost = 1,
+    esriSMNAUTDescription = 2,
+    esriSMNAUTRestrictionBoolean = 3,
+    esriSMNAUTRestrictionMinAllowed = 4,
+    esriSMNAUTRestrictionMaxAllowed = 5
+};
+
+struct __declspec(uuid("b1a5376c-dfdf-48dd-a472-076808c0c73e"))
+ISMNetAttribute2 : ISMNetAttribute
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_UsageType (
+        /*[out,retval]*/ enum esriSMNetAttributeUsageType * pVal ) = 0;
+};
+
+struct __declspec(uuid("f8b65ff9-5850-11d7-b321-008048db11de"))
+ISMNetAttributesCollection : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Position,
+        /*[out,retval]*/ struct ISMNetAttribute * * pVal ) = 0;
+};
+
+struct __declspec(uuid("f8b65ffc-5850-11d7-b321-008048db11de"))
+ISMNetBarrier : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_BarrierID (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_BarrierID (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Point (
+        /*[out,retval]*/ struct ISMRouterPoint * * pVal ) = 0;
+      virtual HRESULT __stdcall put_Point (
+        /*[in]*/ struct ISMRouterPoint * pVal ) = 0;
+};
+
+struct __declspec(uuid("f8b65fff-5850-11d7-b321-008048db11de"))
+ISMNetBarriersCollection : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Add (
+        /*[in]*/ struct ISMNetBarrier * pItem ) = 0;
+      virtual HRESULT __stdcall Remove (
+        /*[in]*/ long lID ) = 0;
+      virtual HRESULT __stdcall Clear ( ) = 0;
+};
+
+enum __declspec(uuid("bc0cd720-585e-11d7-b321-008048db11de"))
+esriSMRoadType
+{
+    esriSMRoadTypeHighways = 1,
+    esriSMRoadTypeFerries = 2
+};
+
+struct __declspec(uuid("f8b66002-5850-11d7-b321-008048db11de"))
+ISMRoadPreferences : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ enum esriSMRoadType RoadType,
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_Item (
+        /*[in]*/ enum esriSMRoadType RoadType,
+        /*[in]*/ short pVal ) = 0;
+};
+
+struct __declspec(uuid("f8b66005-5850-11d7-b321-008048db11de"))
+ISMSpeedGroup : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Speed (
+        /*[out,retval]*/ float * pVal ) = 0;
+      virtual HRESULT __stdcall put_Speed (
+        /*[in]*/ float pVal ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("1e436c24-cf57-4aca-bbd3-ffddb1151fa7"))
+ISMSpeedGroup2 : ISMSpeedGroup
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_QueryString (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("f8b66008-5850-11d7-b321-008048db11de"))
+ISMSpeedGroups : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Position,
+        /*[out,retval]*/ struct ISMSpeedGroup * * pVal ) = 0;
+};
+
+struct __declspec(uuid("f8b6600b-5850-11d7-b321-008048db11de"))
+ISMTripPlanSettings : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_TripPlanningEnable (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_TripPlanningEnable (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_TripStart (
+        /*[out,retval]*/ DATE * pVal ) = 0;
+      virtual HRESULT __stdcall put_TripStart (
+        /*[in]*/ DATE pVal ) = 0;
+      virtual HRESULT __stdcall get_DayDriveStart (
+        /*[out,retval]*/ DATE * pVal ) = 0;
+      virtual HRESULT __stdcall put_DayDriveStart (
+        /*[in]*/ DATE pVal ) = 0;
+      virtual HRESULT __stdcall get_DayDriveEnd (
+        /*[out,retval]*/ DATE * pVal ) = 0;
+      virtual HRESULT __stdcall put_DayDriveEnd (
+        /*[in]*/ DATE pVal ) = 0;
+      virtual HRESULT __stdcall get_DriveFlexibility (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_DriveFlexibility (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_RestBreaksEnable (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_RestBreaksEnable (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_RestDuration (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_RestDuration (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_DriveBetweenRest (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_DriveBetweenRest (
+        /*[in]*/ short pVal ) = 0;
+};
+
+enum __declspec(uuid("bc0cd723-585e-11d7-b321-008048db11de"))
+esriSMStreetSideType
+{
+    esriSMStreetSideLeft = 1,
+    esriSMStreetSideRight = 2,
+    esriSMStreetSideUndefined = 3
+};
+
+struct __declspec(uuid("f8b66011-5850-11d7-b321-008048db11de"))
+ISMFlag : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ObjectID (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ObjectID (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_PercentAlong (
+        /*[out,retval]*/ float * pVal ) = 0;
+      virtual HRESULT __stdcall put_PercentAlong (
+        /*[in]*/ float pVal ) = 0;
+      virtual HRESULT __stdcall get_Side (
+        /*[out,retval]*/ enum esriSMStreetSideType * pVal ) = 0;
+      virtual HRESULT __stdcall put_Side (
+        /*[in]*/ enum esriSMStreetSideType pVal ) = 0;
+      virtual HRESULT __stdcall get_StreetPoint (
+        /*[out,retval]*/ struct ISMRouterPoint * * pVal ) = 0;
+      virtual HRESULT __stdcall put_StreetPoint (
+        /*[in]*/ struct ISMRouterPoint * pVal ) = 0;
+};
+
+struct __declspec(uuid("8a4bb863-0c3f-4897-aa09-1479a4b76a6f"))
+ISMFlagCreator : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CreateFlag (
+        /*[in]*/ struct ISMRouterPoint * pPoint,
+        /*[out,retval]*/ struct ISMFlag * * pIFlag ) = 0;
+      virtual HRESULT __stdcall CreateFlagDirection (
+        /*[in]*/ struct ISMRouterPoint * pPoint,
+        /*[in]*/ double dOrientation,
+        /*[in]*/ double dTolerance,
+        /*[out]*/ double * pdAdjustedOrientation,
+        /*[out,retval]*/ struct ISMFlag * * ppFlag ) = 0;
+      virtual HRESULT __stdcall CreateFlagDirectionAdv (
+        /*[in]*/ struct ISMRouterPoint * pPoint,
+        /*[in]*/ double dOrientation,
+        /*[in]*/ double dTolerance,
+        /*[in]*/ double dSpeed,
+        /*[in]*/ double dLatency,
+        /*[out]*/ double * pdAdjustedOrientation,
+        /*[out,retval]*/ struct ISMFlag * * ppFlag ) = 0;
+};
+
+struct __declspec(uuid("0e8f6257-745f-4de3-b651-6ecf14728c5c"))
+ISMFlagCreator2 : ISMFlagCreator
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_SearchTolerance (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_SearchTolerance (
+        /*[in]*/ double pVal ) = 0;
+};
+
+struct __declspec(uuid("f8b66014-5850-11d7-b321-008048db11de"))
+ISMStop : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_StopID (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_StopID (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Description (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Flag (
+        /*[out,retval]*/ struct ISMFlag * * pVal ) = 0;
+      virtual HRESULT __stdcall put_Flag (
+        /*[in]*/ struct ISMFlag * pVal ) = 0;
+      virtual HRESULT __stdcall get_Duration (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_Duration (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_MinDistanceToTurn (
+        /*[out,retval]*/ double * pdDist ) = 0;
+      virtual HRESULT __stdcall put_MinDistanceToTurn (
+        /*[in]*/ double pdDist ) = 0;
+      virtual HRESULT __stdcall get_EnforceSideOfStreet (
+        /*[out,retval]*/ VARIANT_BOOL * pbESS ) = 0;
+      virtual HRESULT __stdcall put_EnforceSideOfStreet (
+        /*[in]*/ VARIANT_BOOL pbESS ) = 0;
+};
+
+struct __declspec(uuid("f8b66017-5850-11d7-b321-008048db11de"))
+ISMStopsCollection : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Position,
+        /*[out,retval]*/ struct ISMStop * * pVal ) = 0;
+      virtual HRESULT __stdcall Add (
+        /*[in]*/ struct ISMStop * pItem ) = 0;
+      virtual HRESULT __stdcall Insert (
+        /*[in]*/ long Position,
+        /*[in]*/ struct ISMStop * pItem ) = 0;
+      virtual HRESULT __stdcall Remove (
+        /*[in]*/ long Position ) = 0;
+      virtual HRESULT __stdcall Clear ( ) = 0;
+};
+
+enum __declspec(uuid("bc0cd722-585e-11d7-b321-008048db11de"))
+esriSMDirItemType
+{
+    esriSMDirItemNewRoad = 1,
+    esriSMDirItemBypass = 2,
+    esriSMDirItemBorder = 3,
+    esriSMDirItemEndOfDay = 4,
+    esriSMDirItemDayNumber = 5,
+    esriSMDirItemRestBreak = 6,
+    esriSMDirItemDepart = 7,
+    esriSMDirItemArrive = 8
+};
+
+enum __declspec(uuid("c695b28c-b8ec-4546-a046-0fc2adc822ac"))
+esriSMAzimuthType
+{
+    esriSMAzimuthN = 1,
+    esriSMAzimuthNE = 2,
+    esriSMAzimuthE = 3,
+    esriSMAzimuthSE = 4,
+    esriSMAzimuthS = 5,
+    esriSMAzimuthSW = 6,
+    esriSMAzimuthW = 7,
+    esriSMAzimuthNW = 8,
+    esriSMAzimuthUnknown = 9
+};
+
+struct __declspec(uuid("f8b6601a-5850-11d7-b321-008048db11de"))
+ISMDirItem : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Text (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Length (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_Time (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_DriveText (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_ItemType (
+        /*[out,retval]*/ enum esriSMDirItemType * pVal ) = 0;
+      virtual HRESULT __stdcall get_RoutePart (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Shape (
+        /*[out,retval]*/ struct ISMPointsCollection * * pVal ) = 0;
+      virtual HRESULT __stdcall get_BoundBox (
+        /*[out,retval]*/ struct ISMRouterEnvelope * * pVal ) = 0;
+      virtual HRESULT __stdcall get_StreetName (
+        /*[out,retval]*/ BSTR * pbstrStreetName ) = 0;
+      virtual HRESULT __stdcall get_TurnAngle (
+        /*[out,retval]*/ double * pdAngle ) = 0;
+      virtual HRESULT __stdcall get_Azimuth (
+        /*[out,retval]*/ enum esriSMAzimuthType * pAzimuth ) = 0;
+};
+
+struct __declspec(uuid("f8b6601d-5850-11d7-b321-008048db11de"))
+ISMDirections : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_TotalLength (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_TotalTime (
+        /*[out,retval]*/ DATE * pVal ) = 0;
+      virtual HRESULT __stdcall get_TotalDrivingTime (
+        /*[out,retval]*/ DATE * pVal ) = 0;
+      virtual HRESULT __stdcall get_TotalsText (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_BoundBox (
+        /*[out,retval]*/ struct ISMRouterEnvelope * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Position,
+        /*[out,retval]*/ struct ISMDirItem * * pVal ) = 0;
+};
+
+struct __declspec(uuid("122fc3ae-a421-4922-9459-dff9d3631333"))
+ISMBreakTracker : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Continue (
+        /*[out,retval]*/ VARIANT_BOOL * bKeepGoing ) = 0;
+};
+
+struct __declspec(uuid("198dc955-519b-41ec-af33-1090d356c674"))
+ISMNetAttributesAccess : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetNetAttributeValue (
+        /*[in]*/ BSTR bstrAttrName,
+        /*[in]*/ long lObjectID,
+        /*[out,retval]*/ VARIANT * pvtVal ) = 0;
+};
+
+struct __declspec(uuid("f8b66020-5850-11d7-b321-008048db11de"))
+ISMRouter : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Barriers (
+        /*[out,retval]*/ struct ISMNetBarriersCollection * * pVal ) = 0;
+      virtual HRESULT __stdcall get_NetAttributes (
+        /*[out,retval]*/ struct ISMNetAttributesCollection * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Preferences (
+        /*[out,retval]*/ struct ISMRoadPreferences * * pVal ) = 0;
+      virtual HRESULT __stdcall get_SpeedGroups (
+        /*[out,retval]*/ struct ISMSpeedGroups * * pVal ) = 0;
+      virtual HRESULT __stdcall get_TripPlanSettings (
+        /*[out,retval]*/ struct ISMTripPlanSettings * * pVal ) = 0;
+      virtual HRESULT __stdcall get_NetAttributeName (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_NetAttributeName (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall ReorderStops (
+        /*[in]*/ struct ISMStopsCollection * pISrcStops,
+        /*[out,retval]*/ struct ISMStopsCollection * * pIResStops ) = 0;
+      virtual HRESULT __stdcall Solve (
+        /*[in]*/ struct ISMStopsCollection * pIStops,
+        /*[in]*/ struct ISMBreakTracker * pITracker,
+        /*[out,retval]*/ struct ISMDirections * * pIDirections ) = 0;
+      virtual HRESULT __stdcall get_NetAttributesAccess (
+        /*[out,retval]*/ struct ISMNetAttributesAccess * * ppNetAttrAccess ) = 0;
+      virtual HRESULT __stdcall get_ProjectionString (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_FlagCreator (
+        /*[out,retval]*/ struct ISMFlagCreator * * pVal ) = 0;
+};
+
+struct __declspec(uuid("f8b66023-5850-11d7-b321-008048db11de"))
+ISMRouterFactory : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CreateRouter (
+        /*[in]*/ BSTR RoutingFilePath,
+        /*[out,retval]*/ struct ISMRouter * * pIRouter ) = 0;
+      virtual HRESULT __stdcall CreateRouterCfg (
+        /*[in]*/ BSTR RoutingFilePath,
+        /*[in]*/ BSTR ConfigPath,
+        /*[out,retval]*/ struct ISMRouter * * pIRouter ) = 0;
+};
+
+struct __declspec(uuid("c8128b1a-23c3-4e21-93eb-50739b68f17a"))
+ISMRoutingMetaData : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Vendor (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_ProductName (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_ProductVersion (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Geography (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Time (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+};
+
+enum __declspec(uuid("bfb14f11-f0d5-4b33-b0b9-d1d95b834cc2"))
+esriSMRestrictionType
+{
+    esriSMRTStrict = 1,
+    esriSMRTRelaxed = 2
+};
+
+struct __declspec(uuid("3df8d708-18e9-4d3c-bc69-54190a3577d8"))
+ISMRestriction : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Attribute (
+        /*[out,retval]*/ struct ISMNetAttribute * * pAttr ) = 0;
+      virtual HRESULT __stdcall putref_Attribute (
+        /*[in]*/ struct ISMNetAttribute * pAttr ) = 0;
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ enum esriSMRestrictionType * pVal ) = 0;
+      virtual HRESULT __stdcall put_Type (
+        /*[in]*/ enum esriSMRestrictionType pVal ) = 0;
+      virtual HRESULT __stdcall get_Param (
+        /*[out,retval]*/ VARIANT * pvParam ) = 0;
+      virtual HRESULT __stdcall put_Param (
+        /*[in]*/ VARIANT pvParam ) = 0;
+};
+
+enum __declspec(uuid("488dd197-9b1b-46fe-b179-e736063abbe2"))
+esriSMBacktrackPolicy
+{
+    esriSMBTPDisable = 1,
+    esriSMBTPAllow = 2,
+    esriSMBTPDeadend = 3
+};
+
+enum __declspec(uuid("81fd94f8-2d8e-4fbb-ab17-c898e37cfaf9"))
+esriSMDirectionsLengthUnits
+{
+    esriSMDLUMiles = 1,
+    esriSMDLUKilometers = 2,
+    esriSMDLUMeters = 3,
+    esriSMDLUFeet = 4,
+    esriSMDLUYards = 5
+};
+
+struct __declspec(uuid("a386707f-fb42-4d0e-af12-3c1feb26f771"))
+ISMRouterSetup : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SetRestriction (
+        /*[in]*/ struct ISMRestriction * pRestriction ) = 0;
+      virtual HRESULT __stdcall ClearAllRestrictions ( ) = 0;
+      virtual HRESULT __stdcall get_BacktrackPolicy (
+        /*[out,retval]*/ enum esriSMBacktrackPolicy * pVal ) = 0;
+      virtual HRESULT __stdcall put_BacktrackPolicy (
+        /*[in]*/ enum esriSMBacktrackPolicy pVal ) = 0;
+      virtual HRESULT __stdcall get_DirectionsLengthUnits (
+        /*[out,retval]*/ enum esriSMDirectionsLengthUnits * pVal ) = 0;
+      virtual HRESULT __stdcall put_DirectionsLengthUnits (
+        /*[in]*/ enum esriSMDirectionsLengthUnits pVal ) = 0;
+};
+
+struct __declspec(uuid("06efa9d2-490c-4325-bf15-3f73f4492f34"))
+ISMRouterSetup2 : ISMRouterSetup
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_RestrictionCount (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Restriction (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct ISMRestriction * * pVal ) = 0;
+      virtual HRESULT __stdcall ClearRestriction (
+        /*[in]*/ long index ) = 0;
+};
+
+struct __declspec(uuid("f8b65fee-5850-11d7-b321-008048db11de"))
+SMRouterPoint;
+    // [ default ] interface ISMRouterPoint
+
+struct __declspec(uuid("f8b65ff1-5850-11d7-b321-008048db11de"))
+SMRouterEnvelope;
+    // [ default ] interface ISMRouterEnvelope
+
+struct __declspec(uuid("f8b65ff4-5850-11d7-b321-008048db11de"))
+SMPointsCollection;
+    // [ default ] interface ISMPointsCollection
+
+struct __declspec(uuid("f8b65ff7-5850-11d7-b321-008048db11de"))
+SMNetAttribute;
+    // [ default ] interface ISMNetAttribute
+    // interface ISMNetAttribute2
+
+struct __declspec(uuid("f8b65ffa-5850-11d7-b321-008048db11de"))
+SMNetAttributesCollection;
+    // [ default ] interface ISMNetAttributesCollection
+
+struct __declspec(uuid("f8b65ffd-5850-11d7-b321-008048db11de"))
+SMNetBarrier;
+    // [ default ] interface ISMNetBarrier
+
+struct __declspec(uuid("f8b66000-5850-11d7-b321-008048db11de"))
+SMNetBarriersCollection;
+    // [ default ] interface ISMNetBarriersCollection
+
+struct __declspec(uuid("f8b66003-5850-11d7-b321-008048db11de"))
+SMRoadPreferences;
+    // [ default ] interface ISMRoadPreferences
+
+struct __declspec(uuid("f8b66006-5850-11d7-b321-008048db11de"))
+SMSpeedGroup;
+    // [ default ] interface ISMSpeedGroup
+    // interface ISMSpeedGroup2
+
+struct __declspec(uuid("f8b66009-5850-11d7-b321-008048db11de"))
+SMSpeedGroups;
+    // [ default ] interface ISMSpeedGroups
+
+struct __declspec(uuid("f8b6600c-5850-11d7-b321-008048db11de"))
+SMTripPlanSettings;
+    // [ default ] interface ISMTripPlanSettings
+
+struct __declspec(uuid("f8b66012-5850-11d7-b321-008048db11de"))
+SMFlag;
+    // [ default ] interface ISMFlag
+
+struct __declspec(uuid("f8b66015-5850-11d7-b321-008048db11de"))
+SMStop;
+    // [ default ] interface ISMStop
+
+struct __declspec(uuid("f8b66018-5850-11d7-b321-008048db11de"))
+SMStopsCollection;
+    // [ default ] interface ISMStopsCollection
+
+struct __declspec(uuid("f8b6601b-5850-11d7-b321-008048db11de"))
+SMDirItem;
+    // [ default ] interface ISMDirItem
+
+struct __declspec(uuid("f8b6601e-5850-11d7-b321-008048db11de"))
+SMDirections;
+    // [ default ] interface ISMDirections
+
+struct __declspec(uuid("f8b66021-5850-11d7-b321-008048db11de"))
+SMRouter;
+    // [ default ] interface ISMRouter
+    // interface ISMRoutingMetaData
+    // interface ISMRouterSetup
+    // interface ISMRouterSetup2
+
+struct __declspec(uuid("f8b66024-5850-11d7-b321-008048db11de"))
+SMRouterFactory;
+    // [ default ] interface ISMRouterFactory
+
+struct __declspec(uuid("2041d5a1-c9b6-4c74-8954-033af25557b8"))
+SMNetAttributesAccess;
+    // [ default ] interface ISMNetAttributesAccess
+
+struct __declspec(uuid("38a979e8-086f-4ca8-ac30-890f22e65ebc"))
+SMFlagCreator;
+    // [ default ] interface ISMFlagCreator
+    // interface ISMFlagCreator2
+
+struct __declspec(uuid("71a8e2b4-5a6c-4bdd-b005-a0fb02414197"))
+SMRestriction;
+    // [ default ] interface ISMRestriction
+
+enum __declspec(uuid("8c40fcc0-e394-4fbb-b711-98ab7aa7dcd1"))
+esriDataLicenseType
+{
+    esriDataLicSeatType = 1,
+    esriDataLicFloatType = 2
+};
+
+struct __declspec(uuid("c1d85fc8-f132-4187-b897-623c647c9213"))
+IUsageModeOption : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * psName ) = 0;
+      virtual HRESULT __stdcall get_Value (
+        /*[out,retval]*/ BSTR * psValue ) = 0;
+};
+
+struct __declspec(uuid("07713846-9da7-45f8-886f-3eb2f0a30187"))
+IUsageModeInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * psName ) = 0;
+      virtual HRESULT __stdcall get_OptionCount (
+        /*[out,retval]*/ long * pnCount ) = 0;
+      virtual HRESULT __stdcall get_Option (
+        /*[in]*/ long nIndex,
+        /*[out,retval]*/ struct IUsageModeOption * * pOption ) = 0;
+};
+
+struct __declspec(uuid("0db7a450-5fed-441b-bb3a-db6e24d6cda3"))
+IMetaInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * psName ) = 0;
+      virtual HRESULT __stdcall get_Value (
+        /*[out,retval]*/ BSTR * psValue ) = 0;
+};
+
+struct __declspec(uuid("37474491-1c04-4669-99b5-825cf67294c5"))
+IDataLicenseInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_DataProductName (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_ApplicationsCount (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_ApplicationName (
+        /*[in]*/ long nIdx,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_AttrCroupsCount (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_AttrGroupName (
+        /*[in]*/ long nIdx,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_GeographiesCount (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_GeographyName (
+        /*[in]*/ long nIdx,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_MetaCount (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_MetaInfo (
+        /*[in]*/ long nIdx,
+        /*[out,retval]*/ struct IMetaInfo * * ppMeta ) = 0;
+      virtual HRESULT __stdcall get_LayerCroupsCount (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_LayerGroupName (
+        /*[in]*/ long nIdx,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_LicenseID (
+        /*[out,retval]*/ GUID * pVal ) = 0;
+      virtual HRESULT __stdcall get_Expiration (
+        /*[out,retval]*/ VARIANT * pvtDate ) = 0;
+      virtual HRESULT __stdcall get_LicenseType (
+        /*[out,retval]*/ enum esriDataLicenseType * pVal ) = 0;
+      virtual HRESULT __stdcall get_MaxConnections (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_AvailableConnections (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_UsageModeCount (
+        /*[out,retval]*/ long * pnCount ) = 0;
+      virtual HRESULT __stdcall get_UsageMode (
+        /*[in]*/ long nIndex,
+        /*[out,retval]*/ struct IUsageModeInfo * * pInfo ) = 0;
+};
+
+struct __declspec(uuid("2d5b7a40-f25b-4490-b36c-edd367df33d0"))
+IDataLicenseManager : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetLicenseInfo (
+        /*[in]*/ long nIdx,
+        /*[out,retval]*/ struct IDataLicenseInfo * * pLicInfo ) = 0;
+      virtual HRESULT __stdcall AddLicenseFromFile (
+        /*[in]*/ BSTR bstrLicenseFileName ) = 0;
+      virtual HRESULT __stdcall RemoveLicense (
+        /*[in]*/ long nIdx ) = 0;
+      virtual HRESULT __stdcall GetLicenseInfoFromFile (
+        /*[in]*/ BSTR bstrLicenseFileName,
+        /*[out,retval]*/ struct IDataLicenseInfo * * pLicInfo ) = 0;
+};
+
+struct __declspec(uuid("39bc41a4-b140-4f7b-b1c9-accd507ee339"))
+LicensedDataExtension;
+    // [ default ] interface IUnknown
+    // interface IAutoExtension
+    // interface IExtension
+    // interface IDataLicenseManager
+
+struct __declspec(uuid("6ec9d0c5-c3c5-4a2c-b9b3-5959209f427c"))
+IDECadDrawingDataset : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Is2d (
+        /*[out,retval]*/ VARIANT_BOOL * Is2d ) = 0;
+      virtual HRESULT __stdcall put_Is2d (
+        /*[in]*/ VARIANT_BOOL Is2d ) = 0;
+      virtual HRESULT __stdcall get_Is3d (
+        /*[out,retval]*/ VARIANT_BOOL * Is3d ) = 0;
+      virtual HRESULT __stdcall put_Is3d (
+        /*[in]*/ VARIANT_BOOL Is3d ) = 0;
+      virtual HRESULT __stdcall get_IsAutoCad (
+        /*[out,retval]*/ VARIANT_BOOL * IsAutoCad ) = 0;
+      virtual HRESULT __stdcall put_IsAutoCad (
+        /*[in]*/ VARIANT_BOOL IsAutoCad ) = 0;
+      virtual HRESULT __stdcall get_IsDgn (
+        /*[out,retval]*/ VARIANT_BOOL * IsDgn ) = 0;
+      virtual HRESULT __stdcall put_IsDgn (
+        /*[in]*/ VARIANT_BOOL IsDgn ) = 0;
+};
+
+struct __declspec(uuid("6850e61d-eda7-45ff-9291-25af6c10c556"))
+IDECadDrawingDatasetType : IUnknown
+{};
+
+struct __declspec(uuid("43a72293-aac8-4f0c-b8f8-8b2cdb298f85"))
+DECadDrawingDatasetType;
+    // [ default ] interface IUnknown
+    // interface IDECadDrawingDatasetType
+    // interface IDEFeatureDatasetType
+    // interface IDEGeoDatasetType
+    // interface IDEDatasetType
+    // interface IDataElementType
+    // interface IGxFilterInfo
+    // interface IGPDataType
+    // interface IClone
+
+struct __declspec(uuid("f786332d-20b2-4607-bf34-0a53e4d0b413"))
+DECadDrawingDataset;
+    // [ default ] interface IUnknown
+    // interface IDECadDrawingDataset
+    // interface IDEFeatureDataset
+    // interface IDEGeoDataset
+    // interface IDEDataset
+    // interface IDataElement
+    // interface IMetadata
+    // interface IGPValue
+    // interface IXMLSerialize
+    // interface IClone
+    // interface IPersistStream
+    // interface IGPDescribe
+
+struct __declspec(uuid("ea30b18d-2d75-4593-bf44-b3620f41d8db"))
+IGPLayer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_NameString (
+        /*[out,retval]*/ BSTR * pNamestring ) = 0;
+      virtual HRESULT __stdcall put_NameString (
+        /*[in]*/ BSTR pNamestring ) = 0;
+      virtual HRESULT __stdcall get_AreaOfInterest (
+        /*[out,retval]*/ struct IEnvelope * * ppExtent ) = 0;
+      virtual HRESULT __stdcall putref_AreaOfInterest (
+        /*[in]*/ struct IEnvelope * ppExtent ) = 0;
+      virtual HRESULT __stdcall SetAOICoords (
+        /*[in]*/ double xMin,
+        /*[in]*/ double yMin,
+        /*[in]*/ double xMax,
+        /*[in]*/ double yMax ) = 0;
+      virtual HRESULT __stdcall get_DataElement (
+        /*[out,retval]*/ struct IDataElement * * ppDataElement ) = 0;
+      virtual HRESULT __stdcall putref_DataElement (
+        /*[in]*/ struct IDataElement * ppDataElement ) = 0;
+};
+
+struct __declspec(uuid("8547ff12-e020-4c17-893b-bda0176f0c3b"))
+IGPLayerType : IUnknown
+{};
+
+struct __declspec(uuid("991993e4-7dfd-4e23-bca0-689b174e3030"))
+IDELayer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_GPLayer (
+        /*[out,retval]*/ struct IGPLayer * * ppLayer ) = 0;
+      virtual HRESULT __stdcall putref_GPLayer (
+        /*[in]*/ struct IGPLayer * ppLayer ) = 0;
+};
+
+struct __declspec(uuid("4e458cd7-d677-4e02-a827-2c5f1874ff88"))
+IDEShapeFile : IUnknown
+{};
+
+struct __declspec(uuid("cba6712b-e7c5-4013-9bc7-9656bfb0de41"))
+IDEDbaseTable : IUnknown
+{};
+
+struct __declspec(uuid("2a3e65fd-9d5b-4baa-8a3b-39824fc8c587"))
+IDELayerType : IUnknown
+{};
+
+struct __declspec(uuid("c7d6c9e2-278e-4f86-a349-f80baac7a733"))
+IDEShapeFileType : IUnknown
+{};
+
+struct __declspec(uuid("5b5c7610-a953-11d5-9321-0080c71a3226"))
+IDEDbaseTableType : IUnknown
+{};
+
+struct __declspec(uuid("5348d943-c798-434a-9e72-ac97ca802a71"))
+IDETextFile : IUnknown
+{};
+
+struct __declspec(uuid("72835efa-d940-430f-87e3-6e9b3d121023"))
+IDETextFileType : IUnknown
+{};
+
+struct __declspec(uuid("775700af-8577-442d-adc9-74d7a9aa3c41"))
+DELayerType;
+    // [ default ] interface IUnknown
+    // interface IDELayerType
+    // interface IGxFilterInfo
+    // interface IDataElementType
+    // interface IDEGeoDatasetType
+    // interface IGPDataType
+    // interface IClone
+    // interface IDEFileType
+
+struct __declspec(uuid("5cea7586-5550-418a-a6cb-9b8e67133c43"))
+IDEFileType : IUnknown
+{};
+
+struct __declspec(uuid("44a51f3f-ef06-4fd9-bc52-010e6ca0e84b"))
+DEShapeFileType;
+    // [ default ] interface IUnknown
+    // interface IDEShapeFileType
+    // interface IDEDbaseTableType
+    // interface IDEFeatureClassType
+    // interface IDETableType
+    // interface IDEGeoDatasetType
+    // interface IDEDatasetType
+    // interface IGxFilterInfo
+    // interface IDataElementType
+    // interface IGPDataType
+    // interface IClone
+
+struct __declspec(uuid("11e37cd0-a664-11d5-931d-0080c71a3226"))
+DEDbaseTableType;
+    // [ default ] interface IUnknown
+    // interface IDEDbaseTableType
+    // interface IDETableType
+    // interface IDEDatasetType
+    // interface IGxFilterInfo
+    // interface IDataElementType
+    // interface IGPDataType
+    // interface IClone
+
+struct __declspec(uuid("bdd71708-3463-4787-a491-b9363b937dbe"))
+DELayer;
+    // [ default ] interface IUnknown
+    // interface IDELayer
+    // interface IDataElement
+    // interface IDEGeoDataset
+    // interface IMetadata
+    // interface IGPValue
+    // interface IXMLSerialize
+    // interface IClone
+    // interface IPersistStream
+    // interface IGPDescribe
+    // interface IDEFile
+
+struct __declspec(uuid("df006d6f-661e-46ca-a591-d3c6cb5d94d3"))
+IDEFile : IUnknown
+{};
+
+struct __declspec(uuid("03e6fb47-aa38-476c-934b-1df5765c76eb"))
+DEShapeFile;
+    // [ default ] interface IUnknown
+    // interface IDEShapeFile
+    // interface IDEDbaseTable
+    // interface IDEDataset
+    // interface IDEGeoDataset
+    // interface IDEFeatureClass
+    // interface IDETable
+    // interface IDataElement
+    // interface IMetadata
+    // interface IGPValue
+    // interface IXMLSerialize
+    // interface IClone
+    // interface IPersistStream
+    // interface IGPDescribe
+
+struct __declspec(uuid("69e84176-fb98-4036-a8ff-e69c8e82f013"))
+DEDbaseTable;
+    // [ default ] interface IUnknown
+    // interface IDEDbaseTable
+    // interface IDETable
+    // interface IDEDataset
+    // interface IDataElement
+    // interface IMetadata
+    // interface IGPValue
+    // interface IXMLSerialize
+    // interface IClone
+    // interface IPersistStream
+    // interface IGPDescribe
+
+struct __declspec(uuid("49b7bb60-02c3-49de-9642-a0b07215da63"))
+IDECatalogRoot : IUnknown
+{};
+
+struct __declspec(uuid("3dd1a87b-30b2-4a02-abd2-205c5363ae4b"))
+IDERemoteDatabaseFolder : IUnknown
+{};
+
+struct __declspec(uuid("bc5edbfd-375c-40a2-b9c2-ea8dfe2de1e0"))
+IDESpatialReferencesFolder : IUnknown
+{};
+
+struct __declspec(uuid("ae51f9d8-5864-4cf2-8186-736af8c4022c"))
+IDEDiskConnection : IUnknown
+{};
+
+struct __declspec(uuid("4368e06b-e887-43b6-ab24-1ff4fed5837b"))
+IDEFolder : IUnknown
+{};
+
+struct __declspec(uuid("f69ca920-cfbb-11d5-933d-0080c71a3226"))
+IDEPrjFile : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_SpatialReference (
+        /*[out,retval]*/ struct ISpatialReference * * ppSpatialReference ) = 0;
+      virtual HRESULT __stdcall putref_SpatialReference (
+        /*[in]*/ struct ISpatialReference * ppSpatialReference ) = 0;
+};
+
+struct __declspec(uuid("81daeed8-ef11-40eb-a617-60e4d4654fd8"))
+IDEMapDocument : IUnknown
+{};
+
+struct __declspec(uuid("4ba00494-ab4c-45b5-b7ff-7e3b9e595bf1"))
+IDECatalogRootType : IUnknown
+{};
+
+struct __declspec(uuid("bd15433a-67d7-4fdb-b0ca-42ef470f704e"))
+IDEDiskConnectionType : IUnknown
+{};
+
+struct __declspec(uuid("b2dfe80e-7ee0-4aaa-bee0-498593374743"))
+IDEFolderType : IUnknown
+{};
+
+struct __declspec(uuid("ae8c96f0-cfbe-11d5-933d-0080c71a3226"))
+IDEPrjFileType : IUnknown
+{};
+
+struct __declspec(uuid("5826a85f-d7cd-4b32-a2d9-0eccfde297a2"))
+IDEMapDocumentType : IUnknown
+{};
+
+struct __declspec(uuid("ef94d455-32d3-4d10-b080-fe7508c05dc9"))
+IDERemoteDatabaseFolderType : IUnknown
+{};
+
+struct __declspec(uuid("e2b9400d-655c-4976-b3dd-04f31c48bb81"))
+IDESpatialReferencesFolderType : IUnknown
+{};
+
+struct __declspec(uuid("07359aea-34ba-4b5a-ab2c-0b43c7e8e9fb"))
+DECatalogRootType;
+    // [ default ] interface IUnknown
+    // interface IDECatalogRootType
+    // interface IDataElementType
+    // interface IGPDataType
+    // interface IGxFilterInfo
+    // interface IClone
+
+struct __declspec(uuid("36afbb31-cdbe-41cb-bb11-58484c2acf45"))
+DEDiskConnectionType;
+    // [ default ] interface IUnknown
+    // interface IDEDiskConnectionType
+    // interface IDEFolderType
+    // interface IDEWorkspaceType
+    // interface IDataElementType
+    // interface IGPDataType
+    // interface IGxFilterInfo
+    // interface IClone
+
+struct __declspec(uuid("fe29b0ed-decf-4a61-8ed0-be233bfe376b"))
+DEFolderType;
+    // [ default ] interface IUnknown
+    // interface IDEFolderType
+    // interface IDEWorkspaceType
+    // interface IDataElementType
+    // interface IGPDataType
+    // interface IGxFilterInfo
+    // interface IClone
+
+struct __declspec(uuid("c486aa07-9027-4d78-88fc-4a7a940bb367"))
+DEFileType;
+    // [ default ] interface IUnknown
+    // interface IDEFileType
+    // interface IDataElementType
+    // interface IGPDataType
+    // interface IGxFilterInfo
+    // interface IClone
+
+struct __declspec(uuid("ebfebc90-cfbf-11d5-933d-0080c71a3226"))
+DEPrjFileType;
+    // [ default ] interface IUnknown
+    // interface IDEPrjFileType
+    // interface IDEFileType
+    // interface IDataElementType
+    // interface IGPDataType
+    // interface IGxFilterInfo
+    // interface IClone
+
+struct __declspec(uuid("ec42ceb1-8029-4f90-a18c-5790ae1fad01"))
+DEMapDocumentType;
+    // [ default ] interface IUnknown
+    // interface IDEMapDocumentType
+    // interface IDataElementType
+    // interface IGPDataType
+    // interface IGxFilterInfo
+    // interface IClone
+
+struct __declspec(uuid("2919c9ef-dc76-4c52-9539-f357a4f68925"))
+DERemoteDatabaseFolderType;
+    // [ default ] interface IUnknown
+    // interface IDERemoteDatabaseFolderType
+    // interface IDataElementType
+    // interface IGPDataType
+    // interface IGxFilterInfo
+    // interface IClone
+
+struct __declspec(uuid("9fd4b414-498a-48b8-bf2f-82302524d513"))
+DESpatialReferencesFolderType;
+    // [ default ] interface IUnknown
+    // interface IDESpatialReferencesFolderType
+    // interface IDataElementType
+    // interface IGPDataType
+    // interface IGxFilterInfo
+    // interface IClone
+
+struct __declspec(uuid("01d6ebdd-de9a-4217-8bfe-327265855fa2"))
+DECatalogRoot;
+    // [ default ] interface IUnknown
+    // interface IDECatalogRoot
+    // interface IDataElement
+    // interface IMetadata
+    // interface IGPValue
+    // interface IXMLSerialize
+    // interface IClone
+    // interface IPersistStream
+    // interface IGPDescribe
+
+struct __declspec(uuid("8e5e855a-7d60-4ce1-afd0-45929c9f492c"))
+DEDiskConnection;
+    // [ default ] interface IUnknown
+    // interface IDEDiskConnection
+    // interface IDEFolder
+    // interface IDEWorkspace
+    // interface IDataElement
+    // interface IMetadata
+    // interface IGPValue
+    // interface IXMLSerialize
+    // interface IClone
+    // interface IPersistStream
+    // interface IGPDescribe
+
+struct __declspec(uuid("273ccebc-1aa2-4429-bbd5-4cb7c6e20465"))
+DEFolder;
+    // [ default ] interface IUnknown
+    // interface IDEFolder
+    // interface IDEWorkspace
+    // interface IDataElement
+    // interface IMetadata
+    // interface IGPValue
+    // interface IXMLSerialize
+    // interface IClone
+    // interface IPersistStream
+    // interface IGPDescribe
+
+struct __declspec(uuid("175cf2c5-12bf-413a-8fdf-3da30cc09bee"))
+DEFile;
+    // [ default ] interface IUnknown
+    // interface IDEFile
+    // interface IDataElement
+    // interface IMetadata
+    // interface IGPValue
+    // interface IXMLSerialize
+    // interface IClone
+    // interface IPersistStream
+    // interface IGPDescribe
+
+struct __declspec(uuid("c0bed5d9-13e2-469b-a7d8-22704b0c8630"))
+DEMapDocument;
+    // [ default ] interface IUnknown
+    // interface IDEMapDocument
+    // interface IDataElement
+    // interface IMetadata
+    // interface IGPValue
+    // interface IXMLSerialize
+    // interface IClone
+    // interface IPersistStream
+    // interface IGPDescribe
+
+struct __declspec(uuid("db3e6fdf-d5f8-4c94-b743-47ab4de79a05"))
+DERemoteDatabaseFolder;
+    // [ default ] interface IUnknown
+    // interface IDERemoteDatabaseFolder
+    // interface IDataElement
+    // interface IMetadata
+    // interface IGPValue
+    // interface IXMLSerialize
+    // interface IClone
+    // interface IPersistStream
+    // interface IGPDescribe
+
+struct __declspec(uuid("3189f8fc-a9c8-4b8e-8c47-43c758a7a8bd"))
+DESpatialReferencesFolder;
+    // [ default ] interface IUnknown
+    // interface IDESpatialReferencesFolder
+    // interface IDataElement
+    // interface IMetadata
+    // interface IGPValue
+    // interface IXMLSerialize
+    // interface IClone
+    // interface IPersistStream
+    // interface IGPDescribe
+
+struct __declspec(uuid("7e704bb0-cfbe-11d5-933d-0080c71a3226"))
+DEPrjFile;
+    // [ default ] interface IUnknown
+    // interface IDEPrjFile
+    // interface IDEFile
+    // interface IDataElement
+    // interface IMetadata
+    // interface IGPValue
+    // interface IXMLSerialize
+    // interface IClone
+    // interface IPersistStream
+    // interface IGPDescribe
+
+struct __declspec(uuid("e98d0766-c13e-45ca-ba78-1def8b60cab2"))
+DETextFile;
+    // [ default ] interface IUnknown
+    // interface IDETextFile
+    // interface IDETable
+    // interface IDEFile
+    // interface IDEDataset
+    // interface IDataElement
+    // interface IMetadata
+    // interface IGPValue
+    // interface IXMLSerialize
+    // interface IClone
+    // interface IPersistStream
+    // interface IGPDescribe
+
+struct __declspec(uuid("9a4700e6-c10c-4ecb-aae6-90d382ae22c4"))
+DETextFileType;
+    // [ default ] interface IUnknown
+    // interface IDETextFileType
+    // interface IDETableType
+    // interface IDEFileType
+    // interface IDEDatasetType
+    // interface IDataElementType
+    // interface IGPDataType
+    // interface IGxFilterInfo
+    // interface IClone
+
+struct __declspec(uuid("b0b62284-0080-4ea3-9716-de5293a73f6e"))
+IDETin : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsDelaunay (
+        /*[out,retval]*/ VARIANT_BOOL * pbIsDelaunay ) = 0;
+      virtual HRESULT __stdcall put_IsDelaunay (
+        /*[in]*/ VARIANT_BOOL pbIsDelaunay ) = 0;
+      virtual HRESULT __stdcall get_ZFactor (
+        /*[out,retval]*/ double * pFactor ) = 0;
+      virtual HRESULT __stdcall put_ZFactor (
+        /*[in]*/ double pFactor ) = 0;
+      virtual HRESULT __stdcall get_HasNodeTagValues (
+        /*[out,retval]*/ VARIANT_BOOL * pbHasNodeValues ) = 0;
+      virtual HRESULT __stdcall put_HasNodeTagValues (
+        /*[in]*/ VARIANT_BOOL pbHasNodeValues ) = 0;
+      virtual HRESULT __stdcall get_HasEdgeTagValues (
+        /*[out,retval]*/ VARIANT_BOOL * pbHasEdgeValues ) = 0;
+      virtual HRESULT __stdcall put_HasEdgeTagValues (
+        /*[in]*/ VARIANT_BOOL pbHasEdgeValues ) = 0;
+      virtual HRESULT __stdcall get_HasTriangleTagValues (
+        /*[out,retval]*/ VARIANT_BOOL * pbHasTriangleValues ) = 0;
+      virtual HRESULT __stdcall put_HasTriangleTagValues (
+        /*[in]*/ VARIANT_BOOL pbHasTriangleValues ) = 0;
+      virtual HRESULT __stdcall get_Fields (
+        /*[out,retval]*/ struct IFields * * ppFields ) = 0;
+      virtual HRESULT __stdcall putref_Fields (
+        /*[in]*/ struct IFields * ppFields ) = 0;
+};
+
+struct __declspec(uuid("0853eb47-69e4-4309-a8ba-5d14b356362b"))
+IDETinType : IUnknown
+{};
+
+struct __declspec(uuid("f0b41a32-ee77-4b16-a5ee-16bce3d8f3cc"))
+DETinType;
+    // [ default ] interface IUnknown
+    // interface IDETinType
+    // interface IDEGeoDatasetType
+    // interface IDEDatasetType
+    // interface IDataElementType
+    // interface IGxFilterInfo
+    // interface IGPDataType
+    // interface IClone
+
+struct __declspec(uuid("5edc32f1-c1b2-4808-88e0-2ed68e77269d"))
+DETin;
+    // [ default ] interface IUnknown
+    // interface IDETin
+    // interface IDEGeoDataset
+    // interface IDEDataset
+    // interface IDataElement
+    // interface IMetadata
+    // interface IGPValue
+    // interface IXMLSerialize
+    // interface IClone
+    // interface IPersistStream
+    // interface IGPDescribe
+
+struct __declspec(uuid("1508d058-f970-487c-afbe-31db1c3ed594"))
+IDELasDataset : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_FileCount (
+        /*[out,retval]*/ long * pFileCount ) = 0;
+      virtual HRESULT __stdcall put_FileCount (
+        /*[in]*/ long pFileCount ) = 0;
+      virtual HRESULT __stdcall get_PointCount (
+        /*[out,retval]*/ long * pPointCount ) = 0;
+      virtual HRESULT __stdcall put_PointCount (
+        /*[in]*/ long pPointCount ) = 0;
+      virtual HRESULT __stdcall get_SurfaceConstraintCount (
+        /*[out,retval]*/ long * pSurfaceConstraintCount ) = 0;
+      virtual HRESULT __stdcall put_SurfaceConstraintCount (
+        /*[in]*/ long pSurfaceConstraintCount ) = 0;
+      virtual HRESULT __stdcall get_HasStatistics (
+        /*[out,retval]*/ VARIANT_BOOL * pbHasStatistics ) = 0;
+      virtual HRESULT __stdcall put_HasStatistics (
+        /*[in]*/ VARIANT_BOOL pbHasStatistics ) = 0;
+      virtual HRESULT __stdcall get_NeedsUpdateStatistics (
+        /*[out,retval]*/ VARIANT_BOOL * pbNeedsUpdateStatistics ) = 0;
+      virtual HRESULT __stdcall put_NeedsUpdateStatistics (
+        /*[in]*/ VARIANT_BOOL pbNeedsUpdateStatistics ) = 0;
+      virtual HRESULT __stdcall get_UsesRelativePath (
+        /*[out,retval]*/ VARIANT_BOOL * pbUsesRelativePath ) = 0;
+      virtual HRESULT __stdcall put_UsesRelativePath (
+        /*[in]*/ VARIANT_BOOL pbUsesRelativePath ) = 0;
+};
+
+struct __declspec(uuid("e4c66c0c-69ea-466b-84c7-eb6acab69490"))
+IDELasDatasetType : IUnknown
+{};
+
+struct __declspec(uuid("160bc182-ce75-4dab-8abf-8e6dc866c73b"))
+DELasDatasetType;
+    // [ default ] interface IUnknown
+    // interface IDELasDatasetType
+    // interface IDEGeoDatasetType
+    // interface IDEDatasetType
+    // interface IDataElementType
+    // interface IGxFilterInfo
+    // interface IGPDataType
+    // interface IClone
+
+struct __declspec(uuid("ea006709-cd03-439d-80a1-9254e25412e3"))
+DELasDataset;
+    // [ default ] interface IUnknown
+    // interface IDELasDataset
+    // interface IDEGeoDataset
+    // interface IDEDataset
+    // interface IDataElement
+    // interface IMetadata
+    // interface IGPValue
+    // interface IXMLSerialize
+    // interface IClone
+    // interface IPersistStream
+    // interface IGPDescribe
+    // interface IDocumentVersionSupportGEN
+
+struct __declspec(uuid("bde67d8b-bf5e-45ec-a3fd-09ac77efe850"))
+IDECoverage : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Tolerances (
+        /*[out,retval]*/ struct IPropertySet * * propertySet ) = 0;
+      virtual HRESULT __stdcall putref_Tolerances (
+        /*[in]*/ struct IPropertySet * propertySet ) = 0;
+};
+
+struct __declspec(uuid("25ea15b1-7425-452b-8fb6-ca3f8d088129"))
+IDECoverageFeatureClass : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_FeatureClassType (
+        /*[out,retval]*/ enum esriCoverageFeatureClassType * FeatureClassType ) = 0;
+      virtual HRESULT __stdcall put_FeatureClassType (
+        /*[in]*/ enum esriCoverageFeatureClassType FeatureClassType ) = 0;
+      virtual HRESULT __stdcall get_HasFAT (
+        /*[out,retval]*/ VARIANT_BOOL * HasFAT ) = 0;
+      virtual HRESULT __stdcall put_HasFAT (
+        /*[in]*/ VARIANT_BOOL HasFAT ) = 0;
+      virtual HRESULT __stdcall get_Topology (
+        /*[out,retval]*/ enum esriFeatureClassTopology * pTopology ) = 0;
+      virtual HRESULT __stdcall put_Topology (
+        /*[in]*/ enum esriFeatureClassTopology pTopology ) = 0;
+};
+
+struct __declspec(uuid("dc3b7fdb-ce0f-4aee-945c-0755f89109e4"))
+IDEArcInfoTable : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ItemSet (
+        /*[out,retval]*/ struct IArray * * ppItems ) = 0;
+      virtual HRESULT __stdcall putref_ItemSet (
+        /*[in]*/ struct IArray * ppItems ) = 0;
+};
+
+struct __declspec(uuid("c95b22e0-a3c3-11d5-931c-0080c71a3226"))
+IGPArcInfoItem : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall get_StartPosition (
+        /*[out,retval]*/ long * Position ) = 0;
+      virtual HRESULT __stdcall put_StartPosition (
+        /*[in]*/ long Position ) = 0;
+      virtual HRESULT __stdcall get_Width (
+        /*[out,retval]*/ long * Width ) = 0;
+      virtual HRESULT __stdcall put_Width (
+        /*[in]*/ long Width ) = 0;
+      virtual HRESULT __stdcall get_OutputWidth (
+        /*[out,retval]*/ long * Width ) = 0;
+      virtual HRESULT __stdcall put_OutputWidth (
+        /*[in]*/ long Width ) = 0;
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ enum esriArcInfoItemType * Type ) = 0;
+      virtual HRESULT __stdcall put_Type (
+        /*[in]*/ enum esriArcInfoItemType Type ) = 0;
+      virtual HRESULT __stdcall get_NumberDecimals (
+        /*[out,retval]*/ long * number ) = 0;
+      virtual HRESULT __stdcall put_NumberDecimals (
+        /*[in]*/ long number ) = 0;
+      virtual HRESULT __stdcall get_AlternateName (
+        /*[out,retval]*/ BSTR * AlternateName ) = 0;
+      virtual HRESULT __stdcall put_AlternateName (
+        /*[in]*/ BSTR AlternateName ) = 0;
+      virtual HRESULT __stdcall get_IsRedefined (
+        /*[out,retval]*/ VARIANT_BOOL * redefined ) = 0;
+      virtual HRESULT __stdcall put_IsRedefined (
+        /*[in]*/ VARIANT_BOOL redefined ) = 0;
+      virtual HRESULT __stdcall get_IsIndexed (
+        /*[out,retval]*/ VARIANT_BOOL * IsIndexed ) = 0;
+      virtual HRESULT __stdcall put_IsIndexed (
+        /*[in]*/ VARIANT_BOOL IsIndexed ) = 0;
+      virtual HRESULT __stdcall get_IsPseudo (
+        /*[out,retval]*/ VARIANT_BOOL * isPsuedo ) = 0;
+      virtual HRESULT __stdcall put_IsPseudo (
+        /*[in]*/ VARIANT_BOOL isPsuedo ) = 0;
+};
+
+struct __declspec(uuid("1c1d3491-9e02-4283-be2f-b8177cc8f01f"))
+IDEArcInfoUtilities : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall AssignCoverageProperties (
+        /*[in]*/ struct ICoverage * pCoverage,
+        /*[in]*/ struct IDataElement * pDataElement ) = 0;
+      virtual HRESULT __stdcall AssignArcInfoTableProperties (
+        /*[in]*/ struct IArcInfoTable * pArcInfoTable,
+        /*[in]*/ struct IDataElement * pDataElement ) = 0;
+      virtual HRESULT __stdcall AssignCoverageFeatureClassProperties (
+        /*[in]*/ struct ICoverageFeatureClass * pCoverageFeatureClass,
+        /*[in]*/ struct IDataElement * pDataElement ) = 0;
+      virtual HRESULT __stdcall AssignCoverageFeatureClassNameProperties (
+        /*[in]*/ struct ICoverageFeatureClassName * pCoverageFeatureClassName,
+        /*[in]*/ struct IDataElement * pDataElement ) = 0;
+      virtual HRESULT __stdcall MakeDETolerances (
+        /*[in]*/ struct ICoverage * pCoverage,
+        /*[out,retval]*/ struct IPropertySet * * ppTolerances ) = 0;
+      virtual HRESULT __stdcall MakeGPItems (
+        /*[in]*/ struct IArcInfoItems * pItems,
+        /*[out,retval]*/ struct IArray * * ppGPItems ) = 0;
+      virtual HRESULT __stdcall MakeGPItem (
+        /*[in]*/ struct IArcInfoItem * pItem,
+        /*[out,retval]*/ struct IGPArcInfoItem * * ppGPItem ) = 0;
+      virtual HRESULT __stdcall GetCoverageFeatureClassTypeFromString (
+        /*[in]*/ BSTR desc,
+        /*[out,retval]*/ enum esriCoverageFeatureClassType * Type ) = 0;
+      virtual HRESULT __stdcall GetCoverageFeatureClassTypeDescription (
+        /*[in]*/ enum esriCoverageFeatureClassType Type,
+        /*[out,retval]*/ BSTR * desc ) = 0;
+      virtual HRESULT __stdcall GetFeatureClassTopologyFromString (
+        /*[in]*/ BSTR desc,
+        /*[out,retval]*/ enum esriFeatureClassTopology * Type ) = 0;
+      virtual HRESULT __stdcall GetFeatureClassTopologyDescription (
+        /*[in]*/ enum esriFeatureClassTopology Type,
+        /*[out,retval]*/ BSTR * desc ) = 0;
+      virtual HRESULT __stdcall GetItemTypeFromString (
+        /*[in]*/ BSTR desc,
+        /*[out,retval]*/ enum esriArcInfoItemType * Type ) = 0;
+      virtual HRESULT __stdcall GetItemTypeDescription (
+        /*[in]*/ enum esriArcInfoItemType Type,
+        /*[out,retval]*/ BSTR * desc ) = 0;
+      virtual HRESULT __stdcall ItemExists (
+        /*[in]*/ struct IDEArcInfoTable * pDEArcInfoTable,
+        /*[in]*/ struct IGPArcInfoItem * pGPItem,
+        /*[out,retval]*/ VARIANT_BOOL * pExists ) = 0;
+      virtual HRESULT __stdcall FindItem (
+        /*[in]*/ struct IDEArcInfoTable * pDEArcInfoTable,
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ struct IGPArcInfoItem * * ppGPItem ) = 0;
+};
+
+struct __declspec(uuid("ab6143ed-a1ea-4193-b97c-f8be9a6c4c83"))
+IDECoverageType : IUnknown
+{};
+
+struct __declspec(uuid("943db542-3a26-40e3-9a26-3342655bd3a2"))
+IDECoverageFeatureClassType : IUnknown
+{};
+
+struct __declspec(uuid("2864d010-402b-4b4e-b27c-db2cb238ffe4"))
+IDEArcInfoTableType : IUnknown
+{};
+
+struct __declspec(uuid("82c365f0-7956-47ec-86f3-b8d628837712"))
+IGPArcInfoItemType : IUnknown
+{};
+
+struct __declspec(uuid("80172db6-5715-4157-b253-6150ea74203e"))
+DECoverageType;
+    // [ default ] interface IUnknown
+    // interface IDECoverageType
+    // interface IDEFeatureDatasetType
+    // interface IDEGeoDatasetType
+    // interface IDEDatasetType
+    // interface IDataElementType
+    // interface IGxFilterInfo
+    // interface IGPDataType
+    // interface IClone
+
+struct __declspec(uuid("874e63d8-b362-457b-a3c8-aa0f3f443e0b"))
+DECoverageFeatureClassType;
+    // [ default ] interface IUnknown
+    // interface IDECoverageFeatureClassType
+    // interface IDEFeatureClassType
+    // interface IDEArcInfoTableType
+    // interface IDETableType
+    // interface IDEGeoDatasetType
+    // interface IDEDatasetType
+    // interface IDataElementType
+    // interface IGxFilterInfo
+    // interface IGPDataType
+    // interface IClone
+
+struct __declspec(uuid("0e3f5cb0-2445-4abb-be9a-fcf0492e180a"))
+DEArcInfoTableType;
+    // [ default ] interface IUnknown
+    // interface IDEArcInfoTableType
+    // interface IDETableType
+    // interface IDEDatasetType
+    // interface IDataElementType
+    // interface IGxFilterInfo
+    // interface IGPDataType
+    // interface IClone
+
+struct __declspec(uuid("5356dadd-53e4-4e70-99c9-996cdd224e25"))
+GPArcInfoItemType;
+    // [ default ] interface IUnknown
+    // interface IGPArcInfoItemType
+    // interface IGPDataType
+    // interface IClone
+    // interface IGPChoiceList
+
+struct __declspec(uuid("96b70c47-2c7f-405f-b9fd-deaa3cdc084c"))
+DECoverage;
+    // [ default ] interface IUnknown
+    // interface IDECoverage
+    // interface IDEFeatureDataset
+    // interface IDEGeoDataset
+    // interface IDEDataset
+    // interface IDataElement
+    // interface IMetadata
+    // interface IGPValue
+    // interface IXMLSerialize
+    // interface IClone
+    // interface IPersistStream
+    // interface IGPDescribe
+
+struct __declspec(uuid("b7ec3865-805b-41a4-804c-8b4a30aa4128"))
+DECoverageFeatureClass;
+    // [ default ] interface IUnknown
+    // interface IDECoverageFeatureClass
+    // interface IDEFeatureClass
+    // interface IDETable
+    // interface IDEArcInfoTable
+    // interface IDEGeoDataset
+    // interface IDEDataset
+    // interface IDataElement
+    // interface IMetadata
+    // interface IGPValue
+    // interface IXMLSerialize
+    // interface IClone
+    // interface IPersistStream
+    // interface IGPDescribe
+
+struct __declspec(uuid("1cc786ec-5efe-493c-8a25-b546844665d7"))
+DEArcInfoTable;
+    // [ default ] interface IUnknown
+    // interface IDEArcInfoTable
+    // interface IDETable
+    // interface IDEDataset
+    // interface IDataElement
+    // interface IMetadata
+    // interface IGPValue
+    // interface IXMLSerialize
+    // interface IClone
+    // interface IPersistStream
+    // interface IGPDescribe
+
+struct __declspec(uuid("6dddbbb2-41dc-4f12-913e-803196eb33fa"))
+GPArcInfoItem;
+    // [ default ] interface IUnknown
+    // interface IGPArcInfoItem
+    // interface IGPValue
+    // interface IXMLSerialize
+    // interface IClone
+    // interface IPersistStream
+    // interface IGPDescribe
+
+struct __declspec(uuid("95d74728-cadd-41c2-af2b-7e816364d905"))
+DEArcInfoUtilities;
+    // [ default ] interface IUnknown
+    // interface IDEArcInfoUtilities
+
+struct __declspec(uuid("a30b5d18-63ed-493a-90e5-75dc2d55d79c"))
+IDEVPFTable : IUnknown
+{};
+
+struct __declspec(uuid("dbb10ac8-bbbd-44af-aad6-a689af24dbfb"))
+IDEVPFTableType : IUnknown
+{};
+
+struct __declspec(uuid("3f3c713f-cc15-4ea7-a780-193e021d4251"))
+DEVPFTableType;
+    // [ default ] interface IUnknown
+    // interface IDEVPFTableType
+    // interface IDETableType
+    // interface IDEDatasetType
+    // interface IGxFilterInfo
+    // interface IDataElementType
+    // interface IGPDataType
+    // interface IClone
+
+struct __declspec(uuid("48aab232-6f1f-4261-9dac-cba55d183649"))
+DEVPFTable;
+    // [ default ] interface IUnknown
+    // interface IDEVPFTable
+    // interface IDETable
+    // interface IDEDataset
+    // interface IDataElement
+    // interface IMetadata
+    // interface IGPValue
+    // interface IXMLSerialize
+    // interface IClone
+    // interface IPersistStream
+    // interface IGPDescribe
+
+struct __declspec(uuid("26785829-6d41-457c-b953-08fed1e16eda"))
+IDEVPFCoverage : IUnknown
+{};
+
+struct __declspec(uuid("ba80d3fd-b1c8-4111-b3db-037d6ea3d9eb"))
+IDEVPFCoverageType : IUnknown
+{};
+
+struct __declspec(uuid("728bbf56-85fa-4598-9ce8-77fc8ba73127"))
+DEVPFCoverageType;
+    // [ default ] interface IUnknown
+    // interface IDEFeatureDatasetType
+    // interface IDEVPFCoverageType
+    // interface IDEGeoDatasetType
+    // interface IDEDatasetType
+    // interface IGxFilterInfo
+    // interface IDataElementType
+    // interface IGPDataType
+    // interface IClone
+
+struct __declspec(uuid("ca4ff80d-85a9-445c-adb2-a5c7811b3c36"))
+DEVPFCoverage;
+    // [ default ] interface IUnknown
+    // interface IDEFeatureDataset
+    // interface IDEVPFCoverage
+    // interface IDEGeoDataset
+    // interface IDEDataset
+    // interface IDataElement
+    // interface IMetadata
+    // interface IGPValue
+    // interface IXMLSerialize
+    // interface IClone
+    // interface IPersistStream
+    // interface IGPDescribe
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_esriDataSourcesFile =
+    {0x1ce6ac65,0x43f5,0x4529,{0x8f,0xc0,0xd7,0xed,0x29,0x8e,0x4f,0x1a}};
+extern "C" const GUID __declspec(selectany) IID_IArcInfoItem =
+    {0xb5e470d2,0xceab,0x11d2,{0xb0,0xdc,0x00,0x00,0xf8,0x78,0x08,0x20}};
+extern "C" const GUID __declspec(selectany) IID_IArcInfoItemEdit =
+    {0xb5e470d3,0xceab,0x11d2,{0xb0,0xdc,0x00,0x00,0xf8,0x78,0x08,0x20}};
+extern "C" const GUID __declspec(selectany) IID_IArcInfoItems =
+    {0xb5e470d4,0xceab,0x11d2,{0xb0,0xdc,0x00,0x00,0xf8,0x78,0x08,0x20}};
+extern "C" const GUID __declspec(selectany) IID_IArcInfoItemsEdit =
+    {0xb5e470d5,0xceab,0x11d2,{0xb0,0xdc,0x00,0x00,0xf8,0x78,0x08,0x20}};
+extern "C" const GUID __declspec(selectany) IID_IArcInfoTable =
+    {0xd3ec3d31,0xcffe,0x11d2,{0xb0,0xdc,0x00,0x00,0xf8,0x78,0x08,0x20}};
+extern "C" const GUID __declspec(selectany) IID_IArcInfoTable2 =
+    {0x99d56004,0xbb97,0x4606,{0xa1,0x41,0x6b,0xb0,0x61,0xf8,0x79,0x40}};
+extern "C" const GUID __declspec(selectany) IID_ICoverageFeatureClass =
+    {0x4e471bb1,0x06fa,0x11d3,{0x9f,0x31,0x00,0xc0,0x4f,0x79,0x92,0x7c}};
+extern "C" const GUID __declspec(selectany) IID_ICoverageFeatureClass2 =
+    {0x2da3b82a,0xb02a,0x11d4,{0x9f,0x5a,0x00,0xc0,0x4f,0x79,0x92,0x7c}};
+extern "C" const GUID __declspec(selectany) IID_ICoverage =
+    {0xd42131e1,0xd187,0x11d2,{0xb0,0xdc,0x00,0x00,0xf8,0x78,0x08,0x20}};
+extern "C" const GUID __declspec(selectany) IID_ICoverage2 =
+    {0xd1e706bc,0x6eee,0x11d4,{0x9f,0x55,0x00,0xc0,0x4f,0x79,0x92,0x7c}};
+extern "C" const GUID __declspec(selectany) IID_IArcInfoWorkspace =
+    {0x730e2ff7,0xe3b4,0x11d2,{0x9f,0x30,0x00,0xc0,0x4f,0x79,0x92,0x7c}};
+extern "C" const GUID __declspec(selectany) IID_IInfoTableOnlyWorkspaceEdit =
+    {0x215b5973,0x795c,0x499f,{0xb3,0xff,0x79,0x8c,0x1c,0xd4,0xdb,0xe6}};
+extern "C" const GUID __declspec(selectany) IID_ICoverageFeatureClassName =
+    {0xde61a107,0x0e08,0x11d3,{0x9f,0x31,0x00,0xc0,0x4f,0x79,0x92,0x7c}};
+extern "C" const GUID __declspec(selectany) IID_ICoverageName =
+    {0xde61a108,0x0e08,0x11d3,{0x9f,0x31,0x00,0xc0,0x4f,0x79,0x92,0x7c}};
+extern "C" const GUID __declspec(selectany) IID_IArcInfoWorkspaceUtil =
+    {0xa476810a,0x0c8d,0x469a,{0x83,0x32,0x7b,0x3c,0x1c,0xfb,0x89,0x23}};
+extern "C" const GUID __declspec(selectany) CLSID_ArcInfoWorkspaceFactory =
+    {0x1d887452,0xd9f2,0x11d1,{0xaa,0x81,0x00,0xc0,0x4f,0xa3,0x3a,0x15}};
+extern "C" const GUID __declspec(selectany) CLSID_ArcInfoItems =
+    {0x5bb90fa2,0xd013,0x11d2,{0xb0,0xdc,0x00,0x00,0xf8,0x78,0x08,0x20}};
+extern "C" const GUID __declspec(selectany) CLSID_ArcInfoItem =
+    {0x5bb90fa1,0xd013,0x11d2,{0xb0,0xdc,0x00,0x00,0xf8,0x78,0x08,0x20}};
+extern "C" const GUID __declspec(selectany) CLSID_CoverageFeatureClassName =
+    {0x72f77de8,0x122a,0x11d3,{0x9f,0x31,0x00,0xc0,0x4f,0x79,0x92,0x7c}};
+extern "C" const GUID __declspec(selectany) CLSID_CoverageName =
+    {0x1e921c72,0x122f,0x11d3,{0x9f,0x31,0x00,0xc0,0x4f,0x79,0x92,0x7c}};
+extern "C" const GUID __declspec(selectany) CLSID_PCCoverageWorkspaceFactory =
+    {0x6de812d2,0x9ab6,0x11d2,{0xb0,0xd7,0x00,0x00,0xf8,0x78,0x08,0x20}};
+extern "C" const GUID __declspec(selectany) CLSID_StreetMapWorkspaceFactory =
+    {0xae2469e8,0xe110,0x4cd6,{0xb3,0xf4,0xa7,0x56,0xcb,0xf9,0x21,0xca}};
+extern "C" const GUID __declspec(selectany) CLSID_SDCWorkspaceFactory =
+    {0x34dae34f,0xdbe2,0x409c,{0x8f,0x85,0xdd,0xbb,0x46,0x13,0x80,0x11}};
+extern "C" const GUID __declspec(selectany) CLSID_SDCNetworkSource =
+    {0x5be00c09,0xa03f,0x4a69,{0xb6,0x78,0x98,0x51,0x08,0xa5,0x00,0xd3}};
+extern "C" const GUID __declspec(selectany) CLSID_SDCNetworkAttribute =
+    {0xa2ab1fba,0xaa5f,0x485e,{0x97,0xfe,0x79,0xd0,0xf5,0xff,0x99,0x84}};
+extern "C" const GUID __declspec(selectany) CLSID_ShapefileWorkspaceFactory =
+    {0xa06adb96,0xd95c,0x11d1,{0xaa,0x81,0x00,0xc0,0x4f,0xa3,0x3a,0x15}};
+extern "C" const GUID __declspec(selectany) CLSID_VpfWorkspaceFactory =
+    {0x397847f9,0xc865,0x11d3,{0x9b,0x56,0x00,0xc0,0x4f,0xa3,0x32,0x99}};
+extern "C" const GUID __declspec(selectany) CLSID_TinWorkspaceFactory =
+    {0xad4e89d9,0x00a5,0x11d2,{0xb1,0xca,0x00,0xc0,0x4f,0x8e,0xde,0xff}};
+extern "C" const GUID __declspec(selectany) CLSID_GeoRSSWorkspaceFactory =
+    {0x894af6a1,0x157a,0x47ba,{0xbd,0xec,0x3c,0xf9,0x8d,0x4c,0xce,0x74}};
+extern "C" const GUID __declspec(selectany) IID_ICadSettings =
+    {0x628022fd,0xe7df,0x11d4,{0xa2,0xa8,0x44,0x45,0x53,0x54,0x77,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_CadWorkspaceFactory =
+    {0x9e2c27ce,0x62c6,0x11d2,{0x9a,0xed,0x00,0xc0,0x4f,0xa3,0x32,0x99}};
+extern "C" const GUID __declspec(selectany) IID_ICadDrawingLayers =
+    {0xe37f71aa,0xbfb1,0x11d2,{0x9b,0x20,0x00,0xc0,0x4f,0xa3,0x32,0x99}};
+extern "C" const GUID __declspec(selectany) CLSID_CadDrawingName =
+    {0xd4224309,0xa5cb,0x11d2,{0x9b,0x10,0x00,0xc0,0x4f,0xa3,0x32,0x99}};
+extern "C" const GUID __declspec(selectany) IID_ICadTransformations =
+    {0xe37f71ab,0xbfb1,0x11d2,{0x9b,0x20,0x00,0xc0,0x4f,0xa3,0x32,0x99}};
+extern "C" const GUID __declspec(selectany) IID_ICadDrawingDataset =
+    {0x6c1d6540,0x4930,0x11d3,{0x9b,0x39,0x00,0xc0,0x4f,0xa3,0x32,0x99}};
+extern "C" const GUID __declspec(selectany) IID_ICadDrawingWorkspace =
+    {0x76b47b11,0xac32,0x11d4,{0xa2,0x26,0x44,0x45,0x53,0x54,0x77,0x77}};
+extern "C" const GUID __declspec(selectany) IID_ISdcExporter =
+    {0x989b9737,0xfecf,0x467d,{0x85,0x44,0xd3,0xb3,0xee,0x30,0xe6,0x0c}};
+extern "C" const GUID __declspec(selectany) CLSID_SdcExporter =
+    {0x3c8b1a03,0x64b8,0x4e29,{0x86,0xad,0xd4,0xc4,0xcb,0x37,0x1e,0xc1}};
+extern "C" const GUID __declspec(selectany) IID_ISMRouterPoint =
+    {0xf8b65fed,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) IID_ISMRouterEnvelope =
+    {0xf8b65ff0,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) IID_ISMPointsCollection =
+    {0xf8b65ff3,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) IID_ISMNetAttribute =
+    {0xf8b65ff6,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) IID_ISMNetAttribute2 =
+    {0xb1a5376c,0xdfdf,0x48dd,{0xa4,0x72,0x07,0x68,0x08,0xc0,0xc7,0x3e}};
+extern "C" const GUID __declspec(selectany) IID_ISMNetAttributesCollection =
+    {0xf8b65ff9,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) IID_ISMNetBarrier =
+    {0xf8b65ffc,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) IID_ISMNetBarriersCollection =
+    {0xf8b65fff,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) IID_ISMRoadPreferences =
+    {0xf8b66002,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) IID_ISMSpeedGroup =
+    {0xf8b66005,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) IID_ISMSpeedGroup2 =
+    {0x1e436c24,0xcf57,0x4aca,{0xbb,0xd3,0xff,0xdd,0xb1,0x15,0x1f,0xa7}};
+extern "C" const GUID __declspec(selectany) IID_ISMSpeedGroups =
+    {0xf8b66008,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) IID_ISMTripPlanSettings =
+    {0xf8b6600b,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) IID_ISMFlag =
+    {0xf8b66011,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) IID_ISMFlagCreator =
+    {0x8a4bb863,0x0c3f,0x4897,{0xaa,0x09,0x14,0x79,0xa4,0xb7,0x6a,0x6f}};
+extern "C" const GUID __declspec(selectany) IID_ISMFlagCreator2 =
+    {0x0e8f6257,0x745f,0x4de3,{0xb6,0x51,0x6e,0xcf,0x14,0x72,0x8c,0x5c}};
+extern "C" const GUID __declspec(selectany) IID_ISMStop =
+    {0xf8b66014,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) IID_ISMStopsCollection =
+    {0xf8b66017,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) IID_ISMDirItem =
+    {0xf8b6601a,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) IID_ISMDirections =
+    {0xf8b6601d,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) IID_ISMBreakTracker =
+    {0x122fc3ae,0xa421,0x4922,{0x94,0x59,0xdf,0xf9,0xd3,0x63,0x13,0x33}};
+extern "C" const GUID __declspec(selectany) IID_ISMNetAttributesAccess =
+    {0x198dc955,0x519b,0x41ec,{0xaf,0x33,0x10,0x90,0xd3,0x56,0xc6,0x74}};
+extern "C" const GUID __declspec(selectany) IID_ISMRouter =
+    {0xf8b66020,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) IID_ISMRouterFactory =
+    {0xf8b66023,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) IID_ISMRoutingMetaData =
+    {0xc8128b1a,0x23c3,0x4e21,{0x93,0xeb,0x50,0x73,0x9b,0x68,0xf1,0x7a}};
+extern "C" const GUID __declspec(selectany) IID_ISMRestriction =
+    {0x3df8d708,0x18e9,0x4d3c,{0xbc,0x69,0x54,0x19,0x0a,0x35,0x77,0xd8}};
+extern "C" const GUID __declspec(selectany) IID_ISMRouterSetup =
+    {0xa386707f,0xfb42,0x4d0e,{0xaf,0x12,0x3c,0x1f,0xeb,0x26,0xf7,0x71}};
+extern "C" const GUID __declspec(selectany) IID_ISMRouterSetup2 =
+    {0x06efa9d2,0x490c,0x4325,{0xbf,0x15,0x3f,0x73,0xf4,0x49,0x2f,0x34}};
+extern "C" const GUID __declspec(selectany) CLSID_SMRouterPoint =
+    {0xf8b65fee,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) CLSID_SMRouterEnvelope =
+    {0xf8b65ff1,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) CLSID_SMPointsCollection =
+    {0xf8b65ff4,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) CLSID_SMNetAttribute =
+    {0xf8b65ff7,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) CLSID_SMNetAttributesCollection =
+    {0xf8b65ffa,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) CLSID_SMNetBarrier =
+    {0xf8b65ffd,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) CLSID_SMNetBarriersCollection =
+    {0xf8b66000,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) CLSID_SMRoadPreferences =
+    {0xf8b66003,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) CLSID_SMSpeedGroup =
+    {0xf8b66006,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) CLSID_SMSpeedGroups =
+    {0xf8b66009,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) CLSID_SMTripPlanSettings =
+    {0xf8b6600c,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) CLSID_SMFlag =
+    {0xf8b66012,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) CLSID_SMStop =
+    {0xf8b66015,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) CLSID_SMStopsCollection =
+    {0xf8b66018,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) CLSID_SMDirItem =
+    {0xf8b6601b,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) CLSID_SMDirections =
+    {0xf8b6601e,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) CLSID_SMRouter =
+    {0xf8b66021,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) CLSID_SMRouterFactory =
+    {0xf8b66024,0x5850,0x11d7,{0xb3,0x21,0x00,0x80,0x48,0xdb,0x11,0xde}};
+extern "C" const GUID __declspec(selectany) CLSID_SMNetAttributesAccess =
+    {0x2041d5a1,0xc9b6,0x4c74,{0x89,0x54,0x03,0x3a,0xf2,0x55,0x57,0xb8}};
+extern "C" const GUID __declspec(selectany) CLSID_SMFlagCreator =
+    {0x38a979e8,0x086f,0x4ca8,{0xac,0x30,0x89,0x0f,0x22,0xe6,0x5e,0xbc}};
+extern "C" const GUID __declspec(selectany) CLSID_SMRestriction =
+    {0x71a8e2b4,0x5a6c,0x4bdd,{0xb0,0x05,0xa0,0xfb,0x02,0x41,0x41,0x97}};
+extern "C" const GUID __declspec(selectany) IID_IUsageModeOption =
+    {0xc1d85fc8,0xf132,0x4187,{0xb8,0x97,0x62,0x3c,0x64,0x7c,0x92,0x13}};
+extern "C" const GUID __declspec(selectany) IID_IUsageModeInfo =
+    {0x07713846,0x9da7,0x45f8,{0x88,0x6f,0x3e,0xb2,0xf0,0xa3,0x01,0x87}};
+extern "C" const GUID __declspec(selectany) IID_IMetaInfo =
+    {0x0db7a450,0x5fed,0x441b,{0xbb,0x3a,0xdb,0x6e,0x24,0xd6,0xcd,0xa3}};
+extern "C" const GUID __declspec(selectany) IID_IDataLicenseInfo =
+    {0x37474491,0x1c04,0x4669,{0x99,0xb5,0x82,0x5c,0xf6,0x72,0x94,0xc5}};
+extern "C" const GUID __declspec(selectany) IID_IDataLicenseManager =
+    {0x2d5b7a40,0xf25b,0x4490,{0xb3,0x6c,0xed,0xd3,0x67,0xdf,0x33,0xd0}};
+extern "C" const GUID __declspec(selectany) CLSID_LicensedDataExtension =
+    {0x39bc41a4,0xb140,0x4f7b,{0xb1,0xc9,0xac,0xcd,0x50,0x7e,0xe3,0x39}};
+extern "C" const GUID __declspec(selectany) IID_IDECadDrawingDataset =
+    {0x6ec9d0c5,0xc3c5,0x4a2c,{0xb9,0xb3,0x59,0x59,0x20,0x9f,0x42,0x7c}};
+extern "C" const GUID __declspec(selectany) IID_IDECadDrawingDatasetType =
+    {0x6850e61d,0xeda7,0x45ff,{0x92,0x91,0x25,0xaf,0x6c,0x10,0xc5,0x56}};
+extern "C" const GUID __declspec(selectany) CLSID_DECadDrawingDatasetType =
+    {0x43a72293,0xaac8,0x4f0c,{0xb8,0xf8,0x8b,0x2c,0xdb,0x29,0x8f,0x85}};
+extern "C" const GUID __declspec(selectany) CLSID_DECadDrawingDataset =
+    {0xf786332d,0x20b2,0x4607,{0xbf,0x34,0x0a,0x53,0xe4,0xd0,0xb4,0x13}};
+extern "C" const GUID __declspec(selectany) IID_IGPLayer =
+    {0xea30b18d,0x2d75,0x4593,{0xbf,0x44,0xb3,0x62,0x0f,0x41,0xd8,0xdb}};
+extern "C" const GUID __declspec(selectany) IID_IGPLayerType =
+    {0x8547ff12,0xe020,0x4c17,{0x89,0x3b,0xbd,0xa0,0x17,0x6f,0x0c,0x3b}};
+extern "C" const GUID __declspec(selectany) IID_IDELayer =
+    {0x991993e4,0x7dfd,0x4e23,{0xbc,0xa0,0x68,0x9b,0x17,0x4e,0x30,0x30}};
+extern "C" const GUID __declspec(selectany) IID_IDEShapeFile =
+    {0x4e458cd7,0xd677,0x4e02,{0xa8,0x27,0x2c,0x5f,0x18,0x74,0xff,0x88}};
+extern "C" const GUID __declspec(selectany) IID_IDEDbaseTable =
+    {0xcba6712b,0xe7c5,0x4013,{0x9b,0xc7,0x96,0x56,0xbf,0xb0,0xde,0x41}};
+extern "C" const GUID __declspec(selectany) IID_IDELayerType =
+    {0x2a3e65fd,0x9d5b,0x4baa,{0x8a,0x3b,0x39,0x82,0x4f,0xc8,0xc5,0x87}};
+extern "C" const GUID __declspec(selectany) IID_IDEShapeFileType =
+    {0xc7d6c9e2,0x278e,0x4f86,{0xa3,0x49,0xf8,0x0b,0xaa,0xc7,0xa7,0x33}};
+extern "C" const GUID __declspec(selectany) IID_IDEDbaseTableType =
+    {0x5b5c7610,0xa953,0x11d5,{0x93,0x21,0x00,0x80,0xc7,0x1a,0x32,0x26}};
+extern "C" const GUID __declspec(selectany) IID_IDETextFile =
+    {0x5348d943,0xc798,0x434a,{0x9e,0x72,0xac,0x97,0xca,0x80,0x2a,0x71}};
+extern "C" const GUID __declspec(selectany) IID_IDETextFileType =
+    {0x72835efa,0xd940,0x430f,{0x87,0xe3,0x6e,0x9b,0x3d,0x12,0x10,0x23}};
+extern "C" const GUID __declspec(selectany) CLSID_DELayerType =
+    {0x775700af,0x8577,0x442d,{0xad,0xc9,0x74,0xd7,0xa9,0xaa,0x3c,0x41}};
+extern "C" const GUID __declspec(selectany) IID_IDEFileType =
+    {0x5cea7586,0x5550,0x418a,{0xa6,0xcb,0x9b,0x8e,0x67,0x13,0x3c,0x43}};
+extern "C" const GUID __declspec(selectany) CLSID_DEShapeFileType =
+    {0x44a51f3f,0xef06,0x4fd9,{0xbc,0x52,0x01,0x0e,0x6c,0xa0,0xe8,0x4b}};
+extern "C" const GUID __declspec(selectany) CLSID_DEDbaseTableType =
+    {0x11e37cd0,0xa664,0x11d5,{0x93,0x1d,0x00,0x80,0xc7,0x1a,0x32,0x26}};
+extern "C" const GUID __declspec(selectany) CLSID_DELayer =
+    {0xbdd71708,0x3463,0x4787,{0xa4,0x91,0xb9,0x36,0x3b,0x93,0x7d,0xbe}};
+extern "C" const GUID __declspec(selectany) IID_IDEFile =
+    {0xdf006d6f,0x661e,0x46ca,{0xa5,0x91,0xd3,0xc6,0xcb,0x5d,0x94,0xd3}};
+extern "C" const GUID __declspec(selectany) CLSID_DEShapeFile =
+    {0x03e6fb47,0xaa38,0x476c,{0x93,0x4b,0x1d,0xf5,0x76,0x5c,0x76,0xeb}};
+extern "C" const GUID __declspec(selectany) CLSID_DEDbaseTable =
+    {0x69e84176,0xfb98,0x4036,{0xa8,0xff,0xe6,0x9c,0x8e,0x82,0xf0,0x13}};
+extern "C" const GUID __declspec(selectany) IID_IDECatalogRoot =
+    {0x49b7bb60,0x02c3,0x49de,{0x96,0x42,0xa0,0xb0,0x72,0x15,0xda,0x63}};
+extern "C" const GUID __declspec(selectany) IID_IDERemoteDatabaseFolder =
+    {0x3dd1a87b,0x30b2,0x4a02,{0xab,0xd2,0x20,0x5c,0x53,0x63,0xae,0x4b}};
+extern "C" const GUID __declspec(selectany) IID_IDESpatialReferencesFolder =
+    {0xbc5edbfd,0x375c,0x40a2,{0xb9,0xc2,0xea,0x8d,0xfe,0x2d,0xe1,0xe0}};
+extern "C" const GUID __declspec(selectany) IID_IDEDiskConnection =
+    {0xae51f9d8,0x5864,0x4cf2,{0x81,0x86,0x73,0x6a,0xf8,0xc4,0x02,0x2c}};
+extern "C" const GUID __declspec(selectany) IID_IDEFolder =
+    {0x4368e06b,0xe887,0x43b6,{0xab,0x24,0x1f,0xf4,0xfe,0xd5,0x83,0x7b}};
+extern "C" const GUID __declspec(selectany) IID_IDEPrjFile =
+    {0xf69ca920,0xcfbb,0x11d5,{0x93,0x3d,0x00,0x80,0xc7,0x1a,0x32,0x26}};
+extern "C" const GUID __declspec(selectany) IID_IDEMapDocument =
+    {0x81daeed8,0xef11,0x40eb,{0xa6,0x17,0x60,0xe4,0xd4,0x65,0x4f,0xd8}};
+extern "C" const GUID __declspec(selectany) IID_IDECatalogRootType =
+    {0x4ba00494,0xab4c,0x45b5,{0xb7,0xff,0x7e,0x3b,0x9e,0x59,0x5b,0xf1}};
+extern "C" const GUID __declspec(selectany) IID_IDEDiskConnectionType =
+    {0xbd15433a,0x67d7,0x4fdb,{0xb0,0xca,0x42,0xef,0x47,0x0f,0x70,0x4e}};
+extern "C" const GUID __declspec(selectany) IID_IDEFolderType =
+    {0xb2dfe80e,0x7ee0,0x4aaa,{0xbe,0xe0,0x49,0x85,0x93,0x37,0x47,0x43}};
+extern "C" const GUID __declspec(selectany) IID_IDEPrjFileType =
+    {0xae8c96f0,0xcfbe,0x11d5,{0x93,0x3d,0x00,0x80,0xc7,0x1a,0x32,0x26}};
+extern "C" const GUID __declspec(selectany) IID_IDEMapDocumentType =
+    {0x5826a85f,0xd7cd,0x4b32,{0xa2,0xd9,0x0e,0xcc,0xfd,0xe2,0x97,0xa2}};
+extern "C" const GUID __declspec(selectany) IID_IDERemoteDatabaseFolderType =
+    {0xef94d455,0x32d3,0x4d10,{0xb0,0x80,0xfe,0x75,0x08,0xc0,0x5d,0xc9}};
+extern "C" const GUID __declspec(selectany) IID_IDESpatialReferencesFolderType =
+    {0xe2b9400d,0x655c,0x4976,{0xb3,0xdd,0x04,0xf3,0x1c,0x48,0xbb,0x81}};
+extern "C" const GUID __declspec(selectany) CLSID_DECatalogRootType =
+    {0x07359aea,0x34ba,0x4b5a,{0xab,0x2c,0x0b,0x43,0xc7,0xe8,0xe9,0xfb}};
+extern "C" const GUID __declspec(selectany) CLSID_DEDiskConnectionType =
+    {0x36afbb31,0xcdbe,0x41cb,{0xbb,0x11,0x58,0x48,0x4c,0x2a,0xcf,0x45}};
+extern "C" const GUID __declspec(selectany) CLSID_DEFolderType =
+    {0xfe29b0ed,0xdecf,0x4a61,{0x8e,0xd0,0xbe,0x23,0x3b,0xfe,0x37,0x6b}};
+extern "C" const GUID __declspec(selectany) CLSID_DEFileType =
+    {0xc486aa07,0x9027,0x4d78,{0x88,0xfc,0x4a,0x7a,0x94,0x0b,0xb3,0x67}};
+extern "C" const GUID __declspec(selectany) CLSID_DEPrjFileType =
+    {0xebfebc90,0xcfbf,0x11d5,{0x93,0x3d,0x00,0x80,0xc7,0x1a,0x32,0x26}};
+extern "C" const GUID __declspec(selectany) CLSID_DEMapDocumentType =
+    {0xec42ceb1,0x8029,0x4f90,{0xa1,0x8c,0x57,0x90,0xae,0x1f,0xad,0x01}};
+extern "C" const GUID __declspec(selectany) CLSID_DERemoteDatabaseFolderType =
+    {0x2919c9ef,0xdc76,0x4c52,{0x95,0x39,0xf3,0x57,0xa4,0xf6,0x89,0x25}};
+extern "C" const GUID __declspec(selectany) CLSID_DESpatialReferencesFolderType =
+    {0x9fd4b414,0x498a,0x48b8,{0xbf,0x2f,0x82,0x30,0x25,0x24,0xd5,0x13}};
+extern "C" const GUID __declspec(selectany) CLSID_DECatalogRoot =
+    {0x01d6ebdd,0xde9a,0x4217,{0x8b,0xfe,0x32,0x72,0x65,0x85,0x5f,0xa2}};
+extern "C" const GUID __declspec(selectany) CLSID_DEDiskConnection =
+    {0x8e5e855a,0x7d60,0x4ce1,{0xaf,0xd0,0x45,0x92,0x9c,0x9f,0x49,0x2c}};
+extern "C" const GUID __declspec(selectany) CLSID_DEFolder =
+    {0x273ccebc,0x1aa2,0x4429,{0xbb,0xd5,0x4c,0xb7,0xc6,0xe2,0x04,0x65}};
+extern "C" const GUID __declspec(selectany) CLSID_DEFile =
+    {0x175cf2c5,0x12bf,0x413a,{0x8f,0xdf,0x3d,0xa3,0x0c,0xc0,0x9b,0xee}};
+extern "C" const GUID __declspec(selectany) CLSID_DEMapDocument =
+    {0xc0bed5d9,0x13e2,0x469b,{0xa7,0xd8,0x22,0x70,0x4b,0x0c,0x86,0x30}};
+extern "C" const GUID __declspec(selectany) CLSID_DERemoteDatabaseFolder =
+    {0xdb3e6fdf,0xd5f8,0x4c94,{0xb7,0x43,0x47,0xab,0x4d,0xe7,0x9a,0x05}};
+extern "C" const GUID __declspec(selectany) CLSID_DESpatialReferencesFolder =
+    {0x3189f8fc,0xa9c8,0x4b8e,{0x8c,0x47,0x43,0xc7,0x58,0xa7,0xa8,0xbd}};
+extern "C" const GUID __declspec(selectany) CLSID_DEPrjFile =
+    {0x7e704bb0,0xcfbe,0x11d5,{0x93,0x3d,0x00,0x80,0xc7,0x1a,0x32,0x26}};
+extern "C" const GUID __declspec(selectany) CLSID_DETextFile =
+    {0xe98d0766,0xc13e,0x45ca,{0xba,0x78,0x1d,0xef,0x8b,0x60,0xca,0xb2}};
+extern "C" const GUID __declspec(selectany) CLSID_DETextFileType =
+    {0x9a4700e6,0xc10c,0x4ecb,{0xaa,0xe6,0x90,0xd3,0x82,0xae,0x22,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_IDETin =
+    {0xb0b62284,0x0080,0x4ea3,{0x97,0x16,0xde,0x52,0x93,0xa7,0x3f,0x6e}};
+extern "C" const GUID __declspec(selectany) IID_IDETinType =
+    {0x0853eb47,0x69e4,0x4309,{0xa8,0xba,0x5d,0x14,0xb3,0x56,0x36,0x2b}};
+extern "C" const GUID __declspec(selectany) CLSID_DETinType =
+    {0xf0b41a32,0xee77,0x4b16,{0xa5,0xee,0x16,0xbc,0xe3,0xd8,0xf3,0xcc}};
+extern "C" const GUID __declspec(selectany) CLSID_DETin =
+    {0x5edc32f1,0xc1b2,0x4808,{0x88,0xe0,0x2e,0xd6,0x8e,0x77,0x26,0x9d}};
+extern "C" const GUID __declspec(selectany) IID_IDELasDataset =
+    {0x1508d058,0xf970,0x487c,{0xaf,0xbe,0x31,0xdb,0x1c,0x3e,0xd5,0x94}};
+extern "C" const GUID __declspec(selectany) IID_IDELasDatasetType =
+    {0xe4c66c0c,0x69ea,0x466b,{0x84,0xc7,0xeb,0x6a,0xca,0xb6,0x94,0x90}};
+extern "C" const GUID __declspec(selectany) CLSID_DELasDatasetType =
+    {0x160bc182,0xce75,0x4dab,{0x8a,0xbf,0x8e,0x6d,0xc8,0x66,0xc7,0x3b}};
+extern "C" const GUID __declspec(selectany) CLSID_DELasDataset =
+    {0xea006709,0xcd03,0x439d,{0x80,0xa1,0x92,0x54,0xe2,0x54,0x12,0xe3}};
+extern "C" const GUID __declspec(selectany) IID_IDECoverage =
+    {0xbde67d8b,0xbf5e,0x45ec,{0xa3,0xfd,0x09,0xac,0x77,0xef,0xe8,0x50}};
+extern "C" const GUID __declspec(selectany) IID_IDECoverageFeatureClass =
+    {0x25ea15b1,0x7425,0x452b,{0x8f,0xb6,0xca,0x3f,0x8d,0x08,0x81,0x29}};
+extern "C" const GUID __declspec(selectany) IID_IDEArcInfoTable =
+    {0xdc3b7fdb,0xce0f,0x4aee,{0x94,0x5c,0x07,0x55,0xf8,0x91,0x09,0xe4}};
+extern "C" const GUID __declspec(selectany) IID_IGPArcInfoItem =
+    {0xc95b22e0,0xa3c3,0x11d5,{0x93,0x1c,0x00,0x80,0xc7,0x1a,0x32,0x26}};
+extern "C" const GUID __declspec(selectany) IID_IDEArcInfoUtilities =
+    {0x1c1d3491,0x9e02,0x4283,{0xbe,0x2f,0xb8,0x17,0x7c,0xc8,0xf0,0x1f}};
+extern "C" const GUID __declspec(selectany) IID_IDECoverageType =
+    {0xab6143ed,0xa1ea,0x4193,{0xb9,0x7c,0xf8,0xbe,0x9a,0x6c,0x4c,0x83}};
+extern "C" const GUID __declspec(selectany) IID_IDECoverageFeatureClassType =
+    {0x943db542,0x3a26,0x40e3,{0x9a,0x26,0x33,0x42,0x65,0x5b,0xd3,0xa2}};
+extern "C" const GUID __declspec(selectany) IID_IDEArcInfoTableType =
+    {0x2864d010,0x402b,0x4b4e,{0xb2,0x7c,0xdb,0x2c,0xb2,0x38,0xff,0xe4}};
+extern "C" const GUID __declspec(selectany) IID_IGPArcInfoItemType =
+    {0x82c365f0,0x7956,0x47ec,{0x86,0xf3,0xb8,0xd6,0x28,0x83,0x77,0x12}};
+extern "C" const GUID __declspec(selectany) CLSID_DECoverageType =
+    {0x80172db6,0x5715,0x4157,{0xb2,0x53,0x61,0x50,0xea,0x74,0x20,0x3e}};
+extern "C" const GUID __declspec(selectany) CLSID_DECoverageFeatureClassType =
+    {0x874e63d8,0xb362,0x457b,{0xa3,0xc8,0xaa,0x0f,0x3f,0x44,0x3e,0x0b}};
+extern "C" const GUID __declspec(selectany) CLSID_DEArcInfoTableType =
+    {0x0e3f5cb0,0x2445,0x4abb,{0xbe,0x9a,0xfc,0xf0,0x49,0x2e,0x18,0x0a}};
+extern "C" const GUID __declspec(selectany) CLSID_GPArcInfoItemType =
+    {0x5356dadd,0x53e4,0x4e70,{0x99,0xc9,0x99,0x6c,0xdd,0x22,0x4e,0x25}};
+extern "C" const GUID __declspec(selectany) CLSID_DECoverage =
+    {0x96b70c47,0x2c7f,0x405f,{0xb9,0xfd,0xde,0xaa,0x3c,0xdc,0x08,0x4c}};
+extern "C" const GUID __declspec(selectany) CLSID_DECoverageFeatureClass =
+    {0xb7ec3865,0x805b,0x41a4,{0x80,0x4c,0x8b,0x4a,0x30,0xaa,0x41,0x28}};
+extern "C" const GUID __declspec(selectany) CLSID_DEArcInfoTable =
+    {0x1cc786ec,0x5efe,0x493c,{0x8a,0x25,0xb5,0x46,0x84,0x46,0x65,0xd7}};
+extern "C" const GUID __declspec(selectany) CLSID_GPArcInfoItem =
+    {0x6dddbbb2,0x41dc,0x4f12,{0x91,0x3e,0x80,0x31,0x96,0xeb,0x33,0xfa}};
+extern "C" const GUID __declspec(selectany) CLSID_DEArcInfoUtilities =
+    {0x95d74728,0xcadd,0x41c2,{0xaf,0x2b,0x7e,0x81,0x63,0x64,0xd9,0x05}};
+extern "C" const GUID __declspec(selectany) IID_IDEVPFTable =
+    {0xa30b5d18,0x63ed,0x493a,{0x90,0xe5,0x75,0xdc,0x2d,0x55,0xd7,0x9c}};
+extern "C" const GUID __declspec(selectany) IID_IDEVPFTableType =
+    {0xdbb10ac8,0xbbbd,0x44af,{0xaa,0xd6,0xa6,0x89,0xaf,0x24,0xdb,0xfb}};
+extern "C" const GUID __declspec(selectany) CLSID_DEVPFTableType =
+    {0x3f3c713f,0xcc15,0x4ea7,{0xa7,0x80,0x19,0x3e,0x02,0x1d,0x42,0x51}};
+extern "C" const GUID __declspec(selectany) CLSID_DEVPFTable =
+    {0x48aab232,0x6f1f,0x4261,{0x9d,0xac,0xcb,0xa5,0x5d,0x18,0x36,0x49}};
+extern "C" const GUID __declspec(selectany) IID_IDEVPFCoverage =
+    {0x26785829,0x6d41,0x457c,{0xb9,0x53,0x08,0xfe,0xd1,0xe1,0x6e,0xda}};
+extern "C" const GUID __declspec(selectany) IID_IDEVPFCoverageType =
+    {0xba80d3fd,0xb1c8,0x4111,{0xb3,0xdb,0x03,0x7d,0x6e,0xa3,0xd9,0xeb}};
+extern "C" const GUID __declspec(selectany) CLSID_DEVPFCoverageType =
+    {0x728bbf56,0x85fa,0x4598,{0x9c,0xe8,0x77,0xfc,0x8b,0xa7,0x31,0x27}};
+extern "C" const GUID __declspec(selectany) CLSID_DEVPFCoverage =
+    {0xca4ff80d,0x85a9,0x445c,{0xad,0xb2,0xa5,0xc7,0x81,0x1b,0x3c,0x36}};
+
+#pragma pack(pop)

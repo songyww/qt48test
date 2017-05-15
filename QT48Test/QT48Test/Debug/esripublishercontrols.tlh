@@ -1,0 +1,1293 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (6fd28703).
+//
+// e:\vsproject\qt48test\qt48test\debug\esripublishercontrols.tlh
+//
+// C++ source equivalent of Win32 type library esripublishercontrols.olb
+// compiler-generated file created 06/01/16 at 16:28:41 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("fbb2dad5-39b5-464c-8351-a0499be62dc5"))
+/* LIBID */ __esriPublisherControls;
+enum esriARWindows;
+enum esriARTool;
+enum esriARDocumentPermissions;
+enum esriARUnits;
+enum esriARDirection;
+enum esriARSpatialRelationship;
+enum esriARExportFormat;
+enum esriARViewType;
+enum esriARExtentType;
+enum esriARCaseAppearance;
+enum esriARAction;
+enum esriARBorderStyle;
+enum esriARAppearance;
+enum esriARFieldType;
+enum esriARMousePointer;
+struct __declspec(uuid("33df9650-35b7-42f8-a7c9-9f8a1b53aa80"))
+/* dual interface */ IARLayer;
+struct __declspec(uuid("8ea32542-5b8b-4b1a-9fd8-eb88c0bc0d87"))
+/* dual interface */ IARSearchDef;
+struct __declspec(uuid("5dfd448f-1a56-4c52-ac4e-2c1cb3e87ec6"))
+/* dual interface */ IARFeature;
+struct __declspec(uuid("782fd13e-138c-4711-a2d0-9787567c2efa"))
+/* dual interface */ IARFeatureCursor;
+struct __declspec(uuid("f49f1221-e39f-4c07-acfb-f61d2c6e6920"))
+/* dual interface */ IARFeatureSet;
+struct __declspec(uuid("b27adbe0-9c31-48db-87a8-0434e88180c2"))
+/* dual interface */ IARMap;
+struct __declspec(uuid("d1fd0345-ef40-4ff9-a7b9-c6db6f4e8717"))
+/* dual interface */ IARPageLayout;
+struct __declspec(uuid("671c12b9-56d0-440a-8cf8-75b9fbd0a65e"))
+/* dual interface */ IARConfiguration;
+struct __declspec(uuid("11a10d49-2e44-4204-b253-f63b9c18ba89"))
+/* dual interface */ IARUnitConverter;
+struct __declspec(uuid("92320009-383f-4fe1-b5b1-08d047eaeec3"))
+/* dual interface */ IARCommandInfo;
+struct __declspec(uuid("6e4eca18-6fb2-4faf-b1d8-82392eca3532"))
+/* dual interface */ IARControl;
+struct __declspec(uuid("a9a61e12-928c-44fb-a150-a5480c72c7f4"))
+/* dispinterface */ IARControlDefault;
+struct __declspec(uuid("75a015aa-613a-42f9-b1c5-27c3d50fe95e"))
+/* dispinterface */ IARControlEvents;
+struct /* coclass */ ARUnitConverter;
+struct /* coclass */ ARPageLayout;
+struct /* coclass */ ARMap;
+struct /* coclass */ ARLayer;
+struct /* coclass */ ARFeature;
+struct /* coclass */ ARFeatureSet;
+struct /* coclass */ ARFeatureCursor;
+struct /* coclass */ ARCommandInfo;
+enum esriARGlobeWindows;
+enum esriARGlobeTool;
+enum esriARGlobeTips;
+enum esriARGlobeViewType;
+struct __declspec(uuid("9e5e80cf-2f1d-49c6-a73c-39308d1fbc61"))
+/* dual interface */ IARGlobe;
+struct __declspec(uuid("feb9d62a-961d-4d44-a18f-90619837de03"))
+/* dual interface */ IARGlobeControl;
+struct __declspec(uuid("2e2916d1-7349-4d39-8dcb-3628167432ed"))
+/* dispinterface */ IARGlobeControlDefault;
+struct __declspec(uuid("a37e6daf-3647-4096-abee-1f75fdcd96eb"))
+/* dispinterface */ IARGlobeControlEvents;
+struct /* coclass */ ARGlobe;
+struct /* coclass */ ArcReaderControl;
+struct /* coclass */ ArcReaderConfiguration;
+struct /* coclass */ ArcReaderSearchDef;
+struct /* coclass */ ArcReaderGlobeControl;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IARFeature, __uuidof(IARFeature));
+_COM_SMARTPTR_TYPEDEF(IARSearchDef, __uuidof(IARSearchDef));
+_COM_SMARTPTR_TYPEDEF(IARFeatureCursor, __uuidof(IARFeatureCursor));
+_COM_SMARTPTR_TYPEDEF(IARFeatureSet, __uuidof(IARFeatureSet));
+_COM_SMARTPTR_TYPEDEF(IARLayer, __uuidof(IARLayer));
+_COM_SMARTPTR_TYPEDEF(IARMap, __uuidof(IARMap));
+_COM_SMARTPTR_TYPEDEF(IARPageLayout, __uuidof(IARPageLayout));
+_COM_SMARTPTR_TYPEDEF(IARConfiguration, __uuidof(IARConfiguration));
+_COM_SMARTPTR_TYPEDEF(IARUnitConverter, __uuidof(IARUnitConverter));
+_COM_SMARTPTR_TYPEDEF(IARCommandInfo, __uuidof(IARCommandInfo));
+_COM_SMARTPTR_TYPEDEF(IARControl, __uuidof(IARControl));
+_COM_SMARTPTR_TYPEDEF(IARControlDefault, __uuidof(IARControlDefault));
+_COM_SMARTPTR_TYPEDEF(IARControlEvents, __uuidof(IARControlEvents));
+_COM_SMARTPTR_TYPEDEF(IARGlobe, __uuidof(IARGlobe));
+_COM_SMARTPTR_TYPEDEF(IARGlobeControl, __uuidof(IARGlobeControl));
+_COM_SMARTPTR_TYPEDEF(IARGlobeControlDefault, __uuidof(IARGlobeControlDefault));
+_COM_SMARTPTR_TYPEDEF(IARGlobeControlEvents, __uuidof(IARGlobeControlEvents));
+
+//
+// Type library items
+//
+
+enum __declspec(uuid("5842f1fd-8ca0-4c47-be2e-1d04de3c19f2"))
+esriARWindows
+{
+    esriARWindowsFind = 0,
+    esriARWindowsMagnifier = 1,
+    esriARWindowsSearchHelp = 2,
+    esriARWindowsHelpContents = 3,
+    esriARWindowsFileProperties = 4,
+    esriARWindowsAddInternetSite = 5,
+    esriARWindowsManageInternetSite = 6,
+    esriARWindowsInternetBrowser = 7,
+    esriARWindowsPageSetup = 8,
+    esriARWindowsPrinter = 9,
+    esriARWindowsIdentify = 10,
+    esriARWindowsPMFTitle = 11,
+    esriARWindowsRouting = 12,
+    esriARWindowsFindXY = 13,
+    esriARWindowsFindNearbyPlacesDeprecated = 14,
+    esriARWindowsMyPlaces = 15
+};
+
+enum __declspec(uuid("3252a024-2174-430b-9316-ffc9ea04a517"))
+esriARTool
+{
+    esriARToolMapZoomIn = 0,
+    esriARToolMapZoomOut = 1,
+    esriARToolMapPan = 2,
+    esriARToolMapIdentify = 3,
+    esriARToolLayoutZoomIn = 4,
+    esriARToolLayoutZoomOut = 5,
+    esriARToolLayoutPan = 6,
+    esriARToolMapMeasure = 7,
+    esriARToolMapHyperlink = 8,
+    esriARToolNoneSelected = 9,
+    esriARToolMapIdentifyUsingLayer = 10,
+    esriARToolMapSwipe = 11,
+    esriARToolMapZoomInOut = 12,
+    esriARToolMarkupPenThin = 13,
+    esriARToolMarkupPenMedium = 14,
+    esriARToolMarkupPenThick = 15,
+    esriARToolMarkupHighlightYellow = 16,
+    esriARToolMarkupHighlightGreen = 17,
+    esriARToolMarkupHighlightBlue = 18,
+    esriARToolMarkupEraserSmall = 19,
+    esriARToolMarkupEraserMedium = 20,
+    esriARToolMarkupEraserLarge = 21,
+    esriARToolMarkupEraserStroke = 22,
+    esriARToolMarkupRed = 23,
+    esriARToolMarkupNavy = 24,
+    esriARToolMarkupGreen = 25,
+    esriARToolMarkupTeal = 26,
+    esriARToolMarkupMaroon = 27,
+    esriARToolMarkupPurple = 28,
+    esriARToolMarkupOlive = 29,
+    esriARToolMarkupSilver = 30,
+    esriARToolMarkupGrey = 31,
+    esriARToolMarkupBlue = 32,
+    esriARToolMarkupLime = 33,
+    esriARToolMarkupAqua = 34,
+    esriARToolMarkupYellow = 35,
+    esriARToolMarkupFuchsia = 36,
+    esriARToolMarkupBlack = 37,
+    esriARToolMarkupWhite = 38,
+    esriARToolCustom = 99
+};
+
+enum __declspec(uuid("d85a72a6-fde1-49a3-ba3f-739671b4500a"))
+esriARDocumentPermissions
+{
+    esriARDocumentPermissionsPrint = 0,
+    esriARDocumentPermissionsExport = 1,
+    esriARDocumentPermissionsIdentify = 2,
+    esriARDocumentPermissionsFind = 3,
+    esriARDocumentPermissionsChangeView = 4,
+    esriARDocumentPermissionsChangeLayerVisibility = 5,
+    esriARDocumentPermissionsHyperlink = 6,
+    esriARDocumentPermissionsMeasure = 7,
+    esriARDocumentPermissionsViewTOC = 8,
+    esriARDocumentPermissionsOnlyInArcReader = 9,
+    esriARDocumentPermissionsQueryFeatures = 10,
+    esriARDocumentPermissionsQueryValues = 11,
+    esriARDocumentPermissionsCopyViewToClipboard = 12,
+    esriARDocumentPermissionsInternalObjects = 13
+};
+
+enum __declspec(uuid("50865b59-f663-4c92-8309-625e21530b2c"))
+esriARUnits
+{
+    esriARUnitsUnknown = 0,
+    esriARUnitsInches = 1,
+    esriARUnitsPoints = 2,
+    esriARUnitsFeet = 3,
+    esriARUnitsYards = 4,
+    esriARUnitsMiles = 5,
+    esriARUnitsNauticalMiles = 6,
+    esriARUnitsMillimeters = 7,
+    esriARUnitsCentimeters = 8,
+    esriARUnitsMeters = 9,
+    esriARUnitsKilometers = 10,
+    esriARUnitsDecimalDegrees = 11,
+    esriARUnitsDecimeters = 12,
+    esriARUnitsDegMinSec = 13
+};
+
+enum __declspec(uuid("a678f46b-d983-48b7-be1e-bb410ca68b3a"))
+esriARDirection
+{
+    esriARDirectionNorth = 0,
+    esriARDirectionNorthEast = 1,
+    esriARDirectionEast = 2,
+    esriARDirectionSouthEast = 3,
+    esriARDirectionSouth = 4,
+    esriARDirectionSouthWest = 5,
+    esriARDirectionWest = 6,
+    esriARDirectionNorthWest = 7
+};
+
+enum __declspec(uuid("cbc116f3-22ee-4f44-9049-c1ade6f4c6aa"))
+esriARSpatialRelationship
+{
+    esriARSpatialRelationshipUndefined = 0,
+    esriARSpatialRelationshipIntersects = 1,
+    esriARSpatialRelationshipEnvelopeIntersects = 2,
+    esriARSpatialRelationshipIndexIntersects = 3,
+    esriARSpatialRelationshipTouches = 4,
+    esriARSpatialRelationshipOverlaps = 5,
+    esriARSpatialRelationshipCrosses = 6,
+    esriARSpatialRelationshipWithin = 7,
+    esriARSpatialRelationshipContains = 8,
+    esriARSpatialRelationshipRelation = 9
+};
+
+enum __declspec(uuid("d2ccc1e5-6102-4c63-9cbd-6c45f32bfc01"))
+esriARExportFormat
+{
+    esriARExportFormatBMP = 0
+};
+
+enum __declspec(uuid("05ca6f5b-52d1-413c-af5d-73f40cd4c945"))
+esriARViewType
+{
+    esriARViewTypeNone = 0,
+    esriARViewTypePageLayout = 1,
+    esriARViewTypeMap = 2
+};
+
+enum __declspec(uuid("8966a6ec-6acb-4664-b371-f8700bdb1dea"))
+esriARExtentType
+{
+    esriARExtentTypeNotFixed = 0,
+    esriARExtentTypeFixedScale = 1,
+    esriARExtentTypeFixedExtent = 2
+};
+
+enum __declspec(uuid("d5015455-99a0-414a-9bf7-92b361b0cade"))
+esriARCaseAppearance
+{
+    esriARCaseAppearanceUnchanged = 0,
+    esriARCaseAppearanceUpper = 1,
+    esriARCaseAppearanceLower = 2
+};
+
+enum __declspec(uuid("d5d5b8cb-347f-4414-b5cc-7db8f8c80ef2"))
+esriARAction
+{
+    esriARActionMapProperties = 0,
+    esriARActionLayerProperties = 1,
+    esriARActionHyperlink = 2,
+    esriARActionIdentify = 3,
+    esriARActionAnimationStarted = 4,
+    esriARActionAnimationStopped = 5
+};
+
+enum __declspec(uuid("19707b3c-eed2-4243-8ffd-a5843ed4cb80"))
+esriARBorderStyle
+{
+    esriARBorderStyleNoBorder = 0,
+    esriARBorderStyleBorder = 1
+};
+
+enum __declspec(uuid("427d1624-570f-4c08-b697-d0db714706cd"))
+esriARAppearance
+{
+    esriARAppearanceFlat = 0,
+    esriARAppearance3D = 1
+};
+
+enum __declspec(uuid("3a1755f9-2ff1-4413-8d97-0ef139d192c1"))
+esriARFieldType
+{
+    esriARFieldTypeSmallInteger = 0,
+    esriARFieldTypeInteger = 1,
+    esriARFieldTypeSingle = 2,
+    esriARFieldTypeDouble = 3,
+    esriARFieldTypeString = 4,
+    esriARFieldTypeDate = 5,
+    esriARFieldTypeOID = 6,
+    esriARFieldTypeGeometry = 7,
+    esriARFieldTypeBlob = 8,
+    esriARFieldTypeRaster = 9
+};
+
+enum __declspec(uuid("8e818c15-f9b6-495d-beb7-82c6b36929d4"))
+esriARMousePointer
+{
+    esriARMousePointerDefault = 0,
+    esriARMousePointerArrow = 1,
+    esriARMousePointerCrosshair = 2,
+    esriARMousePointerIBeam = 3,
+    esriARMousePointerIcon = 4,
+    esriARMousePointerSize = 5,
+    esriARMousePointerSizeNESW = 6,
+    esriARMousePointerSizeNS = 7,
+    esriARMousePointerSizeNWSE = 8,
+    esriARMousePointerSizeWE = 9,
+    esriARMousePointerUpArrow = 10,
+    esriARMousePointerHourglass = 11,
+    esriARMousePointerNoDrop = 12,
+    esriARMousePointerArrowHourglass = 13,
+    esriARMousePointerArrowQuestion = 14,
+    esriARMousePointerSizeAll = 15
+};
+
+struct __declspec(uuid("5dfd448f-1a56-4c52-ac4e-2c1cb3e87ec6"))
+IARFeature : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Value (
+        /*[in]*/ VARIANT index,
+        /*[out,retval]*/ VARIANT * vValue ) = 0;
+      virtual HRESULT __stdcall get_FieldCount (
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall get_FieldName (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * sName ) = 0;
+      virtual HRESULT __stdcall get_FieldAliasName (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * sAliasName ) = 0;
+      virtual HRESULT __stdcall get_FieldType (
+        /*[in]*/ long index,
+        /*[out,retval]*/ enum esriARFieldType * filedType ) = 0;
+      virtual HRESULT __stdcall ZoomTo ( ) = 0;
+      virtual HRESULT __stdcall CenterAt ( ) = 0;
+      virtual HRESULT __stdcall Flash ( ) = 0;
+      virtual HRESULT __stdcall Flicker ( ) = 0;
+      virtual HRESULT __stdcall get_InternalObject (
+        /*[out,retval]*/ IUnknown * * ppUnknown ) = 0;
+      virtual HRESULT __stdcall get_CustomProperty (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall put_CustomProperty (
+        /*[in]*/ VARIANT pVal ) = 0;
+      virtual HRESULT __stdcall Highlight (
+        /*[in]*/ VARIANT_BOOL bHighlight,
+        /*[in]*/ OLE_COLOR color ) = 0;
+      virtual HRESULT __stdcall get_FieldAccessible (
+        /*[in]*/ VARIANT index,
+        /*[out,retval]*/ VARIANT_BOOL * bAccessible ) = 0;
+      virtual HRESULT __stdcall get_ValueAsString (
+        /*[in]*/ VARIANT index,
+        /*[out,retval]*/ BSTR * bsValueAsString ) = 0;
+};
+
+struct __declspec(uuid("8ea32542-5b8b-4b1a-9fd8-eb88c0bc0d87"))
+IARSearchDef : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SetPointShape (
+        /*[in]*/ double xCoord,
+        /*[in]*/ double yCoord,
+        /*[in]*/ double bufferDistance ) = 0;
+      virtual HRESULT __stdcall SetEnvelopeShape (
+        /*[in]*/ double xMin,
+        /*[in]*/ double yMin,
+        /*[in]*/ double xMax,
+        /*[in]*/ double yMax,
+        /*[in]*/ double bufferDistance ) = 0;
+      virtual HRESULT __stdcall SetARFeatureShape (
+        struct IARFeature * pARFeature,
+        /*[in]*/ double bufferDistance ) = 0;
+      virtual HRESULT __stdcall put_SpatialRelationship (
+        /*[in]*/ enum esriARSpatialRelationship spatialRel ) = 0;
+      virtual HRESULT __stdcall get_SpatialRelationship (
+        /*[out,retval]*/ enum esriARSpatialRelationship * spatialRel ) = 0;
+      virtual HRESULT __stdcall put_WhereClause (
+        /*[in]*/ BSTR sWhereClause ) = 0;
+      virtual HRESULT __stdcall get_WhereClause (
+        /*[out,retval]*/ BSTR * sWhereClause ) = 0;
+};
+
+struct __declspec(uuid("782fd13e-138c-4711-a2d0-9787567c2efa"))
+IARFeatureCursor : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall NextARFeature (
+        /*[out,retval]*/ struct IARFeature * * ppARFeature ) = 0;
+};
+
+struct __declspec(uuid("f49f1221-e39f-4c07-acfb-f61d2c6e6920"))
+IARFeatureSet : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ARFeatureCount (
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall get_ARFeature (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IARFeature * * ppARFeature ) = 0;
+      virtual HRESULT __stdcall Next (
+        /*[out,retval]*/ struct IARFeature * * ppARFeature ) = 0;
+      virtual HRESULT __stdcall Reset ( ) = 0;
+      virtual HRESULT __stdcall get_CustomProperty (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall put_CustomProperty (
+        /*[in]*/ VARIANT pVal ) = 0;
+      virtual HRESULT __stdcall CenterAt ( ) = 0;
+      virtual HRESULT __stdcall Flash ( ) = 0;
+      virtual HRESULT __stdcall Flicker ( ) = 0;
+      virtual HRESULT __stdcall ZoomTo ( ) = 0;
+      virtual HRESULT __stdcall Highlight (
+        /*[in]*/ VARIANT_BOOL bHighlight,
+        /*[in]*/ OLE_COLOR color ) = 0;
+};
+
+struct __declspec(uuid("33df9650-35b7-42f8-a7c9-9f8a1b53aa80"))
+IARLayer : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * sName ) = 0;
+      virtual HRESULT __stdcall get_Hyperlinks (
+        /*[out,retval]*/ VARIANT_BOOL * bHasHyperlinks ) = 0;
+      virtual HRESULT __stdcall put_Visible (
+        /*[in]*/ VARIANT_BOOL Visible ) = 0;
+      virtual HRESULT __stdcall get_Visible (
+        /*[out,retval]*/ VARIANT_BOOL * Visible ) = 0;
+      virtual HRESULT __stdcall get_MaximumScale (
+        /*[out,retval]*/ double * maxScale ) = 0;
+      virtual HRESULT __stdcall get_MinimumScale (
+        /*[out,retval]*/ double * minScale ) = 0;
+      virtual HRESULT __stdcall get_Cached (
+        /*[out,retval]*/ VARIANT_BOOL * Cached ) = 0;
+      virtual HRESULT __stdcall get_IsGroupLayer (
+        /*[out,retval]*/ VARIANT_BOOL * groupLayer ) = 0;
+      virtual HRESULT __stdcall get_ARLayerCount (
+        /*[out,retval]*/ long * count ) = 0;
+      virtual HRESULT __stdcall get_ChildARLayer (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IARLayer * * ppChildARLayer ) = 0;
+      virtual HRESULT __stdcall SearchARFeatures (
+        /*[in]*/ struct IARSearchDef * pSearchDef,
+        /*[out,retval]*/ struct IARFeatureCursor * * ppARFeatureCursor ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * sDescription ) = 0;
+      virtual HRESULT __stdcall get_Searchable (
+        /*[out,retval]*/ VARIANT_BOOL * bSearchable ) = 0;
+      virtual HRESULT __stdcall get_InternalObject (
+        /*[out,retval]*/ IUnknown * * ppUnknown ) = 0;
+      virtual HRESULT __stdcall GetExtent (
+        /*[in,out]*/ double * xMin,
+        /*[in,out]*/ double * yMin,
+        /*[in,out]*/ double * xMax,
+        /*[in,out]*/ double * yMax ) = 0;
+      virtual HRESULT __stdcall get_CustomProperty (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall put_CustomProperty (
+        /*[in]*/ VARIANT pVal ) = 0;
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ BSTR * sDescription ) = 0;
+      virtual HRESULT __stdcall QueryARFeatures (
+        /*[in]*/ struct IARSearchDef * pSearchDef,
+        /*[out,retval]*/ struct IARFeatureSet * * ppARFeaturesSet ) = 0;
+};
+
+struct __declspec(uuid("b27adbe0-9c31-48db-87a8-0434e88180c2"))
+IARMap : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_MapScale (
+        /*[in]*/ double MapScale ) = 0;
+      virtual HRESULT __stdcall get_MapScale (
+        /*[out,retval]*/ double * MapScale ) = 0;
+      virtual HRESULT __stdcall Refresh (
+        /*[in]*/ VARIANT_BOOL refreshNow ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * sName ) = 0;
+      virtual HRESULT __stdcall get_ARLayerCount (
+        /*[out,retval]*/ long * count ) = 0;
+      virtual HRESULT __stdcall get_ARLayer (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IARLayer * * ppARLayer ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * sDesciption ) = 0;
+      virtual HRESULT __stdcall get_SpatialReferenceName (
+        /*[out,retval]*/ BSTR * sSpatialReference ) = 0;
+      virtual HRESULT __stdcall get_MapUnits (
+        /*[out,retval]*/ enum esriARUnits * units ) = 0;
+      virtual HRESULT __stdcall get_DistanceUnits (
+        /*[out,retval]*/ enum esriARUnits * units ) = 0;
+      virtual HRESULT __stdcall SetExtent (
+        /*[in]*/ double xMin,
+        /*[in]*/ double yMin,
+        /*[in]*/ double xMax,
+        /*[in]*/ double yMax ) = 0;
+      virtual HRESULT __stdcall GetExtent (
+        /*[in,out]*/ double * xMin,
+        /*[in,out]*/ double * yMin,
+        /*[in,out]*/ double * xMax,
+        /*[in,out]*/ double * yMax ) = 0;
+      virtual HRESULT __stdcall GetFullExtent (
+        /*[in,out]*/ double * xMin,
+        /*[in,out]*/ double * yMin,
+        /*[in,out]*/ double * xMax,
+        /*[in,out]*/ double * yMax ) = 0;
+      virtual HRESULT __stdcall get_ReferenceScale (
+        /*[out,retval]*/ double * refScale ) = 0;
+      virtual HRESULT __stdcall ZoomIn (
+        /*[in]*/ double factor ) = 0;
+      virtual HRESULT __stdcall ZoomOut (
+        /*[in]*/ double factor ) = 0;
+      virtual HRESULT __stdcall Pan (
+        /*[in]*/ enum esriARDirection direction,
+        /*[in]*/ double screenPercentage ) = 0;
+      virtual HRESULT __stdcall CenterAt (
+        /*[in]*/ double xCoord,
+        /*[in]*/ double yCoord ) = 0;
+      virtual HRESULT __stdcall put_Rotation (
+        /*[in]*/ double mapRotation ) = 0;
+      virtual HRESULT __stdcall get_Rotation (
+        /*[out,retval]*/ double * mapRotation ) = 0;
+      virtual HRESULT __stdcall QueryARFeatures (
+        /*[in]*/ struct IARSearchDef * pSearchDef,
+        /*[out,retval]*/ struct IARFeatureSet * * ppARFeaturesSet ) = 0;
+      virtual HRESULT __stdcall ToMapPoint (
+        /*[in]*/ long x,
+        /*[in]*/ long y,
+        /*[in,out]*/ double * xCoord,
+        /*[in,out]*/ double * yCoord ) = 0;
+      virtual HRESULT __stdcall get_CanUndoExtent (
+        /*[out,retval]*/ VARIANT_BOOL * bCanUndo ) = 0;
+      virtual HRESULT __stdcall UndoExtent ( ) = 0;
+      virtual HRESULT __stdcall get_CanRedoExtent (
+        /*[out,retval]*/ VARIANT_BOOL * bCanRedo ) = 0;
+      virtual HRESULT __stdcall RedoExtent ( ) = 0;
+      virtual HRESULT __stdcall get_InternalObject (
+        /*[out,retval]*/ IUnknown * * ppUnknown ) = 0;
+      virtual HRESULT __stdcall get_BookmarkCount (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_BookmarkName (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall ZoomToBookmark (
+        /*[in]*/ VARIANT vBookmarkID ) = 0;
+      virtual HRESULT __stdcall CenterAtBookmark (
+        /*[in]*/ VARIANT vBookmarkID ) = 0;
+      virtual HRESULT __stdcall ZoomToFullExtent ( ) = 0;
+      virtual HRESULT __stdcall get_CustomProperty (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall put_CustomProperty (
+        /*[in]*/ VARIANT pVal ) = 0;
+      virtual HRESULT __stdcall SearchARFeatures (
+        /*[in]*/ struct IARSearchDef * pSearchDef,
+        /*[out,retval]*/ struct IARFeatureCursor * * ppARFeatureCursor ) = 0;
+};
+
+struct __declspec(uuid("d1fd0345-ef40-4ff9-a7b9-c6db6f4e8717"))
+IARPageLayout : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SetExtent (
+        /*[in]*/ double xMin,
+        /*[in]*/ double yMin,
+        /*[in]*/ double xMax,
+        /*[in]*/ double yMax ) = 0;
+      virtual HRESULT __stdcall GetExtent (
+        /*[in,out]*/ double * xMin,
+        /*[in,out]*/ double * yMin,
+        /*[in,out]*/ double * xMax,
+        /*[in,out]*/ double * yMax ) = 0;
+      virtual HRESULT __stdcall putref_FocusARMap (
+        /*[in]*/ struct IARMap * ppARMap ) = 0;
+      virtual HRESULT __stdcall get_FocusARMap (
+        /*[out,retval]*/ struct IARMap * * ppARMap ) = 0;
+      virtual HRESULT __stdcall get_ARMapCount (
+        /*[out,retval]*/ long * count ) = 0;
+      virtual HRESULT __stdcall get_ARMap (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IARMap * * ppARMap ) = 0;
+      virtual HRESULT __stdcall put_PageUnits (
+        /*[in]*/ enum esriARUnits units ) = 0;
+      virtual HRESULT __stdcall get_PageUnits (
+        /*[out,retval]*/ enum esriARUnits * units ) = 0;
+      virtual HRESULT __stdcall get_ZoomPercent (
+        /*[out,retval]*/ double * percent ) = 0;
+      virtual HRESULT __stdcall ZoomToPercent (
+        /*[in]*/ long percent ) = 0;
+      virtual HRESULT __stdcall ZoomToWholePage ( ) = 0;
+      virtual HRESULT __stdcall ZoomToWidth ( ) = 0;
+      virtual HRESULT __stdcall Refresh (
+        /*[in]*/ VARIANT_BOOL refreshNow ) = 0;
+      virtual HRESULT __stdcall get_MapExtentType (
+        /*[in]*/ struct IARMap * pMap,
+        /*[out,retval]*/ enum esriARExtentType * extentType ) = 0;
+      virtual HRESULT __stdcall HitTestMap (
+        /*[in]*/ long x,
+        /*[in]*/ long y,
+        /*[out,retval]*/ struct IARMap * * ppMap ) = 0;
+      virtual HRESULT __stdcall ZoomIn (
+        /*[in]*/ double factor ) = 0;
+      virtual HRESULT __stdcall ZoomOut (
+        /*[in]*/ double factor ) = 0;
+      virtual HRESULT __stdcall Pan (
+        /*[in]*/ enum esriARDirection direction,
+        /*[in]*/ double screenPercentage ) = 0;
+      virtual HRESULT __stdcall CenterAt (
+        /*[in]*/ double xCoord,
+        /*[in]*/ double yCoord ) = 0;
+      virtual HRESULT __stdcall get_Width (
+        /*[out,retval]*/ double * dWidth ) = 0;
+      virtual HRESULT __stdcall get_Height (
+        /*[out,retval]*/ double * dHeight ) = 0;
+      virtual HRESULT __stdcall ToPagePoint (
+        /*[in]*/ long x,
+        /*[in]*/ long y,
+        /*[in,out]*/ double * xCoord,
+        /*[in,out]*/ double * yCoord ) = 0;
+      virtual HRESULT __stdcall get_CanUndoExtent (
+        /*[out,retval]*/ VARIANT_BOOL * bCanUndo ) = 0;
+      virtual HRESULT __stdcall UndoExtent ( ) = 0;
+      virtual HRESULT __stdcall get_CanRedoExtent (
+        /*[out,retval]*/ VARIANT_BOOL * bCanRedo ) = 0;
+      virtual HRESULT __stdcall RedoExtent ( ) = 0;
+      virtual HRESULT __stdcall get_InternalObject (
+        /*[out,retval]*/ IUnknown * * ppUnknown ) = 0;
+      virtual HRESULT __stdcall get_CustomProperty (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall put_CustomProperty (
+        /*[in]*/ VARIANT pVal ) = 0;
+      virtual HRESULT __stdcall put_Title (
+        /*[in]*/ BSTR currentTitle ) = 0;
+      virtual HRESULT __stdcall get_Title (
+        /*[out,retval]*/ BSTR * currentTitle ) = 0;
+      virtual HRESULT __stdcall get_HasTitle (
+        /*[out,retval]*/ VARIANT_BOOL * HasTitle ) = 0;
+};
+
+struct __declspec(uuid("671c12b9-56d0-440a-8cf8-75b9fbd0a65e"))
+IARConfiguration : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SetDefaults ( ) = 0;
+      virtual HRESULT __stdcall Load (
+        /*[in]*/ BSTR sFilename ) = 0;
+      virtual HRESULT __stdcall Save (
+        /*[in]*/ BSTR sFilename ) = 0;
+      virtual HRESULT __stdcall get_TemplateFile (
+        /*[out,retval]*/ BSTR * sFilename ) = 0;
+      virtual HRESULT __stdcall get_Setting (
+        /*[in]*/ BSTR sName,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall put_Setting (
+        /*[in]*/ BSTR sName,
+        /*[in]*/ VARIANT pVal ) = 0;
+      virtual HRESULT __stdcall get_BoolSetting (
+        /*[in]*/ BSTR sName,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_BoolSetting (
+        /*[in]*/ BSTR sName,
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_CustomProperty (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall put_CustomProperty (
+        /*[in]*/ VARIANT pVal ) = 0;
+};
+
+struct __declspec(uuid("11a10d49-2e44-4204-b253-f63b9c18ba89"))
+IARUnitConverter : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetLocationAsString (
+        /*[in]*/ struct IARMap * pMap,
+        /*[in]*/ double xCoord,
+        /*[in]*/ double yCoord,
+        /*[in]*/ enum esriARUnits displayUnits,
+        /*[in,out]*/ BSTR * sXLocation,
+        /*[in,out]*/ BSTR * sYLocation,
+        /*[in,out]*/ BSTR * sUnits ) = 0;
+      virtual HRESULT __stdcall EsriUnitsAsString (
+        /*[in]*/ enum esriARUnits units,
+        /*[in]*/ enum esriARCaseAppearance caseAppearance,
+        /*[in]*/ VARIANT_BOOL bPlural,
+        /*[out,retval]*/ BSTR * sUnitString ) = 0;
+      virtual HRESULT __stdcall ConvertUnits (
+        /*[in]*/ double dValue,
+        /*[in]*/ enum esriARUnits inUnits,
+        /*[in]*/ enum esriARUnits outUnits,
+        /*[out,retval]*/ double * outValue ) = 0;
+      virtual HRESULT __stdcall DoubleAsString (
+        /*[in]*/ double dValue,
+        /*[in]*/ int nDigits,
+        /*[in]*/ VARIANT_BOOL bSeparators,
+        /*[out,retval]*/ BSTR * sValueString ) = 0;
+      virtual HRESULT __stdcall GetLongLatAsString (
+        /*[in]*/ double longitude,
+        /*[in]*/ double latitude,
+        /*[in]*/ enum esriARUnits displayUnits,
+        /*[in,out]*/ BSTR * sLongitude,
+        /*[in,out]*/ BSTR * sLatitude,
+        /*[in,out]*/ BSTR * sUnits ) = 0;
+      virtual HRESULT __stdcall EsriUnitsAsAbbreviatedString (
+        /*[in]*/ enum esriARUnits units,
+        /*[in]*/ enum esriARCaseAppearance caseAppearance,
+        /*[out,retval]*/ BSTR * sUnitString ) = 0;
+};
+
+struct __declspec(uuid("92320009-383f-4fe1-b5b1-08d047eaeec3"))
+IARCommandInfo : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Enabled (
+        /*[out,retval]*/ VARIANT_BOOL * Enabled ) = 0;
+      virtual HRESULT __stdcall get_Checked (
+        /*[out,retval]*/ VARIANT_BOOL * Checked ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_Caption (
+        /*[out,retval]*/ BSTR * Caption ) = 0;
+      virtual HRESULT __stdcall get_Tooltip (
+        /*[out,retval]*/ BSTR * Tooltip ) = 0;
+      virtual HRESULT __stdcall get_Message (
+        /*[out,retval]*/ BSTR * Message ) = 0;
+      virtual HRESULT __stdcall get_HelpFile (
+        /*[out,retval]*/ BSTR * HelpFile ) = 0;
+      virtual HRESULT __stdcall get_HelpContextID (
+        /*[out,retval]*/ long * HelpContextID ) = 0;
+      virtual HRESULT __stdcall get_Bitmap (
+        /*[out,retval]*/ long * Bitmap ) = 0;
+      virtual HRESULT __stdcall get_Category (
+        /*[out,retval]*/ BSTR * Category ) = 0;
+};
+
+struct __declspec(uuid("6e4eca18-6fb2-4faf-b1d8-82392eca3532"))
+IARControl : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_BorderStyle (
+        /*[in]*/ enum esriARBorderStyle pstyle ) = 0;
+      virtual HRESULT __stdcall get_BorderStyle (
+        /*[out,retval]*/ enum esriARBorderStyle * pstyle ) = 0;
+      virtual HRESULT __stdcall put_Enabled (
+        /*[in]*/ VARIANT_BOOL pbool ) = 0;
+      virtual HRESULT __stdcall get_Enabled (
+        /*[out,retval]*/ VARIANT_BOOL * pbool ) = 0;
+      virtual HRESULT __stdcall put_Appearance (
+        /*[in]*/ enum esriARAppearance pappearance ) = 0;
+      virtual HRESULT __stdcall get_Appearance (
+        /*[out,retval]*/ enum esriARAppearance * pappearance ) = 0;
+      virtual HRESULT __stdcall AboutBox ( ) = 0;
+      virtual HRESULT __stdcall LoadDocument (
+        /*[in]*/ BSTR sFilename,
+        /*[in]*/ BSTR sPassword ) = 0;
+      virtual HRESULT __stdcall UnloadDocument ( ) = 0;
+      virtual HRESULT __stdcall ReloadDocument (
+        /*[in]*/ BSTR sPassword ) = 0;
+      virtual HRESULT __stdcall putref_CurrentView (
+        /*[in]*/ IDispatch * ppCurrentView ) = 0;
+      virtual HRESULT __stdcall get_CurrentView (
+        /*[out,retval]*/ IDispatch * * ppCurrentView ) = 0;
+      virtual HRESULT __stdcall get_DocumentComment (
+        /*[out,retval]*/ BSTR * sComment ) = 0;
+      virtual HRESULT __stdcall get_ARPageLayout (
+        /*[out,retval]*/ struct IARPageLayout * * ppARPageLayout ) = 0;
+      virtual HRESULT __stdcall ShowARWindow (
+        /*[in]*/ enum esriARWindows win,
+        /*[in]*/ VARIANT_BOOL Show,
+        /*[in]*/ VARIANT data = vtMissing ) = 0;
+      virtual HRESULT __stdcall get_ARWindowVisible (
+        /*[in]*/ enum esriARWindows win,
+        /*[out,retval]*/ VARIANT_BOOL * Visible ) = 0;
+      virtual HRESULT __stdcall SuppressResizeDrawing (
+        /*[in]*/ VARIANT_BOOL suppressResize,
+        /*[in]*/ long resizeHWnd ) = 0;
+      virtual HRESULT __stdcall put_TOCWidth (
+        /*[in]*/ long lWidth ) = 0;
+      virtual HRESULT __stdcall get_TOCWidth (
+        /*[out,retval]*/ long * lWidth ) = 0;
+      virtual HRESULT __stdcall PrintView ( ) = 0;
+      virtual HRESULT __stdcall CopyViewToClipboard ( ) = 0;
+      virtual HRESULT __stdcall put_CurrentARTool (
+        /*[in]*/ enum esriARTool tool ) = 0;
+      virtual HRESULT __stdcall get_CurrentARTool (
+        /*[out,retval]*/ enum esriARTool * tool ) = 0;
+      virtual HRESULT __stdcall HasDocumentPermission (
+        /*[in]*/ enum esriARDocumentPermissions docPermission,
+        /*[out,retval]*/ VARIANT_BOOL * hasPermission ) = 0;
+      virtual HRESULT __stdcall put_ShowScrollbars (
+        /*[in]*/ enum esriARViewType viewType,
+        /*[in]*/ VARIANT_BOOL Show ) = 0;
+      virtual HRESULT __stdcall get_ShowScrollbars (
+        /*[in]*/ enum esriARViewType viewType,
+        /*[out,retval]*/ VARIANT_BOOL * Show ) = 0;
+      virtual HRESULT __stdcall put_TOCVisible (
+        /*[in]*/ VARIANT_BOOL Visible ) = 0;
+      virtual HRESULT __stdcall get_TOCVisible (
+        /*[out,retval]*/ VARIANT_BOOL * Visible ) = 0;
+      virtual HRESULT __stdcall get_hWnd (
+        /*[out,retval]*/ long * window ) = 0;
+      virtual HRESULT __stdcall put_ShowMapTips (
+        /*[in]*/ VARIANT_BOOL Show ) = 0;
+      virtual HRESULT __stdcall get_ShowMapTips (
+        /*[out,retval]*/ VARIANT_BOOL * Show ) = 0;
+      virtual HRESULT __stdcall Refresh (
+        /*[in]*/ VARIANT_BOOL refreshNow ) = 0;
+      virtual HRESULT __stdcall get_CurrentViewType (
+        /*[out,retval]*/ enum esriARViewType * CurrentViewType ) = 0;
+      virtual HRESULT __stdcall get_ARConfiguration (
+        /*[out,retval]*/ struct IARConfiguration * * ppConfiguration ) = 0;
+      virtual HRESULT __stdcall putref_ARConfiguration (
+        /*[in]*/ struct IARConfiguration * ppConfiguration ) = 0;
+      virtual HRESULT __stdcall get_ARUnitConverter (
+        /*[out,retval]*/ struct IARUnitConverter * * ppConverter ) = 0;
+      virtual HRESULT __stdcall get_DocumentFilename (
+        /*[out,retval]*/ BSTR * bsFilename ) = 0;
+      virtual HRESULT __stdcall put_DocumentFilename (
+        /*[in]*/ BSTR bsFilename ) = 0;
+      virtual HRESULT __stdcall CheckDocument (
+        /*[in]*/ BSTR sFilename,
+        /*[out,retval]*/ VARIANT_BOOL * bIsOK ) = 0;
+      virtual HRESULT __stdcall get_ARCommandInfo (
+        /*[in]*/ enum esriARTool tool,
+        /*[out,retval]*/ struct IARCommandInfo * * ppARCommandInfo ) = 0;
+      virtual HRESULT __stdcall ExportView (
+        /*[in]*/ enum esriARExportFormat format,
+        /*[in]*/ BSTR sFilename ) = 0;
+      virtual HRESULT __stdcall put_EnableFileDrop (
+        /*[in]*/ VARIANT_BOOL pvbValue ) = 0;
+      virtual HRESULT __stdcall get_EnableFileDrop (
+        /*[out,retval]*/ VARIANT_BOOL * pvbValue ) = 0;
+      virtual HRESULT __stdcall get_CustomProperty (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall put_CustomProperty (
+        /*[in]*/ VARIANT pVal ) = 0;
+      virtual HRESULT __stdcall get_Object (
+        /*[out,retval]*/ IDispatch * * ppDispatch ) = 0;
+      virtual HRESULT __stdcall get_ViewTop (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_ViewLeft (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_ViewHeight (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_ViewWidth (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_HasCustomARConfiguration (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall putref_SwipeLayer (
+        /*[in]*/ struct IARLayer * ppLayer ) = 0;
+      virtual HRESULT __stdcall get_SwipeLayer (
+        /*[out,retval]*/ struct IARLayer * * ppLayer ) = 0;
+      virtual HRESULT __stdcall get_ViewWindow (
+        /*[out,retval]*/ long * window ) = 0;
+      virtual HRESULT __stdcall put_MousePointer (
+        /*[in]*/ enum esriARMousePointer pcursor ) = 0;
+      virtual HRESULT __stdcall get_MousePointer (
+        /*[out,retval]*/ enum esriARMousePointer * pcursor ) = 0;
+      virtual HRESULT __stdcall get_SelectedARLayer (
+        /*[out,retval]*/ struct IARLayer * * ppLayer ) = 0;
+};
+
+struct __declspec(uuid("a9a61e12-928c-44fb-a150-a5480c72c7f4"))
+IARControlDefault : IDispatch
+{};
+
+struct __declspec(uuid("75a015aa-613a-42f9-b1c5-27c3d50fe95e"))
+IARControlEvents : IDispatch
+{};
+
+struct __declspec(uuid("ba27d1ba-0a8a-472b-8478-87321edb1038"))
+ARUnitConverter;
+    // [ default ] interface IARUnitConverter
+
+struct __declspec(uuid("dab87972-0316-4973-852f-f56ae8f9bc42"))
+ARPageLayout;
+    // [ default ] interface IARPageLayout
+
+struct __declspec(uuid("bcf67011-db9e-4c39-b207-cf4e28d20029"))
+ARMap;
+    // [ default ] interface IARMap
+
+struct __declspec(uuid("eaa2ee21-c586-44bb-b266-ba41f6331c79"))
+ARLayer;
+    // [ default ] interface IARLayer
+
+struct __declspec(uuid("64be071e-4fc9-4dc7-af08-fa7d8c315e10"))
+ARFeature;
+    // [ default ] interface IARFeature
+
+struct __declspec(uuid("f8b44be3-99b1-44b3-b7a3-0e4d096306b1"))
+ARFeatureSet;
+    // [ default ] interface IARFeatureSet
+
+struct __declspec(uuid("48fd0a7b-6e98-4dda-a4a2-6fc7fc184849"))
+ARFeatureCursor;
+    // [ default ] interface IARFeatureCursor
+
+struct __declspec(uuid("70e6422e-b5fd-4d57-a2a9-3ea76731dc83"))
+ARCommandInfo;
+    // [ default ] interface IARCommandInfo
+
+enum __declspec(uuid("70e09b93-91f4-43eb-b582-69fcc40c460a"))
+esriARGlobeWindows
+{
+    esriARGlobeWindowsFind = 0,
+    esriARGlobeWindowsFileProperties = 1,
+    esriARGlobeWindowsAddInternetSite = 2,
+    esriARGlobeWindowsManageInternetSite = 3,
+    esriARGlobeWindowsInternetBrowser = 4,
+    esriARGlobeWindowsPageSetup = 5,
+    esriARGlobeWindowsPrinter = 6,
+    esriARGlobeWindowsIdentify = 7,
+    esriARGlobeWindowsAnimation = 8,
+    esriARGlobeWindowsFindXY = 9,
+    esriARGlobeWindowsRoutingDeprecated = 10,
+    esriARGlobeWindowsFindNearbyPlacesDeprecated = 11,
+    esriARGlobeWindowsMyPlaces = 12
+};
+
+enum __declspec(uuid("89aaedf9-b03e-4d98-b08b-96732064edb7"))
+esriARGlobeTool
+{
+    esriARGlobeToolPivot = 0,
+    esriARGlobeToolNavigate = 1,
+    esriARGlobeToolZoomInOut = 2,
+    esriARGlobeToolPan = 3,
+    esriARGlobeToolIdentify = 4,
+    esriARGlobeToolMeasure = 5,
+    esriARGlobeToolHyperlink = 6,
+    esriARGlobeToolOrbitalFly = 7,
+    esriARGlobeToolSwipe = 8,
+    esriARGlobeToolTarget = 9,
+    esriARGlobeToolNoneSelected = 10
+};
+
+enum __declspec(uuid("0e20fbc0-c3b5-4381-a671-e06ac7cdd91e"))
+esriARGlobeTips
+{
+    esriARGlobeTipsNone = 0,
+    esriARGlobeTipsLatLon = 1,
+    esriARGlobeTipsElevation = 2,
+    esriARGlobeTipsLatLonElevation = 3
+};
+
+enum __declspec(uuid("5028da4d-803e-4a8b-a349-19d0bc27cfd6"))
+esriARGlobeViewType
+{
+    esriARGlobeViewTypeNone = 0,
+    esriARGlobeViewTypeGlobe = 1
+};
+
+struct __declspec(uuid("9e5e80cf-2f1d-49c6-a73c-39308d1fbc61"))
+IARGlobe : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_BookmarkCount (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_BookmarkName (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall ZoomToBookmark (
+        /*[in]*/ VARIANT vBookmarkID ) = 0;
+      virtual HRESULT __stdcall CenterAtBookmark (
+        /*[in]*/ VARIANT vBookmarkID ) = 0;
+      virtual HRESULT __stdcall get_AnimationCount (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_AnimationName (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall PlayAnimation (
+        /*[in]*/ VARIANT vAnimationID ) = 0;
+      virtual HRESULT __stdcall get_ARLayerCount (
+        /*[out,retval]*/ long * count ) = 0;
+      virtual HRESULT __stdcall get_ARLayer (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IARLayer * * ppARLayer ) = 0;
+      virtual HRESULT __stdcall get_SpatialReferenceName (
+        /*[out,retval]*/ BSTR * sSpatialReference ) = 0;
+      virtual HRESULT __stdcall get_GlobeUnits (
+        /*[out,retval]*/ enum esriARUnits * units ) = 0;
+      virtual HRESULT __stdcall put_Elevation (
+        /*[in]*/ double elev ) = 0;
+      virtual HRESULT __stdcall get_Elevation (
+        /*[out,retval]*/ double * elev ) = 0;
+      virtual HRESULT __stdcall CenterAt (
+        /*[in]*/ double longitude,
+        /*[in]*/ double latitude ) = 0;
+      virtual HRESULT __stdcall GetSurfacePoint (
+        /*[in]*/ long x,
+        /*[in]*/ long y,
+        /*[in,out]*/ double * longitude,
+        /*[in,out]*/ double * latitude,
+        /*[in,out]*/ double * elev,
+        /*[out,retval]*/ VARIANT_BOOL * bHitGlobe ) = 0;
+      virtual HRESULT __stdcall ZoomToFullExtent ( ) = 0;
+      virtual HRESULT __stdcall QueryARFeatures (
+        /*[in]*/ struct IARSearchDef * pSearchDef,
+        /*[out,retval]*/ struct IARFeatureSet * * ppARFeaturesSet ) = 0;
+      virtual HRESULT __stdcall SearchARFeatures (
+        /*[in]*/ struct IARSearchDef * pSearchDef,
+        /*[out,retval]*/ struct IARFeatureCursor * * ppARFeatureCursor ) = 0;
+      virtual HRESULT __stdcall LocateARFeature (
+        /*[in]*/ long x,
+        /*[in]*/ long y,
+        /*[out,retval]*/ struct IARFeature * * ppARFeature ) = 0;
+      virtual HRESULT __stdcall SetObserverLocation (
+        /*[in]*/ double longitude,
+        /*[in]*/ double latitude,
+        /*[in]*/ double elev ) = 0;
+      virtual HRESULT __stdcall GetObserverLocation (
+        /*[in,out]*/ double * longitude,
+        /*[in,out]*/ double * latitude,
+        /*[in,out]*/ double * elev ) = 0;
+      virtual HRESULT __stdcall get_Pitch (
+        /*[out,retval]*/ double * Pitch ) = 0;
+      virtual HRESULT __stdcall put_Pitch (
+        /*[in]*/ double Pitch ) = 0;
+      virtual HRESULT __stdcall get_Azimuth (
+        /*[out,retval]*/ double * Azimuth ) = 0;
+      virtual HRESULT __stdcall put_Azimuth (
+        /*[in]*/ double Azimuth ) = 0;
+};
+
+struct __declspec(uuid("feb9d62a-961d-4d44-a18f-90619837de03"))
+IARGlobeControl : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_BorderStyle (
+        /*[in]*/ enum esriARBorderStyle pstyle ) = 0;
+      virtual HRESULT __stdcall get_BorderStyle (
+        /*[out,retval]*/ enum esriARBorderStyle * pstyle ) = 0;
+      virtual HRESULT __stdcall put_Enabled (
+        /*[in]*/ VARIANT_BOOL pbool ) = 0;
+      virtual HRESULT __stdcall get_Enabled (
+        /*[out,retval]*/ VARIANT_BOOL * pbool ) = 0;
+      virtual HRESULT __stdcall put_Appearance (
+        /*[in]*/ enum esriARAppearance pappearance ) = 0;
+      virtual HRESULT __stdcall get_Appearance (
+        /*[out,retval]*/ enum esriARAppearance * pappearance ) = 0;
+      virtual HRESULT __stdcall AboutBox ( ) = 0;
+      virtual HRESULT __stdcall LoadDocument (
+        /*[in]*/ BSTR sFilename,
+        /*[in]*/ BSTR sPassword ) = 0;
+      virtual HRESULT __stdcall UnloadDocument ( ) = 0;
+      virtual HRESULT __stdcall ReloadDocument (
+        /*[in]*/ BSTR sPassword ) = 0;
+      virtual HRESULT __stdcall get_DocumentComment (
+        /*[out,retval]*/ BSTR * sComment ) = 0;
+      virtual HRESULT __stdcall get_DocumentFilename (
+        /*[out,retval]*/ BSTR * bsFilename ) = 0;
+      virtual HRESULT __stdcall put_DocumentFilename (
+        /*[in]*/ BSTR bsFilename ) = 0;
+      virtual HRESULT __stdcall CheckDocument (
+        /*[in]*/ BSTR sFilename,
+        /*[out,retval]*/ VARIANT_BOOL * bIsOK ) = 0;
+      virtual HRESULT __stdcall put_TOCWidth (
+        /*[in]*/ long lWidth ) = 0;
+      virtual HRESULT __stdcall get_TOCWidth (
+        /*[out,retval]*/ long * lWidth ) = 0;
+      virtual HRESULT __stdcall PrintView ( ) = 0;
+      virtual HRESULT __stdcall CopyViewToClipboard ( ) = 0;
+      virtual HRESULT __stdcall ExportView (
+        /*[in]*/ enum esriARExportFormat format,
+        /*[in]*/ BSTR sFilename ) = 0;
+      virtual HRESULT __stdcall put_TOCVisible (
+        /*[in]*/ VARIANT_BOOL Visible ) = 0;
+      virtual HRESULT __stdcall get_TOCVisible (
+        /*[out,retval]*/ VARIANT_BOOL * Visible ) = 0;
+      virtual HRESULT __stdcall get_hWnd (
+        /*[out,retval]*/ long * window ) = 0;
+      virtual HRESULT __stdcall put_ShowGlobeTips (
+        /*[in]*/ enum esriARGlobeTips esriARGlobeTips ) = 0;
+      virtual HRESULT __stdcall get_ShowGlobeTips (
+        /*[out,retval]*/ enum esriARGlobeTips * esriARGlobeTips ) = 0;
+      virtual HRESULT __stdcall put_EnableFileDrop (
+        /*[in]*/ VARIANT_BOOL pvbValue ) = 0;
+      virtual HRESULT __stdcall get_EnableFileDrop (
+        /*[out,retval]*/ VARIANT_BOOL * pvbValue ) = 0;
+      virtual HRESULT __stdcall get_CurrentARGlobeTool (
+        /*[out,retval]*/ enum esriARGlobeTool * pVal ) = 0;
+      virtual HRESULT __stdcall put_CurrentARGlobeTool (
+        /*[in]*/ enum esriARGlobeTool pVal ) = 0;
+      virtual HRESULT __stdcall putref_ARConfiguration (
+        /*[in]*/ struct IARConfiguration * ppARConfiguration ) = 0;
+      virtual HRESULT __stdcall get_ARConfiguration (
+        /*[out,retval]*/ struct IARConfiguration * * ppARConfiguration ) = 0;
+      virtual HRESULT __stdcall ShowARGlobeWindow (
+        /*[in]*/ enum esriARGlobeWindows win,
+        /*[in]*/ VARIANT_BOOL Show,
+        /*[in]*/ VARIANT data = vtMissing ) = 0;
+      virtual HRESULT __stdcall get_ARGlobeWindowVisible (
+        /*[in]*/ enum esriARGlobeWindows win,
+        /*[out,retval]*/ VARIANT_BOOL * Visible ) = 0;
+      virtual HRESULT __stdcall HasDocumentPermission (
+        /*[in]*/ enum esriARDocumentPermissions docPermission,
+        /*[out,retval]*/ VARIANT_BOOL * hasPermission ) = 0;
+      virtual HRESULT __stdcall get_ARUnitConverter (
+        /*[out,retval]*/ struct IARUnitConverter * * ppConverter ) = 0;
+      virtual HRESULT __stdcall get_Object (
+        /*[out,retval]*/ IDispatch * * ppDispatch ) = 0;
+      virtual HRESULT __stdcall get_CustomProperty (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall put_CustomProperty (
+        /*[in]*/ VARIANT pVal ) = 0;
+      virtual HRESULT __stdcall Refresh ( ) = 0;
+      virtual HRESULT __stdcall get_ARGlobe (
+        /*[out,retval]*/ struct IARGlobe * * ppGlobe ) = 0;
+      virtual HRESULT __stdcall get_ViewTop (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_ViewLeft (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_ViewHeight (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_ViewWidth (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_HasCustomARConfiguration (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall putref_SwipeLayer (
+        /*[in]*/ struct IARLayer * ppLayer ) = 0;
+      virtual HRESULT __stdcall get_SwipeLayer (
+        /*[out,retval]*/ struct IARLayer * * ppLayer ) = 0;
+      virtual HRESULT __stdcall get_ViewWindow (
+        /*[out,retval]*/ long * window ) = 0;
+      virtual HRESULT __stdcall get_CurrentGlobeViewType (
+        /*[out,retval]*/ enum esriARGlobeViewType * CurrentGlobeViewType ) = 0;
+      virtual HRESULT __stdcall put_MousePointer (
+        /*[in]*/ enum esriARMousePointer pcursor ) = 0;
+      virtual HRESULT __stdcall get_MousePointer (
+        /*[out,retval]*/ enum esriARMousePointer * pcursor ) = 0;
+      virtual HRESULT __stdcall get_SelectedARLayer (
+        /*[out,retval]*/ struct IARLayer * * ppLayer ) = 0;
+};
+
+struct __declspec(uuid("2e2916d1-7349-4d39-8dcb-3628167432ed"))
+IARGlobeControlDefault : IDispatch
+{};
+
+struct __declspec(uuid("a37e6daf-3647-4096-abee-1f75fdcd96eb"))
+IARGlobeControlEvents : IDispatch
+{};
+
+struct __declspec(uuid("7844069e-c7ab-4d3f-a87e-28946ad3a263"))
+ARGlobe;
+    // [ default ] interface IARGlobe
+
+struct __declspec(uuid("4c3033ed-ecf7-4ec1-8712-e6dbe236cd7c"))
+ArcReaderControl;
+    // interface IARControl
+    // [ default ] dispinterface IARControlDefault
+    // [ default, source ] dispinterface IARControlEvents
+
+struct __declspec(uuid("424cad92-f39b-4f60-b176-52e952f6678c"))
+ArcReaderConfiguration;
+    // [ default ] interface IARConfiguration
+
+struct __declspec(uuid("35cbcc67-db83-439c-b3b0-15b5a380b75d"))
+ArcReaderSearchDef;
+    // [ default ] interface IARSearchDef
+
+struct __declspec(uuid("12f947aa-e6d8-4083-9448-80792b7bdba6"))
+ArcReaderGlobeControl;
+    // interface IARGlobeControl
+    // [ default ] dispinterface IARGlobeControlDefault
+    // [ default, source ] dispinterface IARGlobeControlEvents
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_esriPublisherControls =
+    {0xfbb2dad5,0x39b5,0x464c,{0x83,0x51,0xa0,0x49,0x9b,0xe6,0x2d,0xc5}};
+extern "C" const GUID __declspec(selectany) IID_IARFeature =
+    {0x5dfd448f,0x1a56,0x4c52,{0xac,0x4e,0x2c,0x1c,0xb3,0xe8,0x7e,0xc6}};
+extern "C" const GUID __declspec(selectany) IID_IARSearchDef =
+    {0x8ea32542,0x5b8b,0x4b1a,{0x9f,0xd8,0xeb,0x88,0xc0,0xbc,0x0d,0x87}};
+extern "C" const GUID __declspec(selectany) IID_IARFeatureCursor =
+    {0x782fd13e,0x138c,0x4711,{0xa2,0xd0,0x97,0x87,0x56,0x7c,0x2e,0xfa}};
+extern "C" const GUID __declspec(selectany) IID_IARFeatureSet =
+    {0xf49f1221,0xe39f,0x4c07,{0xac,0xfb,0xf6,0x1d,0x2c,0x6e,0x69,0x20}};
+extern "C" const GUID __declspec(selectany) IID_IARLayer =
+    {0x33df9650,0x35b7,0x42f8,{0xa7,0xc9,0x9f,0x8a,0x1b,0x53,0xaa,0x80}};
+extern "C" const GUID __declspec(selectany) IID_IARMap =
+    {0xb27adbe0,0x9c31,0x48db,{0x87,0xa8,0x04,0x34,0xe8,0x81,0x80,0xc2}};
+extern "C" const GUID __declspec(selectany) IID_IARPageLayout =
+    {0xd1fd0345,0xef40,0x4ff9,{0xa7,0xb9,0xc6,0xdb,0x6f,0x4e,0x87,0x17}};
+extern "C" const GUID __declspec(selectany) IID_IARConfiguration =
+    {0x671c12b9,0x56d0,0x440a,{0x8c,0xf8,0x75,0xb9,0xfb,0xd0,0xa6,0x5e}};
+extern "C" const GUID __declspec(selectany) IID_IARUnitConverter =
+    {0x11a10d49,0x2e44,0x4204,{0xb2,0x53,0xf6,0x3b,0x9c,0x18,0xba,0x89}};
+extern "C" const GUID __declspec(selectany) IID_IARCommandInfo =
+    {0x92320009,0x383f,0x4fe1,{0xb5,0xb1,0x08,0xd0,0x47,0xea,0xee,0xc3}};
+extern "C" const GUID __declspec(selectany) IID_IARControl =
+    {0x6e4eca18,0x6fb2,0x4faf,{0xb1,0xd8,0x82,0x39,0x2e,0xca,0x35,0x32}};
+extern "C" const GUID __declspec(selectany) DIID_IARControlDefault =
+    {0xa9a61e12,0x928c,0x44fb,{0xa1,0x50,0xa5,0x48,0x0c,0x72,0xc7,0xf4}};
+extern "C" const GUID __declspec(selectany) DIID_IARControlEvents =
+    {0x75a015aa,0x613a,0x42f9,{0xb1,0xc5,0x27,0xc3,0xd5,0x0f,0xe9,0x5e}};
+extern "C" const GUID __declspec(selectany) CLSID_ARUnitConverter =
+    {0xba27d1ba,0x0a8a,0x472b,{0x84,0x78,0x87,0x32,0x1e,0xdb,0x10,0x38}};
+extern "C" const GUID __declspec(selectany) CLSID_ARPageLayout =
+    {0xdab87972,0x0316,0x4973,{0x85,0x2f,0xf5,0x6a,0xe8,0xf9,0xbc,0x42}};
+extern "C" const GUID __declspec(selectany) CLSID_ARMap =
+    {0xbcf67011,0xdb9e,0x4c39,{0xb2,0x07,0xcf,0x4e,0x28,0xd2,0x00,0x29}};
+extern "C" const GUID __declspec(selectany) CLSID_ARLayer =
+    {0xeaa2ee21,0xc586,0x44bb,{0xb2,0x66,0xba,0x41,0xf6,0x33,0x1c,0x79}};
+extern "C" const GUID __declspec(selectany) CLSID_ARFeature =
+    {0x64be071e,0x4fc9,0x4dc7,{0xaf,0x08,0xfa,0x7d,0x8c,0x31,0x5e,0x10}};
+extern "C" const GUID __declspec(selectany) CLSID_ARFeatureSet =
+    {0xf8b44be3,0x99b1,0x44b3,{0xb7,0xa3,0x0e,0x4d,0x09,0x63,0x06,0xb1}};
+extern "C" const GUID __declspec(selectany) CLSID_ARFeatureCursor =
+    {0x48fd0a7b,0x6e98,0x4dda,{0xa4,0xa2,0x6f,0xc7,0xfc,0x18,0x48,0x49}};
+extern "C" const GUID __declspec(selectany) CLSID_ARCommandInfo =
+    {0x70e6422e,0xb5fd,0x4d57,{0xa2,0xa9,0x3e,0xa7,0x67,0x31,0xdc,0x83}};
+extern "C" const GUID __declspec(selectany) IID_IARGlobe =
+    {0x9e5e80cf,0x2f1d,0x49c6,{0xa7,0x3c,0x39,0x30,0x8d,0x1f,0xbc,0x61}};
+extern "C" const GUID __declspec(selectany) IID_IARGlobeControl =
+    {0xfeb9d62a,0x961d,0x4d44,{0xa1,0x8f,0x90,0x61,0x98,0x37,0xde,0x03}};
+extern "C" const GUID __declspec(selectany) DIID_IARGlobeControlDefault =
+    {0x2e2916d1,0x7349,0x4d39,{0x8d,0xcb,0x36,0x28,0x16,0x74,0x32,0xed}};
+extern "C" const GUID __declspec(selectany) DIID_IARGlobeControlEvents =
+    {0xa37e6daf,0x3647,0x4096,{0xab,0xee,0x1f,0x75,0xfd,0xcd,0x96,0xeb}};
+extern "C" const GUID __declspec(selectany) CLSID_ARGlobe =
+    {0x7844069e,0xc7ab,0x4d3f,{0xa8,0x7e,0x28,0x94,0x6a,0xd3,0xa2,0x63}};
+extern "C" const GUID __declspec(selectany) CLSID_ArcReaderControl =
+    {0x4c3033ed,0xecf7,0x4ec1,{0x87,0x12,0xe6,0xdb,0xe2,0x36,0xcd,0x7c}};
+extern "C" const GUID __declspec(selectany) CLSID_ArcReaderConfiguration =
+    {0x424cad92,0xf39b,0x4f60,{0xb1,0x76,0x52,0xe9,0x52,0xf6,0x67,0x8c}};
+extern "C" const GUID __declspec(selectany) CLSID_ArcReaderSearchDef =
+    {0x35cbcc67,0xdb83,0x439c,{0xb3,0xb0,0x15,0xb5,0xa3,0x80,0xb7,0x5d}};
+extern "C" const GUID __declspec(selectany) CLSID_ArcReaderGlobeControl =
+    {0x12f947aa,0xe6d8,0x4083,{0x94,0x48,0x80,0x79,0x2b,0x7b,0xdb,0xa6}};
+
+#pragma pack(pop)

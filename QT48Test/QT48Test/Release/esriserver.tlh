@@ -1,0 +1,3393 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (f45e1e10).
+//
+// e:\vsproject\qt48test\qt48test\release\esriserver.tlh
+//
+// C++ source equivalent of Win32 type library esriserver.olb
+// compiler-generated file created 12/01/16 at 15:39:09 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("18f2fc71-6b30-45b9-b101-037a8b868b66"))
+/* LIBID */ __esriServer;
+struct __declspec(uuid("0ad6ab40-9d6a-4bf8-8b86-eb89406dfc6c"))
+/* interface */ IServerObject;
+struct __declspec(uuid("1fc365cc-e2e8-4f83-afc9-834b33148e29"))
+/* interface */ IServerObjectFactory;
+struct __declspec(uuid("f241e441-cc73-40e2-baf0-b30ebe0ef8dc"))
+/* interface */ IServerObjectHelper;
+struct __declspec(uuid("6ee30361-f7c6-4635-882e-fabc7a772bc4"))
+/* interface */ IServerObjectHelper2;
+struct __declspec(uuid("de9a3831-3861-43da-a35f-2e82900db74e"))
+/* interface */ IServerObjectExtension;
+struct __declspec(uuid("25d8b9dd-c7e8-4da4-bf4b-08a67087ceea"))
+/* interface */ IServerObjectExtensionManager;
+struct __declspec(uuid("a87fdd99-6112-410c-b75e-fefff5eace35"))
+/* interface */ IServerContext;
+struct /* coclass */ ServerObjectFactory;
+struct /* coclass */ ConfigFactory;
+struct __declspec(uuid("94e42963-1a3b-4413-847e-afa37ee24a5a"))
+/* interface */ IConfigurationFactory;
+struct __declspec(uuid("01f6db39-6458-4c12-bcc7-30f1021075e2"))
+/* interface */ IServerObjectAdmin;
+struct __declspec(uuid("e7402a4c-0962-4e2e-ba8f-e90b6dabfcb2"))
+/* interface */ IServerDirectory;
+enum esriServerDirectoryCleaningMode;
+struct __declspec(uuid("4250c367-25dc-426c-ae90-817a8e892db5"))
+/* interface */ IEnumServerDirectory;
+struct __declspec(uuid("832dab4c-a03d-429e-8c14-401e3f807284"))
+/* interface */ IServerObjectConfiguration;
+enum esriServerIsolationLevel;
+enum esriStartupType;
+struct __declspec(uuid("815fed35-ec76-432c-9fb0-9ead763d2f50"))
+/* interface */ IEnumServerObjectConfiguration;
+struct __declspec(uuid("096b178f-2576-4aef-9cfa-8107d529bbff"))
+/* interface */ IServerObjectConfigurationStatus;
+enum esriConfigurationStatus;
+struct __declspec(uuid("e7fe5eab-11ec-49aa-80f4-34aa200913b0"))
+/* interface */ IEnumServerObjectType;
+struct __declspec(uuid("9ad7beca-fbc3-494a-bec6-790ff0e6946e"))
+/* interface */ IServerObjectType;
+struct __declspec(uuid("2dbbd5d1-193f-4cb0-893f-98dfffdadf1f"))
+/* interface */ IServerMachine;
+struct __declspec(uuid("0f89530a-8ba4-4ab6-9b4a-78541ee88525"))
+/* interface */ IEnumServerMachine;
+struct __declspec(uuid("44dc928c-0350-4bdb-9970-4d5ca68b4117"))
+/* interface */ IServerLog;
+struct __declspec(uuid("97d02ac6-aabb-4030-85f1-7280f28785de"))
+/* interface */ IServerLogQuery;
+struct __declspec(uuid("cf25ea7a-b5bc-47aa-94b2-4cd598b0c428"))
+/* interface */ IServerObjectManager;
+struct __declspec(uuid("6c7eec75-0d7d-4ec1-8b58-4d88f11fd4fa"))
+/* interface */ IServerObjectConfigurationInfo;
+struct __declspec(uuid("b810b79f-1777-4555-886d-dc6297fb2891"))
+/* interface */ IEnumServerObjectConfigurationInfo;
+struct __declspec(uuid("e9407db1-0c60-47ef-a20c-7ea37ef0aec5"))
+/* interface */ IEnumServerObjectTypeInfo;
+struct __declspec(uuid("1ef2395d-81eb-41fd-aa34-33e9fe2d8968"))
+/* interface */ IServerObjectTypeInfo;
+struct __declspec(uuid("e3a6f4a0-28ca-45b8-86b3-36888fb5466b"))
+/* interface */ IEnumServerDirectoryInfo;
+struct __declspec(uuid("cf180145-bcfe-4d6f-ac53-3b9e127af840"))
+/* interface */ IServerDirectoryInfo;
+struct __declspec(uuid("2e3707f3-dae3-45ba-ac15-47ef7ec69946"))
+/* interface */ IServerObjectManager2;
+struct __declspec(uuid("975d6f9a-0849-4de7-bd0d-9615925a098d"))
+/* interface */ IEnumServerObjectExtensionTypeInfo;
+struct __declspec(uuid("b5d6fda3-b063-4174-9e70-2764d55bccb4"))
+/* interface */ IServerObjectExtensionTypeInfo;
+struct __declspec(uuid("0f25131d-5521-4e06-9a7f-bb246f25309c"))
+/* interface */ IServerObjectManager3;
+struct __declspec(uuid("b87e5523-e612-4d71-a37f-89be65d783fd"))
+/* interface */ IServerObjectManager4;
+struct __declspec(uuid("46c52546-7c26-477f-bdc1-b1c254625f81"))
+/* interface */ IServiceCatalog2;
+struct __declspec(uuid("89d60975-fdcf-4cea-b981-73fe406a2d2b"))
+/* interface */ IServiceCatalog;
+struct __declspec(uuid("eef9bc6f-4560-43ab-9d8c-f8eadfad5c70"))
+/* interface */ IServiceDescriptionArray;
+struct __declspec(uuid("99ea4f91-10a1-4901-a695-86e31090f3c1"))
+/* interface */ IServiceDescription;
+enum esriServiceCatalogMessageFormat;
+struct __declspec(uuid("4bc97a90-0b03-478c-8eb8-2ba647297bf7"))
+/* interface */ IServerObjectAdmin2;
+struct __declspec(uuid("3a2ed9b4-ba20-47e8-8052-2e00a8e86869"))
+/* interface */ IEnumServerObjectExtensionType;
+struct __declspec(uuid("47cb8511-3aa6-4da6-9095-b6f70237acee"))
+/* interface */ IServerObjectExtensionType;
+struct __declspec(uuid("e5079624-e7c9-4b12-9df7-2bc1c341a2b7"))
+/* interface */ IServerObjectAdmin3;
+struct __declspec(uuid("6fa1268d-0dd4-46b6-b890-02e20fc6341f"))
+/* interface */ IServerObjectAdmin4;
+struct __declspec(uuid("a7b0b4b3-1001-49ad-ad44-aa6441d7300a"))
+/* interface */ IServerObjectAdmin5;
+struct __declspec(uuid("dc0e02cd-e386-4324-b31f-56b2c5d22363"))
+/* interface */ IServerObjectAdmin6;
+struct __declspec(uuid("c6cfc4df-7928-4ec2-9f34-87eed2bac0a3"))
+/* interface */ IServerObjectAdmin7;
+struct __declspec(uuid("e869d31e-f218-4cf7-bd51-ab5424fb7fb8"))
+/* interface */ ISOMController;
+struct __declspec(uuid("42472792-5345-4b93-b132-3977c24bacb4"))
+/* interface */ IServerObjectType2;
+struct __declspec(uuid("c54dd682-295a-4f38-93e3-7da20dca88c8"))
+/* interface */ IServerObjectType3;
+struct __declspec(uuid("6640b74d-69ce-4d7f-8222-ad46936c1799"))
+/* interface */ IServerObjectType4;
+struct __declspec(uuid("9ee9aa24-dfcb-4de5-9091-fcabac13a7e1"))
+/* interface */ IServerObjectTypeInfo2;
+struct __declspec(uuid("ac43c070-1627-4c6d-9532-bc80cfd82c71"))
+/* interface */ IServerObjectTypeInfo3;
+struct __declspec(uuid("552accd0-d000-49a7-beef-bf9849b22141"))
+/* interface */ IServerObjectExtensionType2;
+struct __declspec(uuid("94d56c57-00df-4336-8707-cf4197a890ef"))
+/* interface */ IServerObjectExtensionTypeInfo2;
+struct __declspec(uuid("2d81b707-95b1-4efa-a0fa-5ab49b051d0b"))
+/* interface */ IServerObjectConfiguration2;
+struct __declspec(uuid("35bcf76e-686f-4cb2-b0b8-f615754e79d3"))
+/* interface */ IServerObjectConfiguration3;
+struct __declspec(uuid("ac7687e9-a00e-4281-abaa-b889a5d7b1a6"))
+/* interface */ IServerObjectConfiguration4;
+struct __declspec(uuid("6ca0fe13-3acf-49e5-9632-2381a96ca0ae"))
+/* interface */ IServerObjectConfiguration5;
+enum esriLoadBalancing;
+struct __declspec(uuid("765ee3db-2a65-41ed-9619-482bbc48192d"))
+/* interface */ IServerObjectConfigurationInfo2;
+struct __declspec(uuid("f284d482-f71b-4542-9c93-1dc4b7e79881"))
+/* interface */ IServerDirectory2;
+enum esriServerDirectoryType;
+struct __declspec(uuid("2f2823a9-97d5-4287-bcec-0d9802a4b115"))
+/* interface */ IServerDirectory3;
+struct __declspec(uuid("2b0cc34c-e861-46ef-8bf0-308ab6113ce8"))
+/* interface */ IServerDirectoryInfo2;
+struct __declspec(uuid("7cdddb35-6819-41f6-b2c3-8197f95f65b0"))
+/* interface */ IServerMachine2;
+struct __declspec(uuid("c0445f7e-124c-487d-a364-6506e3574865"))
+/* interface */ IServerMachine3;
+struct __declspec(uuid("67e836a4-01f1-450c-97be-21ab9a3f3c11"))
+/* interface */ IServerMachineStatus;
+enum esriAccessLevel;
+struct __declspec(uuid("76c3bba1-aacf-40a1-bdee-b3fa28840979"))
+/* interface */ IServerMachineInfo;
+struct __declspec(uuid("a0500a17-b797-41f3-94eb-66a32fcf8d80"))
+/* interface */ IServerStatistics;
+enum esriServerStatEvent;
+enum esriServerStatFunction;
+enum esriServerTimePeriod;
+struct __declspec(uuid("de94c160-5101-49a4-bab4-6893745f01ce"))
+/* interface */ IServerStatus;
+struct __declspec(uuid("a0c0005d-c630-4a08-9805-5b3e4c446dbb"))
+/* interface */ IServerErrorReports;
+enum esriServerExceptionHandlingMode;
+struct __declspec(uuid("1d869ab1-db39-4cb8-9e95-a64ac2beb029"))
+/* interface */ IPermissionsAdmin;
+struct __declspec(uuid("8f6ce835-8644-420d-a2a3-2a84e2c29bfd"))
+/* interface */ IPermissionsAdmin2;
+struct __declspec(uuid("05d95968-651a-4c97-b63e-d26f2bb0e97b"))
+/* interface */ IPermissionsManager;
+enum esriMachineStatus;
+struct __declspec(uuid("562704ee-3a20-4c6d-a501-8468a1dbc55a"))
+/* interface */ IServerCLRHost;
+struct __declspec(uuid("bc0eecab-48dd-439e-8eca-f2c4e3f37beb"))
+/* interface */ IServerObjectExtensionType3;
+struct __declspec(uuid("c1a7fbab-48d4-49da-9aac-b28d3b982a9d"))
+/* interface */ IServerMachineEnvironment;
+struct __declspec(uuid("22930007-4a01-479f-8cb6-33c8ac33ccf4"))
+/* interface */ IServerObjectAdmin8;
+struct __declspec(uuid("b7729ab3-6fd1-402d-9162-ae21b9ec545e"))
+/* interface */ IServerLog2;
+struct __declspec(uuid("37786a30-fec4-4ea4-953e-dac6b69c716d"))
+/* interface */ IServerTimeRange;
+struct __declspec(uuid("181f5a7e-25c9-4fbf-9166-75d638acc930"))
+/* interface */ IServerObjectConfigurationManager;
+struct __declspec(uuid("3130f209-598d-4269-b404-df6b13804742"))
+/* interface */ IServerObjectConfigurationManager2;
+struct __declspec(uuid("702ecf93-89d3-438d-b218-f1686c813f0f"))
+/* interface */ IConfigurationFactory2;
+struct __declspec(uuid("1edfa167-4404-4295-b5bb-cc06a062f55c"))
+/* interface */ IConfigurationFactory3;
+struct __declspec(uuid("ab1ffdae-9b92-4e97-b3da-ea251258d8af"))
+/* interface */ IServerEnvironmentEx;
+struct __declspec(uuid("53011377-69ef-42e5-93c8-26735b801969"))
+/* interface */ IServerConfigurationStorage;
+struct __declspec(uuid("66210bab-f71d-4ecc-8823-6bf8431a5bb4"))
+/* interface */ IServerJobManager;
+struct __declspec(uuid("73e0f44f-9e93-4309-a29b-2d6fdde36536"))
+/* interface */ IServerEnvironmentImpl;
+struct __declspec(uuid("e027774d-ca6e-430e-97c0-6f4b1c67cc82"))
+/* interface */ IServerEnvironmentImpl2;
+struct /* coclass */ ServerObjectManager;
+struct /* coclass */ ServerObjectAdmin;
+struct /* coclass */ ServerObjectConfiguration;
+struct /* coclass */ ServerLogImpl;
+struct /* coclass */ ServerDirectory;
+struct /* coclass */ ServerMachine;
+struct /* coclass */ ServerObject;
+struct /* coclass */ ServerContext;
+struct /* coclass */ ServerObjectTypeInfo;
+struct /* coclass */ ServerObjectExtensionTypeInfo;
+struct /* coclass */ ServerObjectConfigurationInfo;
+struct /* coclass */ ServerObjectConfigurationStatus;
+struct /* coclass */ ServerObjectType;
+struct /* coclass */ ServerObjectExtensionType;
+struct /* coclass */ ServerDirectoryInfo;
+struct /* coclass */ ServerStatisticsArray;
+struct /* coclass */ ServerStatisticsResults;
+struct /* coclass */ ServerMachineStatus;
+struct /* coclass */ SOMController;
+struct __declspec(uuid("425b0a5b-bf1b-4f0e-9e75-37324a12e5f9"))
+/* interface */ IServer;
+struct __declspec(uuid("0741d66c-c157-4b4d-af5e-c74c68ba8386"))
+/* interface */ IServer2;
+struct __declspec(uuid("a49dd957-aadb-4fe4-89c1-d80bb586970a"))
+/* interface */ IServerInit;
+struct __declspec(uuid("30d53022-c566-4854-87d8-2b9022829211"))
+/* interface */ IServerInit2;
+struct /* coclass */ Server;
+struct /* coclass */ ServerP;
+struct __declspec(uuid("e3105184-0aad-4706-9269-dcb5ff52036d"))
+/* interface */ IGISServerConnection;
+struct __declspec(uuid("f6616298-396a-41f2-9a5b-0eed59af2e40"))
+/* interface */ IGISServerConnection2;
+struct /* coclass */ GISServerConnection;
+struct __declspec(uuid("081c203c-3b90-4de2-af43-7c30bbfe22e9"))
+/* interface */ IServiceDescription2;
+struct __declspec(uuid("e6ce2e4a-2f2b-4d2b-82b8-85fa5aecffbc"))
+/* interface */ IServiceDescription3;
+struct __declspec(uuid("bb163dc2-8ec3-4536-8b0c-7ffe7b91b7b0"))
+/* interface */ IServiceCatalog3;
+struct __declspec(uuid("34013770-2aef-4a0e-93a3-6c7d1bfc0a6a"))
+/* interface */ IServiceCatalogAdmin;
+struct __declspec(uuid("5aba2ef8-dea3-4b86-ae3b-f2f711b85196"))
+/* interface */ IServiceCatalogAdmin2;
+struct __declspec(uuid("214df7e7-4a43-4f8f-9a13-436afc4d2a5f"))
+/* interface */ IServiceCatalogAdmin3;
+enum esriServerConnectionType;
+struct __declspec(uuid("0710484b-62ec-42c4-8a3d-3186e2d8da36"))
+/* interface */ IIdentity;
+struct __declspec(uuid("fa70a9e1-a5fc-448e-ae33-6c78b1014966"))
+/* interface */ IServerInfo;
+struct __declspec(uuid("23c5169b-11c2-4750-836e-2ebbdc9e7008"))
+/* interface */ IServerInfos;
+struct __declspec(uuid("d9c910b6-4c6e-475d-bae6-5eacd1c4e9c2"))
+/* interface */ IGISServer;
+struct __declspec(uuid("20dae966-d7da-41e9-9334-d9d8ab7ab83e"))
+/* interface */ IGISServers;
+struct __declspec(uuid("c260325f-c891-4dff-89c1-58aeacc7e361"))
+/* interface */ IManagerWebService;
+struct /* coclass */ ServiceCatalog;
+enum esriServerInstallType;
+struct __declspec(uuid("89816982-dedc-4a5a-922a-d2fbbcf53877"))
+/* interface */ IWPISilentConfig;
+struct __declspec(uuid("d4b031ba-ad7d-438b-811c-a362f8b2d818"))
+/* interface */ IServerObjectFactoryX;
+struct __declspec(uuid("9fc0c623-186b-4a67-a4c9-5dec2fb8377d"))
+/* interface */ IServerEnvironmentXHelper;
+struct __declspec(uuid("e5a9a155-937e-4025-8ce6-42690d964c42"))
+/* interface */ IGPServerHelper;
+struct __declspec(uuid("2b8a2b7f-01bf-4951-8aa7-5161ad46ef35"))
+/* interface */ IUser;
+struct __declspec(uuid("ca90af27-e384-4e25-9f75-0b33f8f6148b"))
+/* interface */ IRole;
+struct __declspec(uuid("85d81926-f224-480f-a0aa-576d87ee0363"))
+/* interface */ IUserStore;
+struct __declspec(uuid("e7ad5e02-e595-4cb9-9b06-ec4f09122a3e"))
+/* interface */ IDataStoreValidator;
+struct __declspec(uuid("5ac20c1a-cf77-44c7-9eae-7bcd859e5ab8"))
+/* interface */ IRoleStore;
+struct __declspec(uuid("7baae10c-1933-45be-a723-e71c9d6b6941"))
+/* interface */ IServerHelper;
+struct /* coclass */ ServerObjectFactoryX;
+struct /* coclass */ ServerEnvironmentXHelper;
+struct /* coclass */ GPServerHelper;
+struct /* coclass */ Role;
+struct /* coclass */ User;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IServerObject, __uuidof(IServerObject));
+_COM_SMARTPTR_TYPEDEF(IServerObjectFactory, __uuidof(IServerObjectFactory));
+_COM_SMARTPTR_TYPEDEF(IServerObjectHelper, __uuidof(IServerObjectHelper));
+_COM_SMARTPTR_TYPEDEF(IServerObjectHelper2, __uuidof(IServerObjectHelper2));
+_COM_SMARTPTR_TYPEDEF(IServerObjectExtension, __uuidof(IServerObjectExtension));
+_COM_SMARTPTR_TYPEDEF(IServerObjectExtensionManager, __uuidof(IServerObjectExtensionManager));
+_COM_SMARTPTR_TYPEDEF(IServerContext, __uuidof(IServerContext));
+_COM_SMARTPTR_TYPEDEF(IServerDirectory, __uuidof(IServerDirectory));
+_COM_SMARTPTR_TYPEDEF(IEnumServerDirectory, __uuidof(IEnumServerDirectory));
+_COM_SMARTPTR_TYPEDEF(IServerObjectConfiguration, __uuidof(IServerObjectConfiguration));
+_COM_SMARTPTR_TYPEDEF(IEnumServerObjectConfiguration, __uuidof(IEnumServerObjectConfiguration));
+_COM_SMARTPTR_TYPEDEF(IServerObjectConfigurationStatus, __uuidof(IServerObjectConfigurationStatus));
+_COM_SMARTPTR_TYPEDEF(IServerObjectType, __uuidof(IServerObjectType));
+_COM_SMARTPTR_TYPEDEF(IEnumServerObjectType, __uuidof(IEnumServerObjectType));
+_COM_SMARTPTR_TYPEDEF(IServerMachine, __uuidof(IServerMachine));
+_COM_SMARTPTR_TYPEDEF(IEnumServerMachine, __uuidof(IEnumServerMachine));
+_COM_SMARTPTR_TYPEDEF(IServerObjectAdmin, __uuidof(IServerObjectAdmin));
+_COM_SMARTPTR_TYPEDEF(IConfigurationFactory, __uuidof(IConfigurationFactory));
+_COM_SMARTPTR_TYPEDEF(IServerLogQuery, __uuidof(IServerLogQuery));
+_COM_SMARTPTR_TYPEDEF(IServerLog, __uuidof(IServerLog));
+_COM_SMARTPTR_TYPEDEF(IServerObjectConfigurationInfo, __uuidof(IServerObjectConfigurationInfo));
+_COM_SMARTPTR_TYPEDEF(IEnumServerObjectConfigurationInfo, __uuidof(IEnumServerObjectConfigurationInfo));
+_COM_SMARTPTR_TYPEDEF(IServerObjectTypeInfo, __uuidof(IServerObjectTypeInfo));
+_COM_SMARTPTR_TYPEDEF(IEnumServerObjectTypeInfo, __uuidof(IEnumServerObjectTypeInfo));
+_COM_SMARTPTR_TYPEDEF(IServerDirectoryInfo, __uuidof(IServerDirectoryInfo));
+_COM_SMARTPTR_TYPEDEF(IEnumServerDirectoryInfo, __uuidof(IEnumServerDirectoryInfo));
+_COM_SMARTPTR_TYPEDEF(IServerObjectManager, __uuidof(IServerObjectManager));
+_COM_SMARTPTR_TYPEDEF(IServerObjectExtensionTypeInfo, __uuidof(IServerObjectExtensionTypeInfo));
+_COM_SMARTPTR_TYPEDEF(IEnumServerObjectExtensionTypeInfo, __uuidof(IEnumServerObjectExtensionTypeInfo));
+_COM_SMARTPTR_TYPEDEF(IServerObjectManager2, __uuidof(IServerObjectManager2));
+_COM_SMARTPTR_TYPEDEF(IServerObjectManager3, __uuidof(IServerObjectManager3));
+_COM_SMARTPTR_TYPEDEF(IServiceDescription, __uuidof(IServiceDescription));
+_COM_SMARTPTR_TYPEDEF(IServiceDescriptionArray, __uuidof(IServiceDescriptionArray));
+_COM_SMARTPTR_TYPEDEF(IServiceCatalog, __uuidof(IServiceCatalog));
+_COM_SMARTPTR_TYPEDEF(IServiceCatalog2, __uuidof(IServiceCatalog2));
+_COM_SMARTPTR_TYPEDEF(IServerObjectManager4, __uuidof(IServerObjectManager4));
+_COM_SMARTPTR_TYPEDEF(IServerObjectExtensionType, __uuidof(IServerObjectExtensionType));
+_COM_SMARTPTR_TYPEDEF(IEnumServerObjectExtensionType, __uuidof(IEnumServerObjectExtensionType));
+_COM_SMARTPTR_TYPEDEF(IServerObjectAdmin2, __uuidof(IServerObjectAdmin2));
+_COM_SMARTPTR_TYPEDEF(IServerObjectAdmin3, __uuidof(IServerObjectAdmin3));
+_COM_SMARTPTR_TYPEDEF(IServerObjectAdmin4, __uuidof(IServerObjectAdmin4));
+_COM_SMARTPTR_TYPEDEF(IServerObjectAdmin5, __uuidof(IServerObjectAdmin5));
+_COM_SMARTPTR_TYPEDEF(IServerObjectAdmin6, __uuidof(IServerObjectAdmin6));
+_COM_SMARTPTR_TYPEDEF(IServerObjectAdmin7, __uuidof(IServerObjectAdmin7));
+_COM_SMARTPTR_TYPEDEF(ISOMController, __uuidof(ISOMController));
+_COM_SMARTPTR_TYPEDEF(IServerObjectType2, __uuidof(IServerObjectType2));
+_COM_SMARTPTR_TYPEDEF(IServerObjectType3, __uuidof(IServerObjectType3));
+_COM_SMARTPTR_TYPEDEF(IServerObjectType4, __uuidof(IServerObjectType4));
+_COM_SMARTPTR_TYPEDEF(IServerObjectTypeInfo2, __uuidof(IServerObjectTypeInfo2));
+_COM_SMARTPTR_TYPEDEF(IServerObjectTypeInfo3, __uuidof(IServerObjectTypeInfo3));
+_COM_SMARTPTR_TYPEDEF(IServerObjectExtensionType2, __uuidof(IServerObjectExtensionType2));
+_COM_SMARTPTR_TYPEDEF(IServerObjectExtensionTypeInfo2, __uuidof(IServerObjectExtensionTypeInfo2));
+_COM_SMARTPTR_TYPEDEF(IServerObjectConfiguration2, __uuidof(IServerObjectConfiguration2));
+_COM_SMARTPTR_TYPEDEF(IServerObjectConfiguration3, __uuidof(IServerObjectConfiguration3));
+_COM_SMARTPTR_TYPEDEF(IServerObjectConfiguration4, __uuidof(IServerObjectConfiguration4));
+_COM_SMARTPTR_TYPEDEF(IServerObjectConfiguration5, __uuidof(IServerObjectConfiguration5));
+_COM_SMARTPTR_TYPEDEF(IServerObjectConfigurationInfo2, __uuidof(IServerObjectConfigurationInfo2));
+_COM_SMARTPTR_TYPEDEF(IServerDirectory2, __uuidof(IServerDirectory2));
+_COM_SMARTPTR_TYPEDEF(IServerDirectory3, __uuidof(IServerDirectory3));
+_COM_SMARTPTR_TYPEDEF(IServerDirectoryInfo2, __uuidof(IServerDirectoryInfo2));
+_COM_SMARTPTR_TYPEDEF(IServerMachine2, __uuidof(IServerMachine2));
+_COM_SMARTPTR_TYPEDEF(IServerMachine3, __uuidof(IServerMachine3));
+_COM_SMARTPTR_TYPEDEF(IServerMachineStatus, __uuidof(IServerMachineStatus));
+_COM_SMARTPTR_TYPEDEF(IServerMachineInfo, __uuidof(IServerMachineInfo));
+_COM_SMARTPTR_TYPEDEF(IServerStatistics, __uuidof(IServerStatistics));
+_COM_SMARTPTR_TYPEDEF(IServerStatus, __uuidof(IServerStatus));
+_COM_SMARTPTR_TYPEDEF(IServerErrorReports, __uuidof(IServerErrorReports));
+_COM_SMARTPTR_TYPEDEF(IPermissionsAdmin, __uuidof(IPermissionsAdmin));
+_COM_SMARTPTR_TYPEDEF(IPermissionsAdmin2, __uuidof(IPermissionsAdmin2));
+_COM_SMARTPTR_TYPEDEF(IPermissionsManager, __uuidof(IPermissionsManager));
+_COM_SMARTPTR_TYPEDEF(IServerCLRHost, __uuidof(IServerCLRHost));
+_COM_SMARTPTR_TYPEDEF(IServerObjectExtensionType3, __uuidof(IServerObjectExtensionType3));
+_COM_SMARTPTR_TYPEDEF(IServerMachineEnvironment, __uuidof(IServerMachineEnvironment));
+_COM_SMARTPTR_TYPEDEF(IServerObjectAdmin8, __uuidof(IServerObjectAdmin8));
+_COM_SMARTPTR_TYPEDEF(IServerLog2, __uuidof(IServerLog2));
+_COM_SMARTPTR_TYPEDEF(IServerTimeRange, __uuidof(IServerTimeRange));
+_COM_SMARTPTR_TYPEDEF(IServerObjectConfigurationManager, __uuidof(IServerObjectConfigurationManager));
+_COM_SMARTPTR_TYPEDEF(IServerObjectConfigurationManager2, __uuidof(IServerObjectConfigurationManager2));
+_COM_SMARTPTR_TYPEDEF(IConfigurationFactory2, __uuidof(IConfigurationFactory2));
+_COM_SMARTPTR_TYPEDEF(IConfigurationFactory3, __uuidof(IConfigurationFactory3));
+_COM_SMARTPTR_TYPEDEF(IServerEnvironmentEx, __uuidof(IServerEnvironmentEx));
+_COM_SMARTPTR_TYPEDEF(IServerConfigurationStorage, __uuidof(IServerConfigurationStorage));
+_COM_SMARTPTR_TYPEDEF(IServerJobManager, __uuidof(IServerJobManager));
+_COM_SMARTPTR_TYPEDEF(IServerEnvironmentImpl, __uuidof(IServerEnvironmentImpl));
+_COM_SMARTPTR_TYPEDEF(IServerEnvironmentImpl2, __uuidof(IServerEnvironmentImpl2));
+_COM_SMARTPTR_TYPEDEF(IServer, __uuidof(IServer));
+_COM_SMARTPTR_TYPEDEF(IServer2, __uuidof(IServer2));
+_COM_SMARTPTR_TYPEDEF(IServerInit, __uuidof(IServerInit));
+_COM_SMARTPTR_TYPEDEF(IServerInit2, __uuidof(IServerInit2));
+_COM_SMARTPTR_TYPEDEF(IGISServerConnection, __uuidof(IGISServerConnection));
+_COM_SMARTPTR_TYPEDEF(IGISServerConnection2, __uuidof(IGISServerConnection2));
+_COM_SMARTPTR_TYPEDEF(IServiceDescription2, __uuidof(IServiceDescription2));
+_COM_SMARTPTR_TYPEDEF(IServiceDescription3, __uuidof(IServiceDescription3));
+_COM_SMARTPTR_TYPEDEF(IServiceCatalog3, __uuidof(IServiceCatalog3));
+_COM_SMARTPTR_TYPEDEF(IServiceCatalogAdmin, __uuidof(IServiceCatalogAdmin));
+_COM_SMARTPTR_TYPEDEF(IServiceCatalogAdmin2, __uuidof(IServiceCatalogAdmin2));
+_COM_SMARTPTR_TYPEDEF(IServiceCatalogAdmin3, __uuidof(IServiceCatalogAdmin3));
+_COM_SMARTPTR_TYPEDEF(IIdentity, __uuidof(IIdentity));
+_COM_SMARTPTR_TYPEDEF(IServerInfo, __uuidof(IServerInfo));
+_COM_SMARTPTR_TYPEDEF(IServerInfos, __uuidof(IServerInfos));
+_COM_SMARTPTR_TYPEDEF(IGISServer, __uuidof(IGISServer));
+_COM_SMARTPTR_TYPEDEF(IGISServers, __uuidof(IGISServers));
+_COM_SMARTPTR_TYPEDEF(IManagerWebService, __uuidof(IManagerWebService));
+_COM_SMARTPTR_TYPEDEF(IWPISilentConfig, __uuidof(IWPISilentConfig));
+_COM_SMARTPTR_TYPEDEF(IServerObjectFactoryX, __uuidof(IServerObjectFactoryX));
+_COM_SMARTPTR_TYPEDEF(IServerEnvironmentXHelper, __uuidof(IServerEnvironmentXHelper));
+_COM_SMARTPTR_TYPEDEF(IGPServerHelper, __uuidof(IGPServerHelper));
+_COM_SMARTPTR_TYPEDEF(IUser, __uuidof(IUser));
+_COM_SMARTPTR_TYPEDEF(IRole, __uuidof(IRole));
+_COM_SMARTPTR_TYPEDEF(IUserStore, __uuidof(IUserStore));
+_COM_SMARTPTR_TYPEDEF(IDataStoreValidator, __uuidof(IDataStoreValidator));
+_COM_SMARTPTR_TYPEDEF(IRoleStore, __uuidof(IRoleStore));
+_COM_SMARTPTR_TYPEDEF(IServerHelper, __uuidof(IServerHelper));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("0ad6ab40-9d6a-4bf8-8b86-eb89406dfc6c"))
+IServerObject : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ConfigurationName (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_TypeName (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+};
+
+struct __declspec(uuid("1fc365cc-e2e8-4f83-afc9-834b33148e29"))
+IServerObjectFactory : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CreateServerObject (
+        /*[in]*/ BSTR CLSID,
+        /*[in]*/ BSTR cfgName,
+        /*[in]*/ BSTR cfgType,
+        /*[out,retval]*/ struct IServerObject * * ppSO ) = 0;
+};
+
+struct __declspec(uuid("f241e441-cc73-40e2-baf0-b30ebe0ef8dc"))
+IServerObjectHelper : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ServerObject (
+        /*[out,retval]*/ struct IServerObject * * ppSO ) = 0;
+};
+
+struct __declspec(uuid("6ee30361-f7c6-4635-882e-fabc7a772bc4"))
+IServerObjectHelper2 : IServerObjectHelper
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ServerObjectProperty (
+        /*[out,retval]*/ struct IPropertySet * * ppProps ) = 0;
+};
+
+struct __declspec(uuid("de9a3831-3861-43da-a35f-2e82900db74e"))
+IServerObjectExtension : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Init (
+        /*[in]*/ struct IServerObjectHelper * pSOH ) = 0;
+      virtual HRESULT __stdcall Shutdown ( ) = 0;
+};
+
+struct __declspec(uuid("25d8b9dd-c7e8-4da4-bf4b-08a67087ceea"))
+IServerObjectExtensionManager : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall FindExtensionByCLSID (
+        /*[in]*/ BSTR CLSID,
+        /*[out,retval]*/ struct IServerObjectExtension * * ppSOE ) = 0;
+      virtual HRESULT __stdcall FindExtensionByTypeName (
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ struct IServerObjectExtension * * ppSOE ) = 0;
+};
+
+struct __declspec(uuid("a87fdd99-6112-410c-b75e-fefff5eace35"))
+IServerContext : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ServerObject (
+        /*[out,retval]*/ struct IServerObject * * obj ) = 0;
+      virtual HRESULT __stdcall CreateObject (
+        /*[in]*/ BSTR CLSID,
+        /*[out,retval]*/ IUnknown * * ppObj ) = 0;
+      virtual HRESULT __stdcall LoadObject (
+        /*[in]*/ BSTR str,
+        /*[out,retval]*/ IUnknown * * obj ) = 0;
+      virtual HRESULT __stdcall SaveObject (
+        /*[in]*/ IUnknown * obj,
+        /*[out,retval]*/ BSTR * str ) = 0;
+      virtual HRESULT __stdcall GetObject (
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ IUnknown * * obj ) = 0;
+      virtual HRESULT __stdcall SetObject (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ IUnknown * obj ) = 0;
+      virtual HRESULT __stdcall Remove (
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall RemoveAll ( ) = 0;
+      virtual HRESULT __stdcall ReleaseContext ( ) = 0;
+};
+
+struct __declspec(uuid("6c20ca3d-f8c1-44ee-bf7f-5b866d86483f"))
+ServerObjectFactory;
+    // [ default ] interface IUnknown
+    // interface IServerObjectFactory
+
+struct __declspec(uuid("4750135f-afbf-4da5-a128-2eb939e87bd7"))
+ConfigFactory;
+    // [ default ] interface IUnknown
+    // interface IConfigurationFactory
+
+enum __declspec(uuid("2e80093f-ba47-4f7b-a179-d12f4cbc5d7a"))
+esriServerDirectoryCleaningMode
+{
+    esriSDCNone = 0,
+    esriSDCSliding = 1,
+    esriSDCAbsolute = 2
+};
+
+struct __declspec(uuid("e7402a4c-0962-4e2e-ba8f-e90b6dabfcb2"))
+IServerDirectory : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Path (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall put_Path (
+        /*[in]*/ BSTR pPath ) = 0;
+      virtual HRESULT __stdcall get_URL (
+        /*[out,retval]*/ BSTR * pUrl ) = 0;
+      virtual HRESULT __stdcall put_URL (
+        /*[in]*/ BSTR pUrl ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * pText ) = 0;
+      virtual HRESULT __stdcall put_Description (
+        /*[in]*/ BSTR pText ) = 0;
+      virtual HRESULT __stdcall get_CleaningMode (
+        /*[out,retval]*/ enum esriServerDirectoryCleaningMode * pMode ) = 0;
+      virtual HRESULT __stdcall put_CleaningMode (
+        /*[in]*/ enum esriServerDirectoryCleaningMode pMode ) = 0;
+      virtual HRESULT __stdcall get_MaxFileAge (
+        /*[out,retval]*/ long * pAge ) = 0;
+      virtual HRESULT __stdcall put_MaxFileAge (
+        /*[in]*/ long pAge ) = 0;
+};
+
+struct __declspec(uuid("4250c367-25dc-426c-ae90-817a8e892db5"))
+IEnumServerDirectory : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Next (
+        /*[out,retval]*/ struct IServerDirectory * * Next ) = 0;
+      virtual HRESULT __stdcall Reset ( ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+enum __declspec(uuid("e9da8bd1-01fe-49d0-9ab2-c1654ab156e5"))
+esriServerIsolationLevel
+{
+    esriServerIsolationHigh = 0,
+    esriServerIsolationLow = 1,
+    esriServerIsolationAny = 2
+};
+
+enum __declspec(uuid("64dae412-1c1b-46f2-aa72-c582db519313"))
+esriStartupType
+{
+    esriSTAutomatic = 0,
+    esriSTManual = 1
+};
+
+struct __declspec(uuid("832dab4c-a03d-429e-8c14-401e3f807284"))
+IServerObjectConfiguration : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall get_TypeName (
+        /*[out,retval]*/ BSTR * TypeName ) = 0;
+      virtual HRESULT __stdcall put_TypeName (
+        /*[in]*/ BSTR TypeName ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * desc ) = 0;
+      virtual HRESULT __stdcall put_Description (
+        /*[in]*/ BSTR desc ) = 0;
+      virtual HRESULT __stdcall get_Properties (
+        /*[out,retval]*/ struct IPropertySet * * props ) = 0;
+      virtual HRESULT __stdcall putref_Properties (
+        /*[in]*/ struct IPropertySet * props ) = 0;
+      virtual HRESULT __stdcall get_RecycleProperties (
+        /*[out,retval]*/ struct IPropertySet * * props ) = 0;
+      virtual HRESULT __stdcall putref_RecycleProperties (
+        /*[in]*/ struct IPropertySet * props ) = 0;
+      virtual HRESULT __stdcall get_MinInstances (
+        /*[out,retval]*/ long * instances ) = 0;
+      virtual HRESULT __stdcall put_MinInstances (
+        /*[in]*/ long instances ) = 0;
+      virtual HRESULT __stdcall get_MaxInstances (
+        /*[out,retval]*/ long * instances ) = 0;
+      virtual HRESULT __stdcall put_MaxInstances (
+        /*[in]*/ long instances ) = 0;
+      virtual HRESULT __stdcall get_IsPooled (
+        /*[out,retval]*/ VARIANT_BOOL * IsPooled ) = 0;
+      virtual HRESULT __stdcall put_IsPooled (
+        /*[in]*/ VARIANT_BOOL IsPooled ) = 0;
+      virtual HRESULT __stdcall get_IsolationLevel (
+        /*[out,retval]*/ enum esriServerIsolationLevel * isoLevel ) = 0;
+      virtual HRESULT __stdcall put_IsolationLevel (
+        /*[in]*/ enum esriServerIsolationLevel isoLevel ) = 0;
+      virtual HRESULT __stdcall get_StartupType (
+        /*[out,retval]*/ enum esriStartupType * Type ) = 0;
+      virtual HRESULT __stdcall put_StartupType (
+        /*[in]*/ enum esriStartupType Type ) = 0;
+      virtual HRESULT __stdcall get_WaitTimeout (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_WaitTimeout (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_UsageTimeout (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_UsageTimeout (
+        /*[in]*/ long pVal ) = 0;
+};
+
+struct __declspec(uuid("815fed35-ec76-432c-9fb0-9ead763d2f50"))
+IEnumServerObjectConfiguration : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Next (
+        /*[out,retval]*/ struct IServerObjectConfiguration * * nextConfig ) = 0;
+      virtual HRESULT __stdcall Reset ( ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+enum __declspec(uuid("7098bce5-4172-469e-b689-4d7d0e25ee37"))
+esriConfigurationStatus
+{
+    esriCSStarted = 0,
+    esriCSPaused = 1,
+    esriCSStopped = 2,
+    esriCSStarting = 3,
+    esriCSStopping = 4,
+    esriCSDeleted = 5
+};
+
+struct __declspec(uuid("096b178f-2576-4aef-9cfa-8107d529bbff"))
+IServerObjectConfigurationStatus : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_InstanceCount (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_InstanceInUseCount (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Status (
+        /*[out,retval]*/ enum esriConfigurationStatus * pStatus ) = 0;
+};
+
+struct __declspec(uuid("9ad7beca-fbc3-494a-bec6-790ff0e6946e"))
+IServerObjectType : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * desc ) = 0;
+      virtual HRESULT __stdcall put_Description (
+        /*[in]*/ BSTR desc ) = 0;
+      virtual HRESULT __stdcall get_CLSID (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_CLSID (
+        /*[in]*/ BSTR pVal ) = 0;
+};
+
+struct __declspec(uuid("e7fe5eab-11ec-49aa-80f4-34aa200913b0"))
+IEnumServerObjectType : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Next (
+        /*[out,retval]*/ struct IServerObjectType * * nextType ) = 0;
+      virtual HRESULT __stdcall Reset ( ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+struct __declspec(uuid("2dbbd5d1-193f-4cb0-893f-98dfffdadf1f"))
+IServerMachine : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * desc ) = 0;
+      virtual HRESULT __stdcall put_Description (
+        /*[in]*/ BSTR desc ) = 0;
+};
+
+struct __declspec(uuid("0f89530a-8ba4-4ab6-9b4a-78541ee88525"))
+IEnumServerMachine : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Next (
+        /*[out,retval]*/ struct IServerMachine * * nextMachine ) = 0;
+      virtual HRESULT __stdcall Reset ( ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+struct __declspec(uuid("01f6db39-6458-4c12-bcc7-30f1021075e2"))
+IServerObjectAdmin : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CreateServerDirectory (
+        /*[out,retval]*/ struct IServerDirectory * * ppSD ) = 0;
+      virtual HRESULT __stdcall AddServerDirectory (
+        /*[in]*/ struct IServerDirectory * pSD ) = 0;
+      virtual HRESULT __stdcall UpdateServerDirectory (
+        /*[in]*/ struct IServerDirectory * pSD ) = 0;
+      virtual HRESULT __stdcall DeleteServerDirectory (
+        /*[in]*/ BSTR Path ) = 0;
+      virtual HRESULT __stdcall GetServerDirectory (
+        /*[in]*/ BSTR Path,
+        /*[out,retval]*/ struct IServerDirectory * * ppSD ) = 0;
+      virtual HRESULT __stdcall GetServerDirectories (
+        /*[out,retval]*/ struct IEnumServerDirectory * * ppEnum ) = 0;
+      virtual HRESULT __stdcall CreateConfiguration (
+        /*[out,retval]*/ struct IServerObjectConfiguration * * config ) = 0;
+      virtual HRESULT __stdcall AddConfiguration (
+        /*[in]*/ struct IServerObjectConfiguration * config ) = 0;
+      virtual HRESULT __stdcall GetConfiguration (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR TypeName,
+        /*[out,retval]*/ struct IServerObjectConfiguration * * config ) = 0;
+      virtual HRESULT __stdcall UpdateConfiguration (
+        /*[in]*/ struct IServerObjectConfiguration * config ) = 0;
+      virtual HRESULT __stdcall DeleteConfiguration (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR TypeName ) = 0;
+      virtual HRESULT __stdcall GetConfigurations (
+        /*[out,retval]*/ struct IEnumServerObjectConfiguration * * ppConfigs ) = 0;
+      virtual HRESULT __stdcall GetConfigurationStatus (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR TypeName,
+        /*[out,retval]*/ struct IServerObjectConfigurationStatus * * ppStatus ) = 0;
+      virtual HRESULT __stdcall GetTypes (
+        /*[out,retval]*/ struct IEnumServerObjectType * * ppTypes ) = 0;
+      virtual HRESULT __stdcall StartConfiguration (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR TypeName ) = 0;
+      virtual HRESULT __stdcall StopConfiguration (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR TypeName ) = 0;
+      virtual HRESULT __stdcall PauseConfiguration (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR TypeName ) = 0;
+      virtual HRESULT __stdcall CreateMachine (
+        /*[out,retval]*/ struct IServerMachine * * Machine ) = 0;
+      virtual HRESULT __stdcall AddMachine (
+        /*[in]*/ struct IServerMachine * Machine ) = 0;
+      virtual HRESULT __stdcall GetMachines (
+        /*[out,retval]*/ struct IEnumServerMachine * * machines ) = 0;
+      virtual HRESULT __stdcall DeleteMachine (
+        /*[in]*/ BSTR MachineName ) = 0;
+      virtual HRESULT __stdcall GetMachine (
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ struct IServerMachine * * Machine ) = 0;
+      virtual HRESULT __stdcall UpdateMachine (
+        /*[in]*/ struct IServerMachine * Machine ) = 0;
+      virtual HRESULT __stdcall get_Properties (
+        /*[out,retval]*/ struct IPropertySet * * props ) = 0;
+      virtual HRESULT __stdcall put_Properties (
+        /*[in]*/ struct IPropertySet * props ) = 0;
+};
+
+struct __declspec(uuid("94e42963-1a3b-4413-847e-afa37ee24a5a"))
+IConfigurationFactory : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall OnAdd (
+        /*[in]*/ struct IServerObjectAdmin * pAdmin,
+        /*[in]*/ struct IPropertySet * pProps,
+        /*[out,retval]*/ struct IPropertySet * * ppNewProps ) = 0;
+      virtual HRESULT __stdcall OnRemove ( ) = 0;
+      virtual HRESULT __stdcall OnStart (
+        /*[in]*/ struct IServerObjectAdmin * pAdmin,
+        /*[in]*/ struct IPropertySet * props ) = 0;
+      virtual HRESULT __stdcall OnStop (
+        /*[in]*/ struct IServerObjectAdmin * pAdmin,
+        /*[in]*/ struct IPropertySet * props ) = 0;
+};
+
+struct __declspec(uuid("97d02ac6-aabb-4030-85f1-7280f28785de"))
+IServerLogQuery : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_StartTime (
+        /*[out,retval]*/ DATE * pTime ) = 0;
+      virtual HRESULT __stdcall put_StartTime (
+        /*[in]*/ DATE pTime ) = 0;
+      virtual HRESULT __stdcall get_EndTime (
+        /*[out,retval]*/ DATE * pTime ) = 0;
+      virtual HRESULT __stdcall put_EndTime (
+        /*[in]*/ DATE pTime ) = 0;
+      virtual HRESULT __stdcall get_Target (
+        /*[out,retval]*/ BSTR * pName ) = 0;
+      virtual HRESULT __stdcall put_Target (
+        /*[in]*/ BSTR pName ) = 0;
+      virtual HRESULT __stdcall get_Machine (
+        /*[out,retval]*/ BSTR * pMachine ) = 0;
+      virtual HRESULT __stdcall put_Machine (
+        /*[in]*/ BSTR pMachine ) = 0;
+      virtual HRESULT __stdcall get_Level (
+        /*[out,retval]*/ long * pLevel ) = 0;
+      virtual HRESULT __stdcall put_Level (
+        /*[in]*/ long pLevel ) = 0;
+      virtual HRESULT __stdcall get_MaxRecords (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_MaxRecords (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_StartIndex (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_StartIndex (
+        /*[in]*/ long pVal ) = 0;
+};
+
+struct __declspec(uuid("44dc928c-0350-4bdb-9970-4d5ca68b4117"))
+IServerLog : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CreateQuery (
+        /*[out,retval]*/ struct IServerLogQuery * * ppQuery ) = 0;
+      virtual HRESULT __stdcall GetLogRecords (
+        /*[in]*/ struct IServerLogQuery * pQuery,
+        /*[out,retval]*/ BSTR * results ) = 0;
+};
+
+struct __declspec(uuid("6c7eec75-0d7d-4ec1-8b58-4d88f11fd4fa"))
+IServerObjectConfigurationInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_TypeName (
+        /*[out,retval]*/ BSTR * TypeName ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * desc ) = 0;
+      virtual HRESULT __stdcall get_IsPooled (
+        /*[out,retval]*/ VARIANT_BOOL * IsPooled ) = 0;
+};
+
+struct __declspec(uuid("b810b79f-1777-4555-886d-dc6297fb2891"))
+IEnumServerObjectConfigurationInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Next (
+        /*[out,retval]*/ struct IServerObjectConfigurationInfo * * nextInfo ) = 0;
+      virtual HRESULT __stdcall Reset ( ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+struct __declspec(uuid("1ef2395d-81eb-41fd-aa34-33e9fe2d8968"))
+IServerObjectTypeInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * desc ) = 0;
+};
+
+struct __declspec(uuid("e9407db1-0c60-47ef-a20c-7ea37ef0aec5"))
+IEnumServerObjectTypeInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Next (
+        /*[out,retval]*/ struct IServerObjectTypeInfo * * nextInfo ) = 0;
+      virtual HRESULT __stdcall Reset ( ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+struct __declspec(uuid("cf180145-bcfe-4d6f-ac53-3b9e127af840"))
+IServerDirectoryInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Path (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_URL (
+        /*[out,retval]*/ BSTR * pUrl ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * pText ) = 0;
+      virtual HRESULT __stdcall get_CleaningMode (
+        /*[out,retval]*/ enum esriServerDirectoryCleaningMode * pMode ) = 0;
+      virtual HRESULT __stdcall get_MaxFileAge (
+        /*[out,retval]*/ long * pAge ) = 0;
+};
+
+struct __declspec(uuid("e3a6f4a0-28ca-45b8-86b3-36888fb5466b"))
+IEnumServerDirectoryInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Next (
+        /*[out,retval]*/ struct IServerDirectoryInfo * * nextInfo ) = 0;
+      virtual HRESULT __stdcall Reset ( ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+struct __declspec(uuid("cf25ea7a-b5bc-47aa-94b2-4cd598b0c428"))
+IServerObjectManager : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CreateServerContext (
+        /*[in]*/ BSTR configName,
+        /*[in]*/ BSTR TypeName,
+        /*[out,retval]*/ struct IServerContext * * context ) = 0;
+      virtual HRESULT __stdcall GetConfigurationInfo (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR TypeName,
+        /*[out,retval]*/ struct IServerObjectConfigurationInfo * * ppInfo ) = 0;
+      virtual HRESULT __stdcall GetConfigurationInfos (
+        /*[out,retval]*/ struct IEnumServerObjectConfigurationInfo * * infos ) = 0;
+      virtual HRESULT __stdcall GetTypeInfos (
+        /*[out,retval]*/ struct IEnumServerObjectTypeInfo * * infos ) = 0;
+      virtual HRESULT __stdcall GetServerDirectoryInfos (
+        /*[out,retval]*/ struct IEnumServerDirectoryInfo * * ppEnum ) = 0;
+};
+
+struct __declspec(uuid("b5d6fda3-b063-4174-9e70-2764d55bccb4"))
+IServerObjectExtensionTypeInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * desc ) = 0;
+};
+
+struct __declspec(uuid("975d6f9a-0849-4de7-bd0d-9615925a098d"))
+IEnumServerObjectExtensionTypeInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Next (
+        /*[out,retval]*/ struct IServerObjectExtensionTypeInfo * * nextInfo ) = 0;
+      virtual HRESULT __stdcall Reset ( ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+struct __declspec(uuid("2e3707f3-dae3-45ba-ac15-47ef7ec69946"))
+IServerObjectManager2 : IServerObjectManager
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_SystemInfo (
+        /*[out,retval]*/ struct IPropertySet * * ppInfo ) = 0;
+      virtual HRESULT __stdcall GetExtensionTypeInfos (
+        /*[in]*/ BSTR SOTypeName,
+        /*[out,retval]*/ struct IEnumServerObjectExtensionTypeInfo * * ppInfos ) = 0;
+      virtual HRESULT __stdcall GetConfigurationInfosEx (
+        /*[in]*/ BSTR folderName,
+        /*[out,retval]*/ struct IEnumServerObjectConfigurationInfo * * ppEnum ) = 0;
+      virtual HRESULT __stdcall GetFolders (
+        /*[in]*/ BSTR folderName,
+        /*[out,retval]*/ struct IEnumBSTR * * ppEnum ) = 0;
+      virtual HRESULT __stdcall get_FolderInfo (
+        /*[in]*/ BSTR folderName,
+        /*[out,retval]*/ struct IPropertySet * * ppInfo ) = 0;
+      virtual HRESULT __stdcall GetConfigurationStatus (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR TypeName,
+        /*[out,retval]*/ struct IServerObjectConfigurationStatus * * ppStatus ) = 0;
+};
+
+struct __declspec(uuid("0f25131d-5521-4e06-9a7f-bb246f25309c"))
+IServerObjectManager3 : IServerObjectManager2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetConfigurationInfosEx2 (
+        /*[in]*/ BSTR folderName,
+        /*[in]*/ enum esriConfigurationStatus stat,
+        /*[out,retval]*/ struct IEnumServerObjectConfigurationInfo * * ppEnum ) = 0;
+};
+
+struct __declspec(uuid("99ea4f91-10a1-4901-a695-86e31090f3c1"))
+IServiceDescription : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Type (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_URL (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_URL (
+        /*[in]*/ BSTR pVal ) = 0;
+};
+
+struct __declspec(uuid("eef9bc6f-4560-43ab-9d8c-f8eadfad5c70"))
+IServiceDescriptionArray : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pCount ) = 0;
+      virtual HRESULT __stdcall get_Element (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IServiceDescription * * Element ) = 0;
+      virtual HRESULT __stdcall Add (
+        /*[in]*/ struct IServiceDescription * Element ) = 0;
+      virtual HRESULT __stdcall Remove (
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall RemoveAll ( ) = 0;
+      virtual HRESULT __stdcall Insert (
+        /*[in]*/ long index,
+        /*[in]*/ struct IServiceDescription * Element ) = 0;
+      virtual HRESULT __stdcall put_Element (
+        /*[in]*/ long index,
+        /*[in]*/ struct IServiceDescription * Element ) = 0;
+};
+
+struct __declspec(uuid("89d60975-fdcf-4cea-b981-73fe406a2d2b"))
+IServiceCatalog : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ServiceDescriptions (
+        /*[out,retval]*/ struct IServiceDescriptionArray * * pVal ) = 0;
+};
+
+enum __declspec(uuid("ddcc6eae-04d5-467b-967d-bd0bfe2d0bca"))
+esriServiceCatalogMessageFormat
+{
+    esriServiceCatalogMessageFormatSoap = 1,
+    esriServiceCatalogMessageFormatBin = 2,
+    esriServiceCatalogMessageFormatSoapOrBin = 3
+};
+
+struct __declspec(uuid("46c52546-7c26-477f-bdc1-b1c254625f81"))
+IServiceCatalog2 : IServiceCatalog
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_MessageVersion (
+        /*[out,retval]*/ enum esriArcGISVersion * ver ) = 0;
+      virtual HRESULT __stdcall get_MessageFormats (
+        /*[out,retval]*/ enum esriServiceCatalogMessageFormat * msgFormats ) = 0;
+      virtual HRESULT __stdcall get_ServiceDescriptionsEx (
+        /*[in]*/ BSTR folderName,
+        /*[out,retval]*/ struct IServiceDescriptionArray * * pVal ) = 0;
+      virtual HRESULT __stdcall GetFolders (
+        /*[in]*/ BSTR folderName,
+        /*[out,retval]*/ struct IStringArray * * pVal ) = 0;
+};
+
+struct __declspec(uuid("b87e5523-e612-4d71-a37f-89be65d783fd"))
+IServerObjectManager4 : IServerObjectManager3
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CreateServiceCatalog (
+        /*[out,retval]*/ struct IServiceCatalog2 * * ppCatalog ) = 0;
+};
+
+struct __declspec(uuid("47cb8511-3aa6-4da6-9095-b6f70237acee"))
+IServerObjectExtensionType : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * desc ) = 0;
+      virtual HRESULT __stdcall put_Description (
+        /*[in]*/ BSTR desc ) = 0;
+      virtual HRESULT __stdcall get_CLSID (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_CLSID (
+        /*[in]*/ BSTR pVal ) = 0;
+};
+
+struct __declspec(uuid("3a2ed9b4-ba20-47e8-8052-2e00a8e86869"))
+IEnumServerObjectExtensionType : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Next (
+        /*[out,retval]*/ struct IServerObjectExtensionType * * nextType ) = 0;
+      virtual HRESULT __stdcall Reset ( ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+struct __declspec(uuid("4bc97a90-0b03-478c-8eb8-2ba647297bf7"))
+IServerObjectAdmin2 : IServerObjectAdmin
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetExtensionTypes (
+        /*[in]*/ BSTR SOTypeName,
+        /*[out,retval]*/ struct IEnumServerObjectExtensionType * * ppTypes ) = 0;
+      virtual HRESULT __stdcall get_ServerLog (
+        /*[out,retval]*/ struct IServerLog * * ppLog ) = 0;
+      virtual HRESULT __stdcall Enable ( ) = 0;
+      virtual HRESULT __stdcall Disable ( ) = 0;
+      virtual HRESULT __stdcall CreateExtensionType (
+        /*[out,retval]*/ struct IServerObjectExtensionType * * ppSOEType ) = 0;
+      virtual HRESULT __stdcall AddExtensionType (
+        /*[in]*/ BSTR SOTypeName,
+        /*[in]*/ struct IServerObjectExtensionType * pSOEType ) = 0;
+      virtual HRESULT __stdcall DeleteExtensionType (
+        /*[in]*/ BSTR SOTypeName,
+        /*[in]*/ BSTR SOETypeName ) = 0;
+      virtual HRESULT __stdcall CreateFolder (
+        /*[in]*/ BSTR folderName ) = 0;
+      virtual HRESULT __stdcall DeleteFolder (
+        /*[in]*/ BSTR folderName ) = 0;
+      virtual HRESULT __stdcall RenameFolder (
+        /*[in]*/ BSTR folderName,
+        /*[in]*/ BSTR newName ) = 0;
+      virtual HRESULT __stdcall GetFolders (
+        /*[in]*/ BSTR folderName,
+        /*[out,retval]*/ struct IEnumBSTR * * ppEnum ) = 0;
+      virtual HRESULT __stdcall get_FolderInfo (
+        /*[in]*/ BSTR folderName,
+        /*[out,retval]*/ struct IPropertySet * * ppInfo ) = 0;
+      virtual HRESULT __stdcall put_FolderInfo (
+        /*[in]*/ BSTR folderName,
+        /*[in]*/ struct IPropertySet * ppInfo ) = 0;
+      virtual HRESULT __stdcall GetConfigurationsEx (
+        /*[in]*/ BSTR folderName,
+        /*[out,retval]*/ struct IEnumServerObjectConfiguration * * ppEnum ) = 0;
+      virtual HRESULT __stdcall ValidateConfiguration (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR TypeName ) = 0;
+};
+
+struct __declspec(uuid("e5079624-e7c9-4b12-9df7-2bc1c341a2b7"))
+IServerObjectAdmin3 : IServerObjectAdmin2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetConfigurationsEx2 (
+        /*[in]*/ BSTR folderName,
+        /*[in]*/ enum esriConfigurationStatus stat,
+        /*[out,retval]*/ struct IEnumServerObjectConfiguration * * ppEnum ) = 0;
+};
+
+struct __declspec(uuid("6fa1268d-0dd4-46b6-b890-02e20fc6341f"))
+IServerObjectAdmin4 : IServerObjectAdmin3
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsSecurityEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_IsSecurityEnabled (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+};
+
+struct __declspec(uuid("a7b0b4b3-1001-49ad-ad44-aa6441d7300a"))
+IServerObjectAdmin5 : IServerObjectAdmin4
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetConfigurationProperties (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR Type,
+        /*[out,retval]*/ struct IPropertySet * * ppProps ) = 0;
+      virtual HRESULT __stdcall UpdateConfigurationProperties (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR Type,
+        /*[in]*/ struct IPropertySet * pProps ) = 0;
+};
+
+struct __declspec(uuid("dc0e02cd-e386-4324-b31f-56b2c5d22363"))
+IServerObjectAdmin6 : IServerObjectAdmin5
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetInputDir (
+        /*[in]*/ BSTR cfgName,
+        /*[in]*/ BSTR cfgType,
+        /*[out,retval]*/ BSTR * dir ) = 0;
+      virtual HRESULT __stdcall IsInputDirInUse (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall UploadData (
+        /*[in]*/ BSTR cfgName,
+        /*[in]*/ BSTR cfgType,
+        /*[in]*/ BSTR fileName,
+        /*[in]*/ SAFEARRAY * * data ) = 0;
+};
+
+struct __declspec(uuid("c6cfc4df-7928-4ec2-9f34-87eed2bac0a3"))
+IServerObjectAdmin7 : IServerObjectAdmin6
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall IsAdminUser (
+        /*[in]*/ BSTR UserName,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+};
+
+struct __declspec(uuid("e869d31e-f218-4cf7-bd51-ab5424fb7fb8"))
+ISOMController : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Start ( ) = 0;
+      virtual HRESULT __stdcall Stop ( ) = 0;
+      virtual HRESULT __stdcall get_Started (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+};
+
+struct __declspec(uuid("42472792-5345-4b93-b132-3977c24bacb4"))
+IServerObjectType2 : IServerObjectType
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsolationLevel (
+        /*[out,retval]*/ enum esriServerIsolationLevel * isoLevel ) = 0;
+      virtual HRESULT __stdcall put_IsolationLevel (
+        /*[in]*/ enum esriServerIsolationLevel isoLevel ) = 0;
+      virtual HRESULT __stdcall get_DisplayName (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_DisplayName (
+        /*[in]*/ BSTR pVal ) = 0;
+};
+
+struct __declspec(uuid("c54dd682-295a-4f38-93e3-7da20dca88c8"))
+IServerObjectType3 : IServerObjectType2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ConfigurationsLimit (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ConfigurationsLimit (
+        /*[in]*/ long pVal ) = 0;
+};
+
+struct __declspec(uuid("6640b74d-69ce-4d7f-8222-ad46936c1799"))
+IServerObjectType4 : IServerObjectType3
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall putref_Info (
+        /*[in]*/ struct IPropertySet * props ) = 0;
+      virtual HRESULT __stdcall get_Info (
+        /*[out,retval]*/ struct IPropertySet * * props ) = 0;
+};
+
+struct __declspec(uuid("9ee9aa24-dfcb-4de5-9091-fcabac13a7e1"))
+IServerObjectTypeInfo2 : IServerObjectTypeInfo
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_DisplayName (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+};
+
+struct __declspec(uuid("ac43c070-1627-4c6d-9532-bc80cfd82c71"))
+IServerObjectTypeInfo3 : IServerObjectTypeInfo2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ConfigurationsLimit (
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+struct __declspec(uuid("552accd0-d000-49a7-beef-bf9849b22141"))
+IServerObjectExtensionType2 : IServerObjectExtensionType
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_DisplayName (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_DisplayName (
+        /*[in]*/ BSTR pVal ) = 0;
+};
+
+struct __declspec(uuid("94d56c57-00df-4336-8707-cf4197a890ef"))
+IServerObjectExtensionTypeInfo2 : IServerObjectExtensionTypeInfo
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_DisplayName (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("2d81b707-95b1-4efa-a0fa-5ab49b051d0b"))
+IServerObjectConfiguration2 : IServerObjectConfiguration
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Serialize (
+        /*[out,retval]*/ BSTR * str ) = 0;
+      virtual HRESULT __stdcall Deserialize (
+        /*[in]*/ BSTR str ) = 0;
+      virtual HRESULT __stdcall get_ExtensionProperties (
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ struct IPropertySet * * ppExtProperties ) = 0;
+      virtual HRESULT __stdcall putref_ExtensionProperties (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ struct IPropertySet * ppExtProperties ) = 0;
+      virtual HRESULT __stdcall get_ExtensionInfo (
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ struct IPropertySet * * ppExtProperties ) = 0;
+      virtual HRESULT __stdcall putref_ExtensionInfo (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ struct IPropertySet * ppExtProperties ) = 0;
+      virtual HRESULT __stdcall get_ExtensionEnabled (
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_ExtensionEnabled (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_CleanupTimeout (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_CleanupTimeout (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_StartupTimeout (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_StartupTimeout (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Info (
+        /*[out,retval]*/ struct IPropertySet * * props ) = 0;
+      virtual HRESULT __stdcall putref_Info (
+        /*[in]*/ struct IPropertySet * props ) = 0;
+};
+
+struct __declspec(uuid("35bcf76e-686f-4cb2-b0b8-f615754e79d3"))
+IServerObjectConfiguration3 : IServerObjectConfiguration2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IdleTimeout (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_IdleTimeout (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_InstancesPerContainer (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_InstancesPerContainer (
+        /*[in]*/ long pVal ) = 0;
+};
+
+struct __declspec(uuid("ac7687e9-a00e-4281-abaa-b889a5d7b1a6"))
+IServerObjectConfiguration4 : IServerObjectConfiguration3
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ServiceKeepAliveInterval (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ServiceKeepAliveInterval (
+        /*[in]*/ long pVal ) = 0;
+};
+
+enum __declspec(uuid("66c0fd97-40f8-4db6-84f6-24a33fee5a1a"))
+esriLoadBalancing
+{
+    esriLoadBalancingRoundRobin = 0,
+    esriLoadBalancingNone = 1
+};
+
+struct __declspec(uuid("6ca0fe13-3acf-49e5-9632-2381a96ca0ae"))
+IServerObjectConfiguration5 : IServerObjectConfiguration4
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Status (
+        /*[in]*/ enum esriConfigurationStatus pStatus ) = 0;
+      virtual HRESULT __stdcall get_Status (
+        /*[out,retval]*/ enum esriConfigurationStatus * pStatus ) = 0;
+      virtual HRESULT __stdcall get_ExtensionNames (
+        /*[out,retval]*/ struct IStringArray * * ppExtNames ) = 0;
+      virtual HRESULT __stdcall put_DatasetNames (
+        /*[in]*/ struct IStringArray * ppDTNames ) = 0;
+      virtual HRESULT __stdcall get_DatasetNames (
+        /*[out,retval]*/ struct IStringArray * * ppDTNames ) = 0;
+      virtual HRESULT __stdcall put_TargetCluster (
+        /*[in]*/ BSTR pName ) = 0;
+      virtual HRESULT __stdcall get_TargetCluster (
+        /*[out,retval]*/ BSTR * pName ) = 0;
+      virtual HRESULT __stdcall put_LoadBalancing (
+        /*[in]*/ enum esriLoadBalancing pType ) = 0;
+      virtual HRESULT __stdcall get_LoadBalancing (
+        /*[out,retval]*/ enum esriLoadBalancing * pType ) = 0;
+};
+
+struct __declspec(uuid("765ee3db-2a65-41ed-9619-482bbc48192d"))
+IServerObjectConfigurationInfo2 : IServerObjectConfigurationInfo
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Extensions (
+        /*[out,retval]*/ struct IEnumBSTR * * ppEnum ) = 0;
+      virtual HRESULT __stdcall get_Info (
+        /*[out,retval]*/ struct IPropertySet * * ppInfo ) = 0;
+      virtual HRESULT __stdcall get_ExtensionInfo (
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ struct IPropertySet * * ppExtProperties ) = 0;
+};
+
+enum __declspec(uuid("fa0fae2d-500b-44da-b37a-180456d0e1b6"))
+esriServerDirectoryType
+{
+    esriSDTypeOutput = 0,
+    esriSDTypeCache = 1,
+    esriSDTypeJobs = 2,
+    esriSDTypeIndex = 3,
+    esriSDTypeInput = 4,
+    esriSDTypeSystem = 5,
+    esriSDTypeUploads = 6,
+    esriSDTypeKML = 7,
+    esriSDTypeJobRegistry = 8,
+    esriSDTypeUnknown = 9
+};
+
+struct __declspec(uuid("f284d482-f71b-4542-9c93-1dc4b7e79881"))
+IServerDirectory2 : IServerDirectory
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ enum esriServerDirectoryType * pType ) = 0;
+      virtual HRESULT __stdcall put_Type (
+        /*[in]*/ enum esriServerDirectoryType pType ) = 0;
+};
+
+struct __declspec(uuid("2f2823a9-97d5-4287-bcec-0d9802a4b115"))
+IServerDirectory3 : IServerDirectory2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pName ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR pName ) = 0;
+      virtual HRESULT __stdcall get_IsPrivate (
+        /*[out,retval]*/ VARIANT_BOOL * pIsPrivate ) = 0;
+      virtual HRESULT __stdcall get_CanAddNew (
+        /*[out,retval]*/ VARIANT_BOOL * pCanAddNew ) = 0;
+      virtual HRESULT __stdcall get_CanDelete (
+        /*[out,retval]*/ VARIANT_BOOL * pCanDelete ) = 0;
+      virtual HRESULT __stdcall get_CanEdit (
+        /*[out,retval]*/ VARIANT_BOOL * pCanEdit ) = 0;
+};
+
+struct __declspec(uuid("2b0cc34c-e861-46ef-8bf0-308ab6113ce8"))
+IServerDirectoryInfo2 : IServerDirectoryInfo
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ enum esriServerDirectoryType * pType ) = 0;
+};
+
+struct __declspec(uuid("7cdddb35-6819-41f6-b2c3-8197f95f65b0"))
+IServerMachine2 : IServerMachine
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Capacity (
+        /*[out,retval]*/ long * Val ) = 0;
+      virtual HRESULT __stdcall put_Capacity (
+        /*[in]*/ long Val ) = 0;
+};
+
+struct __declspec(uuid("c0445f7e-124c-487d-a364-6506e3574865"))
+IServerMachine3 : IServerMachine2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_AdminURL (
+        /*[out,retval]*/ BSTR * pUrl ) = 0;
+      virtual HRESULT __stdcall put_AdminURL (
+        /*[in]*/ BSTR pUrl ) = 0;
+      virtual HRESULT __stdcall get_Platform (
+        /*[out,retval]*/ BSTR * pPlatform ) = 0;
+      virtual HRESULT __stdcall put_Platform (
+        /*[in]*/ BSTR pPlatform ) = 0;
+      virtual HRESULT __stdcall get_PortCount (
+        /*[out,retval]*/ long * pCount ) = 0;
+      virtual HRESULT __stdcall get_PortNames (
+        /*[out,retval]*/ struct IEnumBSTR * * ppNames ) = 0;
+      virtual HRESULT __stdcall get_PortNumber (
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ long * pNumber ) = 0;
+};
+
+enum __declspec(uuid("959d65a6-3e85-4cfc-8066-7b0e097f30f8"))
+esriAccessLevel
+{
+    esriAccessAll = 0,
+    esriAccessPublic = 1,
+    esriAccessPrivate = 2
+};
+
+struct __declspec(uuid("67e836a4-01f1-450c-97be-21ab9a3f3c11"))
+IServerMachineStatus : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_InstanceCount (
+        /*[in]*/ enum esriAccessLevel access,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_InstanceInUseCount (
+        /*[in]*/ enum esriAccessLevel access,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Enabled (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+};
+
+struct __declspec(uuid("76c3bba1-aacf-40a1-bdee-b3fa28840979"))
+IServerMachineInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_NumberOfProcessors (
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+enum __declspec(uuid("bc0e397f-6a00-491d-b2fd-f558f8af1b8d"))
+esriServerStatEvent
+{
+    esriSSEContextCreated = 0,
+    esriSSEContextCreationFailed = 1,
+    esriSSEContextCreationTimeout = 2,
+    esriSSEContextReleased = 3,
+    esriSSEContextUsageTimeout = 4,
+    esriSSEServerObjectCreated = 5,
+    esriSSEServerObjectCreationFailed = 6,
+    esriSSELogError = 7,
+    esriSSELogWarning = 8
+};
+
+enum __declspec(uuid("c25ab32f-c63c-4740-a96f-b43144fc2734"))
+esriServerStatFunction
+{
+    esriSSFCount = 0,
+    esriSSFMinimum = 1,
+    esriSSFMaximum = 2,
+    esriSSFSum = 3,
+    esriSSFSumSquares = 4,
+    esriSSFMean = 5,
+    esriSSFStandardDeviation = 6
+};
+
+enum __declspec(uuid("5c02077b-4c34-4bbe-a0f5-29fec497e821"))
+esriServerTimePeriod
+{
+    esriSTPNone = 0,
+    esriSTPSecond = 1,
+    esriSTPMinute = 2,
+    esriSTPHour = 3,
+    esriSTPDay = 4
+};
+
+struct __declspec(uuid("a0500a17-b797-41f3-94eb-66a32fcf8d80"))
+IServerStatistics : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Reset ( ) = 0;
+      virtual HRESULT __stdcall GetSpecificStatisticForTimeIntervals (
+        /*[in]*/ enum esriServerStatEvent event,
+        /*[in]*/ enum esriServerStatFunction function,
+        /*[in]*/ enum esriServerTimePeriod period,
+        /*[in]*/ long index,
+        /*[in]*/ long length,
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR Type,
+        /*[in]*/ BSTR Machine,
+        /*[out,retval]*/ struct IDoubleArray * * ppArray ) = 0;
+      virtual HRESULT __stdcall GetAllStatisticsForTimeInterval (
+        /*[in]*/ enum esriServerStatEvent event,
+        /*[in]*/ enum esriServerTimePeriod period,
+        /*[in]*/ long index,
+        /*[in]*/ long length,
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR Type,
+        /*[in]*/ BSTR Machine,
+        /*[out,retval]*/ struct IStatisticsResults * * ppResults ) = 0;
+};
+
+struct __declspec(uuid("de94c160-5101-49a4-bab4-6893745f01ce"))
+IServerStatus : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_InstanceCount (
+        /*[in]*/ enum esriAccessLevel access,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_InstanceInUseCount (
+        /*[in]*/ enum esriAccessLevel access,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetConfigurationStatus (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR TypeName,
+        /*[out,retval]*/ struct IServerObjectConfigurationStatus * * ppStatus ) = 0;
+      virtual HRESULT __stdcall GetMachineStatus (
+        /*[in]*/ BSTR Machine,
+        /*[out,retval]*/ struct IServerMachineStatus * * ppStatus ) = 0;
+      virtual HRESULT __stdcall get_StartTime (
+        /*[out,retval]*/ DATE * pVal ) = 0;
+      virtual HRESULT __stdcall get_Enabled (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+};
+
+enum __declspec(uuid("bc65d4a9-ce4a-4c74-8f99-d6354198c451"))
+esriServerExceptionHandlingMode
+{
+    esriServerExceptionHandlingMode_Normal = 0,
+    esriServerExceptionHandlingMode_ExitOnException = 1,
+    esriServerExceptionHandlingMode_ExitOnExceptionAndDump = 2,
+    esriServerExceptionHandlingMode_Dump = 3
+};
+
+struct __declspec(uuid("a0c0005d-c630-4a08-9805-5b3e4c446dbb"))
+IServerErrorReports : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_ErrorReportMode (
+        /*[in]*/ enum esriServerExceptionHandlingMode pVal ) = 0;
+      virtual HRESULT __stdcall get_ErrorReportMode (
+        /*[out,retval]*/ enum esriServerExceptionHandlingMode * pVal ) = 0;
+      virtual HRESULT __stdcall put_ErrorReportModeSOM (
+        /*[in]*/ enum esriServerExceptionHandlingMode pVal ) = 0;
+      virtual HRESULT __stdcall get_ErrorReportModeSOM (
+        /*[out,retval]*/ enum esriServerExceptionHandlingMode * pVal ) = 0;
+      virtual HRESULT __stdcall put_ErrorReportType (
+        /*[in]*/ unsigned long pVal ) = 0;
+      virtual HRESULT __stdcall get_ErrorReportType (
+        /*[out,retval]*/ unsigned long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ErrorReportDir (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ErrorReportDir (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ErrorReportCacheSize (
+        /*[in]*/ unsigned long pVal ) = 0;
+      virtual HRESULT __stdcall get_ErrorReportCacheSize (
+        /*[out,retval]*/ unsigned long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ErrorReportEnableUpload (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_ErrorReportEnableUpload (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_ErrorReportEmailAddress (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ErrorReportEmailAddress (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ErrorReportInterval (
+        /*[in]*/ unsigned long pVal ) = 0;
+      virtual HRESULT __stdcall get_ErrorReportInterval (
+        /*[out,retval]*/ unsigned long * pVal ) = 0;
+      virtual HRESULT __stdcall ReportErrors ( ) = 0;
+};
+
+struct __declspec(uuid("1d869ab1-db39-4cb8-9e95-a64ac2beb029"))
+IPermissionsAdmin : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall AllowPermission (
+        /*[in]*/ BSTR Principal,
+        /*[in]*/ BSTR resource,
+        /*[in]*/ BSTR operation ) = 0;
+      virtual HRESULT __stdcall DenyPermission (
+        /*[in]*/ BSTR Principal,
+        /*[in]*/ BSTR resource,
+        /*[in]*/ BSTR operation ) = 0;
+      virtual HRESULT __stdcall GetAllPrincipals (
+        /*[out,retval]*/ struct IEnumBSTR * * ppEnum ) = 0;
+};
+
+struct __declspec(uuid("8f6ce835-8644-420d-a2a3-2a84e2c29bfd"))
+IPermissionsAdmin2 : IPermissionsAdmin
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CleanPermissions (
+        /*[in]*/ BSTR Principal ) = 0;
+};
+
+struct __declspec(uuid("05d95968-651a-4c97-b63e-d26f2bb0e97b"))
+IPermissionsManager : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CheckPermission (
+        /*[in]*/ BSTR Principal,
+        /*[in]*/ BSTR resource,
+        /*[in]*/ BSTR operation,
+        /*[out,retval]*/ VARIANT_BOOL * pbRes ) = 0;
+      virtual HRESULT __stdcall GetPrincipalsWithPermissionOnResource (
+        /*[in]*/ BSTR resource,
+        /*[in]*/ BSTR operation,
+        /*[out,retval]*/ struct IEnumBSTR * * ppEnum ) = 0;
+      virtual HRESULT __stdcall CheckForDescendentsWithDifferentPermissions (
+        /*[in]*/ BSTR Principal,
+        /*[in]*/ BSTR resource,
+        /*[in]*/ BSTR operation,
+        /*[out,retval]*/ VARIANT_BOOL * pbRes ) = 0;
+};
+
+enum __declspec(uuid("3168c0e7-747c-4ec3-96af-a934f74d7bf6"))
+esriMachineStatus
+{
+    esriMStarted = 0,
+    esriMSStopped = 1
+};
+
+struct __declspec(uuid("562704ee-3a20-4c6d-a501-8468a1dbc55a"))
+IServerCLRHost : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Cleanup ( ) = 0;
+};
+
+struct __declspec(uuid("bc0eecab-48dd-439e-8eca-f2c4e3f37beb"))
+IServerObjectExtensionType3 : IServerObjectExtensionType2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Properties (
+        /*[out,retval]*/ struct IPropertySet * * props ) = 0;
+      virtual HRESULT __stdcall putref_Properties (
+        /*[in]*/ struct IPropertySet * props ) = 0;
+      virtual HRESULT __stdcall get_Info (
+        /*[out,retval]*/ struct IPropertySet * * props ) = 0;
+      virtual HRESULT __stdcall putref_Info (
+        /*[in]*/ struct IPropertySet * props ) = 0;
+      virtual HRESULT __stdcall get_ConfigurationFactoryCLSID (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ConfigurationFactoryCLSID (
+        /*[in]*/ BSTR pVal ) = 0;
+};
+
+struct __declspec(uuid("c1a7fbab-48d4-49da-9aac-b28d3b982a9d"))
+IServerMachineEnvironment : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetEnvVariable (
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("22930007-4a01-479f-8cb6-33c8ac33ccf4"))
+IServerObjectAdmin8 : IServerObjectAdmin7
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall AddGeodatabase (
+        /*[in]*/ BSTR gdbName,
+        /*[in]*/ BSTR Val ) = 0;
+      virtual HRESULT __stdcall DeleteGeodatabase (
+        /*[in]*/ BSTR gdbName ) = 0;
+      virtual HRESULT __stdcall get_Geodatabases (
+        /*[out,retval]*/ BSTR * pList ) = 0;
+      virtual HRESULT __stdcall GetGeodatabase (
+        /*[in]*/ BSTR gdbName,
+        /*[out]*/ BSTR * pUpdateID,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall PutGeodatabase (
+        /*[in]*/ BSTR gdbName,
+        /*[in]*/ BSTR Val ) = 0;
+};
+
+struct __declspec(uuid("b7729ab3-6fd1-402d-9162-ae21b9ec545e"))
+IServerLog2 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ReleaseLog ( ) = 0;
+};
+
+struct __declspec(uuid("37786a30-fec4-4ea4-953e-dac6b69c716d"))
+IServerTimeRange : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_StartTime (
+        /*[out,retval]*/ DATE * pTime ) = 0;
+      virtual HRESULT __stdcall get_EndTime (
+        /*[out,retval]*/ DATE * pTime ) = 0;
+};
+
+struct __declspec(uuid("181f5a7e-25c9-4fbf-9166-75d638acc930"))
+IServerObjectConfigurationManager : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall OnAdd (
+        /*[in]*/ struct IPropertySet * pProps,
+        /*[out,retval]*/ struct IPropertySet * * ppNewProps ) = 0;
+      virtual HRESULT __stdcall OnRemove ( ) = 0;
+};
+
+struct __declspec(uuid("3130f209-598d-4269-b404-df6b13804742"))
+IServerObjectConfigurationManager2 : IServerObjectConfigurationManager
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall OnStart (
+        /*[in]*/ struct IServerObjectAdmin * pAdmin,
+        /*[in]*/ struct IPropertySet * pProps ) = 0;
+      virtual HRESULT __stdcall OnStop (
+        /*[in]*/ struct IServerObjectAdmin * pAdmin,
+        /*[in]*/ struct IPropertySet * pProps ) = 0;
+      virtual HRESULT __stdcall OnRemoveEx (
+        /*[in]*/ struct IServerObjectAdmin * pAdmin,
+        /*[in]*/ struct IPropertySet * props ) = 0;
+      virtual HRESULT __stdcall BeforeStart (
+        /*[in]*/ struct IServerObjectAdmin * pAdmin,
+        /*[in]*/ struct IPropertySet * props ) = 0;
+      virtual HRESULT __stdcall BeforeStop (
+        /*[in]*/ struct IServerObjectAdmin * pAdmin,
+        /*[in]*/ struct IPropertySet * props ) = 0;
+};
+
+struct __declspec(uuid("702ecf93-89d3-438d-b218-f1686c813f0f"))
+IConfigurationFactory2 : IConfigurationFactory
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall BeforeStart (
+        /*[in]*/ struct IServerObjectAdmin * pAdmin,
+        /*[in]*/ struct IPropertySet * props ) = 0;
+      virtual HRESULT __stdcall BeforeStop (
+        /*[in]*/ struct IServerObjectAdmin * pAdmin,
+        /*[in]*/ struct IPropertySet * props ) = 0;
+      virtual HRESULT __stdcall OnRemoveEx (
+        /*[in]*/ struct IServerObjectAdmin * pAdmin,
+        /*[in]*/ struct IPropertySet * props ) = 0;
+};
+
+struct __declspec(uuid("1edfa167-4404-4295-b5bb-cc06a062f55c"))
+IConfigurationFactory3 : IConfigurationFactory2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall OnRename (
+        /*[in]*/ struct IServerObjectAdmin * pAdmin,
+        /*[in]*/ struct IPropertySet * props,
+        /*[out,retval]*/ struct IPropertySet * * ppNewProps ) = 0;
+};
+
+struct __declspec(uuid("ab1ffdae-9b92-4e97-b3da-ea251258d8af"))
+IServerEnvironmentEx : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetServerDirectoryInfos (
+        /*[out,retval]*/ struct IEnumServerDirectoryInfo * * ppEnum ) = 0;
+};
+
+struct __declspec(uuid("53011377-69ef-42e5-93c8-26735b801969"))
+IServerConfigurationStorage : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Connect (
+        /*[in]*/ BSTR connectionString ) = 0;
+      virtual HRESULT __stdcall GetUpdateIDs (
+        /*[out]*/ BSTR * pServerUpdateID,
+        /*[out]*/ BSTR * pServicesUpdateID,
+        /*[out]*/ BSTR * pFoldersUpdateID,
+        /*[out]*/ BSTR * pPermissionsUpdateID,
+        /*[out]*/ BSTR * pLogUpdateID,
+        /*[out]*/ BSTR * pGDBUpdateID ) = 0;
+      virtual HRESULT __stdcall GetServerProperty (
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall PutServerProperty (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR Val ) = 0;
+      virtual HRESULT __stdcall get_ServerProperties (
+        /*[out,retval]*/ BSTR * pList ) = 0;
+      virtual HRESULT __stdcall AddFolder (
+        /*[in]*/ BSTR folderName,
+        /*[in]*/ BSTR Info ) = 0;
+      virtual HRESULT __stdcall DeleteFolder (
+        /*[in]*/ BSTR folderName ) = 0;
+      virtual HRESULT __stdcall RenameFolder (
+        /*[in]*/ BSTR OldName,
+        /*[in]*/ BSTR newName ) = 0;
+      virtual HRESULT __stdcall get_Folders (
+        /*[out,retval]*/ BSTR * pList ) = 0;
+      virtual HRESULT __stdcall GetFolderInfo (
+        /*[in]*/ BSTR folderName,
+        /*[out]*/ BSTR * pUpdateID,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall PutFolderInfo (
+        /*[in]*/ BSTR folderName,
+        /*[in]*/ BSTR Val ) = 0;
+      virtual HRESULT __stdcall AddService (
+        /*[in]*/ BSTR ID,
+        /*[in]*/ BSTR definition ) = 0;
+      virtual HRESULT __stdcall DeleteService (
+        /*[in]*/ BSTR ID ) = 0;
+      virtual HRESULT __stdcall get_Services (
+        /*[out,retval]*/ BSTR * pList ) = 0;
+      virtual HRESULT __stdcall GetServiceDefinition (
+        /*[in]*/ BSTR ID,
+        /*[out]*/ BSTR * pUpdateID,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall PutServiceDefinition (
+        /*[in]*/ BSTR ID,
+        /*[in]*/ BSTR Val ) = 0;
+      virtual HRESULT __stdcall GetServiceIsStarted (
+        /*[in]*/ BSTR ID,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall PutServiceIsStarted (
+        /*[in]*/ BSTR ID,
+        /*[in]*/ VARIANT_BOOL Val ) = 0;
+      virtual HRESULT __stdcall AddPermission (
+        /*[in]*/ BSTR ResourceID,
+        /*[in]*/ BSTR acl ) = 0;
+      virtual HRESULT __stdcall DeletePermission (
+        /*[in]*/ BSTR ResourceID ) = 0;
+      virtual HRESULT __stdcall get_Permissions (
+        /*[out,retval]*/ BSTR * pList ) = 0;
+      virtual HRESULT __stdcall GetACL (
+        /*[in]*/ BSTR ResourceID,
+        /*[out]*/ BSTR * pUpdateID,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall PutACL (
+        /*[in]*/ BSTR ResourceID,
+        /*[in]*/ BSTR Val ) = 0;
+      virtual HRESULT __stdcall AddGeodatabase (
+        /*[in]*/ BSTR gdbName,
+        /*[in]*/ BSTR Val ) = 0;
+      virtual HRESULT __stdcall DeleteGeodatabase (
+        /*[in]*/ BSTR gdbName ) = 0;
+      virtual HRESULT __stdcall get_Geodatabases (
+        /*[out,retval]*/ BSTR * pList ) = 0;
+      virtual HRESULT __stdcall GetGeodatabase (
+        /*[in]*/ BSTR gdbName,
+        /*[out]*/ BSTR * pUpdateID,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall PutGeodatabase (
+        /*[in]*/ BSTR gdbName,
+        /*[in]*/ BSTR Val ) = 0;
+      virtual HRESULT __stdcall get_LogFiles (
+        /*[out,retval]*/ BSTR * pList ) = 0;
+      virtual HRESULT __stdcall PutLogFile (
+        /*[in]*/ BSTR fileName,
+        /*[in]*/ DATE DateCreated,
+        /*[in]*/ DATE DateModified,
+        /*[in]*/ BSTR Log ) = 0;
+      virtual HRESULT __stdcall GetLogFile (
+        /*[in]*/ BSTR fileName,
+        /*[out]*/ DATE * pDateCreated,
+        /*[out]*/ DATE * pDateModified,
+        /*[out,retval]*/ BSTR * pLog ) = 0;
+      virtual HRESULT __stdcall DeleteLogFile (
+        /*[in]*/ BSTR fileName ) = 0;
+};
+
+struct __declspec(uuid("66210bab-f71d-4ecc-8823-6bf8431a5bb4"))
+IServerJobManager : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ExecuteJob (
+        /*[in]*/ BSTR cfgName,
+        /*[in]*/ BSTR cfgType,
+        /*[in]*/ BSTR jobID ) = 0;
+      virtual HRESULT __stdcall CheckJob (
+        /*[in]*/ BSTR jobID,
+        /*[out,retval]*/ VARIANT_BOOL * bRes ) = 0;
+      virtual HRESULT __stdcall CancelJob (
+        /*[in]*/ BSTR jobID ) = 0;
+};
+
+struct __declspec(uuid("73e0f44f-9e93-4309-a29b-2d6fdde36536"))
+IServerEnvironmentImpl : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_CurrentJobID (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall put_IsAdmin (
+        /*[in]*/ VARIANT_BOOL _arg1 ) = 0;
+      virtual HRESULT __stdcall get_JobCatalog (
+        /*[out,retval]*/ struct IJobCatalog * * ppJC ) = 0;
+      virtual HRESULT __stdcall get_ServerJobManager (
+        /*[out,retval]*/ struct IServerJobManager * * ppSJM ) = 0;
+      virtual HRESULT __stdcall get_ServerObjectAdmin (
+        /*[out,retval]*/ struct IServerObjectAdmin * * ppSOA ) = 0;
+      virtual HRESULT __stdcall get_JobRegistry (
+        /*[out,retval]*/ struct IJobRegistry * * ppJR ) = 0;
+      virtual HRESULT __stdcall get_StorageConnectionString (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("e027774d-ca6e-430e-97c0-6f4b1c67cc82"))
+IServerEnvironmentImpl2 : IServerEnvironmentImpl
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Log (
+        /*[in]*/ struct ILog * _arg1 ) = 0;
+      virtual HRESULT __stdcall put_Properties (
+        /*[in]*/ struct IPropertySet * _arg1 ) = 0;
+      virtual HRESULT __stdcall put_JobTracker (
+        /*[in]*/ struct IJobTracker * _arg1 ) = 0;
+      virtual HRESULT __stdcall put_JobRegistry (
+        /*[in]*/ struct IJobRegistry * _arg1 ) = 0;
+      virtual HRESULT __stdcall put_ServerJobManager (
+        /*[in]*/ struct IServerJobManager * _arg1 ) = 0;
+      virtual HRESULT __stdcall put_ServerObjectAdmin (
+        /*[in]*/ struct IServerObjectAdmin * _arg1 ) = 0;
+      virtual HRESULT __stdcall put_UserInfo (
+        /*[in]*/ struct IServerUserInfo * _arg1 ) = 0;
+};
+
+struct __declspec(uuid("5c3d041c-5d21-4b0c-935c-b1d7aa10c81c"))
+ServerObjectManager;
+    // [ default ] interface IUnknown
+    // interface IServerObjectManager
+    // interface IServerObjectManager2
+    // interface IServerObjectManager3
+    // interface IServerObjectManager4
+    // interface IPermissionsManager
+
+struct __declspec(uuid("d317cf58-eb65-4d4c-a18b-fcb477a91ac9"))
+ServerObjectAdmin;
+    // [ default ] interface IUnknown
+    // interface IServerObjectAdmin
+    // interface IServerObjectAdmin2
+    // interface IServerObjectAdmin3
+    // interface IServerObjectAdmin4
+    // interface IServerObjectAdmin5
+    // interface IServerObjectAdmin6
+    // interface IServerObjectAdmin7
+    // interface IServerObjectAdmin8
+    // interface IServerStatistics
+    // interface IPermissionsAdmin
+    // interface IPermissionsAdmin2
+    // interface IServerErrorReports
+
+struct __declspec(uuid("061affb5-ae19-4a72-896c-ef59e415697b"))
+ServerObjectConfiguration;
+    // [ default ] interface IUnknown
+    // interface IServerObjectConfiguration
+    // interface IServerObjectConfiguration2
+    // interface IServerObjectConfiguration3
+    // interface IServerObjectConfiguration4
+
+struct __declspec(uuid("3e32107f-4f36-4d50-a5d2-9ec7c0986cc0"))
+ServerLogImpl;
+    // [ default ] interface IUnknown
+    // interface IServerLog
+    // interface IServerLog2
+
+struct __declspec(uuid("a6622dc3-1817-4420-86d6-9b3cebd33778"))
+ServerDirectory;
+    // [ default ] interface IUnknown
+    // interface IServerDirectory
+    // interface IServerDirectory2
+
+struct __declspec(uuid("39f4800b-7b54-457f-bea0-7dfcdef37ff7"))
+ServerMachine;
+    // [ default ] interface IUnknown
+    // interface IServerMachine
+    // interface IServerMachine2
+    // interface IServerMachine3
+
+struct __declspec(uuid("d43bee68-f44f-4c90-a72f-41b469be5a6b"))
+ServerObject;
+    // [ default ] interface IUnknown
+    // interface IServerObject
+    // interface IServerObjectExtensionManager
+    // interface IObjectConstruct
+    // interface IObjectActivate
+    // interface ILogSupport
+
+struct __declspec(uuid("fccb4713-2958-4284-9d99-7e25a0bbb423"))
+ServerContext;
+    // [ default ] interface IUnknown
+    // interface IServerContext
+
+struct __declspec(uuid("c28c537e-1ecf-4cef-b29a-c9b0082c5f0c"))
+ServerObjectTypeInfo;
+    // [ default ] interface IUnknown
+    // interface IServerObjectTypeInfo
+    // interface IServerObjectTypeInfo2
+    // interface IServerObjectTypeInfo3
+
+struct __declspec(uuid("91c3d839-ce1e-4750-bf23-63a4bbb4880e"))
+ServerObjectExtensionTypeInfo;
+    // [ default ] interface IUnknown
+    // interface IServerObjectExtensionTypeInfo
+    // interface IServerObjectExtensionTypeInfo2
+
+struct __declspec(uuid("cd8d4f2f-c833-47e1-98a6-b80c3a4f4428"))
+ServerObjectConfigurationInfo;
+    // [ default ] interface IUnknown
+    // interface IServerObjectConfigurationInfo
+    // interface IServerObjectConfigurationInfo2
+
+struct __declspec(uuid("da266136-e040-4d0c-9b67-ba2553fb3e16"))
+ServerObjectConfigurationStatus;
+    // [ default ] interface IUnknown
+    // interface IServerObjectConfigurationStatus
+
+struct __declspec(uuid("3cf5c550-0d4f-4eb8-9e75-a65b274f3100"))
+ServerObjectType;
+    // [ default ] interface IUnknown
+    // interface IServerObjectType
+    // interface IServerObjectType2
+    // interface IServerObjectType3
+    // interface IServerObjectType4
+
+struct __declspec(uuid("087e165b-17b8-40ab-9fe6-3c912e4fd7dd"))
+ServerObjectExtensionType;
+    // [ default ] interface IUnknown
+    // interface IServerObjectExtensionType
+    // interface IServerObjectExtensionType2
+    // interface IServerObjectExtensionType3
+
+struct __declspec(uuid("65997efb-8adb-49ff-9481-8b90cb84a5bf"))
+ServerDirectoryInfo;
+    // [ default ] interface IUnknown
+    // interface IServerDirectoryInfo
+    // interface IServerDirectoryInfo2
+
+struct __declspec(uuid("e6af2747-73ee-43e4-a4b9-b0fe5ea33517"))
+ServerStatisticsArray;
+    // [ default ] interface IUnknown
+    // interface IDoubleArray
+    // interface IServerTimeRange
+
+struct __declspec(uuid("893c42fd-c4b0-4b8c-b5b1-05c567867e40"))
+ServerStatisticsResults;
+    // [ default ] interface IUnknown
+    // interface IStatisticsResults
+    // interface IServerTimeRange
+
+struct __declspec(uuid("98053471-7d09-49d5-a3e0-d235e682331f"))
+ServerMachineStatus;
+    // [ default ] interface IUnknown
+    // interface IServerMachineStatus
+    // interface IServerMachineInfo
+
+struct __declspec(uuid("049fc901-5750-46f2-8674-b883c99166c4"))
+SOMController;
+    // [ default ] interface IUnknown
+    // interface ISOMController
+
+struct __declspec(uuid("425b0a5b-bf1b-4f0e-9e75-37324a12e5f9"))
+IServer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ServerObjectManager (
+        /*[out,retval]*/ struct IServerObjectManager * * mgr ) = 0;
+      virtual HRESULT __stdcall get_ServerObjectAdmin (
+        /*[out,retval]*/ struct IServerObjectAdmin * * admin ) = 0;
+};
+
+struct __declspec(uuid("0741d66c-c157-4b4d-af5e-c74c68ba8386"))
+IServer2 : IServer
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ServerObjectManager2 (
+        /*[in]*/ BSTR UserInfo,
+        /*[out,retval]*/ struct IServerObjectManager * * mgr ) = 0;
+};
+
+struct __declspec(uuid("a49dd957-aadb-4fe4-89c1-d80bb586970a"))
+IServerInit : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall InitPrivateServer (
+        /*[in]*/ BSTR dir ) = 0;
+};
+
+struct __declspec(uuid("30d53022-c566-4854-87d8-2b9022829211"))
+IServerInit2 : IServerInit
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall InitPrivateServerEx (
+        /*[in]*/ BSTR serverDir,
+        /*[in]*/ BSTR logDir ) = 0;
+};
+
+struct __declspec(uuid("379376db-aea6-40d1-9491-9345e61ef6be"))
+Server;
+    // [ default ] interface IUnknown
+    // interface IServer
+    // interface IServer2
+
+struct __declspec(uuid("5116fa19-c21a-4c9f-816d-a4490c246d56"))
+ServerP;
+    // [ default ] interface IUnknown
+    // interface IServer
+    // interface IServerInit
+    // interface IServerInit2
+
+struct __declspec(uuid("e3105184-0aad-4706-9269-dcb5ff52036d"))
+IGISServerConnection : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Connect (
+        /*[in]*/ BSTR MachineName ) = 0;
+      virtual HRESULT __stdcall get_ServerObjectManager (
+        /*[out,retval]*/ struct IServerObjectManager * * mgr ) = 0;
+      virtual HRESULT __stdcall get_ServerObjectAdmin (
+        /*[out,retval]*/ struct IServerObjectAdmin * * admin ) = 0;
+};
+
+struct __declspec(uuid("f6616298-396a-41f2-9a5b-0eed59af2e40"))
+IGISServerConnection2 : IGISServerConnection
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Connect2 (
+        /*[in]*/ BSTR UserInfo,
+        /*[in]*/ BSTR MachineName ) = 0;
+};
+
+struct __declspec(uuid("cd57b642-1b4a-4e02-a1d0-ffdbcf0e5a41"))
+GISServerConnection;
+    // [ default ] interface IUnknown
+    // interface IGISServerConnection
+    // interface IGISServerConnection2
+
+struct __declspec(uuid("081c203c-3b90-4de2-af43-7c30bbfe22e9"))
+IServiceDescription2 : IServiceDescription
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ParentType (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ParentType (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Capabilities (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Capabilities (
+        /*[in]*/ BSTR pVal ) = 0;
+};
+
+struct __declspec(uuid("e6ce2e4a-2f2b-4d2b-82b8-85fa5aecffbc"))
+IServiceDescription3 : IServiceDescription2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Description (
+        /*[in]*/ BSTR pVal ) = 0;
+};
+
+struct __declspec(uuid("bb163dc2-8ec3-4536-8b0c-7ffe7b91b7b0"))
+IServiceCatalog3 : IServiceCatalog2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_RequiresTokens (
+        /*[out,retval]*/ VARIANT_BOOL * RequiresTokens ) = 0;
+      virtual HRESULT __stdcall get_TokenServiceURL (
+        /*[out,retval]*/ BSTR * TokenServiceURL ) = 0;
+};
+
+struct __declspec(uuid("34013770-2aef-4a0e-93a3-6c7d1bfc0a6a"))
+IServiceCatalogAdmin : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CreateServiceDescription (
+        /*[out,retval]*/ struct IServiceDescription * * ServiceDescription ) = 0;
+      virtual HRESULT __stdcall CreateServiceDescriptionArray (
+        /*[out,retval]*/ struct IServiceDescriptionArray * * array ) = 0;
+      virtual HRESULT __stdcall putref_ServiceDescriptions (
+        /*[in]*/ struct IServiceDescriptionArray * _arg1 ) = 0;
+      virtual HRESULT __stdcall GetDescriptionDocument (
+        /*[in]*/ BSTR serviceName,
+        /*[in]*/ BSTR serviceType,
+        /*[in]*/ BSTR serviceURL,
+        /*[out,retval]*/ SAFEARRAY * * doc ) = 0;
+      virtual HRESULT __stdcall GetCatalogDescriptionDocument (
+        /*[in]*/ BSTR catalogName,
+        /*[in]*/ BSTR catalogUrl,
+        /*[out,retval]*/ SAFEARRAY * * doc ) = 0;
+};
+
+struct __declspec(uuid("5aba2ef8-dea3-4b86-ae3b-f2f711b85196"))
+IServiceCatalogAdmin2 : IServiceCatalogAdmin
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_MessageFormats (
+        /*[in]*/ enum esriServiceCatalogMessageFormat _arg1 ) = 0;
+      virtual HRESULT __stdcall put_MessageVersion (
+        /*[in]*/ enum esriArcGISVersion _arg1 ) = 0;
+      virtual HRESULT __stdcall CreateServiceFolderArray (
+        /*[out,retval]*/ struct IStringArray * * array ) = 0;
+      virtual HRESULT __stdcall putref_ServiceFolders (
+        /*[in]*/ struct IStringArray * _arg1 ) = 0;
+};
+
+struct __declspec(uuid("214df7e7-4a43-4f8f-9a13-436afc4d2a5f"))
+IServiceCatalogAdmin3 : IServiceCatalogAdmin2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_TokenServiceURL (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall put_RequiresTokens (
+        /*[in]*/ VARIANT_BOOL _arg1 ) = 0;
+};
+
+enum __declspec(uuid("ac58717f-69d3-4c6a-bb2f-e331c9f6ff37"))
+esriServerConnectionType
+{
+    esriServerConnectionTypeRoundRobin = 1,
+    esriServerConnectionTypeFailOver = 2
+};
+
+struct __declspec(uuid("0710484b-62ec-42c4-8a3d-3186e2d8da36"))
+IIdentity : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_UserName (
+        /*[in]*/ BSTR UserName ) = 0;
+      virtual HRESULT __stdcall get_UserName (
+        /*[out,retval]*/ BSTR * UserName ) = 0;
+      virtual HRESULT __stdcall put_DomainName (
+        /*[in]*/ BSTR DomainName ) = 0;
+      virtual HRESULT __stdcall get_DomainName (
+        /*[out,retval]*/ BSTR * DomainName ) = 0;
+      virtual HRESULT __stdcall put_Password (
+        /*[in]*/ BSTR Password ) = 0;
+      virtual HRESULT __stdcall get_Password (
+        /*[out,retval]*/ BSTR * Password ) = 0;
+      virtual HRESULT __stdcall put_EncodedString (
+        /*[in]*/ BSTR Password ) = 0;
+      virtual HRESULT __stdcall get_EncodedString (
+        /*[out,retval]*/ BSTR * Password ) = 0;
+};
+
+struct __declspec(uuid("fa70a9e1-a5fc-448e-ae33-6c78b1014966"))
+IServerInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_ServerName (
+        /*[in]*/ BSTR ServerName ) = 0;
+      virtual HRESULT __stdcall get_ServerName (
+        /*[out,retval]*/ BSTR * ServerName ) = 0;
+      virtual HRESULT __stdcall put_Identity (
+        /*[in]*/ struct IIdentity * ppIdentity ) = 0;
+      virtual HRESULT __stdcall get_Identity (
+        /*[out,retval]*/ struct IIdentity * * ppIdentity ) = 0;
+};
+
+struct __declspec(uuid("23c5169b-11c2-4750-836e-2ebbdc9e7008"))
+IServerInfos : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_Element (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IServerInfo * * serverInfo ) = 0;
+      virtual HRESULT __stdcall Remove (
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall RemoveAll ( ) = 0;
+      virtual HRESULT __stdcall Add (
+        /*[in]*/ struct IServerInfo * serverInfo ) = 0;
+      virtual HRESULT __stdcall Insert (
+        /*[in]*/ long index,
+        /*[in]*/ struct IServerInfo * serverInfo ) = 0;
+};
+
+struct __declspec(uuid("d9c910b6-4c6e-475d-bae6-5eacd1c4e9c2"))
+IGISServer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Alias (
+        /*[in]*/ BSTR Alias ) = 0;
+      virtual HRESULT __stdcall get_Alias (
+        /*[out,retval]*/ BSTR * Alias ) = 0;
+      virtual HRESULT __stdcall put_ServerInfos (
+        /*[in]*/ struct IServerInfos * ServerInfos ) = 0;
+      virtual HRESULT __stdcall get_ServerInfos (
+        /*[out,retval]*/ struct IServerInfos * * ServerInfos ) = 0;
+      virtual HRESULT __stdcall put_ConnectionType (
+        /*[in]*/ enum esriServerConnectionType ServerInfos ) = 0;
+      virtual HRESULT __stdcall get_ConnectionType (
+        /*[out,retval]*/ enum esriServerConnectionType * ServerInfos ) = 0;
+      virtual HRESULT __stdcall put_MaxRequestLength (
+        /*[in]*/ long MaxRequestLength ) = 0;
+      virtual HRESULT __stdcall get_MaxRequestLength (
+        /*[out,retval]*/ long * MaxRequestLength ) = 0;
+      virtual HRESULT __stdcall put_MessageFormat (
+        /*[in]*/ enum esriServiceCatalogMessageFormat msgFormat ) = 0;
+      virtual HRESULT __stdcall get_MessageFormat (
+        /*[out,retval]*/ enum esriServiceCatalogMessageFormat * msgFormat ) = 0;
+};
+
+struct __declspec(uuid("20dae966-d7da-41e9-9334-d9d8ab7ab83e"))
+IGISServers : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_Element (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IGISServer * * Server ) = 0;
+      virtual HRESULT __stdcall Remove (
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall RemoveAll ( ) = 0;
+      virtual HRESULT __stdcall Add (
+        /*[in]*/ struct IGISServer * Server ) = 0;
+      virtual HRESULT __stdcall Insert (
+        /*[in]*/ long index,
+        /*[in]*/ struct IGISServer * Server ) = 0;
+};
+
+struct __declspec(uuid("c260325f-c891-4dff-89c1-58aeacc7e361"))
+IManagerWebService : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_GISServers (
+        /*[out,retval]*/ struct IGISServers * * servers ) = 0;
+      virtual HRESULT __stdcall AddGISServer (
+        /*[in]*/ struct IGISServer * Server ) = 0;
+      virtual HRESULT __stdcall DeleteGISServer (
+        /*[in]*/ BSTR aliasName ) = 0;
+      virtual HRESULT __stdcall RefreshServiceInfo ( ) = 0;
+};
+
+struct __declspec(uuid("ac58db7e-196f-4206-b4c6-2ce6aefd6ed3"))
+ServiceCatalog;
+    // [ default ] interface IUnknown
+    // interface IServiceCatalog
+    // interface IServiceCatalog2
+    // interface IServiceCatalogAdmin
+    // interface IServiceCatalogAdmin2
+    // interface IRequestHandler
+
+enum __declspec(uuid("b24a46ca-ecf5-4f08-8dc9-81c27f567212"))
+esriServerInstallType
+{
+    esriServerInstallTypeJava = 0,
+    esriServerInstallTypeDotnet = 1,
+    esriServerInstallTypeUnknown = 2
+};
+
+struct __declspec(uuid("89816982-dedc-4a5a-922a-d2fbbcf53877"))
+IWPISilentConfig : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Configure (
+        /*[in]*/ BSTR WebServerName,
+        /*[in]*/ BSTR instanceName,
+        /*[in]*/ BSTR computerName,
+        /*[in]*/ BSTR UserName,
+        /*[in]*/ BSTR userPass,
+        /*[in]*/ BSTR DomainName,
+        /*[in]*/ BSTR port,
+        /*[out,retval]*/ VARIANT_BOOL * success ) = 0;
+};
+
+struct __declspec(uuid("d4b031ba-ad7d-438b-811c-a362f8b2d818"))
+IServerObjectFactoryX : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall AddAddInFolder (
+        /*[in]*/ BSTR addInFolderPath ) = 0;
+      virtual HRESULT __stdcall RemoveAddInFolder (
+        /*[in]*/ BSTR addInFolderPath ) = 0;
+      virtual HRESULT __stdcall SetProductCode (
+        /*[in]*/ int productCode ) = 0;
+      virtual HRESULT __stdcall SetJobRegistryPath (
+        /*[in]*/ BSTR jobRegPath ) = 0;
+      virtual HRESULT __stdcall GetJobRegistryPath (
+        /*[out,retval]*/ BSTR * pJobRegPath ) = 0;
+      virtual HRESULT __stdcall SetLogDirectoryPath (
+        /*[in]*/ BSTR logDirPath ) = 0;
+      virtual HRESULT __stdcall GetLogDirectoryPath (
+        /*[out,retval]*/ BSTR * pLogDirPath ) = 0;
+      virtual HRESULT __stdcall SetLogLevel (
+        /*[in]*/ BSTR LogLevel ) = 0;
+      virtual HRESULT __stdcall GetLogLevel (
+        /*[out,retval]*/ BSTR * pLogLevel ) = 0;
+      virtual HRESULT __stdcall SetMaxLogFileSize (
+        /*[in]*/ long maxLogFileSize ) = 0;
+      virtual HRESULT __stdcall GetMaxLogFileSize (
+        /*[out,retval]*/ long * pMaxLogFileSize ) = 0;
+      virtual HRESULT __stdcall CreateServerObject (
+        /*[in]*/ BSTR CLSID,
+        /*[in]*/ BSTR cfgName,
+        /*[in]*/ BSTR cfgType,
+        /*[in]*/ struct IPropertySet * ipProps,
+        /*[out,retval]*/ struct IServerObject * * ppSO ) = 0;
+      virtual HRESULT __stdcall CreateConfigurationFactory (
+        /*[in]*/ BSTR cfgName,
+        /*[in]*/ BSTR cfgType,
+        /*[in]*/ BSTR CLSID,
+        /*[out,retval]*/ struct IConfigurationFactory * * ppCF ) = 0;
+      virtual HRESULT __stdcall CreateObject (
+        /*[in]*/ BSTR CLSID,
+        /*[out,retval]*/ IUnknown * * ppUnk ) = 0;
+      virtual HRESULT __stdcall Shutdown ( ) = 0;
+      virtual HRESULT __stdcall ShutdownEx (
+        /*[in]*/ struct IServerObject * ipSO ) = 0;
+      virtual HRESULT __stdcall SetProcessId (
+        /*[in]*/ unsigned long ProcessId ) = 0;
+};
+
+struct __declspec(uuid("9fc0c623-186b-4a67-a4c9-5dec2fb8377d"))
+IServerEnvironmentXHelper : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ChangeLogLevel (
+        /*[in]*/ BSTR newLogLevel ) = 0;
+      virtual HRESULT __stdcall ResetJobID ( ) = 0;
+      virtual HRESULT __stdcall SetJobID (
+        /*[in]*/ BSTR jobID ) = 0;
+      virtual HRESULT __stdcall AddServerDirectory (
+        /*[in]*/ BSTR dirPath,
+        /*[in]*/ BSTR URL,
+        /*[in]*/ BSTR Description,
+        /*[in]*/ enum esriServerDirectoryCleaningMode CleaningMode,
+        /*[in]*/ long MaxFileAge,
+        /*[in]*/ enum esriServerDirectoryType Type ) = 0;
+      virtual HRESULT __stdcall RemoveServerDirectory (
+        /*[in]*/ BSTR dirPath ) = 0;
+      virtual HRESULT __stdcall SetUserInfo (
+        /*[in]*/ BSTR UserInfo ) = 0;
+      virtual HRESULT __stdcall SetEnvProperties (
+        /*[in]*/ struct IPropertySet * ipProps ) = 0;
+      virtual HRESULT __stdcall AddEnvProperty (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR value ) = 0;
+      virtual HRESULT __stdcall RemoveEnvProperty (
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall ChangeLogMachineName (
+        /*[in]*/ BSTR newMachineName ) = 0;
+      virtual HRESULT __stdcall ChangeLogDirectory (
+        /*[in]*/ BSTR newLogDirectory ) = 0;
+      virtual HRESULT __stdcall ChangeMaxLogFileSize (
+        /*[in]*/ long maxLogFileSize ) = 0;
+      virtual HRESULT __stdcall EnableCrashDumpGeneration (
+        /*[in]*/ VARIANT_BOOL bEnable ) = 0;
+};
+
+struct __declspec(uuid("e5a9a155-937e-4025-8ce6-42690d964c42"))
+IGPServerHelper : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Init (
+        /*[in]*/ BSTR jobRegistryPath,
+        /*[in]*/ BSTR jobsDirectoryPath ) = 0;
+      virtual HRESULT __stdcall WriteStringJobResult (
+        /*[in]*/ BSTR jobID,
+        /*[in]*/ BSTR serviceName,
+        /*[in]*/ BSTR serviceType,
+        /*[in]*/ BSTR result ) = 0;
+      virtual HRESULT __stdcall WriteBinaryJobResult (
+        /*[in]*/ BSTR jobID,
+        /*[in]*/ BSTR serviceName,
+        /*[in]*/ BSTR serviceType,
+        /*[in]*/ SAFEARRAY * result ) = 0;
+      virtual HRESULT __stdcall WriteRESTJobResult (
+        /*[in]*/ BSTR jobID,
+        /*[in]*/ BSTR serviceName,
+        /*[in]*/ BSTR serviceType,
+        /*[in]*/ BSTR responseProperties,
+        /*[in]*/ SAFEARRAY * result ) = 0;
+      virtual HRESULT __stdcall GetStringRequestMessageType (
+        /*[in]*/ BSTR request,
+        /*[out,retval]*/ BSTR * pType ) = 0;
+      virtual HRESULT __stdcall GetBinaryRequestMessageType (
+        /*[in]*/ SAFEARRAY * request,
+        /*[out,retval]*/ BSTR * pType ) = 0;
+      virtual HRESULT __stdcall GetJobIDFromStringResponse (
+        /*[in]*/ BSTR response,
+        /*[out,retval]*/ BSTR * pJobID ) = 0;
+      virtual HRESULT __stdcall GetJobIDFromBinaryResponse (
+        /*[in]*/ SAFEARRAY * response,
+        /*[out,retval]*/ BSTR * pJobID ) = 0;
+      virtual HRESULT __stdcall GetStringJobDefinition (
+        /*[in]*/ BSTR jobID,
+        /*[in]*/ BSTR serviceName,
+        /*[in]*/ BSTR serviceType,
+        /*[out,retval]*/ BSTR * pJobDefinition ) = 0;
+      virtual HRESULT __stdcall GetBinaryJobDefinition (
+        /*[in]*/ BSTR jobID,
+        /*[in]*/ BSTR serviceName,
+        /*[in]*/ BSTR serviceType,
+        /*[out,retval]*/ SAFEARRAY * * ppJobDefinition ) = 0;
+      virtual HRESULT __stdcall GetRESTJobDefinition (
+        /*[in]*/ BSTR jobID,
+        /*[in]*/ BSTR serviceName,
+        /*[in]*/ BSTR serviceType,
+        /*[out]*/ BSTR * resourceName,
+        /*[out]*/ BSTR * operationName,
+        /*[out]*/ BSTR * operationInput,
+        /*[out]*/ BSTR * outputFormat,
+        /*[out]*/ BSTR * requestProperties ) = 0;
+      virtual HRESULT __stdcall WriteJobStatusAndMessage (
+        /*[in]*/ BSTR jobID,
+        /*[in]*/ BSTR serviceName,
+        /*[in]*/ BSTR serviceType,
+        /*[in]*/ enum esriJobStatus Status,
+        /*[in]*/ BSTR message ) = 0;
+      virtual HRESULT __stdcall GetJobStatus (
+        /*[in]*/ BSTR jobID,
+        /*[in]*/ BSTR serviceName,
+        /*[in]*/ BSTR serviceType,
+        /*[out,retval]*/ enum esriJobStatus * pStatus ) = 0;
+};
+
+struct __declspec(uuid("2b8a2b7f-01bf-4951-8aa7-5161ad46ef35"))
+IUser : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SetUsername (
+        /*[in]*/ BSTR UserName ) = 0;
+      virtual HRESULT __stdcall GetUsername (
+        /*[out,retval]*/ BSTR * UserName ) = 0;
+      virtual HRESULT __stdcall SetPassword (
+        /*[in]*/ BSTR Password ) = 0;
+      virtual HRESULT __stdcall GetPassword (
+        /*[out,retval]*/ BSTR * Password ) = 0;
+      virtual HRESULT __stdcall SetDescription (
+        /*[in]*/ BSTR Description ) = 0;
+      virtual HRESULT __stdcall GetDescription (
+        /*[out,retval]*/ BSTR * Description ) = 0;
+      virtual HRESULT __stdcall SetEmail (
+        /*[in]*/ BSTR email ) = 0;
+      virtual HRESULT __stdcall GetEmail (
+        /*[out,retval]*/ BSTR * email ) = 0;
+      virtual HRESULT __stdcall SetFullname (
+        /*[in]*/ BSTR fullname ) = 0;
+      virtual HRESULT __stdcall GetFullname (
+        /*[out,retval]*/ BSTR * fullname ) = 0;
+      virtual HRESULT __stdcall SetSecretQuestion (
+        /*[in]*/ BSTR secretQuestion ) = 0;
+      virtual HRESULT __stdcall GetSecretQuestion (
+        /*[out,retval]*/ BSTR * secretQuestion ) = 0;
+      virtual HRESULT __stdcall SetSecretAnswer (
+        /*[in]*/ BSTR secretAnswer ) = 0;
+      virtual HRESULT __stdcall GetSecretAnswer (
+        /*[out,retval]*/ BSTR * secretAnswer ) = 0;
+};
+
+struct __declspec(uuid("ca90af27-e384-4e25-9f75-0b33f8f6148b"))
+IRole : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SetRolename (
+        /*[in]*/ BSTR rolename ) = 0;
+      virtual HRESULT __stdcall GetRolename (
+        /*[out,retval]*/ BSTR * rolename ) = 0;
+      virtual HRESULT __stdcall SetDescription (
+        /*[in]*/ BSTR Description ) = 0;
+      virtual HRESULT __stdcall GetDescription (
+        /*[out,retval]*/ BSTR * Description ) = 0;
+};
+
+struct __declspec(uuid("85d81926-f224-480f-a0aa-576d87ee0363"))
+IUserStore : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall TestConnection (
+        /*[in]*/ struct IPropertySet * pProps ) = 0;
+      virtual HRESULT __stdcall Initialize (
+        /*[in]*/ struct IPropertySet * pProps ) = 0;
+      virtual HRESULT __stdcall IsReadOnly (
+        /*[out,retval]*/ VARIANT_BOOL * IsReadOnly ) = 0;
+      virtual HRESULT __stdcall AddUser (
+        /*[in]*/ struct IUser * pUser ) = 0;
+      virtual HRESULT __stdcall UpdateUser (
+        /*[in]*/ struct IUser * pUser ) = 0;
+      virtual HRESULT __stdcall DeleteUser (
+        /*[in]*/ BSTR UserName ) = 0;
+      virtual HRESULT __stdcall GetUser (
+        /*[in]*/ BSTR UserName,
+        /*[out,retval]*/ struct IUser * * pUser ) = 0;
+      virtual HRESULT __stdcall GetTotalUsers (
+        /*[out,retval]*/ long * totalUsers ) = 0;
+      virtual HRESULT __stdcall GetAllUsers (
+        /*[in]*/ BSTR filter,
+        /*[in]*/ long maxCount,
+        /*[out]*/ SAFEARRAY * * users,
+        /*[out,retval]*/ VARIANT_BOOL * hasMore ) = 0;
+      virtual HRESULT __stdcall GetAllUsersPaged (
+        /*[in]*/ long StartIndex,
+        /*[in]*/ long pageSize,
+        /*[out]*/ SAFEARRAY * * users,
+        /*[out,retval]*/ VARIANT_BOOL * hasMore ) = 0;
+      virtual HRESULT __stdcall ValidateUser (
+        /*[in]*/ BSTR UserName,
+        /*[in]*/ BSTR Password,
+        /*[out,retval]*/ VARIANT_BOOL * isValid ) = 0;
+};
+
+struct __declspec(uuid("e7ad5e02-e595-4cb9-9b06-ec4f09122a3e"))
+IDataStoreValidator : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ValidateAccess (
+        /*[in]*/ BSTR dataStore,
+        /*[in]*/ BSTR dataStoreType,
+        /*[out,retval]*/ VARIANT_BOOL * isValid ) = 0;
+};
+
+struct __declspec(uuid("5ac20c1a-cf77-44c7-9eae-7bcd859e5ab8"))
+IRoleStore : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall TestConnection (
+        /*[in]*/ struct IPropertySet * pProps ) = 0;
+      virtual HRESULT __stdcall Initialize (
+        /*[in]*/ struct IPropertySet * pProps ) = 0;
+      virtual HRESULT __stdcall IsReadOnly (
+        /*[out,retval]*/ VARIANT_BOOL * IsReadOnly ) = 0;
+      virtual HRESULT __stdcall AddRole (
+        /*[in]*/ struct IRole * pRole ) = 0;
+      virtual HRESULT __stdcall UpdateRole (
+        /*[in]*/ struct IRole * pRole ) = 0;
+      virtual HRESULT __stdcall DeleteRole (
+        /*[in]*/ BSTR rolename ) = 0;
+      virtual HRESULT __stdcall GetRole (
+        /*[in]*/ BSTR rolename,
+        /*[out,retval]*/ struct IRole * * pRole ) = 0;
+      virtual HRESULT __stdcall GetTotalRoles (
+        /*[out,retval]*/ long * totalRoles ) = 0;
+      virtual HRESULT __stdcall GetAllRoles (
+        /*[in]*/ BSTR filter,
+        /*[in]*/ long maxCount,
+        /*[out]*/ SAFEARRAY * * roles,
+        /*[out,retval]*/ VARIANT_BOOL * hasMore ) = 0;
+      virtual HRESULT __stdcall GetAllRolesPaged (
+        /*[in]*/ long StartIndex,
+        /*[in]*/ long pageSize,
+        /*[out]*/ SAFEARRAY * * roles,
+        /*[out,retval]*/ VARIANT_BOOL * hasMore ) = 0;
+      virtual HRESULT __stdcall AssignRoles (
+        /*[in]*/ BSTR UserName,
+        /*[in]*/ SAFEARRAY * * rolenames ) = 0;
+      virtual HRESULT __stdcall RemoveRoles (
+        /*[in]*/ BSTR UserName,
+        /*[in]*/ SAFEARRAY * * rolenames ) = 0;
+      virtual HRESULT __stdcall GetRolesForUser (
+        /*[in]*/ BSTR UserName,
+        /*[in]*/ BSTR filter,
+        /*[in]*/ long maxCount,
+        /*[out]*/ SAFEARRAY * * rolenames,
+        /*[out,retval]*/ VARIANT_BOOL * hasMore ) = 0;
+      virtual HRESULT __stdcall GetUsersWithinRole (
+        /*[in]*/ BSTR rolename,
+        /*[in]*/ BSTR filter,
+        /*[in]*/ long maxCount,
+        /*[out]*/ SAFEARRAY * * usernames,
+        /*[out,retval]*/ VARIANT_BOOL * hasMore ) = 0;
+      virtual HRESULT __stdcall AddUsersToRole (
+        /*[in]*/ BSTR rolename,
+        /*[in]*/ SAFEARRAY * * usernames ) = 0;
+      virtual HRESULT __stdcall RemoveUsersFromRole (
+        /*[in]*/ BSTR rolename,
+        /*[in]*/ SAFEARRAY * * usernames ) = 0;
+};
+
+struct __declspec(uuid("7baae10c-1933-45be-a723-e71c9d6b6941"))
+IServerHelper : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetServerObjectConfigurationStatus (
+        /*[in]*/ BSTR cfgName,
+        /*[in]*/ BSTR cfgType,
+        /*[out,retval]*/ struct IServerObjectConfigurationStatus * * ppCfgStatus ) = 0;
+};
+
+struct __declspec(uuid("14e85554-5eee-410e-ad86-ffece038f1a3"))
+ServerObjectFactoryX;
+    // [ default ] interface IUnknown
+    // interface ISupportErrorInfo
+    // interface IServerObjectFactoryX
+
+struct __declspec(uuid("c779a894-bbfa-4cce-8906-ed950348bebb"))
+ServerEnvironmentXHelper;
+    // [ default ] interface IUnknown
+    // interface ISupportErrorInfo
+    // interface IServerEnvironmentXHelper
+
+struct __declspec(uuid("31a080fc-e398-415e-9f12-550127217487"))
+GPServerHelper;
+    // [ default ] interface IUnknown
+    // interface ISupportErrorInfo
+    // interface IGPServerHelper
+
+struct __declspec(uuid("a6a0c990-8eae-4ee5-8a29-10a897661b8f"))
+Role;
+    // [ default ] interface IUnknown
+    // interface ISupportErrorInfo
+    // interface IRole
+
+struct __declspec(uuid("6b05fd91-c29d-4317-9866-e34b1ee699ed"))
+User;
+    // [ default ] interface IUnknown
+    // interface ISupportErrorInfo
+    // interface IUser
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_esriServer =
+    {0x18f2fc71,0x6b30,0x45b9,{0xb1,0x01,0x03,0x7a,0x8b,0x86,0x8b,0x66}};
+extern "C" const GUID __declspec(selectany) IID_IServerObject =
+    {0x0ad6ab40,0x9d6a,0x4bf8,{0x8b,0x86,0xeb,0x89,0x40,0x6d,0xfc,0x6c}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectFactory =
+    {0x1fc365cc,0xe2e8,0x4f83,{0xaf,0xc9,0x83,0x4b,0x33,0x14,0x8e,0x29}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectHelper =
+    {0xf241e441,0xcc73,0x40e2,{0xba,0xf0,0xb3,0x0e,0xbe,0x0e,0xf8,0xdc}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectHelper2 =
+    {0x6ee30361,0xf7c6,0x4635,{0x88,0x2e,0xfa,0xbc,0x7a,0x77,0x2b,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectExtension =
+    {0xde9a3831,0x3861,0x43da,{0xa3,0x5f,0x2e,0x82,0x90,0x0d,0xb7,0x4e}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectExtensionManager =
+    {0x25d8b9dd,0xc7e8,0x4da4,{0xbf,0x4b,0x08,0xa6,0x70,0x87,0xce,0xea}};
+extern "C" const GUID __declspec(selectany) IID_IServerContext =
+    {0xa87fdd99,0x6112,0x410c,{0xb7,0x5e,0xfe,0xff,0xf5,0xea,0xce,0x35}};
+extern "C" const GUID __declspec(selectany) CLSID_ServerObjectFactory =
+    {0x6c20ca3d,0xf8c1,0x44ee,{0xbf,0x7f,0x5b,0x86,0x6d,0x86,0x48,0x3f}};
+extern "C" const GUID __declspec(selectany) CLSID_ConfigFactory =
+    {0x4750135f,0xafbf,0x4da5,{0xa1,0x28,0x2e,0xb9,0x39,0xe8,0x7b,0xd7}};
+extern "C" const GUID __declspec(selectany) IID_IServerDirectory =
+    {0xe7402a4c,0x0962,0x4e2e,{0xba,0x8f,0xe9,0x0b,0x6d,0xab,0xfc,0xb2}};
+extern "C" const GUID __declspec(selectany) IID_IEnumServerDirectory =
+    {0x4250c367,0x25dc,0x426c,{0xae,0x90,0x81,0x7a,0x8e,0x89,0x2d,0xb5}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectConfiguration =
+    {0x832dab4c,0xa03d,0x429e,{0x8c,0x14,0x40,0x1e,0x3f,0x80,0x72,0x84}};
+extern "C" const GUID __declspec(selectany) IID_IEnumServerObjectConfiguration =
+    {0x815fed35,0xec76,0x432c,{0x9f,0xb0,0x9e,0xad,0x76,0x3d,0x2f,0x50}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectConfigurationStatus =
+    {0x096b178f,0x2576,0x4aef,{0x9c,0xfa,0x81,0x07,0xd5,0x29,0xbb,0xff}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectType =
+    {0x9ad7beca,0xfbc3,0x494a,{0xbe,0xc6,0x79,0x0f,0xf0,0xe6,0x94,0x6e}};
+extern "C" const GUID __declspec(selectany) IID_IEnumServerObjectType =
+    {0xe7fe5eab,0x11ec,0x49aa,{0x80,0xf4,0x34,0xaa,0x20,0x09,0x13,0xb0}};
+extern "C" const GUID __declspec(selectany) IID_IServerMachine =
+    {0x2dbbd5d1,0x193f,0x4cb0,{0x89,0x3f,0x98,0xdf,0xff,0xda,0xdf,0x1f}};
+extern "C" const GUID __declspec(selectany) IID_IEnumServerMachine =
+    {0x0f89530a,0x8ba4,0x4ab6,{0x9b,0x4a,0x78,0x54,0x1e,0xe8,0x85,0x25}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectAdmin =
+    {0x01f6db39,0x6458,0x4c12,{0xbc,0xc7,0x30,0xf1,0x02,0x10,0x75,0xe2}};
+extern "C" const GUID __declspec(selectany) IID_IConfigurationFactory =
+    {0x94e42963,0x1a3b,0x4413,{0x84,0x7e,0xaf,0xa3,0x7e,0xe2,0x4a,0x5a}};
+extern "C" const GUID __declspec(selectany) IID_IServerLogQuery =
+    {0x97d02ac6,0xaabb,0x4030,{0x85,0xf1,0x72,0x80,0xf2,0x87,0x85,0xde}};
+extern "C" const GUID __declspec(selectany) IID_IServerLog =
+    {0x44dc928c,0x0350,0x4bdb,{0x99,0x70,0x4d,0x5c,0xa6,0x8b,0x41,0x17}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectConfigurationInfo =
+    {0x6c7eec75,0x0d7d,0x4ec1,{0x8b,0x58,0x4d,0x88,0xf1,0x1f,0xd4,0xfa}};
+extern "C" const GUID __declspec(selectany) IID_IEnumServerObjectConfigurationInfo =
+    {0xb810b79f,0x1777,0x4555,{0x88,0x6d,0xdc,0x62,0x97,0xfb,0x28,0x91}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectTypeInfo =
+    {0x1ef2395d,0x81eb,0x41fd,{0xaa,0x34,0x33,0xe9,0xfe,0x2d,0x89,0x68}};
+extern "C" const GUID __declspec(selectany) IID_IEnumServerObjectTypeInfo =
+    {0xe9407db1,0x0c60,0x47ef,{0xa2,0x0c,0x7e,0xa3,0x7e,0xf0,0xae,0xc5}};
+extern "C" const GUID __declspec(selectany) IID_IServerDirectoryInfo =
+    {0xcf180145,0xbcfe,0x4d6f,{0xac,0x53,0x3b,0x9e,0x12,0x7a,0xf8,0x40}};
+extern "C" const GUID __declspec(selectany) IID_IEnumServerDirectoryInfo =
+    {0xe3a6f4a0,0x28ca,0x45b8,{0x86,0xb3,0x36,0x88,0x8f,0xb5,0x46,0x6b}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectManager =
+    {0xcf25ea7a,0xb5bc,0x47aa,{0x94,0xb2,0x4c,0xd5,0x98,0xb0,0xc4,0x28}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectExtensionTypeInfo =
+    {0xb5d6fda3,0xb063,0x4174,{0x9e,0x70,0x27,0x64,0xd5,0x5b,0xcc,0xb4}};
+extern "C" const GUID __declspec(selectany) IID_IEnumServerObjectExtensionTypeInfo =
+    {0x975d6f9a,0x0849,0x4de7,{0xbd,0x0d,0x96,0x15,0x92,0x5a,0x09,0x8d}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectManager2 =
+    {0x2e3707f3,0xdae3,0x45ba,{0xac,0x15,0x47,0xef,0x7e,0xc6,0x99,0x46}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectManager3 =
+    {0x0f25131d,0x5521,0x4e06,{0x9a,0x7f,0xbb,0x24,0x6f,0x25,0x30,0x9c}};
+extern "C" const GUID __declspec(selectany) IID_IServiceDescription =
+    {0x99ea4f91,0x10a1,0x4901,{0xa6,0x95,0x86,0xe3,0x10,0x90,0xf3,0xc1}};
+extern "C" const GUID __declspec(selectany) IID_IServiceDescriptionArray =
+    {0xeef9bc6f,0x4560,0x43ab,{0x9d,0x8c,0xf8,0xea,0xdf,0xad,0x5c,0x70}};
+extern "C" const GUID __declspec(selectany) IID_IServiceCatalog =
+    {0x89d60975,0xfdcf,0x4cea,{0xb9,0x81,0x73,0xfe,0x40,0x6a,0x2d,0x2b}};
+extern "C" const GUID __declspec(selectany) IID_IServiceCatalog2 =
+    {0x46c52546,0x7c26,0x477f,{0xbd,0xc1,0xb1,0xc2,0x54,0x62,0x5f,0x81}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectManager4 =
+    {0xb87e5523,0xe612,0x4d71,{0xa3,0x7f,0x89,0xbe,0x65,0xd7,0x83,0xfd}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectExtensionType =
+    {0x47cb8511,0x3aa6,0x4da6,{0x90,0x95,0xb6,0xf7,0x02,0x37,0xac,0xee}};
+extern "C" const GUID __declspec(selectany) IID_IEnumServerObjectExtensionType =
+    {0x3a2ed9b4,0xba20,0x47e8,{0x80,0x52,0x2e,0x00,0xa8,0xe8,0x68,0x69}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectAdmin2 =
+    {0x4bc97a90,0x0b03,0x478c,{0x8e,0xb8,0x2b,0xa6,0x47,0x29,0x7b,0xf7}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectAdmin3 =
+    {0xe5079624,0xe7c9,0x4b12,{0x9d,0xf7,0x2b,0xc1,0xc3,0x41,0xa2,0xb7}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectAdmin4 =
+    {0x6fa1268d,0x0dd4,0x46b6,{0xb8,0x90,0x02,0xe2,0x0f,0xc6,0x34,0x1f}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectAdmin5 =
+    {0xa7b0b4b3,0x1001,0x49ad,{0xad,0x44,0xaa,0x64,0x41,0xd7,0x30,0x0a}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectAdmin6 =
+    {0xdc0e02cd,0xe386,0x4324,{0xb3,0x1f,0x56,0xb2,0xc5,0xd2,0x23,0x63}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectAdmin7 =
+    {0xc6cfc4df,0x7928,0x4ec2,{0x9f,0x34,0x87,0xee,0xd2,0xba,0xc0,0xa3}};
+extern "C" const GUID __declspec(selectany) IID_ISOMController =
+    {0xe869d31e,0xf218,0x4cf7,{0xbd,0x51,0xab,0x54,0x24,0xfb,0x7f,0xb8}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectType2 =
+    {0x42472792,0x5345,0x4b93,{0xb1,0x32,0x39,0x77,0xc2,0x4b,0xac,0xb4}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectType3 =
+    {0xc54dd682,0x295a,0x4f38,{0x93,0xe3,0x7d,0xa2,0x0d,0xca,0x88,0xc8}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectType4 =
+    {0x6640b74d,0x69ce,0x4d7f,{0x82,0x22,0xad,0x46,0x93,0x6c,0x17,0x99}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectTypeInfo2 =
+    {0x9ee9aa24,0xdfcb,0x4de5,{0x90,0x91,0xfc,0xab,0xac,0x13,0xa7,0xe1}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectTypeInfo3 =
+    {0xac43c070,0x1627,0x4c6d,{0x95,0x32,0xbc,0x80,0xcf,0xd8,0x2c,0x71}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectExtensionType2 =
+    {0x552accd0,0xd000,0x49a7,{0xbe,0xef,0xbf,0x98,0x49,0xb2,0x21,0x41}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectExtensionTypeInfo2 =
+    {0x94d56c57,0x00df,0x4336,{0x87,0x07,0xcf,0x41,0x97,0xa8,0x90,0xef}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectConfiguration2 =
+    {0x2d81b707,0x95b1,0x4efa,{0xa0,0xfa,0x5a,0xb4,0x9b,0x05,0x1d,0x0b}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectConfiguration3 =
+    {0x35bcf76e,0x686f,0x4cb2,{0xb0,0xb8,0xf6,0x15,0x75,0x4e,0x79,0xd3}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectConfiguration4 =
+    {0xac7687e9,0xa00e,0x4281,{0xab,0xaa,0xb8,0x89,0xa5,0xd7,0xb1,0xa6}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectConfiguration5 =
+    {0x6ca0fe13,0x3acf,0x49e5,{0x96,0x32,0x23,0x81,0xa9,0x6c,0xa0,0xae}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectConfigurationInfo2 =
+    {0x765ee3db,0x2a65,0x41ed,{0x96,0x19,0x48,0x2b,0xbc,0x48,0x19,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_IServerDirectory2 =
+    {0xf284d482,0xf71b,0x4542,{0x9c,0x93,0x1d,0xc4,0xb7,0xe7,0x98,0x81}};
+extern "C" const GUID __declspec(selectany) IID_IServerDirectory3 =
+    {0x2f2823a9,0x97d5,0x4287,{0xbc,0xec,0x0d,0x98,0x02,0xa4,0xb1,0x15}};
+extern "C" const GUID __declspec(selectany) IID_IServerDirectoryInfo2 =
+    {0x2b0cc34c,0xe861,0x46ef,{0x8b,0xf0,0x30,0x8a,0xb6,0x11,0x3c,0xe8}};
+extern "C" const GUID __declspec(selectany) IID_IServerMachine2 =
+    {0x7cdddb35,0x6819,0x41f6,{0xb2,0xc3,0x81,0x97,0xf9,0x5f,0x65,0xb0}};
+extern "C" const GUID __declspec(selectany) IID_IServerMachine3 =
+    {0xc0445f7e,0x124c,0x487d,{0xa3,0x64,0x65,0x06,0xe3,0x57,0x48,0x65}};
+extern "C" const GUID __declspec(selectany) IID_IServerMachineStatus =
+    {0x67e836a4,0x01f1,0x450c,{0x97,0xbe,0x21,0xab,0x9a,0x3f,0x3c,0x11}};
+extern "C" const GUID __declspec(selectany) IID_IServerMachineInfo =
+    {0x76c3bba1,0xaacf,0x40a1,{0xbd,0xee,0xb3,0xfa,0x28,0x84,0x09,0x79}};
+extern "C" const GUID __declspec(selectany) IID_IServerStatistics =
+    {0xa0500a17,0xb797,0x41f3,{0x94,0xeb,0x66,0xa3,0x2f,0xcf,0x8d,0x80}};
+extern "C" const GUID __declspec(selectany) IID_IServerStatus =
+    {0xde94c160,0x5101,0x49a4,{0xba,0xb4,0x68,0x93,0x74,0x5f,0x01,0xce}};
+extern "C" const GUID __declspec(selectany) IID_IServerErrorReports =
+    {0xa0c0005d,0xc630,0x4a08,{0x98,0x05,0x5b,0x3e,0x4c,0x44,0x6d,0xbb}};
+extern "C" const GUID __declspec(selectany) IID_IPermissionsAdmin =
+    {0x1d869ab1,0xdb39,0x4cb8,{0x9e,0x95,0xa6,0x4a,0xc2,0xbe,0xb0,0x29}};
+extern "C" const GUID __declspec(selectany) IID_IPermissionsAdmin2 =
+    {0x8f6ce835,0x8644,0x420d,{0xa2,0xa3,0x2a,0x84,0xe2,0xc2,0x9b,0xfd}};
+extern "C" const GUID __declspec(selectany) IID_IPermissionsManager =
+    {0x05d95968,0x651a,0x4c97,{0xb6,0x3e,0xd2,0x6f,0x2b,0xb0,0xe9,0x7b}};
+extern "C" const GUID __declspec(selectany) IID_IServerCLRHost =
+    {0x562704ee,0x3a20,0x4c6d,{0xa5,0x01,0x84,0x68,0xa1,0xdb,0xc5,0x5a}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectExtensionType3 =
+    {0xbc0eecab,0x48dd,0x439e,{0x8e,0xca,0xf2,0xc4,0xe3,0xf3,0x7b,0xeb}};
+extern "C" const GUID __declspec(selectany) IID_IServerMachineEnvironment =
+    {0xc1a7fbab,0x48d4,0x49da,{0x9a,0xac,0xb2,0x8d,0x3b,0x98,0x2a,0x9d}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectAdmin8 =
+    {0x22930007,0x4a01,0x479f,{0x8c,0xb6,0x33,0xc8,0xac,0x33,0xcc,0xf4}};
+extern "C" const GUID __declspec(selectany) IID_IServerLog2 =
+    {0xb7729ab3,0x6fd1,0x402d,{0x91,0x62,0xae,0x21,0xb9,0xec,0x54,0x5e}};
+extern "C" const GUID __declspec(selectany) IID_IServerTimeRange =
+    {0x37786a30,0xfec4,0x4ea4,{0x95,0x3e,0xda,0xc6,0xb6,0x9c,0x71,0x6d}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectConfigurationManager =
+    {0x181f5a7e,0x25c9,0x4fbf,{0x91,0x66,0x75,0xd6,0x38,0xac,0xc9,0x30}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectConfigurationManager2 =
+    {0x3130f209,0x598d,0x4269,{0xb4,0x04,0xdf,0x6b,0x13,0x80,0x47,0x42}};
+extern "C" const GUID __declspec(selectany) IID_IConfigurationFactory2 =
+    {0x702ecf93,0x89d3,0x438d,{0xb2,0x18,0xf1,0x68,0x6c,0x81,0x3f,0x0f}};
+extern "C" const GUID __declspec(selectany) IID_IConfigurationFactory3 =
+    {0x1edfa167,0x4404,0x4295,{0xb5,0xbb,0xcc,0x06,0xa0,0x62,0xf5,0x5c}};
+extern "C" const GUID __declspec(selectany) IID_IServerEnvironmentEx =
+    {0xab1ffdae,0x9b92,0x4e97,{0xb3,0xda,0xea,0x25,0x12,0x58,0xd8,0xaf}};
+extern "C" const GUID __declspec(selectany) IID_IServerConfigurationStorage =
+    {0x53011377,0x69ef,0x42e5,{0x93,0xc8,0x26,0x73,0x5b,0x80,0x19,0x69}};
+extern "C" const GUID __declspec(selectany) IID_IServerJobManager =
+    {0x66210bab,0xf71d,0x4ecc,{0x88,0x23,0x6b,0xf8,0x43,0x1a,0x5b,0xb4}};
+extern "C" const GUID __declspec(selectany) IID_IServerEnvironmentImpl =
+    {0x73e0f44f,0x9e93,0x4309,{0xa2,0x9b,0x2d,0x6f,0xdd,0xe3,0x65,0x36}};
+extern "C" const GUID __declspec(selectany) IID_IServerEnvironmentImpl2 =
+    {0xe027774d,0xca6e,0x430e,{0x97,0xc0,0x6f,0x4b,0x1c,0x67,0xcc,0x82}};
+extern "C" const GUID __declspec(selectany) CLSID_ServerObjectManager =
+    {0x5c3d041c,0x5d21,0x4b0c,{0x93,0x5c,0xb1,0xd7,0xaa,0x10,0xc8,0x1c}};
+extern "C" const GUID __declspec(selectany) CLSID_ServerObjectAdmin =
+    {0xd317cf58,0xeb65,0x4d4c,{0xa1,0x8b,0xfc,0xb4,0x77,0xa9,0x1a,0xc9}};
+extern "C" const GUID __declspec(selectany) CLSID_ServerObjectConfiguration =
+    {0x061affb5,0xae19,0x4a72,{0x89,0x6c,0xef,0x59,0xe4,0x15,0x69,0x7b}};
+extern "C" const GUID __declspec(selectany) CLSID_ServerLogImpl =
+    {0x3e32107f,0x4f36,0x4d50,{0xa5,0xd2,0x9e,0xc7,0xc0,0x98,0x6c,0xc0}};
+extern "C" const GUID __declspec(selectany) CLSID_ServerDirectory =
+    {0xa6622dc3,0x1817,0x4420,{0x86,0xd6,0x9b,0x3c,0xeb,0xd3,0x37,0x78}};
+extern "C" const GUID __declspec(selectany) CLSID_ServerMachine =
+    {0x39f4800b,0x7b54,0x457f,{0xbe,0xa0,0x7d,0xfc,0xde,0xf3,0x7f,0xf7}};
+extern "C" const GUID __declspec(selectany) CLSID_ServerObject =
+    {0xd43bee68,0xf44f,0x4c90,{0xa7,0x2f,0x41,0xb4,0x69,0xbe,0x5a,0x6b}};
+extern "C" const GUID __declspec(selectany) CLSID_ServerContext =
+    {0xfccb4713,0x2958,0x4284,{0x9d,0x99,0x7e,0x25,0xa0,0xbb,0xb4,0x23}};
+extern "C" const GUID __declspec(selectany) CLSID_ServerObjectTypeInfo =
+    {0xc28c537e,0x1ecf,0x4cef,{0xb2,0x9a,0xc9,0xb0,0x08,0x2c,0x5f,0x0c}};
+extern "C" const GUID __declspec(selectany) CLSID_ServerObjectExtensionTypeInfo =
+    {0x91c3d839,0xce1e,0x4750,{0xbf,0x23,0x63,0xa4,0xbb,0xb4,0x88,0x0e}};
+extern "C" const GUID __declspec(selectany) CLSID_ServerObjectConfigurationInfo =
+    {0xcd8d4f2f,0xc833,0x47e1,{0x98,0xa6,0xb8,0x0c,0x3a,0x4f,0x44,0x28}};
+extern "C" const GUID __declspec(selectany) CLSID_ServerObjectConfigurationStatus =
+    {0xda266136,0xe040,0x4d0c,{0x9b,0x67,0xba,0x25,0x53,0xfb,0x3e,0x16}};
+extern "C" const GUID __declspec(selectany) CLSID_ServerObjectType =
+    {0x3cf5c550,0x0d4f,0x4eb8,{0x9e,0x75,0xa6,0x5b,0x27,0x4f,0x31,0x00}};
+extern "C" const GUID __declspec(selectany) CLSID_ServerObjectExtensionType =
+    {0x087e165b,0x17b8,0x40ab,{0x9f,0xe6,0x3c,0x91,0x2e,0x4f,0xd7,0xdd}};
+extern "C" const GUID __declspec(selectany) CLSID_ServerDirectoryInfo =
+    {0x65997efb,0x8adb,0x49ff,{0x94,0x81,0x8b,0x90,0xcb,0x84,0xa5,0xbf}};
+extern "C" const GUID __declspec(selectany) CLSID_ServerStatisticsArray =
+    {0xe6af2747,0x73ee,0x43e4,{0xa4,0xb9,0xb0,0xfe,0x5e,0xa3,0x35,0x17}};
+extern "C" const GUID __declspec(selectany) CLSID_ServerStatisticsResults =
+    {0x893c42fd,0xc4b0,0x4b8c,{0xb5,0xb1,0x05,0xc5,0x67,0x86,0x7e,0x40}};
+extern "C" const GUID __declspec(selectany) CLSID_ServerMachineStatus =
+    {0x98053471,0x7d09,0x49d5,{0xa3,0xe0,0xd2,0x35,0xe6,0x82,0x33,0x1f}};
+extern "C" const GUID __declspec(selectany) CLSID_SOMController =
+    {0x049fc901,0x5750,0x46f2,{0x86,0x74,0xb8,0x83,0xc9,0x91,0x66,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_IServer =
+    {0x425b0a5b,0xbf1b,0x4f0e,{0x9e,0x75,0x37,0x32,0x4a,0x12,0xe5,0xf9}};
+extern "C" const GUID __declspec(selectany) IID_IServer2 =
+    {0x0741d66c,0xc157,0x4b4d,{0xaf,0x5e,0xc7,0x4c,0x68,0xba,0x83,0x86}};
+extern "C" const GUID __declspec(selectany) IID_IServerInit =
+    {0xa49dd957,0xaadb,0x4fe4,{0x89,0xc1,0xd8,0x0b,0xb5,0x86,0x97,0x0a}};
+extern "C" const GUID __declspec(selectany) IID_IServerInit2 =
+    {0x30d53022,0xc566,0x4854,{0x87,0xd8,0x2b,0x90,0x22,0x82,0x92,0x11}};
+extern "C" const GUID __declspec(selectany) CLSID_Server =
+    {0x379376db,0xaea6,0x40d1,{0x94,0x91,0x93,0x45,0xe6,0x1e,0xf6,0xbe}};
+extern "C" const GUID __declspec(selectany) CLSID_ServerP =
+    {0x5116fa19,0xc21a,0x4c9f,{0x81,0x6d,0xa4,0x49,0x0c,0x24,0x6d,0x56}};
+extern "C" const GUID __declspec(selectany) IID_IGISServerConnection =
+    {0xe3105184,0x0aad,0x4706,{0x92,0x69,0xdc,0xb5,0xff,0x52,0x03,0x6d}};
+extern "C" const GUID __declspec(selectany) IID_IGISServerConnection2 =
+    {0xf6616298,0x396a,0x41f2,{0x9a,0x5b,0x0e,0xed,0x59,0xaf,0x2e,0x40}};
+extern "C" const GUID __declspec(selectany) CLSID_GISServerConnection =
+    {0xcd57b642,0x1b4a,0x4e02,{0xa1,0xd0,0xff,0xdb,0xcf,0x0e,0x5a,0x41}};
+extern "C" const GUID __declspec(selectany) IID_IServiceDescription2 =
+    {0x081c203c,0x3b90,0x4de2,{0xaf,0x43,0x7c,0x30,0xbb,0xfe,0x22,0xe9}};
+extern "C" const GUID __declspec(selectany) IID_IServiceDescription3 =
+    {0xe6ce2e4a,0x2f2b,0x4d2b,{0x82,0xb8,0x85,0xfa,0x5a,0xec,0xff,0xbc}};
+extern "C" const GUID __declspec(selectany) IID_IServiceCatalog3 =
+    {0xbb163dc2,0x8ec3,0x4536,{0x8b,0x0c,0x7f,0xfe,0x7b,0x91,0xb7,0xb0}};
+extern "C" const GUID __declspec(selectany) IID_IServiceCatalogAdmin =
+    {0x34013770,0x2aef,0x4a0e,{0x93,0xa3,0x6c,0x7d,0x1b,0xfc,0x0a,0x6a}};
+extern "C" const GUID __declspec(selectany) IID_IServiceCatalogAdmin2 =
+    {0x5aba2ef8,0xdea3,0x4b86,{0xae,0x3b,0xf2,0xf7,0x11,0xb8,0x51,0x96}};
+extern "C" const GUID __declspec(selectany) IID_IServiceCatalogAdmin3 =
+    {0x214df7e7,0x4a43,0x4f8f,{0x9a,0x13,0x43,0x6a,0xfc,0x4d,0x2a,0x5f}};
+extern "C" const GUID __declspec(selectany) IID_IIdentity =
+    {0x0710484b,0x62ec,0x42c4,{0x8a,0x3d,0x31,0x86,0xe2,0xd8,0xda,0x36}};
+extern "C" const GUID __declspec(selectany) IID_IServerInfo =
+    {0xfa70a9e1,0xa5fc,0x448e,{0xae,0x33,0x6c,0x78,0xb1,0x01,0x49,0x66}};
+extern "C" const GUID __declspec(selectany) IID_IServerInfos =
+    {0x23c5169b,0x11c2,0x4750,{0x83,0x6e,0x2e,0xbb,0xdc,0x9e,0x70,0x08}};
+extern "C" const GUID __declspec(selectany) IID_IGISServer =
+    {0xd9c910b6,0x4c6e,0x475d,{0xba,0xe6,0x5e,0xac,0xd1,0xc4,0xe9,0xc2}};
+extern "C" const GUID __declspec(selectany) IID_IGISServers =
+    {0x20dae966,0xd7da,0x41e9,{0x93,0x34,0xd9,0xd8,0xab,0x7a,0xb8,0x3e}};
+extern "C" const GUID __declspec(selectany) IID_IManagerWebService =
+    {0xc260325f,0xc891,0x4dff,{0x89,0xc1,0x58,0xae,0xac,0xc7,0xe3,0x61}};
+extern "C" const GUID __declspec(selectany) CLSID_ServiceCatalog =
+    {0xac58db7e,0x196f,0x4206,{0xb4,0xc6,0x2c,0xe6,0xae,0xfd,0x6e,0xd3}};
+extern "C" const GUID __declspec(selectany) IID_IWPISilentConfig =
+    {0x89816982,0xdedc,0x4a5a,{0x92,0x2a,0xd2,0xfb,0xbc,0xf5,0x38,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectFactoryX =
+    {0xd4b031ba,0xad7d,0x438b,{0x81,0x1c,0xa3,0x62,0xf8,0xb2,0xd8,0x18}};
+extern "C" const GUID __declspec(selectany) IID_IServerEnvironmentXHelper =
+    {0x9fc0c623,0x186b,0x4a67,{0xa4,0xc9,0x5d,0xec,0x2f,0xb8,0x37,0x7d}};
+extern "C" const GUID __declspec(selectany) IID_IGPServerHelper =
+    {0xe5a9a155,0x937e,0x4025,{0x8c,0xe6,0x42,0x69,0x0d,0x96,0x4c,0x42}};
+extern "C" const GUID __declspec(selectany) IID_IUser =
+    {0x2b8a2b7f,0x01bf,0x4951,{0x8a,0xa7,0x51,0x61,0xad,0x46,0xef,0x35}};
+extern "C" const GUID __declspec(selectany) IID_IRole =
+    {0xca90af27,0xe384,0x4e25,{0x9f,0x75,0x0b,0x33,0xf8,0xf6,0x14,0x8b}};
+extern "C" const GUID __declspec(selectany) IID_IUserStore =
+    {0x85d81926,0xf224,0x480f,{0xa0,0xaa,0x57,0x6d,0x87,0xee,0x03,0x63}};
+extern "C" const GUID __declspec(selectany) IID_IDataStoreValidator =
+    {0xe7ad5e02,0xe595,0x4cb9,{0x9b,0x06,0xec,0x4f,0x09,0x12,0x2a,0x3e}};
+extern "C" const GUID __declspec(selectany) IID_IRoleStore =
+    {0x5ac20c1a,0xcf77,0x44c7,{0x9e,0xae,0x7b,0xcd,0x85,0x9e,0x5a,0xb8}};
+extern "C" const GUID __declspec(selectany) IID_IServerHelper =
+    {0x7baae10c,0x1933,0x45be,{0xa7,0x23,0xe7,0x1c,0x9d,0x6b,0x69,0x41}};
+extern "C" const GUID __declspec(selectany) CLSID_ServerObjectFactoryX =
+    {0x14e85554,0x5eee,0x410e,{0xad,0x86,0xff,0xec,0xe0,0x38,0xf1,0xa3}};
+extern "C" const GUID __declspec(selectany) CLSID_ServerEnvironmentXHelper =
+    {0xc779a894,0xbbfa,0x4cce,{0x89,0x06,0xed,0x95,0x03,0x48,0xbe,0xbb}};
+extern "C" const GUID __declspec(selectany) CLSID_GPServerHelper =
+    {0x31a080fc,0xe398,0x415e,{0x9f,0x12,0x55,0x01,0x27,0x21,0x74,0x87}};
+extern "C" const GUID __declspec(selectany) CLSID_Role =
+    {0xa6a0c990,0x8eae,0x4ee5,{0x8a,0x29,0x10,0xa8,0x97,0x66,0x1b,0x8f}};
+extern "C" const GUID __declspec(selectany) CLSID_User =
+    {0x6b05fd91,0xc29d,0x4317,{0x98,0x66,0xe3,0x4b,0x1e,0xe6,0x99,0xed}};
+
+#pragma pack(pop)

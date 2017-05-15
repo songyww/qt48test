@@ -1,0 +1,2362 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (285e34f3).
+//
+// e:\vsproject\qt48test\qt48test\release\esrigisclient.tlh
+//
+// C++ source equivalent of Win32 type library esrigisclient.olb
+// compiler-generated file created 12/01/16 at 15:39:10 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("746f6817-89bb-4490-9829-83ca25fd505a"))
+/* LIBID */ __esriGISClient;
+struct __declspec(uuid("e584b406-753e-4e29-b20b-fed66fa3ef3c"))
+/* interface */ IAGSEnumServerObjectName;
+struct __declspec(uuid("436bd37c-fe61-4a2e-9d74-1ae6fc8d654d"))
+/* interface */ IAGSServerObjectName;
+struct __declspec(uuid("298cce6a-4d86-40ee-8f4a-bebc419b9a4d"))
+/* interface */ IAGSServerConnectionName;
+enum esriAGSConnectionType;
+struct __declspec(uuid("7c25fb69-eac4-433c-b08c-7ae39e83ffbd"))
+/* interface */ IAGSServerObject;
+enum agsClientError;
+enum esriAGSServerType;
+enum esriAGSConnectionMode;
+enum esriServiceURLType;
+enum esriAGSServerVersionType;
+struct __declspec(uuid("657f65fd-9795-40b4-b1ce-e235ef08614c"))
+/* interface */ IAGSServerConnection;
+struct __declspec(uuid("6921c52d-0d14-4d2c-8a80-a7873c1306ea"))
+/* interface */ IAGSServerConnection2;
+struct __declspec(uuid("20e6a647-de9e-4e4c-a301-640b9ab0d143"))
+/* interface */ IAGSServerConnection3;
+struct __declspec(uuid("b291fd85-b247-4ab0-85d0-2244688936fd"))
+/* interface */ IAGSServerConnection4;
+struct __declspec(uuid("2609d396-4c06-4c35-9ae3-df690ed88506"))
+/* interface */ IAGSServerConnectionAdmin;
+struct __declspec(uuid("c65dc76b-b454-4b35-83ec-e9082b57a56f"))
+/* interface */ IAGSServerConnectionName2;
+struct __declspec(uuid("9fe30bfc-aa29-4763-bcc4-d9c1256427ea"))
+/* interface */ IAGSServerConnectionName3;
+struct __declspec(uuid("6047c9fc-2d91-420a-a5a2-eb36b7e2fea2"))
+/* interface */ IAGSServerConnectionFactory;
+struct __declspec(uuid("0264ca94-b0eb-435f-9d3a-5fcc5da0fbae"))
+/* interface */ IAGSServerConnectionFactory2;
+struct __declspec(uuid("4f11971a-f293-47a4-acf2-fef737fb71f4"))
+/* interface */ IEnumAGSServerConnectionName;
+struct __declspec(uuid("02d56c6d-9134-42c7-b6b0-6804a125b7a9"))
+/* interface */ IAGSServerConnectionFactory3;
+struct __declspec(uuid("df667332-0e2b-49bf-9df9-ba8b15a37601"))
+/* interface */ ISetDefaultAgsConnectionInfo;
+struct __declspec(uuid("2e07daa3-6dec-4dc3-a7ed-2f29e2ecfe4a"))
+/* interface */ IAGSServerObject2;
+struct __declspec(uuid("2f311f9a-50f9-45d4-9553-d781a08445e8"))
+/* interface */ IAGSServerObjectName2;
+struct __declspec(uuid("4b815919-7659-4a55-8608-26eb7d6b24f2"))
+/* interface */ IAGSServerObjectName3;
+struct __declspec(uuid("fbb35630-af4a-4423-976a-762d53991e5e"))
+/* interface */ IServerObjectDescription;
+struct __declspec(uuid("f21f82a2-6317-4a00-9877-8431c74a6707"))
+/* interface */ IRESTServerObjectAdmin;
+struct /* coclass */ AGSServerObjectName;
+struct /* coclass */ AGSServerConnection;
+struct /* coclass */ AGSServerConnectionName;
+struct /* coclass */ AGSServerConnectionFactory;
+enum imsErrors;
+enum acSecurityType;
+enum acServiceType;
+enum acUserRole;
+enum acMapUnits;
+enum acIndexStatus;
+struct __declspec(uuid("e4a0f674-b705-405a-b356-3cc81f283622"))
+/* interface */ IIMSWorkspace2;
+struct __declspec(uuid("5e773ec1-f5e7-11d3-9f48-00c04f79927c"))
+/* interface */ IIMSWorkspace;
+struct __declspec(uuid("b6f0197b-ea28-11d3-9f47-00c04f79927c"))
+/* interface */ IIMSFeatureClass;
+struct __declspec(uuid("fe9f959a-06b5-4d52-8148-3bd33c29c0c5"))
+/* interface */ IIMSServiceDescription;
+struct __declspec(uuid("2844f4ef-098f-4858-80a6-b6a29eb5f140"))
+/* interface */ IIMSAxlRequest;
+struct __declspec(uuid("448631a6-2bda-4f54-a341-76cc7ffd70a7"))
+/* interface */ IIMSUserRole;
+struct __declspec(uuid("c7535706-3898-419c-b65b-9faf0d8bfc83"))
+/* interface */ IRemoteMetadataName;
+struct __declspec(uuid("edc3739d-807f-47ea-978d-e6ae0fc67018"))
+/* interface */ IRemoteMetadataName2;
+struct __declspec(uuid("64c58b58-b932-4f91-8a60-4a85964af693"))
+/* interface */ IIMSMetadataAxlRequest;
+struct /* coclass */ IMSServiceName;
+struct /* coclass */ IMSWorkspaceFactory;
+struct /* coclass */ IMSCatalogPathParser;
+struct /* coclass */ IMSMetadataServiceName;
+struct __declspec(uuid("2290f5ac-8561-4b1d-8fda-482a063f1ef4"))
+/* interface */ IWMSLayerDescription;
+struct __declspec(uuid("0e5d8d4c-a8cd-4eb9-a311-af312dc308bc"))
+/* interface */ IWMSLayerStyleDescription;
+struct __declspec(uuid("165f657d-6e52-4ce6-984a-7300acb2e291"))
+/* interface */ IWCSCoverageDescription;
+struct __declspec(uuid("cb717bf3-f1ec-4beb-a6c8-ec80a11e9010"))
+/* interface */ IWCSCoverageName;
+struct __declspec(uuid("e1a24fde-e0cb-4c17-bdc0-b5520df063cb"))
+/* interface */ IWCSConnectionName;
+struct __declspec(uuid("b7ec7893-efb4-4b61-8fe0-e746cf0422b5"))
+/* interface */ IWCSSpatialDomain;
+struct __declspec(uuid("ed79b15f-9133-4d1c-8bac-170562b5ff9d"))
+/* interface */ IWCSBoundingBoxInfo;
+struct __declspec(uuid("7f5b3583-a7b7-47a9-b517-6e30ab0c1333"))
+/* interface */ IWCSRange;
+struct __declspec(uuid("d970569f-8f77-42cb-98be-b7c0d8b87795"))
+/* interface */ IWCSCoverageField;
+struct __declspec(uuid("e28b0014-208c-4c9b-8e24-ac882d0b4c36"))
+/* interface */ IWMTSLayerDescription;
+struct __declspec(uuid("dbc40029-335f-47c2-8cb0-75473fef52bf"))
+/* interface */ IWMTSDimension;
+struct __declspec(uuid("95ad2016-d7ae-44d4-a121-cb2645f4ea42"))
+/* interface */ IWMTSTileMatrixSetLink;
+struct __declspec(uuid("b7d67eda-daf2-49b0-8c27-3c4df14b69b5"))
+/* interface */ IWMTSTileMatrixSet;
+struct __declspec(uuid("3fc53a77-74d8-4eb5-aa3c-d3797439e2a3"))
+/* interface */ IWMTSTileMatrix;
+enum wmsErrors;
+enum wcsErrors;
+struct __declspec(uuid("cfcaca30-440a-488e-815a-86351cd78ecc"))
+/* interface */ IWMSServiceExceptionHandler;
+struct __declspec(uuid("07c8fd52-5d97-4b1f-a6bf-4973c9bb4117"))
+/* interface */ IWMSConnectionName;
+struct __declspec(uuid("67bc7de0-0a6d-4ba6-9d26-437c44dbddf3"))
+/* interface */ IWMSConnection;
+struct __declspec(uuid("253c9134-0d0f-45c7-bfdc-d230d0f8ce35"))
+/* interface */ IWMSConnectionFactory;
+struct __declspec(uuid("de0e6ebf-8abf-4700-b9f5-b097e14c0e51"))
+/* interface */ IWMSServiceDescription;
+struct __declspec(uuid("4ee28878-3a87-40e5-b25d-6fcc4d683e8c"))
+/* interface */ IWMSClientEvents;
+struct __declspec(uuid("ad2e4de6-cc7e-41e1-911f-5343cd27f227"))
+/* interface */ IWCSServiceExceptionHandler;
+struct __declspec(uuid("2bb26ed5-6774-4ff5-8252-1e973ebd5bdc"))
+/* interface */ IWCSConnection;
+struct __declspec(uuid("a73a11e4-aeb0-4917-b36e-a43865cc9b7b"))
+/* interface */ IWCSConnectionFactory;
+struct __declspec(uuid("e19a5310-486c-4d32-8d44-93696d6804d4"))
+/* interface */ IWCSServiceDescription;
+struct __declspec(uuid("c8cd44b2-4412-4a12-bded-7225d81056c4"))
+/* interface */ IWCSClientEvents;
+struct __declspec(uuid("0a014545-e32c-43c2-aa97-243f43294492"))
+/* interface */ IWMTSConnectionName;
+struct __declspec(uuid("525ade39-e2e6-418a-bb56-04eab6febbb3"))
+/* interface */ IWMTSConnection;
+struct __declspec(uuid("8043c9be-1311-4020-a18f-ec23efec6289"))
+/* interface */ IWMTSConnectionFactory;
+struct __declspec(uuid("b5543b2a-65ef-410c-9819-80ed5bd7e669"))
+/* interface */ IWMTSServiceDescription;
+struct /* coclass */ WMTSConnectionName;
+struct /* coclass */ WMTSConnection;
+struct /* coclass */ WMTSConnectionFactory;
+struct /* coclass */ WMTSLayerDescription;
+struct /* coclass */ WMTSDimension;
+struct /* coclass */ WMSConnectionName;
+struct /* coclass */ WMSConnection;
+struct /* coclass */ WMSServiceExceptionHandler;
+struct /* coclass */ WMSConnectionFactory;
+struct /* coclass */ WCSConnectionName;
+struct /* coclass */ WCSConnection;
+struct /* coclass */ WCSServiceExceptionHandler;
+struct /* coclass */ WCSConnectionFactory;
+struct /* coclass */ WMTSTileMatrixSetLink;
+struct /* coclass */ WMTSTileMatrix;
+struct /* coclass */ WMTSTileMatrixSet;
+struct __declspec(uuid("68bd2cad-90af-4bfb-9117-4f28aed6cbe0"))
+/* interface */ IUploadItem;
+struct __declspec(uuid("edb37aff-c199-4063-ab1f-fe936d5b5fd0"))
+/* interface */ IUploadsClient;
+struct __declspec(uuid("0788eaf6-42ac-404a-894e-e0330782912a"))
+/* interface */ IUploader;
+struct __declspec(uuid("f00d29b6-e9d5-4ac2-a8c7-7c8338cf88c6"))
+/* interface */ IEnumUploadItem;
+struct __declspec(uuid("2362ad5f-c545-4bd8-b538-557a1c5b89f1"))
+/* interface */ IAdminUploadsClient;
+struct __declspec(uuid("ddcbdaac-b932-4279-a2c1-5a151632b793"))
+/* interface */ IServiceUploadsClient;
+struct __declspec(uuid("657e7708-500d-47ec-8e96-2327083ecdc0"))
+/* interface */ IAdminUploader;
+struct __declspec(uuid("0fb7b5a0-f5c5-412b-aa10-8d34b2d583d9"))
+/* interface */ IServiceUploader;
+struct /* coclass */ UploadItem;
+struct /* coclass */ UploadsClient;
+struct /* coclass */ Uploader;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IAGSServerConnectionName, __uuidof(IAGSServerConnectionName));
+_COM_SMARTPTR_TYPEDEF(IAGSServerObjectName, __uuidof(IAGSServerObjectName));
+_COM_SMARTPTR_TYPEDEF(IAGSEnumServerObjectName, __uuidof(IAGSEnumServerObjectName));
+_COM_SMARTPTR_TYPEDEF(IAGSServerObject, __uuidof(IAGSServerObject));
+_COM_SMARTPTR_TYPEDEF(IAGSServerConnection, __uuidof(IAGSServerConnection));
+_COM_SMARTPTR_TYPEDEF(IAGSServerConnection2, __uuidof(IAGSServerConnection2));
+_COM_SMARTPTR_TYPEDEF(IAGSServerConnection3, __uuidof(IAGSServerConnection3));
+_COM_SMARTPTR_TYPEDEF(IAGSServerConnection4, __uuidof(IAGSServerConnection4));
+_COM_SMARTPTR_TYPEDEF(IAGSServerConnectionAdmin, __uuidof(IAGSServerConnectionAdmin));
+_COM_SMARTPTR_TYPEDEF(IAGSServerConnectionName2, __uuidof(IAGSServerConnectionName2));
+_COM_SMARTPTR_TYPEDEF(IAGSServerConnectionName3, __uuidof(IAGSServerConnectionName3));
+_COM_SMARTPTR_TYPEDEF(IAGSServerConnectionFactory, __uuidof(IAGSServerConnectionFactory));
+_COM_SMARTPTR_TYPEDEF(IAGSServerConnectionFactory2, __uuidof(IAGSServerConnectionFactory2));
+_COM_SMARTPTR_TYPEDEF(IEnumAGSServerConnectionName, __uuidof(IEnumAGSServerConnectionName));
+_COM_SMARTPTR_TYPEDEF(IAGSServerConnectionFactory3, __uuidof(IAGSServerConnectionFactory3));
+_COM_SMARTPTR_TYPEDEF(ISetDefaultAgsConnectionInfo, __uuidof(ISetDefaultAgsConnectionInfo));
+_COM_SMARTPTR_TYPEDEF(IAGSServerObject2, __uuidof(IAGSServerObject2));
+_COM_SMARTPTR_TYPEDEF(IAGSServerObjectName2, __uuidof(IAGSServerObjectName2));
+_COM_SMARTPTR_TYPEDEF(IAGSServerObjectName3, __uuidof(IAGSServerObjectName3));
+_COM_SMARTPTR_TYPEDEF(IServerObjectDescription, __uuidof(IServerObjectDescription));
+_COM_SMARTPTR_TYPEDEF(IRESTServerObjectAdmin, __uuidof(IRESTServerObjectAdmin));
+_COM_SMARTPTR_TYPEDEF(IIMSWorkspace2, __uuidof(IIMSWorkspace2));
+_COM_SMARTPTR_TYPEDEF(IIMSWorkspace, __uuidof(IIMSWorkspace));
+_COM_SMARTPTR_TYPEDEF(IIMSFeatureClass, __uuidof(IIMSFeatureClass));
+_COM_SMARTPTR_TYPEDEF(IIMSServiceDescription, __uuidof(IIMSServiceDescription));
+_COM_SMARTPTR_TYPEDEF(IIMSAxlRequest, __uuidof(IIMSAxlRequest));
+_COM_SMARTPTR_TYPEDEF(IIMSUserRole, __uuidof(IIMSUserRole));
+_COM_SMARTPTR_TYPEDEF(IRemoteMetadataName, __uuidof(IRemoteMetadataName));
+_COM_SMARTPTR_TYPEDEF(IRemoteMetadataName2, __uuidof(IRemoteMetadataName2));
+_COM_SMARTPTR_TYPEDEF(IIMSMetadataAxlRequest, __uuidof(IIMSMetadataAxlRequest));
+_COM_SMARTPTR_TYPEDEF(IWMSLayerStyleDescription, __uuidof(IWMSLayerStyleDescription));
+_COM_SMARTPTR_TYPEDEF(IWMSLayerDescription, __uuidof(IWMSLayerDescription));
+_COM_SMARTPTR_TYPEDEF(IWCSConnectionName, __uuidof(IWCSConnectionName));
+_COM_SMARTPTR_TYPEDEF(IWCSCoverageName, __uuidof(IWCSCoverageName));
+_COM_SMARTPTR_TYPEDEF(IWCSBoundingBoxInfo, __uuidof(IWCSBoundingBoxInfo));
+_COM_SMARTPTR_TYPEDEF(IWCSSpatialDomain, __uuidof(IWCSSpatialDomain));
+_COM_SMARTPTR_TYPEDEF(IWCSCoverageField, __uuidof(IWCSCoverageField));
+_COM_SMARTPTR_TYPEDEF(IWCSRange, __uuidof(IWCSRange));
+_COM_SMARTPTR_TYPEDEF(IWCSCoverageDescription, __uuidof(IWCSCoverageDescription));
+_COM_SMARTPTR_TYPEDEF(IWMTSDimension, __uuidof(IWMTSDimension));
+_COM_SMARTPTR_TYPEDEF(IWMTSTileMatrixSetLink, __uuidof(IWMTSTileMatrixSetLink));
+_COM_SMARTPTR_TYPEDEF(IWMTSLayerDescription, __uuidof(IWMTSLayerDescription));
+_COM_SMARTPTR_TYPEDEF(IWMTSTileMatrix, __uuidof(IWMTSTileMatrix));
+_COM_SMARTPTR_TYPEDEF(IWMTSTileMatrixSet, __uuidof(IWMTSTileMatrixSet));
+_COM_SMARTPTR_TYPEDEF(IWMSServiceExceptionHandler, __uuidof(IWMSServiceExceptionHandler));
+_COM_SMARTPTR_TYPEDEF(IWMSConnectionName, __uuidof(IWMSConnectionName));
+_COM_SMARTPTR_TYPEDEF(IWMSConnection, __uuidof(IWMSConnection));
+_COM_SMARTPTR_TYPEDEF(IWMSConnectionFactory, __uuidof(IWMSConnectionFactory));
+_COM_SMARTPTR_TYPEDEF(IWMSServiceDescription, __uuidof(IWMSServiceDescription));
+_COM_SMARTPTR_TYPEDEF(IWMSClientEvents, __uuidof(IWMSClientEvents));
+_COM_SMARTPTR_TYPEDEF(IWCSServiceExceptionHandler, __uuidof(IWCSServiceExceptionHandler));
+_COM_SMARTPTR_TYPEDEF(IWCSConnection, __uuidof(IWCSConnection));
+_COM_SMARTPTR_TYPEDEF(IWCSConnectionFactory, __uuidof(IWCSConnectionFactory));
+_COM_SMARTPTR_TYPEDEF(IWCSServiceDescription, __uuidof(IWCSServiceDescription));
+_COM_SMARTPTR_TYPEDEF(IWCSClientEvents, __uuidof(IWCSClientEvents));
+_COM_SMARTPTR_TYPEDEF(IWMTSConnectionName, __uuidof(IWMTSConnectionName));
+_COM_SMARTPTR_TYPEDEF(IWMTSConnection, __uuidof(IWMTSConnection));
+_COM_SMARTPTR_TYPEDEF(IWMTSConnectionFactory, __uuidof(IWMTSConnectionFactory));
+_COM_SMARTPTR_TYPEDEF(IWMTSServiceDescription, __uuidof(IWMTSServiceDescription));
+_COM_SMARTPTR_TYPEDEF(IUploadItem, __uuidof(IUploadItem));
+_COM_SMARTPTR_TYPEDEF(IUploadsClient, __uuidof(IUploadsClient));
+_COM_SMARTPTR_TYPEDEF(IUploader, __uuidof(IUploader));
+_COM_SMARTPTR_TYPEDEF(IEnumUploadItem, __uuidof(IEnumUploadItem));
+_COM_SMARTPTR_TYPEDEF(IAdminUploadsClient, __uuidof(IAdminUploadsClient));
+_COM_SMARTPTR_TYPEDEF(IServiceUploadsClient, __uuidof(IServiceUploadsClient));
+_COM_SMARTPTR_TYPEDEF(IAdminUploader, __uuidof(IAdminUploader));
+_COM_SMARTPTR_TYPEDEF(IServiceUploader, __uuidof(IServiceUploader));
+
+//
+// Type library items
+//
+
+enum __declspec(uuid("9a74d51d-b654-45c8-81ed-34b0f325eca4"))
+esriAGSConnectionType
+{
+    esriAGSConnectionTypeLAN = 1,
+    esriAGSConnectionTypeInternet = 2,
+    esriAGSConnectionTypeRESTAdmin = 3
+};
+
+struct __declspec(uuid("298cce6a-4d86-40ee-8f4a-bebc419b9a4d"))
+IAGSServerConnectionName : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_ConnectionProperties (
+        /*[in]*/ struct IPropertySet * ppConnProps ) = 0;
+      virtual HRESULT __stdcall get_ConnectionProperties (
+        /*[out,retval]*/ struct IPropertySet * * ppConnProps ) = 0;
+      virtual HRESULT __stdcall get_ConnectionType (
+        /*[out,retval]*/ enum esriAGSConnectionType * pConnType ) = 0;
+};
+
+struct __declspec(uuid("436bd37c-fe61-4a2e-9d74-1ae6fc8d654d"))
+IAGSServerObjectName : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR objectName ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * objectName ) = 0;
+      virtual HRESULT __stdcall put_Type (
+        /*[in]*/ BSTR ObjectType ) = 0;
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ BSTR * ObjectType ) = 0;
+      virtual HRESULT __stdcall put_URL (
+        /*[in]*/ BSTR objectURL ) = 0;
+      virtual HRESULT __stdcall get_URL (
+        /*[out,retval]*/ BSTR * objectURL ) = 0;
+      virtual HRESULT __stdcall get_AGSServerConnectionName (
+        /*[out,retval]*/ struct IAGSServerConnectionName * * ppServerConnName ) = 0;
+      virtual HRESULT __stdcall putref_AGSServerConnectionName (
+        /*[in]*/ struct IAGSServerConnectionName * ppServerConnName ) = 0;
+};
+
+struct __declspec(uuid("e584b406-753e-4e29-b20b-fed66fa3ef3c"))
+IAGSEnumServerObjectName : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Next (
+        /*[out,retval]*/ struct IAGSServerObjectName * * ppSOName ) = 0;
+      virtual HRESULT __stdcall Reset ( ) = 0;
+};
+
+struct __declspec(uuid("7c25fb69-eac4-433c-b08c-7ae39e83ffbd"))
+IAGSServerObject : IUnknown
+{};
+
+enum __declspec(uuid("be7a331d-da86-4d87-ad71-8f9572209d94"))
+agsClientError
+{
+    AGS_E_CONNECTION_CANCELLED = -2147219199,
+    AGS_E_INSECURE_TOKENSERVICEURL = -2147219198,
+    AGS_E_NO_CONNECT_INSECURE_TOKENSERVICEURL = -2147219197,
+    AGS_E_SERVICE_STARTED_WITH_ERRORS = -2147219196,
+    AGS_E_REDIRECTION = -2147219195,
+    AGS_E_UPLOAD_IS_TOO_LARGE = -2147219194
+};
+
+enum __declspec(uuid("9f3e8e4f-1ec9-453f-9c58-b27ecb22e44a"))
+esriAGSServerType
+{
+    esriAGSServerTypeUnknown = -1,
+    esriAGSServerTypeClassic = 0,
+    esriAGSServerTypeDiscovery = 1,
+    esriAGSServerTypeSDS = 2,
+    esriAGSServerTypeAGO = 3
+};
+
+enum __declspec(uuid("a41b9703-4f8c-4b5c-921f-8788bf64f093"))
+esriAGSConnectionMode
+{
+    esriAGSConnectionModeConsumer = 0,
+    esriAGSConnectionModeAdmin = 1,
+    esriAGSConnectionModePublisher = 2
+};
+
+enum __declspec(uuid("92ad2395-55eb-4a15-a754-c2cfd9f6068c"))
+esriServiceURLType
+{
+    esriServiceURLTypeSoap = 0,
+    esriServiceURLTypeREST = 1,
+    esriServiceURLTypeAdmin = 2
+};
+
+enum __declspec(uuid("34a6c72b-81be-4550-9ad6-545c298df2da"))
+esriAGSServerVersionType
+{
+    esriAGSServerVersionTypeSoap = 0,
+    esriAGSServerVersionTypeREST = 1,
+    esriAGSServerVersionTypeAdmin = 2
+};
+
+struct __declspec(uuid("657f65fd-9795-40b4-b1ce-e235ef08614c"))
+IAGSServerConnection : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_ServerObjectNames (
+        /*[out,retval]*/ struct IAGSEnumServerObjectName * * ppSONames ) = 0;
+      virtual HRESULT __stdcall get_FullName (
+        /*[out,retval]*/ struct IName * * ppNameObject ) = 0;
+      virtual HRESULT __stdcall putref_FullName (
+        /*[in]*/ struct IName * ppNameObject ) = 0;
+};
+
+struct __declspec(uuid("6921c52d-0d14-4d2c-8a80-a7873c1306ea"))
+IAGSServerConnection2 : IAGSServerConnection
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ServerObjectNamesEx (
+        BSTR FolderName,
+        /*[out,retval]*/ struct IAGSEnumServerObjectName * * ppSONames ) = 0;
+      virtual HRESULT __stdcall GetFolders (
+        /*[in]*/ BSTR reserved,
+        /*[out,retval]*/ struct IEnumBSTR * * ppEnum ) = 0;
+};
+
+struct __declspec(uuid("20e6a647-de9e-4e4c-a301-640b9ab0d143"))
+IAGSServerConnection3 : IAGSServerConnection2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetFile (
+        /*[in]*/ BSTR URL,
+        /*[out,retval]*/ struct IStream * * stream ) = 0;
+      virtual HRESULT __stdcall GetFileAsVariant (
+        /*[in]*/ BSTR URL,
+        /*[out,retval]*/ VARIANT * pValue ) = 0;
+};
+
+struct __declspec(uuid("b291fd85-b247-4ab0-85d0-2244688936fd"))
+IAGSServerConnection4 : IAGSServerConnection3
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetServerVersion (
+        /*[in]*/ enum esriAGSServerVersionType versionType,
+        /*[out,retval]*/ VARIANT * ServerVersion ) = 0;
+      virtual HRESULT __stdcall GetServiceURL (
+        /*[in]*/ enum esriServiceURLType urlType,
+        /*[in]*/ struct IAGSServerObjectName * Service,
+        /*[out,retval]*/ BSTR * URL ) = 0;
+      virtual HRESULT __stdcall GetItemInfo (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR Type,
+        /*[in]*/ BSTR soeType,
+        /*[out,retval]*/ struct IItemInfo * * ppItemInfo ) = 0;
+      virtual HRESULT __stdcall GetMetadata (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR Type,
+        /*[in]*/ BSTR soeType,
+        /*[out,retval]*/ struct IPropertySet * * ppMetadata ) = 0;
+};
+
+struct __declspec(uuid("2609d396-4c06-4c35-9ae3-df690ed88506"))
+IAGSServerConnectionAdmin : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ServerObjectManager (
+        /*[out,retval]*/ struct IServerObjectManager * * ppObjectManager ) = 0;
+      virtual HRESULT __stdcall get_ServerObjectAdmin (
+        /*[out,retval]*/ struct IServerObjectAdmin * * ppObjectAdmin ) = 0;
+      virtual HRESULT __stdcall get_ServerObjectConfiguration (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR Type,
+        /*[out,retval]*/ struct IServerObjectConfiguration * * ppObject ) = 0;
+};
+
+struct __declspec(uuid("c65dc76b-b454-4b35-83ec-e9082b57a56f"))
+IAGSServerConnectionName2 : IAGSServerConnectionName
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ConnectionString (
+        /*[out,retval]*/ BSTR * connString ) = 0;
+      virtual HRESULT __stdcall put_ConnectionString (
+        /*[in]*/ BSTR connString ) = 0;
+      virtual HRESULT __stdcall get_ServerConnectionFactoryProgID (
+        /*[out,retval]*/ BSTR * progID ) = 0;
+      virtual HRESULT __stdcall put_ServerConnectionFactoryProgID (
+        /*[in]*/ BSTR progID ) = 0;
+};
+
+struct __declspec(uuid("9fe30bfc-aa29-4763-bcc4-d9c1256427ea"))
+IAGSServerConnectionName3 : IAGSServerConnectionName2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ConnectionMode (
+        /*[out,retval]*/ enum esriAGSConnectionMode * pConnMode ) = 0;
+      virtual HRESULT __stdcall put_ConnectionMode (
+        /*[in]*/ enum esriAGSConnectionMode pConnMode ) = 0;
+      virtual HRESULT __stdcall get_ServerType (
+        /*[out,retval]*/ enum esriAGSServerType * pServerType ) = 0;
+      virtual HRESULT __stdcall put_ServerType (
+        /*[in]*/ enum esriAGSServerType pServerType ) = 0;
+};
+
+struct __declspec(uuid("6047c9fc-2d91-420a-a5a2-eb36b7e2fea2"))
+IAGSServerConnectionFactory : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Open (
+        /*[in]*/ struct IPropertySet * pConnectionProperties,
+        /*[in]*/ OLE_HANDLE hWnd,
+        /*[out,retval]*/ struct IAGSServerConnection * * ppConnection ) = 0;
+};
+
+struct __declspec(uuid("0264ca94-b0eb-435f-9d3a-5fcc5da0fbae"))
+IAGSServerConnectionFactory2 : IAGSServerConnectionFactory
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall OpenFromFile (
+        /*[in]*/ BSTR fileName,
+        /*[in]*/ OLE_HANDLE hWnd,
+        /*[out,retval]*/ struct IAGSServerConnection * * ppConnection ) = 0;
+      virtual HRESULT __stdcall ReadConnectionPropertiesFromFile (
+        /*[in]*/ BSTR fileName,
+        /*[out,retval]*/ struct IPropertySet * * ConnectionProperties ) = 0;
+      virtual HRESULT __stdcall put_DefaultHttpTimeout (
+        /*[in]*/ long seconds ) = 0;
+      virtual HRESULT __stdcall get_DefaultHttpTimeout (
+        /*[out,retval]*/ long * seconds ) = 0;
+};
+
+struct __declspec(uuid("4f11971a-f293-47a4-acf2-fef737fb71f4"))
+IEnumAGSServerConnectionName : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Reset ( ) = 0;
+      virtual HRESULT __stdcall Next (
+        /*[out,retval]*/ struct IAGSServerConnectionName * * connName ) = 0;
+};
+
+struct __declspec(uuid("02d56c6d-9134-42c7-b6b0-6804a125b7a9"))
+IAGSServerConnectionFactory3 : IAGSServerConnectionFactory2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetHostedServers (
+        /*[in]*/ OLE_HANDLE hWnd,
+        /*[out,retval]*/ struct IEnumAGSServerConnectionName * * connNames ) = 0;
+      virtual HRESULT __stdcall GetInServerConnectionName (
+        /*[out,retval]*/ struct IAGSServerConnectionName * * connName ) = 0;
+};
+
+struct __declspec(uuid("df667332-0e2b-49bf-9df9-ba8b15a37601"))
+ISetDefaultAgsConnectionInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ClearParameters (
+        /*[in]*/ struct IPropertySet * pConnectionProperties ) = 0;
+};
+
+struct __declspec(uuid("2e07daa3-6dec-4dc3-a7ed-2f29e2ecfe4a"))
+IAGSServerObject2 : IAGSServerObject
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_FullName (
+        /*[out,retval]*/ struct IName * * ServerObjectName ) = 0;
+      virtual HRESULT __stdcall put_HttpTimeout (
+        /*[in]*/ long secs ) = 0;
+      virtual HRESULT __stdcall get_HttpTimeout (
+        /*[out,retval]*/ long * secs ) = 0;
+};
+
+struct __declspec(uuid("2f311f9a-50f9-45d4-9553-d781a08445e8"))
+IAGSServerObjectName2 : IAGSServerObjectName
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_NameString2 (
+        /*[in]*/ BSTR ns ) = 0;
+      virtual HRESULT __stdcall get_NameString2 (
+        /*[out,retval]*/ BSTR * ns ) = 0;
+      virtual HRESULT __stdcall put_ParentType (
+        /*[in]*/ BSTR ParentType ) = 0;
+      virtual HRESULT __stdcall get_ParentType (
+        /*[out,retval]*/ BSTR * ParentType ) = 0;
+      virtual HRESULT __stdcall put_Capabilities (
+        /*[in]*/ BSTR caps ) = 0;
+      virtual HRESULT __stdcall get_Capabilities (
+        /*[out,retval]*/ BSTR * caps ) = 0;
+};
+
+struct __declspec(uuid("4b815919-7659-4a55-8608-26eb7d6b24f2"))
+IAGSServerObjectName3 : IAGSServerObjectName2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Description (
+        /*[in]*/ BSTR objectURL ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * objectURL ) = 0;
+};
+
+struct __declspec(uuid("fbb35630-af4a-4423-976a-762d53991e5e"))
+IServerObjectDescription : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ BSTR * Type ) = 0;
+      virtual HRESULT __stdcall get_ClientProxyCLSID (
+        /*[in]*/ enum esriAGSConnectionType connType,
+        /*[out,retval]*/ struct IUID * * ppClsid ) = 0;
+};
+
+struct __declspec(uuid("f21f82a2-6317-4a00-9877-8431c74a6707"))
+IRESTServerObjectAdmin : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetConfigurationInfos (
+        /*[in]*/ BSTR FolderName,
+        /*[out,retval]*/ struct IEnumServerObjectConfigurationInfo * * ppConfigInfos ) = 0;
+      virtual HRESULT __stdcall get_AdminVersion (
+        /*[out,retval]*/ double * pAdminVersion ) = 0;
+      virtual HRESULT __stdcall GetItemInfo (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR Type,
+        /*[in]*/ BSTR soeType,
+        /*[out,retval]*/ struct IItemInfo * * ppItemInfo ) = 0;
+      virtual HRESULT __stdcall PutItemInfo (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR Type,
+        /*[in]*/ BSTR soeType,
+        /*[in]*/ struct IItemInfo * pItemInfo ) = 0;
+      virtual HRESULT __stdcall GetMetadata (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR Type,
+        /*[in]*/ BSTR soeType,
+        /*[out,retval]*/ struct IPropertySet * * ppMetadata ) = 0;
+      virtual HRESULT __stdcall PutMetadata (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR Type,
+        /*[in]*/ BSTR soeType,
+        /*[in]*/ struct IPropertySet * pMetadata ) = 0;
+};
+
+struct __declspec(uuid("6c22971c-d450-4b4d-9422-ee96a40facc5"))
+AGSServerObjectName;
+    // [ default ] interface IUnknown
+    // interface IAGSServerObjectName
+    // interface IAGSServerObjectName2
+    // interface IAGSServerObjectName3
+    // interface IName
+    // interface IMetadata
+    // interface IMetadataEdit
+    // interface IPersistStream
+
+struct __declspec(uuid("b49defd0-85c0-46f4-918b-1fb7e02a8c70"))
+AGSServerConnection;
+    // [ default ] interface IUnknown
+    // interface IAGSServerConnection
+    // interface IAGSServerConnection2
+    // interface IAGSServerConnection3
+    // interface IAGSServerConnectionAdmin
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("cba35c3f-edef-408f-8b51-510784c78eb9"))
+AGSServerConnectionName;
+    // [ default ] interface IUnknown
+    // interface IAGSServerConnectionName
+    // interface IAGSServerConnectionName2
+    // interface IName
+    // interface IPersistStream
+
+struct __declspec(uuid("7932a86e-f371-4c64-ab84-9e83dda2581b"))
+AGSServerConnectionFactory;
+    // [ default ] interface IUnknown
+    // interface IAGSServerConnectionFactory
+    // interface IAGSServerConnectionFactory2
+    // interface IAGSServerConnectionFactory3
+    // interface ISetDefaultAgsConnectionInfo
+
+enum __declspec(uuid("148ef17a-706a-4584-9c4d-b4c2de60e2b6"))
+imsErrors
+{
+    IMS_E_ACCESS_DENIED = -2147220991,
+    IMS_E_PROXY_AUTHENTICATION_FAILED = -2147220990,
+    IMS_E_UNABLE_TO_CONNECT = -2147220989,
+    IMS_E_MISSING_URL = -2147220988,
+    IMS_E_MISSING_SERVICENAME = -2147220987
+};
+
+enum __declspec(uuid("5007cf72-7bff-4680-9151-1c4818f49dc8"))
+acSecurityType
+{
+    acSecurityNone = 0,
+    acSecurityGetFeaturesDisabled = 1
+};
+
+enum __declspec(uuid("0de2378a-ffae-4dc1-a213-90b706cf1f46"))
+acServiceType
+{
+    acMapService = 0,
+    acFeatureService = 1,
+    acMetadataService = 2,
+    acGlobeService = 3,
+    acWMSService = 4,
+    acUnknownService = 5
+};
+
+enum __declspec(uuid("cb7b3eb1-99ad-4b7d-929f-60c06ac9eccf"))
+acUserRole
+{
+    acLegacyUser = -1,
+    acBrowser = 0,
+    acPublisher = 1,
+    acServiceAuthor = 2,
+    acAdministrator = 3
+};
+
+enum __declspec(uuid("0d7861f9-90b4-4f40-b4b3-52a2148ad7e5"))
+acMapUnits
+{
+    acDecimalDegrees = 0,
+    acMeters = 1,
+    acFeet = 2,
+    acKilometers = 3,
+    acMiles = 4
+};
+
+enum __declspec(uuid("83f0b89a-472b-4070-918b-0ed7983035b4"))
+acIndexStatus
+{
+    acNotIndexed = 0,
+    acIndexed = 1,
+    acIndexError = 2
+};
+
+struct __declspec(uuid("e4a0f674-b705-405a-b356-3cc81f283622"))
+IIMSWorkspace2 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_QueryCapabilities (
+        /*[out,retval]*/ struct IPropertySet * * ppCapabilities ) = 0;
+      virtual HRESULT __stdcall get_SpatialReference (
+        /*[out,retval]*/ struct ISpatialReference * * SpatialReference ) = 0;
+      virtual HRESULT __stdcall get_AreaOfInterest (
+        /*[out,retval]*/ struct IEnvelope * * envelope ) = 0;
+      virtual HRESULT __stdcall get_MapUnits (
+        /*[out,retval]*/ enum acMapUnits * MapUnits ) = 0;
+};
+
+struct __declspec(uuid("5e773ec1-f5e7-11d3-9f48-00c04f79927c"))
+IIMSWorkspace : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_SpatialReference (
+        /*[out,retval]*/ struct ISpatialReference * * SpatialReference ) = 0;
+      virtual HRESULT __stdcall get_AreaOfInterest (
+        /*[out,retval]*/ struct IEnvelope * * envelope ) = 0;
+      virtual HRESULT __stdcall get_MapUnits (
+        /*[out,retval]*/ enum acMapUnits * MapUnits ) = 0;
+};
+
+struct __declspec(uuid("b6f0197b-ea28-11d3-9f47-00c04f79927c"))
+IIMSFeatureClass : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Axl (
+        /*[out,retval]*/ BSTR * Axl ) = 0;
+      virtual HRESULT __stdcall get_LayerID (
+        /*[out,retval]*/ BSTR * LayerID ) = 0;
+      virtual HRESULT __stdcall get_MapUnits (
+        /*[out,retval]*/ enum acMapUnits * MapUnits ) = 0;
+};
+
+struct __declspec(uuid("fe9f959a-06b5-4d52-8148-3bd33c29c0c5"))
+IIMSServiceDescription : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall get_URL (
+        /*[out,retval]*/ BSTR * URL ) = 0;
+      virtual HRESULT __stdcall put_URL (
+        /*[in]*/ BSTR URL ) = 0;
+      virtual HRESULT __stdcall put_UserName (
+        /*[in]*/ BSTR UserName ) = 0;
+      virtual HRESULT __stdcall get_UserName (
+        /*[out,retval]*/ BSTR * UserName ) = 0;
+      virtual HRESULT __stdcall get_Password (
+        /*[out,retval]*/ VARIANT * Password ) = 0;
+      virtual HRESULT __stdcall put_Password (
+        /*[in]*/ BSTR Password ) = 0;
+      virtual HRESULT __stdcall get_SavePassword (
+        /*[out,retval]*/ VARIANT_BOOL * flag ) = 0;
+      virtual HRESULT __stdcall put_SavePassword (
+        /*[in]*/ VARIANT_BOOL flag ) = 0;
+      virtual HRESULT __stdcall get_ServiceType (
+        /*[out,retval]*/ enum acServiceType * Type ) = 0;
+      virtual HRESULT __stdcall put_ServiceType (
+        /*[in]*/ enum acServiceType Type ) = 0;
+      virtual HRESULT __stdcall get_Security (
+        /*[out,retval]*/ long * Security ) = 0;
+      virtual HRESULT __stdcall put_Security (
+        /*[in]*/ long Security ) = 0;
+      virtual HRESULT __stdcall get_IsPrivate (
+        /*[out,retval]*/ VARIANT_BOOL * IsPrivate ) = 0;
+      virtual HRESULT __stdcall put_IsPrivate (
+        /*[in]*/ VARIANT_BOOL IsPrivate ) = 0;
+      virtual HRESULT __stdcall get_ConnectionProperties (
+        /*[out,retval]*/ struct IPropertySet * * ConnectionProperties ) = 0;
+      virtual HRESULT __stdcall put_ConnectionProperties (
+        /*[in]*/ struct IPropertySet * ConnectionProperties ) = 0;
+};
+
+struct __declspec(uuid("2844f4ef-098f-4858-80a6-b6a29eb5f140"))
+IIMSAxlRequest : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SendAxlRequest (
+        /*[in]*/ BSTR Axl,
+        /*[in]*/ VARIANT_BOOL queryRequest,
+        /*[in]*/ struct ITrackCancel * trackCancel,
+        /*[in]*/ VARIANT_BOOL showConnectingAVI,
+        /*[in]*/ VARIANT_BOOL processMessages,
+        /*[out,retval]*/ BSTR * response ) = 0;
+      virtual HRESULT __stdcall SendAxlRequestStream (
+        /*[in]*/ BSTR Axl,
+        /*[in]*/ VARIANT_BOOL queryRequest,
+        /*[in]*/ struct ITrackCancel * trackCancel,
+        /*[in]*/ VARIANT_BOOL showConnectingAVI,
+        /*[in]*/ VARIANT_BOOL processMessages,
+        /*[out,retval]*/ struct IStream * * response ) = 0;
+      virtual HRESULT __stdcall SendCommandRequest (
+        /*[in]*/ BSTR command,
+        /*[in]*/ struct ITrackCancel * trackCancel,
+        /*[in]*/ VARIANT_BOOL showConnectingAVI,
+        /*[in]*/ VARIANT_BOOL processMessages,
+        /*[out,retval]*/ BSTR * response ) = 0;
+      virtual HRESULT __stdcall get_ServerVersion (
+        /*[in]*/ struct ITrackCancel * trackCancel,
+        /*[in]*/ VARIANT_BOOL showConnectingAVI,
+        /*[in]*/ VARIANT_BOOL processMessages,
+        /*[out,retval]*/ BSTR * ServerVersion ) = 0;
+};
+
+struct __declspec(uuid("448631a6-2bda-4f54-a341-76cc7ffd70a7"))
+IIMSUserRole : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_UserRole (
+        /*[out,retval]*/ enum acUserRole * role ) = 0;
+      virtual HRESULT __stdcall put_UserRole (
+        /*[in]*/ enum acUserRole role ) = 0;
+};
+
+struct __declspec(uuid("c7535706-3898-419c-b65b-9faf0d8bfc83"))
+IRemoteMetadataName : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Dataset (
+        /*[in]*/ BSTR pDataset ) = 0;
+      virtual HRESULT __stdcall get_Dataset (
+        /*[out,retval]*/ BSTR * pDataset ) = 0;
+      virtual HRESULT __stdcall put_Owner (
+        /*[in]*/ BSTR pOwner ) = 0;
+      virtual HRESULT __stdcall get_Owner (
+        /*[out,retval]*/ BSTR * pOwner ) = 0;
+      virtual HRESULT __stdcall put_UserID (
+        /*[in]*/ BSTR pUserID ) = 0;
+      virtual HRESULT __stdcall get_UserID (
+        /*[out,retval]*/ BSTR * pUserID ) = 0;
+      virtual HRESULT __stdcall put_ParentDataset (
+        /*[in]*/ BSTR pDataset ) = 0;
+      virtual HRESULT __stdcall get_ParentDataset (
+        /*[out,retval]*/ BSTR * pDataset ) = 0;
+      virtual HRESULT __stdcall put_ParentOwner (
+        /*[in]*/ BSTR pOwner ) = 0;
+      virtual HRESULT __stdcall get_ParentOwner (
+        /*[out,retval]*/ BSTR * pOwner ) = 0;
+      virtual HRESULT __stdcall put_ParentUserID (
+        /*[in]*/ BSTR pUserID ) = 0;
+      virtual HRESULT __stdcall get_ParentUserID (
+        /*[out,retval]*/ BSTR * pUserID ) = 0;
+      virtual HRESULT __stdcall put_MetadataURL (
+        /*[in]*/ BSTR pUrl ) = 0;
+      virtual HRESULT __stdcall get_MetadataURL (
+        /*[out,retval]*/ BSTR * pUrl ) = 0;
+      virtual HRESULT __stdcall put_ThumbnailURL (
+        /*[in]*/ BSTR pUrl ) = 0;
+      virtual HRESULT __stdcall get_ThumbnailURL (
+        /*[out,retval]*/ BSTR * pUrl ) = 0;
+      virtual HRESULT __stdcall put_isFolder (
+        /*[in]*/ VARIANT_BOOL pIsFolder ) = 0;
+      virtual HRESULT __stdcall get_isFolder (
+        /*[out,retval]*/ VARIANT_BOOL * pIsFolder ) = 0;
+      virtual HRESULT __stdcall put_IsRoot (
+        /*[in]*/ VARIANT_BOOL pIsRoot ) = 0;
+      virtual HRESULT __stdcall get_IsRoot (
+        /*[out,retval]*/ VARIANT_BOOL * pIsRoot ) = 0;
+      virtual HRESULT __stdcall put_IsPrivateDocument (
+        /*[in]*/ VARIANT_BOOL pIsPrivate ) = 0;
+      virtual HRESULT __stdcall get_IsPrivateDocument (
+        /*[out,retval]*/ VARIANT_BOOL * pIsPrivate ) = 0;
+      virtual HRESULT __stdcall put_RefCount (
+        /*[in]*/ long pRefCount ) = 0;
+      virtual HRESULT __stdcall get_RefCount (
+        /*[out,retval]*/ long * pRefCount ) = 0;
+      virtual HRESULT __stdcall putref_Extent (
+        /*[in]*/ struct IEnvelope * ppExtent ) = 0;
+      virtual HRESULT __stdcall get_Extent (
+        /*[out,retval]*/ struct IEnvelope * * ppExtent ) = 0;
+      virtual HRESULT __stdcall put_Onlink (
+        /*[in]*/ BSTR Onlink ) = 0;
+      virtual HRESULT __stdcall get_Onlink (
+        /*[out,retval]*/ BSTR * Onlink ) = 0;
+      virtual HRESULT __stdcall put_server (
+        /*[in]*/ BSTR server ) = 0;
+      virtual HRESULT __stdcall get_server (
+        /*[out,retval]*/ BSTR * server ) = 0;
+      virtual HRESULT __stdcall put_Service (
+        /*[in]*/ BSTR Service ) = 0;
+      virtual HRESULT __stdcall get_Service (
+        /*[out,retval]*/ BSTR * Service ) = 0;
+      virtual HRESULT __stdcall get_IndexStatus (
+        /*[out,retval]*/ enum acIndexStatus * pIndexStatus ) = 0;
+      virtual HRESULT __stdcall put_IndexStatus (
+        /*[in]*/ enum acIndexStatus pIndexStatus ) = 0;
+};
+
+struct __declspec(uuid("edc3739d-807f-47ea-978d-e6ae0fc67018"))
+IRemoteMetadataName2 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ContentType (
+        /*[out,retval]*/ BSTR * pContentType ) = 0;
+      virtual HRESULT __stdcall put_ContentType (
+        /*[in]*/ BSTR pContentType ) = 0;
+      virtual HRESULT __stdcall get_ModifiedTime (
+        /*[out,retval]*/ BSTR * pModifiedTime ) = 0;
+      virtual HRESULT __stdcall put_ModifiedTime (
+        /*[in]*/ BSTR pModifiedTime ) = 0;
+};
+
+struct __declspec(uuid("64c58b58-b932-4f91-8a60-4a85964af693"))
+IIMSMetadataAxlRequest : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SendMetadataAxlRequest (
+        /*[in]*/ BSTR Axl,
+        /*[in]*/ struct ITrackCancel * pTrackCancel,
+        /*[out,retval]*/ BSTR * response ) = 0;
+};
+
+struct __declspec(uuid("630f3de8-e213-4a5e-ac01-2bd5bcd646b6"))
+IMSServiceName;
+    // [ default ] interface IUnknown
+    // interface IIMSServiceDescription
+    // interface IIMSAxlRequest
+    // interface IName
+    // interface IPersist
+    // interface IPersistStream
+    // interface IMetadata
+    // interface IMetadataEdit
+    // interface IIMSUserRole
+    // interface ITestConnection
+
+struct __declspec(uuid("bac84d58-fa9d-11d3-9f48-00c04f79927c"))
+IMSWorkspaceFactory;
+    // [ default ] interface IUnknown
+    // interface IWorkspaceFactory
+    // interface IWorkspaceFactory2
+
+struct __declspec(uuid("d6ba032f-5391-445a-a012-aba4a0ad5b4e"))
+IMSCatalogPathParser;
+    // [ default ] interface IUnknown
+    // interface IParseNameString
+
+struct __declspec(uuid("d2b6fce3-3f56-478b-8125-177b3373a634"))
+IMSMetadataServiceName;
+    // [ default ] interface IUnknown
+    // interface IIMSServiceDescription
+    // interface IIMSAxlRequest
+    // interface IMetadata
+    // interface IName
+    // interface IPersist
+    // interface IPersistStream
+    // interface IRemoteMetadataName
+    // interface IIMSMetadataAxlRequest
+    // interface IIMSUserRole
+    // interface IRemoteMetadataName2
+
+struct __declspec(uuid("0e5d8d4c-a8cd-4eb9-a311-af312dc308bc"))
+IWMSLayerStyleDescription : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_Title (
+        /*[out]*/ BSTR * Title ) = 0;
+      virtual HRESULT __stdcall get_Abstract (
+        /*[out]*/ BSTR * Abstract ) = 0;
+      virtual HRESULT __stdcall get_Width (
+        /*[out,retval]*/ double * Width ) = 0;
+      virtual HRESULT __stdcall get_Height (
+        /*[out,retval]*/ double * Height ) = 0;
+      virtual HRESULT __stdcall get_URL (
+        /*[out,retval]*/ BSTR * URL ) = 0;
+      virtual HRESULT __stdcall get_ImageFormatCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_ImageFormat (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * ImageFormat ) = 0;
+};
+
+struct __declspec(uuid("2290f5ac-8561-4b1d-8fda-482a063f1ef4"))
+IWMSLayerDescription : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_Title (
+        /*[out,retval]*/ BSTR * Title ) = 0;
+      virtual HRESULT __stdcall get_Abstract (
+        /*[out,retval]*/ BSTR * Abstract ) = 0;
+      virtual HRESULT __stdcall get_IsQueryable (
+        /*[out,retval]*/ VARIANT_BOOL * isQuaryable ) = 0;
+      virtual HRESULT __stdcall get_IsOpaque (
+        /*[out,retval]*/ VARIANT_BOOL * IsOpaque ) = 0;
+      virtual HRESULT __stdcall get_IsCascaded (
+        /*[out,retval]*/ long * IsCascaded ) = 0;
+      virtual HRESULT __stdcall get_IsSubsettable (
+        /*[out,retval]*/ VARIANT_BOOL * IsSubsettable ) = 0;
+      virtual HRESULT __stdcall get_FixedWidth (
+        /*[out,retval]*/ double * Width ) = 0;
+      virtual HRESULT __stdcall get_FixedHeight (
+        /*[out,retval]*/ double * Height ) = 0;
+      virtual HRESULT __stdcall get_LayerDescriptionCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_LayerDescription (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IWMSLayerDescription * * ppLayerDescription ) = 0;
+      virtual HRESULT __stdcall get_ScaleHintMin (
+        /*[out,retval]*/ double * Scale ) = 0;
+      virtual HRESULT __stdcall get_ScaleHintMax (
+        /*[out,retval]*/ double * Scale ) = 0;
+      virtual HRESULT __stdcall get_LatLongBoundingBox (
+        /*[out,retval]*/ struct IEnvelope * * envelope ) = 0;
+      virtual HRESULT __stdcall get_BoundingBoxCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_BoundingBox (
+        /*[in]*/ long index,
+        /*[out]*/ struct IEnvelope * * envelope,
+        /*[out]*/ BSTR * srsCode ) = 0;
+      virtual HRESULT __stdcall get_StyleDescriptionCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_StyleDescription (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IWMSLayerStyleDescription * * StyleDescription ) = 0;
+      virtual HRESULT __stdcall get_SRSCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_SRS (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * SRS ) = 0;
+      virtual HRESULT __stdcall get_WMSVersion (
+        /*[out,retval]*/ BSTR * WMSVersion ) = 0;
+      virtual HRESULT __stdcall get_ImageFormatCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_ImageFormat (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * ImageFormat ) = 0;
+      virtual HRESULT __stdcall get_FeatureInfoFormatCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_FeatureInfoFormat (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * ImageFormat ) = 0;
+      virtual HRESULT __stdcall get_ExceptionFormatCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_ExceptionFormat (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * ExceptionFormat ) = 0;
+};
+
+struct __declspec(uuid("e1a24fde-e0cb-4c17-bdc0-b5520df063cb"))
+IWCSConnectionName : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_ConnectionProperties (
+        /*[in]*/ struct IPropertySet * ppConnProps ) = 0;
+      virtual HRESULT __stdcall get_ConnectionProperties (
+        /*[out,retval]*/ struct IPropertySet * * ppConnProps ) = 0;
+      virtual HRESULT __stdcall put_ConnectionInfo (
+        /*[in]*/ struct IPropertySet * ppConnInfo ) = 0;
+      virtual HRESULT __stdcall get_ConnectionInfo (
+        /*[out,retval]*/ struct IPropertySet * * ppConnInfo ) = 0;
+      virtual HRESULT __stdcall OpenEx (
+        /*[in]*/ struct ITrackCancel * pTrackCancel,
+        /*[out,retval]*/ IUnknown * * ppUnknown ) = 0;
+};
+
+struct __declspec(uuid("cb717bf3-f1ec-4beb-a6c8-ec80a11e9010"))
+IWCSCoverageName : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_WCSConnectionName (
+        /*[out,retval]*/ struct IWCSConnectionName * * ppServerConnName ) = 0;
+      virtual HRESULT __stdcall putref_WCSConnectionName (
+        /*[in]*/ struct IWCSConnectionName * ppServerConnName ) = 0;
+};
+
+struct __declspec(uuid("ed79b15f-9133-4d1c-8bac-170562b5ff9d"))
+IWCSBoundingBoxInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_CRS (
+        /*[out,retval]*/ BSTR * CRS ) = 0;
+      virtual HRESULT __stdcall get_BoundingBox (
+        /*[out,retval]*/ struct IEnvelope * * ppEnvelope ) = 0;
+};
+
+struct __declspec(uuid("b7ec7893-efb4-4b61-8fe0-e746cf0422b5"))
+IWCSSpatialDomain : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_BoundingBoxInfoCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_BoundingBoxInfo (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IWCSBoundingBoxInfo * * ppWCSBBInfo ) = 0;
+      virtual HRESULT __stdcall get_GridBaseCRS (
+        /*[out,retval]*/ BSTR * CRS ) = 0;
+      virtual HRESULT __stdcall get_GridOrigin_X (
+        /*[out,retval]*/ double * x ) = 0;
+      virtual HRESULT __stdcall get_GridOrigin_Y (
+        /*[out,retval]*/ double * y ) = 0;
+      virtual HRESULT __stdcall get_GridOffsets_X (
+        /*[out,retval]*/ double * x ) = 0;
+      virtual HRESULT __stdcall get_GridOffsets_Y (
+        /*[out,retval]*/ double * y ) = 0;
+      virtual HRESULT __stdcall get_GridOffsetsBoundingBox (
+        /*[out,retval]*/ struct IEnvelope * * ppEnvelope ) = 0;
+};
+
+struct __declspec(uuid("d970569f-8f77-42cb-98be-b7c0d8b87795"))
+IWCSCoverageField : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Title (
+        /*[out,retval]*/ BSTR * Title ) = 0;
+      virtual HRESULT __stdcall get_Abstract (
+        /*[out,retval]*/ BSTR * Abstract ) = 0;
+      virtual HRESULT __stdcall get_Identifier (
+        /*[out,retval]*/ BSTR * Identifier ) = 0;
+      virtual HRESULT __stdcall get_AxisID (
+        /*[out,retval]*/ BSTR * AxisID ) = 0;
+      virtual HRESULT __stdcall get_AxisKeysCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_AxisKey (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * key ) = 0;
+      virtual HRESULT __stdcall get_DefaultInterpolation (
+        /*[out,retval]*/ BSTR * Interpolation ) = 0;
+      virtual HRESULT __stdcall get_InterpolationCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_Interpolation (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * Interpolation ) = 0;
+};
+
+struct __declspec(uuid("7f5b3583-a7b7-47a9-b517-6e30ab0c1333"))
+IWCSRange : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_FieldCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_Field (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IWCSCoverageField * * ppField ) = 0;
+};
+
+struct __declspec(uuid("165f657d-6e52-4ce6-984a-7300acb2e291"))
+IWCSCoverageDescription : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_Title (
+        /*[out,retval]*/ BSTR * Title ) = 0;
+      virtual HRESULT __stdcall get_Abstract (
+        /*[out,retval]*/ BSTR * Abstract ) = 0;
+      virtual HRESULT __stdcall get_Identifier (
+        /*[out,retval]*/ BSTR * Identifier ) = 0;
+      virtual HRESULT __stdcall get_IsSelected (
+        /*[out,retval]*/ VARIANT_BOOL * pIsSelected ) = 0;
+      virtual HRESULT __stdcall get_WCSCoverageName (
+        /*[out,retval]*/ struct IWCSCoverageName * * ppName ) = 0;
+      virtual HRESULT __stdcall put_LonLatSRSName (
+        /*[in]*/ BSTR SRS ) = 0;
+      virtual HRESULT __stdcall get_LonLatSRSName (
+        /*[out,retval]*/ BSTR * SRS ) = 0;
+      virtual HRESULT __stdcall get_LonLatBoundingBox (
+        /*[out,retval]*/ struct IEnvelope * * ppEnvelope ) = 0;
+      virtual HRESULT __stdcall get_DefaultBoundingBox (
+        /*[in]*/ BSTR CRS,
+        /*[out,retval]*/ struct IEnvelope * * ppEnvelope ) = 0;
+      virtual HRESULT __stdcall get_DefaultBoundingCRS (
+        /*[out,retval]*/ BSTR * CRS ) = 0;
+      virtual HRESULT __stdcall get_SpatialDomain (
+        /*[out,retval]*/ struct IWCSSpatialDomain * * ppSpatailDomain ) = 0;
+      virtual HRESULT __stdcall get_Range (
+        /*[out,retval]*/ struct IWCSRange * * ppRange ) = 0;
+      virtual HRESULT __stdcall get_DefaultInterpolation (
+        /*[out,retval]*/ BSTR * Interpolation ) = 0;
+      virtual HRESULT __stdcall get_InterpolationCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_Interpolation (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * Interpolation ) = 0;
+      virtual HRESULT __stdcall get_CRSCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_CRS (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * CRS ) = 0;
+      virtual HRESULT __stdcall get_NativeCRS (
+        /*[out,retval]*/ BSTR * CRS ) = 0;
+      virtual HRESULT __stdcall get_ImageFormatCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_ImageFormat (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * format ) = 0;
+      virtual HRESULT __stdcall get_NativeImageFormat (
+        /*[out,retval]*/ BSTR * format ) = 0;
+};
+
+struct __declspec(uuid("dbc40029-335f-47c2-8cb0-75473fef52bf"))
+IWMTSDimension : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Identifier (
+        /*[out,retval]*/ BSTR * ID ) = 0;
+      virtual HRESULT __stdcall get_Title (
+        /*[out,retval]*/ BSTR * Title ) = 0;
+      virtual HRESULT __stdcall get_Abstract (
+        /*[out,retval]*/ BSTR * Abstract ) = 0;
+      virtual HRESULT __stdcall get_ValueCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_Value (
+        /*[in]*/ long ix,
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_DefaultValue (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_SupportsCurrentValue (
+        /*[out,retval]*/ VARIANT_BOOL * supports ) = 0;
+      virtual HRESULT __stdcall get_UnitsSymbol (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+};
+
+struct __declspec(uuid("95ad2016-d7ae-44d4-a121-cb2645f4ea42"))
+IWMTSTileMatrixSetLink : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_TileMatrixSet (
+        /*[out,retval]*/ BSTR * ID ) = 0;
+      virtual HRESULT __stdcall get_TileMatrixSetLimitsCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_TileMatrixSetLimits (
+        /*[in]*/ long ix,
+        /*[out,retval]*/ struct IPropertySet * * limitsAsProps ) = 0;
+};
+
+struct __declspec(uuid("e28b0014-208c-4c9b-8e24-ac882d0b4c36"))
+IWMTSLayerDescription : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Identifier (
+        /*[out,retval]*/ BSTR * stringId ) = 0;
+      virtual HRESULT __stdcall get_Title (
+        /*[out,retval]*/ BSTR * Title ) = 0;
+      virtual HRESULT __stdcall get_Abstract (
+        /*[out,retval]*/ BSTR * Abstract ) = 0;
+      virtual HRESULT __stdcall get_WGS84BoundingBox (
+        /*[out,retval]*/ struct IEnvelope * * envelope ) = 0;
+      virtual HRESULT __stdcall get_BoundingBoxCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_BoundingBox (
+        /*[in]*/ long index,
+        /*[out]*/ struct IEnvelope * * envelope,
+        /*[out]*/ BSTR * srsCode ) = 0;
+      virtual HRESULT __stdcall get_StyleDescriptionCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_StyleDescription (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IWMSLayerStyleDescription * * StyleDescription ) = 0;
+      virtual HRESULT __stdcall get_WMTSVersion (
+        /*[out,retval]*/ BSTR * WMTSVersion ) = 0;
+      virtual HRESULT __stdcall get_ImageFormatCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_ImageFormat (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * ImageFormat ) = 0;
+      virtual HRESULT __stdcall get_FeatureInfoFormatCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_FeatureInfoFormat (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * ImageFormat ) = 0;
+      virtual HRESULT __stdcall get_DimensionCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_Dimension (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IWMTSDimension * * Dimension ) = 0;
+      virtual HRESULT __stdcall get_TileMatrixSetLinkCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_TileMatrixSetLink (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IWMTSTileMatrixSetLink * * matrixSetLink ) = 0;
+      virtual HRESULT __stdcall GetRESTResourceInfo (
+        /*[in]*/ BSTR resourceType,
+        /*[out]*/ BSTR * templateUrl,
+        /*[out]*/ BSTR * format ) = 0;
+};
+
+struct __declspec(uuid("3fc53a77-74d8-4eb5-aa3c-d3797439e2a3"))
+IWMTSTileMatrix : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Identifier (
+        /*[out,retval]*/ BSTR * ID ) = 0;
+      virtual HRESULT __stdcall get_ScaleDenominator (
+        /*[out,retval]*/ double * Scale ) = 0;
+      virtual HRESULT __stdcall get_TopLeftCorner (
+        /*[out,retval]*/ WKSPoint * position ) = 0;
+      virtual HRESULT __stdcall get_TileWidth (
+        /*[out,retval]*/ long * Width ) = 0;
+      virtual HRESULT __stdcall get_TileHeight (
+        /*[out,retval]*/ long * Height ) = 0;
+      virtual HRESULT __stdcall get_MatrixWidth (
+        /*[out,retval]*/ long * Width ) = 0;
+      virtual HRESULT __stdcall get_MatrixHeight (
+        /*[out,retval]*/ long * Height ) = 0;
+};
+
+struct __declspec(uuid("b7d67eda-daf2-49b0-8c27-3c4df14b69b5"))
+IWMTSTileMatrixSet : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Identifier (
+        /*[out,retval]*/ BSTR * Identifier ) = 0;
+      virtual HRESULT __stdcall get_Title (
+        /*[out,retval]*/ BSTR * Title ) = 0;
+      virtual HRESULT __stdcall get_SupportedCRS (
+        /*[out,retval]*/ BSTR * CRS ) = 0;
+      virtual HRESULT __stdcall get_WellKnownScaleSet (
+        /*[out,retval]*/ BSTR * scaleSetUri ) = 0;
+      virtual HRESULT __stdcall get_BoundingBoxCRS (
+        /*[out,retval]*/ BSTR * CRS ) = 0;
+      virtual HRESULT __stdcall get_BoundingBox (
+        /*[out,retval]*/ struct IEnvelope * * BoundingBox ) = 0;
+      virtual HRESULT __stdcall get_TileMatrixCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_TileMatrix (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IWMTSTileMatrix * * ppTileMatrix ) = 0;
+};
+
+enum __declspec(uuid("0d742ac8-bc55-4bf9-8dde-20a6e6980709"))
+wmsErrors
+{
+    WMSCONN_E_ACCESS_DENIED = -2147220735,
+    WMSCONN_E_PROXY_AUTHENTICATION_FAILED = -2147220734,
+    WMSCONN_E_UNABLE_TO_CONNECT = -2147220733,
+    WMSCONN_E_MISSING_URL = -2147220732,
+    WMSCONN_E_MISSING_SERVICENAME = -2147220731,
+    WMSCONN_E_INCORRECT_URL = -2147220730,
+    WMSCONN_E_SERVER_NOT_AVAILABLE = -2147220729
+};
+
+enum __declspec(uuid("ec793730-311f-44b5-a1d6-8d070f90ec5c"))
+wcsErrors
+{
+    WCSCONN_E_ACCESS_DENIED = -2147220479,
+    WCSCONN_E_PROXY_AUTHENTICATION_FAILED = -2147220478,
+    WCSCONN_E_UNABLE_TO_CONNECT = -2147220477,
+    WCSCONN_E_MISSING_URL = -2147220476,
+    WCSCONN_E_MISSING_SERVICENAME = -2147220475,
+    WCSCONN_E_INCORRECT_URL = -2147220474,
+    WCSCONN_E_SERVER_NOT_AVAILABLE = -2147220473
+};
+
+struct __declspec(uuid("cfcaca30-440a-488e-815a-86351cd78ecc"))
+IWMSServiceExceptionHandler : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ParseExceptions (
+        BSTR fileOrURL ) = 0;
+      virtual HRESULT __stdcall get_ExceptionCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_ExceptionCode (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * wmsErrorCode ) = 0;
+      virtual HRESULT __stdcall get_ExceptionDescription (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * wmsErrorDescription ) = 0;
+};
+
+struct __declspec(uuid("07c8fd52-5d97-4b1f-a6bf-4973c9bb4117"))
+IWMSConnectionName : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_ConnectionProperties (
+        /*[in]*/ struct IPropertySet * ConnectionProperties ) = 0;
+      virtual HRESULT __stdcall get_ConnectionProperties (
+        /*[out,retval]*/ struct IPropertySet * * ConnectionProperties ) = 0;
+      virtual HRESULT __stdcall OpenEx (
+        /*[in]*/ struct ITrackCancel * pTrackCancel,
+        /*[out,retval]*/ IUnknown * * ppUnknown ) = 0;
+};
+
+struct __declspec(uuid("67bc7de0-0a6d-4ba6-9d26-437c44dbddf3"))
+IWMSConnection : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        BSTR Name ) = 0;
+      virtual HRESULT __stdcall get_FullName (
+        /*[out,retval]*/ struct IName * * ppName ) = 0;
+      virtual HRESULT __stdcall putref_FullName (
+        /*[in]*/ struct IName * ppName ) = 0;
+};
+
+struct __declspec(uuid("253c9134-0d0f-45c7-bfdc-d230d0f8ce35"))
+IWMSConnectionFactory : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Open (
+        /*[in]*/ struct IPropertySet * pConnectionProperties,
+        /*[in]*/ OLE_HANDLE hWnd,
+        struct ITrackCancel * pTrackCancel,
+        /*[out,retval]*/ struct IWMSConnection * * ppConnection ) = 0;
+};
+
+struct __declspec(uuid("de0e6ebf-8abf-4700-b9f5-b097e14c0e51"))
+IWMSServiceDescription : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_WMSName (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_WMSAbstract (
+        /*[out,retval]*/ BSTR * Abstract ) = 0;
+      virtual HRESULT __stdcall get_WMSTitle (
+        /*[out,retval]*/ BSTR * Title ) = 0;
+      virtual HRESULT __stdcall get_WMSVersion (
+        /*[out,retval]*/ BSTR * Title ) = 0;
+      virtual HRESULT __stdcall get_LayerDescriptionCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_LayerDescription (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IWMSLayerDescription * * ppLayerDescription ) = 0;
+      virtual HRESULT __stdcall get_SRSCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_SRS (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * SRS ) = 0;
+      virtual HRESULT __stdcall get_ImageRequestUrl (
+        /*[in]*/ struct IArray * pLayers,
+        /*[in]*/ struct IEnvelope * pBoundingBox,
+        /*[in]*/ long imageWidth,
+        /*[in]*/ long imageHeight,
+        /*[in]*/ OLE_COLOR bgColor,
+        /*[in]*/ BSTR responseFormat,
+        /*[in]*/ VARIANT_BOOL drawTransparent,
+        /*[out,retval]*/ BSTR * URL ) = 0;
+      virtual HRESULT __stdcall get_FeatureInfoRequestURL (
+        /*[in]*/ struct IArray * pLayers,
+        /*[in]*/ struct IEnvelope * pBoundingBox,
+        /*[in]*/ long imageWidth,
+        /*[in]*/ long imageHeight,
+        /*[in]*/ long positionX,
+        /*[in]*/ long positionY,
+        /*[in]*/ long featureCount,
+        /*[in]*/ BSTR responseFormat,
+        /*[out,retval]*/ BSTR * URL ) = 0;
+      virtual HRESULT __stdcall get_ImageFormatCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_ImageFormat (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * ImageFormat ) = 0;
+      virtual HRESULT __stdcall get_FeatureInfoFormatCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_FeatureInfoFormat (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * ImageFormat ) = 0;
+      virtual HRESULT __stdcall get_ExceptionFormatCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_ExceptionFormat (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * ExceptionFormat ) = 0;
+      virtual HRESULT __stdcall get_BaseURL (
+        /*[in]*/ BSTR capability,
+        /*[in]*/ BSTR requestMethod,
+        /*[out,retval]*/ BSTR * BaseURL ) = 0;
+      virtual HRESULT __stdcall FireWMSRequest (
+        /*[in]*/ BSTR requestType,
+        /*[in]*/ BSTR requestURL ) = 0;
+      virtual HRESULT __stdcall FireWMSException (
+        /*[in]*/ BSTR requestType,
+        /*[in]*/ BSTR requestURL,
+        /*[in]*/ struct IWMSServiceExceptionHandler * pException ) = 0;
+};
+
+struct __declspec(uuid("4ee28878-3a87-40e5-b25d-6fcc4d683e8c"))
+IWMSClientEvents : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall WMSRequest (
+        /*[in]*/ struct IWMSServiceDescription * pService,
+        /*[in]*/ BSTR requestType,
+        /*[in]*/ BSTR requestURL ) = 0;
+      virtual HRESULT __stdcall WMSException (
+        /*[in]*/ struct IWMSServiceDescription * pService,
+        /*[in]*/ BSTR requestType,
+        /*[in]*/ BSTR requestURL,
+        /*[in]*/ struct IWMSServiceExceptionHandler * pException ) = 0;
+};
+
+struct __declspec(uuid("ad2e4de6-cc7e-41e1-911f-5343cd27f227"))
+IWCSServiceExceptionHandler : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ParseExceptions (
+        BSTR fileOrURL ) = 0;
+      virtual HRESULT __stdcall get_ExceptionCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_ExceptionCode (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * wcsErrorCode ) = 0;
+      virtual HRESULT __stdcall get_ExceptionDescription (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * wcsErrorDescription ) = 0;
+};
+
+struct __declspec(uuid("2bb26ed5-6774-4ff5-8252-1e973ebd5bdc"))
+IWCSConnection : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        BSTR Name ) = 0;
+      virtual HRESULT __stdcall get_FullName (
+        /*[out,retval]*/ struct IName * * ppName ) = 0;
+      virtual HRESULT __stdcall putref_FullName (
+        /*[in]*/ struct IName * ppName ) = 0;
+};
+
+struct __declspec(uuid("a73a11e4-aeb0-4917-b36e-a43865cc9b7b"))
+IWCSConnectionFactory : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Open (
+        /*[in]*/ struct IPropertySet * pConnectionProperties,
+        /*[in]*/ OLE_HANDLE hWnd,
+        struct ITrackCancel * pTrackCancel,
+        /*[out,retval]*/ struct IWCSConnection * * ppConnection ) = 0;
+};
+
+struct __declspec(uuid("e19a5310-486c-4d32-8d44-93696d6804d4"))
+IWCSServiceDescription : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_WCSName (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_Abstract (
+        /*[out,retval]*/ BSTR * Abstract ) = 0;
+      virtual HRESULT __stdcall get_Title (
+        /*[out,retval]*/ BSTR * Title ) = 0;
+      virtual HRESULT __stdcall get_Version (
+        /*[out,retval]*/ BSTR * ver ) = 0;
+      virtual HRESULT __stdcall get_AccessConstrains (
+        /*[out,retval]*/ BSTR * constrains ) = 0;
+      virtual HRESULT __stdcall get_BaseURL (
+        /*[in]*/ BSTR capability,
+        /*[in]*/ BSTR requestMethod,
+        /*[out,retval]*/ BSTR * BaseURL ) = 0;
+      virtual HRESULT __stdcall get_ExceptionFormatCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_ExceptionFormat (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * ExceptionFormat ) = 0;
+      virtual HRESULT __stdcall get_SupportedVersionsCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_SupportedVersion (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * Version ) = 0;
+      virtual HRESULT __stdcall get_KeywordCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_Keyword (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * Keyword ) = 0;
+      virtual HRESULT __stdcall get_CoverageDescriptionCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_CoverageDescriptionByIndex (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IWCSCoverageDescription * * ppCoverageDescription ) = 0;
+      virtual HRESULT __stdcall get_CoverageDescriptionByName (
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ struct IWCSCoverageDescription * * ppCoverageDescription ) = 0;
+      virtual HRESULT __stdcall get_CoverageRequestUrl (
+        /*[in]*/ BSTR coverageName,
+        /*[in]*/ struct IEnvelope * pBoundingBox,
+        /*[in]*/ BSTR CRS,
+        /*[in]*/ BSTR responseFormat,
+        /*[in]*/ long imageWidth,
+        /*[in]*/ long imageHeight,
+        /*[out,retval]*/ BSTR * URL ) = 0;
+      virtual HRESULT __stdcall FireWCSRequest (
+        /*[in]*/ BSTR requestType,
+        /*[in]*/ BSTR requestURL ) = 0;
+      virtual HRESULT __stdcall FireWCSException (
+        /*[in]*/ BSTR requestType,
+        /*[in]*/ BSTR requestURL,
+        /*[in]*/ struct IWCSServiceExceptionHandler * pException ) = 0;
+};
+
+struct __declspec(uuid("c8cd44b2-4412-4a12-bded-7225d81056c4"))
+IWCSClientEvents : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall WCSRequest (
+        /*[in]*/ struct IWCSServiceDescription * pService,
+        /*[in]*/ BSTR requestType,
+        /*[in]*/ BSTR requestURL ) = 0;
+      virtual HRESULT __stdcall WCSException (
+        /*[in]*/ struct IWCSServiceDescription * pService,
+        /*[in]*/ BSTR requestType,
+        /*[in]*/ BSTR requestURL,
+        /*[in]*/ struct IWCSServiceExceptionHandler * pException ) = 0;
+};
+
+struct __declspec(uuid("0a014545-e32c-43c2-aa97-243f43294492"))
+IWMTSConnectionName : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_ConnectionProperties (
+        /*[in]*/ struct IPropertySet * ConnectionProperties ) = 0;
+      virtual HRESULT __stdcall get_ConnectionProperties (
+        /*[out,retval]*/ struct IPropertySet * * ConnectionProperties ) = 0;
+      virtual HRESULT __stdcall OpenEx (
+        /*[in]*/ struct ITrackCancel * pTrackCancel,
+        /*[out,retval]*/ IUnknown * * ppUnknown ) = 0;
+};
+
+struct __declspec(uuid("525ade39-e2e6-418a-bb56-04eab6febbb3"))
+IWMTSConnection : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        BSTR Name ) = 0;
+      virtual HRESULT __stdcall get_FullName (
+        /*[out,retval]*/ struct IName * * ppName ) = 0;
+      virtual HRESULT __stdcall putref_FullName (
+        /*[in]*/ struct IName * ppName ) = 0;
+};
+
+struct __declspec(uuid("8043c9be-1311-4020-a18f-ec23efec6289"))
+IWMTSConnectionFactory : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Open (
+        /*[in]*/ struct IPropertySet * pConnectionProperties,
+        /*[in]*/ OLE_HANDLE hWnd,
+        struct ITrackCancel * pTrackCancel,
+        /*[out,retval]*/ struct IWMTSConnection * * ppConnection ) = 0;
+};
+
+struct __declspec(uuid("b5543b2a-65ef-410c-9819-80ed5bd7e669"))
+IWMTSServiceDescription : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_WMTSName (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_WMTSAbstract (
+        /*[out,retval]*/ BSTR * Abstract ) = 0;
+      virtual HRESULT __stdcall get_WMTSTitle (
+        /*[out,retval]*/ BSTR * Title ) = 0;
+      virtual HRESULT __stdcall get_WMTSVersion (
+        /*[out,retval]*/ BSTR * Title ) = 0;
+      virtual HRESULT __stdcall get_LayerDescriptionCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_LayerDescription (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IWMTSLayerDescription * * ppLayerDescription ) = 0;
+      virtual HRESULT __stdcall get_TileMatrixSetCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_TileMatrixSet (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IWMTSTileMatrixSet * * TileMatrix ) = 0;
+      virtual HRESULT __stdcall get_ImageFormatCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_ImageFormat (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * ImageFormat ) = 0;
+      virtual HRESULT __stdcall get_FeatureInfoFormatCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_FeatureInfoFormat (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * ImageFormat ) = 0;
+      virtual HRESULT __stdcall GetOperationUrl (
+        /*[in]*/ BSTR operation,
+        /*[out,retval]*/ BSTR * BaseURL ) = 0;
+};
+
+struct __declspec(uuid("93b061bb-db92-4e90-9927-48c031b33fe8"))
+WMTSConnectionName;
+    // [ default ] interface IUnknown
+    // interface IWMTSConnectionName
+    // interface IName
+
+struct __declspec(uuid("ebf93db1-b6f1-4dfe-94e0-a0d9f2898b83"))
+WMTSConnection;
+    // [ default ] interface IUnknown
+    // interface IWMTSConnection
+    // interface IWMTSServiceDescription
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("5dc87020-5300-4b06-b6fb-915cecf9d893"))
+WMTSConnectionFactory;
+    // [ default ] interface IUnknown
+    // interface IWMTSConnectionFactory
+
+struct __declspec(uuid("6fe7ae5f-3097-44ce-ab5c-f35bd568a58a"))
+WMTSLayerDescription;
+    // [ default ] interface IUnknown
+    // interface IWMTSLayerDescription
+
+struct __declspec(uuid("56122069-7970-4f9f-9e5e-434a5942259a"))
+WMTSDimension;
+    // [ default ] interface IUnknown
+    // interface IWMTSDimension
+
+struct __declspec(uuid("98b0e997-f21d-4195-8e06-f9cd2ad97165"))
+WMSConnectionName;
+    // [ default ] interface IUnknown
+    // interface IWMSConnectionName
+    // interface IName
+
+struct __declspec(uuid("fddb9510-1619-49e9-baa5-9a6620f315ad"))
+WMSConnection;
+    // [ default ] interface IUnknown
+    // interface IWMSConnection
+    // interface IWMSServiceDescription
+    // interface ISupportErrorInfo
+    // [ default, source ] interface IWMSClientEvents
+
+struct __declspec(uuid("eb412f19-fb25-44aa-8421-070edd242f3c"))
+WMSServiceExceptionHandler;
+    // [ default ] interface IUnknown
+    // interface IWMSServiceExceptionHandler
+
+struct __declspec(uuid("f7c34345-87ce-4ab5-9ca8-2012d7241075"))
+WMSConnectionFactory;
+    // [ default ] interface IUnknown
+    // interface IWMSConnectionFactory
+
+struct __declspec(uuid("b96cfe9e-44c7-4616-8a2a-f1fba8642af6"))
+WCSConnectionName;
+    // [ default ] interface IUnknown
+    // interface IWCSConnectionName
+    // interface IName
+
+struct __declspec(uuid("a9f6d7d9-f493-4eaf-b0d2-e8f6a3465667"))
+WCSConnection;
+    // [ default ] interface IUnknown
+    // interface IWCSConnection
+    // interface IWCSServiceDescription
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("6c1b586b-6d46-4528-bae6-bf1552817c4a"))
+WCSServiceExceptionHandler;
+    // [ default ] interface IUnknown
+    // interface IWCSServiceExceptionHandler
+
+struct __declspec(uuid("ed030e3a-ba11-4047-9b36-0fa11e513dcd"))
+WCSConnectionFactory;
+    // [ default ] interface IUnknown
+    // interface IWCSConnectionFactory
+
+struct __declspec(uuid("2c10edfc-4429-44d1-af58-2d9034571f66"))
+WMTSTileMatrixSetLink;
+    // [ default ] interface IUnknown
+    // interface IWMTSTileMatrixSetLink
+
+struct __declspec(uuid("65e7e2d0-28bb-4f81-a572-f4d7bd48bf67"))
+WMTSTileMatrix;
+    // [ default ] interface IUnknown
+    // interface IWMTSTileMatrix
+
+struct __declspec(uuid("120ad27e-b63c-4503-a37a-1624b715c421"))
+WMTSTileMatrixSet;
+    // [ default ] interface IUnknown
+    // interface IWMTSTileMatrixSet
+
+struct __declspec(uuid("68bd2cad-90af-4bfb-9117-4f28aed6cbe0"))
+IUploadItem : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR pName ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pName ) = 0;
+      virtual HRESULT __stdcall put_ID (
+        /*[in]*/ BSTR pItemID ) = 0;
+      virtual HRESULT __stdcall get_ID (
+        /*[out,retval]*/ BSTR * pItemID ) = 0;
+      virtual HRESULT __stdcall put_FilePath (
+        /*[in]*/ BSTR pPath ) = 0;
+      virtual HRESULT __stdcall get_FilePath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall put_PathOnServer (
+        /*[in]*/ BSTR pPathOnServer ) = 0;
+      virtual HRESULT __stdcall get_PathOnServer (
+        /*[out,retval]*/ BSTR * pPathOnServer ) = 0;
+      virtual HRESULT __stdcall put_Description (
+        /*[in]*/ BSTR pDesc ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * pDesc ) = 0;
+      virtual HRESULT __stdcall put_Date (
+        /*[in]*/ DATE pDate ) = 0;
+      virtual HRESULT __stdcall get_Date (
+        /*[out,retval]*/ DATE * pDate ) = 0;
+      virtual HRESULT __stdcall put_Committed (
+        /*[in]*/ VARIANT_BOOL Committed ) = 0;
+      virtual HRESULT __stdcall get_Committed (
+        /*[out,retval]*/ VARIANT_BOOL * Committed ) = 0;
+};
+
+struct __declspec(uuid("edb37aff-c199-4063-ab1f-fe936d5b5fd0"))
+IUploadsClient : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Init (
+        /*[in]*/ struct IAGSServerConnection * pConn ) = 0;
+      virtual HRESULT __stdcall put_TimeoutInSecs (
+        /*[in]*/ int pTimeout ) = 0;
+      virtual HRESULT __stdcall get_TimeoutInSecs (
+        /*[out,retval]*/ int * pTimeout ) = 0;
+};
+
+struct __declspec(uuid("0788eaf6-42ac-404a-894e-e0330782912a"))
+IUploader : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_SingleUploadThresholdInBytes (
+        /*[in]*/ int pThreshold ) = 0;
+      virtual HRESULT __stdcall get_SingleUploadThresholdInBytes (
+        /*[out,retval]*/ int * pThreshold ) = 0;
+      virtual HRESULT __stdcall put_TimeoutInSecs (
+        /*[in]*/ int pTimeout ) = 0;
+      virtual HRESULT __stdcall get_TimeoutInSecs (
+        /*[out,retval]*/ int * pTimeout ) = 0;
+      virtual HRESULT __stdcall get_UploadsClient (
+        /*[out,retval]*/ struct IUploadsClient * * ppUploadsClient ) = 0;
+      virtual HRESULT __stdcall Init (
+        /*[in]*/ struct IAGSServerConnection * pConn ) = 0;
+};
+
+struct __declspec(uuid("f00d29b6-e9d5-4ac2-a8c7-7c8338cf88c6"))
+IEnumUploadItem : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Next (
+        /*[out,retval]*/ struct IUploadItem * * ppUploadItemConfig ) = 0;
+      virtual HRESULT __stdcall Reset ( ) = 0;
+};
+
+struct __declspec(uuid("2362ad5f-c545-4bd8-b538-557a1c5b89f1"))
+IAdminUploadsClient : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall AdminUploadFile (
+        /*[in]*/ BSTR file,
+        /*[in]*/ BSTR Description,
+        /*[out,retval]*/ struct IUploadItem * * ppUploadedItem ) = 0;
+      virtual HRESULT __stdcall AdminRegister (
+        /*[in]*/ BSTR itemName,
+        /*[in]*/ BSTR Description,
+        /*[out,retval]*/ struct IUploadItem * * ppUploadsItem ) = 0;
+      virtual HRESULT __stdcall AdminUploadPart (
+        /*[in]*/ struct IUploadItem * pUploadItem,
+        /*[in]*/ BSTR file,
+        /*[in]*/ long uploadPartNumber,
+        /*[in]*/ unsigned __int64 offset,
+        /*[in]*/ long bytesToWrite ) = 0;
+      virtual HRESULT __stdcall AdminGetPartNumbers (
+        /*[in]*/ struct IUploadItem * pUploadItem,
+        /*[out,retval]*/ struct ILongArray * * ppPartNumbers ) = 0;
+      virtual HRESULT __stdcall AdminCommit (
+        /*[in]*/ struct IUploadItem * pUploadItem,
+        /*[in]*/ struct ILongArray * pPartNumbers ) = 0;
+      virtual HRESULT __stdcall GetUploadItems (
+        /*[out,retval]*/ struct IEnumUploadItem * * ppUploadItems ) = 0;
+      virtual HRESULT __stdcall GetUploadItem (
+        /*[in]*/ BSTR itemID,
+        /*[out,retval]*/ struct IUploadItem * * ppUploadsItem ) = 0;
+      virtual HRESULT __stdcall AdminDelete (
+        /*[in]*/ struct IUploadItem * pUploadItem ) = 0;
+};
+
+struct __declspec(uuid("ddcbdaac-b932-4279-a2c1-5a151632b793"))
+IServiceUploadsClient : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ServiceUploadFile (
+        /*[in]*/ BSTR file,
+        /*[in]*/ BSTR Description,
+        /*[in]*/ struct IAGSServerObjectName * pTargetService,
+        /*[out,retval]*/ struct IUploadItem * * ppUploadedItem ) = 0;
+      virtual HRESULT __stdcall ServiceRegister (
+        /*[in]*/ BSTR itemName,
+        /*[in]*/ BSTR Description,
+        /*[in]*/ struct IAGSServerObjectName * pTargetService,
+        /*[out,retval]*/ struct IUploadItem * * ppUploadsItem ) = 0;
+      virtual HRESULT __stdcall ServiceUploadPart (
+        /*[in]*/ struct IUploadItem * pUploadItem,
+        /*[in]*/ BSTR file,
+        /*[in]*/ long uploadPartNumber,
+        /*[in]*/ unsigned __int64 offset,
+        /*[in]*/ long bytesToWrite,
+        /*[in]*/ struct IAGSServerObjectName * pTargetService ) = 0;
+      virtual HRESULT __stdcall ServiceGetPartNumbers (
+        /*[in]*/ struct IUploadItem * pUploadItem,
+        /*[in]*/ struct IAGSServerObjectName * pTargetService,
+        /*[out,retval]*/ struct ILongArray * * ppPartNumbers ) = 0;
+      virtual HRESULT __stdcall ServiceCommit (
+        /*[in]*/ struct IUploadItem * pUploadItem,
+        /*[in]*/ struct IAGSServerObjectName * pTargetService,
+        /*[in]*/ struct ILongArray * pPartNumbers ) = 0;
+      virtual HRESULT __stdcall ServiceDelete (
+        /*[in]*/ struct IUploadItem * pUploadItem,
+        /*[in]*/ struct IAGSServerObjectName * pTargetService ) = 0;
+      virtual HRESULT __stdcall GetServiceMaxUploadSizeInBytes (
+        /*[in]*/ struct IAGSServerObjectName * pTargetSevice,
+        /*[out,retval]*/ unsigned __int64 * pMaxSize ) = 0;
+};
+
+struct __declspec(uuid("657e7708-500d-47ec-8e96-2327083ecdc0"))
+IAdminUploader : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall AdminUploadFile (
+        /*[in]*/ BSTR file,
+        /*[in]*/ BSTR Description,
+        /*[in]*/ struct ITrackCancel * pTrackCancel,
+        /*[out,retval]*/ struct IUploadItem * * ppUploadItem ) = 0;
+};
+
+struct __declspec(uuid("0fb7b5a0-f5c5-412b-aa10-8d34b2d583d9"))
+IServiceUploader : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ServiceUploadFile (
+        /*[in]*/ BSTR file,
+        /*[in]*/ BSTR Description,
+        /*[in]*/ struct IAGSServerObjectName * pTargetService,
+        /*[in]*/ struct ITrackCancel * pTrackCancel,
+        /*[out,retval]*/ struct IUploadItem * * ppUploadItem ) = 0;
+};
+
+struct __declspec(uuid("912e7fc9-1f8d-490c-b7e8-3403c21545fb"))
+UploadItem;
+    // [ default ] interface IUnknown
+    // interface IUploadItem
+
+struct __declspec(uuid("a6dd18ca-776b-4cbb-b386-f2d5e1e4374d"))
+UploadsClient;
+    // [ default ] interface IUnknown
+    // interface IUploadsClient
+    // interface IAdminUploadsClient
+    // interface IServiceUploadsClient
+
+struct __declspec(uuid("62cc7834-f2b8-4e4b-93cf-fc2d0571811f"))
+Uploader;
+    // [ default ] interface IUnknown
+    // interface IUploader
+    // interface IAdminUploader
+    // interface IServiceUploader
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_esriGISClient =
+    {0x746f6817,0x89bb,0x4490,{0x98,0x29,0x83,0xca,0x25,0xfd,0x50,0x5a}};
+extern "C" const GUID __declspec(selectany) IID_IAGSServerConnectionName =
+    {0x298cce6a,0x4d86,0x40ee,{0x8f,0x4a,0xbe,0xbc,0x41,0x9b,0x9a,0x4d}};
+extern "C" const GUID __declspec(selectany) IID_IAGSServerObjectName =
+    {0x436bd37c,0xfe61,0x4a2e,{0x9d,0x74,0x1a,0xe6,0xfc,0x8d,0x65,0x4d}};
+extern "C" const GUID __declspec(selectany) IID_IAGSEnumServerObjectName =
+    {0xe584b406,0x753e,0x4e29,{0xb2,0x0b,0xfe,0xd6,0x6f,0xa3,0xef,0x3c}};
+extern "C" const GUID __declspec(selectany) IID_IAGSServerObject =
+    {0x7c25fb69,0xeac4,0x433c,{0xb0,0x8c,0x7a,0xe3,0x9e,0x83,0xff,0xbd}};
+extern "C" const GUID __declspec(selectany) IID_IAGSServerConnection =
+    {0x657f65fd,0x9795,0x40b4,{0xb1,0xce,0xe2,0x35,0xef,0x08,0x61,0x4c}};
+extern "C" const GUID __declspec(selectany) IID_IAGSServerConnection2 =
+    {0x6921c52d,0x0d14,0x4d2c,{0x8a,0x80,0xa7,0x87,0x3c,0x13,0x06,0xea}};
+extern "C" const GUID __declspec(selectany) IID_IAGSServerConnection3 =
+    {0x20e6a647,0xde9e,0x4e4c,{0xa3,0x01,0x64,0x0b,0x9a,0xb0,0xd1,0x43}};
+extern "C" const GUID __declspec(selectany) IID_IAGSServerConnection4 =
+    {0xb291fd85,0xb247,0x4ab0,{0x85,0xd0,0x22,0x44,0x68,0x89,0x36,0xfd}};
+extern "C" const GUID __declspec(selectany) IID_IAGSServerConnectionAdmin =
+    {0x2609d396,0x4c06,0x4c35,{0x9a,0xe3,0xdf,0x69,0x0e,0xd8,0x85,0x06}};
+extern "C" const GUID __declspec(selectany) IID_IAGSServerConnectionName2 =
+    {0xc65dc76b,0xb454,0x4b35,{0x83,0xec,0xe9,0x08,0x2b,0x57,0xa5,0x6f}};
+extern "C" const GUID __declspec(selectany) IID_IAGSServerConnectionName3 =
+    {0x9fe30bfc,0xaa29,0x4763,{0xbc,0xc4,0xd9,0xc1,0x25,0x64,0x27,0xea}};
+extern "C" const GUID __declspec(selectany) IID_IAGSServerConnectionFactory =
+    {0x6047c9fc,0x2d91,0x420a,{0xa5,0xa2,0xeb,0x36,0xb7,0xe2,0xfe,0xa2}};
+extern "C" const GUID __declspec(selectany) IID_IAGSServerConnectionFactory2 =
+    {0x0264ca94,0xb0eb,0x435f,{0x9d,0x3a,0x5f,0xcc,0x5d,0xa0,0xfb,0xae}};
+extern "C" const GUID __declspec(selectany) IID_IEnumAGSServerConnectionName =
+    {0x4f11971a,0xf293,0x47a4,{0xac,0xf2,0xfe,0xf7,0x37,0xfb,0x71,0xf4}};
+extern "C" const GUID __declspec(selectany) IID_IAGSServerConnectionFactory3 =
+    {0x02d56c6d,0x9134,0x42c7,{0xb6,0xb0,0x68,0x04,0xa1,0x25,0xb7,0xa9}};
+extern "C" const GUID __declspec(selectany) IID_ISetDefaultAgsConnectionInfo =
+    {0xdf667332,0x0e2b,0x49bf,{0x9d,0xf9,0xba,0x8b,0x15,0xa3,0x76,0x01}};
+extern "C" const GUID __declspec(selectany) IID_IAGSServerObject2 =
+    {0x2e07daa3,0x6dec,0x4dc3,{0xa7,0xed,0x2f,0x29,0xe2,0xec,0xfe,0x4a}};
+extern "C" const GUID __declspec(selectany) IID_IAGSServerObjectName2 =
+    {0x2f311f9a,0x50f9,0x45d4,{0x95,0x53,0xd7,0x81,0xa0,0x84,0x45,0xe8}};
+extern "C" const GUID __declspec(selectany) IID_IAGSServerObjectName3 =
+    {0x4b815919,0x7659,0x4a55,{0x86,0x08,0x26,0xeb,0x7d,0x6b,0x24,0xf2}};
+extern "C" const GUID __declspec(selectany) IID_IServerObjectDescription =
+    {0xfbb35630,0xaf4a,0x4423,{0x97,0x6a,0x76,0x2d,0x53,0x99,0x1e,0x5e}};
+extern "C" const GUID __declspec(selectany) IID_IRESTServerObjectAdmin =
+    {0xf21f82a2,0x6317,0x4a00,{0x98,0x77,0x84,0x31,0xc7,0x4a,0x67,0x07}};
+extern "C" const GUID __declspec(selectany) CLSID_AGSServerObjectName =
+    {0x6c22971c,0xd450,0x4b4d,{0x94,0x22,0xee,0x96,0xa4,0x0f,0xac,0xc5}};
+extern "C" const GUID __declspec(selectany) CLSID_AGSServerConnection =
+    {0xb49defd0,0x85c0,0x46f4,{0x91,0x8b,0x1f,0xb7,0xe0,0x2a,0x8c,0x70}};
+extern "C" const GUID __declspec(selectany) CLSID_AGSServerConnectionName =
+    {0xcba35c3f,0xedef,0x408f,{0x8b,0x51,0x51,0x07,0x84,0xc7,0x8e,0xb9}};
+extern "C" const GUID __declspec(selectany) CLSID_AGSServerConnectionFactory =
+    {0x7932a86e,0xf371,0x4c64,{0xab,0x84,0x9e,0x83,0xdd,0xa2,0x58,0x1b}};
+extern "C" const GUID __declspec(selectany) IID_IIMSWorkspace2 =
+    {0xe4a0f674,0xb705,0x405a,{0xb3,0x56,0x3c,0xc8,0x1f,0x28,0x36,0x22}};
+extern "C" const GUID __declspec(selectany) IID_IIMSWorkspace =
+    {0x5e773ec1,0xf5e7,0x11d3,{0x9f,0x48,0x00,0xc0,0x4f,0x79,0x92,0x7c}};
+extern "C" const GUID __declspec(selectany) IID_IIMSFeatureClass =
+    {0xb6f0197b,0xea28,0x11d3,{0x9f,0x47,0x00,0xc0,0x4f,0x79,0x92,0x7c}};
+extern "C" const GUID __declspec(selectany) IID_IIMSServiceDescription =
+    {0xfe9f959a,0x06b5,0x4d52,{0x81,0x48,0x3b,0xd3,0x3c,0x29,0xc0,0xc5}};
+extern "C" const GUID __declspec(selectany) IID_IIMSAxlRequest =
+    {0x2844f4ef,0x098f,0x4858,{0x80,0xa6,0xb6,0xa2,0x9e,0xb5,0xf1,0x40}};
+extern "C" const GUID __declspec(selectany) IID_IIMSUserRole =
+    {0x448631a6,0x2bda,0x4f54,{0xa3,0x41,0x76,0xcc,0x7f,0xfd,0x70,0xa7}};
+extern "C" const GUID __declspec(selectany) IID_IRemoteMetadataName =
+    {0xc7535706,0x3898,0x419c,{0xb6,0x5b,0x9f,0xaf,0x0d,0x8b,0xfc,0x83}};
+extern "C" const GUID __declspec(selectany) IID_IRemoteMetadataName2 =
+    {0xedc3739d,0x807f,0x47ea,{0x97,0x8d,0xe6,0xae,0x0f,0xc6,0x70,0x18}};
+extern "C" const GUID __declspec(selectany) IID_IIMSMetadataAxlRequest =
+    {0x64c58b58,0xb932,0x4f91,{0x8a,0x60,0x4a,0x85,0x96,0x4a,0xf6,0x93}};
+extern "C" const GUID __declspec(selectany) CLSID_IMSServiceName =
+    {0x630f3de8,0xe213,0x4a5e,{0xac,0x01,0x2b,0xd5,0xbc,0xd6,0x46,0xb6}};
+extern "C" const GUID __declspec(selectany) CLSID_IMSWorkspaceFactory =
+    {0xbac84d58,0xfa9d,0x11d3,{0x9f,0x48,0x00,0xc0,0x4f,0x79,0x92,0x7c}};
+extern "C" const GUID __declspec(selectany) CLSID_IMSCatalogPathParser =
+    {0xd6ba032f,0x5391,0x445a,{0xa0,0x12,0xab,0xa4,0xa0,0xad,0x5b,0x4e}};
+extern "C" const GUID __declspec(selectany) CLSID_IMSMetadataServiceName =
+    {0xd2b6fce3,0x3f56,0x478b,{0x81,0x25,0x17,0x7b,0x33,0x73,0xa6,0x34}};
+extern "C" const GUID __declspec(selectany) IID_IWMSLayerStyleDescription =
+    {0x0e5d8d4c,0xa8cd,0x4eb9,{0xa3,0x11,0xaf,0x31,0x2d,0xc3,0x08,0xbc}};
+extern "C" const GUID __declspec(selectany) IID_IWMSLayerDescription =
+    {0x2290f5ac,0x8561,0x4b1d,{0x8f,0xda,0x48,0x2a,0x06,0x3f,0x1e,0xf4}};
+extern "C" const GUID __declspec(selectany) IID_IWCSConnectionName =
+    {0xe1a24fde,0xe0cb,0x4c17,{0xbd,0xc0,0xb5,0x52,0x0d,0xf0,0x63,0xcb}};
+extern "C" const GUID __declspec(selectany) IID_IWCSCoverageName =
+    {0xcb717bf3,0xf1ec,0x4beb,{0xa6,0xc8,0xec,0x80,0xa1,0x1e,0x90,0x10}};
+extern "C" const GUID __declspec(selectany) IID_IWCSBoundingBoxInfo =
+    {0xed79b15f,0x9133,0x4d1c,{0x8b,0xac,0x17,0x05,0x62,0xb5,0xff,0x9d}};
+extern "C" const GUID __declspec(selectany) IID_IWCSSpatialDomain =
+    {0xb7ec7893,0xefb4,0x4b61,{0x8f,0xe0,0xe7,0x46,0xcf,0x04,0x22,0xb5}};
+extern "C" const GUID __declspec(selectany) IID_IWCSCoverageField =
+    {0xd970569f,0x8f77,0x42cb,{0x98,0xbe,0xb7,0xc0,0xd8,0xb8,0x77,0x95}};
+extern "C" const GUID __declspec(selectany) IID_IWCSRange =
+    {0x7f5b3583,0xa7b7,0x47a9,{0xb5,0x17,0x6e,0x30,0xab,0x0c,0x13,0x33}};
+extern "C" const GUID __declspec(selectany) IID_IWCSCoverageDescription =
+    {0x165f657d,0x6e52,0x4ce6,{0x98,0x4a,0x73,0x00,0xac,0xb2,0xe2,0x91}};
+extern "C" const GUID __declspec(selectany) IID_IWMTSDimension =
+    {0xdbc40029,0x335f,0x47c2,{0x8c,0xb0,0x75,0x47,0x3f,0xef,0x52,0xbf}};
+extern "C" const GUID __declspec(selectany) IID_IWMTSTileMatrixSetLink =
+    {0x95ad2016,0xd7ae,0x44d4,{0xa1,0x21,0xcb,0x26,0x45,0xf4,0xea,0x42}};
+extern "C" const GUID __declspec(selectany) IID_IWMTSLayerDescription =
+    {0xe28b0014,0x208c,0x4c9b,{0x8e,0x24,0xac,0x88,0x2d,0x0b,0x4c,0x36}};
+extern "C" const GUID __declspec(selectany) IID_IWMTSTileMatrix =
+    {0x3fc53a77,0x74d8,0x4eb5,{0xaa,0x3c,0xd3,0x79,0x74,0x39,0xe2,0xa3}};
+extern "C" const GUID __declspec(selectany) IID_IWMTSTileMatrixSet =
+    {0xb7d67eda,0xdaf2,0x49b0,{0x8c,0x27,0x3c,0x4d,0xf1,0x4b,0x69,0xb5}};
+extern "C" const GUID __declspec(selectany) IID_IWMSServiceExceptionHandler =
+    {0xcfcaca30,0x440a,0x488e,{0x81,0x5a,0x86,0x35,0x1c,0xd7,0x8e,0xcc}};
+extern "C" const GUID __declspec(selectany) IID_IWMSConnectionName =
+    {0x07c8fd52,0x5d97,0x4b1f,{0xa6,0xbf,0x49,0x73,0xc9,0xbb,0x41,0x17}};
+extern "C" const GUID __declspec(selectany) IID_IWMSConnection =
+    {0x67bc7de0,0x0a6d,0x4ba6,{0x9d,0x26,0x43,0x7c,0x44,0xdb,0xdd,0xf3}};
+extern "C" const GUID __declspec(selectany) IID_IWMSConnectionFactory =
+    {0x253c9134,0x0d0f,0x45c7,{0xbf,0xdc,0xd2,0x30,0xd0,0xf8,0xce,0x35}};
+extern "C" const GUID __declspec(selectany) IID_IWMSServiceDescription =
+    {0xde0e6ebf,0x8abf,0x4700,{0xb9,0xf5,0xb0,0x97,0xe1,0x4c,0x0e,0x51}};
+extern "C" const GUID __declspec(selectany) IID_IWMSClientEvents =
+    {0x4ee28878,0x3a87,0x40e5,{0xb2,0x5d,0x6f,0xcc,0x4d,0x68,0x3e,0x8c}};
+extern "C" const GUID __declspec(selectany) IID_IWCSServiceExceptionHandler =
+    {0xad2e4de6,0xcc7e,0x41e1,{0x91,0x1f,0x53,0x43,0xcd,0x27,0xf2,0x27}};
+extern "C" const GUID __declspec(selectany) IID_IWCSConnection =
+    {0x2bb26ed5,0x6774,0x4ff5,{0x82,0x52,0x1e,0x97,0x3e,0xbd,0x5b,0xdc}};
+extern "C" const GUID __declspec(selectany) IID_IWCSConnectionFactory =
+    {0xa73a11e4,0xaeb0,0x4917,{0xb3,0x6e,0xa4,0x38,0x65,0xcc,0x9b,0x7b}};
+extern "C" const GUID __declspec(selectany) IID_IWCSServiceDescription =
+    {0xe19a5310,0x486c,0x4d32,{0x8d,0x44,0x93,0x69,0x6d,0x68,0x04,0xd4}};
+extern "C" const GUID __declspec(selectany) IID_IWCSClientEvents =
+    {0xc8cd44b2,0x4412,0x4a12,{0xbd,0xed,0x72,0x25,0xd8,0x10,0x56,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_IWMTSConnectionName =
+    {0x0a014545,0xe32c,0x43c2,{0xaa,0x97,0x24,0x3f,0x43,0x29,0x44,0x92}};
+extern "C" const GUID __declspec(selectany) IID_IWMTSConnection =
+    {0x525ade39,0xe2e6,0x418a,{0xbb,0x56,0x04,0xea,0xb6,0xfe,0xbb,0xb3}};
+extern "C" const GUID __declspec(selectany) IID_IWMTSConnectionFactory =
+    {0x8043c9be,0x1311,0x4020,{0xa1,0x8f,0xec,0x23,0xef,0xec,0x62,0x89}};
+extern "C" const GUID __declspec(selectany) IID_IWMTSServiceDescription =
+    {0xb5543b2a,0x65ef,0x410c,{0x98,0x19,0x80,0xed,0x5b,0xd7,0xe6,0x69}};
+extern "C" const GUID __declspec(selectany) CLSID_WMTSConnectionName =
+    {0x93b061bb,0xdb92,0x4e90,{0x99,0x27,0x48,0xc0,0x31,0xb3,0x3f,0xe8}};
+extern "C" const GUID __declspec(selectany) CLSID_WMTSConnection =
+    {0xebf93db1,0xb6f1,0x4dfe,{0x94,0xe0,0xa0,0xd9,0xf2,0x89,0x8b,0x83}};
+extern "C" const GUID __declspec(selectany) CLSID_WMTSConnectionFactory =
+    {0x5dc87020,0x5300,0x4b06,{0xb6,0xfb,0x91,0x5c,0xec,0xf9,0xd8,0x93}};
+extern "C" const GUID __declspec(selectany) CLSID_WMTSLayerDescription =
+    {0x6fe7ae5f,0x3097,0x44ce,{0xab,0x5c,0xf3,0x5b,0xd5,0x68,0xa5,0x8a}};
+extern "C" const GUID __declspec(selectany) CLSID_WMTSDimension =
+    {0x56122069,0x7970,0x4f9f,{0x9e,0x5e,0x43,0x4a,0x59,0x42,0x25,0x9a}};
+extern "C" const GUID __declspec(selectany) CLSID_WMSConnectionName =
+    {0x98b0e997,0xf21d,0x4195,{0x8e,0x06,0xf9,0xcd,0x2a,0xd9,0x71,0x65}};
+extern "C" const GUID __declspec(selectany) CLSID_WMSConnection =
+    {0xfddb9510,0x1619,0x49e9,{0xba,0xa5,0x9a,0x66,0x20,0xf3,0x15,0xad}};
+extern "C" const GUID __declspec(selectany) CLSID_WMSServiceExceptionHandler =
+    {0xeb412f19,0xfb25,0x44aa,{0x84,0x21,0x07,0x0e,0xdd,0x24,0x2f,0x3c}};
+extern "C" const GUID __declspec(selectany) CLSID_WMSConnectionFactory =
+    {0xf7c34345,0x87ce,0x4ab5,{0x9c,0xa8,0x20,0x12,0xd7,0x24,0x10,0x75}};
+extern "C" const GUID __declspec(selectany) CLSID_WCSConnectionName =
+    {0xb96cfe9e,0x44c7,0x4616,{0x8a,0x2a,0xf1,0xfb,0xa8,0x64,0x2a,0xf6}};
+extern "C" const GUID __declspec(selectany) CLSID_WCSConnection =
+    {0xa9f6d7d9,0xf493,0x4eaf,{0xb0,0xd2,0xe8,0xf6,0xa3,0x46,0x56,0x67}};
+extern "C" const GUID __declspec(selectany) CLSID_WCSServiceExceptionHandler =
+    {0x6c1b586b,0x6d46,0x4528,{0xba,0xe6,0xbf,0x15,0x52,0x81,0x7c,0x4a}};
+extern "C" const GUID __declspec(selectany) CLSID_WCSConnectionFactory =
+    {0xed030e3a,0xba11,0x4047,{0x9b,0x36,0x0f,0xa1,0x1e,0x51,0x3d,0xcd}};
+extern "C" const GUID __declspec(selectany) CLSID_WMTSTileMatrixSetLink =
+    {0x2c10edfc,0x4429,0x44d1,{0xaf,0x58,0x2d,0x90,0x34,0x57,0x1f,0x66}};
+extern "C" const GUID __declspec(selectany) CLSID_WMTSTileMatrix =
+    {0x65e7e2d0,0x28bb,0x4f81,{0xa5,0x72,0xf4,0xd7,0xbd,0x48,0xbf,0x67}};
+extern "C" const GUID __declspec(selectany) CLSID_WMTSTileMatrixSet =
+    {0x120ad27e,0xb63c,0x4503,{0xa3,0x7a,0x16,0x24,0xb7,0x15,0xc4,0x21}};
+extern "C" const GUID __declspec(selectany) IID_IUploadItem =
+    {0x68bd2cad,0x90af,0x4bfb,{0x91,0x17,0x4f,0x28,0xae,0xd6,0xcb,0xe0}};
+extern "C" const GUID __declspec(selectany) IID_IUploadsClient =
+    {0xedb37aff,0xc199,0x4063,{0xab,0x1f,0xfe,0x93,0x6d,0x5b,0x5f,0xd0}};
+extern "C" const GUID __declspec(selectany) IID_IUploader =
+    {0x0788eaf6,0x42ac,0x404a,{0x89,0x4e,0xe0,0x33,0x07,0x82,0x91,0x2a}};
+extern "C" const GUID __declspec(selectany) IID_IEnumUploadItem =
+    {0xf00d29b6,0xe9d5,0x4ac2,{0xa8,0xc7,0x7c,0x83,0x38,0xcf,0x88,0xc6}};
+extern "C" const GUID __declspec(selectany) IID_IAdminUploadsClient =
+    {0x2362ad5f,0xc545,0x4bd8,{0xb5,0x38,0x55,0x7a,0x1c,0x5b,0x89,0xf1}};
+extern "C" const GUID __declspec(selectany) IID_IServiceUploadsClient =
+    {0xddcbdaac,0xb932,0x4279,{0xa2,0xc1,0x5a,0x15,0x16,0x32,0xb7,0x93}};
+extern "C" const GUID __declspec(selectany) IID_IAdminUploader =
+    {0x657e7708,0x500d,0x47ec,{0x8e,0x96,0x23,0x27,0x08,0x3e,0xcd,0xc0}};
+extern "C" const GUID __declspec(selectany) IID_IServiceUploader =
+    {0x0fb7b5a0,0xf5c5,0x412b,{0xaa,0x10,0x8d,0x34,0xb2,0xd5,0x83,0xd9}};
+extern "C" const GUID __declspec(selectany) CLSID_UploadItem =
+    {0x912e7fc9,0x1f8d,0x490c,{0xb7,0xe8,0x34,0x03,0xc2,0x15,0x45,0xfb}};
+extern "C" const GUID __declspec(selectany) CLSID_UploadsClient =
+    {0xa6dd18ca,0x776b,0x4cbb,{0xb3,0x86,0xf2,0xd5,0xe1,0xe4,0x37,0x4d}};
+extern "C" const GUID __declspec(selectany) CLSID_Uploader =
+    {0x62cc7834,0xf2b8,0x4e4b,{0x93,0xcf,0xfc,0x2d,0x05,0x71,0x81,0x1f}};
+
+#pragma pack(pop)

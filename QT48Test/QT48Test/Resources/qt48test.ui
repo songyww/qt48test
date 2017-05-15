@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QT48TestClass</class>
+ <widget class="QMainWindow" name="QT48TestClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1685</width>
+    <height>983</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>二维超大图像快速匹配与异源图像配准软件</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../qt48test.qrc">
+    <normaloff>:/Resources/icon1.jpg</normaloff>:/Resources/icon1.jpg</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTabWidget" name="page">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Resources/background.jpg);</string>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>主界面</string>
+       </attribute>
+       <widget class="QListView" name="listView">
+        <property name="geometry">
+         <rect>
+          <x>-10</x>
+          <y>-10</y>
+          <width>1631</width>
+          <height>931</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/Resources/234185.jpg);</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="map">
+       <attribute name="title">
+        <string>二维图像配准</string>
+       </attribute>
+       <widget class="QAxWidget" name="maptoolbarcontrol">
+        <property name="geometry" stdset="0">
+         <rect>
+          <x>50</x>
+          <y>10</y>
+          <width>551</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QAxWidget" name="mapcontrol">
+        <property name="geometry" stdset="0">
+         <rect>
+          <x>50</x>
+          <y>40</y>
+          <width>651</width>
+          <height>401</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QAxWidget" name="maptoolbarcontrol_3">
+        <property name="geometry" stdset="0">
+         <rect>
+          <x>50</x>
+          <y>450</y>
+          <width>551</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QAxWidget" name="mapcontrol_3">
+        <property name="geometry" stdset="0">
+         <rect>
+          <x>50</x>
+          <y>480</y>
+          <width>651</width>
+          <height>411</height>
+         </rect>
+        </property>
+        <property name="styleSheet" stdset="0">
+         <string notr="true">border-image: url(:/QT48Test/C:/Users/Administrator/Desktop/图片/360反馈意见截图16421031081009.png);</string>
+        </property>
+       </widget>
+       <widget class="QAxWidget" name="maptoolbarcontrol_4">
+        <property name="geometry" stdset="0">
+         <rect>
+          <x>780</x>
+          <y>10</y>
+          <width>791</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QAxWidget" name="mapcontrol_4">
+        <property name="geometry" stdset="0">
+         <rect>
+          <x>780</x>
+          <y>40</y>
+          <width>791</width>
+          <height>441</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="geometry">
+         <rect>
+          <x>1180</x>
+          <y>520</y>
+          <width>371</width>
+          <height>351</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/Resources/background5.jpg);
+</string>
+        </property>
+        <property name="title">
+         <string>大幅图像匹配拼接</string>
+        </property>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>50</y>
+           <width>121</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>高</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="width">
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/QT48Test/C:/Users/Administrator/Desktop/图片/360反馈意见截图162412269398106.png);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>宽</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="height">
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/QT48Test/C:/Users/Administrator/Desktop/图片/360反馈意见截图162412269398106.png);
+color: rgb(0, 0, 0);</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>40</y>
+           <width>191</width>
+           <height>281</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="1" column="1" colspan="4">
+           <widget class="QLineEdit" name="fastmese">
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/QT48Test/C:/Users/Administrator/Desktop/图片/360反馈意见截图162412269398106.png);
+color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_19">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>旋转</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1" colspan="4">
+           <widget class="QLineEdit" name="fastpx">
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/QT48Test/C:/Users/Administrator/Desktop/图片/360反馈意见截图162412269398106.png);
+color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_18">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>缩放</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="3">
+           <widget class="QLabel" name="label_23">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>y</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="4">
+           <widget class="QLineEdit" name="fastsfy">
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/QT48Test/C:/Users/Administrator/Desktop/图片/360反馈意见截图162412269398106.png);
+color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" colspan="4">
+           <widget class="QLineEdit" name="bigtime">
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/QT48Test/C:/Users/Administrator/Desktop/图片/360反馈意见截图162412269398106.png);</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_20">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>精度</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="2">
+           <widget class="QLineEdit" name="fastsfx">
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/QT48Test/C:/Users/Administrator/Desktop/图片/360反馈意见截图162412269398106.png);
+color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_17">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>平移X</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1" colspan="4">
+           <widget class="QLineEdit" name="fastrotate">
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/QT48Test/C:/Users/Administrator/Desktop/图片/360反馈意见截图162412269398106.png);
+color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_21">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>平移Y</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1" colspan="4">
+           <widget class="QLineEdit" name="fastpy">
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/QT48Test/C:/Users/Administrator/Desktop/图片/360反馈意见截图162412269398106.png);
+color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>时间</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLabel" name="label_22">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>x</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>130</y>
+           <width>121</width>
+           <height>201</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QPushButton" name="Epualdivision">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>等分分块</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>裁剪</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_4">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>快速匹配</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>520</y>
+          <width>331</width>
+          <height>351</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/Resources/background5.jpg);</string>
+        </property>
+        <property name="title">
+         <string>小幅图像匹配拼接</string>
+        </property>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>90</y>
+           <width>281</width>
+           <height>229</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="5" column="3">
+           <widget class="QLabel" name="label_25">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>y</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLabel" name="label_24">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>x</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="2">
+           <widget class="QLineEdit" name="surfsfx">
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/QT48Test/C:/Users/Administrator/Desktop/图片/360反馈意见截图162412269398106.png);
+color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="4">
+           <widget class="QLineEdit" name="surfsfy">
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/QT48Test/C:/Users/Administrator/Desktop/图片/360反馈意见截图162412269398106.png);
+color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_7">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>平移X</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1" colspan="4">
+           <widget class="QLineEdit" name="surfrotate">
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/QT48Test/C:/Users/Administrator/Desktop/图片/360反馈意见截图162412269398106.png);
+color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1" colspan="4">
+           <widget class="QLineEdit" name="surfpx">
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/QT48Test/C:/Users/Administrator/Desktop/图片/360反馈意见截图162412269398106.png);
+color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_8">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>平移Y</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>时间</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>精度</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1" colspan="4">
+           <widget class="QLineEdit" name="surfpy">
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/QT48Test/C:/Users/Administrator/Desktop/图片/360反馈意见截图162412269398106.png);
+color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" colspan="4">
+           <widget class="QLineEdit" name="surftime">
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/QT48Test/C:/Users/Administrator/Desktop/图片/360反馈意见截图162412269398106.png);
+color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1" colspan="4">
+           <widget class="QLineEdit" name="surfmese">
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/QT48Test/C:/Users/Administrator/Desktop/图片/360反馈意见截图162412269398106.png);
+color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_10">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>缩放</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_9">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>旋转</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>31</x>
+           <y>30</y>
+           <width>281</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QPushButton" name="pushButton_7">
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/Resources/background3.jpg);</string>
+            </property>
+            <property name="text">
+             <string>直线匹配</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_8">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>SURF算法</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="opentif">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>10</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/Resources/button.jpg);</string>
+        </property>
+        <property name="text">
+         <string>打开第一幅图像</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>450</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/Resources/button.jpg);</string>
+        </property>
+        <property name="text">
+         <string>打开第二幅图像</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>790</x>
+          <y>450</y>
+          <width>81</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 11pt &quot;Aharoni&quot;;</string>
+        </property>
+        <property name="text">
+         <string>拼接结果图</string>
+        </property>
+       </widget>
+       <widget class="QColumnView" name="columnView">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>500</y>
+          <width>791</width>
+          <height>391</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(0, 0, 0);
+background-image: url(:/QT48Test/C:/Users/Administrator/Desktop/图片/360反馈意见截图162412269398106.png);</string>
+        </property>
+       </widget>
+       <zorder>columnView</zorder>
+       <zorder>maptoolbarcontrol</zorder>
+       <zorder>mapcontrol</zorder>
+       <zorder>maptoolbarcontrol_3</zorder>
+       <zorder>mapcontrol_3</zorder>
+       <zorder>maptoolbarcontrol_4</zorder>
+       <zorder>mapcontrol_4</zorder>
+       <zorder>groupBox</zorder>
+       <zorder>groupBox_2</zorder>
+       <zorder>opentif</zorder>
+       <zorder>pushButton</zorder>
+       <zorder>label_4</zorder>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_2"/>
+   <addaction name="separator"/>
+   <addaction name="action"/>
+   <addaction name="separator"/>
+   <addaction name="action_open1"/>
+   <addaction name="action_open2"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1685</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>打开</string>
+    </property>
+    <addaction name="action_opentif"/>
+    <addaction name="action_opentif2"/>
+   </widget>
+   <widget class="QMenu" name="dafupinjie">
+    <property name="windowIcon">
+     <iconset resource="../qt48test.qrc">
+      <normaloff>:/Resources/clearlayer.jpg</normaloff>:/Resources/clearlayer.jpg</iconset>
+    </property>
+    <property name="title">
+     <string>大幅图像拼接</string>
+    </property>
+    <addaction name="action_fen1"/>
+    <addaction name="action_fen2"/>
+    <addaction name="action_pinjie"/>
+   </widget>
+   <widget class="QMenu" name="yiyuan">
+    <property name="title">
+     <string>小幅图像图像配准</string>
+    </property>
+    <addaction name="actionSURF"/>
+    <addaction name="action_line"/>
+   </widget>
+   <widget class="QMenu" name="clear">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="title">
+     <string>清除所有图像</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action_3"/>
+    <addaction name="action_4"/>
+    <addaction name="action_5"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="dafupinjie"/>
+   <addaction name="yiyuan"/>
+   <addaction name="clear"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <action name="action">
+   <property name="icon">
+    <iconset resource="../qt48test.qrc">
+     <normaloff>:/Resources/clearlayer.jpg</normaloff>:/Resources/clearlayer.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>清除</string>
+   </property>
+   <property name="toolTip">
+    <string>清除图层</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="icon">
+    <iconset resource="../qt48test.qrc">
+     <normaloff>:/Resources/tuichu.jpg</normaloff>:/Resources/tuichu.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="action_open1">
+   <property name="icon">
+    <iconset resource="../qt48test.qrc">
+     <normaloff>:/Resources/open1.jpg</normaloff>:/Resources/open1.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>打开第一幅图像</string>
+   </property>
+   <property name="toolTip">
+    <string>打开第一幅图像</string>
+   </property>
+  </action>
+  <action name="action_open2">
+   <property name="icon">
+    <iconset resource="../qt48test.qrc">
+     <normaloff>:/Resources/open2.jpg</normaloff>:/Resources/open2.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>打开第二幅图像</string>
+   </property>
+   <property name="toolTip">
+    <string>打开第二幅图像</string>
+   </property>
+  </action>
+  <action name="action_opentif">
+   <property name="text">
+    <string>打开第一幅图像</string>
+   </property>
+  </action>
+  <action name="action_opentif2">
+   <property name="text">
+    <string>打开第二幅图像</string>
+   </property>
+  </action>
+  <action name="action_fen1">
+   <property name="text">
+    <string>对第一幅图像分块</string>
+   </property>
+  </action>
+  <action name="action_fen2">
+   <property name="text">
+    <string>对第二幅图像分块</string>
+   </property>
+  </action>
+  <action name="action_pinjie">
+   <property name="text">
+    <string>快速匹配</string>
+   </property>
+  </action>
+  <action name="actionSURF">
+   <property name="text">
+    <string>SURF方法</string>
+   </property>
+  </action>
+  <action name="action_line">
+   <property name="text">
+    <string>直线方法</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>软件使用流程</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>软件功能介绍</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>关于软件</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QAxWidget</class>
+   <extends>QWidget</extends>
+   <header>qaxwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../qt48test.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>QT48TestClass</receiver>
+   <slot>caijian()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>950</x>
+     <y>802</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1329</x>
+     <y>226</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>QT48TestClass</receiver>
+   <slot>Onspeed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>950</x>
+     <y>860</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1032</x>
+     <y>35</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Epualdivision</sender>
+   <signal>clicked()</signal>
+   <receiver>QT48TestClass</receiver>
+   <slot>fenkuai()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>950</x>
+     <y>744</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1264</x>
+     <y>92</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>QT48TestClass</receiver>
+   <slot>linematching()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1309</x>
+     <y>639</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>941</x>
+     <y>941</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>QT48TestClass</receiver>
+   <slot>surf()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1575</x>
+     <y>639</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1092</x>
+     <y>942</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>QT48TestClass</receiver>
+   <slot>opentif2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>711</x>
+     <y>522</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1324</x>
+     <y>167</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>opentif</sender>
+   <signal>clicked()</signal>
+   <receiver>QT48TestClass</receiver>
+   <slot>opentif()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>711</x>
+     <y>82</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1181</x>
+     <y>41</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action</sender>
+   <signal>activated()</signal>
+   <receiver>QT48TestClass</receiver>
+   <slot>clearlayer()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>820</x>
+     <y>489</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_2</sender>
+   <signal>activated()</signal>
+   <receiver>Epualdivision</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>891</x>
+     <y>755</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_open1</sender>
+   <signal>activated()</signal>
+   <receiver>QT48TestClass</receiver>
+   <slot>opentif()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>820</x>
+     <y>489</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_open2</sender>
+   <signal>activated()</signal>
+   <receiver>QT48TestClass</receiver>
+   <slot>opentif2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>820</x>
+     <y>489</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_fen1</sender>
+   <signal>activated()</signal>
+   <receiver>QT48TestClass</receiver>
+   <slot>fenkuai()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>836</x>
+     <y>491</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_fen2</sender>
+   <signal>activated()</signal>
+   <receiver>QT48TestClass</receiver>
+   <slot>caijian()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>836</x>
+     <y>491</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_opentif</sender>
+   <signal>activated()</signal>
+   <receiver>QT48TestClass</receiver>
+   <slot>opentif()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>836</x>
+     <y>491</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_opentif2</sender>
+   <signal>activated()</signal>
+   <receiver>QT48TestClass</receiver>
+   <slot>opentif2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>836</x>
+     <y>491</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_line</sender>
+   <signal>activated()</signal>
+   <receiver>QT48TestClass</receiver>
+   <slot>linematching()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>836</x>
+     <y>491</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSURF</sender>
+   <signal>activated()</signal>
+   <receiver>QT48TestClass</receiver>
+   <slot>surf()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>836</x>
+     <y>491</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>fenkuai()</slot>
+  <slot>opentif()</slot>
+  <slot>opentif2()</slot>
+  <slot>caijian()</slot>
+  <slot>clearlayer()</slot>
+  <slot>Onspeed()</slot>
+  <slot>jiansuo()</slot>
+  <slot>openscenelayer()</slot>
+  <slot>pinjie()</slot>
+  <slot>linematching()</slot>
+  <slot>surf()</slot>
+  <slot>addtiftoglobe()</slot>
+  <slot>adddemtoglobe()</slot>
+  <slot>zoomtolayer()</slot>
+  <slot>open1()</slot>
+  <slot>open2()</slot>
+  <slot>JCYpeizhun()</slot>
+ </slots>
+</ui>

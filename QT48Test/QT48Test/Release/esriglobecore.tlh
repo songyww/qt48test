@@ -1,0 +1,4345 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (28b574ee).
+//
+// e:\vsproject\qt48test\qt48test\release\esriglobecore.tlh
+//
+// C++ source equivalent of Win32 type library esriglobecore.olb
+// compiler-generated file created 12/01/16 at 15:39:16 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("00b329b5-265e-11d6-b2b4-00508bcdde28"))
+/* LIBID */ __esriGlobeCore;
+struct __declspec(uuid("a08bd3fa-8d60-42a3-bd2a-50b013e3f6da"))
+/* interface */ IGlobeDisplay;
+struct __declspec(uuid("00b329b7-265e-11d6-b2b4-00508bcdde28"))
+/* interface */ IGlobe;
+enum esriGlobeBackgroundOption;
+enum esriGlobeLayerType;
+enum esriGlobeTipsType;
+struct __declspec(uuid("a8132c1e-00f2-49a3-bbaa-d0d951895686"))
+/* interface */ IGlobeAdvancedOptions;
+enum esriGlobeDataType;
+enum esriLODType;
+struct __declspec(uuid("86958a26-fded-4f90-b7c4-b6830065b5e2"))
+/* interface */ IGlobeLayerProperties;
+struct __declspec(uuid("7fbd3fe8-885b-48cb-96af-a3d296892da3"))
+/* interface */ IGlobeHeightProperties;
+enum esriGlobeLayerBaseOption;
+enum esriGlobeLayerCacheRemovalOption;
+enum esriGlobeImageSamplingMode;
+struct __declspec(uuid("c61d0917-097f-44cf-ba84-80a4b6537bf6"))
+/* interface */ IGlobeHelperPub;
+struct __declspec(uuid("27de37ab-53d3-483b-b20a-7dfa1801f679"))
+/* interface */ IGlobeHelperPub2;
+struct __declspec(uuid("5e37ab7c-057c-470d-804a-abdd4f10b64c"))
+/* interface */ IGlobe2;
+struct __declspec(uuid("3dea46b1-53d2-4809-8604-6013d7ab8345"))
+/* interface */ IGlobeDrawingOrder;
+struct /* coclass */ Globe;
+struct /* coclass */ GlobeHelper;
+enum esriGlobeStat;
+enum esriGlobeTileMemoryType;
+enum esriGlobeDisplayGridType;
+struct __declspec(uuid("d05e08d4-24d2-4b48-8fff-927da293363f"))
+/* interface */ IGlobeDisplay2;
+struct __declspec(uuid("fcc11bb5-174c-4ecf-b47c-e8c62e1d70c5"))
+/* interface */ IGlobeDisplay3;
+struct __declspec(uuid("5c44152f-6d5a-4ec2-bc1f-e13ae9f5c7ee"))
+/* interface */ IGlobeDisplayLayers;
+struct __declspec(uuid("a1bf002b-4ecb-4328-80ba-ddae011dae0c"))
+/* interface */ IGlobeDisplayLayers2;
+struct __declspec(uuid("3872d32c-01d6-4108-8e09-114f95276b9b"))
+/* interface */ IGlobeDisplayRendering;
+struct __declspec(uuid("95e8d742-c053-4571-b647-d7416f58b23d"))
+/* interface */ IGlobeDisplayRendering2;
+struct __declspec(uuid("83976305-34dc-4121-bb64-1dc1d15addf1"))
+/* interface */ IGlobeDisplayRendering3;
+struct __declspec(uuid("a1407e3c-9c23-433e-8245-2785541c7863"))
+/* interface */ IGlobeAdvancedOptions2;
+struct __declspec(uuid("e4e37ac7-6f8a-4f4a-b7c3-db44375e8c5b"))
+/* interface */ IGlobeDisplayEvents;
+struct __declspec(uuid("1641c885-17ef-4531-a507-518ce994a17e"))
+/* interface */ IGlobeStatInfo;
+struct __declspec(uuid("1a7729a9-df52-4c56-8b8a-835d94c1216e"))
+/* interface */ IGlobeDisplayUtil;
+struct /* coclass */ GlobeDisplay;
+struct /* coclass */ GlobeAdvancedOptions;
+struct /* coclass */ GlobeDocument;
+struct __declspec(uuid("2c9b3ac6-54a0-47a8-8de7-dff1ca452fea"))
+/* interface */ IGlobeHeightProperties2;
+struct __declspec(uuid("e5a7ab17-f40c-47b1-baf6-8c2193427a35"))
+/* interface */ IGlobeLayerProperties2;
+struct __declspec(uuid("d22fbeee-be11-4040-9670-ce1897ccd8a5"))
+/* interface */ IGlobeLayerProperties4;
+struct __declspec(uuid("581a575b-baca-4cc6-a41d-a424f07cb1ac"))
+/* interface */ IGlobeLayerProperties5;
+struct __declspec(uuid("cc41e3a3-6437-44aa-8c01-a63484abcb45"))
+/* interface */ IGlobeLayer;
+struct __declspec(uuid("c0b5bbb2-9b4a-41c3-acbb-f20e9940e574"))
+/* interface */ IGeoVideoLayer;
+struct __declspec(uuid("5d85f151-7084-4dc3-a9e5-95c3c44a7a06"))
+/* interface */ IGlobeRasterizedLayerSupport;
+enum esriGlobeCustomDrawType;
+struct __declspec(uuid("365a110b-b13f-4314-a3e8-1edf9b7ddf31"))
+/* interface */ IGlobeViewer;
+enum esriGlobeSpinDirection;
+struct __declspec(uuid("28416400-6965-4df1-9823-48973b44179c"))
+/* interface */ ICustomGlobeLayer;
+enum esriGlobeGraphicsOrientation;
+struct __declspec(uuid("0d8e6a2a-0630-45fc-9597-dd30361db18c"))
+/* interface */ IGlobeGraphicsElementProperties;
+struct __declspec(uuid("5ae75603-dd33-4d19-8116-4e6169b2eb9f"))
+/* interface */ IGlobeGraphicsLayer;
+struct /* coclass */ GlobeLayerFactory;
+struct /* coclass */ GeoVideoLayerFactory;
+struct /* coclass */ IMSGlobeLayerFactory;
+struct /* coclass */ GlobeHeightProperties;
+struct /* coclass */ GlobeLayerProperties;
+struct /* coclass */ GlobeLayer;
+struct /* coclass */ GeoVideoLayer;
+struct /* coclass */ GlobeGraphicsElementProperties;
+struct /* coclass */ GlobeGraphicsLayer;
+struct __declspec(uuid("c03019d0-59cd-4f03-8124-2fe4138913d3"))
+/* interface */ IGlobeGraphicElementPropsStreamArray;
+struct /* coclass */ GlobeGraphicElementPropsStreamArray;
+struct __declspec(uuid("0a23899e-0a33-44fb-95a2-f296deeb90b5"))
+/* interface */ IKmlNode;
+struct __declspec(uuid("20b66f01-d729-4090-9b67-cc2fad2b988d"))
+/* interface */ IKmlChildNodes;
+struct __declspec(uuid("ae6cedec-e20f-4dfe-96c7-3109e524903b"))
+/* interface */ IKmlLayer;
+struct __declspec(uuid("4f728023-7133-4559-b42a-6711f6f565dc"))
+/* interface */ ILookAtKmlNode;
+struct __declspec(uuid("976fca1a-0309-4e53-9653-4e752dde3295"))
+/* interface */ IKmlScreenOverlayDisplay;
+struct /* coclass */ KmlLayer;
+struct __declspec(uuid("dc575242-99e8-4b53-84f0-c46b55d21377"))
+/* interface */ IKmlServer;
+enum esriKmlServerMessageCodeEnum;
+struct /* coclass */ KmlServer;
+struct __declspec(uuid("d91d9176-41ad-4268-9e33-9295c480307b"))
+/* interface */ IKmlConvertor;
+struct __declspec(uuid("d91d9174-41ad-4268-9e33-9295c480307b"))
+/* interface */ IKmlConvertor2;
+struct /* coclass */ KmlConvertor;
+enum esriGlobeCameraOrientationMode;
+enum esriGlobeNavigationType;
+struct __declspec(uuid("65fbccd0-fabd-4517-a07c-bbea5fe71abe"))
+/* interface */ IGlobeCamera;
+struct __declspec(uuid("97b33434-8eff-401c-8f7c-9b0f7dc72094"))
+/* interface */ IGlobeViewUtil;
+struct __declspec(uuid("9249fb50-f569-40dd-9f9d-460885c6a164"))
+/* interface */ INavigate3DView;
+struct /* coclass */ GlobeCamera;
+struct /* coclass */ Navigate3DView;
+struct __declspec(uuid("42c89d08-17f1-4c88-b129-5b58aa6b88be"))
+/* interface */ IGlobeViewer2;
+struct /* coclass */ GlobeCameraKeyframe;
+struct /* coclass */ GlobeLayerKeyframe;
+struct /* coclass */ AnimationTypeGlobeCamera;
+struct /* coclass */ AnimationTypeGlobeLayer;
+enum esriGlobeCacheUpdateMode;
+enum esriGlobeServerMessageCodeEnum;
+struct __declspec(uuid("6a04b829-32ca-4bc0-bf6d-dd655fd80306"))
+/* interface */ IGlobeLayerInfo;
+struct __declspec(uuid("96f0fd1a-a2f5-4b10-8f4a-509f4bbfeb85"))
+/* interface */ IGlobeLayerInfo2;
+struct __declspec(uuid("3ebd0d70-7821-4770-8eef-dbeda194ab88"))
+/* interface */ IGlobeLegendInfo;
+struct __declspec(uuid("1dd9435a-d425-4f6e-9cc3-85bf31ca185f"))
+/* interface */ IGlobeLayerInfos;
+struct __declspec(uuid("e75ccaa0-5016-4a4e-83bf-7ef313b8fb1d"))
+/* interface */ IGlobeLegendInfos;
+struct __declspec(uuid("bb7de2f9-cf1c-4673-a5fa-a49ae6e34176"))
+/* interface */ IGlobeServerFindResult;
+struct __declspec(uuid("584b5a0b-e292-4211-bfdf-64b501859b75"))
+/* interface */ IGlobeServerIdentifyResult;
+struct __declspec(uuid("a4247d78-d4db-4fe5-8cb1-2d9977119daa"))
+/* interface */ IGlobeServerFindResults;
+struct __declspec(uuid("e94177ca-8c0c-483c-8714-23aca7325087"))
+/* interface */ IGlobeServerIdentifyResults;
+struct __declspec(uuid("f44327ec-f03e-4f7a-8094-a5eaa0c15666"))
+/* interface */ IGlobeServer;
+struct __declspec(uuid("2e39bd80-46e9-4291-b658-2abbdafc9ffa"))
+/* interface */ IGlobeServer2;
+struct __declspec(uuid("a0534365-9cce-4e17-b70c-0d576cafd05f"))
+/* interface */ IGlobeServer3;
+struct __declspec(uuid("0e2de26a-4352-4176-a718-e19816cd86c5"))
+/* interface */ IGlobeServer4;
+struct __declspec(uuid("ae6300ea-4043-492a-b72c-a61d6656d3d8"))
+/* interface */ IGlobeServerObjects;
+struct __declspec(uuid("aaaed790-cd9d-4007-b4b2-c97fa9e39809"))
+/* interface */ IGlobeServerSetup;
+struct __declspec(uuid("ebda9e24-402c-49fd-9f6a-674ea3292129"))
+/* interface */ IGlobeServerCache;
+struct __declspec(uuid("e2318a63-2434-49ae-8535-985948cdeb28"))
+/* interface */ IGlobeTileGenerator;
+struct __declspec(uuid("4d30910a-1e6b-47fd-98ca-d04e5fb5154f"))
+/* interface */ IGlobeTileGenerator2;
+struct /* coclass */ GlobeServerConfigurationFactory;
+struct /* coclass */ GlobeServer;
+struct /* coclass */ GlobeServerIdentifyResult;
+struct /* coclass */ GlobeServerFindResult;
+struct /* coclass */ GlobeLayerInfo;
+struct /* coclass */ GlobeLegendInfo;
+struct /* coclass */ GlobeServerFindResults;
+struct /* coclass */ GlobeServerIdentifyResults;
+struct /* coclass */ GlobeLayerInfos;
+struct /* coclass */ GlobeLegendInfos;
+struct /* coclass */ GlobeTileGenerator;
+struct __declspec(uuid("02ebc734-a162-49eb-a324-c7923a8e357b"))
+/* interface */ IGlobeServerLayer;
+struct __declspec(uuid("0ab3f65a-35e8-4702-aca3-f0440ca7f254"))
+/* interface */ IGlobeServerLayerFactory;
+struct __declspec(uuid("ce6c7eb9-d262-4f2d-b420-9b88aa6c69e2"))
+/* interface */ IGlobeServerGroupLayer;
+struct /* coclass */ GlobeServerLayer;
+struct /* coclass */ GlobeServerLayerFactory;
+struct /* coclass */ GlobeServerIdentifyObject;
+struct /* coclass */ GlobeServerFindObject;
+struct /* coclass */ GlobeServerGroupLayer;
+struct /* coclass */ GlobeServerLP;
+struct /* coclass */ GlobeServerIP;
+struct /* coclass */ GlobeServerObjectDescription;
+struct /* coclass */ GPGlobeFunctionFactory;
+struct /* coclass */ GPGlobeServicesFunctionFactory;
+struct /* coclass */ GPGenerateGlobeServerCache;
+struct /* coclass */ GPUpdateGlobeServerCache2;
+struct /* coclass */ GPDeleteGlobeServerCache;
+struct /* coclass */ GPManageGlobeCache;
+struct /* coclass */ GPManageGlobeCacheWorker;
+struct /* coclass */ GPDeleteGlobeCache;
+struct /* coclass */ GPUpdateGlobeServerCache;
+struct /* coclass */ GpKMLFunctionFactory;
+struct /* coclass */ GPExportToKML;
+struct /* coclass */ GPLayersToKML;
+struct /* coclass */ GPMultipatchToCollada;
+struct /* coclass */ GPKMLToLayer;
+struct __declspec(uuid("a5e12264-b2d2-4e6c-af14-ea09f870b3bb"))
+/* interface */ IGlobeServerCooker;
+struct /* coclass */ GlobeServerCooker;
+struct __declspec(uuid("7c0a33aa-ee26-4684-9110-8c48a564d05a"))
+/* interface */ IFeatureParameterLayer;
+struct __declspec(uuid("5620eac6-e922-41c4-86f2-ade2f210d464"))
+/* interface */ INavigate3DHookHelper;
+struct __declspec(uuid("41c5f6d5-363d-475b-92bc-de361319b229"))
+/* interface */ ISensorEventsListener;
+struct /* coclass */ SensorEventsListener;
+struct /* coclass */ SpaceNavigatorExtension;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IGlobeAdvancedOptions, __uuidof(IGlobeAdvancedOptions));
+_COM_SMARTPTR_TYPEDEF(IGlobeDrawingOrder, __uuidof(IGlobeDrawingOrder));
+_COM_SMARTPTR_TYPEDEF(IGlobeDisplayRendering, __uuidof(IGlobeDisplayRendering));
+_COM_SMARTPTR_TYPEDEF(IGlobeDisplayRendering2, __uuidof(IGlobeDisplayRendering2));
+_COM_SMARTPTR_TYPEDEF(IGlobeDisplayRendering3, __uuidof(IGlobeDisplayRendering3));
+_COM_SMARTPTR_TYPEDEF(IGlobeAdvancedOptions2, __uuidof(IGlobeAdvancedOptions2));
+_COM_SMARTPTR_TYPEDEF(IGlobeDisplayEvents, __uuidof(IGlobeDisplayEvents));
+_COM_SMARTPTR_TYPEDEF(IGlobeStatInfo, __uuidof(IGlobeStatInfo));
+_COM_SMARTPTR_TYPEDEF(IGlobeDisplayUtil, __uuidof(IGlobeDisplayUtil));
+_COM_SMARTPTR_TYPEDEF(IGlobeLayer, __uuidof(IGlobeLayer));
+_COM_SMARTPTR_TYPEDEF(IGeoVideoLayer, __uuidof(IGeoVideoLayer));
+_COM_SMARTPTR_TYPEDEF(IGlobeRasterizedLayerSupport, __uuidof(IGlobeRasterizedLayerSupport));
+_COM_SMARTPTR_TYPEDEF(IGlobeGraphicsElementProperties, __uuidof(IGlobeGraphicsElementProperties));
+_COM_SMARTPTR_TYPEDEF(IGlobeGraphicsLayer, __uuidof(IGlobeGraphicsLayer));
+_COM_SMARTPTR_TYPEDEF(IGlobeGraphicElementPropsStreamArray, __uuidof(IGlobeGraphicElementPropsStreamArray));
+_COM_SMARTPTR_TYPEDEF(IKmlNode, __uuidof(IKmlNode));
+_COM_SMARTPTR_TYPEDEF(IKmlChildNodes, __uuidof(IKmlChildNodes));
+_COM_SMARTPTR_TYPEDEF(IKmlScreenOverlayDisplay, __uuidof(IKmlScreenOverlayDisplay));
+_COM_SMARTPTR_TYPEDEF(IKmlServer, __uuidof(IKmlServer));
+_COM_SMARTPTR_TYPEDEF(IKmlConvertor, __uuidof(IKmlConvertor));
+_COM_SMARTPTR_TYPEDEF(IKmlConvertor2, __uuidof(IKmlConvertor2));
+_COM_SMARTPTR_TYPEDEF(INavigate3DView, __uuidof(INavigate3DView));
+_COM_SMARTPTR_TYPEDEF(IGlobeLayerInfo, __uuidof(IGlobeLayerInfo));
+_COM_SMARTPTR_TYPEDEF(IGlobeLayerInfo2, __uuidof(IGlobeLayerInfo2));
+_COM_SMARTPTR_TYPEDEF(IGlobeLegendInfo, __uuidof(IGlobeLegendInfo));
+_COM_SMARTPTR_TYPEDEF(IGlobeLayerInfos, __uuidof(IGlobeLayerInfos));
+_COM_SMARTPTR_TYPEDEF(IGlobeLegendInfos, __uuidof(IGlobeLegendInfos));
+_COM_SMARTPTR_TYPEDEF(IGlobeServerFindResult, __uuidof(IGlobeServerFindResult));
+_COM_SMARTPTR_TYPEDEF(IGlobeServerIdentifyResult, __uuidof(IGlobeServerIdentifyResult));
+_COM_SMARTPTR_TYPEDEF(IGlobeServerFindResults, __uuidof(IGlobeServerFindResults));
+_COM_SMARTPTR_TYPEDEF(IGlobeServerIdentifyResults, __uuidof(IGlobeServerIdentifyResults));
+_COM_SMARTPTR_TYPEDEF(IGlobeServer, __uuidof(IGlobeServer));
+_COM_SMARTPTR_TYPEDEF(IGlobeServer2, __uuidof(IGlobeServer2));
+_COM_SMARTPTR_TYPEDEF(IGlobeServer3, __uuidof(IGlobeServer3));
+_COM_SMARTPTR_TYPEDEF(IGlobeServer4, __uuidof(IGlobeServer4));
+_COM_SMARTPTR_TYPEDEF(IGlobeServerSetup, __uuidof(IGlobeServerSetup));
+_COM_SMARTPTR_TYPEDEF(IGlobeServerCache, __uuidof(IGlobeServerCache));
+_COM_SMARTPTR_TYPEDEF(IGlobeServerLayer, __uuidof(IGlobeServerLayer));
+_COM_SMARTPTR_TYPEDEF(IGlobeServerGroupLayer, __uuidof(IGlobeServerGroupLayer));
+_COM_SMARTPTR_TYPEDEF(IGlobeServerCooker, __uuidof(IGlobeServerCooker));
+_COM_SMARTPTR_TYPEDEF(IFeatureParameterLayer, __uuidof(IFeatureParameterLayer));
+_COM_SMARTPTR_TYPEDEF(ISensorEventsListener, __uuidof(ISensorEventsListener));
+_COM_SMARTPTR_TYPEDEF(IGlobeDisplay, __uuidof(IGlobeDisplay));
+_COM_SMARTPTR_TYPEDEF(IGlobe, __uuidof(IGlobe));
+_COM_SMARTPTR_TYPEDEF(IGlobeHeightProperties, __uuidof(IGlobeHeightProperties));
+_COM_SMARTPTR_TYPEDEF(IGlobeLayerProperties, __uuidof(IGlobeLayerProperties));
+_COM_SMARTPTR_TYPEDEF(IGlobeHelperPub, __uuidof(IGlobeHelperPub));
+_COM_SMARTPTR_TYPEDEF(IGlobeHelperPub2, __uuidof(IGlobeHelperPub2));
+_COM_SMARTPTR_TYPEDEF(IGlobe2, __uuidof(IGlobe2));
+_COM_SMARTPTR_TYPEDEF(IGlobeDisplay2, __uuidof(IGlobeDisplay2));
+_COM_SMARTPTR_TYPEDEF(IGlobeDisplay3, __uuidof(IGlobeDisplay3));
+_COM_SMARTPTR_TYPEDEF(IGlobeDisplayLayers, __uuidof(IGlobeDisplayLayers));
+_COM_SMARTPTR_TYPEDEF(IGlobeDisplayLayers2, __uuidof(IGlobeDisplayLayers2));
+_COM_SMARTPTR_TYPEDEF(IGlobeHeightProperties2, __uuidof(IGlobeHeightProperties2));
+_COM_SMARTPTR_TYPEDEF(IGlobeLayerProperties2, __uuidof(IGlobeLayerProperties2));
+_COM_SMARTPTR_TYPEDEF(IGlobeLayerProperties4, __uuidof(IGlobeLayerProperties4));
+_COM_SMARTPTR_TYPEDEF(IGlobeLayerProperties5, __uuidof(IGlobeLayerProperties5));
+_COM_SMARTPTR_TYPEDEF(IGlobeViewer, __uuidof(IGlobeViewer));
+_COM_SMARTPTR_TYPEDEF(ICustomGlobeLayer, __uuidof(ICustomGlobeLayer));
+_COM_SMARTPTR_TYPEDEF(IKmlLayer, __uuidof(IKmlLayer));
+_COM_SMARTPTR_TYPEDEF(ILookAtKmlNode, __uuidof(ILookAtKmlNode));
+_COM_SMARTPTR_TYPEDEF(IGlobeCamera, __uuidof(IGlobeCamera));
+_COM_SMARTPTR_TYPEDEF(IGlobeViewUtil, __uuidof(IGlobeViewUtil));
+_COM_SMARTPTR_TYPEDEF(IGlobeViewer2, __uuidof(IGlobeViewer2));
+_COM_SMARTPTR_TYPEDEF(IGlobeServerObjects, __uuidof(IGlobeServerObjects));
+_COM_SMARTPTR_TYPEDEF(IGlobeTileGenerator, __uuidof(IGlobeTileGenerator));
+_COM_SMARTPTR_TYPEDEF(IGlobeTileGenerator2, __uuidof(IGlobeTileGenerator2));
+_COM_SMARTPTR_TYPEDEF(IGlobeServerLayerFactory, __uuidof(IGlobeServerLayerFactory));
+_COM_SMARTPTR_TYPEDEF(INavigate3DHookHelper, __uuidof(INavigate3DHookHelper));
+
+//
+// Type library items
+//
+
+enum __declspec(uuid("f3d4b5b3-e576-4906-9819-733dfcf5235f"))
+esriGlobeBackgroundOption
+{
+    esriGlobeBackgroundTransition = 0,
+    esriGlobeBackgroundSingle = 1
+};
+
+enum __declspec(uuid("72545e9a-7c3f-4b79-9aeb-170fe9019a9e"))
+esriGlobeLayerType
+{
+    esriGlobeLayerTypeUnknown = 0,
+    esriGlobeLayerTypeDraped = 1,
+    esriGlobeLayerTypeElevation = 2,
+    esriGlobeLayerTypeFloating = 3
+};
+
+enum __declspec(uuid("1c2863b9-093f-46c0-b8e0-0bbd132e3f96"))
+esriGlobeTipsType
+{
+    esriGlobeTipsTypeNone = 0,
+    esriGlobeTipsTypeLatLon = 1,
+    esriGlobeTipsTypeElevation = 2,
+    esriGlobeTipsTypeLatLonElevation = 3
+};
+
+enum __declspec(uuid("ee1e1742-1fc5-4e85-a7cf-6180da92b9f0"))
+esriGlobeDataType
+{
+    esriGlobeDataInvalid = -1,
+    esriGlobeDataTexture = 0,
+    esriGlobeDataElevation = 1,
+    esriGlobeDataVector = 2,
+    esriGlobeDataText = 3,
+    esriGlobeDataObject = 4,
+    esriGlobeDataPoint = 5
+};
+
+enum __declspec(uuid("75de538c-27cd-42ba-88e3-d06c380688e3"))
+esriLODType
+{
+    esriLodImage = 0,
+    esriLodElevation = 1
+};
+
+struct __declspec(uuid("a8132c1e-00f2-49a3-bbaa-d0d951895686"))
+IGlobeAdvancedOptions : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsLossyCompressionSupported (
+        /*[in]*/ enum esriGlobeDataType Type,
+        /*[out,retval]*/ VARIANT_BOOL * pbLossySupported ) = 0;
+      virtual HRESULT __stdcall GetDefaultCompression (
+        /*[in]*/ enum esriGlobeDataType Type,
+        /*[out]*/ VARIANT_BOOL * pbLossyCompression,
+        /*[out]*/ short * pQuality ) = 0;
+      virtual HRESULT __stdcall SetDefaultCompression (
+        /*[in]*/ enum esriGlobeDataType Type,
+        /*[in]*/ VARIANT_BOOL bLossyCompression,
+        /*[in]*/ short quality ) = 0;
+      virtual HRESULT __stdcall get_DefaultUse16ColorBits (
+        /*[out,retval]*/ VARIANT_BOOL * pbUse16Bits ) = 0;
+      virtual HRESULT __stdcall put_DefaultUse16ColorBits (
+        /*[in]*/ VARIANT_BOOL pbUse16Bits ) = 0;
+      virtual HRESULT __stdcall get_DefaultUse16ElevBits (
+        /*[out,retval]*/ VARIANT_BOOL * pbUse16Bits ) = 0;
+      virtual HRESULT __stdcall put_DefaultUse16ElevBits (
+        /*[in]*/ VARIANT_BOOL pbUse16Bits ) = 0;
+      virtual HRESULT __stdcall get_CachePath (
+        /*[out,retval]*/ BSTR * pCachePath ) = 0;
+      virtual HRESULT __stdcall put_CachePath (
+        /*[in]*/ BSTR pCachePath ) = 0;
+      virtual HRESULT __stdcall GetUseCache (
+        /*[out]*/ VARIANT_BOOL * pbUseDiskCache,
+        /*[out]*/ double * pSizeInMb ) = 0;
+      virtual HRESULT __stdcall SetUseCache (
+        /*[in]*/ VARIANT_BOOL bUseDiskCache,
+        /*[in]*/ double sizeInMb ) = 0;
+      virtual HRESULT __stdcall get_TileMemorySize (
+        /*[out,retval]*/ long * pSizeInMb ) = 0;
+      virtual HRESULT __stdcall put_TileMemorySize (
+        /*[in]*/ long pSizeInMb ) = 0;
+      virtual HRESULT __stdcall get_ManualLOD (
+        /*[out,retval]*/ VARIANT_BOOL * pbManual ) = 0;
+      virtual HRESULT __stdcall put_ManualLOD (
+        /*[in]*/ VARIANT_BOOL pbManual ) = 0;
+      virtual HRESULT __stdcall get_TargetFrameRate (
+        /*[out,retval]*/ double * TargetFrameRate ) = 0;
+      virtual HRESULT __stdcall put_TargetFrameRate (
+        /*[in]*/ double TargetFrameRate ) = 0;
+      virtual HRESULT __stdcall get_LevelOfDetail (
+        /*[in]*/ enum esriLODType Type,
+        /*[out,retval]*/ double * LevelOfDetail ) = 0;
+      virtual HRESULT __stdcall put_LevelOfDetail (
+        /*[in]*/ enum esriLODType Type,
+        /*[in]*/ double LevelOfDetail ) = 0;
+      virtual HRESULT __stdcall WriteToRegistry ( ) = 0;
+      virtual HRESULT __stdcall get_ClipNear (
+        /*[out,retval]*/ double * pValue ) = 0;
+      virtual HRESULT __stdcall put_ClipNear (
+        /*[in]*/ double pValue ) = 0;
+      virtual HRESULT __stdcall get_ClipFarFactor (
+        /*[out,retval]*/ double * pValue ) = 0;
+      virtual HRESULT __stdcall put_ClipFarFactor (
+        /*[in]*/ double pValue ) = 0;
+      virtual HRESULT __stdcall RestoreClipPlaneDefaults ( ) = 0;
+      virtual HRESULT __stdcall RestoreLODDefaults ( ) = 0;
+      virtual HRESULT __stdcall put_VectorTileSize (
+        /*[in]*/ int psize ) = 0;
+      virtual HRESULT __stdcall get_VectorTileSize (
+        /*[out,retval]*/ int * psize ) = 0;
+      virtual HRESULT __stdcall put_UpdateCacheMonthlyPrompt (
+        /*[in]*/ VARIANT_BOOL pPrompt ) = 0;
+      virtual HRESULT __stdcall get_UpdateCacheMonthlyPrompt (
+        /*[out,retval]*/ VARIANT_BOOL * pPrompt ) = 0;
+};
+
+enum __declspec(uuid("e568bb2e-4e82-4cb6-87c5-6201812c2a3b"))
+esriGlobeLayerBaseOption
+{
+    esriGlobeLayerBaseGlobe = 0,
+    esriGlobeLayerBaseExpression = 1,
+    esriGlobeLayerBaseLayer = 2,
+    esriGlobeLayerBaseSelf = 3
+};
+
+enum __declspec(uuid("d87517bd-2c59-4b42-a268-0da850adc875"))
+esriGlobeLayerCacheRemovalOption
+{
+    esriGlobeLayerRemovalInvalid = -1,
+    esriGlobeLayerNoRemoval = 0,
+    esriGlobeLayerWholeRemoval = 1,
+    esriGlobeLayerExitRemoval = 2
+};
+
+enum __declspec(uuid("074c4929-6ff6-466c-a35a-b9b4e4ce274a"))
+esriGlobeImageSamplingMode
+{
+    esriGlobeImageSamplingNearest = 0,
+    esriGlobeImageSamplingSmooth = 1
+};
+
+struct __declspec(uuid("3dea46b1-53d2-4809-8604-6013d7ab8345"))
+IGlobeDrawingOrder : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_OrderedLayers (
+        /*[out,retval]*/ struct IEnumLayer * * ppLayers ) = 0;
+      virtual HRESULT __stdcall MoveRanks (
+        /*[in]*/ long from,
+        /*[in]*/ long to,
+        /*[in]*/ long cGroupRange ) = 0;
+      virtual HRESULT __stdcall MoveToLayer (
+        /*[in]*/ struct ILayer * fromLayer,
+        /*[in]*/ struct ILayer * toLayer ) = 0;
+      virtual HRESULT __stdcall MoveToFront (
+        /*[in]*/ struct ILayer * Layer ) = 0;
+      virtual HRESULT __stdcall MoveToBack (
+        /*[in]*/ struct ILayer * Layer ) = 0;
+      virtual HRESULT __stdcall MoveForward (
+        /*[in]*/ struct ILayer * Layer ) = 0;
+      virtual HRESULT __stdcall MoveBackward (
+        /*[in]*/ struct ILayer * Layer ) = 0;
+};
+
+struct __declspec(uuid("00b329b8-265e-11d6-b2b4-00508bcdde28"))
+Globe;
+    // [ default ] interface IUnknown
+    // interface IGlobe2
+    // interface IScene
+    // interface IBasicScene2
+    // interface IActiveView
+    // interface IBasicMap
+    // interface IMap
+    // interface ISelectionEvents
+    // interface ITableCollection
+    // interface IStandaloneTableCollection
+    // interface IRelationshipClassCollection
+    // interface ISceneBookmarks2
+    // interface IAnimationTracks
+    // interface IAGAnimationTracks
+    // interface IAGAnimationContainer
+    // interface ISupportErrorInfo
+    // interface IConnectionPointContainer
+    // interface IPersistStream
+    // interface IMapGeographicTransformations
+    // interface IMapTimeDisplay
+    // interface IMapTimeDisplay2
+    // [ default, source ] interface IActiveViewEvents
+
+struct __declspec(uuid("a5330aea-2419-4e96-b6d1-49ae806b990e"))
+GlobeHelper;
+    // [ default ] interface IUnknown
+    // interface IGlobeHelperPub
+
+enum __declspec(uuid("7bd4e6cc-9862-4381-9e22-40070c70b093"))
+esriGlobeStat
+{
+    esriFrameRate = 0,
+    esriFrameRateNavig = 1,
+    esriTileRequestQueue = 2,
+    esriDataFromDisk = 3,
+    esriDataFromNetwork = 4,
+    esriCacheUsage = 5
+};
+
+enum __declspec(uuid("76b846f0-a040-4a3a-80e9-358d83ec56c9"))
+esriGlobeTileMemoryType
+{
+    esriGlobeTileMemoryImage = 0,
+    esriGlobeTileMemoryElevation = 1,
+    esriGlobeTileMemoryPoint = 2,
+    esriGlobeTileMemoryLine = 3,
+    esriGlobeTileMemory3DGeom = 4,
+    esriGlobeTileMemory3DTexture = 5,
+    esriGlobeTileMemoryText = 6
+};
+
+enum __declspec(uuid("27aad9d6-6b44-448a-8e4a-06811b125259"))
+esriGlobeDisplayGridType
+{
+    esriGlobeDisplayGridTypeNone = 0,
+    esriGlobeDisplayGridTypeDegMinSec = 1,
+    esriGlobeDisplayGridTypeDegMinDecSec = 2,
+    esriGlobeDisplayGridTypeDecimalMin = 3,
+    esriGlobeDisplayGridTypeDecimalDeg = 4,
+    esriGlobeDisplayGridTypeMGRS = 5,
+    esriGlobeDisplayGridTypeUSNational = 6
+};
+
+struct __declspec(uuid("3872d32c-01d6-4108-8e09-114f95276b9b"))
+IGlobeDisplayRendering : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_IsSunEnabled (
+        /*[in]*/ VARIANT_BOOL pbSun ) = 0;
+      virtual HRESULT __stdcall get_IsSunEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pbSun ) = 0;
+      virtual HRESULT __stdcall get_GlobeBackgroundOption (
+        /*[out,retval]*/ enum esriGlobeBackgroundOption * pOption ) = 0;
+      virtual HRESULT __stdcall put_GlobeBackgroundOption (
+        /*[in]*/ enum esriGlobeBackgroundOption pOption ) = 0;
+      virtual HRESULT __stdcall SetLowBackgroundColor (
+        /*[in]*/ float Red,
+        /*[in]*/ float Green,
+        /*[in]*/ float Blue ) = 0;
+      virtual HRESULT __stdcall GetLowBackgroundColor (
+        /*[out]*/ float * Red,
+        /*[out]*/ float * Green,
+        /*[out]*/ float * Blue ) = 0;
+      virtual HRESULT __stdcall SetBackgroundTransitionDistances (
+        /*[in]*/ float lowAltitude,
+        /*[in]*/ float highAltitude ) = 0;
+      virtual HRESULT __stdcall GetBackgroundTransitionDistances (
+        /*[out]*/ float * pLowAltitude,
+        /*[out]*/ float * pHighAltitude ) = 0;
+      virtual HRESULT __stdcall SetSunPosition (
+        /*[in]*/ double latitude,
+        /*[in]*/ double longitude ) = 0;
+      virtual HRESULT __stdcall GetSunPosition (
+        /*[out]*/ double * pLatitude,
+        /*[out]*/ double * pLongitude ) = 0;
+      virtual HRESULT __stdcall SetSunColor (
+        /*[in]*/ float sunRed,
+        /*[in]*/ float sunGreen,
+        /*[in]*/ float sunBlue ) = 0;
+      virtual HRESULT __stdcall GetSunColor (
+        /*[out]*/ float * pSunRed,
+        /*[out]*/ float * pSunGreen,
+        /*[out]*/ float * pSunBlue ) = 0;
+      virtual HRESULT __stdcall put_SunContrast (
+        /*[in]*/ long pContrast ) = 0;
+      virtual HRESULT __stdcall get_SunContrast (
+        /*[out,retval]*/ long * pContrast ) = 0;
+      virtual HRESULT __stdcall put_AmbientLight (
+        /*[in]*/ float pLightValue ) = 0;
+      virtual HRESULT __stdcall get_AmbientLight (
+        /*[out,retval]*/ float * pLightValue ) = 0;
+      virtual HRESULT __stdcall put_BaseExaggeration (
+        /*[in]*/ double pFactor ) = 0;
+      virtual HRESULT __stdcall get_BaseExaggeration (
+        /*[out,retval]*/ double * pFactor ) = 0;
+      virtual HRESULT __stdcall put_OverlayExaggeration (
+        /*[in]*/ double pFactor ) = 0;
+      virtual HRESULT __stdcall get_OverlayExaggeration (
+        /*[out,retval]*/ double * pFactor ) = 0;
+      virtual HRESULT __stdcall get_GlobeRadius (
+        /*[out,retval]*/ double * pRadiusInMeters ) = 0;
+};
+
+struct __declspec(uuid("95e8d742-c053-4571-b647-d7416f58b23d"))
+IGlobeDisplayRendering2 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_IsSunEnabled (
+        /*[in]*/ VARIANT_BOOL pbSun ) = 0;
+      virtual HRESULT __stdcall get_IsSunEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pbSun ) = 0;
+      virtual HRESULT __stdcall get_GlobeBackgroundOption (
+        /*[out,retval]*/ enum esriGlobeBackgroundOption * pOption ) = 0;
+      virtual HRESULT __stdcall put_GlobeBackgroundOption (
+        /*[in]*/ enum esriGlobeBackgroundOption pOption ) = 0;
+      virtual HRESULT __stdcall SetLowBackgroundColor (
+        /*[in]*/ float Red,
+        /*[in]*/ float Green,
+        /*[in]*/ float Blue ) = 0;
+      virtual HRESULT __stdcall GetLowBackgroundColor (
+        /*[out]*/ float * Red,
+        /*[out]*/ float * Green,
+        /*[out]*/ float * Blue ) = 0;
+      virtual HRESULT __stdcall SetBackgroundTransitionDistances (
+        /*[in]*/ float lowAltitude,
+        /*[in]*/ float highAltitude ) = 0;
+      virtual HRESULT __stdcall GetBackgroundTransitionDistances (
+        /*[out]*/ float * pLowAltitude,
+        /*[out]*/ float * pHighAltitude ) = 0;
+      virtual HRESULT __stdcall SetSunPosition (
+        /*[in]*/ double latitude,
+        /*[in]*/ double longitude ) = 0;
+      virtual HRESULT __stdcall GetSunPosition (
+        /*[out]*/ double * pLatitude,
+        /*[out]*/ double * pLongitude ) = 0;
+      virtual HRESULT __stdcall SetSunColor (
+        /*[in]*/ float sunRed,
+        /*[in]*/ float sunGreen,
+        /*[in]*/ float sunBlue ) = 0;
+      virtual HRESULT __stdcall GetSunColor (
+        /*[out]*/ float * pSunRed,
+        /*[out]*/ float * pSunGreen,
+        /*[out]*/ float * pSunBlue ) = 0;
+      virtual HRESULT __stdcall put_SunContrast (
+        /*[in]*/ long pContrast ) = 0;
+      virtual HRESULT __stdcall get_SunContrast (
+        /*[out,retval]*/ long * pContrast ) = 0;
+      virtual HRESULT __stdcall put_AmbientLight (
+        /*[in]*/ float pLightValue ) = 0;
+      virtual HRESULT __stdcall get_AmbientLight (
+        /*[out,retval]*/ float * pLightValue ) = 0;
+      virtual HRESULT __stdcall put_BaseExaggeration (
+        /*[in]*/ double pFactor ) = 0;
+      virtual HRESULT __stdcall get_BaseExaggeration (
+        /*[out,retval]*/ double * pFactor ) = 0;
+      virtual HRESULT __stdcall put_OverlayExaggeration (
+        /*[in]*/ double pFactor ) = 0;
+      virtual HRESULT __stdcall get_OverlayExaggeration (
+        /*[out,retval]*/ double * pFactor ) = 0;
+      virtual HRESULT __stdcall get_GlobeRadius (
+        /*[out,retval]*/ double * pRadiusInMeters ) = 0;
+      virtual HRESULT __stdcall put_IsStarsEnabled (
+        /*[in]*/ VARIANT_BOOL pbStars ) = 0;
+      virtual HRESULT __stdcall get_IsStarsEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pbStars ) = 0;
+      virtual HRESULT __stdcall put_IsHaloEnabled (
+        /*[in]*/ VARIANT_BOOL pbHalo ) = 0;
+      virtual HRESULT __stdcall get_IsHaloEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pbHalo ) = 0;
+};
+
+struct __declspec(uuid("83976305-34dc-4121-bb64-1dc1d15addf1"))
+IGlobeDisplayRendering3 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_IsSunEnabled (
+        /*[in]*/ VARIANT_BOOL pbSun ) = 0;
+      virtual HRESULT __stdcall get_IsSunEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pbSun ) = 0;
+      virtual HRESULT __stdcall get_GlobeBackgroundOption (
+        /*[out,retval]*/ enum esriGlobeBackgroundOption * pOption ) = 0;
+      virtual HRESULT __stdcall put_GlobeBackgroundOption (
+        /*[in]*/ enum esriGlobeBackgroundOption pOption ) = 0;
+      virtual HRESULT __stdcall SetLowBackgroundColor (
+        /*[in]*/ float Red,
+        /*[in]*/ float Green,
+        /*[in]*/ float Blue ) = 0;
+      virtual HRESULT __stdcall GetLowBackgroundColor (
+        /*[out]*/ float * Red,
+        /*[out]*/ float * Green,
+        /*[out]*/ float * Blue ) = 0;
+      virtual HRESULT __stdcall SetBackgroundTransitionDistances (
+        /*[in]*/ float lowAltitude,
+        /*[in]*/ float highAltitude ) = 0;
+      virtual HRESULT __stdcall GetBackgroundTransitionDistances (
+        /*[out]*/ float * pLowAltitude,
+        /*[out]*/ float * pHighAltitude ) = 0;
+      virtual HRESULT __stdcall SetSunPosition (
+        /*[in]*/ double latitude,
+        /*[in]*/ double longitude ) = 0;
+      virtual HRESULT __stdcall GetSunPosition (
+        /*[out]*/ double * pLatitude,
+        /*[out]*/ double * pLongitude ) = 0;
+      virtual HRESULT __stdcall SetSunColor (
+        /*[in]*/ float sunRed,
+        /*[in]*/ float sunGreen,
+        /*[in]*/ float sunBlue ) = 0;
+      virtual HRESULT __stdcall GetSunColor (
+        /*[out]*/ float * pSunRed,
+        /*[out]*/ float * pSunGreen,
+        /*[out]*/ float * pSunBlue ) = 0;
+      virtual HRESULT __stdcall put_SunContrast (
+        /*[in]*/ long pContrast ) = 0;
+      virtual HRESULT __stdcall get_SunContrast (
+        /*[out,retval]*/ long * pContrast ) = 0;
+      virtual HRESULT __stdcall put_AmbientLight (
+        /*[in]*/ float pLightValue ) = 0;
+      virtual HRESULT __stdcall get_AmbientLight (
+        /*[out,retval]*/ float * pLightValue ) = 0;
+      virtual HRESULT __stdcall put_BaseExaggeration (
+        /*[in]*/ double pFactor ) = 0;
+      virtual HRESULT __stdcall get_BaseExaggeration (
+        /*[out,retval]*/ double * pFactor ) = 0;
+      virtual HRESULT __stdcall put_OverlayExaggeration (
+        /*[in]*/ double pFactor ) = 0;
+      virtual HRESULT __stdcall get_OverlayExaggeration (
+        /*[out,retval]*/ double * pFactor ) = 0;
+      virtual HRESULT __stdcall get_GlobeRadius (
+        /*[out,retval]*/ double * pRadiusInMeters ) = 0;
+      virtual HRESULT __stdcall put_IsStarsEnabled (
+        /*[in]*/ VARIANT_BOOL pbStars ) = 0;
+      virtual HRESULT __stdcall get_IsStarsEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pbStars ) = 0;
+      virtual HRESULT __stdcall put_IsHaloEnabled (
+        /*[in]*/ VARIANT_BOOL pbHalo ) = 0;
+      virtual HRESULT __stdcall get_IsHaloEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pbHalo ) = 0;
+      virtual HRESULT __stdcall put_GridDisplay (
+        /*[in]*/ enum esriGlobeDisplayGridType pGridType ) = 0;
+      virtual HRESULT __stdcall get_GridDisplay (
+        /*[out,retval]*/ enum esriGlobeDisplayGridType * pGridType ) = 0;
+};
+
+struct __declspec(uuid("a1407e3c-9c23-433e-8245-2785541c7863"))
+IGlobeAdvancedOptions2 : IGlobeAdvancedOptions
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetTileMemory (
+        /*[in]*/ enum esriGlobeTileMemoryType Type,
+        /*[out]*/ long * pLimitMb,
+        /*[out]*/ float * pCurrentMb ) = 0;
+      virtual HRESULT __stdcall SetTileMemory (
+        /*[in]*/ enum esriGlobeTileMemoryType Type,
+        /*[in]*/ long limitMb ) = 0;
+      virtual HRESULT __stdcall GetVirtualViewportSize (
+        /*[out]*/ long * pWidth,
+        /*[out]*/ long * pHeight ) = 0;
+      virtual HRESULT __stdcall SetVirtualViewportSize (
+        /*[in]*/ long width,
+        /*[in]*/ long height ) = 0;
+      virtual HRESULT __stdcall get_LevelOfDetailBias (
+        /*[in]*/ enum esriLODType Type,
+        /*[out,retval]*/ double * delta ) = 0;
+      virtual HRESULT __stdcall put_LevelOfDetailBias (
+        /*[in]*/ enum esriLODType Type,
+        /*[in]*/ double delta ) = 0;
+};
+
+struct __declspec(uuid("e4e37ac7-6f8a-4f4a-b7c3-db44375e8c5b"))
+IGlobeDisplayEvents : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ActiveViewerChanged (
+        /*[in]*/ struct ISceneViewer * pViewer ) = 0;
+      virtual HRESULT __stdcall ViewerAdded (
+        /*[in]*/ struct ISceneViewer * pViewer ) = 0;
+      virtual HRESULT __stdcall ViewerRemoved (
+        /*[in]*/ struct ISceneViewer * pViewer ) = 0;
+      virtual HRESULT __stdcall InteractionStopped ( ) = 0;
+      virtual HRESULT __stdcall BatchTileGenerationStarted (
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall BatchTileGenerationStopped ( ) = 0;
+      virtual HRESULT __stdcall BeforeDraw (
+        /*[in]*/ struct ISceneViewer * pViewer,
+        /*[out,retval]*/ VARIANT_BOOL * pbHandled ) = 0;
+      virtual HRESULT __stdcall AfterDraw (
+        /*[in]*/ struct ISceneViewer * pViewer ) = 0;
+      virtual HRESULT __stdcall VectorOverflow (
+        /*[in]*/ struct ILayer * pLayer ) = 0;
+      virtual HRESULT __stdcall TileOverflow (
+        /*[in]*/ struct ILayer * pLayer ) = 0;
+};
+
+struct __declspec(uuid("1641c885-17ef-4531-a507-518ce994a17e"))
+IGlobeStatInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Statistic (
+        /*[in]*/ enum esriGlobeStat property,
+        /*[out,retval]*/ double * pValue ) = 0;
+      virtual HRESULT __stdcall StartAccumulating (
+        /*[in]*/ enum esriGlobeStat property ) = 0;
+      virtual HRESULT __stdcall StopAccumulating (
+        /*[in]*/ enum esriGlobeStat property,
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall SetNumFramesInAvg (
+        /*[in]*/ enum esriGlobeStat property,
+        /*[in]*/ long num ) = 0;
+};
+
+struct __declspec(uuid("1a7729a9-df52-4c56-8b8a-835d94c1216e"))
+IGlobeDisplayUtil : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CreateLayerFromGmxXML (
+        /*[in]*/ BSTR CachePath,
+        /*[out,retval]*/ struct IEnumLayer * * ppLayers ) = 0;
+};
+
+struct __declspec(uuid("f6d524f9-ea59-4f6c-a470-757ba186f85b"))
+GlobeDisplay;
+    // [ default ] interface IUnknown
+    // interface IGlobeDisplay3
+    // interface IGlobeDisplayLayers
+    // interface IGlobeDisplayLayers2
+    // interface IGlobeDisplayRendering3
+    // interface IActiveViewEvents
+    // interface IConnectionPointContainer
+    // interface IScreenDisplay
+    // interface IGlobeStatInfo
+    // interface ITimeDisplay
+    // interface ITimeDisplay2
+    // [ default, source ] interface IGlobeDisplayEvents
+    // interface IGlobeDisplayUtil
+    // [ source ] interface ITimeDisplayEvents
+
+struct __declspec(uuid("cae0885c-7728-4eca-a339-1b0024932c87"))
+GlobeAdvancedOptions;
+    // [ default ] interface IUnknown
+    // interface IGlobeAdvancedOptions2
+
+struct __declspec(uuid("bdb85d20-0285-4e2b-bbd9-db44638ca326"))
+GlobeDocument;
+    // [ default ] interface IUnknown
+    // interface IGlobeDocument
+    // interface IDocumentVersion
+    // interface IDocumentInfo
+    // interface IDocumentInfo2
+    // interface IDocumentPreview
+
+struct __declspec(uuid("cc41e3a3-6437-44aa-8c01-a63484abcb45"))
+IGlobeLayer : IUnknown
+{};
+
+struct __declspec(uuid("c0b5bbb2-9b4a-41c3-acbb-f20e9940e574"))
+IGeoVideoLayer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Play (
+        /*[in]*/ VARIANT_BOOL _arg1 ) = 0;
+      virtual HRESULT __stdcall put_Pause (
+        /*[in]*/ VARIANT_BOOL _arg1 ) = 0;
+      virtual HRESULT __stdcall put_Restart (
+        /*[in]*/ VARIANT_BOOL _arg1 ) = 0;
+      virtual HRESULT __stdcall put_Stop (
+        /*[in]*/ VARIANT_BOOL _arg1 ) = 0;
+      virtual HRESULT __stdcall put_FastForward (
+        /*[in]*/ double _arg1 ) = 0;
+      virtual HRESULT __stdcall put_ReWind (
+        /*[in]*/ double _arg1 ) = 0;
+      virtual HRESULT __stdcall put_PlaySpeed (
+        /*[in]*/ double _arg1 ) = 0;
+      virtual HRESULT __stdcall put_GeoVideoLayerState (
+        /*[in]*/ VARIANT pvGroudOverlayProps ) = 0;
+      virtual HRESULT __stdcall get_GeoVideoLayerState (
+        /*[out,retval]*/ VARIANT * pvGroudOverlayProps ) = 0;
+      virtual HRESULT __stdcall get_GeoVideoLayerAsXML (
+        /*[out,retval]*/ BSTR * pGeoVideoXML ) = 0;
+};
+
+struct __declspec(uuid("5d85f151-7084-4dc3-a9e5-95c3c44a7a06"))
+IGlobeRasterizedLayerSupport : IUnknown
+{};
+
+enum __declspec(uuid("f85b3728-a825-4507-b8dd-67d3a7d1c6d2"))
+esriGlobeCustomDrawType
+{
+    esriGlobeCustomDrawRasterize = 1,
+    esriGlobeCustomDrawByTile = 2,
+    esriGlobeCustomDrawOpenGL = 4,
+    esriGlobeCustomDrawOpenGLAndRasterize = 5,
+    esriGlobeCustomDrawVector = 8
+};
+
+enum __declspec(uuid("a3510470-45d8-4870-ac44-7f70c4ffd19e"))
+esriGlobeSpinDirection
+{
+    esriClockwise = 0,
+    esriCounterClockwise = 1
+};
+
+enum __declspec(uuid("6bfc01cd-fc03-4c8d-bdc5-e419942c7540"))
+esriGlobeGraphicsOrientation
+{
+    esriGlobeGraphicsOrientationDefault = 0,
+    esriGlobeGraphicsOrientationBillboard = 1,
+    esriGlobeGraphicsOrientationLocal = 2
+};
+
+struct __declspec(uuid("0d8e6a2a-0630-45fc-9597-dd30361db18c"))
+IGlobeGraphicsElementProperties : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Illuminate (
+        /*[in]*/ VARIANT_BOOL pbIlluminate ) = 0;
+      virtual HRESULT __stdcall get_Illuminate (
+        /*[out,retval]*/ VARIANT_BOOL * pbIlluminate ) = 0;
+      virtual HRESULT __stdcall put_FixedScreenSize (
+        /*[in]*/ VARIANT_BOOL pbFixed ) = 0;
+      virtual HRESULT __stdcall get_FixedScreenSize (
+        /*[out,retval]*/ VARIANT_BOOL * pbFixed ) = 0;
+      virtual HRESULT __stdcall put_OrientationMode (
+        /*[in]*/ enum esriGlobeGraphicsOrientation pMode ) = 0;
+      virtual HRESULT __stdcall get_OrientationMode (
+        /*[out,retval]*/ enum esriGlobeGraphicsOrientation * pMode ) = 0;
+      virtual HRESULT __stdcall put_UseCallOutLine (
+        /*[in]*/ VARIANT_BOOL pbUseCallOut ) = 0;
+      virtual HRESULT __stdcall get_UseCallOutLine (
+        /*[out,retval]*/ VARIANT_BOOL * pbUseCallOut ) = 0;
+      virtual HRESULT __stdcall put_CallOutLineSymbol (
+        /*[in]*/ struct ISimpleLineSymbol * ppLineSym ) = 0;
+      virtual HRESULT __stdcall get_CallOutLineSymbol (
+        /*[out,retval]*/ struct ISimpleLineSymbol * * ppLineSym ) = 0;
+      virtual HRESULT __stdcall PutCallOutLineOffset (
+        /*[in]*/ double longitudeInDegrees,
+        /*[in]*/ double latitudeInDegrees,
+        /*[in]*/ double altitudeInMeters ) = 0;
+      virtual HRESULT __stdcall GetCallOutLineOffset (
+        /*[out]*/ double * pLongitudeInDegrees,
+        /*[out]*/ double * pLatitudeInDegrees,
+        /*[out]*/ double * pAltitudeInMeters ) = 0;
+      virtual HRESULT __stdcall put_Rasterize (
+        /*[in]*/ VARIANT_BOOL pbRasterize ) = 0;
+      virtual HRESULT __stdcall get_Rasterize (
+        /*[out,retval]*/ VARIANT_BOOL * pbRasterize ) = 0;
+      virtual HRESULT __stdcall put_DrapeElement (
+        /*[in]*/ VARIANT_BOOL pbDrape ) = 0;
+      virtual HRESULT __stdcall get_DrapeElement (
+        /*[out,retval]*/ VARIANT_BOOL * pbDrape ) = 0;
+      virtual HRESULT __stdcall put_DrapeQuality (
+        /*[in]*/ VARIANT_BOOL pbUseMaximumResolution ) = 0;
+      virtual HRESULT __stdcall get_DrapeQuality (
+        /*[out,retval]*/ VARIANT_BOOL * pbUseMaximumResolution ) = 0;
+      virtual HRESULT __stdcall put_DrapeZOffset (
+        /*[in]*/ double pOffset ) = 0;
+      virtual HRESULT __stdcall get_DrapeZOffset (
+        /*[out,retval]*/ double * pOffset ) = 0;
+      virtual HRESULT __stdcall put_DrapedDensificationDistance (
+        /*[in]*/ double pMeters ) = 0;
+      virtual HRESULT __stdcall get_DrapedDensificationDistance (
+        /*[out,retval]*/ double * pMeters ) = 0;
+};
+
+struct __declspec(uuid("5ae75603-dd33-4d19-8116-4e6169b2eb9f"))
+IGlobeGraphicsLayer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall AddElement (
+        /*[in]*/ struct IElement * pElement,
+        /*[in]*/ struct IGlobeGraphicsElementProperties * pProps,
+        /*[out]*/ long * pElementIndex ) = 0;
+      virtual HRESULT __stdcall SetGlobeProperties (
+        /*[in]*/ struct IElement * pElement,
+        /*[in]*/ struct IGlobeGraphicsElementProperties * pProps ) = 0;
+      virtual HRESULT __stdcall GetGlobeProperties (
+        /*[in]*/ struct IElement * pElement,
+        /*[out]*/ struct IGlobeGraphicsElementProperties * * ppProps ) = 0;
+      virtual HRESULT __stdcall PutElementName (
+        /*[in]*/ struct IElement * pElement,
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall GetElementName (
+        /*[in]*/ struct IElement * pElement,
+        /*[out]*/ BSTR * pName ) = 0;
+      virtual HRESULT __stdcall FindElement (
+        /*[in]*/ BSTR Name,
+        /*[out]*/ struct IElement * * ppElement,
+        /*[out]*/ long * pElementIndex ) = 0;
+      virtual HRESULT __stdcall FindElementIndex (
+        /*[in]*/ struct IElement * pElement,
+        /*[out]*/ long * pElementIndex ) = 0;
+      virtual HRESULT __stdcall UpdateElementByIndex (
+        /*[in]*/ long elementIndex ) = 0;
+      virtual HRESULT __stdcall PutIsElementVisible (
+        /*[in]*/ long elementIndex,
+        /*[in]*/ VARIANT_BOOL bVisible ) = 0;
+      virtual HRESULT __stdcall GetIsElementVisible (
+        /*[in]*/ long elementIndex,
+        /*[out]*/ VARIANT_BOOL * pbVisible ) = 0;
+      virtual HRESULT __stdcall SetElementTransformation (
+        /*[in]*/ long elementIndex,
+        /*[in]*/ struct IVector3D * pTrans,
+        /*[in]*/ struct IVector3D * pScale,
+        /*[in]*/ struct IVector3D * pRotate ) = 0;
+      virtual HRESULT __stdcall GetElementTransformation (
+        /*[in]*/ long elementIndex,
+        /*[out]*/ struct IVector3D * * ppTrans,
+        /*[out]*/ struct IVector3D * * ppScale,
+        /*[out]*/ struct IVector3D * * ppRotate ) = 0;
+      virtual HRESULT __stdcall put_IsHidden (
+        /*[in]*/ VARIANT_BOOL pbHide ) = 0;
+      virtual HRESULT __stdcall get_IsHidden (
+        /*[out,retval]*/ VARIANT_BOOL * pbHide ) = 0;
+      virtual HRESULT __stdcall UpdateAllElements ( ) = 0;
+      virtual HRESULT __stdcall get_HasVisibleRasterizedElements (
+        /*[out,retval]*/ VARIANT_BOOL * pbVisibleRasterized ) = 0;
+      virtual HRESULT __stdcall put_RasterizedSymbologyScalingFactor (
+        /*[in]*/ double _arg1 ) = 0;
+      virtual HRESULT __stdcall put_HasPerElementIllumination (
+        /*[in]*/ VARIANT_BOOL bHasPerElementIllumination ) = 0;
+      virtual HRESULT __stdcall get_HasPerElementIllumination (
+        /*[out,retval]*/ VARIANT_BOOL * bHasPerElementIllumination ) = 0;
+      virtual HRESULT __stdcall put_IsSelectable (
+        /*[in]*/ VARIANT_BOOL bIsSelectable ) = 0;
+      virtual HRESULT __stdcall get_IsSelectable (
+        /*[out,retval]*/ VARIANT_BOOL * bIsSelectable ) = 0;
+};
+
+struct __declspec(uuid("f6449fe8-7370-49f3-9dee-5722e3553f41"))
+GlobeLayerFactory;
+    // [ default ] interface IUnknown
+    // interface ILayerFactory
+
+struct __declspec(uuid("ccd838d8-83a3-4465-94c7-1d395298c5be"))
+GeoVideoLayerFactory;
+    // [ default ] interface IUnknown
+    // interface ILayerFactory
+
+struct __declspec(uuid("26eee782-e017-4179-8628-00206fa552fd"))
+IMSGlobeLayerFactory;
+    // [ default ] interface IUnknown
+    // interface ILayerFactory
+
+struct __declspec(uuid("69fbcddf-43de-4227-8b7c-a19cc688b913"))
+GlobeHeightProperties;
+    // [ default ] interface IUnknown
+    // interface IGlobeHeightProperties2
+    // interface IPersistStream
+    // interface IPersist
+
+struct __declspec(uuid("2c0d96ea-caaf-4bde-848c-3ff86bd9f525"))
+GlobeLayerProperties;
+    // [ default ] interface IUnknown
+    // interface IGlobeLayerProperties
+    // interface IGlobeLayerProperties2
+    // interface IGlobeLayerProperties4
+    // interface IGlobeLayerProperties5
+    // interface IDataLayerExtension
+    // interface IPersistStream
+    // interface IPersist
+    // [ default, source ] interface IFeatureLayerSelectionEvents
+
+struct __declspec(uuid("eb2e11dd-269d-4e07-b61a-31c7667f0167"))
+GlobeLayer;
+    // [ default ] interface IUnknown
+    // interface ILayer
+    // interface IGlobeLayer
+    // interface ILayerExtensions
+    // interface ILayerEvents
+    // interface ILayerEffects
+    // interface IDataLayer
+    // interface IGeoDataset
+    // interface IConnectionPointContainer
+    // interface IPersistStream
+    // interface IPublishLayer
+    // interface ILayerInfo
+
+struct __declspec(uuid("65f3b5c0-6013-478b-bce1-f58fd7659d10"))
+GeoVideoLayer;
+    // [ default ] interface IUnknown
+    // interface ILayer
+    // interface IGeoVideoLayer
+    // interface ILayerExtensions
+    // interface ILayerEvents
+    // interface ILayerEffects
+    // interface IDataLayer
+    // interface IGeoDataset
+    // interface IConnectionPointContainer
+    // interface IPersistStream
+    // interface IPublishLayer
+    // interface ILayerInfo
+
+struct __declspec(uuid("48ca76a3-8ff3-48cd-8796-f3bd455f9ab0"))
+GlobeGraphicsElementProperties;
+    // [ default ] interface IUnknown
+    // interface IGlobeGraphicsElementProperties
+    // interface IXMLSerialize
+    // interface IPersistStream
+    // interface IXMLVersionSupport
+
+struct __declspec(uuid("a415a073-cf06-4cdc-8664-439d0d5e7169"))
+GlobeGraphicsLayer;
+    // [ default ] interface IUnknown
+    // interface ILayer
+    // interface IGraphicsLayer
+    // interface IGlobeGraphicsLayer
+    // interface ICustomGlobeLayer
+    // interface IGraphicsContainer
+    // interface IGraphicsContainer3D
+    // interface IGraphicsSelection
+    // interface ILayerExtensions
+    // interface ILayerEvents
+    // interface ILayerEffects
+    // interface IGeoDataset
+    // interface IConnectionPointContainer
+    // interface IPersistStream
+    // [ default, source ] interface IActiveViewEvents
+    // interface IPublishLayer
+    // interface IXMLSerialize
+    // interface IXMLVersionSupport
+
+struct __declspec(uuid("c03019d0-59cd-4f03-8124-2fe4138913d3"))
+IGlobeGraphicElementPropsStreamArray : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_Element (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IGlobeGraphicsElementProperties * * ppElement ) = 0;
+      virtual HRESULT __stdcall Remove (
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall RemoveAll ( ) = 0;
+      virtual HRESULT __stdcall Add (
+        /*[in]*/ struct IGlobeGraphicsElementProperties * pElement ) = 0;
+      virtual HRESULT __stdcall Insert (
+        /*[in]*/ long index,
+        /*[in]*/ struct IGlobeGraphicsElementProperties * pElement ) = 0;
+};
+
+struct __declspec(uuid("52954700-6659-4939-8d2c-6823f0b64521"))
+GlobeGraphicElementPropsStreamArray;
+    // [ default ] interface IUnknown
+    // interface IGlobeGraphicElementPropsStreamArray
+    // interface IXMLSerialize
+    // interface IPersistStream
+    // interface IPersist
+    // interface IXMLVersionSupport
+
+struct __declspec(uuid("0a23899e-0a33-44fb-95a2-f296deeb90b5"))
+IKmlNode : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_Snippet (
+        /*[out,retval]*/ BSTR * Snippet ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * Description ) = 0;
+      virtual HRESULT __stdcall get_Visible (
+        /*[out,retval]*/ VARIANT_BOOL * Visible ) = 0;
+      virtual HRESULT __stdcall put_Visible (
+        /*[in]*/ VARIANT_BOOL Visible ) = 0;
+      virtual HRESULT __stdcall get_HasName (
+        /*[out,retval]*/ VARIANT_BOOL * pHasName ) = 0;
+      virtual HRESULT __stdcall get_HasSnippet (
+        /*[out,retval]*/ VARIANT_BOOL * pHasSnippet ) = 0;
+      virtual HRESULT __stdcall get_HasDescription (
+        /*[out,retval]*/ VARIANT_BOOL * pHasDescription ) = 0;
+};
+
+struct __declspec(uuid("20b66f01-d729-4090-9b67-cc2fad2b988d"))
+IKmlChildNodes : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_KmlNodeCount (
+        /*[out,retval]*/ long * pCount ) = 0;
+      virtual HRESULT __stdcall get_KmlNode (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IKmlNode * * ppKmlNode ) = 0;
+};
+
+struct __declspec(uuid("976fca1a-0309-4e53-9653-4e752dde3295"))
+IKmlScreenOverlayDisplay : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_ScreenOverlayVisible (
+        /*[in]*/ VARIANT_BOOL pVisible ) = 0;
+      virtual HRESULT __stdcall get_ScreenOverlayVisible (
+        /*[out,retval]*/ VARIANT_BOOL * pVisible ) = 0;
+};
+
+struct __declspec(uuid("dae95a5a-6160-45d9-9a3b-747dd19532a1"))
+KmlLayer;
+    // [ default ] interface IUnknown
+    // interface ILayer
+    // interface IKmlLayer
+    // interface IConnectionPointContainer
+    // interface IGeoDataset
+    // interface IPersistStream
+    // interface IDataLayer
+    // interface IDataLayer2
+    // interface IDisplayAdmin
+    // interface ILayerInfo
+    // interface ILayerEffects
+    // interface ILayerPosition
+    // interface ILayerExtensions
+    // interface IPublishLayer
+    // interface ILayerGeneralProperties
+
+struct __declspec(uuid("dc575242-99e8-4b53-84f0-c46b55d21377"))
+IKmlServer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Data (
+        /*[in]*/ BSTR Capabilities,
+        /*[in]*/ BSTR request,
+        /*[out,retval]*/ SAFEARRAY * * response ) = 0;
+      virtual HRESULT __stdcall get_IDList (
+        /*[out,retval]*/ struct IArray * * pLayerIDs ) = 0;
+};
+
+enum __declspec(uuid("59660716-1bca-4057-9e5d-6ec922513b31"))
+esriKmlServerMessageCodeEnum
+{
+    esriKmlServerMessageCode_Debug = 12000,
+    esriKmlServerMessageCode_NotLicensed = 12001,
+    esriKmlServerMessageCode_ConstructStarted = 12002,
+    esriKmlServerMessageCode_ConstructEnded = 12003,
+    esriKmlServerMessageCode_InvalidPointer = 12004
+};
+
+struct __declspec(uuid("03682ba2-6b86-4153-96c9-17930e53cabb"))
+KmlServer;
+    // [ default ] interface IUnknown
+    // interface IServerObjectExtension
+    // interface IObjectConstruct
+    // interface ILogSupport
+    // interface IKmlServer
+    // interface IWebRequestHandler
+
+struct __declspec(uuid("d91d9176-41ad-4268-9e33-9295c480307b"))
+IKmlConvertor : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SetMap (
+        /*[in]*/ struct IMap * pMap ) = 0;
+      virtual HRESULT __stdcall SetMapServer (
+        /*[in]*/ struct IMapServer * pMapServer ) = 0;
+      virtual HRESULT __stdcall get_WorkingDirectory (
+        /*[out,retval]*/ BSTR * pWorkingDirectory ) = 0;
+      virtual HRESULT __stdcall put_WorkingDirectory (
+        /*[in]*/ BSTR pWorkingDirectory ) = 0;
+      virtual HRESULT __stdcall get_BBox (
+        /*[out,retval]*/ struct IEnvelope * * pArea ) = 0;
+      virtual HRESULT __stdcall put_BBox (
+        /*[in]*/ struct IEnvelope * pArea ) = 0;
+      virtual HRESULT __stdcall ConvertToFile (
+        /*[in]*/ BSTR filename ) = 0;
+      virtual HRESULT __stdcall ConvertToArray (
+        /*[out,retval]*/ SAFEARRAY * * pData ) = 0;
+      virtual HRESULT __stdcall get_LayerIDs (
+        /*[out,retval]*/ BSTR * pLayerIDs ) = 0;
+      virtual HRESULT __stdcall put_LayerIDs (
+        /*[in]*/ BSTR pLayerIDs ) = 0;
+      virtual HRESULT __stdcall get_Composite (
+        /*[out,retval]*/ VARIANT_BOOL * pComposite ) = 0;
+      virtual HRESULT __stdcall put_Composite (
+        /*[in]*/ VARIANT_BOOL pComposite ) = 0;
+      virtual HRESULT __stdcall get_VectorsToRasters (
+        /*[out,retval]*/ VARIANT_BOOL * pVectorsToRasters ) = 0;
+      virtual HRESULT __stdcall put_VectorsToRasters (
+        /*[in]*/ VARIANT_BOOL pVectorsToRasters ) = 0;
+      virtual HRESULT __stdcall get_ImageSize (
+        /*[out,retval]*/ long * psize ) = 0;
+      virtual HRESULT __stdcall put_ImageSize (
+        /*[in]*/ long psize ) = 0;
+      virtual HRESULT __stdcall get_PaletteSize (
+        /*[out,retval]*/ long * psize ) = 0;
+      virtual HRESULT __stdcall put_PaletteSize (
+        /*[in]*/ long psize ) = 0;
+      virtual HRESULT __stdcall get_IconSize (
+        /*[out,retval]*/ long * psize ) = 0;
+      virtual HRESULT __stdcall put_IconSize (
+        /*[in]*/ long psize ) = 0;
+      virtual HRESULT __stdcall get_Scale (
+        /*[out,retval]*/ double * pScale ) = 0;
+      virtual HRESULT __stdcall put_Scale (
+        /*[in]*/ double pScale ) = 0;
+      virtual HRESULT __stdcall get_DPI (
+        /*[out,retval]*/ long * pDpi ) = 0;
+      virtual HRESULT __stdcall put_DPI (
+        /*[in]*/ long pDpi ) = 0;
+      virtual HRESULT __stdcall get_EndPointUrl (
+        /*[out,retval]*/ BSTR * pUrl ) = 0;
+      virtual HRESULT __stdcall put_EndPointUrl (
+        /*[in]*/ BSTR pUrl ) = 0;
+      virtual HRESULT __stdcall get_IgnoreScaleFactor (
+        /*[out,retval]*/ VARIANT_BOOL * pIgnoreScaleFactor ) = 0;
+      virtual HRESULT __stdcall put_IgnoreScaleFactor (
+        /*[in]*/ VARIANT_BOOL pIgnoreScaleFactor ) = 0;
+      virtual HRESULT __stdcall get_IgnoreVisibility (
+        /*[out,retval]*/ VARIANT_BOOL * pIgnoreVisibility ) = 0;
+      virtual HRESULT __stdcall put_IgnoreVisibility (
+        /*[in]*/ VARIANT_BOOL pIgnoreVisibility ) = 0;
+      virtual HRESULT __stdcall get_FeatureLimit (
+        /*[out,retval]*/ long * pFeatureLimit ) = 0;
+      virtual HRESULT __stdcall put_FeatureLimit (
+        /*[in]*/ long pFeatureLimit ) = 0;
+      virtual HRESULT __stdcall get_KmlParameters (
+        /*[out,retval]*/ struct IPropertySet * * pProps ) = 0;
+      virtual HRESULT __stdcall put_KmlParameters (
+        /*[in]*/ struct IPropertySet * pProps ) = 0;
+      virtual HRESULT __stdcall get_IDList (
+        /*[out,retval]*/ struct IArray * * pLayerIDs ) = 0;
+};
+
+struct __declspec(uuid("d91d9174-41ad-4268-9e33-9295c480307b"))
+IKmlConvertor2 : IKmlConvertor
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SetMessages (
+        /*[in]*/ struct IGPMessages * pMessages ) = 0;
+      virtual HRESULT __stdcall GetMessages (
+        /*[out,retval]*/ struct IGPMessages * * messages ) = 0;
+};
+
+struct __declspec(uuid("0bba96b3-0121-44e4-898b-f46a7a22f921"))
+KmlConvertor;
+    // [ default ] interface IUnknown
+    // interface IKmlConvertor
+    // interface IKmlConversion
+
+enum __declspec(uuid("68ca43ef-73c2-4b2d-83d2-832273302651"))
+esriGlobeCameraOrientationMode
+{
+    esriGlobeCameraOrientationGlobal = 0,
+    esriGlobeCameraOrientationLocal = 1
+};
+
+enum __declspec(uuid("bd36bebe-27ca-4d59-886b-17f136d5e36c"))
+esriGlobeNavigationType
+{
+    esriGlobeNavigationAttached = 0,
+    esriGlobeNavigationFree = 1
+};
+
+struct __declspec(uuid("9249fb50-f569-40dd-9f9d-460885c6a164"))
+INavigate3DView : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall MoveForwardBackward (
+        double distance ) = 0;
+      virtual HRESULT __stdcall MoveLeftRight (
+        double distance ) = 0;
+      virtual HRESULT __stdcall MoveUpDown (
+        double distance ) = 0;
+      virtual HRESULT __stdcall Rotate (
+        double azi,
+        double incl,
+        double Roll ) = 0;
+      virtual HRESULT __stdcall Begin (
+        struct ICamera * pCamera ) = 0;
+      virtual HRESULT __stdcall End ( ) = 0;
+};
+
+struct __declspec(uuid("b24b5211-cb55-4ed5-83a3-892eee657b5c"))
+GlobeCamera;
+    // [ default ] interface IUnknown
+    // interface ICamera
+    // interface IGlobeCamera
+    // interface IGlobeViewUtil
+
+struct __declspec(uuid("804f9859-aab9-44a6-9f79-9ce9a0664c1c"))
+Navigate3DView;
+    // [ default ] interface IUnknown
+    // interface INavigate3DView
+
+struct __declspec(uuid("a6565083-7640-4800-a8f4-126fbb792dcc"))
+GlobeCameraKeyframe;
+    // [ default ] interface IUnknown
+    // interface IKeyframe
+    // interface IAGKeyframe
+    // interface IClone
+
+struct __declspec(uuid("e0711d73-6925-461e-84b3-a4378e2e990f"))
+GlobeLayerKeyframe;
+    // [ default ] interface IUnknown
+    // interface IKeyframe
+    // interface IAGKeyframe
+    // interface IClone
+
+struct __declspec(uuid("d4565495-e2f9-4d89-a8a7-d0b69fd7a424"))
+AnimationTypeGlobeCamera;
+    // [ default ] interface IUnknown
+    // interface IAnimationType
+    // interface IAGAnimationType
+
+struct __declspec(uuid("7ccba704-3933-4d7a-8e89-4dfee88aa937"))
+AnimationTypeGlobeLayer;
+    // [ default ] interface IUnknown
+    // interface IAnimationType
+    // interface IAGAnimationType
+
+enum __declspec(uuid("ebddc71f-af49-452c-90c0-3ea49f6dbcb0"))
+esriGlobeCacheUpdateMode
+{
+    esriGlobeCacheUpdateRecreateMissing = 0,
+    esriGlobeCacheUpdateRecreateAll = 1
+};
+
+enum esriGlobeServerMessageCodeEnum
+{
+    esriGlobeServerMessageCode_ConstructStart = 30000,
+    esriGlobeServerMessageCode_ConstructFinish = 30001,
+    esriGlobeServerMsgCode_LoadDocument_Start = 30002,
+    esriGlobeServerMsgCode_LoadDocument_End = 30003,
+    esriGlobeServerMessageCode_GetTile = 30004,
+    esriGlobeServerMessageCode_MethodInvoked = 30005,
+    esriGlobeServerMessageCode_MethodCompleted = 30006,
+    esriGlobeServerMessageCode_NotLicensed = 30800,
+    esriGlobeServerMessageCode_ConstructionFailure = 30801,
+    esriGlobeServerMsgCode_GlobeServerFailed = 30802,
+    esriGlobeServerMessageCode_NoAdminPrivilege = 30803,
+    esriGlobeServerMessageCode_InvalidConfiguration = 30804,
+    esriGlobeServerMessageCode_FailedToSetCacheDirectory = 30805,
+    esriGlobeServerMessageCode_NoCacheSpecified = 30806,
+    esriGlobeServerMessageCode_InvalidCache = 30807,
+    esriGlobeServerMessageCode_UnexpectedFailure = 30808,
+    esriGlobeServerMessageCode_MissingParameter = 30809,
+    esriGlobeServerMessageCode_OutputDirAccessDenied = 30810,
+    esriGlobeServerMessageCode_OutputDirNotFound = 30811,
+    esriGlobeServerMessageCode_DisconnectedFromData = 30812,
+    esriGlobeServerMessageCode_ClientCachingAllowedPropertyNotFound = 30813,
+    esriGlobeServerMessageCode_UnsupportedCapability = 30814,
+    esriGlobeServerMessageCode_UnsupportedRequestName = 30815,
+    esriGlobeServerMsgCode_GlobeServerStartedWithDisconnectedLayers = 30816,
+    esriGlobeServerMessageCode_SecureLayersEmbedded = 30817
+};
+
+struct __declspec(uuid("6a04b829-32ca-4bc0-bf6d-dd655fd80306"))
+IGlobeLayerInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ID (
+        /*[out,retval]*/ long * LayerID ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * desc ) = 0;
+      virtual HRESULT __stdcall get_Visible (
+        /*[out,retval]*/ VARIANT_BOOL * pVisible ) = 0;
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ BSTR * Type ) = 0;
+      virtual HRESULT __stdcall get_Extent (
+        /*[out,retval]*/ struct IEnvelope * * Extent ) = 0;
+      virtual HRESULT __stdcall get_Fields (
+        /*[out,retval]*/ struct IFields * * Fields ) = 0;
+      virtual HRESULT __stdcall get_DisplayField (
+        /*[out,retval]*/ BSTR * FieldName ) = 0;
+      virtual HRESULT __stdcall get_Transparency (
+        /*[out,retval]*/ int * pTransparency ) = 0;
+      virtual HRESULT __stdcall get_IsComposite (
+        /*[out,retval]*/ VARIANT_BOOL * IsComposite ) = 0;
+      virtual HRESULT __stdcall get_IsGroup (
+        /*[out,retval]*/ VARIANT_BOOL * IsGroup ) = 0;
+      virtual HRESULT __stdcall get_ParentLayerID (
+        /*[out,retval]*/ long * pLayerID ) = 0;
+      virtual HRESULT __stdcall get_DataType (
+        /*[out,retval]*/ enum esriGlobeDataType * pType ) = 0;
+      virtual HRESULT __stdcall get_MaximumDistance (
+        /*[out,retval]*/ double * pMaxDistance ) = 0;
+      virtual HRESULT __stdcall get_MinimumDistance (
+        /*[out,retval]*/ double * pMinDistance ) = 0;
+      virtual HRESULT __stdcall get_PerTileVisibility (
+        /*[out,retval]*/ VARIANT_BOOL * pbPerTileVis ) = 0;
+      virtual HRESULT __stdcall get_Use16ColorBits (
+        /*[out,retval]*/ VARIANT_BOOL * pbUse16Bits ) = 0;
+      virtual HRESULT __stdcall get_Use16ElevationBits (
+        /*[out,retval]*/ VARIANT_BOOL * pbUse16Bits ) = 0;
+      virtual HRESULT __stdcall get_LossyCompression (
+        /*[out,retval]*/ VARIANT_BOOL * pbLossyCompression ) = 0;
+      virtual HRESULT __stdcall get_CompressionQuality (
+        /*[out,retval]*/ short * pQuality ) = 0;
+      virtual HRESULT __stdcall get_HasOIDs (
+        /*[out,retval]*/ VARIANT_BOOL * pbHasOIDs ) = 0;
+      virtual HRESULT __stdcall get_Scale3DSymbols (
+        /*[out,retval]*/ VARIANT_BOOL * pbScaleSyms ) = 0;
+      virtual HRESULT __stdcall get_BaseImageDrawingPriority (
+        /*[out,retval]*/ int * pPriority ) = 0;
+      virtual HRESULT __stdcall get_FloatingSeeThroughOrder (
+        /*[out,retval]*/ int * pOrder ) = 0;
+      virtual HRESULT __stdcall get_ImageSamplingMode (
+        /*[out,retval]*/ enum esriGlobeImageSamplingMode * pMode ) = 0;
+      virtual HRESULT __stdcall get_MinimumCellSize (
+        /*[out,retval]*/ double * pMinCellSize ) = 0;
+      virtual HRESULT __stdcall get_IsDynamicallyRasterized (
+        /*[out,retval]*/ VARIANT_BOOL * dynamicallyRasterized ) = 0;
+      virtual HRESULT __stdcall get_SymbologyScalingFactor (
+        /*[out,retval]*/ double * metersPerPoint ) = 0;
+      virtual HRESULT __stdcall get_IsExtruded (
+        /*[out,retval]*/ VARIANT_BOOL * extruded ) = 0;
+      virtual HRESULT __stdcall get_MaxFeatureLevelOfDetail (
+        /*[out,retval]*/ int * pLevel ) = 0;
+      virtual HRESULT __stdcall get_IsConsolidatedParent (
+        /*[out,retval]*/ VARIANT_BOOL * bConsolidated ) = 0;
+      virtual HRESULT __stdcall get_ImageCatalogCrossoverLevel (
+        /*[out,retval]*/ int * pLevel ) = 0;
+      virtual HRESULT __stdcall get_BaseSurfaceID (
+        /*[out,retval]*/ long * pBaseID ) = 0;
+      virtual HRESULT __stdcall get_BaseOption (
+        /*[out,retval]*/ enum esriGlobeLayerBaseOption * pBaseOption ) = 0;
+      virtual HRESULT __stdcall get_ElevationExpression (
+        /*[out,retval]*/ BSTR * pExpressionString ) = 0;
+      virtual HRESULT __stdcall get_Offset (
+        /*[out,retval]*/ double * pOffset ) = 0;
+      virtual HRESULT __stdcall get_ZFactor (
+        /*[out,retval]*/ double * pZFactor ) = 0;
+      virtual HRESULT __stdcall get_HasElevationValues (
+        /*[out,retval]*/ VARIANT_BOOL * pbHasElevation ) = 0;
+      virtual HRESULT __stdcall get_UseElevationValues (
+        /*[out,retval]*/ VARIANT_BOOL * pbUseElevation ) = 0;
+      virtual HRESULT __stdcall get_ExtrusionType (
+        /*[out,retval]*/ enum esriExtrusionType * pType ) = 0;
+      virtual HRESULT __stdcall get_ExtrusionExpression (
+        /*[out,retval]*/ BSTR * pExtrusion ) = 0;
+      virtual HRESULT __stdcall get_Illuminate (
+        /*[out,retval]*/ VARIANT_BOOL * pbIlluminated ) = 0;
+      virtual HRESULT __stdcall get_SmoothShading (
+        /*[out,retval]*/ VARIANT_BOOL * pbIsSmooth ) = 0;
+      virtual HRESULT __stdcall get_FaceCulling (
+        /*[out,retval]*/ enum esri3DFaceCulling * pCullMode ) = 0;
+      virtual HRESULT __stdcall get_GraphicsLayer (
+        /*[out,retval]*/ struct IGlobeGraphicsLayer * * ppGrLayer ) = 0;
+      virtual HRESULT __stdcall get_CopyrightText (
+        /*[out,retval]*/ BSTR * Copyright ) = 0;
+};
+
+struct __declspec(uuid("96f0fd1a-a2f5-4b10-8f4a-509f4bbfeb85"))
+IGlobeLayerInfo2 : IGlobeLayerInfo
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_minLOD (
+        /*[out,retval]*/ int * pLevel ) = 0;
+      virtual HRESULT __stdcall get_maxLOD (
+        /*[out,retval]*/ int * pLevel ) = 0;
+      virtual HRESULT __stdcall get_RasterTileSize (
+        /*[out,retval]*/ int * Size ) = 0;
+      virtual HRESULT __stdcall get_RasterTileLogSize (
+        /*[out,retval]*/ int * Size ) = 0;
+      virtual HRESULT __stdcall get_TextureDownsamplingFactor (
+        /*[out,retval]*/ double * pFactor ) = 0;
+      virtual HRESULT __stdcall get_TextureCompressionType (
+        /*[out,retval]*/ enum esriTextureFormatType * pType ) = 0;
+      virtual HRESULT __stdcall get_TextureDisplayType (
+        /*[out,retval]*/ enum esriTextureFormatType * pType ) = 0;
+};
+
+struct __declspec(uuid("3ebd0d70-7821-4770-8eef-dbeda194ab88"))
+IGlobeLegendInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_LayerID (
+        /*[out,retval]*/ long * LayerID ) = 0;
+      virtual HRESULT __stdcall get_LayerName (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_LegendGroups (
+        /*[out,retval]*/ struct ILegendGroups * * ppLegendGroups ) = 0;
+};
+
+struct __declspec(uuid("1dd9435a-d425-4f6e-9cc3-85bf31ca185f"))
+IGlobeLayerInfos : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_Element (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IGlobeLayerInfo * * ppLayerInfo ) = 0;
+      virtual HRESULT __stdcall Remove (
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall RemoveAll ( ) = 0;
+      virtual HRESULT __stdcall Add (
+        /*[in]*/ struct IGlobeLayerInfo * pLayerInfo ) = 0;
+      virtual HRESULT __stdcall Insert (
+        /*[in]*/ long index,
+        /*[in]*/ struct IGlobeLayerInfo * pLayerInfo ) = 0;
+};
+
+struct __declspec(uuid("e75ccaa0-5016-4a4e-83bf-7ef313b8fb1d"))
+IGlobeLegendInfos : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_Element (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IGlobeLegendInfo * * ppLegendInfo ) = 0;
+      virtual HRESULT __stdcall Remove (
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall RemoveAll ( ) = 0;
+      virtual HRESULT __stdcall Add (
+        /*[in]*/ struct IGlobeLegendInfo * pLegendInfo ) = 0;
+      virtual HRESULT __stdcall Insert (
+        /*[in]*/ long index,
+        /*[in]*/ struct IGlobeLegendInfo * pLegendInfo ) = 0;
+};
+
+struct __declspec(uuid("bb7de2f9-cf1c-4673-a5fa-a49ae6e34176"))
+IGlobeServerFindResult : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Value (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_Value (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get_FieldName (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall put_FieldName (
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall get_ObjectID (
+        /*[out,retval]*/ long * oid ) = 0;
+      virtual HRESULT __stdcall put_ObjectID (
+        /*[in]*/ long oid ) = 0;
+      virtual HRESULT __stdcall get_Shape (
+        /*[out,retval]*/ struct IGeometry * * Shape ) = 0;
+      virtual HRESULT __stdcall putref_Shape (
+        /*[in]*/ struct IGeometry * Shape ) = 0;
+      virtual HRESULT __stdcall get_Properties (
+        /*[out,retval]*/ struct IPropertySet * * props ) = 0;
+      virtual HRESULT __stdcall putref_Properties (
+        /*[in]*/ struct IPropertySet * props ) = 0;
+};
+
+struct __declspec(uuid("584b5a0b-e292-4211-bfdf-64b501859b75"))
+IGlobeServerIdentifyResult : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_ObjectID (
+        /*[out,retval]*/ long * oid ) = 0;
+      virtual HRESULT __stdcall get_Shape (
+        /*[out,retval]*/ struct IGeometry * * Shape ) = 0;
+      virtual HRESULT __stdcall get_Properties (
+        /*[out,retval]*/ struct IPropertySet * * props ) = 0;
+};
+
+struct __declspec(uuid("a4247d78-d4db-4fe5-8cb1-2d9977119daa"))
+IGlobeServerFindResults : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_Element (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IGlobeServerFindResult * * ppFindResult ) = 0;
+      virtual HRESULT __stdcall Remove (
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall RemoveAll ( ) = 0;
+      virtual HRESULT __stdcall Add (
+        /*[in]*/ struct IGlobeServerFindResult * pFindResult ) = 0;
+      virtual HRESULT __stdcall Insert (
+        /*[in]*/ long index,
+        /*[in]*/ struct IGlobeServerFindResult * pFindResult ) = 0;
+};
+
+struct __declspec(uuid("e94177ca-8c0c-483c-8714-23aca7325087"))
+IGlobeServerIdentifyResults : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_Element (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IGlobeServerIdentifyResult * * ppIdentifyResult ) = 0;
+      virtual HRESULT __stdcall Remove (
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall RemoveAll ( ) = 0;
+      virtual HRESULT __stdcall Add (
+        /*[in]*/ struct IGlobeServerIdentifyResult * pIdentifyResult ) = 0;
+      virtual HRESULT __stdcall Insert (
+        /*[in]*/ long index,
+        /*[in]*/ struct IGlobeServerIdentifyResult * pIdentifyResult ) = 0;
+};
+
+struct __declspec(uuid("f44327ec-f03e-4f7a-8094-a5eaa0c15666"))
+IGlobeServer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Version (
+        /*[out,retval]*/ float * pVersion ) = 0;
+      virtual HRESULT __stdcall get_LayerCount (
+        /*[in]*/ long parentID,
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_LayerInfos (
+        /*[in]*/ long parentID,
+        /*[out,retval]*/ struct IGlobeLayerInfos * * LayerInfos ) = 0;
+      virtual HRESULT __stdcall GetLegendInfos (
+        /*[in]*/ struct ILongArray * LayerIDs,
+        /*[out,retval]*/ struct IGlobeLegendInfos * * legendInfos ) = 0;
+      virtual HRESULT __stdcall GetConfig (
+        /*[in]*/ long LayerID,
+        /*[out,retval]*/ SAFEARRAY * * config ) = 0;
+      virtual HRESULT __stdcall GetMQT (
+        /*[in]*/ long LayerID,
+        /*[in]*/ long face,
+        /*[out,retval]*/ SAFEARRAY * * mqt ) = 0;
+      virtual HRESULT __stdcall GetConfiguration (
+        /*[in]*/ long LayerID,
+        /*[out,retval]*/ SAFEARRAY * * config ) = 0;
+      virtual HRESULT __stdcall GetTile (
+        /*[in]*/ long LayerID,
+        /*[in]*/ long face,
+        /*[in]*/ long level,
+        /*[in]*/ long row,
+        /*[in]*/ long column,
+        /*[out,retval]*/ SAFEARRAY * * Data ) = 0;
+      virtual HRESULT __stdcall GetSymbols (
+        /*[in]*/ long LayerID,
+        /*[in]*/ struct ILongArray * pSymbolIDs,
+        /*[out,retval]*/ SAFEARRAY * * symbols ) = 0;
+      virtual HRESULT __stdcall GetTextures (
+        /*[in]*/ long LayerID,
+        /*[in]*/ struct ILongArray * pTextureIDs,
+        /*[out,retval]*/ SAFEARRAY * * textures ) = 0;
+      virtual HRESULT __stdcall GetAnimation (
+        /*[out,retval]*/ SAFEARRAY * * pAnimStream ) = 0;
+      virtual HRESULT __stdcall Identify (
+        /*[in]*/ long LayerID,
+        /*[in]*/ long oid,
+        /*[in]*/ struct IGeometry * searchShape,
+        /*[out,retval]*/ struct IGlobeServerIdentifyResults * * identifyResults ) = 0;
+      virtual HRESULT __stdcall Find (
+        /*[in]*/ long LayerID,
+        /*[in]*/ BSTR searchString,
+        /*[in]*/ VARIANT_BOOL contains,
+        /*[in]*/ BSTR searchFields,
+        /*[out,retval]*/ struct IGlobeServerFindResults * * findResults ) = 0;
+      virtual HRESULT __stdcall GetVirtualCacheDirectory (
+        /*[in]*/ long LayerID,
+        /*[out,retval]*/ BSTR * pUrl ) = 0;
+      virtual HRESULT __stdcall GetCacheName (
+        /*[in]*/ long LayerID,
+        /*[out,retval]*/ BSTR * pName ) = 0;
+};
+
+struct __declspec(uuid("2e39bd80-46e9-4291-b658-2abbdafc9ffa"))
+IGlobeServer2 : IGlobeServer
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetCacheControlInfo (
+        /*[out,retval]*/ struct ICacheControlInfo * * ppCacheControlInfo ) = 0;
+};
+
+struct __declspec(uuid("a0534365-9cce-4e17-b70c-0d576cafd05f"))
+IGlobeServer3 : IGlobeServer2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetTexturesEx (
+        /*[in]*/ long LayerID,
+        /*[in]*/ struct ILongArray * pTextureIDs,
+        /*[in]*/ VARIANT_BOOL getDDT,
+        /*[out,retval]*/ SAFEARRAY * * textures ) = 0;
+};
+
+struct __declspec(uuid("0e2de26a-4352-4176-a718-e19816cd86c5"))
+IGlobeServer4 : IGlobeServer3
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_DocumentInfo (
+        /*[out,retval]*/ struct IPropertySet * * ppProps ) = 0;
+};
+
+struct __declspec(uuid("aaaed790-cd9d-4007-b4b2-c97fa9e39809"))
+IGlobeServerSetup : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Init (
+        /*[in]*/ BSTR docFile ) = 0;
+      virtual HRESULT __stdcall InitFromLayer (
+        /*[in]*/ BSTR layerFile ) = 0;
+      virtual HRESULT __stdcall put_PhysicalOutputDirectory (
+        /*[in]*/ BSTR pPath ) = 0;
+      virtual HRESULT __stdcall get_PhysicalOutputDirectory (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall put_VirtualOutputDirectory (
+        /*[in]*/ BSTR pPath ) = 0;
+      virtual HRESULT __stdcall get_VirtualOutputDirectory (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall put_PhysicalCacheDirectory (
+        /*[in]*/ BSTR pPath ) = 0;
+      virtual HRESULT __stdcall get_PhysicalCacheDirectory (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall put_SOMPhysicalCacheDirectory (
+        /*[in]*/ BSTR pPath ) = 0;
+      virtual HRESULT __stdcall get_SOMPhysicalCacheDirectory (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall put_VirtualCacheDirectory (
+        /*[in]*/ BSTR pPath ) = 0;
+      virtual HRESULT __stdcall get_VirtualCacheDirectory (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_SOMVirtualCacheDirectory (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+};
+
+struct __declspec(uuid("ebda9e24-402c-49fd-9f6a-674ea3292129"))
+IGlobeServerCache : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Invalidate (
+        /*[in]*/ long LayerID,
+        /*[in]*/ struct IGeometry * pDirtyArea ) = 0;
+};
+
+struct __declspec(uuid("afb7d7a4-8b04-40a4-aa1b-18d7351e739f"))
+GlobeServerConfigurationFactory;
+    // [ default ] interface IUnknown
+    // interface IConfigurationFactory
+
+struct __declspec(uuid("3a3d684d-9420-4d19-9e27-92ae8389e8b9"))
+GlobeServer;
+    // [ default ] interface IUnknown
+    // interface IObjectConstruct
+    // interface IRequestHandler
+    // interface IRequestHandler2
+    // interface ILogSupport
+    // interface IObjectActivate
+    // interface IGlobeServer
+    // interface IGlobeServer2
+    // interface IGlobeServer3
+    // interface IGlobeServer4
+    // interface IGlobeServerObjects
+    // interface IGlobeServerSetup
+    // interface IServerObject
+    // interface IServerObjectExtensionManager
+    // interface IRESTRequestHandler
+
+struct __declspec(uuid("884af83e-e8ba-4dac-9d95-1093465dcef3"))
+GlobeServerIdentifyResult;
+    // [ default ] interface IUnknown
+    // interface IGlobeServerIdentifyResult
+    // interface IXMLSerialize
+    // interface IPersistStream
+    // interface IPersist
+    // interface IXMLVersionSupport
+
+struct __declspec(uuid("16da8d40-1d0a-45b8-8a9f-c9abd3cc11e7"))
+GlobeServerFindResult;
+    // [ default ] interface IUnknown
+    // interface IGlobeServerFindResult
+    // interface IXMLSerialize
+    // interface IPersistStream
+    // interface IPersist
+    // interface IXMLVersionSupport
+
+struct __declspec(uuid("fff647ea-61f9-460b-b65a-293af8c35d21"))
+GlobeLayerInfo;
+    // [ default ] interface IUnknown
+    // interface IGlobeLayerInfo
+    // interface IGlobeLayerInfo2
+    // interface IXMLSerialize
+    // interface IPersistStream
+    // interface IPersist
+    // interface IXMLVersionSupport
+
+struct __declspec(uuid("5e09ee98-0fe2-4b66-9f92-a00fe376dabe"))
+GlobeLegendInfo;
+    // [ default ] interface IUnknown
+    // interface IGlobeLegendInfo
+    // interface IXMLSerialize
+    // interface IPersistStream
+    // interface IPersist
+    // interface IXMLVersionSupport
+
+struct __declspec(uuid("8a073e77-e06e-4584-81e1-3719c7d44293"))
+GlobeServerFindResults;
+    // [ default ] interface IUnknown
+    // interface IGlobeServerFindResults
+    // interface IXMLSerialize
+    // interface IPersistStream
+    // interface IPersist
+    // interface IXMLVersionSupport
+
+struct __declspec(uuid("8d213d62-f89c-4641-b66d-ef525be82ade"))
+GlobeServerIdentifyResults;
+    // [ default ] interface IUnknown
+    // interface IGlobeServerIdentifyResults
+    // interface IXMLSerialize
+    // interface IPersistStream
+    // interface IPersist
+    // interface IXMLVersionSupport
+
+struct __declspec(uuid("e042846e-b739-46f4-be8b-ce297ecc7ec9"))
+GlobeLayerInfos;
+    // [ default ] interface IUnknown
+    // interface IGlobeLayerInfos
+    // interface IXMLSerialize
+    // interface IPersistStream
+    // interface IPersist
+    // interface IXMLVersionSupport
+
+struct __declspec(uuid("1128603a-46c6-4e2f-8fdb-36665139bb5e"))
+GlobeLegendInfos;
+    // [ default ] interface IUnknown
+    // interface IGlobeLegendInfos
+    // interface IXMLSerialize
+    // interface IPersistStream
+    // interface IPersist
+    // interface IXMLVersionSupport
+
+struct __declspec(uuid("e023260c-a0be-4a86-abcf-75772da7cf6e"))
+GlobeTileGenerator;
+    // [ default ] interface IUnknown
+    // interface IGlobeTileGenerator2
+
+struct __declspec(uuid("02ebc734-a162-49eb-a324-c7923a8e357b"))
+IGlobeServerLayer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ServerConnect (
+        /*[in]*/ struct IAGSServerObjectName * soName,
+        /*[in]*/ struct IGlobeServer * pGlobeServer,
+        /*[in]*/ BSTR LayerName,
+        /*[in]*/ long LayerID ) = 0;
+      virtual HRESULT __stdcall get_ConnectionServerName (
+        /*[out,retval]*/ struct IAGSServerObjectName * * soName ) = 0;
+      virtual HRESULT __stdcall get_GlobeServerLayerName (
+        /*[out,retval]*/ BSTR * LayerName ) = 0;
+      virtual HRESULT __stdcall get_GlobeServerLayerID (
+        /*[out,retval]*/ long * pLayerID ) = 0;
+      virtual HRESULT __stdcall get_LegendInfo (
+        /*[out,retval]*/ struct IGlobeLegendInfo * * ppLegendInfo ) = 0;
+      virtual HRESULT __stdcall get_GlobeLayerInfo (
+        /*[out,retval]*/ struct IGlobeLayerInfo * * ppLayerInfo ) = 0;
+      virtual HRESULT __stdcall get_GlobeServer (
+        /*[out,retval]*/ struct IGlobeServer * * ppGlobeServer ) = 0;
+      virtual HRESULT __stdcall get_ThreadedGlobeServer (
+        /*[out,retval]*/ struct IGlobeServer * * ppGlobeServer ) = 0;
+      virtual HRESULT __stdcall put_SearchOID (
+        /*[in]*/ long pOid ) = 0;
+      virtual HRESULT __stdcall get_SearchOID (
+        /*[out,retval]*/ long * pOid ) = 0;
+      virtual HRESULT __stdcall put_SearchLocation (
+        /*[in]*/ struct IPoint * loc ) = 0;
+      virtual HRESULT __stdcall get_SearchLocation (
+        /*[out,retval]*/ struct IPoint * * loc ) = 0;
+      virtual HRESULT __stdcall put_DisplayField (
+        /*[in]*/ BSTR FieldName ) = 0;
+      virtual HRESULT __stdcall get_DisplayField (
+        /*[out,retval]*/ BSTR * FieldName ) = 0;
+      virtual HRESULT __stdcall put_IsComposite (
+        /*[in]*/ VARIANT_BOOL pbComposite ) = 0;
+      virtual HRESULT __stdcall get_IsComposite (
+        /*[out,retval]*/ VARIANT_BOOL * pbComposite ) = 0;
+};
+
+struct __declspec(uuid("ce6c7eb9-d262-4f2d-b420-9b88aa6c69e2"))
+IGlobeServerGroupLayer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Connect (
+        /*[in]*/ struct IAGSServerObjectName * pServerObjectName,
+        struct IGlobeLayerInfo * pLayerInfo ) = 0;
+      virtual HRESULT __stdcall get_GlobeServer (
+        /*[out,retval]*/ struct IGlobeServer * * ppGlobeServer ) = 0;
+      virtual HRESULT __stdcall get_HasConsolidatedCache (
+        /*[out,retval]*/ VARIANT_BOOL * pvbHasCache ) = 0;
+      virtual HRESULT __stdcall put_HasConsolidatedCache (
+        /*[in]*/ VARIANT_BOOL pvbHasCache ) = 0;
+      virtual HRESULT __stdcall get_Blending (
+        /*[out,retval]*/ VARIANT_BOOL * pvbBlending ) = 0;
+      virtual HRESULT __stdcall put_Blending (
+        /*[in]*/ VARIANT_BOOL pvbBlending ) = 0;
+};
+
+struct __declspec(uuid("9e981b62-b007-41c1-b187-782618361655"))
+GlobeServerLayer;
+    // [ default ] interface IUnknown
+    // interface ILayer
+    // interface IGlobeServerLayer
+    // interface ICompositeLayer
+    // interface ICompositeLayer2
+    // interface IGeoDataset
+    // interface IPersistStream
+    // interface ILayerPosition
+    // interface IDisplayAdmin
+    // interface IDisplayAdmin2
+    // interface ILayerDrawingProperties
+    // interface ILayerEffects
+    // interface ILayerInfo
+    // interface ILayerStatus
+    // interface ILegendInfo
+    // interface IPublishLayer
+    // interface IIdentify
+    // interface IIdentify2
+    // interface IIdentifyGroup
+    // interface ILayerGeneralProperties
+    // interface IDataLayer
+    // interface ILayerExtensions
+
+struct __declspec(uuid("c0506c43-87c5-4eaa-936c-c07c9c4098f9"))
+GlobeServerLayerFactory;
+    // [ default ] interface IUnknown
+    // interface ILayerFactory
+    // interface IGlobeServerLayerFactory
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("95fc4bf9-9676-43d5-b036-d853ed0fe03d"))
+GlobeServerIdentifyObject;
+    // [ default ] interface IUnknown
+    // interface IIdentifyObj
+    // interface IIdentifyObject
+
+struct __declspec(uuid("4dc9eea0-e15a-4a74-bb03-35b292d7dbdb"))
+GlobeServerFindObject;
+    // [ default ] interface IUnknown
+    // interface IFindObj
+    // interface IFindObject
+    // interface IRemoteFindObj
+
+struct __declspec(uuid("94c51115-42f6-4c50-bd88-b24d5531bb42"))
+GlobeServerGroupLayer;
+    // [ default ] interface IUnknown
+    // interface IGlobeServerGroupLayer
+    // interface IPersist
+    // interface IPersistStream
+
+struct __declspec(uuid("ebb1df09-d8f6-4094-aeff-552645e4a967"))
+GlobeServerLP;
+    // [ default ] interface IUnknown
+    // interface IAGSServerObject2
+    // interface IAGSServerObject
+    // interface IGlobeServer
+    // interface IGlobeServer2
+    // interface IGlobeServer3
+    // interface IGlobeServer4
+
+struct __declspec(uuid("43ac71be-2d0d-4557-933b-a29ff0ce850a"))
+GlobeServerIP;
+    // [ default ] interface IUnknown
+    // interface IAGSServerObject2
+    // interface IAGSServerObject
+    // interface IGlobeServer
+    // interface IGlobeServer2
+    // interface IGlobeServer3
+    // interface IGlobeServer4
+
+struct __declspec(uuid("6ba2a2cf-5171-4e26-8c39-2569c930c0bb"))
+GlobeServerObjectDescription;
+    // [ default ] interface IUnknown
+    // interface IServerObjectDescription
+
+struct __declspec(uuid("9e8cedbd-fd6f-41d8-93a0-35207790ba08"))
+GPGlobeFunctionFactory;
+    // [ default ] interface IUnknown
+    // interface IGPFunctionFactory
+
+struct __declspec(uuid("9e1f9858-9e47-4967-a1be-6b7607c7180b"))
+GPGlobeServicesFunctionFactory;
+    // [ default ] interface IUnknown
+    // interface IGPFunctionFactory
+
+struct __declspec(uuid("1cadd06c-d5f7-478a-bd92-681bbf803d02"))
+GPGenerateGlobeServerCache;
+    // [ default ] interface IUnknown
+    // interface IGPFunction
+
+struct __declspec(uuid("4ee4be13-987a-406e-b43f-9c570b742d72"))
+GPUpdateGlobeServerCache2;
+    // [ default ] interface IUnknown
+    // interface IGPFunction
+
+struct __declspec(uuid("b963e3c8-6264-4c7d-a4e7-5fab5ee0ee82"))
+GPDeleteGlobeServerCache;
+    // [ default ] interface IUnknown
+    // interface IGPFunction
+
+struct __declspec(uuid("5a2f6188-ff8a-4f53-bcc1-1eae36d55a37"))
+GPManageGlobeCache;
+    // [ default ] interface IUnknown
+    // interface IGPFunction
+
+struct __declspec(uuid("57172d9d-9f92-41fb-866c-1b813427610e"))
+GPManageGlobeCacheWorker;
+    // [ default ] interface IUnknown
+    // interface IGPFunction
+
+struct __declspec(uuid("b7cfa3c7-bb0a-4900-a233-7dd0505f5f1a"))
+GPDeleteGlobeCache;
+    // [ default ] interface IUnknown
+    // interface IGPFunction
+
+struct __declspec(uuid("6d3101f4-69b3-44ec-9b37-1ec448bb9681"))
+GPUpdateGlobeServerCache;
+    // [ default ] interface IUnknown
+    // interface IGPFunction
+
+struct __declspec(uuid("65882379-63c0-4ff6-ae6d-2082910c7808"))
+GpKMLFunctionFactory;
+    // [ default ] interface IUnknown
+    // interface IGPFunctionFactory
+
+struct __declspec(uuid("34628510-9a07-453f-a762-c164ffa091a7"))
+GPExportToKML;
+    // [ default ] interface IUnknown
+    // interface IGPFunction
+
+struct __declspec(uuid("aaa122c4-739b-447a-b442-5976c4e3adf7"))
+GPLayersToKML;
+    // [ default ] interface IUnknown
+    // interface IGPFunction
+
+struct __declspec(uuid("eef5af06-a01f-455d-a4d1-3d9294458452"))
+GPMultipatchToCollada;
+    // [ default ] interface IUnknown
+    // interface IGPFunction2
+
+struct __declspec(uuid("87b9673c-55e6-4bb7-80e4-3a54a06240f7"))
+GPKMLToLayer;
+    // [ default ] interface IUnknown
+    // interface IGPFunction
+
+struct __declspec(uuid("a5e12264-b2d2-4e6c-af14-ea09f870b3bb"))
+IGlobeServerCooker : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_minLOD (
+        /*[out,retval]*/ long * pMinLOD ) = 0;
+      virtual HRESULT __stdcall put_minLOD (
+        /*[in]*/ long pMinLOD ) = 0;
+      virtual HRESULT __stdcall get_maxLOD (
+        /*[out,retval]*/ long * pMaxLOD ) = 0;
+      virtual HRESULT __stdcall put_maxLOD (
+        /*[in]*/ long pMaxLOD ) = 0;
+      virtual HRESULT __stdcall get_AOI (
+        /*[out,retval]*/ struct IEnvelope * * ppExtent ) = 0;
+      virtual HRESULT __stdcall put_InputLyrId (
+        /*[in]*/ long _arg1 ) = 0;
+      virtual HRESULT __stdcall put_AOI (
+        /*[in]*/ struct IEnvelope * ppExtent ) = 0;
+      virtual HRESULT __stdcall InitCooking (
+        /*[in]*/ BSTR serverName,
+        /*[in]*/ BSTR serverObjectName ) = 0;
+      virtual HRESULT __stdcall Update (
+        /*[in]*/ struct IEnvelope * pExtent,
+        /*[in]*/ enum esriGlobeCacheUpdateMode pUpdatemode ) = 0;
+      virtual HRESULT __stdcall RemoveTiles (
+        /*[in]*/ struct IEnvelope * pExtent ) = 0;
+      virtual HRESULT __stdcall Cancel ( ) = 0;
+      virtual HRESULT __stdcall GetStats (
+        /*[in,out]*/ BSTR * pLayerName,
+        /*[in,out]*/ long * pLayerID,
+        /*[out]*/ double * pProgressPercent ) = 0;
+      virtual HRESULT __stdcall GetThreadHandle (
+        /*[in,out]*/ long * pHandle ) = 0;
+      virtual HRESULT __stdcall GetLastError ( ) = 0;
+};
+
+struct __declspec(uuid("a0f98460-9135-4075-b593-cb5704336679"))
+GlobeServerCooker;
+    // [ default ] interface IUnknown
+    // interface IGlobeServerCooker
+
+struct __declspec(uuid("7c0a33aa-ee26-4684-9110-8c48a564d05a"))
+IFeatureParameterLayer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Initialize (
+        /*[in]*/ struct IGPFeatureRecordSetLayer * gpParameterValue ) = 0;
+      virtual HRESULT __stdcall InitializeCustomProps (
+        /*[in]*/ struct IDraw * pDisplay ) = 0;
+      virtual HRESULT __stdcall get_FeatureClass (
+        /*[out,retval]*/ struct IFeatureClass * * ppFeatureClass ) = 0;
+      virtual HRESULT __stdcall get_IsInMemory (
+        /*[out,retval]*/ VARIANT_BOOL * bInMemory ) = 0;
+      virtual HRESULT __stdcall ExtractParameter (
+        /*[out,retval]*/ struct IGPFeatureRecordSetLayer * * gpParameterValue ) = 0;
+      virtual HRESULT __stdcall get_FeatureTipText (
+        /*[in]*/ struct IFeature * pFeat,
+        /*[out]*/ BSTR * pText ) = 0;
+};
+
+struct __declspec(uuid("41c5f6d5-363d-475b-92bc-de361319b229"))
+ISensorEventsListener : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall StartListening (
+        /*[in]*/ IDispatch * Hook ) = 0;
+      virtual HRESULT __stdcall StopListening ( ) = 0;
+      virtual HRESULT __stdcall Activate (
+        VARIANT_BOOL status ) = 0;
+};
+
+struct __declspec(uuid("ed2fe49c-eb4e-4641-925b-0946c9c63456"))
+SensorEventsListener;
+    // [ default ] interface IUnknown
+    // interface ISensorEventsListener
+
+struct __declspec(uuid("0116db56-8915-43ab-9001-0a47a92d2052"))
+SpaceNavigatorExtension;
+    // [ default ] interface IUnknown
+    // interface IExtension
+
+struct __declspec(uuid("a08bd3fa-8d60-42a3-bd2a-50b013e3f6da"))
+IGlobeDisplay : IViewers3D
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Globe (
+        /*[out,retval]*/ struct IGlobe * * ppGlobe ) = 0;
+      virtual HRESULT __stdcall putref_Globe (
+        /*[in]*/ struct IGlobe * ppGlobe ) = 0;
+      virtual HRESULT __stdcall Clear (
+        /*[in]*/ VARIANT_BOOL bRecycleBasicObjects ) = 0;
+      virtual HRESULT __stdcall put_IsGroupConsolidated (
+        /*[in]*/ struct ICompositeLayer * pGroup,
+        VARIANT_BOOL _arg2 ) = 0;
+      virtual HRESULT __stdcall GetSurfacePoint (
+        /*[in]*/ double xView,
+        /*[in]*/ double yView,
+        /*[in]*/ int internalGlobe,
+        /*[out]*/ struct IPoint * * ppIntersec ) = 0;
+      virtual HRESULT __stdcall GetSurfaceElevation (
+        /*[in]*/ double longitude,
+        /*[in]*/ double latitude,
+        /*[in]*/ VARIANT_BOOL bGetMaxResolution,
+        /*[out]*/ double * pElevationInMeters ) = 0;
+      virtual HRESULT __stdcall IdleProcess ( ) = 0;
+      virtual HRESULT __stdcall put_SelectionColor (
+        /*[in]*/ struct IColor * pSelectionColor ) = 0;
+      virtual HRESULT __stdcall get_SelectionColor (
+        /*[out,retval]*/ struct IColor * * pSelectionColor ) = 0;
+      virtual HRESULT __stdcall put_AdvancedOptions (
+        /*[in]*/ struct IGlobeAdvancedOptions * ppOptions ) = 0;
+      virtual HRESULT __stdcall get_AdvancedOptions (
+        /*[out,retval]*/ struct IGlobeAdvancedOptions * * ppOptions ) = 0;
+      virtual HRESULT __stdcall put_ImmediateDataFetching (
+        /*[in]*/ VARIANT_BOOL pbImmediate ) = 0;
+      virtual HRESULT __stdcall get_ImmediateDataFetching (
+        /*[out,retval]*/ VARIANT_BOOL * pbImmediate ) = 0;
+      virtual HRESULT __stdcall get_CacheUsage (
+        /*[in]*/ BSTR CachePath,
+        /*[in]*/ VARIANT_BOOL bUpdate,
+        /*[out,retval]*/ double * pCacheUsageInMb ) = 0;
+      virtual HRESULT __stdcall get_EnableMessages (
+        /*[out,retval]*/ VARIANT_BOOL * pbEnableMessages ) = 0;
+      virtual HRESULT __stdcall put_EnableMessages (
+        /*[in]*/ VARIANT_BOOL pbEnableMessages ) = 0;
+      virtual HRESULT __stdcall RefreshTextureObjects ( ) = 0;
+      virtual HRESULT __stdcall StartPrintingExporting (
+        /*[in]*/ double cullArea ) = 0;
+      virtual HRESULT __stdcall StopPrintingExporting ( ) = 0;
+      virtual HRESULT __stdcall Locate (
+        /*[in]*/ struct ISceneViewer * pViewer,
+        /*[in]*/ long xView,
+        /*[in]*/ long yView,
+        /*[in]*/ VARIANT_BOOL bGetTransformed,
+        /*[in]*/ VARIANT_BOOL bGetEmptyGlobe,
+        /*[out]*/ struct IPoint * * ppPoint,
+        /*[out]*/ IUnknown * * ppOwner,
+        /*[out]*/ IUnknown * * ppObject ) = 0;
+      virtual HRESULT __stdcall LocateMultiple (
+        /*[in]*/ struct ISceneViewer * pViewer,
+        /*[in]*/ long xView,
+        /*[in]*/ long yView,
+        /*[in]*/ VARIANT_BOOL bGetLocation,
+        /*[in]*/ VARIANT_BOOL bGetTransformed,
+        /*[in]*/ VARIANT_BOOL bGetEmptyGlobe,
+        /*[in]*/ VARIANT_BOOL bFeaturesOnly,
+        /*[out]*/ struct IHit3DSet * * ppHits ) = 0;
+      virtual HRESULT __stdcall LocateLayers (
+        /*[in]*/ struct ISceneViewer * pViewer,
+        /*[in]*/ long xView,
+        /*[in]*/ long yView,
+        /*[in]*/ struct IEnumLayer * pLayers,
+        /*[in]*/ VARIANT_BOOL bGetLocation,
+        /*[in]*/ VARIANT_BOOL bGetTransformed,
+        /*[in]*/ VARIANT_BOOL bGetEmptyGlobe,
+        /*[in]*/ VARIANT_BOOL bFeaturesOnly,
+        /*[in]*/ VARIANT_BOOL bTopMost,
+        /*[out]*/ struct IHit3DSet * * ppHits,
+        /*[in]*/ struct ITrackCancel * pTrackCancel ) = 0;
+      virtual HRESULT __stdcall LocateFeature (
+        /*[in]*/ struct ISceneViewer * pViewer,
+        /*[in]*/ long xView,
+        /*[in]*/ long yView,
+        /*[out]*/ IUnknown * * ppOwner,
+        /*[out]*/ IUnknown * * ppObject ) = 0;
+      virtual HRESULT __stdcall get_ShouldViewerRefresh (
+        /*[out,retval]*/ VARIANT_BOOL * pbShouldRefresh ) = 0;
+      virtual HRESULT __stdcall InitializeGraphicsContext ( ) = 0;
+      virtual HRESULT __stdcall put_EnableRefresh (
+        /*[in]*/ VARIANT_BOOL pbEnable ) = 0;
+      virtual HRESULT __stdcall get_EnableRefresh (
+        /*[out,retval]*/ VARIANT_BOOL * pbEnable ) = 0;
+      virtual HRESULT __stdcall SuspendTileFetch ( ) = 0;
+      virtual HRESULT __stdcall ResumeTileFetch ( ) = 0;
+};
+
+struct __declspec(uuid("00b329b7-265e-11d6-b2b4-00508bcdde28"))
+IGlobe : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_GlobeLayers (
+        /*[in]*/ struct IUID * pUid,
+        /*[in]*/ VARIANT_BOOL bRecursive,
+        /*[in]*/ VARIANT_BOOL bInBaseGlobe,
+        /*[in]*/ VARIANT_BOOL bSortedByDrawingPriority,
+        /*[out,retval]*/ struct IEnumLayer * * ppLayers ) = 0;
+      virtual HRESULT __stdcall get_GlobeDisplay (
+        /*[out,retval]*/ struct IGlobeDisplay * * ppDisplay ) = 0;
+      virtual HRESULT __stdcall get_DefaultGlobeBackgroundOption (
+        /*[out,retval]*/ enum esriGlobeBackgroundOption * pOption ) = 0;
+      virtual HRESULT __stdcall put_DefaultGlobeBackgroundOption (
+        /*[in]*/ enum esriGlobeBackgroundOption pOption ) = 0;
+      virtual HRESULT __stdcall SetDefaultHighBackgroundColor (
+        /*[in]*/ float Red,
+        /*[in]*/ float Green,
+        /*[in]*/ float Blue ) = 0;
+      virtual HRESULT __stdcall GetDefaultHighBackgroundColor (
+        /*[out]*/ float * Red,
+        /*[out]*/ float * Green,
+        /*[out]*/ float * Blue ) = 0;
+      virtual HRESULT __stdcall SetDefaultLowBackgroundColor (
+        /*[in]*/ float Red,
+        /*[in]*/ float Green,
+        /*[in]*/ float Blue ) = 0;
+      virtual HRESULT __stdcall GetDefaultLowBackgroundColor (
+        /*[out]*/ float * Red,
+        /*[out]*/ float * Green,
+        /*[out]*/ float * Blue ) = 0;
+      virtual HRESULT __stdcall SetDefaultBackgTransitionDistances (
+        /*[in]*/ float lowAltitute,
+        /*[in]*/ float highAltitude ) = 0;
+      virtual HRESULT __stdcall GetDefaultBackgTransitionDistances (
+        /*[out]*/ float * pLowAltitute,
+        /*[out]*/ float * pHighAltitude ) = 0;
+      virtual HRESULT __stdcall put_GlobeUnits (
+        /*[in]*/ enum esriUnits pUnits ) = 0;
+      virtual HRESULT __stdcall get_GlobeUnits (
+        /*[out,retval]*/ enum esriUnits * pUnits ) = 0;
+      virtual HRESULT __stdcall AddLayerType (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ enum esriGlobeLayerType layerType,
+        /*[in]*/ VARIANT_BOOL autoArrange ) = 0;
+      virtual HRESULT __stdcall put_ShowGlobeTips (
+        /*[in]*/ enum esriGlobeTipsType pTipsType ) = 0;
+      virtual HRESULT __stdcall get_ShowGlobeTips (
+        /*[out,retval]*/ enum esriGlobeTipsType * pTipsType ) = 0;
+};
+
+struct __declspec(uuid("7fbd3fe8-885b-48cb-96af-a3d296892da3"))
+IGlobeHeightProperties : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_BaseOption (
+        /*[out,retval]*/ enum esriGlobeLayerBaseOption * pBaseOption ) = 0;
+      virtual HRESULT __stdcall put_BaseOption (
+        /*[in]*/ enum esriGlobeLayerBaseOption pBaseOption ) = 0;
+      virtual HRESULT __stdcall get_ElevationExpressionString (
+        /*[out,retval]*/ BSTR * pExpressionString ) = 0;
+      virtual HRESULT __stdcall put_ElevationExpressionString (
+        /*[in]*/ BSTR pExpressionString ) = 0;
+      virtual HRESULT __stdcall get_ElevationExpression (
+        /*[out,retval]*/ struct IExpression * * ppExpression ) = 0;
+      virtual HRESULT __stdcall putref_ElevationExpression (
+        /*[in]*/ struct IExpression * ppExpression ) = 0;
+      virtual HRESULT __stdcall get_Offset (
+        /*[out,retval]*/ double * pOffset ) = 0;
+      virtual HRESULT __stdcall put_Offset (
+        /*[in]*/ double pOffset ) = 0;
+      virtual HRESULT __stdcall get_BaseLayer (
+        /*[out,retval]*/ struct ILayer * * ppBase ) = 0;
+      virtual HRESULT __stdcall putref_BaseLayer (
+        /*[in]*/ struct ILayer * ppBase ) = 0;
+      virtual HRESULT __stdcall get_BaseLayerName (
+        /*[out,retval]*/ BSTR * pBaseLayerName ) = 0;
+      virtual HRESULT __stdcall get_ZFactor (
+        /*[out,retval]*/ double * pZFactor ) = 0;
+      virtual HRESULT __stdcall put_ZFactor (
+        /*[in]*/ double pZFactor ) = 0;
+      virtual HRESULT __stdcall Apply (
+        /*[in]*/ struct IGlobe * pGlobe,
+        /*[in]*/ struct ILayer * pLayer ) = 0;
+      virtual HRESULT __stdcall put_HasElevationValues (
+        /*[in]*/ VARIANT_BOOL pbHasElevation ) = 0;
+      virtual HRESULT __stdcall get_HasElevationValues (
+        /*[out,retval]*/ VARIANT_BOOL * pbHasElevation ) = 0;
+      virtual HRESULT __stdcall put_UseElevationValues (
+        /*[in]*/ VARIANT_BOOL pbUseElevation ) = 0;
+      virtual HRESULT __stdcall get_UseElevationValues (
+        /*[out,retval]*/ VARIANT_BOOL * pbUseElevation ) = 0;
+      virtual HRESULT __stdcall get_ExtrusionType (
+        /*[out,retval]*/ enum esriExtrusionType * pType ) = 0;
+      virtual HRESULT __stdcall put_ExtrusionType (
+        /*[in]*/ enum esriExtrusionType pType ) = 0;
+      virtual HRESULT __stdcall get_ExtrusionExpressionString (
+        /*[out,retval]*/ BSTR * pExtrusion ) = 0;
+      virtual HRESULT __stdcall put_ExtrusionExpressionString (
+        /*[in]*/ BSTR pExtrusion ) = 0;
+      virtual HRESULT __stdcall get_ExtrusionExpression (
+        /*[out,retval]*/ struct IExpression * * ppExtrusion ) = 0;
+      virtual HRESULT __stdcall putref_ExtrusionExpression (
+        /*[in]*/ struct IExpression * ppExtrusion ) = 0;
+      virtual HRESULT __stdcall ApplyFeatureProperties (
+        /*[in]*/ struct IGlobeDisplay * pDisplay,
+        /*[in]*/ struct IFeature * pFeature,
+        /*[out]*/ struct IGeometry * * ppNewGeometry,
+        /*[in]*/ VARIANT_BOOL bIgnoreOffsetAndScale ) = 0;
+};
+
+struct __declspec(uuid("86958a26-fded-4f90-b7c4-b6830065b5e2"))
+IGlobeLayerProperties : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ enum esriGlobeDataType * pType ) = 0;
+      virtual HRESULT __stdcall put_Type (
+        /*[in]*/ enum esriGlobeDataType pType ) = 0;
+      virtual HRESULT __stdcall ValidateType ( ) = 0;
+      virtual HRESULT __stdcall InitCacheName (
+        /*[in]*/ struct IGlobe * pGlobe,
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ VARIANT_BOOL bOverwrite ) = 0;
+      virtual HRESULT __stdcall get_HeightProperties (
+        /*[out,retval]*/ struct IGlobeHeightProperties * * ppProps ) = 0;
+      virtual HRESULT __stdcall putref_HeightProperties (
+        /*[in]*/ struct IGlobeHeightProperties * ppProps ) = 0;
+      virtual HRESULT __stdcall get_CacheName (
+        /*[out,retval]*/ BSTR * pCacheName ) = 0;
+      virtual HRESULT __stdcall put_CacheName (
+        /*[in]*/ BSTR pCacheName ) = 0;
+      virtual HRESULT __stdcall get_IsCacheNameValid (
+        /*[out,retval]*/ VARIANT_BOOL * validCacheName ) = 0;
+      virtual HRESULT __stdcall put_IsCacheNameValid (
+        /*[in]*/ VARIANT_BOOL validCacheName ) = 0;
+      virtual HRESULT __stdcall get_GlobeDisplay (
+        /*[out,retval]*/ struct IGlobeDisplay * * ppDisplay ) = 0;
+      virtual HRESULT __stdcall putref_GlobeDisplay (
+        /*[in]*/ struct IGlobeDisplay * ppDisplay ) = 0;
+      virtual HRESULT __stdcall get_IMSConnection (
+        /*[out,retval]*/ struct IIMSGlobeConnection * * ppConnection ) = 0;
+      virtual HRESULT __stdcall putref_IMSConnection (
+        /*[in]*/ struct IIMSGlobeConnection * ppConnection ) = 0;
+      virtual HRESULT __stdcall get_CacheRemovalOption (
+        /*[out,retval]*/ enum esriGlobeLayerCacheRemovalOption * pOption ) = 0;
+      virtual HRESULT __stdcall put_CacheRemovalOption (
+        /*[in]*/ enum esriGlobeLayerCacheRemovalOption pOption ) = 0;
+      virtual HRESULT __stdcall get_Use16ColorBits (
+        /*[out,retval]*/ VARIANT_BOOL * pbUse16Bits ) = 0;
+      virtual HRESULT __stdcall put_Use16ColorBits (
+        /*[in]*/ VARIANT_BOOL pbUse16Bits ) = 0;
+      virtual HRESULT __stdcall get_Use16ElevationBits (
+        /*[out,retval]*/ VARIANT_BOOL * pbUse16Bits ) = 0;
+      virtual HRESULT __stdcall put_Use16ElevationBits (
+        /*[in]*/ VARIANT_BOOL pbUse16Bits ) = 0;
+      virtual HRESULT __stdcall GetLossyCompressionOption (
+        /*[out]*/ VARIANT_BOOL * pbLossyCompression,
+        /*[out]*/ short * pQuality ) = 0;
+      virtual HRESULT __stdcall PutLossyCompressionOption (
+        /*[in]*/ VARIANT_BOOL bLossyCompression,
+        /*[in]*/ short quality ) = 0;
+      virtual HRESULT __stdcall get_FullCacheOption (
+        /*[out,retval]*/ VARIANT_BOOL * pbUseFullCache ) = 0;
+      virtual HRESULT __stdcall put_FullCacheOption (
+        /*[in]*/ VARIANT_BOOL pbUseFullCache ) = 0;
+      virtual HRESULT __stdcall get_IsFullyCached (
+        /*[out,retval]*/ VARIANT_BOOL * pbFullyCached ) = 0;
+      virtual HRESULT __stdcall put_IsFullyCached (
+        /*[in]*/ VARIANT_BOOL pbFullyCached ) = 0;
+      virtual HRESULT __stdcall put_InvalidateCache (
+        /*[in]*/ VARIANT_BOOL pbInvalidate ) = 0;
+      virtual HRESULT __stdcall get_InvalidateCache (
+        /*[out,retval]*/ VARIANT_BOOL * pbInvalidate ) = 0;
+      virtual HRESULT __stdcall get_IsDisconnected (
+        /*[out,retval]*/ VARIANT_BOOL * pbDisconnected ) = 0;
+      virtual HRESULT __stdcall put_IsDisconnected (
+        /*[in]*/ VARIANT_BOOL pbDisconnected ) = 0;
+      virtual HRESULT __stdcall GetExtent (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[out,retval]*/ struct IEnvelope * * pExtent ) = 0;
+      virtual HRESULT __stdcall put_Extent (
+        /*[in]*/ struct IEnvelope * _arg1 ) = 0;
+      virtual HRESULT __stdcall Connect (
+        /*[in]*/ struct ILayer * pLayer ) = 0;
+      virtual HRESULT __stdcall Disconnect ( ) = 0;
+      virtual HRESULT __stdcall put_HasOIDs (
+        /*[in]*/ VARIANT_BOOL pbHasOIDs ) = 0;
+      virtual HRESULT __stdcall get_HasOIDs (
+        /*[out,retval]*/ VARIANT_BOOL * pbHasOIDs ) = 0;
+      virtual HRESULT __stdcall get_Scale3DSymbols (
+        /*[out,retval]*/ VARIANT_BOOL * pbScaleSyms ) = 0;
+      virtual HRESULT __stdcall put_Scale3DSymbols (
+        /*[in]*/ VARIANT_BOOL pbScaleSyms ) = 0;
+      virtual HRESULT __stdcall get_MinimumDistance (
+        /*[out,retval]*/ double * pDistance ) = 0;
+      virtual HRESULT __stdcall put_MinimumDistance (
+        /*[in]*/ double pDistance ) = 0;
+      virtual HRESULT __stdcall get_MaximumDistance (
+        /*[out,retval]*/ double * pDistance ) = 0;
+      virtual HRESULT __stdcall put_MaximumDistance (
+        /*[in]*/ double pDistance ) = 0;
+      virtual HRESULT __stdcall get_PerTileVisibility (
+        /*[out,retval]*/ VARIANT_BOOL * pbPerTileVisibility ) = 0;
+      virtual HRESULT __stdcall put_PerTileVisibility (
+        /*[in]*/ VARIANT_BOOL pbPerTileVisibility ) = 0;
+      virtual HRESULT __stdcall get_BaseImageDrawingPriority (
+        /*[out,retval]*/ int * pPriority ) = 0;
+      virtual HRESULT __stdcall put_BaseImageDrawingPriority (
+        /*[in]*/ int pPriority ) = 0;
+      virtual HRESULT __stdcall get_FloatingSeeThroughOrder (
+        /*[out,retval]*/ int * pOrder ) = 0;
+      virtual HRESULT __stdcall put_FloatingSeeThroughOrder (
+        /*[in]*/ int pOrder ) = 0;
+      virtual HRESULT __stdcall get_ImageSamplingMode (
+        /*[out,retval]*/ enum esriGlobeImageSamplingMode * pMode ) = 0;
+      virtual HRESULT __stdcall put_ImageSamplingMode (
+        /*[in]*/ enum esriGlobeImageSamplingMode pMode ) = 0;
+      virtual HRESULT __stdcall get_MinimumCellSize (
+        /*[out,retval]*/ double * pMinCellSize ) = 0;
+      virtual HRESULT __stdcall put_MinimumCellSize (
+        /*[in]*/ double pMinCellSize ) = 0;
+      virtual HRESULT __stdcall get_VectorTileSize (
+        /*[out,retval]*/ int * psize ) = 0;
+      virtual HRESULT __stdcall put_VectorTileSize (
+        /*[in]*/ int psize ) = 0;
+      virtual HRESULT __stdcall put_IsDynamicallyRasterized (
+        /*[in]*/ VARIANT_BOOL dynamicallyRasterized ) = 0;
+      virtual HRESULT __stdcall get_IsDynamicallyRasterized (
+        /*[out,retval]*/ VARIANT_BOOL * dynamicallyRasterized ) = 0;
+      virtual HRESULT __stdcall put_SymbologyScalingFactor (
+        /*[in]*/ double metersPerPoint ) = 0;
+      virtual HRESULT __stdcall get_SymbologyScalingFactor (
+        /*[out,retval]*/ double * metersPerPoint ) = 0;
+      virtual HRESULT __stdcall put_IsExtruded (
+        /*[in]*/ VARIANT_BOOL extruded ) = 0;
+      virtual HRESULT __stdcall get_IsExtruded (
+        /*[out,retval]*/ VARIANT_BOOL * extruded ) = 0;
+      virtual HRESULT __stdcall ApplyDisplayProperties (
+        /*[in]*/ struct ILayer * pLayer ) = 0;
+      virtual HRESULT __stdcall put_IsConfigLoaded (
+        /*[in]*/ VARIANT_BOOL pbConfigIsLoaded ) = 0;
+      virtual HRESULT __stdcall get_IsConfigLoaded (
+        /*[out,retval]*/ VARIANT_BOOL * pbConfigIsLoaded ) = 0;
+      virtual HRESULT __stdcall putref_MasterLayer (
+        /*[in]*/ struct ILayer * ppMasterLayer ) = 0;
+      virtual HRESULT __stdcall get_MasterLayer (
+        /*[out,retval]*/ struct ILayer * * ppMasterLayer ) = 0;
+      virtual HRESULT __stdcall get_MaxFeatureLevelOfDetail (
+        /*[out,retval]*/ int * pLevel ) = 0;
+      virtual HRESULT __stdcall put_MaxFeatureLevelOfDetail (
+        /*[in]*/ int pLevel ) = 0;
+      virtual HRESULT __stdcall put_IsConsolidatedChild (
+        /*[in]*/ VARIANT_BOOL bConsolidated ) = 0;
+      virtual HRESULT __stdcall get_IsConsolidatedChild (
+        /*[out,retval]*/ VARIANT_BOOL * bConsolidated ) = 0;
+      virtual HRESULT __stdcall put_IsConsolidatedParent (
+        /*[in]*/ VARIANT_BOOL bConsolidated ) = 0;
+      virtual HRESULT __stdcall get_IsConsolidatedParent (
+        /*[out,retval]*/ VARIANT_BOOL * bConsolidated ) = 0;
+      virtual HRESULT __stdcall get_ImageCatalogCrossoverLevel (
+        /*[out,retval]*/ int * pLevel ) = 0;
+      virtual HRESULT __stdcall put_ImageCatalogCrossoverLevel (
+        /*[in]*/ int pLevel ) = 0;
+      virtual HRESULT __stdcall EstimateFeatureLODRange (
+        /*[out]*/ int * minLOD,
+        /*[out]*/ int * defaultLOD,
+        /*[out]*/ int * maxLOD,
+        /*[out]*/ int * pMinMinLOD,
+        /*[out]*/ int * pMaxMaxLOD ) = 0;
+      virtual HRESULT __stdcall get_RasterTileSize (
+        /*[out,retval]*/ int * Size ) = 0;
+      virtual HRESULT __stdcall put_RasterTileSize (
+        /*[in]*/ int Size ) = 0;
+      virtual HRESULT __stdcall get_RasterTileLogSize (
+        /*[out,retval]*/ int * Size ) = 0;
+      virtual HRESULT __stdcall get_minLOD (
+        /*[out,retval]*/ int * lod ) = 0;
+      virtual HRESULT __stdcall put_minLOD (
+        /*[in]*/ int lod ) = 0;
+      virtual HRESULT __stdcall get_maxLOD (
+        /*[out,retval]*/ int * lod ) = 0;
+      virtual HRESULT __stdcall put_maxLOD (
+        /*[in]*/ int lod ) = 0;
+      virtual HRESULT __stdcall EstimateThresholdDistances (
+        /*[out]*/ double * minVisibleDistance,
+        /*[out]*/ double * maxVisibleDistance ) = 0;
+      virtual HRESULT __stdcall EstimateSymbologyScalingFactor (
+        /*[out]*/ double * metersPerPoint ) = 0;
+      virtual HRESULT __stdcall EstimateThresholdDistanceFromCutLOD (
+        /*[in]*/ int lod,
+        /*[out]*/ double * maxVisibleDistance ) = 0;
+};
+
+struct __declspec(uuid("c61d0917-097f-44cf-ba84-80a4b6537bf6"))
+IGlobeHelperPub : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall AddGlobeProperties (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ struct IGlobeDisplay * pGlobeDisplay,
+        /*[in]*/ enum esriGlobeLayerType layerType,
+        /*[in]*/ VARIANT_BOOL bIsChildLayer ) = 0;
+      virtual HRESULT __stdcall FindGlobeLayerProperties (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[out]*/ struct IGlobeLayerProperties * * ppGlobeLayerProperties ) = 0;
+      virtual HRESULT __stdcall CreateAllCacheSubDirectoriesInPath (
+        /*[in]*/ BSTR fullPath ) = 0;
+      virtual HRESULT __stdcall DeleteLayerCacheDirectory (
+        /*[in]*/ BSTR layerCacheFullPath ) = 0;
+      virtual HRESULT __stdcall DeleteAllowedLayerCachesInGlobeCacheDirectory (
+        /*[in]*/ BSTR globeCacheFullPath ) = 0;
+      virtual HRESULT __stdcall AdjustGCS360 (
+        /*[in]*/ struct ILayer * pLayer ) = 0;
+      virtual HRESULT __stdcall SyncExtrusionProperties (
+        /*[in]*/ struct ILayer * pLayer ) = 0;
+      virtual HRESULT __stdcall SetGroupLayerCache (
+        /*[in]*/ struct IGroupLayer * pGroupLayer,
+        /*[in]*/ VARIANT_BOOL bConsolidate,
+        /*[in]*/ struct IGlobeDisplay * pGlobeDisplay,
+        /*[in]*/ VARIANT_BOOL bMapConsolidated,
+        /*[in]*/ VARIANT_BOOL bStrictOnDemand,
+        /*[in]*/ BSTR groupCacheName,
+        /*[out]*/ struct IGlobeLayerProperties * * parentProps ) = 0;
+};
+
+struct __declspec(uuid("27de37ab-53d3-483b-b20a-7dfa1801f679"))
+IGlobeHelperPub2 : IGlobeHelperPub
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetGroupLayerFromCacheName (
+        /*[in]*/ BSTR groupCacheName,
+        /*[out,retval]*/ struct IGroupLayer * * ppGroupLayer ) = 0;
+      virtual HRESULT __stdcall LoadServerObject (
+        /*[in]*/ BSTR bsfullServerName,
+        /*[in]*/ BSTR bsUsername,
+        /*[in]*/ VARIANT vPassword,
+        /*[in]*/ struct IGlobe * ipGlobe,
+        /*[in,out]*/ BSTR * bsServerObjectname,
+        /*[out]*/ struct IEnumBSTR * * ppEnum ) = 0;
+      virtual HRESULT __stdcall LoadNamedServerObject (
+        /*[in]*/ BSTR bsServerName,
+        /*[in]*/ BSTR bsServerObjectname,
+        /*[in]*/ BSTR bsServiceType,
+        /*[in]*/ BSTR bsUsername,
+        /*[in]*/ VARIANT vPassword,
+        /*[in]*/ struct IGlobe * pGlobe,
+        /*[in]*/ VARIANT_BOOL bRequestLoadAnimation,
+        /*[out,retval]*/ struct IEnumLayer * * ppLayers ) = 0;
+      virtual HRESULT __stdcall GetListofServerObjects (
+        /*[in]*/ BSTR bsfullServerName,
+        /*[out]*/ BSTR * bsServiceURL,
+        /*[out]*/ BSTR * bsServiceName,
+        /*[in,out]*/ BSTR * bsServiceType,
+        /*[in,out]*/ BSTR * bsUsername,
+        /*[in,out]*/ VARIANT * vPassword,
+        /*[out]*/ struct IEnumBSTR * * ppTypes,
+        /*[out,retval]*/ struct IEnumBSTR * * ppNames ) = 0;
+      virtual HRESULT __stdcall EncryptCredentials (
+        /*[in]*/ BSTR Credentials,
+        /*[out,retval]*/ VARIANT * pEncryptedCredentials ) = 0;
+};
+
+struct __declspec(uuid("5e37ab7c-057c-470d-804a-abdd4f10b64c"))
+IGlobe2 : IGlobe
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall RefreshGroupLayer (
+        /*[in]*/ struct ILayer * pLayer ) = 0;
+      virtual HRESULT __stdcall put_ReportLayersInDrawingOrder (
+        /*[in]*/ VARIANT_BOOL bTyped ) = 0;
+      virtual HRESULT __stdcall get_ReportLayersInDrawingOrder (
+        /*[out,retval]*/ VARIANT_BOOL * bTyped ) = 0;
+      virtual HRESULT __stdcall get_DanglingCachesCount (
+        /*[out,retval]*/ int * Count ) = 0;
+};
+
+struct __declspec(uuid("d05e08d4-24d2-4b48-8fff-927da293363f"))
+IGlobeDisplay2 : IGlobeDisplay
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_PauseCaching (
+        /*[out,retval]*/ VARIANT_BOOL * pbPaused ) = 0;
+      virtual HRESULT __stdcall put_PauseCaching (
+        /*[in]*/ VARIANT_BOOL pbPaused ) = 0;
+      virtual HRESULT __stdcall get_PauseFetching (
+        /*[out,retval]*/ VARIANT_BOOL * pbPaused ) = 0;
+      virtual HRESULT __stdcall put_PauseFetching (
+        /*[in]*/ VARIANT_BOOL pbPaused ) = 0;
+};
+
+struct __declspec(uuid("fcc11bb5-174c-4ecf-b47c-e8c62e1d70c5"))
+IGlobeDisplay3 : IGlobeDisplay2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall LocateLayersEx (
+        /*[in]*/ struct ISceneViewer * pViewer,
+        /*[in]*/ long xView,
+        /*[in]*/ long yView,
+        /*[in]*/ long searchTolPixels,
+        /*[in]*/ struct IEnumLayer * pLayers,
+        /*[in]*/ VARIANT_BOOL bGetLocation,
+        /*[in]*/ VARIANT_BOOL bGetTransformed,
+        /*[in]*/ VARIANT_BOOL bGetEmptyGlobe,
+        /*[in]*/ VARIANT_BOOL bFeaturesOnly,
+        /*[in]*/ VARIANT_BOOL bTopMost,
+        /*[out]*/ struct IHit3DSet * * ppHits,
+        /*[in]*/ struct ITrackCancel * pTrackCancel ) = 0;
+      virtual HRESULT __stdcall QueryLocation (
+        /*[in]*/ struct ISceneViewer * pViewer,
+        /*[in]*/ long X,
+        /*[in]*/ long Y,
+        /*[in]*/ enum esriScenePickMode mode,
+        /*[in]*/ VARIANT_BOOL bGetTransformed,
+        /*[in]*/ struct IPoint * pPt ) = 0;
+      virtual HRESULT __stdcall get_DraftMode (
+        /*[out,retval]*/ VARIANT_BOOL * pbDraft ) = 0;
+      virtual HRESULT __stdcall put_DraftMode (
+        /*[in]*/ VARIANT_BOOL pbDraft ) = 0;
+      virtual HRESULT __stdcall get_DirectOpenGLDraw (
+        /*[out,retval]*/ VARIANT_BOOL * pbDirectMode ) = 0;
+      virtual HRESULT __stdcall put_DirectOpenGLDraw (
+        /*[in]*/ VARIANT_BOOL pbDirectMode ) = 0;
+      virtual HRESULT __stdcall PickGraphic (
+        /*[in]*/ struct ISceneViewer * pViewer,
+        /*[in]*/ long xView,
+        /*[in]*/ long yView,
+        /*[out]*/ struct IGraphicsContainer3D * * Owner,
+        /*[out]*/ long * elementIndex ) = 0;
+      virtual HRESULT __stdcall get_IsFetchingSuspendedWhenNavigating (
+        /*[out,retval]*/ VARIANT_BOOL * bSuspended ) = 0;
+      virtual HRESULT __stdcall put_IsFetchingSuspendedWhenNavigating (
+        /*[in]*/ VARIANT_BOOL bSuspended ) = 0;
+};
+
+struct __declspec(uuid("5c44152f-6d5a-4ec2-bc1f-e13ae9f5c7ee"))
+IGlobeDisplayLayers : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall AddLayer (
+        /*[in]*/ struct ILayer * pLayer ) = 0;
+      virtual HRESULT __stdcall RemoveLayer (
+        /*[in]*/ struct ILayer * pLayer ) = 0;
+      virtual HRESULT __stdcall RefreshLayer (
+        /*[in]*/ struct ILayer * pLayer ) = 0;
+      virtual HRESULT __stdcall RefreshLayerSelection (
+        /*[in]*/ struct ILayer * pLayer ) = 0;
+      virtual HRESULT __stdcall put_IsLayerVisible (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ VARIANT_BOOL _arg2 ) = 0;
+      virtual HRESULT __stdcall put_LayerTransparency (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ short _arg2 ) = 0;
+      virtual HRESULT __stdcall SetLayerLightingOption (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ VARIANT_BOOL isIlluminated ) = 0;
+      virtual HRESULT __stdcall SetLayerShadingMode (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ VARIANT_BOOL isSmooth ) = 0;
+      virtual HRESULT __stdcall SetLayerFaceCulling (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ enum esri3DFaceCulling cullMode ) = 0;
+      virtual HRESULT __stdcall SetLayerDepthPriority (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ int depthPrior ) = 0;
+      virtual HRESULT __stdcall put_Scale3DSymbols (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ VARIANT_BOOL _arg2 ) = 0;
+      virtual HRESULT __stdcall put_ImageDrawingPriority (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ int _arg2 ) = 0;
+      virtual HRESULT __stdcall put_FloatingOrder (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ int _arg2 ) = 0;
+      virtual HRESULT __stdcall put_ImageSamplingMode (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ enum esriGlobeImageSamplingMode _arg2 ) = 0;
+      virtual HRESULT __stdcall put_PerTileVisibility (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ VARIANT_BOOL _arg2 ) = 0;
+      virtual HRESULT __stdcall ApplyHeightProperties (
+        /*[in]*/ struct ILayer * pGLayer ) = 0;
+      virtual HRESULT __stdcall FindGlobeProperties (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[out,retval]*/ struct IGlobeLayerProperties * * ppProperties ) = 0;
+      virtual HRESULT __stdcall CalculateLayerExtent (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[out]*/ struct IEnvelope * * ppExtent ) = 0;
+      virtual HRESULT __stdcall ConfigureBaseLayer (
+        /*[in]*/ struct ILayer * pBaseSurface ) = 0;
+      virtual HRESULT __stdcall get_BaseLayers (
+        /*[out,retval]*/ struct IArray * * ppBaseLayers ) = 0;
+      virtual HRESULT __stdcall RefreshTextureObjectsLayer (
+        /*[in]*/ struct ILayer * pLayer ) = 0;
+      virtual HRESULT __stdcall GetMaximumLayerLOD (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[out,retval]*/ int * pMaxLOD ) = 0;
+      virtual HRESULT __stdcall GenerateTiles (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ int fromLOD,
+        /*[in]*/ int toLOD ) = 0;
+      virtual HRESULT __stdcall get_ParentsAreVisible (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[out,retval]*/ VARIANT_BOOL * Visible ) = 0;
+      virtual HRESULT __stdcall Reparent (
+        /*[in]*/ struct ILayer * Layer,
+        /*[in]*/ struct ICompositeLayer * newParent ) = 0;
+};
+
+struct __declspec(uuid("a1bf002b-4ecb-4328-80ba-ddae011dae0c"))
+IGlobeDisplayLayers2 : IGlobeDisplayLayers
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_TextureDownsamplingFactor (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ double _arg2 ) = 0;
+      virtual HRESULT __stdcall put_TextureCompressionType (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ enum esriTextureFormatType _arg2 ) = 0;
+      virtual HRESULT __stdcall InvalidateExtent (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ struct IEnvelope * pExtent,
+        /*[in]*/ int minLOD,
+        /*[in]*/ int maxLOD,
+        /*[in]*/ VARIANT_BOOL bRedraw,
+        /*[in]*/ VARIANT_BOOL bWaitUntilComplete ) = 0;
+      virtual HRESULT __stdcall SetFeatureTransformation (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ long featureID,
+        /*[in]*/ struct IVector3D * pTrans,
+        /*[in]*/ struct IVector3D * pScale,
+        /*[in]*/ struct IVector3D * pRotate ) = 0;
+      virtual HRESULT __stdcall GetFeatureTransformation (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ long featureID,
+        /*[out]*/ struct IVector3D * * ppTrans,
+        /*[out]*/ struct IVector3D * * ppScale,
+        /*[out]*/ struct IVector3D * * ppRotate ) = 0;
+      virtual HRESULT __stdcall SetFeatureVisibility (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ long featureID,
+        /*[in]*/ VARIANT_BOOL bVisible,
+        /*[in]*/ int Transparency ) = 0;
+      virtual HRESULT __stdcall GetFeatureVisibility (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ long featureID,
+        /*[out]*/ VARIANT_BOOL * pbVisible,
+        /*[out]*/ int * pTransparency ) = 0;
+      virtual HRESULT __stdcall put_StrictOnDemandMode (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ VARIANT_BOOL _arg2 ) = 0;
+      virtual HRESULT __stdcall put_GenerateTilesOverwrites (
+        /*[in]*/ VARIANT_BOOL pbOverwrites ) = 0;
+      virtual HRESULT __stdcall get_GenerateTilesOverwrites (
+        /*[out,retval]*/ VARIANT_BOOL * pbOverwrites ) = 0;
+      virtual HRESULT __stdcall CountTiles (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ int fromLOD,
+        /*[in]*/ int toLOD,
+        /*[out]*/ double * pCount ) = 0;
+      virtual HRESULT __stdcall put_TextureDisplayType (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ enum esriTextureFormatType _arg2 ) = 0;
+      virtual HRESULT __stdcall GetInternalGlobeIndex (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[out,retval]*/ int * internalGlobe ) = 0;
+      virtual HRESULT __stdcall DisableWhenNavigating (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ VARIANT_BOOL bInvisibleWhenNavigating,
+        /*[in]*/ VARIANT_BOOL bDisableFetchingWhenNavigating ) = 0;
+};
+
+struct __declspec(uuid("2c9b3ac6-54a0-47a8-8de7-dff1ca452fea"))
+IGlobeHeightProperties2 : IGlobeHeightProperties
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_BottomlessExtrusions (
+        /*[in]*/ VARIANT_BOOL bottomless ) = 0;
+      virtual HRESULT __stdcall get_BottomlessExtrusions (
+        /*[out,retval]*/ VARIANT_BOOL * bottomless ) = 0;
+      virtual HRESULT __stdcall put_OptimizeApplyFeatureProperties (
+        /*[in]*/ VARIANT_BOOL _arg1 ) = 0;
+};
+
+struct __declspec(uuid("e5a7ab17-f40c-47b1-baf6-8c2193427a35"))
+IGlobeLayerProperties2 : IGlobeLayerProperties
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_IsMapConsolidatedParent (
+        /*[in]*/ VARIANT_BOOL bConsolidated ) = 0;
+      virtual HRESULT __stdcall get_IsMapConsolidatedParent (
+        /*[out,retval]*/ VARIANT_BOOL * bConsolidated ) = 0;
+      virtual HRESULT __stdcall put_IsMapConsolidatedChild (
+        /*[in]*/ VARIANT_BOOL bConsolidated ) = 0;
+      virtual HRESULT __stdcall get_IsMapConsolidatedChild (
+        /*[out,retval]*/ VARIANT_BOOL * bConsolidated ) = 0;
+      virtual HRESULT __stdcall put_TextureDownsamplingFactor (
+        /*[in]*/ double pFactor ) = 0;
+      virtual HRESULT __stdcall get_TextureDownsamplingFactor (
+        /*[out,retval]*/ double * pFactor ) = 0;
+      virtual HRESULT __stdcall put_TextureCompressionType (
+        /*[in]*/ enum esriTextureFormatType pType ) = 0;
+      virtual HRESULT __stdcall get_TextureCompressionType (
+        /*[out,retval]*/ enum esriTextureFormatType * pType ) = 0;
+      virtual HRESULT __stdcall put_StrictOnDemandMode (
+        /*[in]*/ VARIANT_BOOL StrictOnDemandMode ) = 0;
+      virtual HRESULT __stdcall get_StrictOnDemandMode (
+        /*[out,retval]*/ VARIANT_BOOL * StrictOnDemandMode ) = 0;
+      virtual HRESULT __stdcall get_CacheID (
+        /*[out,retval]*/ BSTR * pCacheID ) = 0;
+      virtual HRESULT __stdcall get_UseCache (
+        /*[out,retval]*/ VARIANT_BOOL * pbUseCache ) = 0;
+      virtual HRESULT __stdcall put_UseCache (
+        /*[in]*/ VARIANT_BOOL pbUseCache ) = 0;
+      virtual HRESULT __stdcall put_MaxCacheSizeLimitMB (
+        /*[in]*/ int pLimit ) = 0;
+      virtual HRESULT __stdcall get_MaxCacheSizeLimitMB (
+        /*[out,retval]*/ int * pLimit ) = 0;
+      virtual HRESULT __stdcall put_NewCacheName (
+        /*[in]*/ BSTR CacheName,
+        /*[in]*/ VARIANT_BOOL _arg2 ) = 0;
+      virtual HRESULT __stdcall EstimateMinimumCellSize (
+        /*[out]*/ double * minCellsize ) = 0;
+      virtual HRESULT __stdcall put_TextureDisplayType (
+        /*[in]*/ enum esriTextureFormatType pType ) = 0;
+      virtual HRESULT __stdcall get_TextureDisplayType (
+        /*[out,retval]*/ enum esriTextureFormatType * pType ) = 0;
+      virtual HRESULT __stdcall SetPartialLODRange (
+        /*[in]*/ int fromLOD,
+        /*[in]*/ int toLOD ) = 0;
+      virtual HRESULT __stdcall GetPartialLODRange (
+        /*[out]*/ int * fromLOD,
+        /*[out]*/ int * toLOD ) = 0;
+      virtual HRESULT __stdcall InvalidatePartialLODRange ( ) = 0;
+      virtual HRESULT __stdcall get_CacheIsDangling (
+        /*[out,retval]*/ VARIANT_BOOL * bDangling ) = 0;
+      virtual HRESULT __stdcall put_CacheCompressionType (
+        /*[in]*/ enum esriTextureFormatType pType ) = 0;
+      virtual HRESULT __stdcall get_CacheCompressionType (
+        /*[out,retval]*/ enum esriTextureFormatType * pType ) = 0;
+      virtual HRESULT __stdcall get_MinimumCellSizeDegrees (
+        /*[out,retval]*/ double * pMinCellSize ) = 0;
+      virtual HRESULT __stdcall put_MinimumCellSizeDegrees (
+        /*[in]*/ double pMinCellSize ) = 0;
+      virtual HRESULT __stdcall put_IsLayerClone (
+        /*[in]*/ VARIANT_BOOL bIsClone ) = 0;
+      virtual HRESULT __stdcall get_IsLayerClone (
+        /*[out,retval]*/ VARIANT_BOOL * bIsClone ) = 0;
+      virtual HRESULT __stdcall put_IsInvisibleWhenNavigating (
+        /*[in]*/ VARIANT_BOOL bInvisibleWhenNavigating ) = 0;
+      virtual HRESULT __stdcall get_IsInvisibleWhenNavigating (
+        /*[out,retval]*/ VARIANT_BOOL * bInvisibleWhenNavigating ) = 0;
+      virtual HRESULT __stdcall put_IsFetchingSuspendedWhenNavigating (
+        /*[in]*/ VARIANT_BOOL bFetchingDisabledWhenNavigating ) = 0;
+      virtual HRESULT __stdcall get_IsFetchingSuspendedWhenNavigating (
+        /*[out,retval]*/ VARIANT_BOOL * bFetchingDisabledWhenNavigating ) = 0;
+};
+
+struct __declspec(uuid("d22fbeee-be11-4040-9670-ce1897ccd8a5"))
+IGlobeLayerProperties4 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ enum esriGlobeDataType * pType ) = 0;
+      virtual HRESULT __stdcall put_Type (
+        /*[in]*/ enum esriGlobeDataType pType ) = 0;
+      virtual HRESULT __stdcall ValidateType ( ) = 0;
+      virtual HRESULT __stdcall InitCacheName (
+        /*[in]*/ struct IGlobe * pGlobe,
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ VARIANT_BOOL bOverwrite ) = 0;
+      virtual HRESULT __stdcall get_HeightProperties (
+        /*[out,retval]*/ struct IGlobeHeightProperties * * ppProps ) = 0;
+      virtual HRESULT __stdcall putref_HeightProperties (
+        /*[in]*/ struct IGlobeHeightProperties * ppProps ) = 0;
+      virtual HRESULT __stdcall get_CacheName (
+        /*[out,retval]*/ BSTR * pCacheName ) = 0;
+      virtual HRESULT __stdcall put_CacheName (
+        /*[in]*/ BSTR pCacheName ) = 0;
+      virtual HRESULT __stdcall get_IsCacheNameValid (
+        /*[out,retval]*/ VARIANT_BOOL * validCacheName ) = 0;
+      virtual HRESULT __stdcall put_IsCacheNameValid (
+        /*[in]*/ VARIANT_BOOL validCacheName ) = 0;
+      virtual HRESULT __stdcall get_GlobeDisplay (
+        /*[out,retval]*/ struct IGlobeDisplay * * ppDisplay ) = 0;
+      virtual HRESULT __stdcall putref_GlobeDisplay (
+        /*[in]*/ struct IGlobeDisplay * ppDisplay ) = 0;
+      virtual HRESULT __stdcall get_IMSConnection (
+        /*[out,retval]*/ struct IIMSGlobeConnection * * ppConnection ) = 0;
+      virtual HRESULT __stdcall putref_IMSConnection (
+        /*[in]*/ struct IIMSGlobeConnection * ppConnection ) = 0;
+      virtual HRESULT __stdcall get_CacheRemovalOption (
+        /*[out,retval]*/ enum esriGlobeLayerCacheRemovalOption * pOption ) = 0;
+      virtual HRESULT __stdcall put_CacheRemovalOption (
+        /*[in]*/ enum esriGlobeLayerCacheRemovalOption pOption ) = 0;
+      virtual HRESULT __stdcall get_Use16ColorBits (
+        /*[out,retval]*/ VARIANT_BOOL * pbUse16Bits ) = 0;
+      virtual HRESULT __stdcall put_Use16ColorBits (
+        /*[in]*/ VARIANT_BOOL pbUse16Bits ) = 0;
+      virtual HRESULT __stdcall get_Use16ElevationBits (
+        /*[out,retval]*/ VARIANT_BOOL * pbUse16Bits ) = 0;
+      virtual HRESULT __stdcall put_Use16ElevationBits (
+        /*[in]*/ VARIANT_BOOL pbUse16Bits ) = 0;
+      virtual HRESULT __stdcall GetLossyCompressionOption (
+        /*[out]*/ VARIANT_BOOL * pbLossyCompression,
+        /*[out]*/ short * pQuality ) = 0;
+      virtual HRESULT __stdcall PutLossyCompressionOption (
+        /*[in]*/ VARIANT_BOOL bLossyCompression,
+        /*[in]*/ short quality ) = 0;
+      virtual HRESULT __stdcall get_FullCacheOption (
+        /*[out,retval]*/ VARIANT_BOOL * pbUseFullCache ) = 0;
+      virtual HRESULT __stdcall put_FullCacheOption (
+        /*[in]*/ VARIANT_BOOL pbUseFullCache ) = 0;
+      virtual HRESULT __stdcall get_IsFullyCached (
+        /*[out,retval]*/ VARIANT_BOOL * pbFullyCached ) = 0;
+      virtual HRESULT __stdcall put_IsFullyCached (
+        /*[in]*/ VARIANT_BOOL pbFullyCached ) = 0;
+      virtual HRESULT __stdcall put_InvalidateCache (
+        /*[in]*/ VARIANT_BOOL pbInvalidate ) = 0;
+      virtual HRESULT __stdcall get_InvalidateCache (
+        /*[out,retval]*/ VARIANT_BOOL * pbInvalidate ) = 0;
+      virtual HRESULT __stdcall get_IsDisconnected (
+        /*[out,retval]*/ VARIANT_BOOL * pbDisconnected ) = 0;
+      virtual HRESULT __stdcall put_IsDisconnected (
+        /*[in]*/ VARIANT_BOOL pbDisconnected ) = 0;
+      virtual HRESULT __stdcall GetExtent (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[out,retval]*/ struct IEnvelope * * pExtent ) = 0;
+      virtual HRESULT __stdcall put_Extent (
+        /*[in]*/ struct IEnvelope * _arg1 ) = 0;
+      virtual HRESULT __stdcall Connect (
+        /*[in]*/ struct ILayer * pLayer ) = 0;
+      virtual HRESULT __stdcall Disconnect ( ) = 0;
+      virtual HRESULT __stdcall put_HasOIDs (
+        /*[in]*/ VARIANT_BOOL pbHasOIDs ) = 0;
+      virtual HRESULT __stdcall get_HasOIDs (
+        /*[out,retval]*/ VARIANT_BOOL * pbHasOIDs ) = 0;
+      virtual HRESULT __stdcall get_Scale3DSymbols (
+        /*[out,retval]*/ VARIANT_BOOL * pbScaleSyms ) = 0;
+      virtual HRESULT __stdcall put_Scale3DSymbols (
+        /*[in]*/ VARIANT_BOOL pbScaleSyms ) = 0;
+      virtual HRESULT __stdcall get_MinimumDistance (
+        /*[out,retval]*/ double * pDistance ) = 0;
+      virtual HRESULT __stdcall put_MinimumDistance (
+        /*[in]*/ double pDistance ) = 0;
+      virtual HRESULT __stdcall get_MaximumDistance (
+        /*[out,retval]*/ double * pDistance ) = 0;
+      virtual HRESULT __stdcall put_MaximumDistance (
+        /*[in]*/ double pDistance ) = 0;
+      virtual HRESULT __stdcall get_PerTileVisibility (
+        /*[out,retval]*/ VARIANT_BOOL * pbPerTileVisibility ) = 0;
+      virtual HRESULT __stdcall put_PerTileVisibility (
+        /*[in]*/ VARIANT_BOOL pbPerTileVisibility ) = 0;
+      virtual HRESULT __stdcall get_BaseImageDrawingPriority (
+        /*[out,retval]*/ int * pPriority ) = 0;
+      virtual HRESULT __stdcall put_BaseImageDrawingPriority (
+        /*[in]*/ int pPriority ) = 0;
+      virtual HRESULT __stdcall get_FloatingSeeThroughOrder (
+        /*[out,retval]*/ int * pOrder ) = 0;
+      virtual HRESULT __stdcall put_FloatingSeeThroughOrder (
+        /*[in]*/ int pOrder ) = 0;
+      virtual HRESULT __stdcall get_ImageSamplingMode (
+        /*[out,retval]*/ enum esriGlobeImageSamplingMode * pMode ) = 0;
+      virtual HRESULT __stdcall put_ImageSamplingMode (
+        /*[in]*/ enum esriGlobeImageSamplingMode pMode ) = 0;
+      virtual HRESULT __stdcall get_MinimumCellSize (
+        /*[out,retval]*/ double * pMinCellSize ) = 0;
+      virtual HRESULT __stdcall put_MinimumCellSize (
+        /*[in]*/ double pMinCellSize ) = 0;
+      virtual HRESULT __stdcall get_VectorTileSize (
+        /*[out,retval]*/ int * psize ) = 0;
+      virtual HRESULT __stdcall put_VectorTileSize (
+        /*[in]*/ int psize ) = 0;
+      virtual HRESULT __stdcall put_IsDynamicallyRasterized (
+        /*[in]*/ VARIANT_BOOL dynamicallyRasterized ) = 0;
+      virtual HRESULT __stdcall get_IsDynamicallyRasterized (
+        /*[out,retval]*/ VARIANT_BOOL * dynamicallyRasterized ) = 0;
+      virtual HRESULT __stdcall put_SymbologyScalingFactor (
+        /*[in]*/ double metersPerPoint ) = 0;
+      virtual HRESULT __stdcall get_SymbologyScalingFactor (
+        /*[out,retval]*/ double * metersPerPoint ) = 0;
+      virtual HRESULT __stdcall put_IsExtruded (
+        /*[in]*/ VARIANT_BOOL extruded ) = 0;
+      virtual HRESULT __stdcall get_IsExtruded (
+        /*[out,retval]*/ VARIANT_BOOL * extruded ) = 0;
+      virtual HRESULT __stdcall ApplyDisplayProperties (
+        /*[in]*/ struct ILayer * pLayer ) = 0;
+      virtual HRESULT __stdcall put_IsConfigLoaded (
+        /*[in]*/ VARIANT_BOOL pbConfigIsLoaded ) = 0;
+      virtual HRESULT __stdcall get_IsConfigLoaded (
+        /*[out,retval]*/ VARIANT_BOOL * pbConfigIsLoaded ) = 0;
+      virtual HRESULT __stdcall putref_MasterLayer (
+        /*[in]*/ struct ILayer * ppMasterLayer ) = 0;
+      virtual HRESULT __stdcall get_MasterLayer (
+        /*[out,retval]*/ struct ILayer * * ppMasterLayer ) = 0;
+      virtual HRESULT __stdcall get_MaxFeatureLevelOfDetail (
+        /*[out,retval]*/ int * pLevel ) = 0;
+      virtual HRESULT __stdcall put_MaxFeatureLevelOfDetail (
+        /*[in]*/ int pLevel ) = 0;
+      virtual HRESULT __stdcall put_IsConsolidatedChild (
+        /*[in]*/ VARIANT_BOOL bConsolidated ) = 0;
+      virtual HRESULT __stdcall get_IsConsolidatedChild (
+        /*[out,retval]*/ VARIANT_BOOL * bConsolidated ) = 0;
+      virtual HRESULT __stdcall put_IsConsolidatedParent (
+        /*[in]*/ VARIANT_BOOL bConsolidated ) = 0;
+      virtual HRESULT __stdcall get_IsConsolidatedParent (
+        /*[out,retval]*/ VARIANT_BOOL * bConsolidated ) = 0;
+      virtual HRESULT __stdcall get_ImageCatalogCrossoverLevel (
+        /*[out,retval]*/ int * pLevel ) = 0;
+      virtual HRESULT __stdcall put_ImageCatalogCrossoverLevel (
+        /*[in]*/ int pLevel ) = 0;
+      virtual HRESULT __stdcall EstimateFeatureLODRange (
+        /*[out]*/ int * minLOD,
+        /*[out]*/ int * defaultLOD,
+        /*[out]*/ int * maxLOD,
+        /*[out]*/ int * pMinMinLOD,
+        /*[out]*/ int * pMaxMaxLOD ) = 0;
+      virtual HRESULT __stdcall get_RasterTileSize (
+        /*[out,retval]*/ int * Size ) = 0;
+      virtual HRESULT __stdcall put_RasterTileSize (
+        /*[in]*/ int Size ) = 0;
+      virtual HRESULT __stdcall get_RasterTileLogSize (
+        /*[out,retval]*/ int * Size ) = 0;
+      virtual HRESULT __stdcall get_minLOD (
+        /*[out,retval]*/ int * lod ) = 0;
+      virtual HRESULT __stdcall put_minLOD (
+        /*[in]*/ int lod ) = 0;
+      virtual HRESULT __stdcall get_maxLOD (
+        /*[out,retval]*/ int * lod ) = 0;
+      virtual HRESULT __stdcall put_maxLOD (
+        /*[in]*/ int lod ) = 0;
+      virtual HRESULT __stdcall EstimateThresholdDistances (
+        /*[out]*/ double * minVisibleDistance,
+        /*[out]*/ double * maxVisibleDistance ) = 0;
+      virtual HRESULT __stdcall EstimateSymbologyScalingFactor (
+        /*[out]*/ double * metersPerPoint ) = 0;
+      virtual HRESULT __stdcall EstimateThresholdDistanceFromCutLOD (
+        /*[in]*/ int lod,
+        /*[out]*/ double * maxVisibleDistance ) = 0;
+      virtual HRESULT __stdcall put_IsMapConsolidatedParent (
+        /*[in]*/ VARIANT_BOOL bConsolidated ) = 0;
+      virtual HRESULT __stdcall get_IsMapConsolidatedParent (
+        /*[out,retval]*/ VARIANT_BOOL * bConsolidated ) = 0;
+      virtual HRESULT __stdcall put_IsMapConsolidatedChild (
+        /*[in]*/ VARIANT_BOOL bConsolidated ) = 0;
+      virtual HRESULT __stdcall get_IsMapConsolidatedChild (
+        /*[out,retval]*/ VARIANT_BOOL * bConsolidated ) = 0;
+      virtual HRESULT __stdcall put_TextureDownsamplingFactor (
+        /*[in]*/ double pFactor ) = 0;
+      virtual HRESULT __stdcall get_TextureDownsamplingFactor (
+        /*[out,retval]*/ double * pFactor ) = 0;
+      virtual HRESULT __stdcall put_TextureCompressionType (
+        /*[in]*/ enum esriTextureFormatType pType ) = 0;
+      virtual HRESULT __stdcall get_TextureCompressionType (
+        /*[out,retval]*/ enum esriTextureFormatType * pType ) = 0;
+      virtual HRESULT __stdcall put_StrictOnDemandMode (
+        /*[in]*/ VARIANT_BOOL StrictOnDemandMode ) = 0;
+      virtual HRESULT __stdcall get_StrictOnDemandMode (
+        /*[out,retval]*/ VARIANT_BOOL * StrictOnDemandMode ) = 0;
+      virtual HRESULT __stdcall get_CacheID (
+        /*[out,retval]*/ BSTR * pCacheID ) = 0;
+      virtual HRESULT __stdcall get_UseCache (
+        /*[out,retval]*/ VARIANT_BOOL * pbUseCache ) = 0;
+      virtual HRESULT __stdcall put_UseCache (
+        /*[in]*/ VARIANT_BOOL pbUseCache ) = 0;
+      virtual HRESULT __stdcall put_MaxCacheSizeLimitMB (
+        /*[in]*/ int pLimit ) = 0;
+      virtual HRESULT __stdcall get_MaxCacheSizeLimitMB (
+        /*[out,retval]*/ int * pLimit ) = 0;
+      virtual HRESULT __stdcall put_NewCacheName (
+        /*[in]*/ BSTR CacheName,
+        /*[in]*/ VARIANT_BOOL _arg2 ) = 0;
+      virtual HRESULT __stdcall EstimateMinimumCellSize (
+        /*[out]*/ double * minCellsize ) = 0;
+      virtual HRESULT __stdcall put_TextureDisplayType (
+        /*[in]*/ enum esriTextureFormatType pType ) = 0;
+      virtual HRESULT __stdcall get_TextureDisplayType (
+        /*[out,retval]*/ enum esriTextureFormatType * pType ) = 0;
+      virtual HRESULT __stdcall SetPartialLODRange (
+        /*[in]*/ int fromLOD,
+        /*[in]*/ int toLOD ) = 0;
+      virtual HRESULT __stdcall GetPartialLODRange (
+        /*[out]*/ int * fromLOD,
+        /*[out]*/ int * toLOD ) = 0;
+      virtual HRESULT __stdcall InvalidatePartialLODRange ( ) = 0;
+      virtual HRESULT __stdcall get_CacheIsDangling (
+        /*[out,retval]*/ VARIANT_BOOL * bDangling ) = 0;
+      virtual HRESULT __stdcall put_CacheCompressionType (
+        /*[in]*/ enum esriTextureFormatType pType ) = 0;
+      virtual HRESULT __stdcall get_CacheCompressionType (
+        /*[out,retval]*/ enum esriTextureFormatType * pType ) = 0;
+      virtual HRESULT __stdcall get_MinimumCellSizeDegrees (
+        /*[out,retval]*/ double * pMinCellSize ) = 0;
+      virtual HRESULT __stdcall put_MinimumCellSizeDegrees (
+        /*[in]*/ double pMinCellSize ) = 0;
+      virtual HRESULT __stdcall put_IsLayerClone (
+        /*[in]*/ VARIANT_BOOL bIsClone ) = 0;
+      virtual HRESULT __stdcall get_IsLayerClone (
+        /*[out,retval]*/ VARIANT_BOOL * bIsClone ) = 0;
+      virtual HRESULT __stdcall put_IsInvisibleWhenNavigating (
+        /*[in]*/ VARIANT_BOOL bInvisibleWhenNavigating ) = 0;
+      virtual HRESULT __stdcall get_IsInvisibleWhenNavigating (
+        /*[out,retval]*/ VARIANT_BOOL * bInvisibleWhenNavigating ) = 0;
+      virtual HRESULT __stdcall put_IsFetchingSuspendedWhenNavigating (
+        /*[in]*/ VARIANT_BOOL bFetchingDisabledWhenNavigating ) = 0;
+      virtual HRESULT __stdcall get_IsFetchingSuspendedWhenNavigating (
+        /*[out,retval]*/ VARIANT_BOOL * bFetchingDisabledWhenNavigating ) = 0;
+      virtual HRESULT __stdcall put_IsRasterCatalogCacheConsolidated (
+        /*[in]*/ VARIANT_BOOL bConsolidated ) = 0;
+      virtual HRESULT __stdcall get_IsRasterCatalogCacheConsolidated (
+        /*[out,retval]*/ VARIANT_BOOL * bConsolidated ) = 0;
+      virtual HRESULT __stdcall put_AlphaThreshold (
+        /*[in]*/ double threshold ) = 0;
+      virtual HRESULT __stdcall get_AlphaThreshold (
+        /*[out,retval]*/ double * threshold ) = 0;
+      virtual HRESULT __stdcall put_RasterizerUsesOpenGL (
+        /*[in]*/ VARIANT_BOOL bUsesOpenGL ) = 0;
+      virtual HRESULT __stdcall get_RasterizerUsesOpenGL (
+        /*[out,retval]*/ VARIANT_BOOL * bUsesOpenGL ) = 0;
+};
+
+struct __declspec(uuid("581a575b-baca-4cc6-a41d-a424f07cb1ac"))
+IGlobeLayerProperties5 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ enum esriGlobeDataType * pType ) = 0;
+      virtual HRESULT __stdcall put_Type (
+        /*[in]*/ enum esriGlobeDataType pType ) = 0;
+      virtual HRESULT __stdcall ValidateType ( ) = 0;
+      virtual HRESULT __stdcall InitCacheName (
+        /*[in]*/ struct IGlobe * pGlobe,
+        /*[in]*/ struct ILayer * pLayer,
+        /*[in]*/ VARIANT_BOOL bOverwrite ) = 0;
+      virtual HRESULT __stdcall get_HeightProperties (
+        /*[out,retval]*/ struct IGlobeHeightProperties * * ppProps ) = 0;
+      virtual HRESULT __stdcall putref_HeightProperties (
+        /*[in]*/ struct IGlobeHeightProperties * ppProps ) = 0;
+      virtual HRESULT __stdcall get_CacheName (
+        /*[out,retval]*/ BSTR * pCacheName ) = 0;
+      virtual HRESULT __stdcall put_CacheName (
+        /*[in]*/ BSTR pCacheName ) = 0;
+      virtual HRESULT __stdcall get_IsCacheNameValid (
+        /*[out,retval]*/ VARIANT_BOOL * validCacheName ) = 0;
+      virtual HRESULT __stdcall put_IsCacheNameValid (
+        /*[in]*/ VARIANT_BOOL validCacheName ) = 0;
+      virtual HRESULT __stdcall get_GlobeDisplay (
+        /*[out,retval]*/ struct IGlobeDisplay * * ppDisplay ) = 0;
+      virtual HRESULT __stdcall putref_GlobeDisplay (
+        /*[in]*/ struct IGlobeDisplay * ppDisplay ) = 0;
+      virtual HRESULT __stdcall get_IMSConnection (
+        /*[out,retval]*/ struct IIMSGlobeConnection * * ppConnection ) = 0;
+      virtual HRESULT __stdcall putref_IMSConnection (
+        /*[in]*/ struct IIMSGlobeConnection * ppConnection ) = 0;
+      virtual HRESULT __stdcall get_CacheRemovalOption (
+        /*[out,retval]*/ enum esriGlobeLayerCacheRemovalOption * pOption ) = 0;
+      virtual HRESULT __stdcall put_CacheRemovalOption (
+        /*[in]*/ enum esriGlobeLayerCacheRemovalOption pOption ) = 0;
+      virtual HRESULT __stdcall get_Use16ColorBits (
+        /*[out,retval]*/ VARIANT_BOOL * pbUse16Bits ) = 0;
+      virtual HRESULT __stdcall put_Use16ColorBits (
+        /*[in]*/ VARIANT_BOOL pbUse16Bits ) = 0;
+      virtual HRESULT __stdcall get_Use16ElevationBits (
+        /*[out,retval]*/ VARIANT_BOOL * pbUse16Bits ) = 0;
+      virtual HRESULT __stdcall put_Use16ElevationBits (
+        /*[in]*/ VARIANT_BOOL pbUse16Bits ) = 0;
+      virtual HRESULT __stdcall GetLossyCompressionOption (
+        /*[out]*/ VARIANT_BOOL * pbLossyCompression,
+        /*[out]*/ short * pQuality ) = 0;
+      virtual HRESULT __stdcall PutLossyCompressionOption (
+        /*[in]*/ VARIANT_BOOL bLossyCompression,
+        /*[in]*/ short quality ) = 0;
+      virtual HRESULT __stdcall get_FullCacheOption (
+        /*[out,retval]*/ VARIANT_BOOL * pbUseFullCache ) = 0;
+      virtual HRESULT __stdcall put_FullCacheOption (
+        /*[in]*/ VARIANT_BOOL pbUseFullCache ) = 0;
+      virtual HRESULT __stdcall get_IsFullyCached (
+        /*[out,retval]*/ VARIANT_BOOL * pbFullyCached ) = 0;
+      virtual HRESULT __stdcall put_IsFullyCached (
+        /*[in]*/ VARIANT_BOOL pbFullyCached ) = 0;
+      virtual HRESULT __stdcall put_InvalidateCache (
+        /*[in]*/ VARIANT_BOOL pbInvalidate ) = 0;
+      virtual HRESULT __stdcall get_InvalidateCache (
+        /*[out,retval]*/ VARIANT_BOOL * pbInvalidate ) = 0;
+      virtual HRESULT __stdcall get_IsDisconnected (
+        /*[out,retval]*/ VARIANT_BOOL * pbDisconnected ) = 0;
+      virtual HRESULT __stdcall put_IsDisconnected (
+        /*[in]*/ VARIANT_BOOL pbDisconnected ) = 0;
+      virtual HRESULT __stdcall GetExtent (
+        /*[in]*/ struct ILayer * pLayer,
+        /*[out,retval]*/ struct IEnvelope * * pExtent ) = 0;
+      virtual HRESULT __stdcall put_Extent (
+        /*[in]*/ struct IEnvelope * _arg1 ) = 0;
+      virtual HRESULT __stdcall Connect (
+        /*[in]*/ struct ILayer * pLayer ) = 0;
+      virtual HRESULT __stdcall Disconnect ( ) = 0;
+      virtual HRESULT __stdcall put_HasOIDs (
+        /*[in]*/ VARIANT_BOOL pbHasOIDs ) = 0;
+      virtual HRESULT __stdcall get_HasOIDs (
+        /*[out,retval]*/ VARIANT_BOOL * pbHasOIDs ) = 0;
+      virtual HRESULT __stdcall get_Scale3DSymbols (
+        /*[out,retval]*/ VARIANT_BOOL * pbScaleSyms ) = 0;
+      virtual HRESULT __stdcall put_Scale3DSymbols (
+        /*[in]*/ VARIANT_BOOL pbScaleSyms ) = 0;
+      virtual HRESULT __stdcall get_MinimumDistance (
+        /*[out,retval]*/ double * pDistance ) = 0;
+      virtual HRESULT __stdcall put_MinimumDistance (
+        /*[in]*/ double pDistance ) = 0;
+      virtual HRESULT __stdcall get_MaximumDistance (
+        /*[out,retval]*/ double * pDistance ) = 0;
+      virtual HRESULT __stdcall put_MaximumDistance (
+        /*[in]*/ double pDistance ) = 0;
+      virtual HRESULT __stdcall get_PerTileVisibility (
+        /*[out,retval]*/ VARIANT_BOOL * pbPerTileVisibility ) = 0;
+      virtual HRESULT __stdcall put_PerTileVisibility (
+        /*[in]*/ VARIANT_BOOL pbPerTileVisibility ) = 0;
+      virtual HRESULT __stdcall get_BaseImageDrawingPriority (
+        /*[out,retval]*/ int * pPriority ) = 0;
+      virtual HRESULT __stdcall put_BaseImageDrawingPriority (
+        /*[in]*/ int pPriority ) = 0;
+      virtual HRESULT __stdcall get_FloatingSeeThroughOrder (
+        /*[out,retval]*/ int * pOrder ) = 0;
+      virtual HRESULT __stdcall put_FloatingSeeThroughOrder (
+        /*[in]*/ int pOrder ) = 0;
+      virtual HRESULT __stdcall get_ImageSamplingMode (
+        /*[out,retval]*/ enum esriGlobeImageSamplingMode * pMode ) = 0;
+      virtual HRESULT __stdcall put_ImageSamplingMode (
+        /*[in]*/ enum esriGlobeImageSamplingMode pMode ) = 0;
+      virtual HRESULT __stdcall get_MinimumCellSize (
+        /*[out,retval]*/ double * pMinCellSize ) = 0;
+      virtual HRESULT __stdcall put_MinimumCellSize (
+        /*[in]*/ double pMinCellSize ) = 0;
+      virtual HRESULT __stdcall get_VectorTileSize (
+        /*[out,retval]*/ int * psize ) = 0;
+      virtual HRESULT __stdcall put_VectorTileSize (
+        /*[in]*/ int psize ) = 0;
+      virtual HRESULT __stdcall put_IsDynamicallyRasterized (
+        /*[in]*/ VARIANT_BOOL dynamicallyRasterized ) = 0;
+      virtual HRESULT __stdcall get_IsDynamicallyRasterized (
+        /*[out,retval]*/ VARIANT_BOOL * dynamicallyRasterized ) = 0;
+      virtual HRESULT __stdcall put_SymbologyScalingFactor (
+        /*[in]*/ double metersPerPoint ) = 0;
+      virtual HRESULT __stdcall get_SymbologyScalingFactor (
+        /*[out,retval]*/ double * metersPerPoint ) = 0;
+      virtual HRESULT __stdcall put_IsExtruded (
+        /*[in]*/ VARIANT_BOOL extruded ) = 0;
+      virtual HRESULT __stdcall get_IsExtruded (
+        /*[out,retval]*/ VARIANT_BOOL * extruded ) = 0;
+      virtual HRESULT __stdcall ApplyDisplayProperties (
+        /*[in]*/ struct ILayer * pLayer ) = 0;
+      virtual HRESULT __stdcall put_IsConfigLoaded (
+        /*[in]*/ VARIANT_BOOL pbConfigIsLoaded ) = 0;
+      virtual HRESULT __stdcall get_IsConfigLoaded (
+        /*[out,retval]*/ VARIANT_BOOL * pbConfigIsLoaded ) = 0;
+      virtual HRESULT __stdcall putref_MasterLayer (
+        /*[in]*/ struct ILayer * ppMasterLayer ) = 0;
+      virtual HRESULT __stdcall get_MasterLayer (
+        /*[out,retval]*/ struct ILayer * * ppMasterLayer ) = 0;
+      virtual HRESULT __stdcall get_MaxFeatureLevelOfDetail (
+        /*[out,retval]*/ int * pLevel ) = 0;
+      virtual HRESULT __stdcall put_MaxFeatureLevelOfDetail (
+        /*[in]*/ int pLevel ) = 0;
+      virtual HRESULT __stdcall put_IsConsolidatedChild (
+        /*[in]*/ VARIANT_BOOL bConsolidated ) = 0;
+      virtual HRESULT __stdcall get_IsConsolidatedChild (
+        /*[out,retval]*/ VARIANT_BOOL * bConsolidated ) = 0;
+      virtual HRESULT __stdcall put_IsConsolidatedParent (
+        /*[in]*/ VARIANT_BOOL bConsolidated ) = 0;
+      virtual HRESULT __stdcall get_IsConsolidatedParent (
+        /*[out,retval]*/ VARIANT_BOOL * bConsolidated ) = 0;
+      virtual HRESULT __stdcall get_ImageCatalogCrossoverLevel (
+        /*[out,retval]*/ int * pLevel ) = 0;
+      virtual HRESULT __stdcall put_ImageCatalogCrossoverLevel (
+        /*[in]*/ int pLevel ) = 0;
+      virtual HRESULT __stdcall EstimateFeatureLODRange (
+        /*[out]*/ int * minLOD,
+        /*[out]*/ int * defaultLOD,
+        /*[out]*/ int * maxLOD,
+        /*[out]*/ int * pMinMinLOD,
+        /*[out]*/ int * pMaxMaxLOD ) = 0;
+      virtual HRESULT __stdcall get_RasterTileSize (
+        /*[out,retval]*/ int * Size ) = 0;
+      virtual HRESULT __stdcall put_RasterTileSize (
+        /*[in]*/ int Size ) = 0;
+      virtual HRESULT __stdcall get_RasterTileLogSize (
+        /*[out,retval]*/ int * Size ) = 0;
+      virtual HRESULT __stdcall get_minLOD (
+        /*[out,retval]*/ int * lod ) = 0;
+      virtual HRESULT __stdcall put_minLOD (
+        /*[in]*/ int lod ) = 0;
+      virtual HRESULT __stdcall get_maxLOD (
+        /*[out,retval]*/ int * lod ) = 0;
+      virtual HRESULT __stdcall put_maxLOD (
+        /*[in]*/ int lod ) = 0;
+      virtual HRESULT __stdcall EstimateThresholdDistances (
+        /*[out]*/ double * minVisibleDistance,
+        /*[out]*/ double * maxVisibleDistance ) = 0;
+      virtual HRESULT __stdcall EstimateSymbologyScalingFactor (
+        /*[out]*/ double * metersPerPoint ) = 0;
+      virtual HRESULT __stdcall EstimateThresholdDistanceFromCutLOD (
+        /*[in]*/ int lod,
+        /*[out]*/ double * maxVisibleDistance ) = 0;
+      virtual HRESULT __stdcall put_IsMapConsolidatedParent (
+        /*[in]*/ VARIANT_BOOL bConsolidated ) = 0;
+      virtual HRESULT __stdcall get_IsMapConsolidatedParent (
+        /*[out,retval]*/ VARIANT_BOOL * bConsolidated ) = 0;
+      virtual HRESULT __stdcall put_IsMapConsolidatedChild (
+        /*[in]*/ VARIANT_BOOL bConsolidated ) = 0;
+      virtual HRESULT __stdcall get_IsMapConsolidatedChild (
+        /*[out,retval]*/ VARIANT_BOOL * bConsolidated ) = 0;
+      virtual HRESULT __stdcall put_TextureDownsamplingFactor (
+        /*[in]*/ double pFactor ) = 0;
+      virtual HRESULT __stdcall get_TextureDownsamplingFactor (
+        /*[out,retval]*/ double * pFactor ) = 0;
+      virtual HRESULT __stdcall put_TextureCompressionType (
+        /*[in]*/ enum esriTextureFormatType pType ) = 0;
+      virtual HRESULT __stdcall get_TextureCompressionType (
+        /*[out,retval]*/ enum esriTextureFormatType * pType ) = 0;
+      virtual HRESULT __stdcall put_StrictOnDemandMode (
+        /*[in]*/ VARIANT_BOOL StrictOnDemandMode ) = 0;
+      virtual HRESULT __stdcall get_StrictOnDemandMode (
+        /*[out,retval]*/ VARIANT_BOOL * StrictOnDemandMode ) = 0;
+      virtual HRESULT __stdcall get_CacheID (
+        /*[out,retval]*/ BSTR * pCacheID ) = 0;
+      virtual HRESULT __stdcall get_UseCache (
+        /*[out,retval]*/ VARIANT_BOOL * pbUseCache ) = 0;
+      virtual HRESULT __stdcall put_UseCache (
+        /*[in]*/ VARIANT_BOOL pbUseCache ) = 0;
+      virtual HRESULT __stdcall put_MaxCacheSizeLimitMB (
+        /*[in]*/ int pLimit ) = 0;
+      virtual HRESULT __stdcall get_MaxCacheSizeLimitMB (
+        /*[out,retval]*/ int * pLimit ) = 0;
+      virtual HRESULT __stdcall put_NewCacheName (
+        /*[in]*/ BSTR CacheName,
+        /*[in]*/ VARIANT_BOOL _arg2 ) = 0;
+      virtual HRESULT __stdcall EstimateMinimumCellSize (
+        /*[out]*/ double * minCellsize ) = 0;
+      virtual HRESULT __stdcall put_TextureDisplayType (
+        /*[in]*/ enum esriTextureFormatType pType ) = 0;
+      virtual HRESULT __stdcall get_TextureDisplayType (
+        /*[out,retval]*/ enum esriTextureFormatType * pType ) = 0;
+      virtual HRESULT __stdcall SetPartialLODRange (
+        /*[in]*/ int fromLOD,
+        /*[in]*/ int toLOD ) = 0;
+      virtual HRESULT __stdcall GetPartialLODRange (
+        /*[out]*/ int * fromLOD,
+        /*[out]*/ int * toLOD ) = 0;
+      virtual HRESULT __stdcall InvalidatePartialLODRange ( ) = 0;
+      virtual HRESULT __stdcall get_CacheIsDangling (
+        /*[out,retval]*/ VARIANT_BOOL * bDangling ) = 0;
+      virtual HRESULT __stdcall put_CacheCompressionType (
+        /*[in]*/ enum esriTextureFormatType pType ) = 0;
+      virtual HRESULT __stdcall get_CacheCompressionType (
+        /*[out,retval]*/ enum esriTextureFormatType * pType ) = 0;
+      virtual HRESULT __stdcall get_MinimumCellSizeDegrees (
+        /*[out,retval]*/ double * pMinCellSize ) = 0;
+      virtual HRESULT __stdcall put_MinimumCellSizeDegrees (
+        /*[in]*/ double pMinCellSize ) = 0;
+      virtual HRESULT __stdcall put_IsLayerClone (
+        /*[in]*/ VARIANT_BOOL bIsClone ) = 0;
+      virtual HRESULT __stdcall get_IsLayerClone (
+        /*[out,retval]*/ VARIANT_BOOL * bIsClone ) = 0;
+      virtual HRESULT __stdcall put_IsInvisibleWhenNavigating (
+        /*[in]*/ VARIANT_BOOL bInvisibleWhenNavigating ) = 0;
+      virtual HRESULT __stdcall get_IsInvisibleWhenNavigating (
+        /*[out,retval]*/ VARIANT_BOOL * bInvisibleWhenNavigating ) = 0;
+      virtual HRESULT __stdcall put_IsFetchingSuspendedWhenNavigating (
+        /*[in]*/ VARIANT_BOOL bFetchingDisabledWhenNavigating ) = 0;
+      virtual HRESULT __stdcall get_IsFetchingSuspendedWhenNavigating (
+        /*[out,retval]*/ VARIANT_BOOL * bFetchingDisabledWhenNavigating ) = 0;
+      virtual HRESULT __stdcall put_IsRasterCatalogCacheConsolidated (
+        /*[in]*/ VARIANT_BOOL bConsolidated ) = 0;
+      virtual HRESULT __stdcall get_IsRasterCatalogCacheConsolidated (
+        /*[out,retval]*/ VARIANT_BOOL * bConsolidated ) = 0;
+      virtual HRESULT __stdcall put_AlphaThreshold (
+        /*[in]*/ double threshold ) = 0;
+      virtual HRESULT __stdcall get_AlphaThreshold (
+        /*[out,retval]*/ double * threshold ) = 0;
+      virtual HRESULT __stdcall put_RasterizerUsesOpenGL (
+        /*[in]*/ VARIANT_BOOL bUsesOpenGL ) = 0;
+      virtual HRESULT __stdcall get_RasterizerUsesOpenGL (
+        /*[out,retval]*/ VARIANT_BOOL * bUsesOpenGL ) = 0;
+      virtual HRESULT __stdcall SetDistanceThresholdsExt (
+        /*[in]*/ int lodShift0,
+        /*[in]*/ double maxDistance0,
+        /*[in]*/ int lodShift1,
+        /*[in]*/ double maxDistance1,
+        /*[in]*/ int lodShift2 ) = 0;
+      virtual HRESULT __stdcall GetDistanceThresholdsExt (
+        /*[out]*/ int * lodShift0,
+        /*[out]*/ double * maxDistance0,
+        /*[out]*/ int * lodShift1,
+        /*[out]*/ double * maxDistance1,
+        /*[out]*/ int * lodShift2 ) = 0;
+      virtual HRESULT __stdcall put_RequestTextureMipmaps (
+        /*[in]*/ VARIANT_BOOL bUseDDTQueries ) = 0;
+      virtual HRESULT __stdcall get_RequestTextureMipmaps (
+        /*[out,retval]*/ VARIANT_BOOL * bUseDDTQueries ) = 0;
+};
+
+struct __declspec(uuid("365a110b-b13f-4314-a3e8-1edf9b7ddf31"))
+IGlobeViewer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall StartSpinning (
+        /*[in]*/ enum esriGlobeSpinDirection SpinDirection ) = 0;
+      virtual HRESULT __stdcall StopSpinning ( ) = 0;
+      virtual HRESULT __stdcall put_SpinSpeed (
+        /*[in]*/ double SpinSpeed ) = 0;
+      virtual HRESULT __stdcall get_SpinSpeed (
+        /*[out,retval]*/ double * SpinSpeed ) = 0;
+      virtual HRESULT __stdcall get_GlobeDisplay (
+        /*[out,retval]*/ struct IGlobeDisplay * * ppGlobeDisplay ) = 0;
+      virtual HRESULT __stdcall putref_GlobeDisplay (
+        /*[in]*/ struct IGlobeDisplay * ppGlobeDisplay ) = 0;
+      virtual HRESULT __stdcall GetIsTargetAtCenter (
+        /*[out]*/ VARIANT_BOOL * pIsAtCenter,
+        /*[out]*/ long * pIndexGlobe ) = 0;
+      virtual HRESULT __stdcall put_ReferenceElevation (
+        /*[in]*/ double pRefDistance ) = 0;
+      virtual HRESULT __stdcall get_ReferenceElevation (
+        /*[out,retval]*/ double * pRefDistance ) = 0;
+      virtual HRESULT __stdcall put_NorthArrowEnabled (
+        /*[in]*/ VARIANT_BOOL pbNorthArrow ) = 0;
+      virtual HRESULT __stdcall get_NorthArrowEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pbNorthArrow ) = 0;
+      virtual HRESULT __stdcall put_HUDEnabled (
+        /*[in]*/ VARIANT_BOOL pbHUD ) = 0;
+      virtual HRESULT __stdcall get_HUDEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pbHUD ) = 0;
+      virtual HRESULT __stdcall OnNewTileFetched ( ) = 0;
+      virtual HRESULT __stdcall OnLastTileFetched ( ) = 0;
+};
+
+struct __declspec(uuid("28416400-6965-4df1-9823-48973b44179c"))
+ICustomGlobeLayer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_DrawType (
+        /*[out,retval]*/ enum esriGlobeCustomDrawType * pDrawType ) = 0;
+      virtual HRESULT __stdcall get_UseCache (
+        /*[out,retval]*/ VARIANT_BOOL * pbUseCache ) = 0;
+      virtual HRESULT __stdcall get_MinimumCellSize (
+        /*[out,retval]*/ double * pMinCellSize ) = 0;
+      virtual HRESULT __stdcall get_SymbologyScalingFactor (
+        /*[out,retval]*/ double * pMetersPerPoint ) = 0;
+      virtual HRESULT __stdcall GetTile (
+        /*[in]*/ int tilesize,
+        /*[in]*/ int face,
+        /*[in]*/ int level,
+        /*[in]*/ int row,
+        /*[in]*/ int col,
+        /*[out]*/ SAFEARRAY * * pData ) = 0;
+      virtual HRESULT __stdcall DrawImmediate (
+        /*[in]*/ struct IGlobeViewer * pGlobeViewer ) = 0;
+      virtual HRESULT __stdcall Hit (
+        /*[in]*/ long hitObjectID,
+        /*[in]*/ struct IHit3D * pHit3D ) = 0;
+      virtual HRESULT __stdcall get_HandlesLocalOrigin (
+        /*[out,retval]*/ VARIANT_BOOL * pbHandlesLocalOrigin ) = 0;
+      virtual HRESULT __stdcall put_LocalOrigin (
+        /*[in]*/ WKSPointZ _arg1 ) = 0;
+};
+
+struct __declspec(uuid("ae6cedec-e20f-4dfe-96c7-3109e524903b"))
+IKmlLayer : ILayer
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_DataPath (
+        /*[in]*/ BSTR DataPath ) = 0;
+      virtual HRESULT __stdcall get_DataPath (
+        /*[out,retval]*/ BSTR * DataPath ) = 0;
+      virtual HRESULT __stdcall RefreshVisibleNodes (
+        /*[in]*/ struct IGlobe * pGlobe ) = 0;
+      virtual HRESULT __stdcall get_MinimumRefreshInterval (
+        /*[out,retval]*/ long * pInterval ) = 0;
+      virtual HRESULT __stdcall get_MaximumRefreshInterval (
+        /*[out,retval]*/ long * pInterval ) = 0;
+      virtual HRESULT __stdcall put_LabelsVisible (
+        /*[in]*/ VARIANT_BOOL pLabelsVisible ) = 0;
+      virtual HRESULT __stdcall get_LabelsVisible (
+        /*[out,retval]*/ VARIANT_BOOL * pLabelsVisible ) = 0;
+      virtual HRESULT __stdcall put_GlobeContainedDataPath (
+        /*[in]*/ BSTR DataPath,
+        /*[in]*/ struct IGlobe * _arg2 ) = 0;
+};
+
+struct __declspec(uuid("4f728023-7133-4559-b42a-6711f6f565dc"))
+ILookAtKmlNode : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_HasLookAtPoint (
+        /*[out,retval]*/ VARIANT_BOOL * pHasLookAt ) = 0;
+      virtual HRESULT __stdcall ViewAtLookAtPoint (
+        /*[in]*/ struct IGlobe * pGlobe,
+        /*[in]*/ struct IKmlLayer * pKmlLayer ) = 0;
+};
+
+struct __declspec(uuid("65fbccd0-fabd-4517-a07c-bbea5fe71abe"))
+IGlobeCamera : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_OrientationMode (
+        /*[in]*/ enum esriGlobeCameraOrientationMode pMode ) = 0;
+      virtual HRESULT __stdcall get_OrientationMode (
+        /*[out,retval]*/ enum esriGlobeCameraOrientationMode * pMode ) = 0;
+      virtual HRESULT __stdcall SetTargetLatLonAlt (
+        /*[in]*/ double latDD,
+        /*[in]*/ double lonDD,
+        /*[in]*/ double altKMs ) = 0;
+      virtual HRESULT __stdcall GetTargetLatLonAlt (
+        /*[out]*/ double * pLatDD,
+        /*[out]*/ double * pLonDD,
+        /*[out]*/ double * pAltKMs ) = 0;
+      virtual HRESULT __stdcall SetObserverLatLonAlt (
+        /*[in]*/ double latDD,
+        /*[in]*/ double lonDD,
+        /*[in]*/ double altKMs ) = 0;
+      virtual HRESULT __stdcall GetObserverLatLonAlt (
+        /*[out]*/ double * pLatDD,
+        /*[out]*/ double * pLonDD,
+        /*[out]*/ double * pAltKMs ) = 0;
+      virtual HRESULT __stdcall put_RollOffset (
+        /*[in]*/ double pRollAngle ) = 0;
+      virtual HRESULT __stdcall get_RollOffset (
+        /*[out,retval]*/ double * pRollAngle ) = 0;
+      virtual HRESULT __stdcall put_RollFactor (
+        /*[in]*/ double _arg1 ) = 0;
+      virtual HRESULT __stdcall GetFrustumSkewRect (
+        /*[out]*/ double * XMin,
+        /*[out]*/ double * XMax,
+        /*[out]*/ double * YMin,
+        /*[out]*/ double * YMax ) = 0;
+      virtual HRESULT __stdcall SetFrustumSkewRect (
+        /*[in]*/ double XMin,
+        /*[in]*/ double XMax,
+        /*[in]*/ double YMin,
+        /*[in]*/ double YMax ) = 0;
+      virtual HRESULT __stdcall SetAccurateViewDirection (
+        /*[in]*/ double viewX,
+        /*[in]*/ double viewY,
+        /*[in]*/ double viewZ ) = 0;
+      virtual HRESULT __stdcall GetAccurateViewDirection (
+        /*[out]*/ double * pViewX,
+        /*[out]*/ double * pViewY,
+        /*[out]*/ double * pViewZ ) = 0;
+      virtual HRESULT __stdcall GetLocalOrientation (
+        /*[out]*/ double * plocalAzi,
+        /*[out]*/ double * pLocalIncl,
+        /*[out]*/ double * pLocalRoll ) = 0;
+      virtual HRESULT __stdcall put_NavigationType (
+        /*[in]*/ enum esriGlobeNavigationType pType ) = 0;
+      virtual HRESULT __stdcall get_NavigationType (
+        /*[out,retval]*/ enum esriGlobeNavigationType * pType ) = 0;
+      virtual HRESULT __stdcall put_GlobeRadius (
+        /*[in]*/ double _arg1 ) = 0;
+      virtual HRESULT __stdcall SetToZoomToExtents (
+        /*[in]*/ struct IEnvelope * pExtent,
+        /*[in]*/ struct IGlobe * pGlobe,
+        /*[in]*/ struct ISceneViewer * pSceneViewer ) = 0;
+};
+
+struct __declspec(uuid("97b33434-8eff-401c-8f7c-9b0f7dc72094"))
+IGlobeViewUtil : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ScalingDistance (
+        /*[out,retval]*/ double * pDistanceInMeters ) = 0;
+      virtual HRESULT __stdcall SetTargetAtCenter ( ) = 0;
+      virtual HRESULT __stdcall GeographicToGeocentric (
+        /*[in]*/ double long_dd,
+        /*[in]*/ double lat_dd,
+        /*[in]*/ double elev_meters,
+        /*[out]*/ double * pX,
+        /*[out]*/ double * pY,
+        /*[out]*/ double * pZ ) = 0;
+      virtual HRESULT __stdcall GeocentricToGeographic (
+        /*[in]*/ double X,
+        /*[in]*/ double Y,
+        /*[in]*/ double Z,
+        /*[out]*/ double * pLong_dd,
+        /*[out]*/ double * pLat_dd,
+        /*[out]*/ double * pElev_meters ) = 0;
+      virtual HRESULT __stdcall GeographicToWindow (
+        /*[in]*/ double long_dd,
+        /*[in]*/ double lat_dd,
+        /*[in]*/ double elev_meters,
+        /*[out]*/ int * pWinX,
+        /*[out]*/ int * pWinY ) = 0;
+      virtual HRESULT __stdcall GeocentricToWindow (
+        /*[in]*/ double X,
+        /*[in]*/ double Y,
+        /*[in]*/ double Z,
+        /*[out]*/ int * pWinX,
+        /*[out]*/ int * pWinY ) = 0;
+      virtual HRESULT __stdcall WindowToGeographic (
+        /*[in]*/ struct IGlobeDisplay * pDisplay,
+        /*[in]*/ struct ISceneViewer * pViewer,
+        /*[in]*/ int winX,
+        /*[in]*/ int winY,
+        /*[in]*/ VARIANT_BOOL bUseZBufferValue,
+        /*[out]*/ double * pLon,
+        /*[out]*/ double * pLat,
+        /*[out]*/ double * pAlt ) = 0;
+      virtual HRESULT __stdcall WindowToGeocentric (
+        /*[in]*/ struct IGlobeDisplay * pDisplay,
+        /*[in]*/ struct ISceneViewer * pViewer,
+        /*[in]*/ int winX,
+        /*[in]*/ int winY,
+        /*[in]*/ VARIANT_BOOL bUseZBufferValue,
+        /*[out]*/ double * pX,
+        /*[out]*/ double * pY,
+        /*[out]*/ double * pZ ) = 0;
+      virtual HRESULT __stdcall GetViewingFrustrum (
+        /*[out]*/ WKSPointZ * pNearBottomLeft,
+        /*[out]*/ WKSPointZ * pNearBottomRight,
+        /*[out]*/ WKSPointZ * pNearTopLeft,
+        /*[out]*/ WKSPointZ * pNearTopRight,
+        /*[out]*/ WKSPointZ * pFarBottomLeft,
+        /*[out]*/ WKSPointZ * pFarBottomRight,
+        /*[out]*/ WKSPointZ * pFarTopLeft,
+        /*[out]*/ WKSPointZ * pFarTopRight ) = 0;
+      virtual HRESULT __stdcall GetIsPointVisible (
+        /*[in]*/ double X,
+        /*[in]*/ double Y,
+        /*[in]*/ double Z,
+        /*[out]*/ VARIANT_BOOL * pOutsideView,
+        /*[out]*/ VARIANT_BOOL * pTooClose,
+        /*[out]*/ VARIANT_BOOL * pTooFar ) = 0;
+      virtual HRESULT __stdcall put_LocalOrigin (
+        /*[in]*/ double X,
+        /*[in]*/ double Y,
+        /*[in]*/ double _arg3 ) = 0;
+      virtual HRESULT __stdcall QueryVisibleGeographicExtent (
+        struct IEnvelope * Extent ) = 0;
+};
+
+struct __declspec(uuid("42c89d08-17f1-4c88-b129-5b58aa6b88be"))
+IGlobeViewer2 : IGlobeViewer
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_IsSwapBuffersEnabled (
+        /*[in]*/ VARIANT_BOOL pbEnableSwap ) = 0;
+      virtual HRESULT __stdcall get_IsSwapBuffersEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pbEnableSwap ) = 0;
+      virtual HRESULT __stdcall SwapOGLBuffers ( ) = 0;
+      virtual HRESULT __stdcall put_IsClearBuffersEnabled (
+        /*[in]*/ VARIANT_BOOL pbEnableClear ) = 0;
+      virtual HRESULT __stdcall get_IsClearBuffersEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pbEnableClear ) = 0;
+      virtual HRESULT __stdcall ClearOGLBuffers ( ) = 0;
+      virtual HRESULT __stdcall put_SecondaryViewersVisiblity (
+        /*[in]*/ VARIANT_BOOL pbViewersVisible ) = 0;
+      virtual HRESULT __stdcall get_SecondaryViewersVisiblity (
+        /*[out,retval]*/ VARIANT_BOOL * pbViewersVisible ) = 0;
+};
+
+struct __declspec(uuid("ae6300ea-4043-492a-b72c-a61d6656d3d8"))
+IGlobeServerObjects : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Layer (
+        /*[in]*/ long LayerID,
+        /*[out,retval]*/ struct ILayer * * ppLayer ) = 0;
+      virtual HRESULT __stdcall get_Display (
+        /*[out,retval]*/ struct IGlobeDisplay * * ppDisplay ) = 0;
+};
+
+struct __declspec(uuid("e2318a63-2434-49ae-8535-985948cdeb28"))
+IGlobeTileGenerator : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Layer (
+        /*[out,retval]*/ struct ILayer * * ppLayer ) = 0;
+      virtual HRESULT __stdcall putref_Layer (
+        /*[in]*/ struct ILayer * ppLayer ) = 0;
+      virtual HRESULT __stdcall get_LayerProperties (
+        /*[out,retval]*/ struct IGlobeLayerProperties * * ppProps ) = 0;
+      virtual HRESULT __stdcall putref_LayerProperties (
+        /*[in]*/ struct IGlobeLayerProperties * ppProps ) = 0;
+      virtual HRESULT __stdcall get_Display (
+        /*[out,retval]*/ struct IGlobeDisplay * * ppDisplay ) = 0;
+      virtual HRESULT __stdcall putref_Display (
+        /*[in]*/ struct IGlobeDisplay * ppDisplay ) = 0;
+      virtual HRESULT __stdcall GenerateConfigFiles ( ) = 0;
+      virtual HRESULT __stdcall GenerateTile (
+        /*[in]*/ long face,
+        /*[in]*/ long level,
+        /*[in]*/ long row,
+        /*[in]*/ long column,
+        /*[out,retval]*/ SAFEARRAY * * Data ) = 0;
+      virtual HRESULT __stdcall GenerateTiles (
+        /*[in]*/ struct IGlobeServer * pGlobeServer,
+        /*[in]*/ long LayerID,
+        /*[in]*/ struct IEnvelope * pExtent,
+        /*[in]*/ int minLOD,
+        /*[in]*/ int maxLOD,
+        /*[in]*/ struct ITrackCancel * pCancelTracker ) = 0;
+      virtual HRESULT __stdcall QueryTilePosition (
+        /*[out]*/ long * pFace,
+        /*[out]*/ long * pLevel,
+        /*[out]*/ long * pRow,
+        /*[out]*/ long * pColumn ) = 0;
+      virtual HRESULT __stdcall PutTilePosition (
+        /*[in]*/ long face,
+        /*[in]*/ long level,
+        /*[in]*/ long row,
+        /*[in]*/ long column ) = 0;
+      virtual HRESULT __stdcall get_MaxTileCount (
+        /*[out,retval]*/ long * pNumTiles ) = 0;
+      virtual HRESULT __stdcall put_MaxTileCount (
+        /*[in]*/ long pNumTiles ) = 0;
+      virtual HRESULT __stdcall Exit ( ) = 0;
+      virtual HRESULT __stdcall UpdateTiles (
+        /*[in]*/ struct IGlobeServer * pGlobeServer,
+        /*[in]*/ long LayerID,
+        /*[in]*/ struct IEnvelope * pExtent,
+        /*[in]*/ int minLOD,
+        /*[in]*/ int maxLOD,
+        /*[in]*/ enum esriGlobeCacheUpdateMode updateMode,
+        /*[in]*/ struct ITrackCancel * pCancelTracker ) = 0;
+      virtual HRESULT __stdcall DeleteTiles (
+        /*[in]*/ struct IGlobeServer * pGlobeServer,
+        /*[in]*/ long LayerID,
+        /*[in]*/ struct IEnvelope * pExtent,
+        /*[in]*/ int minLOD,
+        /*[in]*/ int maxLOD,
+        /*[in]*/ struct ITrackCancel * pCancelTracker ) = 0;
+};
+
+struct __declspec(uuid("4d30910a-1e6b-47fd-98ca-d04e5fb5154f"))
+IGlobeTileGenerator2 : IGlobeTileGenerator
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall UpdateTilesByGeometry (
+        /*[in]*/ struct IGlobeServer * pGlobeServer,
+        /*[in]*/ long LayerID,
+        /*[in]*/ struct IGeometry * pGeometry,
+        /*[in]*/ int minLOD,
+        /*[in]*/ int maxLOD,
+        /*[in]*/ enum esriGlobeCacheUpdateMode updateMode,
+        /*[in]*/ struct ITrackCancel * pCancelTracker ) = 0;
+      virtual HRESULT __stdcall GetStatusTileCount (
+        /*[out]*/ long * pTileCount ) = 0;
+};
+
+struct __declspec(uuid("0ab3f65a-35e8-4702-aca3-f0440ca7f254"))
+IGlobeServerLayerFactory : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CreateLayer (
+        /*[in]*/ IUnknown * pObject,
+        /*[in]*/ struct IGlobeLayerInfo * pLayerInfo,
+        /*[out,retval]*/ struct IEnumLayer * * ppLayers ) = 0;
+      virtual HRESULT __stdcall put_AnimationContainer (
+        /*[in]*/ struct IGlobe * _arg1 ) = 0;
+      virtual HRESULT __stdcall CreateLayersFromNames (
+        /*[in]*/ struct IAGSServerObjectName * pSOName,
+        /*[in]*/ SAFEARRAY * layerNames,
+        /*[out,retval]*/ struct IEnumLayer * * ppLayers ) = 0;
+};
+
+struct __declspec(uuid("5620eac6-e922-41c4-86f2-ade2f210d464"))
+INavigate3DHookHelper : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Hook (
+        /*[in]*/ IUnknown * _arg1 ) = 0;
+      virtual HRESULT __stdcall get_SceneViewer (
+        /*[out,retval]*/ struct ISceneViewer * * ppViewer ) = 0;
+      virtual HRESULT __stdcall get_GlobeDisplay (
+        /*[out,retval]*/ struct IGlobeDisplay * * ppDisplay ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_esriGlobeCore =
+    {0x00b329b5,0x265e,0x11d6,{0xb2,0xb4,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeAdvancedOptions =
+    {0xa8132c1e,0x00f2,0x49a3,{0xbb,0xaa,0xd0,0xd9,0x51,0x89,0x56,0x86}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeDrawingOrder =
+    {0x3dea46b1,0x53d2,0x4809,{0x86,0x04,0x60,0x13,0xd7,0xab,0x83,0x45}};
+extern "C" const GUID __declspec(selectany) CLSID_Globe =
+    {0x00b329b8,0x265e,0x11d6,{0xb2,0xb4,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeHelper =
+    {0xa5330aea,0x2419,0x4e96,{0xb6,0xd1,0x49,0xae,0x80,0x6b,0x99,0x0e}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeDisplayRendering =
+    {0x3872d32c,0x01d6,0x4108,{0x8e,0x09,0x11,0x4f,0x95,0x27,0x6b,0x9b}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeDisplayRendering2 =
+    {0x95e8d742,0xc053,0x4571,{0xb6,0x47,0xd7,0x41,0x6f,0x58,0xb2,0x3d}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeDisplayRendering3 =
+    {0x83976305,0x34dc,0x4121,{0xbb,0x64,0x1d,0xc1,0xd1,0x5a,0xdd,0xf1}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeAdvancedOptions2 =
+    {0xa1407e3c,0x9c23,0x433e,{0x82,0x45,0x27,0x85,0x54,0x1c,0x78,0x63}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeDisplayEvents =
+    {0xe4e37ac7,0x6f8a,0x4f4a,{0xb7,0xc3,0xdb,0x44,0x37,0x5e,0x8c,0x5b}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeStatInfo =
+    {0x1641c885,0x17ef,0x4531,{0xa5,0x07,0x51,0x8c,0xe9,0x94,0xa1,0x7e}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeDisplayUtil =
+    {0x1a7729a9,0xdf52,0x4c56,{0x8b,0x8a,0x83,0x5d,0x94,0xc1,0x21,0x6e}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeDisplay =
+    {0xf6d524f9,0xea59,0x4f6c,{0xa4,0x70,0x75,0x7b,0xa1,0x86,0xf8,0x5b}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeAdvancedOptions =
+    {0xcae0885c,0x7728,0x4eca,{0xa3,0x39,0x1b,0x00,0x24,0x93,0x2c,0x87}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeDocument =
+    {0xbdb85d20,0x0285,0x4e2b,{0xbb,0xd9,0xdb,0x44,0x63,0x8c,0xa3,0x26}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeLayer =
+    {0xcc41e3a3,0x6437,0x44aa,{0x8c,0x01,0xa6,0x34,0x84,0xab,0xcb,0x45}};
+extern "C" const GUID __declspec(selectany) IID_IGeoVideoLayer =
+    {0xc0b5bbb2,0x9b4a,0x41c3,{0xac,0xbb,0xf2,0x0e,0x99,0x40,0xe5,0x74}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeRasterizedLayerSupport =
+    {0x5d85f151,0x7084,0x4dc3,{0xa9,0xe5,0x95,0xc3,0xc4,0x4a,0x7a,0x06}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeGraphicsElementProperties =
+    {0x0d8e6a2a,0x0630,0x45fc,{0x95,0x97,0xdd,0x30,0x36,0x1d,0xb1,0x8c}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeGraphicsLayer =
+    {0x5ae75603,0xdd33,0x4d19,{0x81,0x16,0x4e,0x61,0x69,0xb2,0xeb,0x9f}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeLayerFactory =
+    {0xf6449fe8,0x7370,0x49f3,{0x9d,0xee,0x57,0x22,0xe3,0x55,0x3f,0x41}};
+extern "C" const GUID __declspec(selectany) CLSID_GeoVideoLayerFactory =
+    {0xccd838d8,0x83a3,0x4465,{0x94,0xc7,0x1d,0x39,0x52,0x98,0xc5,0xbe}};
+extern "C" const GUID __declspec(selectany) CLSID_IMSGlobeLayerFactory =
+    {0x26eee782,0xe017,0x4179,{0x86,0x28,0x00,0x20,0x6f,0xa5,0x52,0xfd}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeHeightProperties =
+    {0x69fbcddf,0x43de,0x4227,{0x8b,0x7c,0xa1,0x9c,0xc6,0x88,0xb9,0x13}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeLayerProperties =
+    {0x2c0d96ea,0xcaaf,0x4bde,{0x84,0x8c,0x3f,0xf8,0x6b,0xd9,0xf5,0x25}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeLayer =
+    {0xeb2e11dd,0x269d,0x4e07,{0xb6,0x1a,0x31,0xc7,0x66,0x7f,0x01,0x67}};
+extern "C" const GUID __declspec(selectany) CLSID_GeoVideoLayer =
+    {0x65f3b5c0,0x6013,0x478b,{0xbc,0xe1,0xf5,0x8f,0xd7,0x65,0x9d,0x10}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeGraphicsElementProperties =
+    {0x48ca76a3,0x8ff3,0x48cd,{0x87,0x96,0xf3,0xbd,0x45,0x5f,0x9a,0xb0}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeGraphicsLayer =
+    {0xa415a073,0xcf06,0x4cdc,{0x86,0x64,0x43,0x9d,0x0d,0x5e,0x71,0x69}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeGraphicElementPropsStreamArray =
+    {0xc03019d0,0x59cd,0x4f03,{0x81,0x24,0x2f,0xe4,0x13,0x89,0x13,0xd3}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeGraphicElementPropsStreamArray =
+    {0x52954700,0x6659,0x4939,{0x8d,0x2c,0x68,0x23,0xf0,0xb6,0x45,0x21}};
+extern "C" const GUID __declspec(selectany) IID_IKmlNode =
+    {0x0a23899e,0x0a33,0x44fb,{0x95,0xa2,0xf2,0x96,0xde,0xeb,0x90,0xb5}};
+extern "C" const GUID __declspec(selectany) IID_IKmlChildNodes =
+    {0x20b66f01,0xd729,0x4090,{0x9b,0x67,0xcc,0x2f,0xad,0x2b,0x98,0x8d}};
+extern "C" const GUID __declspec(selectany) IID_IKmlScreenOverlayDisplay =
+    {0x976fca1a,0x0309,0x4e53,{0x96,0x53,0x4e,0x75,0x2d,0xde,0x32,0x95}};
+extern "C" const GUID __declspec(selectany) CLSID_KmlLayer =
+    {0xdae95a5a,0x6160,0x45d9,{0x9a,0x3b,0x74,0x7d,0xd1,0x95,0x32,0xa1}};
+extern "C" const GUID __declspec(selectany) IID_IKmlServer =
+    {0xdc575242,0x99e8,0x4b53,{0x84,0xf0,0xc4,0x6b,0x55,0xd2,0x13,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_KmlServer =
+    {0x03682ba2,0x6b86,0x4153,{0x96,0xc9,0x17,0x93,0x0e,0x53,0xca,0xbb}};
+extern "C" const GUID __declspec(selectany) IID_IKmlConvertor =
+    {0xd91d9176,0x41ad,0x4268,{0x9e,0x33,0x92,0x95,0xc4,0x80,0x30,0x7b}};
+extern "C" const GUID __declspec(selectany) IID_IKmlConvertor2 =
+    {0xd91d9174,0x41ad,0x4268,{0x9e,0x33,0x92,0x95,0xc4,0x80,0x30,0x7b}};
+extern "C" const GUID __declspec(selectany) CLSID_KmlConvertor =
+    {0x0bba96b3,0x0121,0x44e4,{0x89,0x8b,0xf4,0x6a,0x7a,0x22,0xf9,0x21}};
+extern "C" const GUID __declspec(selectany) IID_INavigate3DView =
+    {0x9249fb50,0xf569,0x40dd,{0x9f,0x9d,0x46,0x08,0x85,0xc6,0xa1,0x64}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeCamera =
+    {0xb24b5211,0xcb55,0x4ed5,{0x83,0xa3,0x89,0x2e,0xee,0x65,0x7b,0x5c}};
+extern "C" const GUID __declspec(selectany) CLSID_Navigate3DView =
+    {0x804f9859,0xaab9,0x44a6,{0x9f,0x79,0x9c,0xe9,0xa0,0x66,0x4c,0x1c}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeCameraKeyframe =
+    {0xa6565083,0x7640,0x4800,{0xa8,0xf4,0x12,0x6f,0xbb,0x79,0x2d,0xcc}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeLayerKeyframe =
+    {0xe0711d73,0x6925,0x461e,{0x84,0xb3,0xa4,0x37,0x8e,0x2e,0x99,0x0f}};
+extern "C" const GUID __declspec(selectany) CLSID_AnimationTypeGlobeCamera =
+    {0xd4565495,0xe2f9,0x4d89,{0xa8,0xa7,0xd0,0xb6,0x9f,0xd7,0xa4,0x24}};
+extern "C" const GUID __declspec(selectany) CLSID_AnimationTypeGlobeLayer =
+    {0x7ccba704,0x3933,0x4d7a,{0x8e,0x89,0x4d,0xfe,0xe8,0x8a,0xa9,0x37}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeLayerInfo =
+    {0x6a04b829,0x32ca,0x4bc0,{0xbf,0x6d,0xdd,0x65,0x5f,0xd8,0x03,0x06}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeLayerInfo2 =
+    {0x96f0fd1a,0xa2f5,0x4b10,{0x8f,0x4a,0x50,0x9f,0x4b,0xbf,0xeb,0x85}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeLegendInfo =
+    {0x3ebd0d70,0x7821,0x4770,{0x8e,0xef,0xdb,0xed,0xa1,0x94,0xab,0x88}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeLayerInfos =
+    {0x1dd9435a,0xd425,0x4f6e,{0x9c,0xc3,0x85,0xbf,0x31,0xca,0x18,0x5f}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeLegendInfos =
+    {0xe75ccaa0,0x5016,0x4a4e,{0x83,0xbf,0x7e,0xf3,0x13,0xb8,0xfb,0x1d}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeServerFindResult =
+    {0xbb7de2f9,0xcf1c,0x4673,{0xa5,0xfa,0xa4,0x9a,0xe6,0xe3,0x41,0x76}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeServerIdentifyResult =
+    {0x584b5a0b,0xe292,0x4211,{0xbf,0xdf,0x64,0xb5,0x01,0x85,0x9b,0x75}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeServerFindResults =
+    {0xa4247d78,0xd4db,0x4fe5,{0x8c,0xb1,0x2d,0x99,0x77,0x11,0x9d,0xaa}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeServerIdentifyResults =
+    {0xe94177ca,0x8c0c,0x483c,{0x87,0x14,0x23,0xac,0xa7,0x32,0x50,0x87}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeServer =
+    {0xf44327ec,0xf03e,0x4f7a,{0x80,0x94,0xa5,0xea,0xa0,0xc1,0x56,0x66}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeServer2 =
+    {0x2e39bd80,0x46e9,0x4291,{0xb6,0x58,0x2a,0xbb,0xda,0xfc,0x9f,0xfa}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeServer3 =
+    {0xa0534365,0x9cce,0x4e17,{0xb7,0x0c,0x0d,0x57,0x6c,0xaf,0xd0,0x5f}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeServer4 =
+    {0x0e2de26a,0x4352,0x4176,{0xa7,0x18,0xe1,0x98,0x16,0xcd,0x86,0xc5}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeServerSetup =
+    {0xaaaed790,0xcd9d,0x4007,{0xb4,0xb2,0xc9,0x7f,0xa9,0xe3,0x98,0x09}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeServerCache =
+    {0xebda9e24,0x402c,0x49fd,{0x9f,0x6a,0x67,0x4e,0xa3,0x29,0x21,0x29}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeServerConfigurationFactory =
+    {0xafb7d7a4,0x8b04,0x40a4,{0xaa,0x1b,0x18,0xd7,0x35,0x1e,0x73,0x9f}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeServer =
+    {0x3a3d684d,0x9420,0x4d19,{0x9e,0x27,0x92,0xae,0x83,0x89,0xe8,0xb9}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeServerIdentifyResult =
+    {0x884af83e,0xe8ba,0x4dac,{0x9d,0x95,0x10,0x93,0x46,0x5d,0xce,0xf3}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeServerFindResult =
+    {0x16da8d40,0x1d0a,0x45b8,{0x8a,0x9f,0xc9,0xab,0xd3,0xcc,0x11,0xe7}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeLayerInfo =
+    {0xfff647ea,0x61f9,0x460b,{0xb6,0x5a,0x29,0x3a,0xf8,0xc3,0x5d,0x21}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeLegendInfo =
+    {0x5e09ee98,0x0fe2,0x4b66,{0x9f,0x92,0xa0,0x0f,0xe3,0x76,0xda,0xbe}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeServerFindResults =
+    {0x8a073e77,0xe06e,0x4584,{0x81,0xe1,0x37,0x19,0xc7,0xd4,0x42,0x93}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeServerIdentifyResults =
+    {0x8d213d62,0xf89c,0x4641,{0xb6,0x6d,0xef,0x52,0x5b,0xe8,0x2a,0xde}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeLayerInfos =
+    {0xe042846e,0xb739,0x46f4,{0xbe,0x8b,0xce,0x29,0x7e,0xcc,0x7e,0xc9}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeLegendInfos =
+    {0x1128603a,0x46c6,0x4e2f,{0x8f,0xdb,0x36,0x66,0x51,0x39,0xbb,0x5e}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeTileGenerator =
+    {0xe023260c,0xa0be,0x4a86,{0xab,0xcf,0x75,0x77,0x2d,0xa7,0xcf,0x6e}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeServerLayer =
+    {0x02ebc734,0xa162,0x49eb,{0xa3,0x24,0xc7,0x92,0x3a,0x8e,0x35,0x7b}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeServerGroupLayer =
+    {0xce6c7eb9,0xd262,0x4f2d,{0xb4,0x20,0x9b,0x88,0xaa,0x6c,0x69,0xe2}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeServerLayer =
+    {0x9e981b62,0xb007,0x41c1,{0xb1,0x87,0x78,0x26,0x18,0x36,0x16,0x55}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeServerLayerFactory =
+    {0xc0506c43,0x87c5,0x4eaa,{0x93,0x6c,0xc0,0x7c,0x9c,0x40,0x98,0xf9}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeServerIdentifyObject =
+    {0x95fc4bf9,0x9676,0x43d5,{0xb0,0x36,0xd8,0x53,0xed,0x0f,0xe0,0x3d}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeServerFindObject =
+    {0x4dc9eea0,0xe15a,0x4a74,{0xbb,0x03,0x35,0xb2,0x92,0xd7,0xdb,0xdb}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeServerGroupLayer =
+    {0x94c51115,0x42f6,0x4c50,{0xbd,0x88,0xb2,0x4d,0x55,0x31,0xbb,0x42}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeServerLP =
+    {0xebb1df09,0xd8f6,0x4094,{0xae,0xff,0x55,0x26,0x45,0xe4,0xa9,0x67}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeServerIP =
+    {0x43ac71be,0x2d0d,0x4557,{0x93,0x3b,0xa2,0x9f,0xf0,0xce,0x85,0x0a}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeServerObjectDescription =
+    {0x6ba2a2cf,0x5171,0x4e26,{0x8c,0x39,0x25,0x69,0xc9,0x30,0xc0,0xbb}};
+extern "C" const GUID __declspec(selectany) CLSID_GPGlobeFunctionFactory =
+    {0x9e8cedbd,0xfd6f,0x41d8,{0x93,0xa0,0x35,0x20,0x77,0x90,0xba,0x08}};
+extern "C" const GUID __declspec(selectany) CLSID_GPGlobeServicesFunctionFactory =
+    {0x9e1f9858,0x9e47,0x4967,{0xa1,0xbe,0x6b,0x76,0x07,0xc7,0x18,0x0b}};
+extern "C" const GUID __declspec(selectany) CLSID_GPGenerateGlobeServerCache =
+    {0x1cadd06c,0xd5f7,0x478a,{0xbd,0x92,0x68,0x1b,0xbf,0x80,0x3d,0x02}};
+extern "C" const GUID __declspec(selectany) CLSID_GPUpdateGlobeServerCache2 =
+    {0x4ee4be13,0x987a,0x406e,{0xb4,0x3f,0x9c,0x57,0x0b,0x74,0x2d,0x72}};
+extern "C" const GUID __declspec(selectany) CLSID_GPDeleteGlobeServerCache =
+    {0xb963e3c8,0x6264,0x4c7d,{0xa4,0xe7,0x5f,0xab,0x5e,0xe0,0xee,0x82}};
+extern "C" const GUID __declspec(selectany) CLSID_GPManageGlobeCache =
+    {0x5a2f6188,0xff8a,0x4f53,{0xbc,0xc1,0x1e,0xae,0x36,0xd5,0x5a,0x37}};
+extern "C" const GUID __declspec(selectany) CLSID_GPManageGlobeCacheWorker =
+    {0x57172d9d,0x9f92,0x41fb,{0x86,0x6c,0x1b,0x81,0x34,0x27,0x61,0x0e}};
+extern "C" const GUID __declspec(selectany) CLSID_GPDeleteGlobeCache =
+    {0xb7cfa3c7,0xbb0a,0x4900,{0xa2,0x33,0x7d,0xd0,0x50,0x5f,0x5f,0x1a}};
+extern "C" const GUID __declspec(selectany) CLSID_GPUpdateGlobeServerCache =
+    {0x6d3101f4,0x69b3,0x44ec,{0x9b,0x37,0x1e,0xc4,0x48,0xbb,0x96,0x81}};
+extern "C" const GUID __declspec(selectany) CLSID_GpKMLFunctionFactory =
+    {0x65882379,0x63c0,0x4ff6,{0xae,0x6d,0x20,0x82,0x91,0x0c,0x78,0x08}};
+extern "C" const GUID __declspec(selectany) CLSID_GPExportToKML =
+    {0x34628510,0x9a07,0x453f,{0xa7,0x62,0xc1,0x64,0xff,0xa0,0x91,0xa7}};
+extern "C" const GUID __declspec(selectany) CLSID_GPLayersToKML =
+    {0xaaa122c4,0x739b,0x447a,{0xb4,0x42,0x59,0x76,0xc4,0xe3,0xad,0xf7}};
+extern "C" const GUID __declspec(selectany) CLSID_GPMultipatchToCollada =
+    {0xeef5af06,0xa01f,0x455d,{0xa4,0xd1,0x3d,0x92,0x94,0x45,0x84,0x52}};
+extern "C" const GUID __declspec(selectany) CLSID_GPKMLToLayer =
+    {0x87b9673c,0x55e6,0x4bb7,{0x80,0xe4,0x3a,0x54,0xa0,0x62,0x40,0xf7}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeServerCooker =
+    {0xa5e12264,0xb2d2,0x4e6c,{0xaf,0x14,0xea,0x09,0xf8,0x70,0xb3,0xbb}};
+extern "C" const GUID __declspec(selectany) CLSID_GlobeServerCooker =
+    {0xa0f98460,0x9135,0x4075,{0xb5,0x93,0xcb,0x57,0x04,0x33,0x66,0x79}};
+extern "C" const GUID __declspec(selectany) IID_IFeatureParameterLayer =
+    {0x7c0a33aa,0xee26,0x4684,{0x91,0x10,0x8c,0x48,0xa5,0x64,0xd0,0x5a}};
+extern "C" const GUID __declspec(selectany) IID_ISensorEventsListener =
+    {0x41c5f6d5,0x363d,0x475b,{0x92,0xbc,0xde,0x36,0x13,0x19,0xb2,0x29}};
+extern "C" const GUID __declspec(selectany) CLSID_SensorEventsListener =
+    {0xed2fe49c,0xeb4e,0x4641,{0x92,0x5b,0x09,0x46,0xc9,0xc6,0x34,0x56}};
+extern "C" const GUID __declspec(selectany) CLSID_SpaceNavigatorExtension =
+    {0x0116db56,0x8915,0x43ab,{0x90,0x01,0x0a,0x47,0xa9,0x2d,0x20,0x52}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeDisplay =
+    {0xa08bd3fa,0x8d60,0x42a3,{0xbd,0x2a,0x50,0xb0,0x13,0xe3,0xf6,0xda}};
+extern "C" const GUID __declspec(selectany) IID_IGlobe =
+    {0x00b329b7,0x265e,0x11d6,{0xb2,0xb4,0x00,0x50,0x8b,0xcd,0xde,0x28}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeHeightProperties =
+    {0x7fbd3fe8,0x885b,0x48cb,{0x96,0xaf,0xa3,0xd2,0x96,0x89,0x2d,0xa3}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeLayerProperties =
+    {0x86958a26,0xfded,0x4f90,{0xb7,0xc4,0xb6,0x83,0x00,0x65,0xb5,0xe2}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeHelperPub =
+    {0xc61d0917,0x097f,0x44cf,{0xba,0x84,0x80,0xa4,0xb6,0x53,0x7b,0xf6}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeHelperPub2 =
+    {0x27de37ab,0x53d3,0x483b,{0xb2,0x0a,0x7d,0xfa,0x18,0x01,0xf6,0x79}};
+extern "C" const GUID __declspec(selectany) IID_IGlobe2 =
+    {0x5e37ab7c,0x057c,0x470d,{0x80,0x4a,0xab,0xdd,0x4f,0x10,0xb6,0x4c}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeDisplay2 =
+    {0xd05e08d4,0x24d2,0x4b48,{0x8f,0xff,0x92,0x7d,0xa2,0x93,0x36,0x3f}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeDisplay3 =
+    {0xfcc11bb5,0x174c,0x4ecf,{0xb4,0x7c,0xe8,0xc6,0x2e,0x1d,0x70,0xc5}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeDisplayLayers =
+    {0x5c44152f,0x6d5a,0x4ec2,{0xbc,0x1f,0xe1,0x3a,0xe9,0xf5,0xc7,0xee}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeDisplayLayers2 =
+    {0xa1bf002b,0x4ecb,0x4328,{0x80,0xba,0xdd,0xae,0x01,0x1d,0xae,0x0c}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeHeightProperties2 =
+    {0x2c9b3ac6,0x54a0,0x47a8,{0x8d,0xe7,0xdf,0xf1,0xca,0x45,0x2f,0xea}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeLayerProperties2 =
+    {0xe5a7ab17,0xf40c,0x47b1,{0xba,0xf6,0x8c,0x21,0x93,0x42,0x7a,0x35}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeLayerProperties4 =
+    {0xd22fbeee,0xbe11,0x4040,{0x96,0x70,0xce,0x18,0x97,0xcc,0xd8,0xa5}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeLayerProperties5 =
+    {0x581a575b,0xbaca,0x4cc6,{0xa4,0x1d,0xa4,0x24,0xf0,0x7c,0xb1,0xac}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeViewer =
+    {0x365a110b,0xb13f,0x4314,{0xa3,0xe8,0x1e,0xdf,0x9b,0x7d,0xdf,0x31}};
+extern "C" const GUID __declspec(selectany) IID_ICustomGlobeLayer =
+    {0x28416400,0x6965,0x4df1,{0x98,0x23,0x48,0x97,0x3b,0x44,0x17,0x9c}};
+extern "C" const GUID __declspec(selectany) IID_IKmlLayer =
+    {0xae6cedec,0xe20f,0x4dfe,{0x96,0xc7,0x31,0x09,0xe5,0x24,0x90,0x3b}};
+extern "C" const GUID __declspec(selectany) IID_ILookAtKmlNode =
+    {0x4f728023,0x7133,0x4559,{0xb4,0x2a,0x67,0x11,0xf6,0xf5,0x65,0xdc}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeCamera =
+    {0x65fbccd0,0xfabd,0x4517,{0xa0,0x7c,0xbb,0xea,0x5f,0xe7,0x1a,0xbe}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeViewUtil =
+    {0x97b33434,0x8eff,0x401c,{0x8f,0x7c,0x9b,0x0f,0x7d,0xc7,0x20,0x94}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeViewer2 =
+    {0x42c89d08,0x17f1,0x4c88,{0xb1,0x29,0x5b,0x58,0xaa,0x6b,0x88,0xbe}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeServerObjects =
+    {0xae6300ea,0x4043,0x492a,{0xb7,0x2c,0xa6,0x1d,0x66,0x56,0xd3,0xd8}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeTileGenerator =
+    {0xe2318a63,0x2434,0x49ae,{0x85,0x35,0x98,0x59,0x48,0xcd,0xeb,0x28}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeTileGenerator2 =
+    {0x4d30910a,0x1e6b,0x47fd,{0x98,0xca,0xd0,0x4e,0x5f,0xb5,0x15,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_IGlobeServerLayerFactory =
+    {0x0ab3f65a,0x35e8,0x4702,{0xac,0xa3,0xf0,0x44,0x0c,0xa7,0xf2,0x54}};
+extern "C" const GUID __declspec(selectany) IID_INavigate3DHookHelper =
+    {0x5620eac6,0xe922,0x41c4,{0x86,0xf2,0xad,0xe2,0xf2,0x10,0xd4,0x64}};
+
+#pragma pack(pop)

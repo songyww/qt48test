@@ -1,0 +1,3325 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (9dad1568).
+//
+// e:\vsproject\qt48test\qt48test\release\esrilocation.tlh
+//
+// C++ source equivalent of Win32 type library esrilocation.olb
+// compiler-generated file created 12/01/16 at 15:39:14 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("6b45c696-3c30-4268-a58b-d9f32d80023c"))
+/* LIBID */ __esriLocation;
+enum esriGeocodingError;
+struct __declspec(uuid("bf00823e-71f7-11d3-9f5d-00c04f6bdf06"))
+/* interface */ ISdeLocator;
+struct __declspec(uuid("600a589d-ddc1-11d3-9f74-00c04f8ed1c4"))
+/* interface */ IAddressInputs;
+struct __declspec(uuid("600a5896-ddc1-11d3-9f74-00c04f8ed1c4"))
+/* interface */ IGeocodingProperties;
+struct __declspec(uuid("896714a4-0313-4dbc-b471-5d4c6a6ec351"))
+/* interface */ IGeocodingProperties2;
+struct __declspec(uuid("600a5897-ddc1-11d3-9f74-00c04f8ed1c4"))
+/* interface */ IReferenceDataFile;
+struct __declspec(uuid("0f56cefb-f7a8-4cc1-a195-7eab32c9e300"))
+/* interface */ IReferenceDataFile2;
+struct __declspec(uuid("ba6a5d80-10c7-11d4-9f7c-00c04f8ed1c4"))
+/* interface */ IReferenceDataIndex;
+struct __declspec(uuid("ba6a5d81-10c7-11d4-9f7c-00c04f8ed1c4"))
+/* interface */ IReferenceDataIndexEdit;
+struct __declspec(uuid("ba6a5d82-10c7-11d4-9f7c-00c04f8ed1c4"))
+/* interface */ IEnumReferenceDataIndex;
+struct __declspec(uuid("ba6a5d83-10c7-11d4-9f7c-00c04f8ed1c4"))
+/* interface */ IReferenceDataField;
+struct __declspec(uuid("ba6a5d84-10c7-11d4-9f7c-00c04f8ed1c4"))
+/* interface */ IReferenceDataFieldEdit;
+struct __declspec(uuid("ba6a5d85-10c7-11d4-9f7c-00c04f8ed1c4"))
+/* interface */ IEnumReferenceDataField;
+struct __declspec(uuid("ba6a5d86-10c7-11d4-9f7c-00c04f8ed1c4"))
+/* interface */ IReferenceDataTable;
+struct __declspec(uuid("e4441b08-0977-462a-86d5-c18e53ddef32"))
+/* interface */ IReferenceDataTable2;
+struct __declspec(uuid("ba6a5d87-10c7-11d4-9f7c-00c04f8ed1c4"))
+/* interface */ IReferenceDataTableEdit;
+struct __declspec(uuid("ba6a5d7f-10c7-11d4-9f7c-00c04f8ed1c4"))
+/* interface */ IEnumReferenceDataTable;
+struct __declspec(uuid("600a5898-ddc1-11d3-9f74-00c04f8ed1c4"))
+/* interface */ IReferenceDataTables;
+struct __declspec(uuid("e5aaa254-3ebd-49a7-aa9f-62ae8c762f9c"))
+/* interface */ IPlaceNameAlias;
+struct __declspec(uuid("600a589a-ddc1-11d3-9f74-00c04f8ed1c4"))
+/* interface */ IAddressGeocoding;
+struct __declspec(uuid("600a5899-ddc1-11d3-9f74-00c04f8ed1c4"))
+/* interface */ IAddressCandidates;
+struct __declspec(uuid("e62c17a3-595a-4a07-b862-a870aba99a98"))
+/* interface */ IAddressCandidates2;
+struct __declspec(uuid("e0f10b74-eb7c-11d2-9f47-00c04f8ed1c4"))
+/* interface */ IAdvancedGeocoding;
+struct __declspec(uuid("79d7d550-9268-4b98-b147-fa5dfb3869d5"))
+/* interface */ IAdvancedGeocoding2;
+struct __declspec(uuid("3a051259-c1d1-4e8f-bb6f-091f84b170c9"))
+/* interface */ IBatchGeocoding;
+struct __declspec(uuid("5cd1b646-774c-11d3-9f61-00c04f8ed1c4"))
+/* interface */ IIntersectionGeocoding;
+struct __declspec(uuid("3466eb04-6482-11d3-9f57-00c04f6bdf06"))
+/* interface */ IAdvancedIntersectionGeocoding;
+struct __declspec(uuid("1bb3b08b-45fc-43f3-a141-928881076c38"))
+/* interface */ ISimpleStandardization;
+struct __declspec(uuid("b693864f-4485-4d9a-a69e-3aa66153f44d"))
+/* interface */ IReverseGeocodingProperties;
+struct __declspec(uuid("5af33731-8b62-4dd7-897c-faacc0cd575e"))
+/* interface */ IReverseGeocoding;
+struct __declspec(uuid("cb7b12d8-b15e-4cd3-9efa-8d93f384bd7b"))
+/* interface */ IGeocodingOutputs;
+struct __declspec(uuid("096760f8-2253-4f07-828a-8be24dc67bfe"))
+/* interface */ ICompositeLocator;
+struct __declspec(uuid("09d6643b-d40f-4988-86f5-432952fc38e7"))
+/* interface */ ILocator2;
+struct __declspec(uuid("fde5639f-468d-4f00-9558-6246e56e7852"))
+/* interface */ IESRILocatorReleaseInfo;
+struct __declspec(uuid("92a704b6-ee5b-4513-a4ff-0205866fa5a6"))
+/* interface */ IESRILocatorBuildOptions;
+struct __declspec(uuid("a85f8063-4e7b-4266-b5ac-be4232524d9e"))
+/* interface */ IESRILocatorBuildOptionsEdit;
+struct __declspec(uuid("f8e03be8-c882-11d3-9f6c-00c04f8ed1c4"))
+/* interface */ IAttachedLocator;
+struct __declspec(uuid("e0f10b76-eb7c-11d2-9f47-00c04f8ed1c4"))
+/* interface */ ILocatorManager;
+struct __declspec(uuid("08fc0263-7a3f-4f34-9fea-975b9b5e16c8"))
+/* interface */ ILocatorManager2;
+struct __declspec(uuid("f47bb961-8885-4cdc-9c85-00be5dd6d903"))
+/* interface */ ILocatorWorkspaceName2;
+struct __declspec(uuid("a922679e-16dd-4fa5-8b0e-aafa5d8e2917"))
+/* interface */ ILocalLocatorWorkspace;
+struct __declspec(uuid("4f30b220-8e22-11d3-9f69-00c04f6bdf06"))
+/* interface */ IDatabaseLocatorWorkspace;
+struct __declspec(uuid("b7d1d9a0-8da7-45b8-b3ed-b07b8ffb5721"))
+/* interface */ IAGSLocatorWorkspace;
+struct __declspec(uuid("d12b2dca-775a-11d3-9f5e-00c04f6bdf06"))
+/* interface */ ILocatorAttach;
+struct __declspec(uuid("301bd67a-8042-4dcc-8375-d2697239e9a5"))
+/* interface */ ILocatorAttach2;
+struct __declspec(uuid("a5c49c70-b80c-41a3-9a90-e40cbf8b0686"))
+/* interface */ ILocatorEvents;
+struct __declspec(uuid("0c79caa6-cdef-11d3-9f6e-00c04f8ed1c4"))
+/* interface */ IGeocodedFeatureClass;
+struct __declspec(uuid("6dd91390-d42c-11d3-9f71-00c04f8ed1c4"))
+/* interface */ IGeocodingIndexCompute;
+struct __declspec(uuid("cff73580-6c73-11d3-9f5c-00c04f6bdf06"))
+/* interface */ ILocatorImpl;
+struct __declspec(uuid("d8323fbd-789e-43fb-bb8d-0e0ffa4c1f4c"))
+/* interface */ ILocatorDatasetImpl;
+struct __declspec(uuid("c229a286-71f4-11d3-9f5d-00c04f6bdf06"))
+/* interface */ ISdeLocatorImpl;
+struct __declspec(uuid("42825b3a-5b8e-485d-bcbc-895f7d06c9c2"))
+/* interface */ ISingleLineAddressInput;
+struct /* coclass */ LocatorManager;
+struct /* coclass */ LocatorWorkspaceName;
+struct /* coclass */ GenericLocatorStyle;
+struct /* coclass */ LocatorName;
+struct /* coclass */ ESRIFDOAddressLocatorStyle;
+struct /* coclass */ StreetMapAddressLocatorStyle;
+struct /* coclass */ ESRIFDOAddressLocator;
+struct /* coclass */ StreetMapAddressLocator;
+struct /* coclass */ CompositeLocator;
+struct /* coclass */ DatabaseLocatorWorkspace;
+struct /* coclass */ LocalLocatorWorkspace;
+struct /* coclass */ AttachedLocator;
+struct /* coclass */ LocatorEnumerator;
+struct /* coclass */ LocatorNameEnumerator;
+struct /* coclass */ ReferenceDataTableEnumerator;
+struct /* coclass */ ReferenceDataTable;
+struct /* coclass */ ReferenceDataFieldsEnumerator;
+struct /* coclass */ ReferenceDataField;
+struct /* coclass */ ReferenceDataIndexEnumerator;
+struct /* coclass */ ReferenceDataIndex;
+struct /* coclass */ GeocodedFeature;
+struct /* coclass */ GeocodedFeatureClassExtension;
+struct /* coclass */ GeocodingIndexObject;
+struct /* coclass */ GeocodingIndexClassExtension;
+struct /* coclass */ SoundexTableClassExtension;
+struct __declspec(uuid("e3894683-d749-4206-9b01-54933db6f615"))
+/* interface */ IDEAddressLocatorType;
+struct __declspec(uuid("dc4cd653-673e-48a4-be0b-8dcf08407103"))
+/* interface */ IGPAddressLocatorStyleType;
+struct /* coclass */ DEAddressLocatorType;
+struct /* coclass */ GPAddressLocatorStyleType;
+struct __declspec(uuid("ecd14972-5ecd-4a6f-b62f-b741dd429e3c"))
+/* interface */ IDEAddressLocator;
+struct __declspec(uuid("4352d4db-7256-4b52-abfb-cfb59a78a26d"))
+/* interface */ IGPAddressLocatorStyle;
+struct /* coclass */ DEAddressLocator;
+struct /* coclass */ GPAddressLocatorStyle;
+struct /* coclass */ AddressLocatorWorkspaceExtension;
+struct /* coclass */ RSLocator;
+struct /* coclass */ ESRIGen2AddressLocator;
+struct /* coclass */ ESRIGen2AddressLocatorStyle;
+struct /* coclass */ GPGeocodingDataTypeFactory;
+struct __declspec(uuid("5918bc71-27dc-41d7-8282-a0871a612923"))
+/* interface */ IGeocodeServer;
+struct __declspec(uuid("2783ad51-2715-472d-9e1b-3ec780c732d3"))
+/* interface */ IGeocodeServerObjects;
+struct __declspec(uuid("56480f27-f591-4140-a471-93782cffa59e"))
+/* interface */ IInitGeocodeServer;
+struct __declspec(uuid("8986d461-8861-41cf-8a97-27d6c244d411"))
+/* interface */ IGeocodeServerSingleLine;
+struct /* coclass */ GeocodeServer;
+struct /* coclass */ GeocodeServerObjectDescription;
+struct /* coclass */ AGSAddressLocator;
+struct /* coclass */ AGSLocatorWorkspace;
+enum esriGeocodeServerMessageCodeEnum;
+struct __declspec(uuid("354b908d-3bba-11d4-9fcc-00c04f6bdf06"))
+/* interface */ IRouteLocation;
+struct __declspec(uuid("a1e3811c-2055-11d4-9fc1-00c04f6bdf06"))
+/* interface */ IRouteLocator;
+struct __declspec(uuid("641755f0-b7de-11d3-9f7c-00c04f6bdf06"))
+/* interface */ IRouteEventSource;
+struct __declspec(uuid("5fad1b6d-3bbd-11d4-9fcc-00c04f6bdf06"))
+/* interface */ IRouteMeasurePointProperties;
+struct __declspec(uuid("99eb3970-f8a2-4670-b6f6-d928e2ad39c1"))
+/* interface */ IRouteMeasurePointProperties2;
+enum esriRouteEventError;
+enum esriMSeedingCorner;
+struct __declspec(uuid("35bdf2f1-3b21-11d4-9fcb-00c04f6bdf06"))
+/* interface */ IRouteMeasureLineProperties;
+struct __declspec(uuid("dc709919-fadb-4008-a90a-7be613557170"))
+/* interface */ IRouteLocation2;
+struct __declspec(uuid("354b908e-3bba-11d4-9fcc-00c04f6bdf06"))
+/* interface */ IRouteMeasurePointLocation;
+struct __declspec(uuid("354b908f-3bba-11d4-9fcc-00c04f6bdf06"))
+/* interface */ IRouteMeasureLineLocation;
+struct __declspec(uuid("0dd015cf-4915-11d4-9fd6-00c04f6bdf06"))
+/* interface */ IRouteMeasureEventGeoprocessor;
+struct __declspec(uuid("6e52d323-609b-41e7-a1c3-c5492b2c664c"))
+/* interface */ IRouteMeasureEventGeoprocessor2;
+struct __declspec(uuid("c531e2d7-a579-11d4-9ff0-00c04f6bdf06"))
+/* interface */ IRouteLocatorOperations;
+struct __declspec(uuid("e3444997-77d0-44cc-8eac-eb1d5d7de199"))
+/* interface */ IRouteLocatorOperations2;
+struct __declspec(uuid("960a398f-7e73-4d7e-955f-04f3916812ee"))
+/* interface */ IRouteMeasureCalibrator;
+struct __declspec(uuid("5b5f88f5-1865-407b-a7d8-da5d9daa0e8b"))
+/* interface */ IRouteMeasureCalibrator2;
+struct __declspec(uuid("9073be7c-f31a-4329-94e9-eea1bcd4af6d"))
+/* interface */ IRouteMeasureCreator;
+struct __declspec(uuid("6d2b9a89-960e-4f95-8c7b-6da24ab7a398"))
+/* interface */ IRouteMeasureCreator2;
+struct __declspec(uuid("eaffbc00-54ce-4daa-a8f4-b7ea046e5d9f"))
+/* interface */ IEnumRouteIdentifyResult;
+struct __declspec(uuid("234a6edf-4ad1-4bae-adcc-a4f60a6d9d50"))
+/* interface */ IRouteLocator2;
+struct __declspec(uuid("b7c2ff32-ccaa-4de6-8f2e-4d697d10d52b"))
+/* interface */ IRouteLayerExtension;
+struct /* coclass */ RouteMeasurePointProperties;
+struct /* coclass */ RouteMeasureLineProperties;
+struct /* coclass */ RouteMeasurePointLocation;
+struct /* coclass */ RouteMeasureLineLocation;
+struct /* coclass */ RouteEventSourceName;
+struct /* coclass */ RouteEventSource;
+struct /* coclass */ RouteMeasureLocatorName;
+struct /* coclass */ RouteMeasureLocator;
+struct /* coclass */ RouteMeasureGeoprocessor;
+struct /* coclass */ RouteMeasureCreator;
+struct /* coclass */ RouteLocatorOperations;
+struct /* coclass */ RouteMeasureCalibrator;
+struct /* coclass */ RouteLayerExtension;
+struct __declspec(uuid("2a409f42-de3b-4782-a294-9b56516c5ee4"))
+/* interface */ IHatchDefinition;
+enum esriHatchTextDisplay;
+enum esriHatchExpressionEngine;
+enum esriHatchAlignmentType;
+enum esriConvertHatchesToGraphicsType;
+struct __declspec(uuid("f40b4458-092d-4628-b0ca-1906228ad47b"))
+/* interface */ IHatchInputValue;
+struct __declspec(uuid("c137d658-c8fa-49f1-866f-2fe6f8cea55c"))
+/* interface */ IHatchMarkerDefinition;
+struct __declspec(uuid("f05afcd5-ce16-483a-bd74-37d3d007f075"))
+/* interface */ IHatchLineDefinition;
+struct __declspec(uuid("300ebf8f-3ac7-47bf-b16b-5acfaa729dff"))
+/* interface */ IEnumHatchDefinition;
+struct __declspec(uuid("a6e400d1-a2ea-49f4-b520-485df0417025"))
+/* interface */ IHatchTemplate;
+struct __declspec(uuid("2fa4e172-5f34-4911-b38b-ff8ea28c316b"))
+/* interface */ IHatchClass;
+struct __declspec(uuid("cd73074d-abb9-4cdf-9bc1-8463ebe87db6"))
+/* interface */ IHatchLayerExtension;
+struct /* coclass */ HatchLayerExtension;
+struct /* coclass */ HatchClass;
+struct /* coclass */ HatchTemplate;
+struct /* coclass */ HatchMarkerDefinition;
+struct /* coclass */ HatchLineDefinition;
+struct /* coclass */ HatchInputValue;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ISdeLocator, __uuidof(ISdeLocator));
+_COM_SMARTPTR_TYPEDEF(IAddressInputs, __uuidof(IAddressInputs));
+_COM_SMARTPTR_TYPEDEF(IGeocodingProperties, __uuidof(IGeocodingProperties));
+_COM_SMARTPTR_TYPEDEF(IGeocodingProperties2, __uuidof(IGeocodingProperties2));
+_COM_SMARTPTR_TYPEDEF(IReferenceDataFile, __uuidof(IReferenceDataFile));
+_COM_SMARTPTR_TYPEDEF(IReferenceDataFile2, __uuidof(IReferenceDataFile2));
+_COM_SMARTPTR_TYPEDEF(IReferenceDataIndex, __uuidof(IReferenceDataIndex));
+_COM_SMARTPTR_TYPEDEF(IReferenceDataIndexEdit, __uuidof(IReferenceDataIndexEdit));
+_COM_SMARTPTR_TYPEDEF(IEnumReferenceDataIndex, __uuidof(IEnumReferenceDataIndex));
+_COM_SMARTPTR_TYPEDEF(IReferenceDataField, __uuidof(IReferenceDataField));
+_COM_SMARTPTR_TYPEDEF(IReferenceDataFieldEdit, __uuidof(IReferenceDataFieldEdit));
+_COM_SMARTPTR_TYPEDEF(IEnumReferenceDataField, __uuidof(IEnumReferenceDataField));
+_COM_SMARTPTR_TYPEDEF(IReferenceDataTable, __uuidof(IReferenceDataTable));
+_COM_SMARTPTR_TYPEDEF(IReferenceDataTable2, __uuidof(IReferenceDataTable2));
+_COM_SMARTPTR_TYPEDEF(IReferenceDataTableEdit, __uuidof(IReferenceDataTableEdit));
+_COM_SMARTPTR_TYPEDEF(IEnumReferenceDataTable, __uuidof(IEnumReferenceDataTable));
+_COM_SMARTPTR_TYPEDEF(IReferenceDataTables, __uuidof(IReferenceDataTables));
+_COM_SMARTPTR_TYPEDEF(IPlaceNameAlias, __uuidof(IPlaceNameAlias));
+_COM_SMARTPTR_TYPEDEF(IAddressGeocoding, __uuidof(IAddressGeocoding));
+_COM_SMARTPTR_TYPEDEF(IAddressCandidates, __uuidof(IAddressCandidates));
+_COM_SMARTPTR_TYPEDEF(IAddressCandidates2, __uuidof(IAddressCandidates2));
+_COM_SMARTPTR_TYPEDEF(IAdvancedGeocoding, __uuidof(IAdvancedGeocoding));
+_COM_SMARTPTR_TYPEDEF(IAdvancedGeocoding2, __uuidof(IAdvancedGeocoding2));
+_COM_SMARTPTR_TYPEDEF(IBatchGeocoding, __uuidof(IBatchGeocoding));
+_COM_SMARTPTR_TYPEDEF(IIntersectionGeocoding, __uuidof(IIntersectionGeocoding));
+_COM_SMARTPTR_TYPEDEF(IAdvancedIntersectionGeocoding, __uuidof(IAdvancedIntersectionGeocoding));
+_COM_SMARTPTR_TYPEDEF(ISimpleStandardization, __uuidof(ISimpleStandardization));
+_COM_SMARTPTR_TYPEDEF(IReverseGeocodingProperties, __uuidof(IReverseGeocodingProperties));
+_COM_SMARTPTR_TYPEDEF(IReverseGeocoding, __uuidof(IReverseGeocoding));
+_COM_SMARTPTR_TYPEDEF(IGeocodingOutputs, __uuidof(IGeocodingOutputs));
+_COM_SMARTPTR_TYPEDEF(ICompositeLocator, __uuidof(ICompositeLocator));
+_COM_SMARTPTR_TYPEDEF(ILocator2, __uuidof(ILocator2));
+_COM_SMARTPTR_TYPEDEF(IESRILocatorReleaseInfo, __uuidof(IESRILocatorReleaseInfo));
+_COM_SMARTPTR_TYPEDEF(IESRILocatorBuildOptions, __uuidof(IESRILocatorBuildOptions));
+_COM_SMARTPTR_TYPEDEF(IESRILocatorBuildOptionsEdit, __uuidof(IESRILocatorBuildOptionsEdit));
+_COM_SMARTPTR_TYPEDEF(IAttachedLocator, __uuidof(IAttachedLocator));
+_COM_SMARTPTR_TYPEDEF(ILocatorManager, __uuidof(ILocatorManager));
+_COM_SMARTPTR_TYPEDEF(ILocatorManager2, __uuidof(ILocatorManager2));
+_COM_SMARTPTR_TYPEDEF(ILocatorWorkspaceName2, __uuidof(ILocatorWorkspaceName2));
+_COM_SMARTPTR_TYPEDEF(ILocalLocatorWorkspace, __uuidof(ILocalLocatorWorkspace));
+_COM_SMARTPTR_TYPEDEF(IDatabaseLocatorWorkspace, __uuidof(IDatabaseLocatorWorkspace));
+_COM_SMARTPTR_TYPEDEF(IAGSLocatorWorkspace, __uuidof(IAGSLocatorWorkspace));
+_COM_SMARTPTR_TYPEDEF(ILocatorAttach, __uuidof(ILocatorAttach));
+_COM_SMARTPTR_TYPEDEF(ILocatorAttach2, __uuidof(ILocatorAttach2));
+_COM_SMARTPTR_TYPEDEF(ILocatorEvents, __uuidof(ILocatorEvents));
+_COM_SMARTPTR_TYPEDEF(IGeocodedFeatureClass, __uuidof(IGeocodedFeatureClass));
+_COM_SMARTPTR_TYPEDEF(IGeocodingIndexCompute, __uuidof(IGeocodingIndexCompute));
+_COM_SMARTPTR_TYPEDEF(ILocatorImpl, __uuidof(ILocatorImpl));
+_COM_SMARTPTR_TYPEDEF(ILocatorDatasetImpl, __uuidof(ILocatorDatasetImpl));
+_COM_SMARTPTR_TYPEDEF(ISdeLocatorImpl, __uuidof(ISdeLocatorImpl));
+_COM_SMARTPTR_TYPEDEF(ISingleLineAddressInput, __uuidof(ISingleLineAddressInput));
+_COM_SMARTPTR_TYPEDEF(IDEAddressLocatorType, __uuidof(IDEAddressLocatorType));
+_COM_SMARTPTR_TYPEDEF(IGPAddressLocatorStyleType, __uuidof(IGPAddressLocatorStyleType));
+_COM_SMARTPTR_TYPEDEF(IDEAddressLocator, __uuidof(IDEAddressLocator));
+_COM_SMARTPTR_TYPEDEF(IGPAddressLocatorStyle, __uuidof(IGPAddressLocatorStyle));
+_COM_SMARTPTR_TYPEDEF(IGeocodeServer, __uuidof(IGeocodeServer));
+_COM_SMARTPTR_TYPEDEF(IGeocodeServerObjects, __uuidof(IGeocodeServerObjects));
+_COM_SMARTPTR_TYPEDEF(IInitGeocodeServer, __uuidof(IInitGeocodeServer));
+_COM_SMARTPTR_TYPEDEF(IGeocodeServerSingleLine, __uuidof(IGeocodeServerSingleLine));
+_COM_SMARTPTR_TYPEDEF(IRouteLocation, __uuidof(IRouteLocation));
+_COM_SMARTPTR_TYPEDEF(IRouteLocator, __uuidof(IRouteLocator));
+_COM_SMARTPTR_TYPEDEF(IRouteEventSource, __uuidof(IRouteEventSource));
+_COM_SMARTPTR_TYPEDEF(IRouteMeasurePointProperties, __uuidof(IRouteMeasurePointProperties));
+_COM_SMARTPTR_TYPEDEF(IRouteMeasurePointProperties2, __uuidof(IRouteMeasurePointProperties2));
+_COM_SMARTPTR_TYPEDEF(IRouteMeasureLineProperties, __uuidof(IRouteMeasureLineProperties));
+_COM_SMARTPTR_TYPEDEF(IRouteLocation2, __uuidof(IRouteLocation2));
+_COM_SMARTPTR_TYPEDEF(IRouteMeasurePointLocation, __uuidof(IRouteMeasurePointLocation));
+_COM_SMARTPTR_TYPEDEF(IRouteMeasureLineLocation, __uuidof(IRouteMeasureLineLocation));
+_COM_SMARTPTR_TYPEDEF(IRouteMeasureEventGeoprocessor, __uuidof(IRouteMeasureEventGeoprocessor));
+_COM_SMARTPTR_TYPEDEF(IRouteMeasureEventGeoprocessor2, __uuidof(IRouteMeasureEventGeoprocessor2));
+_COM_SMARTPTR_TYPEDEF(IRouteLocatorOperations, __uuidof(IRouteLocatorOperations));
+_COM_SMARTPTR_TYPEDEF(IRouteLocatorOperations2, __uuidof(IRouteLocatorOperations2));
+_COM_SMARTPTR_TYPEDEF(IRouteMeasureCalibrator, __uuidof(IRouteMeasureCalibrator));
+_COM_SMARTPTR_TYPEDEF(IRouteMeasureCalibrator2, __uuidof(IRouteMeasureCalibrator2));
+_COM_SMARTPTR_TYPEDEF(IRouteMeasureCreator, __uuidof(IRouteMeasureCreator));
+_COM_SMARTPTR_TYPEDEF(IRouteMeasureCreator2, __uuidof(IRouteMeasureCreator2));
+_COM_SMARTPTR_TYPEDEF(IEnumRouteIdentifyResult, __uuidof(IEnumRouteIdentifyResult));
+_COM_SMARTPTR_TYPEDEF(IRouteLocator2, __uuidof(IRouteLocator2));
+_COM_SMARTPTR_TYPEDEF(IRouteLayerExtension, __uuidof(IRouteLayerExtension));
+_COM_SMARTPTR_TYPEDEF(IHatchDefinition, __uuidof(IHatchDefinition));
+_COM_SMARTPTR_TYPEDEF(IHatchInputValue, __uuidof(IHatchInputValue));
+_COM_SMARTPTR_TYPEDEF(IHatchMarkerDefinition, __uuidof(IHatchMarkerDefinition));
+_COM_SMARTPTR_TYPEDEF(IHatchLineDefinition, __uuidof(IHatchLineDefinition));
+_COM_SMARTPTR_TYPEDEF(IEnumHatchDefinition, __uuidof(IEnumHatchDefinition));
+_COM_SMARTPTR_TYPEDEF(IHatchTemplate, __uuidof(IHatchTemplate));
+_COM_SMARTPTR_TYPEDEF(IHatchClass, __uuidof(IHatchClass));
+_COM_SMARTPTR_TYPEDEF(IHatchLayerExtension, __uuidof(IHatchLayerExtension));
+
+//
+// Type library items
+//
+
+enum __declspec(uuid("0f8b770f-3dbe-4759-a51c-5b0c8cfc50f7"))
+esriGeocodingError
+{
+    GEOCODING_E_REFDATA_NOT_REGISTERED = -2147220991,
+    GEOCODING_E_UICLASS_NOT_SUPPORTED = -2147220990,
+    GEOCODING_E_INTERSECTION_FIELDS_MISSING = -2147220989,
+    GEOCODING_E_REQUIRED_LOCATION_FIELD_MISSING = -2147220988,
+    GEOCODING_E_LOCATOR_CLASS_NOT_SUPPORTED = -2147220987,
+    GEOCODING_E_TABLE_HAS_NO_OID = -2147220986,
+    GEOCODING_E_TABLE_HAS_TOO_MANY_LOCATORS = -2147220985,
+    GEOCODING_E_TABLE_HAS_CORRUPTED_LOCATOR = -2147220983,
+    GEOCODING_E_INVALID_PROPERTIES = -2147220982,
+    GEOCODING_E_UNSUPPORTED_SSA_DATA = -2147220981,
+    GEOCODING_E_INVALID_LOCATOR_NAME = -2147220980,
+    GEOCODING_E_NOT_LOCATOR_OWNER = -2147220979,
+    GEOCODING_E_LOCATOR_ALREADY_EXISTS = -2147220978,
+    GEOCODING_E_CANNOT_CREATE_LOC_FILE = -2147220977,
+    GEOCODING_E_NO_LICENSE = -2147220976,
+    GEOCODING_E_STREETMAP_NOT_ENABLED = -2147220975,
+    GEOCODING_E_OPTIONAL_INTERFACE_NOT_SUPPORTED = -2147220974,
+    GEOCODING_E_LOCATOR_WKS_CANNOT_CREATE_LOCATOR = -2147220973,
+    GEOCODING_E_REBUILD_NOT_SUPPORTED_FOR_LOCATOR = -2147220972,
+    GEOCODING_E_LOCATOR_DOES_NOT_EXIST = -2147220971,
+    GEOCODING_E_REMOTE_WKS_COPY_NOT_SUPPORTED_FOR_LOCATOR = -2147220970,
+    GEOCODING_E_REVERSE_GEOCODE_NO_ADDRESS_FOUND = -2147220969
+};
+
+struct __declspec(uuid("bf00823e-71f7-11d3-9f5d-00c04f6bdf06"))
+ISdeLocator : ILocator
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Owner (
+        /*[out,retval]*/ BSTR * Owner ) = 0;
+};
+
+struct __declspec(uuid("600a589d-ddc1-11d3-9f74-00c04f8ed1c4"))
+IAddressInputs : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_AddressFields (
+        /*[out,retval]*/ struct IFields * * Fields ) = 0;
+      virtual HRESULT __stdcall get_DefaultInputFieldNames (
+        /*[in]*/ BSTR addressField,
+        /*[out,retval]*/ VARIANT * fieldNames ) = 0;
+};
+
+struct __declspec(uuid("600a5896-ddc1-11d3-9f74-00c04f8ed1c4"))
+IGeocodingProperties : IAddressInputs
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_MinimumMatchScore (
+        /*[out,retval]*/ long * MinimumMatchScore ) = 0;
+      virtual HRESULT __stdcall put_MinimumMatchScore (
+        /*[in]*/ long MinimumMatchScore ) = 0;
+      virtual HRESULT __stdcall get_MinimumCandidateScore (
+        /*[out,retval]*/ long * MinimumCandidateScore ) = 0;
+      virtual HRESULT __stdcall put_MinimumCandidateScore (
+        /*[in]*/ long MinimumCandidateScore ) = 0;
+      virtual HRESULT __stdcall get_SpellingSensitivity (
+        /*[out,retval]*/ long * SpellingSensitivity ) = 0;
+      virtual HRESULT __stdcall put_SpellingSensitivity (
+        /*[in]*/ long SpellingSensitivity ) = 0;
+      virtual HRESULT __stdcall get_EndOffset (
+        /*[out,retval]*/ long * EndOffset ) = 0;
+      virtual HRESULT __stdcall put_EndOffset (
+        /*[in]*/ long EndOffset ) = 0;
+      virtual HRESULT __stdcall get_SideOffset (
+        /*[out,retval]*/ double * SideOffset ) = 0;
+      virtual HRESULT __stdcall put_SideOffset (
+        /*[in]*/ double SideOffset ) = 0;
+      virtual HRESULT __stdcall get_SideOffsetUnits (
+        /*[out,retval]*/ enum esriUnits * SideOffsetUnits ) = 0;
+      virtual HRESULT __stdcall put_SideOffsetUnits (
+        /*[in]*/ enum esriUnits SideOffsetUnits ) = 0;
+      virtual HRESULT __stdcall get_AddXYCoordsToMatchFields (
+        /*[out,retval]*/ VARIANT_BOOL * bAddXYCoordsToMatchFields ) = 0;
+      virtual HRESULT __stdcall put_AddXYCoordsToMatchFields (
+        /*[in]*/ VARIANT_BOOL bAddXYCoordsToMatchFields ) = 0;
+      virtual HRESULT __stdcall get_AddStandardizeStringToMatchFields (
+        /*[out,retval]*/ VARIANT_BOOL * bAddStandardizeStringToMatchFields ) = 0;
+      virtual HRESULT __stdcall put_AddStandardizeStringToMatchFields (
+        /*[in]*/ VARIANT_BOOL bAddStandardizeStringToMatchFields ) = 0;
+      virtual HRESULT __stdcall get_AddReferenceIDToMatchFields (
+        /*[out,retval]*/ VARIANT_BOOL * bAddReferenceIDToMatchFields ) = 0;
+      virtual HRESULT __stdcall put_AddReferenceIDToMatchFields (
+        /*[in]*/ VARIANT_BOOL bAddReferenceIDToMatchFields ) = 0;
+      virtual HRESULT __stdcall get_AddPercentAlongToMatchFields (
+        /*[out,retval]*/ VARIANT_BOOL * bAddPercentAlongToMatchFields ) = 0;
+      virtual HRESULT __stdcall put_AddPercentAlongToMatchFields (
+        /*[in]*/ VARIANT_BOOL bAddPercentAlongToMatchFields ) = 0;
+      virtual HRESULT __stdcall get_MatchIfScoresTie (
+        /*[out,retval]*/ VARIANT_BOOL * bMatchIfScoresTie ) = 0;
+      virtual HRESULT __stdcall put_MatchIfScoresTie (
+        /*[in]*/ VARIANT_BOOL bMatchIfScoresTie ) = 0;
+      virtual HRESULT __stdcall put_DefaultInputFieldNames (
+        /*[in]*/ BSTR addressField,
+        /*[in]*/ VARIANT _arg2 ) = 0;
+      virtual HRESULT __stdcall get_IntersectionConnectors (
+        /*[out,retval]*/ BSTR * IntersectionConnectors ) = 0;
+      virtual HRESULT __stdcall put_IntersectionConnectors (
+        /*[in]*/ BSTR IntersectionConnectors ) = 0;
+      virtual HRESULT __stdcall get_UseRelativePaths (
+        /*[out,retval]*/ VARIANT_BOOL * bUseRelativePaths ) = 0;
+      virtual HRESULT __stdcall put_UseRelativePaths (
+        /*[in]*/ VARIANT_BOOL bUseRelativePaths ) = 0;
+};
+
+struct __declspec(uuid("896714a4-0313-4dbc-b471-5d4c6a6ec351"))
+IGeocodingProperties2 : IGeocodingProperties
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_EndOffsetDistance (
+        /*[out,retval]*/ double * EndOffset ) = 0;
+      virtual HRESULT __stdcall put_EndOffsetDistance (
+        /*[in]*/ double EndOffset ) = 0;
+      virtual HRESULT __stdcall get_EndOffsetDistanceUnits (
+        /*[out,retval]*/ enum esriUnits * EndOffsetDistanceUnits ) = 0;
+      virtual HRESULT __stdcall put_EndOffsetDistanceUnits (
+        /*[in]*/ enum esriUnits EndOffsetDistanceUnits ) = 0;
+};
+
+struct __declspec(uuid("600a5897-ddc1-11d3-9f74-00c04f8ed1c4"))
+IReferenceDataFile : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_PathName (
+        /*[out,retval]*/ BSTR * file ) = 0;
+      virtual HRESULT __stdcall put_PathName (
+        /*[in]*/ BSTR file ) = 0;
+      virtual HRESULT __stdcall get_Filters (
+        /*[out,retval]*/ struct IArray * * array ) = 0;
+};
+
+struct __declspec(uuid("0f56cefb-f7a8-4cc1-a195-7eab32c9e300"))
+IReferenceDataFile2 : IReferenceDataFile
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_FilterUIDs (
+        /*[out,retval]*/ struct IArray * * array ) = 0;
+};
+
+struct __declspec(uuid("ba6a5d80-10c7-11d4-9f7c-00c04f8ed1c4"))
+IReferenceDataIndex : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_DisplayName (
+        /*[out,retval]*/ BSTR * label ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_Exists (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall Build (
+        /*[in]*/ BSTR configKeyword,
+        /*[in]*/ struct ITrackCancel * cancelTracker ) = 0;
+};
+
+struct __declspec(uuid("ba6a5d81-10c7-11d4-9f7c-00c04f8ed1c4"))
+IReferenceDataIndexEdit : IReferenceDataIndex
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR _arg1 ) = 0;
+};
+
+struct __declspec(uuid("ba6a5d82-10c7-11d4-9f7c-00c04f8ed1c4"))
+IEnumReferenceDataIndex : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall Next (
+        /*[out,retval]*/ struct IReferenceDataIndex * * index ) = 0;
+      virtual HRESULT __stdcall Reset ( ) = 0;
+};
+
+struct __declspec(uuid("ba6a5d83-10c7-11d4-9f7c-00c04f8ed1c4"))
+IReferenceDataField : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_DisplayName (
+        /*[out,retval]*/ BSTR * label ) = 0;
+      virtual HRESULT __stdcall get_InternalName (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_IsObjectID (
+        /*[out,retval]*/ VARIANT_BOOL * bShape ) = 0;
+      virtual HRESULT __stdcall get_IsShape (
+        /*[out,retval]*/ VARIANT_BOOL * bShape ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_Required (
+        /*[out,retval]*/ VARIANT_BOOL * bRequired ) = 0;
+};
+
+struct __declspec(uuid("ba6a5d84-10c7-11d4-9f7c-00c04f8ed1c4"))
+IReferenceDataFieldEdit : IReferenceDataField
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_DefaultNames (
+        /*[out,retval]*/ VARIANT * fieldNames ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR _arg1 ) = 0;
+};
+
+struct __declspec(uuid("ba6a5d85-10c7-11d4-9f7c-00c04f8ed1c4"))
+IEnumReferenceDataField : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall Next (
+        /*[out,retval]*/ struct IReferenceDataField * * Field ) = 0;
+      virtual HRESULT __stdcall Reset ( ) = 0;
+};
+
+struct __declspec(uuid("ba6a5d86-10c7-11d4-9f7c-00c04f8ed1c4"))
+IReferenceDataTable : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_DisplayName (
+        /*[out,retval]*/ BSTR * label ) = 0;
+      virtual HRESULT __stdcall get_Fields (
+        /*[out,retval]*/ struct IEnumReferenceDataField * * Fields ) = 0;
+      virtual HRESULT __stdcall get_GeocodingIndexes (
+        /*[out,retval]*/ struct IEnumReferenceDataIndex * * GeocodingIndexes ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ struct ITableName * * Name ) = 0;
+      virtual HRESULT __stdcall get_Filters (
+        /*[out,retval]*/ struct IArray * * array ) = 0;
+};
+
+struct __declspec(uuid("e4441b08-0977-462a-86d5-c18e53ddef32"))
+IReferenceDataTable2 : IReferenceDataTable
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_FilterUIDs (
+        /*[out,retval]*/ struct IArray * * array ) = 0;
+};
+
+struct __declspec(uuid("ba6a5d87-10c7-11d4-9f7c-00c04f8ed1c4"))
+IReferenceDataTableEdit : IReferenceDataTable
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall putref_Name (
+        /*[in]*/ struct ITableName * _arg1 ) = 0;
+};
+
+struct __declspec(uuid("ba6a5d7f-10c7-11d4-9f7c-00c04f8ed1c4"))
+IEnumReferenceDataTable : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall Next (
+        /*[out,retval]*/ struct IReferenceDataTable * * Table ) = 0;
+      virtual HRESULT __stdcall Reset ( ) = 0;
+};
+
+struct __declspec(uuid("600a5898-ddc1-11d3-9f74-00c04f8ed1c4"))
+IReferenceDataTables : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Tables (
+        /*[out,retval]*/ struct IEnumReferenceDataTable * * Tables ) = 0;
+      virtual HRESULT __stdcall get_HasEnoughInfo (
+        /*[out,retval]*/ VARIANT_BOOL * bHasEnough ) = 0;
+};
+
+struct __declspec(uuid("e5aaa254-3ebd-49a7-aa9f-62ae8c762f9c"))
+IPlaceNameAlias : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Table (
+        /*[out,retval]*/ struct ITableName * * Name ) = 0;
+      virtual HRESULT __stdcall putref_Table (
+        /*[in]*/ struct ITableName * Name ) = 0;
+      virtual HRESULT __stdcall get_AliasField (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall put_AliasField (
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall get_AddressFields (
+        /*[out,retval]*/ BSTR * fieldList ) = 0;
+      virtual HRESULT __stdcall put_AddressFields (
+        /*[in]*/ BSTR fieldList ) = 0;
+      virtual HRESULT __stdcall get_DefaultAliasFieldNames (
+        /*[out,retval]*/ VARIANT * names ) = 0;
+      virtual HRESULT __stdcall put_DefaultAliasFieldNames (
+        /*[in]*/ VARIANT names ) = 0;
+};
+
+struct __declspec(uuid("600a589a-ddc1-11d3-9f74-00c04f8ed1c4"))
+IAddressGeocoding : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_MatchFields (
+        /*[out,retval]*/ struct IFields * * MatchFields ) = 0;
+      virtual HRESULT __stdcall MatchAddress (
+        /*[in]*/ struct IPropertySet * address,
+        /*[out,retval]*/ struct IPropertySet * * result ) = 0;
+      virtual HRESULT __stdcall MatchTable (
+        /*[in]*/ struct ITable * AddressTable,
+        /*[in]*/ BSTR addressFieldNames,
+        /*[in]*/ BSTR whereClause,
+        /*[in]*/ struct IFeatureClass * outputFeatureClass,
+        /*[in]*/ BSTR outputFieldNames,
+        /*[in]*/ struct IPropertySet * fieldsToCopy,
+        /*[in]*/ struct ITrackCancel * cancelTracker ) = 0;
+      virtual HRESULT __stdcall Validate ( ) = 0;
+};
+
+struct __declspec(uuid("600a5899-ddc1-11d3-9f74-00c04f8ed1c4"))
+IAddressCandidates : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_CandidateFields (
+        /*[out,retval]*/ struct IFields * * CandidateFields ) = 0;
+      virtual HRESULT __stdcall FindAddressCandidates (
+        /*[in]*/ struct IPropertySet * address,
+        /*[out,retval]*/ struct IArray * * results ) = 0;
+};
+
+struct __declspec(uuid("e62c17a3-595a-4a07-b862-a870aba99a98"))
+IAddressCandidates2 : IAddressCandidates
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall FindMatchingAddressCandidates (
+        /*[in]*/ struct IPropertySet * address,
+        /*[out,retval]*/ struct IArray * * results ) = 0;
+};
+
+struct __declspec(uuid("e0f10b74-eb7c-11d2-9f47-00c04f8ed1c4"))
+IAdvancedGeocoding : IAddressGeocoding
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_StandardizeFields (
+        /*[out,retval]*/ struct IFields * * StandardizeFields ) = 0;
+      virtual HRESULT __stdcall RematchTable (
+        /*[in]*/ struct ITable * pInputTable,
+        /*[in]*/ BSTR inputFieldNames,
+        /*[in]*/ BSTR InputJoinFieldName,
+        /*[in]*/ struct IFeatureClass * resultTable,
+        /*[in]*/ BSTR outputFieldNames,
+        /*[in]*/ BSTR OutputJoinFieldName,
+        /*[in]*/ BSTR whereClause,
+        /*[in]*/ struct ITrackCancel * cancelTracker ) = 0;
+      virtual HRESULT __stdcall MatchStandardizedAddress (
+        /*[in]*/ struct IPropertySet * standardizedAddress,
+        /*[out,retval]*/ struct IPropertySet * * result ) = 0;
+      virtual HRESULT __stdcall FindStandardizedAddressCandidates (
+        /*[in]*/ struct IPropertySet * standardizedAddress,
+        /*[out,retval]*/ struct IArray * * results ) = 0;
+      virtual HRESULT __stdcall StandardizeAddress (
+        /*[in]*/ struct IPropertySet * address,
+        /*[in,out]*/ VARIANT_BOOL * isAnIntersection,
+        /*[out,retval]*/ struct IPropertySet * * standardizedAddress ) = 0;
+};
+
+struct __declspec(uuid("79d7d550-9268-4b98-b147-fa5dfb3869d5"))
+IAdvancedGeocoding2 : IAdvancedGeocoding
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall MatchRecordSet (
+        /*[in]*/ struct ICursor * addressCursor,
+        /*[in]*/ BSTR addressFieldNames,
+        /*[in]*/ struct IRecordSetInit * outputRecordSet,
+        /*[in]*/ BSTR outputFieldNames,
+        /*[in]*/ struct IPropertySet * fieldsToCopy,
+        /*[in]*/ struct ITrackCancel * cancelTracker ) = 0;
+};
+
+struct __declspec(uuid("3a051259-c1d1-4e8f-bb6f-091f84b170c9"))
+IBatchGeocoding : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall RematchTable (
+        /*[in]*/ struct ITable * pInputTable,
+        /*[in]*/ BSTR inputFieldNames,
+        /*[in]*/ BSTR InputJoinFieldName,
+        /*[in]*/ struct IFeatureClass * resultTable,
+        /*[in]*/ BSTR outputFieldNames,
+        /*[in]*/ BSTR OutputJoinFieldName,
+        /*[in]*/ BSTR whereClause,
+        /*[in]*/ struct ITrackCancel * cancelTracker ) = 0;
+      virtual HRESULT __stdcall MatchRecordSet (
+        /*[in]*/ struct ICursor * addressCursor,
+        /*[in]*/ BSTR addressFieldNames,
+        /*[in]*/ struct IRecordSetInit * outputRecordSet,
+        /*[in]*/ BSTR outputFieldNames,
+        /*[in]*/ struct IPropertySet * fieldsToCopy,
+        /*[in]*/ struct ITrackCancel * cancelTracker ) = 0;
+};
+
+struct __declspec(uuid("5cd1b646-774c-11d3-9f61-00c04f8ed1c4"))
+IIntersectionGeocoding : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IntersectionCandidateFields (
+        /*[out,retval]*/ struct IFields * * candidateIntersectionFields ) = 0;
+      virtual HRESULT __stdcall IsIntersection (
+        /*[in]*/ struct IPropertySet * address,
+        /*[out,retval]*/ VARIANT_BOOL * isAnIntersection ) = 0;
+};
+
+struct __declspec(uuid("3466eb04-6482-11d3-9f57-00c04f6bdf06"))
+IAdvancedIntersectionGeocoding : IIntersectionGeocoding
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_StandardizeIntersectionFields (
+        /*[out,retval]*/ struct IFields * * StandardizeIntersectionFields ) = 0;
+      virtual HRESULT __stdcall MatchStandardizedIntersection (
+        /*[in]*/ struct IPropertySet * standardizedIntersection,
+        /*[out,retval]*/ struct IPropertySet * * result ) = 0;
+      virtual HRESULT __stdcall FindStandardizedIntersectionCandidates (
+        /*[in]*/ struct IPropertySet * standardizedIntersection,
+        /*[out,retval]*/ struct IArray * * results ) = 0;
+};
+
+struct __declspec(uuid("1bb3b08b-45fc-43f3-a141-928881076c38"))
+ISimpleStandardization : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SimpleStandardizeTable (
+        /*[in]*/ struct ITable * InputTable,
+        /*[in]*/ BSTR inputFieldsToConcatinate,
+        /*[in]*/ BSTR whereClause,
+        /*[in]*/ struct ITable * OutputTable,
+        /*[in]*/ BSTR outputFieldNames,
+        /*[in]*/ struct IPropertySet * fieldsToCopy,
+        /*[in]*/ struct ITrackCancel * cancelTracker ) = 0;
+      virtual HRESULT __stdcall get_SimpleStandardizeFields (
+        /*[out,retval]*/ struct IFields * * StandardizeFields ) = 0;
+      virtual HRESULT __stdcall SimpleStandardizeAddress (
+        /*[in]*/ BSTR address,
+        /*[out,retval]*/ struct IPropertySet * * standardizedAddress ) = 0;
+};
+
+struct __declspec(uuid("b693864f-4485-4d9a-a69e-3aa66153f44d"))
+IReverseGeocodingProperties : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_SearchDistance (
+        /*[out,retval]*/ double * SearchDistance ) = 0;
+      virtual HRESULT __stdcall put_SearchDistance (
+        /*[in]*/ double SearchDistance ) = 0;
+      virtual HRESULT __stdcall get_SearchDistanceUnits (
+        /*[out,retval]*/ enum esriUnits * SearchDistanceUnits ) = 0;
+      virtual HRESULT __stdcall put_SearchDistanceUnits (
+        /*[in]*/ enum esriUnits SearchDistanceUnits ) = 0;
+};
+
+struct __declspec(uuid("5af33731-8b62-4dd7-897c-faacc0cd575e"))
+IReverseGeocoding : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ReverseGeocode (
+        /*[in]*/ struct IPoint * location,
+        /*[in]*/ VARIANT_BOOL bReturnIntersection,
+        /*[out,retval]*/ struct IPropertySet * * ppResult ) = 0;
+};
+
+struct __declspec(uuid("cb7b12d8-b15e-4cd3-9efa-8d93f384bd7b"))
+IGeocodingOutputs : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_MatchFields (
+        /*[out,retval]*/ struct IFields * * MatchFields ) = 0;
+};
+
+struct __declspec(uuid("096760f8-2253-4f07-828a-8be24dc67bfe"))
+ICompositeLocator : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_LocatorNames (
+        /*[out,retval]*/ VARIANT * LocatorNames ) = 0;
+      virtual HRESULT __stdcall get_Locator (
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ struct ILocator * * Locator ) = 0;
+};
+
+struct __declspec(uuid("09d6643b-d40f-4988-86f5-432952fc38e7"))
+ILocator2 : ILocator
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_BuildTime (
+        /*[out,retval]*/ VARIANT * BuildTime ) = 0;
+};
+
+struct __declspec(uuid("fde5639f-468d-4f00-9558-6246e56e7852"))
+IESRILocatorReleaseInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Release (
+        /*[out,retval]*/ BSTR * Release ) = 0;
+};
+
+struct __declspec(uuid("92a704b6-ee5b-4513-a4ff-0205866fa5a6"))
+IESRILocatorBuildOptions : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_StoreStandardizedRefData (
+        /*[out,retval]*/ VARIANT_BOOL * bStoreStandardizedRefData ) = 0;
+      virtual HRESULT __stdcall get_EmbedGeocodingRules (
+        /*[out,retval]*/ VARIANT_BOOL * bEmbedGeocodingRules ) = 0;
+      virtual HRESULT __stdcall get_GDBVersionName (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+};
+
+struct __declspec(uuid("a85f8063-4e7b-4266-b5ac-be4232524d9e"))
+IESRILocatorBuildOptionsEdit : IESRILocatorBuildOptions
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_StoreStandardizedRefData (
+        /*[in]*/ VARIANT_BOOL _arg1 ) = 0;
+      virtual HRESULT __stdcall put_EmbedGeocodingRules (
+        /*[in]*/ VARIANT_BOOL _arg1 ) = 0;
+      virtual HRESULT __stdcall put_GDBVersionName (
+        /*[in]*/ BSTR _arg1 ) = 0;
+};
+
+struct __declspec(uuid("f8e03be8-c882-11d3-9f6c-00c04f8ed1c4"))
+IAttachedLocator : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_InputTable (
+        /*[out,retval]*/ struct ITable * * Table ) = 0;
+      virtual HRESULT __stdcall get_InputFieldNamesList (
+        /*[out,retval]*/ BSTR * fieldNames ) = 0;
+      virtual HRESULT __stdcall get_InputJoinFieldName (
+        /*[out,retval]*/ BSTR * fieldName ) = 0;
+      virtual HRESULT __stdcall get_OutputTable (
+        /*[out,retval]*/ struct ITable * * Table ) = 0;
+      virtual HRESULT __stdcall get_OutputFieldNamesList (
+        /*[out,retval]*/ BSTR * fieldNames ) = 0;
+      virtual HRESULT __stdcall get_OutputJoinFieldName (
+        /*[out,retval]*/ BSTR * fieldName ) = 0;
+      virtual HRESULT __stdcall get_Locator (
+        /*[out,retval]*/ struct ILocator * * Locator ) = 0;
+};
+
+struct __declspec(uuid("e0f10b76-eb7c-11d2-9f47-00c04f8ed1c4"))
+ILocatorManager : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetLocatorWorkspace (
+        /*[in]*/ struct IWorkspace * wks,
+        /*[out,retval]*/ struct ILocatorWorkspace * * locWks ) = 0;
+      virtual HRESULT __stdcall GetLocatorWorkspaceFromPath (
+        /*[in]*/ BSTR Path,
+        /*[out,retval]*/ struct ILocatorWorkspace * * locWks ) = 0;
+      virtual HRESULT __stdcall HasLocatorAttached (
+        /*[in]*/ struct IDatasetName * datasetName,
+        /*[out,retval]*/ VARIANT_BOOL * bHasLocatorAttached ) = 0;
+      virtual HRESULT __stdcall GetLocatorFromDataset (
+        /*[in]*/ struct IDataset * dataset,
+        /*[out,retval]*/ struct IAttachedLocator * * AttachedLocator ) = 0;
+};
+
+struct __declspec(uuid("08fc0263-7a3f-4f34-9fea-975b9b5e16c8"))
+ILocatorManager2 : ILocatorManager
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetAGSLocatorWorkspace (
+        /*[in]*/ struct IAGSServerConnectionName * serverConnection,
+        /*[out,retval]*/ struct ILocatorWorkspace * * locWks ) = 0;
+};
+
+struct __declspec(uuid("f47bb961-8885-4cdc-9c85-00be5dd6d903"))
+ILocatorWorkspaceName2 : ILocatorWorkspaceName
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_AGSServerConnectionName (
+        /*[out,retval]*/ struct IAGSServerConnectionName * * serverConnection ) = 0;
+      virtual HRESULT __stdcall putref_AGSServerConnectionName (
+        /*[in]*/ struct IAGSServerConnectionName * serverConnection ) = 0;
+};
+
+struct __declspec(uuid("a922679e-16dd-4fa5-8b0e-aafa5d8e2917"))
+ILocalLocatorWorkspace : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Path (
+        /*[out,retval]*/ BSTR * Path ) = 0;
+};
+
+struct __declspec(uuid("4f30b220-8e22-11d3-9f69-00c04f6bdf06"))
+IDatabaseLocatorWorkspace : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Workspace (
+        /*[out,retval]*/ struct IWorkspace * * wks ) = 0;
+};
+
+struct __declspec(uuid("b7d1d9a0-8da7-45b8-b3ed-b07b8ffb5721"))
+IAGSLocatorWorkspace : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_AGSServerConnection (
+        /*[out,retval]*/ struct IAGSServerConnectionName * * serverConnection ) = 0;
+};
+
+struct __declspec(uuid("d12b2dca-775a-11d3-9f5e-00c04f6bdf06"))
+ILocatorAttach : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall AttachLocator (
+        /*[in]*/ struct ILocator * Locator,
+        /*[in]*/ struct ITable * attachToTable,
+        /*[in]*/ struct ITable * InputTable,
+        /*[in]*/ BSTR inputFieldNames,
+        /*[in]*/ BSTR InputJoinFieldName,
+        /*[in]*/ struct ITable * OutputTable,
+        /*[in]*/ BSTR outputFieldNames,
+        /*[in]*/ BSTR OutputJoinFieldName ) = 0;
+};
+
+struct __declspec(uuid("301bd67a-8042-4dcc-8375-d2697239e9a5"))
+ILocatorAttach2 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall AttachLocator (
+        /*[in]*/ struct ILocator * Locator,
+        /*[in]*/ struct ITable * attachToTable,
+        /*[in]*/ BSTR inputFieldNames,
+        /*[in]*/ BSTR outputFieldNames ) = 0;
+};
+
+struct __declspec(uuid("a5c49c70-b80c-41a3-9a90-e40cbf8b0686"))
+ILocatorEvents : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall OnBuild (
+        /*[in]*/ VARIANT_BOOL rebuild,
+        /*[in]*/ BSTR tableName,
+        /*[in]*/ BSTR configKeyword,
+        /*[in]*/ struct ITrackCancel * pCancelTracker ) = 0;
+      virtual HRESULT __stdcall OnDelete (
+        /*[in]*/ struct ITrackCancel * pCancelTracker ) = 0;
+      virtual HRESULT __stdcall OnRename (
+        /*[in]*/ BSTR newName,
+        /*[in]*/ struct ITrackCancel * pCancelTracker ) = 0;
+      virtual HRESULT __stdcall OnCopy (
+        /*[in]*/ struct ILocatorWorkspace * pNewLocWks,
+        /*[in]*/ BSTR newName,
+        /*[in]*/ struct IPropertySet * pNewProps,
+        /*[in]*/ BSTR configKeyword,
+        /*[in]*/ struct ITrackCancel * pCancelTracker ) = 0;
+};
+
+struct __declspec(uuid("0c79caa6-cdef-11d3-9f6e-00c04f8ed1c4"))
+IGeocodedFeatureClass : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall NeedsUpdate (
+        /*[in]*/ struct IObject * address,
+        /*[in]*/ struct IFeature * shape,
+        /*[out,retval]*/ VARIANT_BOOL * bNeedsUpdate ) = 0;
+      virtual HRESULT __stdcall GeocodeAddress (
+        /*[in]*/ struct IObject * address,
+        /*[in]*/ struct IFeature * result ) = 0;
+};
+
+struct __declspec(uuid("6dd91390-d42c-11d3-9f71-00c04f8ed1c4"))
+IGeocodingIndexCompute : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ComputeIndexRow (
+        /*[in]*/ struct IObject * SourceRow,
+        /*[in]*/ struct IObject * indexRow ) = 0;
+};
+
+struct __declspec(uuid("cff73580-6c73-11d3-9f5c-00c04f6bdf06"))
+ILocatorImpl : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall put_Category (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall get_Properties (
+        /*[out,retval]*/ struct IPropertySet * * props ) = 0;
+      virtual HRESULT __stdcall put_Properties (
+        /*[in]*/ struct IPropertySet * props ) = 0;
+};
+
+struct __declspec(uuid("d8323fbd-789e-43fb-bb8d-0e0ffa4c1f4c"))
+ILocatorDatasetImpl : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_LocatorWorkspaceName (
+        /*[in]*/ struct ILocatorWorkspaceName * _arg1 ) = 0;
+};
+
+struct __declspec(uuid("c229a286-71f4-11d3-9f5d-00c04f6bdf06"))
+ISdeLocatorImpl : ILocatorImpl
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Workspace (
+        /*[out,retval]*/ struct IWorkspace * * wks ) = 0;
+      virtual HRESULT __stdcall putref_Workspace (
+        /*[in]*/ struct IWorkspace * wks ) = 0;
+      virtual HRESULT __stdcall put_Owner (
+        /*[in]*/ BSTR _arg1 ) = 0;
+};
+
+struct __declspec(uuid("42825b3a-5b8e-485d-bcbc-895f7d06c9c2"))
+ISingleLineAddressInput : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_SingleLineAddressField (
+        /*[out,retval]*/ struct IField * * singleLineField ) = 0;
+      virtual HRESULT __stdcall get_DefaultInputFieldNames (
+        /*[out,retval]*/ VARIANT * fieldNames ) = 0;
+};
+
+struct __declspec(uuid("e0f10b7a-eb7c-11d2-9f47-00c04f8ed1c4"))
+LocatorManager;
+    // [ default ] interface IUnknown
+    // interface ILocatorManager
+    // interface ILocatorManager2
+    // interface IParseNameString
+    // interface IWorkspaceDataElements
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("9685caf0-bf13-4283-b388-a5730352c778"))
+LocatorWorkspaceName;
+    // [ default ] interface IUnknown
+    // interface IName
+    // interface ILocatorWorkspaceName
+    // interface ILocatorWorkspaceName2
+    // interface IPersistStream
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("e0f10b7c-eb7c-11d2-9f47-00c04f8ed1c4"))
+GenericLocatorStyle;
+    // [ default ] interface IUnknown
+    // interface ILocator
+    // interface ILocatorStyle
+    // interface IPropertySet
+    // interface IClone
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("c24ffe64-88be-11d3-9f66-00c04f6bdf06"))
+LocatorName;
+    // [ default ] interface IUnknown
+    // interface IName
+    // interface ILocatorName
+    // interface IPersistStream
+    // interface ISupportErrorInfo
+    // interface IMetadata
+    // interface ISQLPrivilege
+
+struct __declspec(uuid("d2f10d5b-44e5-4350-8e90-61bb1cb591c4"))
+ESRIFDOAddressLocatorStyle;
+    // [ default ] interface IUnknown
+    // interface IClone
+    // interface IAddressInputs
+    // interface IGeocodingProperties
+    // interface IReferenceDataTables
+    // interface ILocator2
+    // interface ILocatorStyle
+    // interface IPlaceNameAlias
+    // interface ISimpleStandardization
+    // interface ISupportErrorInfo
+    // interface IReverseGeocodingProperties
+    // interface IGeocodingOutputs
+    // interface IESRILocatorReleaseInfo
+    // interface IESRILocatorBuildOptionsEdit
+
+struct __declspec(uuid("bdc38221-7231-46eb-a565-66bbb6844db1"))
+StreetMapAddressLocatorStyle;
+    // [ default ] interface IUnknown
+    // interface IClone
+    // interface IAddressInputs
+    // interface IGeocodingProperties
+    // interface IReferenceDataFile2
+    // interface ILocator2
+    // interface ILocatorStyle
+    // interface IPlaceNameAlias
+    // interface ISimpleStandardization
+    // interface ISupportErrorInfo
+    // interface IReverseGeocodingProperties
+    // interface IGeocodingOutputs
+    // interface IESRILocatorReleaseInfo
+
+struct __declspec(uuid("46ef9422-8a29-4dcd-985b-fffd5ccfe9fe"))
+ESRIFDOAddressLocator;
+    // [ default ] interface IUnknown
+    // interface IClone
+    // interface ILocatorDataset
+    // interface ILocator2
+    // interface ISdeLocator
+    // interface IAddressInputs
+    // interface IGeocodingProperties
+    // interface IAddressGeocoding
+    // interface IAdvancedGeocoding2
+    // interface IIntersectionGeocoding
+    // interface IAdvancedIntersectionGeocoding
+    // interface IReferenceDataTables
+    // interface IPlaceNameAlias
+    // interface IAddressCandidates
+    // interface ISimpleStandardization
+    // interface ISupportErrorInfo
+    // interface IReverseGeocodingProperties
+    // interface IReverseGeocoding
+    // interface IESRILocatorReleaseInfo
+    // interface IESRILocatorBuildOptionsEdit
+    // interface ISQLPrivilege
+
+struct __declspec(uuid("f21aa707-a028-48ea-acc4-032b1edbe9eb"))
+StreetMapAddressLocator;
+    // [ default ] interface IUnknown
+    // interface IClone
+    // interface ILocatorDataset
+    // interface ILocator2
+    // interface ISdeLocator
+    // interface IAddressInputs
+    // interface IGeocodingProperties
+    // interface IAddressGeocoding
+    // interface IAdvancedGeocoding2
+    // interface IIntersectionGeocoding
+    // interface IAdvancedIntersectionGeocoding
+    // interface IReferenceDataFile2
+    // interface IPlaceNameAlias
+    // interface IAddressCandidates
+    // interface ISimpleStandardization
+    // interface ISupportErrorInfo
+    // interface IReverseGeocodingProperties
+    // interface IReverseGeocoding
+
+struct __declspec(uuid("29b85a89-d2ce-4aeb-bc3f-661a3d2c296e"))
+CompositeLocator;
+    // [ default ] interface IUnknown
+    // interface IClone
+    // interface ILocatorDataset
+    // interface ILocator
+    // interface IAddressInputs
+    // interface IGeocodingProperties
+    // interface IAddressGeocoding
+    // interface IAdvancedGeocoding2
+    // interface IIntersectionGeocoding
+    // interface IAdvancedIntersectionGeocoding
+    // interface ISupportErrorInfo
+    // interface IReverseGeocodingProperties
+    // interface IReverseGeocoding
+    // interface ICompositeLocator
+    // interface ISingleLineAddressInput
+
+struct __declspec(uuid("689e2885-f5ed-42e5-bea0-5bc3e3ff95cd"))
+DatabaseLocatorWorkspace;
+    // [ default ] interface IUnknown
+    // interface ILocatorWorkspace
+    // interface IDatabaseLocatorWorkspace
+    // interface ILocatorAttach
+    // interface ILocatorAttach2
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("2256d333-a938-4e41-a7be-854bd7bcee59"))
+LocalLocatorWorkspace;
+    // [ default ] interface IUnknown
+    // interface ILocatorWorkspace
+    // interface ILocalLocatorWorkspace
+    // interface ILocatorAttach
+    // interface ILocatorAttach2
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("42ce2a3b-0ce3-4ca6-8339-9e55a76f30e2"))
+AttachedLocator;
+    // [ default ] interface IUnknown
+    // interface IAttachedLocator
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("fd2296ff-d564-4538-937d-f6508cb9e16f"))
+LocatorEnumerator;
+    // [ default ] interface IUnknown
+    // interface IEnumLocator
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("1238f292-ec47-4128-a7df-f3ae27887a91"))
+LocatorNameEnumerator;
+    // [ default ] interface IUnknown
+    // interface IEnumLocatorName
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("e31fc748-e203-4371-b2e3-d816526c71d1"))
+ReferenceDataTableEnumerator;
+    // [ default ] interface IUnknown
+    // interface IEnumReferenceDataTable
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("d4755a0c-f736-41ae-93d9-147594e7b298"))
+ReferenceDataTable;
+    // [ default ] interface IUnknown
+    // interface IReferenceDataTable2
+    // interface IReferenceDataTableEdit
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("acc060dd-80e0-4f88-8ae0-d4783799cc58"))
+ReferenceDataFieldsEnumerator;
+    // [ default ] interface IUnknown
+    // interface IEnumReferenceDataField
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("4a78a2a3-1dde-44b0-a7e1-fa52d21168d3"))
+ReferenceDataField;
+    // [ default ] interface IUnknown
+    // interface IReferenceDataField
+    // interface IReferenceDataFieldEdit
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("4672d87f-c1aa-4240-9a30-4399529c1b02"))
+ReferenceDataIndexEnumerator;
+    // [ default ] interface IUnknown
+    // interface IEnumReferenceDataIndex
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("2c45da9a-1b05-4349-accc-be154ee2ca65"))
+ReferenceDataIndex;
+    // [ default ] interface IUnknown
+    // interface IReferenceDataIndex
+    // interface IReferenceDataIndexEdit
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("0c79caa4-cdef-11d3-9f6e-00c04f8ed1c4"))
+GeocodedFeature;
+    // [ default ] interface IUnknown
+    // interface IRow
+    // interface IRowBuffer
+    // interface IRowEvents
+    // interface IRowSubtypes
+    // interface IRowChanges
+    // interface IFeature
+    // interface IFeatureBuffer
+    // interface IFeatureEvents
+    // interface IFeatureChanges
+    // interface IValidate
+    // interface IFeatureDraw
+    // interface IRowEdit
+    // interface IFeatureEdit
+    // interface IFeatureSimplify
+    // interface IRelatedObjectEvents
+    // interface IRowCompare
+    // interface ISupportErrorInfo
+    // interface IFeatureProject
+
+struct __declspec(uuid("0c79caa5-cdef-11d3-9f6e-00c04f8ed1c4"))
+GeocodedFeatureClassExtension;
+    // [ default ] interface IUnknown
+    // interface IClassExtension
+    // interface IObjectClassExtension
+    // interface IFeatureClassExtension
+    // interface IRelatedObjectClassEvents
+    // interface IGeocodedFeatureClass
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("6dd9138e-d42c-11d3-9f71-00c04f8ed1c4"))
+GeocodingIndexObject;
+    // [ default ] interface IUnknown
+    // interface IRow
+    // interface IRowBuffer
+    // interface IRowEvents
+    // interface IRowSubtypes
+    // interface IRowChanges
+    // interface IValidate
+    // interface IObject
+    // interface IRowEdit
+    // interface IRelatedObjectEvents
+    // interface IRowCompare
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("6dd9138f-d42c-11d3-9f71-00c04f8ed1c4"))
+GeocodingIndexClassExtension;
+    // [ default ] interface IUnknown
+    // interface IClassExtension
+    // interface IObjectClassExtension
+    // interface IRelatedObjectClassEvents
+    // interface IGeocodingIndexCompute
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("d876fece-c16c-44cb-86b2-f04bb8e93d59"))
+SoundexTableClassExtension;
+    // [ default ] interface IUnknown
+    // interface IClassExtension
+    // interface IObjectClassExtension
+    // interface IRelatedObjectClassEvents
+    // interface IRelatedObjectClassEvents2
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("e3894683-d749-4206-9b01-54933db6f615"))
+IDEAddressLocatorType : IUnknown
+{};
+
+struct __declspec(uuid("dc4cd653-673e-48a4-be0b-8dcf08407103"))
+IGPAddressLocatorStyleType : IUnknown
+{};
+
+struct __declspec(uuid("8a88d12f-6515-4b30-bf46-e1092ef83ff1"))
+DEAddressLocatorType;
+    // [ default ] interface IUnknown
+    // interface IDEAddressLocatorType
+    // interface IDataElementType
+    // interface IGxFilterInfo
+    // interface IGPDataType
+    // interface IClone
+
+struct __declspec(uuid("d72424d6-2d82-4f90-a2cf-37d911ae628b"))
+GPAddressLocatorStyleType;
+    // [ default ] interface IUnknown
+    // interface IGPAddressLocatorStyleType
+    // interface IGPDataType
+    // interface IClone
+
+struct __declspec(uuid("ecd14972-5ecd-4a6f-b62f-b741dd429e3c"))
+IDEAddressLocator : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_AddressFields (
+        /*[out,retval]*/ struct IFields * * AddressFields ) = 0;
+      virtual HRESULT __stdcall putref_AddressFields (
+        /*[in]*/ struct IFields * AddressFields ) = 0;
+      virtual HRESULT __stdcall get_DefaultInputFieldNames (
+        /*[in]*/ BSTR addressFieldName,
+        /*[out,retval]*/ VARIANT * DefaultFieldNames ) = 0;
+      virtual HRESULT __stdcall put_DefaultInputFieldNames (
+        /*[in]*/ BSTR addressFieldName,
+        /*[in]*/ VARIANT DefaultFieldNames ) = 0;
+      virtual HRESULT __stdcall get_MatchFields (
+        /*[out,retval]*/ struct IFields * * MatchFields ) = 0;
+      virtual HRESULT __stdcall putref_MatchFields (
+        /*[in]*/ struct IFields * MatchFields ) = 0;
+      virtual HRESULT __stdcall get_AddressTable (
+        /*[out,retval]*/ struct IDETable * * AddressTable ) = 0;
+      virtual HRESULT __stdcall putref_AddressTable (
+        /*[in]*/ struct IDETable * AddressTable ) = 0;
+      virtual HRESULT __stdcall get_LocatorPropsRetrieved (
+        /*[out,retval]*/ VARIANT_BOOL * propsRetrieved ) = 0;
+      virtual HRESULT __stdcall put_LocatorPropsRetrieved (
+        /*[in]*/ VARIANT_BOOL propsRetrieved ) = 0;
+};
+
+struct __declspec(uuid("4352d4db-7256-4b52-abfb-cfb59a78a26d"))
+IGPAddressLocatorStyle : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall get_SimpleStandardizeFields (
+        /*[out,retval]*/ struct IFields * * StandardizeFields ) = 0;
+      virtual HRESULT __stdcall putref_SimpleStandardizeFields (
+        /*[in]*/ struct IFields * StandardizeFields ) = 0;
+      virtual HRESULT __stdcall get_AddressFields (
+        /*[out,retval]*/ struct IFields * * AddressFields ) = 0;
+      virtual HRESULT __stdcall putref_AddressFields (
+        /*[in]*/ struct IFields * AddressFields ) = 0;
+      virtual HRESULT __stdcall get_DefaultInputFieldNames (
+        /*[in]*/ BSTR addressFieldName,
+        /*[out,retval]*/ VARIANT * DefaultNames ) = 0;
+      virtual HRESULT __stdcall put_DefaultInputFieldNames (
+        /*[in]*/ BSTR addressFieldName,
+        /*[in]*/ VARIANT DefaultNames ) = 0;
+      virtual HRESULT __stdcall get_MatchFields (
+        /*[out,retval]*/ struct IFields * * MatchFields ) = 0;
+      virtual HRESULT __stdcall putref_MatchFields (
+        /*[in]*/ struct IFields * MatchFields ) = 0;
+      virtual HRESULT __stdcall get_ReferenceDataTableCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall put_ReferenceDataTableCount (
+        /*[in]*/ long Count ) = 0;
+      virtual HRESULT __stdcall get_ReferenceDataTableName (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall put_ReferenceDataTableName (
+        /*[in]*/ long index,
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall get_ReferenceDataFilters (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IArray * * Filters ) = 0;
+      virtual HRESULT __stdcall get_ReferenceDataFilterUIDs (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IArray * * Filters ) = 0;
+      virtual HRESULT __stdcall putref_ReferenceDataFilterUIDs (
+        /*[in]*/ long index,
+        /*[in]*/ struct IArray * Filters ) = 0;
+      virtual HRESULT __stdcall get_ReferenceDataFields (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IFields * * Fields ) = 0;
+      virtual HRESULT __stdcall putref_ReferenceDataFields (
+        /*[in]*/ long index,
+        /*[in]*/ struct IFields * Fields ) = 0;
+      virtual HRESULT __stdcall get_DefaultFieldNames (
+        /*[in]*/ long tableIndex,
+        /*[in]*/ long fieldIndex,
+        /*[out,retval]*/ VARIANT * DefaultNames ) = 0;
+      virtual HRESULT __stdcall putref_DefaultFieldNames (
+        /*[in]*/ long tableIndex,
+        /*[in]*/ long fieldIndex,
+        /*[in]*/ VARIANT DefaultNames ) = 0;
+      virtual HRESULT __stdcall get_MappedTable (
+        /*[in]*/ BSTR refDataTable,
+        /*[out,retval]*/ struct IDETable * * Table ) = 0;
+      virtual HRESULT __stdcall putref_MappedTable (
+        /*[in]*/ BSTR refDataTable,
+        /*[in]*/ struct IDETable * Table ) = 0;
+      virtual HRESULT __stdcall get_SupportsPlaceNameAliasTable (
+        /*[out,retval]*/ VARIANT_BOOL * supportsPNAT ) = 0;
+      virtual HRESULT __stdcall put_SupportsPlaceNameAliasTable (
+        /*[in]*/ VARIANT_BOOL supportsPNAT ) = 0;
+      virtual HRESULT __stdcall get_DefaultAliasFieldNames (
+        /*[out,retval]*/ VARIANT * DefaultAliasFieldNames ) = 0;
+      virtual HRESULT __stdcall put_DefaultAliasFieldNames (
+        /*[in]*/ VARIANT DefaultAliasFieldNames ) = 0;
+      virtual HRESULT __stdcall get_AliasTable (
+        /*[out,retval]*/ struct IDETable * * AliasTable ) = 0;
+      virtual HRESULT __stdcall putref_AliasTable (
+        /*[in]*/ struct IDETable * AliasTable ) = 0;
+};
+
+struct __declspec(uuid("69175164-88eb-446d-8291-aaf0aca3e9d8"))
+DEAddressLocator;
+    // [ default ] interface IUnknown
+    // interface IDEAddressLocator
+    // interface IDataElement
+    // interface IMetadata
+    // interface IGPValue
+    // interface IClone
+    // interface IPersistStream
+    // interface IXMLSerialize
+
+struct __declspec(uuid("c0b10685-71f8-4cd2-b33a-8c9190b8e807"))
+GPAddressLocatorStyle;
+    // [ default ] interface IUnknown
+    // interface IGPAddressLocatorStyle
+    // interface IGPValue
+    // interface IClone
+    // interface IPersistStream
+    // interface IXMLSerialize
+
+struct __declspec(uuid("413c86b6-1326-42ac-b6ab-9b31a8c2da18"))
+AddressLocatorWorkspaceExtension;
+    // [ default ] interface IUnknown
+    // interface IWorkspaceExtension
+    // interface IWorkspaceExtension2
+    // interface IWorkspaceExtensionControl
+
+struct __declspec(uuid("13ce65b9-1650-4137-a0f1-e618007cbedc"))
+RSLocator;
+    // [ default ] interface IUnknown
+    // interface ILocator
+    // interface ILocator2
+    // interface ILocatorImpl
+    // interface ILocatorDataset
+    // interface IAddressInputs
+    // interface IAddressGeocoding
+    // interface IAddressCandidates
+    // interface IAddressCandidates2
+    // interface IReverseGeocoding
+    // interface IReverseGeocodingProperties
+    // interface IIntersectionGeocoding
+    // interface IGeocodingProperties
+    // interface IClone
+
+struct __declspec(uuid("da70b7e3-10b2-42e3-bff7-6c81355862bc"))
+ESRIGen2AddressLocator;
+    // [ default ] interface IUnknown
+    // interface ILocator
+    // interface ILocator2
+    // interface ILocatorImpl
+    // interface ILocatorDataset
+    // interface IAddressInputs
+    // interface IAddressGeocoding
+    // interface IAddressCandidates
+    // interface IAddressCandidates2
+    // interface IBatchGeocoding
+    // interface IClone
+    // interface IESRILocatorBuildOptionsEdit
+    // interface IIntersectionGeocoding
+    // interface IGeocodingProperties
+    // interface IGeocodingProperties2
+    // interface IPlaceNameAlias
+    // interface IESRILocatorReleaseInfo
+    // interface IReferenceDataTables
+    // interface IReverseGeocoding
+    // interface IReverseGeocodingProperties
+    // interface ISdeLocator
+    // interface ISingleLineAddressInput
+    // interface ISQLPrivilege
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("5ec87827-40c2-4f02-8abb-5128afca13eb"))
+ESRIGen2AddressLocatorStyle;
+    // [ default ] interface IUnknown
+    // interface ILocator
+    // interface ILocator2
+    // interface ILocatorStyle
+    // interface IAddressInputs
+    // interface IClone
+    // interface IESRILocatorBuildOptionsEdit
+    // interface IGeocodingProperties
+    // interface IGeocodingProperties2
+    // interface IGeocodingOutputs
+    // interface IPlaceNameAlias
+    // interface IESRILocatorReleaseInfo
+    // interface IReferenceDataTables
+    // interface IReverseGeocodingProperties
+    // interface ISimpleStandardization
+    // interface ISingleLineAddressInput
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("aceef5ee-f5f0-4824-9e7e-dd6ff465edab"))
+GPGeocodingDataTypeFactory;
+    // [ default ] interface IUnknown
+    // interface IGPDataTypeFactory
+
+struct __declspec(uuid("5918bc71-27dc-41d7-8282-a0871a612923"))
+IGeocodeServer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GeocodeAddress (
+        /*[in]*/ struct IPropertySet * address,
+        /*[in]*/ struct IPropertySet * propMods,
+        /*[out,retval]*/ struct IPropertySet * * result ) = 0;
+      virtual HRESULT __stdcall GeocodeAddresses (
+        /*[in]*/ struct IRecordSet * AddressTable,
+        /*[in]*/ struct IPropertySet * addressFieldMapping,
+        /*[in]*/ struct IPropertySet * propMods,
+        /*[out,retval]*/ struct IRecordSet * * resultTable ) = 0;
+      virtual HRESULT __stdcall StandardizeAddress (
+        /*[in]*/ struct IPropertySet * address,
+        /*[in]*/ struct IPropertySet * propMods,
+        /*[out,retval]*/ struct IPropertySet * * standardizedAddress ) = 0;
+      virtual HRESULT __stdcall FindAddressCandidates (
+        /*[in]*/ struct IPropertySet * address,
+        /*[in]*/ struct IPropertySet * propMods,
+        /*[out,retval]*/ struct IRecordSet * * results ) = 0;
+      virtual HRESULT __stdcall GetAddressFields (
+        /*[out,retval]*/ struct IFields * * fieldsInfo ) = 0;
+      virtual HRESULT __stdcall GetCandidateFields (
+        /*[in]*/ struct IPropertySet * propMods,
+        /*[out,retval]*/ struct IFields * * candidateFieldsInfo ) = 0;
+      virtual HRESULT __stdcall GetIntersectionCandidateFields (
+        /*[in]*/ struct IPropertySet * propMods,
+        /*[out,retval]*/ struct IFields * * candidateIntersectionFieldsInfo ) = 0;
+      virtual HRESULT __stdcall GetStandardizedFields (
+        /*[out,retval]*/ struct IFields * * standardizedFieldsInfo ) = 0;
+      virtual HRESULT __stdcall GetStandardizedIntersectionFields (
+        /*[out,retval]*/ struct IFields * * standardizedFieldsInfo ) = 0;
+      virtual HRESULT __stdcall GetResultFields (
+        /*[in]*/ struct IPropertySet * propMods,
+        /*[out,retval]*/ struct IFields * * resultFieldsInfo ) = 0;
+      virtual HRESULT __stdcall GetDefaultInputFieldMapping (
+        /*[out,retval]*/ struct IPropertySet * * defaultMapping ) = 0;
+      virtual HRESULT __stdcall GetLocatorProperties (
+        /*[out,retval]*/ struct IPropertySet * * props ) = 0;
+      virtual HRESULT __stdcall ReverseGeocode (
+        /*[in]*/ struct IPoint * location,
+        /*[in]*/ VARIANT_BOOL bReturnIntersection,
+        /*[in]*/ struct IPropertySet * propMods,
+        /*[out,retval]*/ struct IPropertySet * * ppResult ) = 0;
+};
+
+struct __declspec(uuid("2783ad51-2715-472d-9e1b-3ec780c732d3"))
+IGeocodeServerObjects : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_AddressLocator (
+        /*[out,retval]*/ struct ILocator * * AddressLocator ) = 0;
+};
+
+struct __declspec(uuid("56480f27-f591-4140-a471-93782cffa59e"))
+IInitGeocodeServer : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall AttachToLocator (
+        /*[in]*/ struct ILocatorName * locName ) = 0;
+      virtual HRESULT __stdcall get_AdjustableProperties (
+        /*[out,retval]*/ BSTR * propertyList ) = 0;
+      virtual HRESULT __stdcall put_AdjustableProperties (
+        /*[in]*/ BSTR propertyList ) = 0;
+      virtual HRESULT __stdcall get_SuggestedBatchSize (
+        /*[out,retval]*/ long * size ) = 0;
+      virtual HRESULT __stdcall put_SuggestedBatchSize (
+        /*[in]*/ long size ) = 0;
+};
+
+struct __declspec(uuid("8986d461-8861-41cf-8a97-27d6c244d411"))
+IGeocodeServerSingleLine : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetSingleLineAddressField (
+        /*[out,retval]*/ struct IField * * singleLineField ) = 0;
+      virtual HRESULT __stdcall GetDefaultInputFieldNames (
+        /*[out,retval]*/ VARIANT * fieldNames ) = 0;
+};
+
+struct __declspec(uuid("0f0bc491-69ec-434d-b253-9d6d336d2d0c"))
+GeocodeServer;
+    // [ default ] interface IUnknown
+    // interface IObjectConstruct
+    // interface IRequestHandler
+    // interface IRequestHandler2
+    // interface IGeocodeServer
+    // interface IGeocodeServerObjects
+    // interface IGeocodeServerSingleLine
+    // interface IInitGeocodeServer
+    // interface IServerObject
+    // interface IServerObjectExtensionManager
+    // interface IRESTRequestHandler
+
+struct __declspec(uuid("918d8de3-e844-45cd-9b18-1ab4710f2c3f"))
+GeocodeServerObjectDescription;
+    // [ default ] interface IUnknown
+    // interface IServerObjectDescription
+
+struct __declspec(uuid("6ad2214b-b670-431e-a5c5-56ca885cd3ad"))
+AGSAddressLocator;
+    // [ default ] interface IUnknown
+    // interface IClone
+    // interface ILocatorDataset
+    // interface ILocator
+    // interface IAddressInputs
+    // interface IGeocodingProperties
+    // interface IAddressGeocoding
+    // interface IAdvancedGeocoding
+    // interface IIntersectionGeocoding
+    // interface IAdvancedIntersectionGeocoding
+    // interface IAddressCandidates
+    // interface IPlaceNameAlias
+    // interface ISupportErrorInfo
+    // interface IReverseGeocodingProperties
+    // interface IReverseGeocoding
+    // interface ISingleLineAddressInput
+    // interface IBatchGeocoding
+
+struct __declspec(uuid("05b5731a-fe2f-4a2d-bd56-34ed91864567"))
+AGSLocatorWorkspace;
+    // [ default ] interface IUnknown
+    // interface ILocatorWorkspace
+    // interface IAGSLocatorWorkspace
+    // interface ILocatorAttach
+    // interface ILocatorAttach2
+    // interface ISupportErrorInfo
+
+enum __declspec(uuid("30e941e8-ce57-4dc4-97eb-fcbd4fd9b2af"))
+esriGeocodeServerMessageCodeEnum
+{
+    esriGeocodeServerMessageCode_NotLicensed = 70000,
+    esriGeocodeServerMessageCode_ConstructStart = 70001,
+    esriGeocodeServerMessageCode_ConstructFinish = 70002,
+    esriGeocodeServerMessageCode_ErrorOpeningLocator = 70003,
+    esriGeocodeServerMessageCode_InitializingGeocodeServer = 70004,
+    esriGeocodeServerMessageCode_ApplyingServiceConfigurationProperties = 70005,
+    esriGeocodeServerMessageCode_ErrorInvalidServiceConfiguration = 70006,
+    esriGeocodeServerMessageCode_RequestNotSupported = 70007,
+    esriGeocodeServerMessageCode_CapabilityNotSupported = 70008,
+    esriGeocodeServerMessageCode_ApplyingSpatialReference = 70009,
+    esriGeocodeServerMessageCode_GettingLocator = 70010,
+    esriGeocodeServerMessageCode_BatchGeocoding = 70011,
+    esriGeocodeServerMessageCode_FindAddressCandidates = 70012,
+    esriGeocodeServerMessageCode_GetAddressFields = 70013,
+    esriGeocodeServerMessageCode_GetCandidateFields = 70014,
+    esriGeocodeServerMessageCode_GetIntersectionCandidateFields = 70015,
+    esriGeocodeServerMessageCode_GetStandardizedFields = 70016,
+    esriGeocodeServerMessageCode_GetStandardizedIntersectionFields = 70017,
+    esriGeocodeServerMessageCode_GetResultFields = 70018,
+    esriGeocodeServerMessageCode_GetDefaultInputFieldMapping = 70019,
+    esriGeocodeServerMessageCode_GetLocatorProperties = 70020,
+    esriGeocodeServerMessageCode_MatchAddress = 70021,
+    esriGeocodeServerMessageCode_StandardizeAddress = 70022,
+    esriGeocodeServerMessageCode_FindMatchingAddressCandidates = 70023,
+    esriGeocodeServerMessageCode_ReverseGeocode = 70024,
+    esriGeocodeServerMessageCode_LocatorIsNotComposite = 70025,
+    esriGeocodeServerMessageCode_GetParticipatingLocatorNames = 70026,
+    esriGeocodeServerMessageCode_GetSingleLineAddressField = 70027,
+    esriGeocodeServerMessageCode_GetDefaultInputFieldNames = 70028,
+    esriGeocodeServerMessageCode_InvalidLocNamePropertyValue = 70029,
+    esriGeocodeServerMessageCode_UsingParticipatingLocator = 70030
+};
+
+struct __declspec(uuid("354b908d-3bba-11d4-9fcc-00c04f6bdf06"))
+IRouteLocation : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_RouteID (
+        /*[in]*/ VARIANT rid ) = 0;
+      virtual HRESULT __stdcall get_RouteID (
+        /*[out,retval]*/ VARIANT * rid ) = 0;
+      virtual HRESULT __stdcall put_MeasureUnit (
+        /*[in]*/ enum esriUnits units ) = 0;
+      virtual HRESULT __stdcall get_MeasureUnit (
+        /*[out,retval]*/ enum esriUnits * units ) = 0;
+      virtual HRESULT __stdcall put_LateralOffset (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall get_LateralOffset (
+        /*[out,retval]*/ double * Value ) = 0;
+};
+
+struct __declspec(uuid("a1e3811c-2055-11d4-9fc1-00c04f6bdf06"))
+IRouteLocator : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_RouteFeatureClass (
+        /*[out,retval]*/ struct IFeatureClass * * routeFClass ) = 0;
+      virtual HRESULT __stdcall get_RouteIDFieldName (
+        /*[out,retval]*/ BSTR * rid ) = 0;
+      virtual HRESULT __stdcall get_RouteIDFieldIndex (
+        /*[out,retval]*/ long * routeIDIndex ) = 0;
+      virtual HRESULT __stdcall get_RouteIDFieldNameDelimited (
+        /*[out,retval]*/ BSTR * rid ) = 0;
+      virtual HRESULT __stdcall get_RouteIDIsUnique (
+        /*[out,retval]*/ VARIANT_BOOL * RouteIDIsUnique ) = 0;
+      virtual HRESULT __stdcall get_RouteIDIsString (
+        /*[out,retval]*/ VARIANT_BOOL * RouteIDIsString ) = 0;
+      virtual HRESULT __stdcall put_RouteWhereClause (
+        /*[in]*/ BSTR whereClause ) = 0;
+      virtual HRESULT __stdcall get_RouteWhereClause (
+        /*[out,retval]*/ BSTR * whereClause ) = 0;
+      virtual HRESULT __stdcall get_MeasureUnit (
+        /*[out,retval]*/ enum esriUnits * units ) = 0;
+      virtual HRESULT __stdcall get_Extent (
+        /*[out,retval]*/ struct IEnvelope * * Extent ) = 0;
+      virtual HRESULT __stdcall get_SpatialReference (
+        /*[out,retval]*/ struct ISpatialReference * * SpatialReference ) = 0;
+      virtual HRESULT __stdcall get_HasSpatialIndex (
+        /*[out,retval]*/ VARIANT_BOOL * HasSpatialIndex ) = 0;
+      virtual HRESULT __stdcall Locate (
+        /*[in]*/ struct IRouteLocation * routeLocation,
+        /*[out]*/ struct IGeometry * * result,
+        /*[out]*/ enum esriLocatingError * LocatingError ) = 0;
+      virtual HRESULT __stdcall LocateRow (
+        /*[in]*/ struct IRouteEventProperties * EventProperties,
+        /*[in]*/ struct IRow * row,
+        /*[out]*/ struct IGeometry * * result,
+        /*[out]*/ enum esriLocatingError * LocatingError ) = 0;
+      virtual HRESULT __stdcall GetRouteGeometry (
+        /*[in]*/ struct IRouteLocation * routeLocation,
+        /*[out]*/ struct IGeometry * * routeGeometry,
+        /*[out]*/ enum esriLocatingError * LocatingError ) = 0;
+};
+
+struct __declspec(uuid("641755f0-b7de-11d3-9f7c-00c04f6bdf06"))
+IRouteEventSource : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_RouteLocator (
+        /*[out,retval]*/ struct IRouteLocator * * aRouteLocator ) = 0;
+      virtual HRESULT __stdcall get_EventTable (
+        /*[out,retval]*/ struct ITable * * aTable ) = 0;
+      virtual HRESULT __stdcall get_EventProperties (
+        /*[out,retval]*/ struct IRouteEventProperties * * EventProperties ) = 0;
+      virtual HRESULT __stdcall put_ExpandDistance (
+        /*[in]*/ double distance ) = 0;
+      virtual HRESULT __stdcall get_ExpandDistance (
+        /*[out,retval]*/ double * distance ) = 0;
+};
+
+struct __declspec(uuid("5fad1b6d-3bbd-11d4-9fcc-00c04f6bdf06"))
+IRouteMeasurePointProperties : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_MeasureFieldName (
+        /*[in]*/ BSTR fieldName ) = 0;
+      virtual HRESULT __stdcall get_MeasureFieldName (
+        /*[out,retval]*/ BSTR * fieldName ) = 0;
+};
+
+struct __declspec(uuid("99eb3970-f8a2-4670-b6f6-d928e2ad39c1"))
+IRouteMeasurePointProperties2 : IRouteMeasurePointProperties
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_AsPointFeature (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_AsPointFeature (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_AddAngleField (
+        /*[in]*/ VARIANT_BOOL angleField ) = 0;
+      virtual HRESULT __stdcall get_AddAngleField (
+        /*[out,retval]*/ VARIANT_BOOL * angleField ) = 0;
+      virtual HRESULT __stdcall put_AngleFieldName (
+        /*[in]*/ BSTR fieldName ) = 0;
+      virtual HRESULT __stdcall get_AngleFieldName (
+        /*[out,retval]*/ BSTR * fieldName ) = 0;
+      virtual HRESULT __stdcall put_NormalAngle (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_NormalAngle (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_ComplementAngle (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_ComplementAngle (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+};
+
+enum __declspec(uuid("a2fd6ac0-10bc-11d4-9fb7-00c04f6bdf06"))
+esriRouteEventError
+{
+    ROUTEEVENT_E_NOT_FEATURECLASSNAME = -2147220991,
+    ROUTEEVENT_E_LOCATORNAME_NOT_CORRECTLY_SETUP = -2147220990,
+    ROUTEEVENT_E_NOT_POLYLINE_FEATURECLASS = -2147220989,
+    ROUTEEVENT_E_CANT_FIND_RIDFIELD = -2147220988,
+    ROUTEEVENT_E_INVALID_RIDFIELD = -2147220987,
+    ROUTEEVENT_E_NOT_POLYLINEM_FEATURECLASS = -2147220986,
+    ROUTEEVENT_E_INVALID_EVENTPROPERTY_OBJECT = -2147220985,
+    ROUTEEVENT_E_CANT_FIND_EVT_RIDFIELD = -2147220984,
+    ROUTEEVENT_E_INVALID_EVT_RIDFIELD = -2147220983,
+    ROUTEEVENT_E_CANT_FIND_EVT_MFIELD = -2147220982,
+    ROUTEEVENT_E_CANT_FIND_EVT_FMFIELD = -2147220981,
+    ROUTEEVENT_E_INVALID_EVT_MFIELD = -2147220980,
+    ROUTEEVENT_E_INVALID_EVT_FMFIELD = -2147220979,
+    ROUTEEVENT_E_CANT_FIND_EVT_TMFIELD = -2147220978,
+    ROUTEEVENT_E_INVALID_EVT_TMFIELD = -2147220977,
+    ROUTEEVENT_E_CANT_FIND_EVT_LOFIELD = -2147220976,
+    ROUTEEVENT_E_INVALID_EVT_LOFIELD = -2147220975,
+    ROUTEEVENT_E_CANT_CONVERT_RID_STRING = -2147220974,
+    ROUTEEVENT_E_SOURCENAME_NOT_CORRECTLY_SETUP = -2147220973,
+    ROUTEEVENT_E_NOT_DATASETNAME = -2147220972,
+    ROUTEEVENT_E_EVENTPROPERTY_NOT_CORRECTLY_SETUP = -2147220971,
+    ROUTEEVENT_E_CANT_SELECT = -2147220970,
+    ROUTEEVENT_E_CANT_CREATE_ROUTECURSOR = -2147220969,
+    ROUTEEVENT_E_ROUTEFEATURECLASS_TOO_LARGE = -2147220968,
+    ROUTEEVENT_E_CANT_DELETE_FIELD = -2147220967,
+    ROUTEEVENT_E_CANT_CREATE_TMP_FILE = -2147220966,
+    ROUTEEVENT_E_CANT_READ_TMP_FILE = -2147220965,
+    ROUTEEVENT_E_INVALID_OUTPUT_FIELD = -2147220964,
+    ROUTEEVENT_E_OBJECTCLASS_EXISTS = -2147220963,
+    ROUTEEVENT_E_DUPLICATED_FIELDS = -2147220962,
+    ROUTEEVENT_E_NO_OIDFIELD = -2147220961,
+    ROUTEEVENT_E_NOT_POINTFEATURE = -2147220960,
+    ROUTEEVENT_E_NOT_POLYLINEFEATURE = -2147220959,
+    ROUTEEVENT_E_NOT_POLYGONEFEATURE = -2147220958,
+    ROUTEEVENT_E_NOT_RESFC = -2147220957,
+    ROUTEEVENT_E_NOT_LICENSED = -2147220956
+};
+
+enum __declspec(uuid("1bcf076b-7566-40ea-800a-59bb52819c9b"))
+esriMSeedingCorner
+{
+    esriMSeedingUpperLeft = 0,
+    esriMSeedingBottomLeft = 1,
+    esriMSeedingUpperRight = 2,
+    esriMSeedingBottomRight = 3
+};
+
+struct __declspec(uuid("35bdf2f1-3b21-11d4-9fcb-00c04f6bdf06"))
+IRouteMeasureLineProperties : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_FromMeasureFieldName (
+        /*[in]*/ BSTR fieldName ) = 0;
+      virtual HRESULT __stdcall get_FromMeasureFieldName (
+        /*[out,retval]*/ BSTR * fieldName ) = 0;
+      virtual HRESULT __stdcall put_ToMeasureFieldName (
+        /*[in]*/ BSTR fieldName ) = 0;
+      virtual HRESULT __stdcall get_ToMeasureFieldName (
+        /*[out,retval]*/ BSTR * fieldName ) = 0;
+};
+
+struct __declspec(uuid("dc709919-fadb-4008-a90a-7be613557170"))
+IRouteLocation2 : IRouteLocation
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_MDirectionOffsetting (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_MDirectionOffsetting (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+};
+
+struct __declspec(uuid("354b908e-3bba-11d4-9fcc-00c04f6bdf06"))
+IRouteMeasurePointLocation : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Measure (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall get_Measure (
+        /*[out,retval]*/ double * Value ) = 0;
+};
+
+struct __declspec(uuid("354b908f-3bba-11d4-9fcc-00c04f6bdf06"))
+IRouteMeasureLineLocation : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_FromMeasure (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall get_FromMeasure (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall put_ToMeasure (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall get_ToMeasure (
+        /*[out,retval]*/ double * Value ) = 0;
+};
+
+struct __declspec(uuid("0dd015cf-4915-11d4-9fd6-00c04f6bdf06"))
+IRouteMeasureEventGeoprocessor : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall putref_InputTable (
+        /*[in]*/ struct ITable * Table ) = 0;
+      virtual HRESULT __stdcall get_InputTable (
+        /*[out,retval]*/ struct ITable * * Table ) = 0;
+      virtual HRESULT __stdcall putref_InputSelection (
+        /*[in]*/ struct ISelectionSet * selection ) = 0;
+      virtual HRESULT __stdcall get_InputSelection (
+        /*[out,retval]*/ struct ISelectionSet * * selection ) = 0;
+      virtual HRESULT __stdcall putref_OverlayTable (
+        /*[in]*/ struct ITable * Table ) = 0;
+      virtual HRESULT __stdcall get_OverlayTable (
+        /*[out,retval]*/ struct ITable * * Table ) = 0;
+      virtual HRESULT __stdcall putref_OverlaySelection (
+        /*[in]*/ struct ISelectionSet * selection ) = 0;
+      virtual HRESULT __stdcall get_OverlaySelection (
+        /*[out,retval]*/ struct ISelectionSet * * selection ) = 0;
+      virtual HRESULT __stdcall putref_InputEventProperties (
+        /*[in]*/ struct IRouteEventProperties * inputProperties ) = 0;
+      virtual HRESULT __stdcall get_InputEventProperties (
+        /*[out,retval]*/ struct IRouteEventProperties * * inputProperties ) = 0;
+      virtual HRESULT __stdcall putref_OverlayEventProperties (
+        /*[in]*/ struct IRouteEventProperties * overlayProperties ) = 0;
+      virtual HRESULT __stdcall get_OverlayEventProperties (
+        /*[out,retval]*/ struct IRouteEventProperties * * overlayProperties ) = 0;
+      virtual HRESULT __stdcall put_KeepZeroLengthLineEvents (
+        /*[in]*/ VARIANT_BOOL status ) = 0;
+      virtual HRESULT __stdcall get_KeepZeroLengthLineEvents (
+        /*[out,retval]*/ VARIANT_BOOL * status ) = 0;
+      virtual HRESULT __stdcall put_BuildOutputIndex (
+        /*[in]*/ VARIANT_BOOL status ) = 0;
+      virtual HRESULT __stdcall get_BuildOutputIndex (
+        /*[out,retval]*/ VARIANT_BOOL * status ) = 0;
+      virtual HRESULT __stdcall Dissolve (
+        /*[in]*/ VARIANT dissolveFields,
+        /*[in]*/ struct IDatasetName * outputName,
+        /*[in]*/ struct ITrackCancel * trackCancel,
+        /*[in]*/ BSTR configKeyword,
+        /*[out,retval]*/ struct ITable * * OutputTable ) = 0;
+      virtual HRESULT __stdcall Concatenate (
+        /*[in]*/ VARIANT concatenateFields,
+        /*[in]*/ struct IDatasetName * outputName,
+        /*[in]*/ struct ITrackCancel * trackCancel,
+        /*[in]*/ BSTR configKeyword,
+        /*[out,retval]*/ struct ITable * * OutputTable ) = 0;
+      virtual HRESULT __stdcall Intersect (
+        /*[in]*/ struct IRouteEventProperties * outputProperties,
+        /*[in]*/ struct IDatasetName * outputName,
+        /*[in]*/ struct ITrackCancel * trackCancel,
+        /*[in]*/ BSTR configKeyword,
+        /*[out,retval]*/ struct ITable * * OutputTable ) = 0;
+      virtual HRESULT __stdcall Union (
+        /*[in]*/ struct IRouteEventProperties * outputProperties,
+        /*[in]*/ struct IDatasetName * outputName,
+        /*[in]*/ struct ITrackCancel * trackCancel,
+        /*[in]*/ BSTR configKeyword,
+        /*[out,retval]*/ struct ITable * * OutputTable ) = 0;
+};
+
+struct __declspec(uuid("6e52d323-609b-41e7-a1c3-c5492b2c664c"))
+IRouteMeasureEventGeoprocessor2 : IRouteMeasureEventGeoprocessor
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Dissolve2 (
+        /*[in]*/ struct IRouteEventProperties * outputProperties,
+        /*[in]*/ VARIANT dissolveFields,
+        /*[in]*/ struct IDatasetName * outputName,
+        /*[in]*/ struct ITrackCancel * trackCancel,
+        /*[in]*/ BSTR configKeyword,
+        /*[out,retval]*/ struct ITable * * OutputTable ) = 0;
+      virtual HRESULT __stdcall Concatenate2 (
+        /*[in]*/ struct IRouteEventProperties * outputProperties,
+        /*[in]*/ VARIANT concatenateFields,
+        /*[in]*/ struct IDatasetName * outputName,
+        /*[in]*/ struct ITrackCancel * trackCancel,
+        /*[in]*/ BSTR configKeyword,
+        /*[out,retval]*/ struct ITable * * OutputTable ) = 0;
+      virtual HRESULT __stdcall Intersect2 (
+        /*[in]*/ struct IRouteEventProperties * outputProperties,
+        /*[in]*/ VARIANT_BOOL keepAllFields,
+        /*[in]*/ struct IDatasetName * outputName,
+        /*[in]*/ struct ITrackCancel * trackCancel,
+        /*[in]*/ BSTR configKeyword,
+        /*[out,retval]*/ struct ITable * * OutputTable ) = 0;
+      virtual HRESULT __stdcall Union2 (
+        /*[in]*/ struct IRouteEventProperties * outputProperties,
+        /*[in]*/ VARIANT_BOOL keepAllFields,
+        /*[in]*/ struct IDatasetName * outputName,
+        /*[in]*/ struct ITrackCancel * trackCancel,
+        /*[in]*/ BSTR configKeyword,
+        /*[out,retval]*/ struct ITable * * OutputTable ) = 0;
+};
+
+struct __declspec(uuid("c531e2d7-a579-11d4-9ff0-00c04f6bdf06"))
+IRouteLocatorOperations : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall putref_RouteLocator (
+        /*[in]*/ struct IRouteLocator * RouteLocator ) = 0;
+      virtual HRESULT __stdcall get_RouteLocator (
+        /*[out,retval]*/ struct IRouteLocator * * RouteLocator ) = 0;
+      virtual HRESULT __stdcall putref_InputFeatureClass (
+        /*[in]*/ struct IFeatureClass * InputFeatureClass ) = 0;
+      virtual HRESULT __stdcall get_InputFeatureClass (
+        /*[out,retval]*/ struct IFeatureClass * * InputFeatureClass ) = 0;
+      virtual HRESULT __stdcall putref_InputFeatureSelection (
+        /*[in]*/ struct ISelectionSet * selection ) = 0;
+      virtual HRESULT __stdcall get_InputFeatureSelection (
+        /*[out,retval]*/ struct ISelectionSet * * selection ) = 0;
+      virtual HRESULT __stdcall LocatePointFeatures (
+        /*[in]*/ double searchRadius,
+        /*[in]*/ VARIANT_BOOL searchMultipleLocation,
+        /*[in]*/ struct IRouteEventProperties * outputProperties,
+        /*[in]*/ VARIANT_BOOL keepAllFields,
+        /*[in]*/ struct IDatasetName * outputName,
+        /*[in]*/ BSTR configKeyword,
+        /*[in]*/ struct ITrackCancel * trackCancel,
+        /*[out,retval]*/ struct ITable * * OutputTable ) = 0;
+      virtual HRESULT __stdcall LocateLineFeatures (
+        /*[in]*/ double clusterTolerance,
+        /*[in]*/ struct IRouteEventProperties * outputProperties,
+        /*[in]*/ VARIANT_BOOL keepAllFields,
+        /*[in]*/ struct IDatasetName * outputName,
+        /*[in]*/ BSTR configKeyword,
+        /*[in]*/ struct ITrackCancel * trackCancel,
+        /*[out,retval]*/ struct ITable * * OutputTable ) = 0;
+      virtual HRESULT __stdcall LocatePointEvents (
+        /*[in]*/ double clusterTolerance,
+        /*[in]*/ struct IRouteEventProperties * outputProperties,
+        /*[in]*/ VARIANT_BOOL keepAllFields,
+        /*[in]*/ struct IDatasetName * outputName,
+        /*[in]*/ BSTR configKeyword,
+        /*[in]*/ struct ITrackCancel * trackCancel,
+        /*[out,retval]*/ struct ITable * * OutputTable ) = 0;
+      virtual HRESULT __stdcall LocatePolygonFeatures (
+        /*[in]*/ struct IRouteEventProperties * outputProperties,
+        /*[in]*/ VARIANT_BOOL keepAllFields,
+        /*[in]*/ VARIANT_BOOL keepZeroLengthEvents,
+        /*[in]*/ struct IDatasetName * outputName,
+        /*[in]*/ BSTR configKeyword,
+        /*[in]*/ struct ITrackCancel * trackCancel,
+        /*[out,retval]*/ struct ITable * * OutputTable ) = 0;
+};
+
+struct __declspec(uuid("e3444997-77d0-44cc-8eac-eb1d5d7de199"))
+IRouteLocatorOperations2 : IRouteLocatorOperations
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall putref_RouteFeatureClass (
+        /*[in]*/ struct IFeatureClass * RouteFeatureClass ) = 0;
+      virtual HRESULT __stdcall get_RouteFeatureClass (
+        /*[out,retval]*/ struct IFeatureClass * * RouteFeatureClass ) = 0;
+      virtual HRESULT __stdcall putref_RouteFeatureSelection (
+        /*[in]*/ struct ISelectionSet * selection ) = 0;
+      virtual HRESULT __stdcall get_RouteFeatureSelection (
+        /*[out,retval]*/ struct ISelectionSet * * selection ) = 0;
+      virtual HRESULT __stdcall put_RouteIDFieldName (
+        /*[in]*/ BSTR RouteIDFieldName ) = 0;
+      virtual HRESULT __stdcall get_RouteIDFieldName (
+        /*[out,retval]*/ BSTR * RouteIDFieldName ) = 0;
+};
+
+struct __declspec(uuid("960a398f-7e73-4d7e-955f-04f3916812ee"))
+IRouteMeasureCalibrator : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall putref_RouteLocator (
+        /*[in]*/ struct IRouteLocator * RouteLocator ) = 0;
+      virtual HRESULT __stdcall get_RouteLocator (
+        /*[out,retval]*/ struct IRouteLocator * * RouteLocator ) = 0;
+      virtual HRESULT __stdcall putref_InputFeatureClass (
+        /*[in]*/ struct IFeatureClass * InputFeatureClass ) = 0;
+      virtual HRESULT __stdcall get_InputFeatureClass (
+        /*[out,retval]*/ struct IFeatureClass * * InputFeatureClass ) = 0;
+      virtual HRESULT __stdcall putref_InputFeatureSelection (
+        /*[in]*/ struct ISelectionSet * selection ) = 0;
+      virtual HRESULT __stdcall get_InputFeatureSelection (
+        /*[out,retval]*/ struct ISelectionSet * * selection ) = 0;
+      virtual HRESULT __stdcall put_InputRouteIDFieldName (
+        /*[in]*/ BSTR fieldName ) = 0;
+      virtual HRESULT __stdcall get_InputRouteIDFieldName (
+        /*[out,retval]*/ BSTR * fieldName ) = 0;
+      virtual HRESULT __stdcall put_InputMeasureFieldName (
+        /*[in]*/ BSTR fieldName ) = 0;
+      virtual HRESULT __stdcall get_InputMeasureFieldName (
+        /*[out,retval]*/ BSTR * fieldName ) = 0;
+      virtual HRESULT __stdcall put_BuildOutputIndex (
+        /*[in]*/ VARIANT_BOOL status ) = 0;
+      virtual HRESULT __stdcall get_BuildOutputIndex (
+        /*[out,retval]*/ VARIANT_BOOL * status ) = 0;
+      virtual HRESULT __stdcall CalibrateRoutesByDistance (
+        /*[in]*/ long updateHow,
+        /*[in]*/ VARIANT_BOOL ignoreGaps,
+        /*[in]*/ double tolerance,
+        /*[in]*/ VARIANT_BOOL allRoutes,
+        /*[in]*/ struct IFeatureClassName * outputFClassName,
+        /*[in]*/ struct IGeometryDef * outputGeometryDef,
+        /*[in]*/ BSTR configKeyword,
+        /*[in]*/ struct ITrackCancel * trackCancel,
+        /*[out,retval]*/ struct IEnumBSTR * * enumError ) = 0;
+      virtual HRESULT __stdcall CalibrateRoutesByMs (
+        /*[in]*/ long updateHow,
+        /*[in]*/ double tolerance,
+        /*[in]*/ VARIANT_BOOL allRoutes,
+        /*[in]*/ struct IFeatureClassName * outputFClassName,
+        /*[in]*/ struct IGeometryDef * outputGeometryDef,
+        /*[in]*/ BSTR configKeyword,
+        /*[in]*/ struct ITrackCancel * trackCancel,
+        /*[out,retval]*/ struct IEnumBSTR * * enumError ) = 0;
+};
+
+struct __declspec(uuid("5b5f88f5-1865-407b-a7d8-da5d9daa0e8b"))
+IRouteMeasureCalibrator2 : IRouteMeasureCalibrator
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall putref_RouteFeatureClass (
+        /*[in]*/ struct IFeatureClass * featureClass ) = 0;
+      virtual HRESULT __stdcall get_RouteFeatureClass (
+        /*[out,retval]*/ struct IFeatureClass * * featureClass ) = 0;
+      virtual HRESULT __stdcall putref_RouteFeatureSelection (
+        /*[in]*/ struct ISelectionSet * selection ) = 0;
+      virtual HRESULT __stdcall get_RouteFeatureSelection (
+        /*[out,retval]*/ struct ISelectionSet * * selection ) = 0;
+      virtual HRESULT __stdcall put_RouteIDFieldName (
+        /*[in]*/ BSTR fieldName ) = 0;
+      virtual HRESULT __stdcall get_RouteIDFieldName (
+        /*[out,retval]*/ BSTR * fieldName ) = 0;
+};
+
+struct __declspec(uuid("9073be7c-f31a-4329-94e9-eea1bcd4af6d"))
+IRouteMeasureCreator : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall putref_InputFeatureClass (
+        /*[in]*/ struct IFeatureClass * InputFeatureClass ) = 0;
+      virtual HRESULT __stdcall get_InputFeatureClass (
+        /*[out,retval]*/ struct IFeatureClass * * InputFeatureClass ) = 0;
+      virtual HRESULT __stdcall putref_InputFeatureSelection (
+        /*[in]*/ struct ISelectionSet * selection ) = 0;
+      virtual HRESULT __stdcall get_InputFeatureSelection (
+        /*[out,retval]*/ struct ISelectionSet * * selection ) = 0;
+      virtual HRESULT __stdcall put_InputRouteIDFieldName (
+        /*[in]*/ BSTR fieldName ) = 0;
+      virtual HRESULT __stdcall get_InputRouteIDFieldName (
+        /*[out,retval]*/ BSTR * fieldName ) = 0;
+      virtual HRESULT __stdcall put_BuildOutputIndex (
+        /*[in]*/ VARIANT_BOOL status ) = 0;
+      virtual HRESULT __stdcall get_BuildOutputIndex (
+        /*[out,retval]*/ VARIANT_BOOL * status ) = 0;
+      virtual HRESULT __stdcall CreateUsing2Fields (
+        /*[in]*/ BSTR fmFieldName,
+        /*[in]*/ BSTR tmFieldName,
+        /*[in]*/ struct IFeatureClassName * outputFClassName,
+        /*[in]*/ struct IGeometryDef * outputGeometryDef,
+        /*[in]*/ BSTR configKeyword,
+        /*[in]*/ struct ITrackCancel * trackCancel,
+        /*[out,retval]*/ struct IEnumBSTR * * enumError ) = 0;
+      virtual HRESULT __stdcall CreateUsingCoordinatePriority (
+        /*[in]*/ BSTR lengthFieldName,
+        /*[in]*/ enum esriMSeedingCorner seedingCorner,
+        /*[in]*/ VARIANT_BOOL ignoreGaps,
+        /*[in]*/ struct IFeatureClassName * outputFClassName,
+        /*[in]*/ struct IGeometryDef * outputGeometryDef,
+        /*[in]*/ BSTR configKeyword,
+        /*[in]*/ struct ITrackCancel * trackCancel,
+        /*[out,retval]*/ struct IEnumBSTR * * enumError ) = 0;
+      virtual HRESULT __stdcall CreateUsingPoints (
+        /*[in]*/ struct ISelectionSet * pointSelection,
+        /*[in]*/ BSTR pointRIDFieldName,
+        /*[in]*/ BSTR pointMeasureFieldName,
+        /*[in]*/ long updateHow,
+        /*[in]*/ VARIANT_BOOL ignoreGaps,
+        /*[in]*/ double tolerance,
+        /*[in]*/ VARIANT_BOOL allInputFeatures,
+        /*[in]*/ struct IFeatureClassName * outputFClassName,
+        /*[in]*/ struct IGeometryDef * outputGeometryDef,
+        /*[in]*/ BSTR configKeyword,
+        /*[in]*/ struct ITrackCancel * trackCancel,
+        /*[out,retval]*/ struct IEnumBSTR * * enumError ) = 0;
+};
+
+struct __declspec(uuid("6d2b9a89-960e-4f95-8c7b-6da24ab7a398"))
+IRouteMeasureCreator2 : IRouteMeasureCreator
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CreateUsing2Fields2 (
+        /*[in]*/ BSTR fmFieldName,
+        /*[in]*/ BSTR tmFieldName,
+        /*[in]*/ double factor,
+        /*[in]*/ double Offset,
+        /*[in]*/ struct IFeatureClassName * outputFClassName,
+        /*[in]*/ struct IGeometryDef * outputGeometryDef,
+        /*[in]*/ BSTR configKeyword,
+        /*[in]*/ struct ITrackCancel * trackCancel,
+        /*[out,retval]*/ struct IEnumBSTR * * enumError ) = 0;
+      virtual HRESULT __stdcall CreateUsingCoordinatePriority2 (
+        /*[in]*/ BSTR lengthFieldName,
+        /*[in]*/ double factor,
+        /*[in]*/ double Offset,
+        /*[in]*/ enum esriMSeedingCorner seedingCorner,
+        /*[in]*/ VARIANT_BOOL ignoreGaps,
+        /*[in]*/ struct IFeatureClassName * outputFClassName,
+        /*[in]*/ struct IGeometryDef * outputGeometryDef,
+        /*[in]*/ BSTR configKeyword,
+        /*[in]*/ struct ITrackCancel * trackCancel,
+        /*[out,retval]*/ struct IEnumBSTR * * enumError ) = 0;
+};
+
+struct __declspec(uuid("eaffbc00-54ce-4daa-a8f4-b7ea046e5d9f"))
+IEnumRouteIdentifyResult : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * locationCount ) = 0;
+      virtual HRESULT __stdcall Next (
+        /*[out]*/ struct IRouteLocation * * location,
+        /*[out]*/ struct IFeature * * route ) = 0;
+      virtual HRESULT __stdcall Reset ( ) = 0;
+};
+
+struct __declspec(uuid("234a6edf-4ad1-4bae-adcc-a4f60a6d9d50"))
+IRouteLocator2 : IRouteLocator
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Identify (
+        /*[in]*/ struct IEnvelope * searchEnvelope,
+        /*[in]*/ BSTR whereClause,
+        /*[out,retval]*/ struct IEnumRouteIdentifyResult * * result ) = 0;
+      virtual HRESULT __stdcall get_HasZs (
+        /*[out,retval]*/ VARIANT_BOOL * HasZs ) = 0;
+      virtual HRESULT __stdcall get_RouteIDIsIndexed (
+        /*[out,retval]*/ VARIANT_BOOL * RouteIDIsIndexed ) = 0;
+};
+
+struct __declspec(uuid("b7c2ff32-ccaa-4de6-8f2e-4d697d10d52b"))
+IRouteLayerExtension : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_RouteLocatorName (
+        /*[in]*/ struct ILayer * layer,
+        /*[out,retval]*/ struct IRouteLocatorName * * RouteLocatorName ) = 0;
+      virtual HRESULT __stdcall get_RouteIDFieldName (
+        /*[out,retval]*/ BSTR * fieldName ) = 0;
+      virtual HRESULT __stdcall SetRouteIDFieldName (
+        /*[in]*/ struct ILayer * layer,
+        /*[in]*/ BSTR fieldName ) = 0;
+};
+
+struct __declspec(uuid("c13d6537-3c80-11d4-9fcd-00c04f6bdf06"))
+RouteMeasurePointProperties;
+    // [ default ] interface IUnknown
+    // interface IRouteEventProperties2
+    // interface IRouteMeasurePointProperties2
+    // interface IClone
+    // interface IPersistStream
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("35bdf2f0-3b21-11d4-9fcb-00c04f6bdf06"))
+RouteMeasureLineProperties;
+    // [ default ] interface IUnknown
+    // interface IRouteEventProperties2
+    // interface IRouteMeasureLineProperties
+    // interface IClone
+    // interface IPersistStream
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("5fad1b6b-3bbd-11d4-9fcc-00c04f6bdf06"))
+RouteMeasurePointLocation;
+    // [ default ] interface IUnknown
+    // interface IRouteLocation2
+    // interface IRouteMeasurePointLocation
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("5fad1b6c-3bbd-11d4-9fcc-00c04f6bdf06"))
+RouteMeasureLineLocation;
+    // [ default ] interface IUnknown
+    // interface IRouteLocation2
+    // interface IRouteMeasureLineLocation
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("63be9174-b8c7-11d3-9f7c-00c04f6bdf06"))
+RouteEventSourceName;
+    // [ default ] interface IUnknown
+    // interface IName
+    // interface IDatasetName
+    // interface IFeatureClassName
+    // interface IRouteEventSourceName
+    // interface IPersistStream
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("4b194341-a3e3-11d4-9ff0-00c04f6bdf06"))
+RouteEventSource;
+    // [ default ] interface IUnknown
+    // interface IDataset
+    // interface IDatasetEdit
+    // interface IDatasetEditInfo
+    // interface IClass
+    // interface ITable
+    // interface ITableCapabilities
+    // interface IObjectClass
+    // interface ISubtypes
+    // interface IObjectClassInfo
+    // interface IObjectClassInfo2
+    // interface IFeatureClass
+    // interface IGeoDataset
+    // interface IEventSource
+    // interface IRouteEventSource
+    // interface IEventSourceErrors
+    // interface IVirtualTable
+    // [ default, source ] interface IObjectClassEvents
+    // [ source ] interface IObjectClassSchemaEvents
+
+struct __declspec(uuid("8cc373a6-2121-11d4-9fc2-00c04f6bdf06"))
+RouteMeasureLocatorName;
+    // [ default ] interface IUnknown
+    // interface IName
+    // interface ILocatorName
+    // interface IRouteLocatorName
+    // interface IPersistStream
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("4b194342-a3e3-11d4-9ff0-00c04f6bdf06"))
+RouteMeasureLocator;
+    // [ default ] interface IUnknown
+    // interface ILocator
+    // interface IRouteLocator
+    // interface IRouteLocator2
+    // interface ILocatorDataset
+
+struct __declspec(uuid("0dd015d0-4915-11d4-9fd6-00c04f6bdf06"))
+RouteMeasureGeoprocessor;
+    // [ default ] interface IUnknown
+    // interface IRouteMeasureEventGeoprocessor
+    // interface IRouteMeasureEventGeoprocessor2
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("48133c1e-5bf4-428d-9213-ef8fcddf8bec"))
+RouteMeasureCreator;
+    // [ default ] interface IUnknown
+    // interface IRouteMeasureCreator
+    // interface IRouteMeasureCreator2
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("899cb0d2-b833-49e6-86d8-8c34621e3f0c"))
+RouteLocatorOperations;
+    // [ default ] interface IUnknown
+    // interface IRouteLocatorOperations
+    // interface IRouteLocatorOperations2
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("546fc9ad-2af8-49de-9002-fe8ceb888265"))
+RouteMeasureCalibrator;
+    // [ default ] interface IUnknown
+    // interface IRouteMeasureCalibrator
+    // interface IRouteMeasureCalibrator2
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("7ae2ec78-3a86-4b7b-901b-a30d1d99f4ca"))
+RouteLayerExtension;
+    // [ default ] interface IUnknown
+    // interface IRouteLayerExtension
+    // interface ILayerExtensionDraw
+    // interface IPersistStream
+    // interface ISupportErrorInfo
+
+enum __declspec(uuid("e8ae34ea-63e3-4d7b-9698-548a4d483d90"))
+esriHatchTextDisplay
+{
+    esriHatchTDValueOnly = 0,
+    esriHatchTDPrefixSuffix = 1,
+    esriHatchTDExpression = 2,
+    esriHatchTDNone = 3
+};
+
+enum __declspec(uuid("59dc4894-8bf1-40d0-a414-e0954c25be25"))
+esriHatchExpressionEngine
+{
+    esriHatchVBScriptEngine = 0,
+    esriHatchJScriptEngine = 1,
+    esriHatchPythonEngine = 2
+};
+
+enum __declspec(uuid("101e6a80-68c6-4ae7-b8c0-eb3388c8d282"))
+esriHatchAlignmentType
+{
+    esriHatchAlignRight = 0,
+    esriHatchAlignCenter = 1,
+    esriHatchAlignLeft = 2
+};
+
+struct __declspec(uuid("2a409f42-de3b-4782-a294-9b56516c5ee4"))
+IHatchDefinition : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_HatchSymbol (
+        /*[out,retval]*/ struct ISymbol * * ppSymbol ) = 0;
+      virtual HRESULT __stdcall putref_HatchSymbol (
+        /*[in]*/ struct ISymbol * ppSymbol ) = 0;
+      virtual HRESULT __stdcall get_Offset (
+        /*[out,retval]*/ double * pAngle ) = 0;
+      virtual HRESULT __stdcall put_Offset (
+        /*[in]*/ double pAngle ) = 0;
+      virtual HRESULT __stdcall put_TextDisplay (
+        /*[in]*/ enum esriHatchTextDisplay display ) = 0;
+      virtual HRESULT __stdcall get_TextDisplay (
+        /*[out,retval]*/ enum esriHatchTextDisplay * display ) = 0;
+      virtual HRESULT __stdcall get_TextSymbol (
+        /*[out,retval]*/ struct ITextSymbol * * ppSymbol ) = 0;
+      virtual HRESULT __stdcall putref_TextSymbol (
+        /*[in]*/ struct ITextSymbol * ppSymbol ) = 0;
+      virtual HRESULT __stdcall get_DisplayPrecision (
+        /*[out,retval]*/ long * pDisplayPrecision ) = 0;
+      virtual HRESULT __stdcall put_DisplayPrecision (
+        /*[in]*/ long pDisplayPrecision ) = 0;
+      virtual HRESULT __stdcall put_ShowSign (
+        /*[in]*/ VARIANT_BOOL pShowSign ) = 0;
+      virtual HRESULT __stdcall get_ShowSign (
+        /*[out,retval]*/ VARIANT_BOOL * pShowSign ) = 0;
+      virtual HRESULT __stdcall get_Prefix (
+        /*[out,retval]*/ BSTR * pPrefix ) = 0;
+      virtual HRESULT __stdcall put_Prefix (
+        /*[in]*/ BSTR pPrefix ) = 0;
+      virtual HRESULT __stdcall get_Suffix (
+        /*[out,retval]*/ BSTR * pSuffix ) = 0;
+      virtual HRESULT __stdcall put_Suffix (
+        /*[in]*/ BSTR pSuffix ) = 0;
+      virtual HRESULT __stdcall get_Expression (
+        /*[out,retval]*/ BSTR * Expression ) = 0;
+      virtual HRESULT __stdcall put_Expression (
+        /*[in]*/ BSTR Expression ) = 0;
+      virtual HRESULT __stdcall put_ExpressionSimple (
+        /*[in]*/ VARIANT_BOOL ExpressionSimple ) = 0;
+      virtual HRESULT __stdcall get_ExpressionSimple (
+        /*[out,retval]*/ VARIANT_BOOL * ExpressionSimple ) = 0;
+      virtual HRESULT __stdcall get_ExpressionParserEngine (
+        /*[out,retval]*/ enum esriHatchExpressionEngine * parserEngine ) = 0;
+      virtual HRESULT __stdcall put_ExpressionParserEngine (
+        /*[in]*/ enum esriHatchExpressionEngine parserEngine ) = 0;
+      virtual HRESULT __stdcall put_AdjustTextOrientation (
+        /*[in]*/ VARIANT_BOOL pAdjustTextOrientation ) = 0;
+      virtual HRESULT __stdcall get_AdjustTextOrientation (
+        /*[out,retval]*/ VARIANT_BOOL * pAdjustTextOrientation ) = 0;
+      virtual HRESULT __stdcall get_Alignment (
+        /*[out,retval]*/ enum esriHatchAlignmentType * pAlignment ) = 0;
+      virtual HRESULT __stdcall put_Alignment (
+        /*[in]*/ enum esriHatchAlignmentType pAlignment ) = 0;
+};
+
+enum __declspec(uuid("be73fed3-07f1-497a-8e47-1952105b2104"))
+esriConvertHatchesToGraphicsType
+{
+    esriConvertHatchesWholeLayer = 0,
+    esriConvertHatchesVisible = 1,
+    esriConvertHatchesSelected = 2
+};
+
+struct __declspec(uuid("f40b4458-092d-4628-b0ca-1906228ad47b"))
+IHatchInputValue : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Field (
+        /*[in]*/ BSTR Field ) = 0;
+      virtual HRESULT __stdcall get_Field (
+        /*[out,retval]*/ BSTR * Field ) = 0;
+      virtual HRESULT __stdcall get_Value (
+        /*[out,retval]*/ VARIANT * pValue ) = 0;
+      virtual HRESULT __stdcall put_Value (
+        /*[in]*/ VARIANT pValue ) = 0;
+      virtual HRESULT __stdcall QueryValue (
+        /*[in]*/ struct IFeature * pFeature,
+        /*[out,retval]*/ VARIANT * pValue ) = 0;
+};
+
+struct __declspec(uuid("c137d658-c8fa-49f1-866f-2fe6f8cea55c"))
+IHatchMarkerDefinition : IUnknown
+{};
+
+struct __declspec(uuid("f05afcd5-ce16-483a-bd74-37d3d007f075"))
+IHatchLineDefinition : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Length (
+        /*[out,retval]*/ double * pLength ) = 0;
+      virtual HRESULT __stdcall put_Length (
+        /*[in]*/ double pLength ) = 0;
+      virtual HRESULT __stdcall get_SupplementalAngle (
+        /*[out,retval]*/ double * pAngle ) = 0;
+      virtual HRESULT __stdcall put_SupplementalAngle (
+        /*[in]*/ double pAngle ) = 0;
+};
+
+struct __declspec(uuid("300ebf8f-3ac7-47bf-b16b-5acfaa729dff"))
+IEnumHatchDefinition : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Next (
+        /*[in,out]*/ long * pHatchInterval,
+        /*[in,out]*/ struct IHatchDefinition * * pHatchDefinition ) = 0;
+      virtual HRESULT __stdcall Reset ( ) = 0;
+};
+
+struct __declspec(uuid("a6e400d1-a2ea-49f4-b520-485df0417025"))
+IHatchTemplate : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall get_DefaultHatchInterval (
+        /*[out,retval]*/ double * pDefaultHatchInterval ) = 0;
+      virtual HRESULT __stdcall put_DefaultHatchInterval (
+        /*[in]*/ double pDefaultHatchInterval ) = 0;
+      virtual HRESULT __stdcall get_HatchDefinitionCount (
+        /*[out,retval]*/ long * HatchDefinitionCount ) = 0;
+      virtual HRESULT __stdcall AddHatchDefinition (
+        /*[in]*/ long multipleHatchInterval,
+        /*[in]*/ struct IHatchDefinition * hatchDefinition ) = 0;
+      virtual HRESULT __stdcall get_EnumHatchDefinitions (
+        /*[out,retval]*/ struct IEnumHatchDefinition * * enumHatchDefinition ) = 0;
+      virtual HRESULT __stdcall RemoveHatchDefinition (
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall RemoveAll ( ) = 0;
+      virtual HRESULT __stdcall putref_EndHatchDefinition (
+        /*[in]*/ struct IHatchDefinition * hatchDefinition ) = 0;
+      virtual HRESULT __stdcall get_EndHatchDefinition (
+        /*[out,retval]*/ struct IHatchDefinition * * hatchDefinition ) = 0;
+      virtual HRESULT __stdcall put_EndHatchDrawingTolerance (
+        /*[in]*/ double drawingTolerance ) = 0;
+      virtual HRESULT __stdcall get_EndHatchDrawingTolerance (
+        /*[out,retval]*/ double * drawingTolerance ) = 0;
+      virtual HRESULT __stdcall put_ConvertUnits (
+        /*[in]*/ VARIANT_BOOL ConvertUnits ) = 0;
+      virtual HRESULT __stdcall get_ConvertUnits (
+        /*[out,retval]*/ VARIANT_BOOL * ConvertUnits ) = 0;
+      virtual HRESULT __stdcall get_DisplayUnits (
+        /*[out,retval]*/ enum esriUnits * units ) = 0;
+      virtual HRESULT __stdcall put_DisplayUnits (
+        /*[in]*/ enum esriUnits units ) = 0;
+      virtual HRESULT __stdcall put_StartAtIntervalMultiple (
+        /*[in]*/ VARIANT_BOOL StartAtIntervalMultiple ) = 0;
+      virtual HRESULT __stdcall get_StartAtIntervalMultiple (
+        /*[out,retval]*/ VARIANT_BOOL * StartAtIntervalMultiple ) = 0;
+      virtual HRESULT __stdcall put_UIDisplayUnits (
+        /*[in]*/ enum esriUnits units ) = 0;
+      virtual HRESULT __stdcall get_UIDisplayUnits (
+        /*[out,retval]*/ enum esriUnits * units ) = 0;
+      virtual HRESULT __stdcall put_HatchByPart (
+        /*[in]*/ VARIANT_BOOL HatchByPart ) = 0;
+      virtual HRESULT __stdcall get_HatchByPart (
+        /*[out,retval]*/ VARIANT_BOOL * HatchByPart ) = 0;
+      virtual HRESULT __stdcall DrawGeometry (
+        /*[in]*/ struct IGeometry * Geometry,
+        /*[in]*/ double interval,
+        /*[in]*/ VARIANT FromMeasure,
+        /*[in]*/ VARIANT ToMeasure,
+        /*[in]*/ VARIANT LateralOffset,
+        /*[in]*/ enum esriUnits measureUnits,
+        /*[in]*/ struct IDisplay * display,
+        /*[in]*/ struct ITrackCancel * trackCancel ) = 0;
+      virtual HRESULT __stdcall DrawFeature (
+        /*[in]*/ struct IFeature * feature,
+        /*[in]*/ struct IHatchInputValue * interval,
+        /*[in]*/ struct IHatchInputValue * FromMeasure,
+        /*[in]*/ struct IHatchInputValue * ToMeasure,
+        /*[in]*/ struct IHatchInputValue * LateralOffset,
+        /*[in]*/ enum esriUnits measureUnits,
+        /*[in]*/ struct IDisplay * display,
+        /*[in]*/ struct ITrackCancel * trackCancel ) = 0;
+      virtual HRESULT __stdcall DrawPreview (
+        /*[in]*/ struct IGeometry * Geometry,
+        /*[in]*/ double scaleFactor,
+        /*[in]*/ int selectedDef,
+        /*[in]*/ VARIANT FromMeasure,
+        /*[in]*/ VARIANT ToMeasure,
+        /*[in]*/ VARIANT LateralOffset,
+        /*[in]*/ enum esriUnits measureUnits,
+        /*[in]*/ struct IDisplay * display,
+        /*[in]*/ struct ITrackCancel * trackCancel ) = 0;
+      virtual HRESULT __stdcall ConvertToGraphics (
+        /*[in]*/ struct IFeature * feature,
+        /*[in]*/ struct IHatchInputValue * interval,
+        /*[in]*/ struct IHatchInputValue * FromMeasure,
+        /*[in]*/ struct IHatchInputValue * ToMeasure,
+        /*[in]*/ struct IHatchInputValue * LateralOffset,
+        /*[in]*/ enum esriUnits measureUnits,
+        /*[in]*/ struct IDisplay * display,
+        /*[in]*/ struct IGraphicsLayer * pGraphicsLayer ) = 0;
+};
+
+struct __declspec(uuid("2fa4e172-5f34-4911-b38b-ff8ea28c316b"))
+IHatchClass : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_ShowHatches (
+        /*[in]*/ VARIANT_BOOL pshowHatches ) = 0;
+      virtual HRESULT __stdcall get_ShowHatches (
+        /*[out,retval]*/ VARIANT_BOOL * pshowHatches ) = 0;
+      virtual HRESULT __stdcall get_HatchTemplate (
+        /*[out,retval]*/ struct IHatchTemplate * * ppHatchTemplate ) = 0;
+      virtual HRESULT __stdcall putref_HatchTemplate (
+        /*[in]*/ struct IHatchTemplate * ppHatchTemplate ) = 0;
+      virtual HRESULT __stdcall get_HatchInterval (
+        /*[out,retval]*/ struct IHatchInputValue * * ppHatchInterval ) = 0;
+      virtual HRESULT __stdcall putref_HatchInterval (
+        /*[in]*/ struct IHatchInputValue * ppHatchInterval ) = 0;
+      virtual HRESULT __stdcall get_Filter (
+        /*[out,retval]*/ struct IQueryFilter * * ppQF ) = 0;
+      virtual HRESULT __stdcall putref_Filter (
+        /*[in]*/ struct IQueryFilter * ppQF ) = 0;
+      virtual HRESULT __stdcall get_MinimumScale (
+        /*[out,retval]*/ double * minScale ) = 0;
+      virtual HRESULT __stdcall put_MinimumScale (
+        /*[in]*/ double minScale ) = 0;
+      virtual HRESULT __stdcall get_MaximumScale (
+        /*[out,retval]*/ double * maxScale ) = 0;
+      virtual HRESULT __stdcall put_MaximumScale (
+        /*[in]*/ double maxScale ) = 0;
+      virtual HRESULT __stdcall get_StartRange (
+        /*[out,retval]*/ struct IHatchInputValue * * ppStartRange ) = 0;
+      virtual HRESULT __stdcall putref_StartRange (
+        /*[in]*/ struct IHatchInputValue * ppStartRange ) = 0;
+      virtual HRESULT __stdcall get_EndRange (
+        /*[out,retval]*/ struct IHatchInputValue * * ppEndRange ) = 0;
+      virtual HRESULT __stdcall putref_EndRange (
+        /*[in]*/ struct IHatchInputValue * ppEndRange ) = 0;
+      virtual HRESULT __stdcall get_LateralOffset (
+        /*[out,retval]*/ struct IHatchInputValue * * ppLateralOffset ) = 0;
+      virtual HRESULT __stdcall putref_LateralOffset (
+        /*[in]*/ struct IHatchInputValue * ppLateralOffset ) = 0;
+      virtual HRESULT __stdcall Draw (
+        /*[in]*/ struct IFeatureLayer * pFLayer,
+        /*[in]*/ struct IDisplay * pDisplay,
+        /*[in]*/ struct ITrackCancel * pTrackCancel ) = 0;
+      virtual HRESULT __stdcall ConvertToGraphics (
+        /*[in]*/ struct IFeatureLayer * pFLayer,
+        /*[in]*/ struct IGraphicsLayer * pGraphicsLayer,
+        /*[in]*/ struct IDisplay * pDisplay,
+        /*[in]*/ enum esriConvertHatchesToGraphicsType convertType ) = 0;
+};
+
+struct __declspec(uuid("cd73074d-abb9-4cdf-9bc1-8463ebe87db6"))
+IHatchLayerExtension : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_ShowHatches (
+        /*[in]*/ VARIANT_BOOL pshowHatches ) = 0;
+      virtual HRESULT __stdcall get_ShowHatches (
+        /*[out,retval]*/ VARIANT_BOOL * pshowHatches ) = 0;
+      virtual HRESULT __stdcall HatchClassCount (
+        /*[out,retval]*/ long * HatchClassCount ) = 0;
+      virtual HRESULT __stdcall HatchClass (
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ struct IHatchClass * * HatchClass ) = 0;
+      virtual HRESULT __stdcall AddClass (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ struct IHatchClass * HatchClass ) = 0;
+      virtual HRESULT __stdcall HatchClassNames (
+        /*[out,retval]*/ VARIANT * pHatchClassNames ) = 0;
+      virtual HRESULT __stdcall RemoveClass (
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall RemoveAll ( ) = 0;
+      virtual HRESULT __stdcall ConvertToGraphics (
+        /*[in]*/ struct IFeatureLayer * pFLayer,
+        /*[in]*/ struct IGraphicsLayer * pGraphicsLayer,
+        /*[in]*/ struct IDisplay * pDisplay ) = 0;
+};
+
+struct __declspec(uuid("37ad48dc-12be-45a0-a406-26c4827e4af5"))
+HatchLayerExtension;
+    // [ default ] interface IUnknown
+    // interface IHatchLayerExtension
+    // interface ILayerExtensionDraw
+    // interface ILayerExtensionInvalidate
+    // interface IPersistStream
+    // interface IPersist
+    // interface IClone
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("fbe27c32-80e5-49ef-b2a4-b7f956992c7c"))
+HatchClass;
+    // [ default ] interface IUnknown
+    // interface IHatchClass
+    // interface IPersistStream
+    // interface IPersist
+    // interface IClone
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("440a75bc-a9c7-4c50-a4a7-0fabb0e4c521"))
+HatchTemplate;
+    // [ default ] interface IUnknown
+    // interface IHatchTemplate
+    // interface IPersistStream
+    // interface IPersist
+    // interface IClone
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("ce0785e9-ca51-4b83-ba73-3fbfda99f3e2"))
+HatchMarkerDefinition;
+    // [ default ] interface IUnknown
+    // interface IHatchDefinition
+    // interface IHatchMarkerDefinition
+    // interface IPersistStream
+    // interface IPersist
+    // interface IClone
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("1e1f49f5-1067-4073-ad2e-12fa4a1950f8"))
+HatchLineDefinition;
+    // [ default ] interface IUnknown
+    // interface IHatchDefinition
+    // interface IHatchLineDefinition
+    // interface IPersistStream
+    // interface IPersist
+    // interface IClone
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("cf20452a-9eb8-4547-81a4-808f7487eb56"))
+HatchInputValue;
+    // [ default ] interface IUnknown
+    // interface IHatchInputValue
+    // interface IPersistStream
+    // interface IPersist
+    // interface IClone
+    // interface ISupportErrorInfo
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_esriLocation =
+    {0x6b45c696,0x3c30,0x4268,{0xa5,0x8b,0xd9,0xf3,0x2d,0x80,0x02,0x3c}};
+extern "C" const GUID __declspec(selectany) IID_ISdeLocator =
+    {0xbf00823e,0x71f7,0x11d3,{0x9f,0x5d,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) IID_IAddressInputs =
+    {0x600a589d,0xddc1,0x11d3,{0x9f,0x74,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_IGeocodingProperties =
+    {0x600a5896,0xddc1,0x11d3,{0x9f,0x74,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_IGeocodingProperties2 =
+    {0x896714a4,0x0313,0x4dbc,{0xb4,0x71,0x5d,0x4c,0x6a,0x6e,0xc3,0x51}};
+extern "C" const GUID __declspec(selectany) IID_IReferenceDataFile =
+    {0x600a5897,0xddc1,0x11d3,{0x9f,0x74,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_IReferenceDataFile2 =
+    {0x0f56cefb,0xf7a8,0x4cc1,{0xa1,0x95,0x7e,0xab,0x32,0xc9,0xe3,0x00}};
+extern "C" const GUID __declspec(selectany) IID_IReferenceDataIndex =
+    {0xba6a5d80,0x10c7,0x11d4,{0x9f,0x7c,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_IReferenceDataIndexEdit =
+    {0xba6a5d81,0x10c7,0x11d4,{0x9f,0x7c,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_IEnumReferenceDataIndex =
+    {0xba6a5d82,0x10c7,0x11d4,{0x9f,0x7c,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_IReferenceDataField =
+    {0xba6a5d83,0x10c7,0x11d4,{0x9f,0x7c,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_IReferenceDataFieldEdit =
+    {0xba6a5d84,0x10c7,0x11d4,{0x9f,0x7c,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_IEnumReferenceDataField =
+    {0xba6a5d85,0x10c7,0x11d4,{0x9f,0x7c,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_IReferenceDataTable =
+    {0xba6a5d86,0x10c7,0x11d4,{0x9f,0x7c,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_IReferenceDataTable2 =
+    {0xe4441b08,0x0977,0x462a,{0x86,0xd5,0xc1,0x8e,0x53,0xdd,0xef,0x32}};
+extern "C" const GUID __declspec(selectany) IID_IReferenceDataTableEdit =
+    {0xba6a5d87,0x10c7,0x11d4,{0x9f,0x7c,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_IEnumReferenceDataTable =
+    {0xba6a5d7f,0x10c7,0x11d4,{0x9f,0x7c,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_IReferenceDataTables =
+    {0x600a5898,0xddc1,0x11d3,{0x9f,0x74,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_IPlaceNameAlias =
+    {0xe5aaa254,0x3ebd,0x49a7,{0xaa,0x9f,0x62,0xae,0x8c,0x76,0x2f,0x9c}};
+extern "C" const GUID __declspec(selectany) IID_IAddressGeocoding =
+    {0x600a589a,0xddc1,0x11d3,{0x9f,0x74,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_IAddressCandidates =
+    {0x600a5899,0xddc1,0x11d3,{0x9f,0x74,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_IAddressCandidates2 =
+    {0xe62c17a3,0x595a,0x4a07,{0xb8,0x62,0xa8,0x70,0xab,0xa9,0x9a,0x98}};
+extern "C" const GUID __declspec(selectany) IID_IAdvancedGeocoding =
+    {0xe0f10b74,0xeb7c,0x11d2,{0x9f,0x47,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_IAdvancedGeocoding2 =
+    {0x79d7d550,0x9268,0x4b98,{0xb1,0x47,0xfa,0x5d,0xfb,0x38,0x69,0xd5}};
+extern "C" const GUID __declspec(selectany) IID_IBatchGeocoding =
+    {0x3a051259,0xc1d1,0x4e8f,{0xbb,0x6f,0x09,0x1f,0x84,0xb1,0x70,0xc9}};
+extern "C" const GUID __declspec(selectany) IID_IIntersectionGeocoding =
+    {0x5cd1b646,0x774c,0x11d3,{0x9f,0x61,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_IAdvancedIntersectionGeocoding =
+    {0x3466eb04,0x6482,0x11d3,{0x9f,0x57,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) IID_ISimpleStandardization =
+    {0x1bb3b08b,0x45fc,0x43f3,{0xa1,0x41,0x92,0x88,0x81,0x07,0x6c,0x38}};
+extern "C" const GUID __declspec(selectany) IID_IReverseGeocodingProperties =
+    {0xb693864f,0x4485,0x4d9a,{0xa6,0x9e,0x3a,0xa6,0x61,0x53,0xf4,0x4d}};
+extern "C" const GUID __declspec(selectany) IID_IReverseGeocoding =
+    {0x5af33731,0x8b62,0x4dd7,{0x89,0x7c,0xfa,0xac,0xc0,0xcd,0x57,0x5e}};
+extern "C" const GUID __declspec(selectany) IID_IGeocodingOutputs =
+    {0xcb7b12d8,0xb15e,0x4cd3,{0x9e,0xfa,0x8d,0x93,0xf3,0x84,0xbd,0x7b}};
+extern "C" const GUID __declspec(selectany) IID_ICompositeLocator =
+    {0x096760f8,0x2253,0x4f07,{0x82,0x8a,0x8b,0xe2,0x4d,0xc6,0x7b,0xfe}};
+extern "C" const GUID __declspec(selectany) IID_ILocator2 =
+    {0x09d6643b,0xd40f,0x4988,{0x86,0xf5,0x43,0x29,0x52,0xfc,0x38,0xe7}};
+extern "C" const GUID __declspec(selectany) IID_IESRILocatorReleaseInfo =
+    {0xfde5639f,0x468d,0x4f00,{0x95,0x58,0x62,0x46,0xe5,0x6e,0x78,0x52}};
+extern "C" const GUID __declspec(selectany) IID_IESRILocatorBuildOptions =
+    {0x92a704b6,0xee5b,0x4513,{0xa4,0xff,0x02,0x05,0x86,0x6f,0xa5,0xa6}};
+extern "C" const GUID __declspec(selectany) IID_IESRILocatorBuildOptionsEdit =
+    {0xa85f8063,0x4e7b,0x4266,{0xb5,0xac,0xbe,0x42,0x32,0x52,0x4d,0x9e}};
+extern "C" const GUID __declspec(selectany) IID_IAttachedLocator =
+    {0xf8e03be8,0xc882,0x11d3,{0x9f,0x6c,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_ILocatorManager =
+    {0xe0f10b76,0xeb7c,0x11d2,{0x9f,0x47,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_ILocatorManager2 =
+    {0x08fc0263,0x7a3f,0x4f34,{0x9f,0xea,0x97,0x5b,0x9b,0x5e,0x16,0xc8}};
+extern "C" const GUID __declspec(selectany) IID_ILocatorWorkspaceName2 =
+    {0xf47bb961,0x8885,0x4cdc,{0x9c,0x85,0x00,0xbe,0x5d,0xd6,0xd9,0x03}};
+extern "C" const GUID __declspec(selectany) IID_ILocalLocatorWorkspace =
+    {0xa922679e,0x16dd,0x4fa5,{0x8b,0x0e,0xaa,0xfa,0x5d,0x8e,0x29,0x17}};
+extern "C" const GUID __declspec(selectany) IID_IDatabaseLocatorWorkspace =
+    {0x4f30b220,0x8e22,0x11d3,{0x9f,0x69,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) IID_IAGSLocatorWorkspace =
+    {0xb7d1d9a0,0x8da7,0x45b8,{0xb3,0xed,0xb0,0x7b,0x8f,0xfb,0x57,0x21}};
+extern "C" const GUID __declspec(selectany) IID_ILocatorAttach =
+    {0xd12b2dca,0x775a,0x11d3,{0x9f,0x5e,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) IID_ILocatorAttach2 =
+    {0x301bd67a,0x8042,0x4dcc,{0x83,0x75,0xd2,0x69,0x72,0x39,0xe9,0xa5}};
+extern "C" const GUID __declspec(selectany) IID_ILocatorEvents =
+    {0xa5c49c70,0xb80c,0x41a3,{0x9a,0x90,0xe4,0x0c,0xbf,0x8b,0x06,0x86}};
+extern "C" const GUID __declspec(selectany) IID_IGeocodedFeatureClass =
+    {0x0c79caa6,0xcdef,0x11d3,{0x9f,0x6e,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_IGeocodingIndexCompute =
+    {0x6dd91390,0xd42c,0x11d3,{0x9f,0x71,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_ILocatorImpl =
+    {0xcff73580,0x6c73,0x11d3,{0x9f,0x5c,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) IID_ILocatorDatasetImpl =
+    {0xd8323fbd,0x789e,0x43fb,{0xbb,0x8d,0x0e,0x0f,0xfa,0x4c,0x1f,0x4c}};
+extern "C" const GUID __declspec(selectany) IID_ISdeLocatorImpl =
+    {0xc229a286,0x71f4,0x11d3,{0x9f,0x5d,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) IID_ISingleLineAddressInput =
+    {0x42825b3a,0x5b8e,0x485d,{0xbc,0xbc,0x89,0x5f,0x7d,0x06,0xc9,0xc2}};
+extern "C" const GUID __declspec(selectany) CLSID_LocatorManager =
+    {0xe0f10b7a,0xeb7c,0x11d2,{0x9f,0x47,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) CLSID_LocatorWorkspaceName =
+    {0x9685caf0,0xbf13,0x4283,{0xb3,0x88,0xa5,0x73,0x03,0x52,0xc7,0x78}};
+extern "C" const GUID __declspec(selectany) CLSID_GenericLocatorStyle =
+    {0xe0f10b7c,0xeb7c,0x11d2,{0x9f,0x47,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) CLSID_LocatorName =
+    {0xc24ffe64,0x88be,0x11d3,{0x9f,0x66,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) CLSID_ESRIFDOAddressLocatorStyle =
+    {0xd2f10d5b,0x44e5,0x4350,{0x8e,0x90,0x61,0xbb,0x1c,0xb5,0x91,0xc4}};
+extern "C" const GUID __declspec(selectany) CLSID_StreetMapAddressLocatorStyle =
+    {0xbdc38221,0x7231,0x46eb,{0xa5,0x65,0x66,0xbb,0xb6,0x84,0x4d,0xb1}};
+extern "C" const GUID __declspec(selectany) CLSID_ESRIFDOAddressLocator =
+    {0x46ef9422,0x8a29,0x4dcd,{0x98,0x5b,0xff,0xfd,0x5c,0xcf,0xe9,0xfe}};
+extern "C" const GUID __declspec(selectany) CLSID_StreetMapAddressLocator =
+    {0xf21aa707,0xa028,0x48ea,{0xac,0xc4,0x03,0x2b,0x1e,0xdb,0xe9,0xeb}};
+extern "C" const GUID __declspec(selectany) CLSID_CompositeLocator =
+    {0x29b85a89,0xd2ce,0x4aeb,{0xbc,0x3f,0x66,0x1a,0x3d,0x2c,0x29,0x6e}};
+extern "C" const GUID __declspec(selectany) CLSID_DatabaseLocatorWorkspace =
+    {0x689e2885,0xf5ed,0x42e5,{0xbe,0xa0,0x5b,0xc3,0xe3,0xff,0x95,0xcd}};
+extern "C" const GUID __declspec(selectany) CLSID_LocalLocatorWorkspace =
+    {0x2256d333,0xa938,0x4e41,{0xa7,0xbe,0x85,0x4b,0xd7,0xbc,0xee,0x59}};
+extern "C" const GUID __declspec(selectany) CLSID_AttachedLocator =
+    {0x42ce2a3b,0x0ce3,0x4ca6,{0x83,0x39,0x9e,0x55,0xa7,0x6f,0x30,0xe2}};
+extern "C" const GUID __declspec(selectany) CLSID_LocatorEnumerator =
+    {0xfd2296ff,0xd564,0x4538,{0x93,0x7d,0xf6,0x50,0x8c,0xb9,0xe1,0x6f}};
+extern "C" const GUID __declspec(selectany) CLSID_LocatorNameEnumerator =
+    {0x1238f292,0xec47,0x4128,{0xa7,0xdf,0xf3,0xae,0x27,0x88,0x7a,0x91}};
+extern "C" const GUID __declspec(selectany) CLSID_ReferenceDataTableEnumerator =
+    {0xe31fc748,0xe203,0x4371,{0xb2,0xe3,0xd8,0x16,0x52,0x6c,0x71,0xd1}};
+extern "C" const GUID __declspec(selectany) CLSID_ReferenceDataTable =
+    {0xd4755a0c,0xf736,0x41ae,{0x93,0xd9,0x14,0x75,0x94,0xe7,0xb2,0x98}};
+extern "C" const GUID __declspec(selectany) CLSID_ReferenceDataFieldsEnumerator =
+    {0xacc060dd,0x80e0,0x4f88,{0x8a,0xe0,0xd4,0x78,0x37,0x99,0xcc,0x58}};
+extern "C" const GUID __declspec(selectany) CLSID_ReferenceDataField =
+    {0x4a78a2a3,0x1dde,0x44b0,{0xa7,0xe1,0xfa,0x52,0xd2,0x11,0x68,0xd3}};
+extern "C" const GUID __declspec(selectany) CLSID_ReferenceDataIndexEnumerator =
+    {0x4672d87f,0xc1aa,0x4240,{0x9a,0x30,0x43,0x99,0x52,0x9c,0x1b,0x02}};
+extern "C" const GUID __declspec(selectany) CLSID_ReferenceDataIndex =
+    {0x2c45da9a,0x1b05,0x4349,{0xac,0xcc,0xbe,0x15,0x4e,0xe2,0xca,0x65}};
+extern "C" const GUID __declspec(selectany) CLSID_GeocodedFeature =
+    {0x0c79caa4,0xcdef,0x11d3,{0x9f,0x6e,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) CLSID_GeocodedFeatureClassExtension =
+    {0x0c79caa5,0xcdef,0x11d3,{0x9f,0x6e,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) CLSID_GeocodingIndexObject =
+    {0x6dd9138e,0xd42c,0x11d3,{0x9f,0x71,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) CLSID_GeocodingIndexClassExtension =
+    {0x6dd9138f,0xd42c,0x11d3,{0x9f,0x71,0x00,0xc0,0x4f,0x8e,0xd1,0xc4}};
+extern "C" const GUID __declspec(selectany) CLSID_SoundexTableClassExtension =
+    {0xd876fece,0xc16c,0x44cb,{0x86,0xb2,0xf0,0x4b,0xb8,0xe9,0x3d,0x59}};
+extern "C" const GUID __declspec(selectany) IID_IDEAddressLocatorType =
+    {0xe3894683,0xd749,0x4206,{0x9b,0x01,0x54,0x93,0x3d,0xb6,0xf6,0x15}};
+extern "C" const GUID __declspec(selectany) IID_IGPAddressLocatorStyleType =
+    {0xdc4cd653,0x673e,0x48a4,{0xbe,0x0b,0x8d,0xcf,0x08,0x40,0x71,0x03}};
+extern "C" const GUID __declspec(selectany) CLSID_DEAddressLocatorType =
+    {0x8a88d12f,0x6515,0x4b30,{0xbf,0x46,0xe1,0x09,0x2e,0xf8,0x3f,0xf1}};
+extern "C" const GUID __declspec(selectany) CLSID_GPAddressLocatorStyleType =
+    {0xd72424d6,0x2d82,0x4f90,{0xa2,0xcf,0x37,0xd9,0x11,0xae,0x62,0x8b}};
+extern "C" const GUID __declspec(selectany) IID_IDEAddressLocator =
+    {0xecd14972,0x5ecd,0x4a6f,{0xb6,0x2f,0xb7,0x41,0xdd,0x42,0x9e,0x3c}};
+extern "C" const GUID __declspec(selectany) IID_IGPAddressLocatorStyle =
+    {0x4352d4db,0x7256,0x4b52,{0xab,0xfb,0xcf,0xb5,0x9a,0x78,0xa2,0x6d}};
+extern "C" const GUID __declspec(selectany) CLSID_DEAddressLocator =
+    {0x69175164,0x88eb,0x446d,{0x82,0x91,0xaa,0xf0,0xac,0xa3,0xe9,0xd8}};
+extern "C" const GUID __declspec(selectany) CLSID_GPAddressLocatorStyle =
+    {0xc0b10685,0x71f8,0x4cd2,{0xb3,0x3a,0x8c,0x91,0x90,0xb8,0xe8,0x07}};
+extern "C" const GUID __declspec(selectany) CLSID_AddressLocatorWorkspaceExtension =
+    {0x413c86b6,0x1326,0x42ac,{0xb6,0xab,0x9b,0x31,0xa8,0xc2,0xda,0x18}};
+extern "C" const GUID __declspec(selectany) CLSID_RSLocator =
+    {0x13ce65b9,0x1650,0x4137,{0xa0,0xf1,0xe6,0x18,0x00,0x7c,0xbe,0xdc}};
+extern "C" const GUID __declspec(selectany) CLSID_ESRIGen2AddressLocator =
+    {0xda70b7e3,0x10b2,0x42e3,{0xbf,0xf7,0x6c,0x81,0x35,0x58,0x62,0xbc}};
+extern "C" const GUID __declspec(selectany) CLSID_ESRIGen2AddressLocatorStyle =
+    {0x5ec87827,0x40c2,0x4f02,{0x8a,0xbb,0x51,0x28,0xaf,0xca,0x13,0xeb}};
+extern "C" const GUID __declspec(selectany) CLSID_GPGeocodingDataTypeFactory =
+    {0xaceef5ee,0xf5f0,0x4824,{0x9e,0x7e,0xdd,0x6f,0xf4,0x65,0xed,0xab}};
+extern "C" const GUID __declspec(selectany) IID_IGeocodeServer =
+    {0x5918bc71,0x27dc,0x41d7,{0x82,0x82,0xa0,0x87,0x1a,0x61,0x29,0x23}};
+extern "C" const GUID __declspec(selectany) IID_IGeocodeServerObjects =
+    {0x2783ad51,0x2715,0x472d,{0x9e,0x1b,0x3e,0xc7,0x80,0xc7,0x32,0xd3}};
+extern "C" const GUID __declspec(selectany) IID_IInitGeocodeServer =
+    {0x56480f27,0xf591,0x4140,{0xa4,0x71,0x93,0x78,0x2c,0xff,0xa5,0x9e}};
+extern "C" const GUID __declspec(selectany) IID_IGeocodeServerSingleLine =
+    {0x8986d461,0x8861,0x41cf,{0x8a,0x97,0x27,0xd6,0xc2,0x44,0xd4,0x11}};
+extern "C" const GUID __declspec(selectany) CLSID_GeocodeServer =
+    {0x0f0bc491,0x69ec,0x434d,{0xb2,0x53,0x9d,0x6d,0x33,0x6d,0x2d,0x0c}};
+extern "C" const GUID __declspec(selectany) CLSID_GeocodeServerObjectDescription =
+    {0x918d8de3,0xe844,0x45cd,{0x9b,0x18,0x1a,0xb4,0x71,0x0f,0x2c,0x3f}};
+extern "C" const GUID __declspec(selectany) CLSID_AGSAddressLocator =
+    {0x6ad2214b,0xb670,0x431e,{0xa5,0xc5,0x56,0xca,0x88,0x5c,0xd3,0xad}};
+extern "C" const GUID __declspec(selectany) CLSID_AGSLocatorWorkspace =
+    {0x05b5731a,0xfe2f,0x4a2d,{0xbd,0x56,0x34,0xed,0x91,0x86,0x45,0x67}};
+extern "C" const GUID __declspec(selectany) IID_IRouteLocation =
+    {0x354b908d,0x3bba,0x11d4,{0x9f,0xcc,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) IID_IRouteLocator =
+    {0xa1e3811c,0x2055,0x11d4,{0x9f,0xc1,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) IID_IRouteEventSource =
+    {0x641755f0,0xb7de,0x11d3,{0x9f,0x7c,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) IID_IRouteMeasurePointProperties =
+    {0x5fad1b6d,0x3bbd,0x11d4,{0x9f,0xcc,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) IID_IRouteMeasurePointProperties2 =
+    {0x99eb3970,0xf8a2,0x4670,{0xb6,0xf6,0xd9,0x28,0xe2,0xad,0x39,0xc1}};
+extern "C" const GUID __declspec(selectany) IID_IRouteMeasureLineProperties =
+    {0x35bdf2f1,0x3b21,0x11d4,{0x9f,0xcb,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) IID_IRouteLocation2 =
+    {0xdc709919,0xfadb,0x4008,{0xa9,0x0a,0x7b,0xe6,0x13,0x55,0x71,0x70}};
+extern "C" const GUID __declspec(selectany) IID_IRouteMeasurePointLocation =
+    {0x354b908e,0x3bba,0x11d4,{0x9f,0xcc,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) IID_IRouteMeasureLineLocation =
+    {0x354b908f,0x3bba,0x11d4,{0x9f,0xcc,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) IID_IRouteMeasureEventGeoprocessor =
+    {0x0dd015cf,0x4915,0x11d4,{0x9f,0xd6,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) IID_IRouteMeasureEventGeoprocessor2 =
+    {0x6e52d323,0x609b,0x41e7,{0xa1,0xc3,0xc5,0x49,0x2b,0x2c,0x66,0x4c}};
+extern "C" const GUID __declspec(selectany) IID_IRouteLocatorOperations =
+    {0xc531e2d7,0xa579,0x11d4,{0x9f,0xf0,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) IID_IRouteLocatorOperations2 =
+    {0xe3444997,0x77d0,0x44cc,{0x8e,0xac,0xeb,0x1d,0x5d,0x7d,0xe1,0x99}};
+extern "C" const GUID __declspec(selectany) IID_IRouteMeasureCalibrator =
+    {0x960a398f,0x7e73,0x4d7e,{0x95,0x5f,0x04,0xf3,0x91,0x68,0x12,0xee}};
+extern "C" const GUID __declspec(selectany) IID_IRouteMeasureCalibrator2 =
+    {0x5b5f88f5,0x1865,0x407b,{0xa7,0xd8,0xda,0x5d,0x9d,0xaa,0x0e,0x8b}};
+extern "C" const GUID __declspec(selectany) IID_IRouteMeasureCreator =
+    {0x9073be7c,0xf31a,0x4329,{0x94,0xe9,0xee,0xa1,0xbc,0xd4,0xaf,0x6d}};
+extern "C" const GUID __declspec(selectany) IID_IRouteMeasureCreator2 =
+    {0x6d2b9a89,0x960e,0x4f95,{0x8c,0x7b,0x6d,0xa2,0x4a,0xb7,0xa3,0x98}};
+extern "C" const GUID __declspec(selectany) IID_IEnumRouteIdentifyResult =
+    {0xeaffbc00,0x54ce,0x4daa,{0xa8,0xf4,0xb7,0xea,0x04,0x6e,0x5d,0x9f}};
+extern "C" const GUID __declspec(selectany) IID_IRouteLocator2 =
+    {0x234a6edf,0x4ad1,0x4bae,{0xad,0xcc,0xa4,0xf6,0x0a,0x6d,0x9d,0x50}};
+extern "C" const GUID __declspec(selectany) IID_IRouteLayerExtension =
+    {0xb7c2ff32,0xccaa,0x4de6,{0x8f,0x2e,0x4d,0x69,0x7d,0x10,0xd5,0x2b}};
+extern "C" const GUID __declspec(selectany) CLSID_RouteMeasurePointProperties =
+    {0xc13d6537,0x3c80,0x11d4,{0x9f,0xcd,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) CLSID_RouteMeasureLineProperties =
+    {0x35bdf2f0,0x3b21,0x11d4,{0x9f,0xcb,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) CLSID_RouteMeasurePointLocation =
+    {0x5fad1b6b,0x3bbd,0x11d4,{0x9f,0xcc,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) CLSID_RouteMeasureLineLocation =
+    {0x5fad1b6c,0x3bbd,0x11d4,{0x9f,0xcc,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) CLSID_RouteEventSourceName =
+    {0x63be9174,0xb8c7,0x11d3,{0x9f,0x7c,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) CLSID_RouteEventSource =
+    {0x4b194341,0xa3e3,0x11d4,{0x9f,0xf0,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) CLSID_RouteMeasureLocatorName =
+    {0x8cc373a6,0x2121,0x11d4,{0x9f,0xc2,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) CLSID_RouteMeasureLocator =
+    {0x4b194342,0xa3e3,0x11d4,{0x9f,0xf0,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) CLSID_RouteMeasureGeoprocessor =
+    {0x0dd015d0,0x4915,0x11d4,{0x9f,0xd6,0x00,0xc0,0x4f,0x6b,0xdf,0x06}};
+extern "C" const GUID __declspec(selectany) CLSID_RouteMeasureCreator =
+    {0x48133c1e,0x5bf4,0x428d,{0x92,0x13,0xef,0x8f,0xcd,0xdf,0x8b,0xec}};
+extern "C" const GUID __declspec(selectany) CLSID_RouteLocatorOperations =
+    {0x899cb0d2,0xb833,0x49e6,{0x86,0xd8,0x8c,0x34,0x62,0x1e,0x3f,0x0c}};
+extern "C" const GUID __declspec(selectany) CLSID_RouteMeasureCalibrator =
+    {0x546fc9ad,0x2af8,0x49de,{0x90,0x02,0xfe,0x8c,0xeb,0x88,0x82,0x65}};
+extern "C" const GUID __declspec(selectany) CLSID_RouteLayerExtension =
+    {0x7ae2ec78,0x3a86,0x4b7b,{0x90,0x1b,0xa3,0x0d,0x1d,0x99,0xf4,0xca}};
+extern "C" const GUID __declspec(selectany) IID_IHatchDefinition =
+    {0x2a409f42,0xde3b,0x4782,{0xa2,0x94,0x9b,0x56,0x51,0x6c,0x5e,0xe4}};
+extern "C" const GUID __declspec(selectany) IID_IHatchInputValue =
+    {0xf40b4458,0x092d,0x4628,{0xb0,0xca,0x19,0x06,0x22,0x8a,0xd4,0x7b}};
+extern "C" const GUID __declspec(selectany) IID_IHatchMarkerDefinition =
+    {0xc137d658,0xc8fa,0x49f1,{0x86,0x6f,0x2f,0xe6,0xf8,0xce,0xa5,0x5c}};
+extern "C" const GUID __declspec(selectany) IID_IHatchLineDefinition =
+    {0xf05afcd5,0xce16,0x483a,{0xbd,0x74,0x37,0xd3,0xd0,0x07,0xf0,0x75}};
+extern "C" const GUID __declspec(selectany) IID_IEnumHatchDefinition =
+    {0x300ebf8f,0x3ac7,0x47bf,{0xb1,0x6b,0x5a,0xcf,0xaa,0x72,0x9d,0xff}};
+extern "C" const GUID __declspec(selectany) IID_IHatchTemplate =
+    {0xa6e400d1,0xa2ea,0x49f4,{0xb5,0x20,0x48,0x5d,0xf0,0x41,0x70,0x25}};
+extern "C" const GUID __declspec(selectany) IID_IHatchClass =
+    {0x2fa4e172,0x5f34,0x4911,{0xb3,0x8b,0xff,0x8e,0xa2,0x8c,0x31,0x6b}};
+extern "C" const GUID __declspec(selectany) IID_IHatchLayerExtension =
+    {0xcd73074d,0xabb9,0x4cdf,{0x9b,0xc1,0x84,0x63,0xeb,0xe8,0x7d,0xb6}};
+extern "C" const GUID __declspec(selectany) CLSID_HatchLayerExtension =
+    {0x37ad48dc,0x12be,0x45a0,{0xa4,0x06,0x26,0xc4,0x82,0x7e,0x4a,0xf5}};
+extern "C" const GUID __declspec(selectany) CLSID_HatchClass =
+    {0xfbe27c32,0x80e5,0x49ef,{0xb2,0xa4,0xb7,0xf9,0x56,0x99,0x2c,0x7c}};
+extern "C" const GUID __declspec(selectany) CLSID_HatchTemplate =
+    {0x440a75bc,0xa9c7,0x4c50,{0xa4,0xa7,0x0f,0xab,0xb0,0xe4,0xc5,0x21}};
+extern "C" const GUID __declspec(selectany) CLSID_HatchMarkerDefinition =
+    {0xce0785e9,0xca51,0x4b83,{0xba,0x73,0x3f,0xbf,0xda,0x99,0xf3,0xe2}};
+extern "C" const GUID __declspec(selectany) CLSID_HatchLineDefinition =
+    {0x1e1f49f5,0x1067,0x4073,{0xad,0x2e,0x12,0xfa,0x4a,0x19,0x50,0xf8}};
+extern "C" const GUID __declspec(selectany) CLSID_HatchInputValue =
+    {0xcf20452a,0x9eb8,0x4547,{0x81,0xa4,0x80,0x8f,0x74,0x87,0xeb,0x56}};
+
+#pragma pack(pop)

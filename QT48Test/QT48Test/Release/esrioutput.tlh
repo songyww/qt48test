@@ -1,0 +1,2283 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (45574a87).
+//
+// e:\vsproject\qt48test\qt48test\release\esrioutput.tlh
+//
+// C++ source equivalent of Win32 type library esrioutput.olb
+// compiler-generated file created 12/01/16 at 15:39:09 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("7db92cec-cb65-420a-8737-fcd0722fd436"))
+/* LIBID */ __esriOutput;
+enum esriExportErrorReturnCodes;
+enum esriOutputErrorReturnCodes;
+enum esriPDFExtensionErrorCodes;
+struct __declspec(uuid("7539e7dc-2d89-11d3-9fc6-00c04f6bc8dd"))
+/* interface */ IFontMap;
+struct __declspec(uuid("e4f70d20-046d-490d-a5e3-066e681ab5b1"))
+/* interface */ IFontMap2;
+struct __declspec(uuid("7539e7dd-2d89-11d3-9fc6-00c04f6bc8dd"))
+/* interface */ IFontMapCollection;
+struct __declspec(uuid("9ecb85b2-6caa-11d3-b685-0080c8ea4fd5"))
+/* interface */ IFontMapEnvironment;
+struct /* coclass */ FontMap;
+struct /* coclass */ FontMapCollection;
+struct /* coclass */ FontMapEnvironment;
+struct __declspec(uuid("7d4881e2-57c6-11d1-945e-080009eebecb"))
+/* interface */ IExporter;
+struct __declspec(uuid("b87ad35e-1242-4c30-b67f-ff3cfa2f1928"))
+/* interface */ IExporter2;
+struct __declspec(uuid("10aae67f-d5ab-4905-a0bf-82636ba2ed02"))
+/* interface */ IExporterPriority;
+struct __declspec(uuid("2b8765ec-8808-474c-8fd3-869d08df20f6"))
+/* interface */ IOutputCleanup;
+struct __declspec(uuid("27bf29ca-71a8-422a-a66d-ff875a9de13b"))
+/* interface */ IWorldFileSettings;
+struct __declspec(uuid("167806fc-6bcb-491e-9fb0-827baf2c3dec"))
+/* interface */ IWorldFileSettings2;
+struct __declspec(uuid("1c538193-8806-489c-8a79-4b54c8c18b37"))
+/* interface */ IStepProgressorSetup;
+struct __declspec(uuid("5e091c46-d015-471f-8187-f774c7ad9d48"))
+/* interface */ ITrackCancelSetup;
+struct __declspec(uuid("bb518176-e7e3-420a-9787-ae6e3487eb68"))
+/* interface */ ISettingsInRegistry;
+enum esriExportColorspace;
+struct __declspec(uuid("c42431dc-237a-4628-996a-39a89af74158"))
+/* interface */ IExportColorspaceSettings;
+enum esriOutputSelection;
+struct __declspec(uuid("1f685f17-704a-4755-834f-4c0d67303a2f"))
+/* interface */ IPrintAndExportPageOptions;
+struct /* coclass */ PrintAndExportPageOptions;
+struct __declspec(uuid("7d4881e3-57c6-11d1-945e-080009eebecb"))
+/* interface */ IEmfExporter;
+struct /* coclass */ EmfExporter;
+enum esriPSDriverEmulsion;
+enum esriPSDriverImage;
+enum esriPSDriverImageCompression;
+enum esriPSDriverPSLanguageLevel;
+enum esriPSDriverHalfTone;
+enum esriPSDriverSeparates;
+enum esriPSDriverMarks;
+enum esriColorCorrectionDataType;
+enum esriCMYKIndex;
+struct __declspec(uuid("481614e4-9407-11d1-9127-0000f87808ee"))
+/* interface */ ISpotPlate;
+struct __declspec(uuid("f480e790-2b0f-11d3-9fc3-00c04f6bc8dd"))
+/* interface */ ISpotPlateCollection;
+struct __declspec(uuid("80b77a31-4db6-11d3-b654-0080c8ea4fd5"))
+/* interface */ IColorCorrection;
+struct __declspec(uuid("cd754684-a222-11d0-a68f-080009d57b9a"))
+/* interface */ IPSDriver;
+struct __declspec(uuid("25164bc3-56da-4af1-a195-1506ecfec53c"))
+/* interface */ IPSDriver2;
+struct /* coclass */ PSDriver;
+struct __declspec(uuid("7d4881e6-57c6-11d1-945e-080009eebecb"))
+/* interface */ IPsExporter;
+struct /* coclass */ PsExporter;
+struct __declspec(uuid("1f685f18-704a-4755-834f-4c0d67303a2f"))
+/* interface */ IOutputPageOptionsAdmin;
+struct /* coclass */ SpotPlate;
+struct __declspec(uuid("0201602d-1521-11d3-9f97-00c04f6bc8dd"))
+/* interface */ IPDFDriver;
+struct /* coclass */ PDFDriver;
+struct __declspec(uuid("76712d91-28cb-11d3-b616-0080c8ea4fd5"))
+/* interface */ IPDFExporter;
+struct /* coclass */ PDFExporter;
+enum esriAIDriverOptions;
+struct __declspec(uuid("9e790106-4047-4fb3-be12-8f29106a1f86"))
+/* interface */ IAIDriver;
+struct /* coclass */ AIDriver;
+struct __declspec(uuid("722a2714-cd07-4c68-b07a-86a8d7b925e3"))
+/* interface */ IAIExporter;
+struct /* coclass */ AIExporter;
+struct __declspec(uuid("387bc1d1-3f54-11d1-885e-0000f87808ee"))
+/* interface */ IPaper;
+struct __declspec(uuid("6a319332-d3e2-413a-97f4-f25ce438feda"))
+/* interface */ IPaper2;
+struct __declspec(uuid("2ab49820-9406-11d0-87ef-080009ec732a"))
+/* interface */ IPrinter;
+struct __declspec(uuid("4004040c-a184-4c77-ba78-0475d93a3803"))
+/* interface */ IPrinterMPage;
+struct __declspec(uuid("de6dcd81-3f54-11d1-885e-0000f87808ee"))
+/* interface */ IEmfPrinter;
+struct /* coclass */ Paper;
+struct /* coclass */ EmfPrinter;
+struct __declspec(uuid("de6dcd82-3f54-11d1-885e-0000f87808ee"))
+/* interface */ IPsPrinter;
+struct /* coclass */ PsPrinter;
+struct __declspec(uuid("55c11165-0c2d-4e2d-afea-10b4186c4364"))
+/* interface */ IExport;
+enum esriExportImageType;
+struct __declspec(uuid("4bf7d12a-5c15-4671-a9e2-11fce89f0873"))
+/* interface */ IExportImage;
+struct __declspec(uuid("759be840-8eb9-45a0-b511-2a297096344b"))
+/* interface */ IExportBMP;
+struct __declspec(uuid("8746bb14-4c79-42f0-b0f1-3327651eb378"))
+/* interface */ IExportJPEG;
+struct __declspec(uuid("3b12ac60-9d1a-45c8-bde5-a2b4cdced76f"))
+/* interface */ IExportPNG;
+enum esriTIFFCompression;
+struct __declspec(uuid("b13d58c7-603f-4610-8538-5b501908ee26"))
+/* interface */ IExportTIFF;
+enum esriGIFCompression;
+struct __declspec(uuid("6c43ec0f-352c-42ef-9bd6-83d37529e3e5"))
+/* interface */ IExportGIF;
+struct /* coclass */ ExportBMP;
+struct /* coclass */ ExportJPEG;
+struct /* coclass */ ExportPNG;
+struct /* coclass */ ExportTIFF;
+struct /* coclass */ ExportGIF;
+struct __declspec(uuid("d29aa471-3e7c-41ec-b502-9e888a3d4bcb"))
+/* interface */ IExportVector;
+struct __declspec(uuid("1c16bcac-81dd-4662-a6ab-810a205fc645"))
+/* interface */ IExportVectorOptions;
+struct __declspec(uuid("ccf50555-74e3-4f29-9ffe-1fc489d1552c"))
+/* interface */ IExportVectorOptionsEx;
+struct __declspec(uuid("94123bcd-eae7-42a9-9fef-d09a57b87a0f"))
+/* interface */ IExportEMF;
+enum esriExportPSEmulsion;
+enum esriExportPSImage;
+enum esriExportPSLanguageLevel;
+enum esriExportImageCompression;
+struct __declspec(uuid("efcd8d47-8d2a-47a4-b35b-15ca74bce73c"))
+/* interface */ IExportPS;
+struct __declspec(uuid("36ce3f37-30c9-4544-afa6-89a7315abce7"))
+/* interface */ IExportPS2;
+struct __declspec(uuid("6a2a0820-e1b6-4eb0-af9b-6449dae7a952"))
+/* interface */ IExportPDF;
+enum esriExportPDFLayerOptions;
+struct __declspec(uuid("86d86855-631d-4a75-ad19-725b460208c7"))
+/* interface */ IExportPDF2;
+struct __declspec(uuid("083bc81c-e835-4103-aad6-454aa037966b"))
+/* interface */ IExportPDF3;
+enum esriExportMultipleFiles;
+struct __declspec(uuid("1a551946-895a-4809-80d8-d417d654f3ac"))
+/* interface */ IExportPagesMultipleFile;
+struct __declspec(uuid("69822e67-c74b-4138-ab20-aa4e00cb87dd"))
+/* interface */ IExportAI;
+struct __declspec(uuid("0ab19cc6-7c0b-4916-8d8d-8b6b9c4e4a8a"))
+/* interface */ IExportAI2;
+struct __declspec(uuid("0a149c8e-5d95-4a5c-9f48-5d30b3f12fa2"))
+/* interface */ IExportSVG;
+enum esriPDFExtensionSecurityEncryptionOption;
+enum esriPDFExtensionSecurityEncryptionMethod;
+enum esriPDFExtensionSecurityPermission;
+struct __declspec(uuid("6c9a13e6-f9ec-4ebf-af52-bb1d822622df"))
+/* interface */ IExportPDFPasswordSecurity;
+struct /* coclass */ ExportEMF;
+struct /* coclass */ ExportPS;
+struct /* coclass */ ExportPDF;
+struct /* coclass */ ExportAI;
+struct /* coclass */ ExportSVG;
+struct __declspec(uuid("7d4881e5-57c6-11d1-945e-080009eebecb"))
+/* interface */ IDibExporter;
+struct __declspec(uuid("511ff079-55c4-11d3-9ffd-00c04f6bc8dd"))
+/* interface */ IJpegExporter;
+struct __declspec(uuid("4c59f34d-db32-11d3-9ff6-00c04f6bc8dd"))
+/* interface */ IBmpExporter;
+struct __declspec(uuid("71001418-565a-4588-90b7-3ffb04b74be7"))
+/* interface */ ITiffExporter;
+struct /* coclass */ DibExporter;
+struct /* coclass */ JpegExporter;
+struct /* coclass */ TiffExporter;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IFontMap, __uuidof(IFontMap));
+_COM_SMARTPTR_TYPEDEF(IFontMap2, __uuidof(IFontMap2));
+_COM_SMARTPTR_TYPEDEF(IFontMapCollection, __uuidof(IFontMapCollection));
+_COM_SMARTPTR_TYPEDEF(IFontMapEnvironment, __uuidof(IFontMapEnvironment));
+_COM_SMARTPTR_TYPEDEF(IExporter, __uuidof(IExporter));
+_COM_SMARTPTR_TYPEDEF(IExporter2, __uuidof(IExporter2));
+_COM_SMARTPTR_TYPEDEF(IExporterPriority, __uuidof(IExporterPriority));
+_COM_SMARTPTR_TYPEDEF(IOutputCleanup, __uuidof(IOutputCleanup));
+_COM_SMARTPTR_TYPEDEF(IWorldFileSettings, __uuidof(IWorldFileSettings));
+_COM_SMARTPTR_TYPEDEF(IWorldFileSettings2, __uuidof(IWorldFileSettings2));
+_COM_SMARTPTR_TYPEDEF(IStepProgressorSetup, __uuidof(IStepProgressorSetup));
+_COM_SMARTPTR_TYPEDEF(ITrackCancelSetup, __uuidof(ITrackCancelSetup));
+_COM_SMARTPTR_TYPEDEF(ISettingsInRegistry, __uuidof(ISettingsInRegistry));
+_COM_SMARTPTR_TYPEDEF(IExportColorspaceSettings, __uuidof(IExportColorspaceSettings));
+_COM_SMARTPTR_TYPEDEF(IPrintAndExportPageOptions, __uuidof(IPrintAndExportPageOptions));
+_COM_SMARTPTR_TYPEDEF(IEmfExporter, __uuidof(IEmfExporter));
+_COM_SMARTPTR_TYPEDEF(ISpotPlate, __uuidof(ISpotPlate));
+_COM_SMARTPTR_TYPEDEF(ISpotPlateCollection, __uuidof(ISpotPlateCollection));
+_COM_SMARTPTR_TYPEDEF(IColorCorrection, __uuidof(IColorCorrection));
+_COM_SMARTPTR_TYPEDEF(IPSDriver, __uuidof(IPSDriver));
+_COM_SMARTPTR_TYPEDEF(IPSDriver2, __uuidof(IPSDriver2));
+_COM_SMARTPTR_TYPEDEF(IPsExporter, __uuidof(IPsExporter));
+_COM_SMARTPTR_TYPEDEF(IOutputPageOptionsAdmin, __uuidof(IOutputPageOptionsAdmin));
+_COM_SMARTPTR_TYPEDEF(IPDFDriver, __uuidof(IPDFDriver));
+_COM_SMARTPTR_TYPEDEF(IPDFExporter, __uuidof(IPDFExporter));
+_COM_SMARTPTR_TYPEDEF(IAIDriver, __uuidof(IAIDriver));
+_COM_SMARTPTR_TYPEDEF(IAIExporter, __uuidof(IAIExporter));
+_COM_SMARTPTR_TYPEDEF(IPaper, __uuidof(IPaper));
+_COM_SMARTPTR_TYPEDEF(IPaper2, __uuidof(IPaper2));
+_COM_SMARTPTR_TYPEDEF(IPrinter, __uuidof(IPrinter));
+_COM_SMARTPTR_TYPEDEF(IPrinterMPage, __uuidof(IPrinterMPage));
+_COM_SMARTPTR_TYPEDEF(IEmfPrinter, __uuidof(IEmfPrinter));
+_COM_SMARTPTR_TYPEDEF(IPsPrinter, __uuidof(IPsPrinter));
+_COM_SMARTPTR_TYPEDEF(IExport, __uuidof(IExport));
+_COM_SMARTPTR_TYPEDEF(IExportImage, __uuidof(IExportImage));
+_COM_SMARTPTR_TYPEDEF(IExportBMP, __uuidof(IExportBMP));
+_COM_SMARTPTR_TYPEDEF(IExportJPEG, __uuidof(IExportJPEG));
+_COM_SMARTPTR_TYPEDEF(IExportPNG, __uuidof(IExportPNG));
+_COM_SMARTPTR_TYPEDEF(IExportTIFF, __uuidof(IExportTIFF));
+_COM_SMARTPTR_TYPEDEF(IExportGIF, __uuidof(IExportGIF));
+_COM_SMARTPTR_TYPEDEF(IExportVector, __uuidof(IExportVector));
+_COM_SMARTPTR_TYPEDEF(IExportVectorOptions, __uuidof(IExportVectorOptions));
+_COM_SMARTPTR_TYPEDEF(IExportVectorOptionsEx, __uuidof(IExportVectorOptionsEx));
+_COM_SMARTPTR_TYPEDEF(IExportEMF, __uuidof(IExportEMF));
+_COM_SMARTPTR_TYPEDEF(IExportPS, __uuidof(IExportPS));
+_COM_SMARTPTR_TYPEDEF(IExportPS2, __uuidof(IExportPS2));
+_COM_SMARTPTR_TYPEDEF(IExportPDF, __uuidof(IExportPDF));
+_COM_SMARTPTR_TYPEDEF(IExportPDF2, __uuidof(IExportPDF2));
+_COM_SMARTPTR_TYPEDEF(IExportPDF3, __uuidof(IExportPDF3));
+_COM_SMARTPTR_TYPEDEF(IExportPagesMultipleFile, __uuidof(IExportPagesMultipleFile));
+_COM_SMARTPTR_TYPEDEF(IExportAI, __uuidof(IExportAI));
+_COM_SMARTPTR_TYPEDEF(IExportAI2, __uuidof(IExportAI2));
+_COM_SMARTPTR_TYPEDEF(IExportSVG, __uuidof(IExportSVG));
+_COM_SMARTPTR_TYPEDEF(IExportPDFPasswordSecurity, __uuidof(IExportPDFPasswordSecurity));
+_COM_SMARTPTR_TYPEDEF(IDibExporter, __uuidof(IDibExporter));
+_COM_SMARTPTR_TYPEDEF(IJpegExporter, __uuidof(IJpegExporter));
+_COM_SMARTPTR_TYPEDEF(IBmpExporter, __uuidof(IBmpExporter));
+_COM_SMARTPTR_TYPEDEF(ITiffExporter, __uuidof(ITiffExporter));
+
+//
+// Type library items
+//
+
+enum __declspec(uuid("d3115f03-36c5-4a14-8288-da7d1e22cc3d"))
+esriExportErrorReturnCodes
+{
+    E_CGMVERSION3NEEDED = -2147220735,
+    E_LICENSENOTAVAILABLE = -2147220734,
+    E_OBJECTSETUP = -2147220733,
+    E_TEMPMETAFILE = -2147220732,
+    E_MAPMETAFILE = -2147220731,
+    E_PAPERREFREQ = -2147220730,
+    E_DRIVERNOTMATCH = -2147220729,
+    E_PARAMETER = -2147220728,
+    E_REGISTRYSETTINGS = -2147220727,
+    E_FILECREATION = -2147220726,
+    E_METAFILEPARSING = -2147220725,
+    E_OPENPRINTER = -2147220724,
+    E_BITMAPOUTOFMEMORY = -2147220723,
+    E_STARTPRINTING = -2147220722,
+    E_WASNOTACTIVATED = -2147220721,
+    E_OUTPUTFILENAME = -2147220720,
+    E_PIXELBOUNDS = -2147220719
+};
+
+enum __declspec(uuid("df1e8871-d0e8-4dff-b4ca-b6d19f311dcf"))
+esriOutputErrorReturnCodes
+{
+    E_INTERNALERROR = -2147220686,
+    E_REQUESTEDFUNCTIONALITYDOESNOTSUPPORTED = -2147220685,
+    E_MEMORYOUT = -2147220684,
+    E_MEMORYERROR = -2147220683,
+    E_INVALIDORCURRUPTFILE = -2147220682,
+    E_FILEREADINGERROR = -2147220681,
+    E_FILEWRITINGERROR = -2147220680,
+    E_FILEOPENINGERROR = -2147220679,
+    E_FILECREATIONERROR = -2147220678,
+    E_IMAGEDIRECTORYREADINGERROR = -2147220677,
+    E_IMAGEDIRECTORYWRITINGERROR = -2147220676,
+    E_CANNOTCOMPRESSORDECOMPRESS = -2147220675,
+    E_READORWRITEJPEGMARKER = -2147220674,
+    E_INCOMPATIBLEZLIB = -2147220673,
+    E_INVALIDIMAGEPARAMETERS = -2147220672,
+    E_INVALIDPARAMETERS = -2147220671,
+    E_CLASSSETTEDUPINCORRECTLY = -2147220670,
+    S_SAVEDPRINTERNOTFOUND = 262979,
+    S_NOPRINTERSINSTALLED = 262980
+};
+
+enum __declspec(uuid("bfb5205f-a1a5-42a8-b703-111741359673"))
+esriPDFExtensionErrorCodes
+{
+    E_PDFEXTENSIONERROR = -2147220667,
+    E_NEEDPASSWD = -2147220666,
+    E_INSUFFICIENTMEMORY = -2147220665,
+    E_TOOMANYPAGESFOROPEN = -2147220664,
+    E_OPNOTPERMITTED = -2147220663,
+    E_UNABLEOPENDOC = -2147220662,
+    E_UNABLEOPENDOCFORWRITING = -2147220661,
+    E_UNABLEWRITINGDOC = -2147220660,
+    E_UNABLERENTEMPFILE = -2147220659,
+    E_UNABLEREADILE = -2147220658,
+    E_UNKNOWNFILETYPE = -2147220657,
+    E_FILEALREADYOPEN = -2147220656,
+    E_NOSPACEFORTEMPFILE = -2147220655,
+    E_TOOMANYPAGESFORINSERT = -2147220655,
+    E_AFTERSAVE = -2147220654,
+    E_FILEERROR = -2147220653,
+    E_DIRFULL = -2147220652,
+    E_DISKFULL = -2147220651,
+    E_FILEIO = -2147220650,
+    E_FILEREAD = -2147220649,
+    E_FILEWRITE = -2147220648,
+    E_FILELOCKED = -2147220647,
+    E_FILEEXISTS = -2147220646,
+    E_FILEINUSE = -2147220645,
+    E_FILEACCESSDENIED = -2147220644,
+    E_FILEACCESSNOWRITE = -2147220643,
+    E_FILENOTFOUND = -2147220642,
+    E_FILEOPENFAILED = -2147220641,
+    E_METADATABADXMP = -2147220640,
+    E_METADATASYNTXERR = -2147220639,
+    E_XAPCREATIONERR = -2147220638,
+    E_METADATAINTERNAL = -2147220637,
+    E_INTERROR = -2147220636,
+    E_OUTMEMORY = -2147220635,
+    E_BADPARAMETER = -2147220634,
+    E_USERCANCEL = -2147220633
+};
+
+struct __declspec(uuid("7539e7dc-2d89-11d3-9fc6-00c04f6bc8dd"))
+IFontMap : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_TrueTypeFont (
+        /*[out,retval]*/ BSTR * font ) = 0;
+      virtual HRESULT __stdcall get_MappedFont (
+        /*[out,retval]*/ BSTR * font ) = 0;
+      virtual HRESULT __stdcall put_Mapping (
+        /*[in]*/ BSTR TrueTypeFont,
+        /*[in]*/ BSTR _arg2 ) = 0;
+};
+
+struct __declspec(uuid("e4f70d20-046d-490d-a5e3-066e681ab5b1"))
+IFontMap2 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SetMapping (
+        /*[in]*/ BSTR TrueTypeFont,
+        /*[in]*/ BSTR MappedFont ) = 0;
+      virtual HRESULT __stdcall get_TrueTypeFont (
+        /*[out,retval]*/ BSTR * font ) = 0;
+      virtual HRESULT __stdcall get_MappedFont (
+        /*[out,retval]*/ BSTR * font ) = 0;
+      virtual HRESULT __stdcall put_Mapping (
+        /*[in]*/ BSTR TrueTypeFont,
+        /*[in]*/ BSTR _arg2 ) = 0;
+};
+
+struct __declspec(uuid("7539e7dd-2d89-11d3-9fc6-00c04f6bc8dd"))
+IFontMapCollection : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_FontMap (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IFontMap * * FontMap ) = 0;
+      virtual HRESULT __stdcall Add (
+        /*[in]*/ struct IFontMap * FontMap ) = 0;
+      virtual HRESULT __stdcall Insert (
+        /*[in]*/ long index,
+        /*[in]*/ struct IFontMap * FontMap ) = 0;
+      virtual HRESULT __stdcall Remove (
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall RemoveAll ( ) = 0;
+};
+
+struct __declspec(uuid("9ecb85b2-6caa-11d3-b685-0080c8ea4fd5"))
+IFontMapEnvironment : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_SaveMappings (
+        /*[in]*/ VARIANT_BOOL SaveMappings ) = 0;
+      virtual HRESULT __stdcall get_SaveMappings (
+        /*[out,retval]*/ VARIANT_BOOL * SaveMappings ) = 0;
+      virtual HRESULT __stdcall get_FontMapCollection (
+        /*[out,retval]*/ struct IFontMapCollection * * FontMapCollection ) = 0;
+      virtual HRESULT __stdcall put_DefaultMappingsChoices (
+        /*[in]*/ VARIANT defaultMappingChoices ) = 0;
+      virtual HRESULT __stdcall get_DefaultMappingsChoices (
+        /*[out,retval]*/ VARIANT * defaultMappingChoices ) = 0;
+      virtual HRESULT __stdcall put_DefaultMapping (
+        /*[in]*/ BSTR DefaultMapping ) = 0;
+      virtual HRESULT __stdcall get_DefaultMapping (
+        /*[out,retval]*/ BSTR * DefaultMapping ) = 0;
+      virtual HRESULT __stdcall put_ApplyDefaultMappingDesc (
+        /*[in]*/ BSTR ApplyDefaultMappingDesc ) = 0;
+      virtual HRESULT __stdcall get_ApplyDefaultMappingDesc (
+        /*[out,retval]*/ BSTR * ApplyDefaultMappingDesc ) = 0;
+};
+
+struct __declspec(uuid("0710508f-2d9e-11d3-9fc6-00c04f6bc8dd"))
+FontMap;
+    // [ default ] interface IUnknown
+    // interface IFontMap
+    // interface IFontMap2
+
+struct __declspec(uuid("eb0e7543-2d97-11d3-9fc6-00c04f6bc8dd"))
+FontMapCollection;
+    // [ default ] interface IUnknown
+    // interface IFontMapCollection
+
+struct __declspec(uuid("9ecb85b1-6caa-11d3-b685-0080c8ea4fd5"))
+FontMapEnvironment;
+    // [ default ] interface IUnknown
+    // interface IFontMapEnvironment
+
+struct __declspec(uuid("7d4881e2-57c6-11d1-945e-080009eebecb"))
+IExporter : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_Filter (
+        /*[out,retval]*/ BSTR * Filter ) = 0;
+      virtual HRESULT __stdcall get_FileExtension (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall put_PixelBounds (
+        /*[in]*/ struct IEnvelope * PixelBounds ) = 0;
+      virtual HRESULT __stdcall get_PixelBounds (
+        /*[out,retval]*/ struct IEnvelope * * PixelBounds ) = 0;
+      virtual HRESULT __stdcall put_ExportFileName (
+        /*[in]*/ BSTR fileName ) = 0;
+      virtual HRESULT __stdcall get_ExportFileName (
+        /*[out,retval]*/ BSTR * fileName ) = 0;
+      virtual HRESULT __stdcall get_Resolution (
+        /*[out,retval]*/ short * res ) = 0;
+      virtual HRESULT __stdcall put_Resolution (
+        /*[in]*/ short res ) = 0;
+      virtual HRESULT __stdcall get_ClipToGraphicExtent (
+        /*[out,retval]*/ VARIANT_BOOL * clipToGraphicsExtent ) = 0;
+      virtual HRESULT __stdcall put_ClipToGraphicExtent (
+        /*[in]*/ VARIANT_BOOL clipToGraphicsExtent ) = 0;
+      virtual HRESULT __stdcall StartExporting (
+        /*[out,retval]*/ OLE_HANDLE * hDC ) = 0;
+      virtual HRESULT __stdcall FinishExporting ( ) = 0;
+};
+
+struct __declspec(uuid("b87ad35e-1242-4c30-b67f-ff3cfa2f1928"))
+IExporter2 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall putref_ExportExtent (
+        /*[in]*/ struct IEnvelope * _arg1 ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_Filter (
+        /*[out,retval]*/ BSTR * Filter ) = 0;
+      virtual HRESULT __stdcall get_FileExtension (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall put_PixelBounds (
+        /*[in]*/ struct IEnvelope * PixelBounds ) = 0;
+      virtual HRESULT __stdcall get_PixelBounds (
+        /*[out,retval]*/ struct IEnvelope * * PixelBounds ) = 0;
+      virtual HRESULT __stdcall put_ExportFileName (
+        /*[in]*/ BSTR fileName ) = 0;
+      virtual HRESULT __stdcall get_ExportFileName (
+        /*[out,retval]*/ BSTR * fileName ) = 0;
+      virtual HRESULT __stdcall get_Resolution (
+        /*[out,retval]*/ short * res ) = 0;
+      virtual HRESULT __stdcall put_Resolution (
+        /*[in]*/ short res ) = 0;
+      virtual HRESULT __stdcall get_ClipToGraphicExtent (
+        /*[out,retval]*/ VARIANT_BOOL * clipToGraphicsExtent ) = 0;
+      virtual HRESULT __stdcall put_ClipToGraphicExtent (
+        /*[in]*/ VARIANT_BOOL clipToGraphicsExtent ) = 0;
+      virtual HRESULT __stdcall StartExporting (
+        /*[out,retval]*/ OLE_HANDLE * hDC ) = 0;
+      virtual HRESULT __stdcall FinishExporting ( ) = 0;
+};
+
+struct __declspec(uuid("10aae67f-d5ab-4905-a0bf-82636ba2ed02"))
+IExporterPriority : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Priority (
+        /*[out,retval]*/ long * pPriority ) = 0;
+};
+
+struct __declspec(uuid("2b8765ec-8808-474c-8fd3-869d08df20f6"))
+IOutputCleanup : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Cleanup ( ) = 0;
+};
+
+struct __declspec(uuid("27bf29ca-71a8-422a-a66d-ff875a9de13b"))
+IWorldFileSettings : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_MapExtent (
+        /*[in]*/ struct IEnvelope * MapExtent ) = 0;
+      virtual HRESULT __stdcall get_MapExtent (
+        /*[out,retval]*/ struct IEnvelope * * MapExtent ) = 0;
+      virtual HRESULT __stdcall put_OutputWorldFile (
+        /*[in]*/ VARIANT_BOOL OutputWorldFile ) = 0;
+      virtual HRESULT __stdcall get_OutputWorldFile (
+        /*[out,retval]*/ VARIANT_BOOL * OutputWorldFile ) = 0;
+};
+
+struct __declspec(uuid("167806fc-6bcb-491e-9fb0-827baf2c3dec"))
+IWorldFileSettings2 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_MapRotation (
+        /*[in]*/ double mapRotAngle ) = 0;
+      virtual HRESULT __stdcall get_MapRotation (
+        /*[out,retval]*/ double * mapRotAngle ) = 0;
+};
+
+struct __declspec(uuid("1c538193-8806-489c-8a79-4b54c8c18b37"))
+IStepProgressorSetup : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_StepProgressor (
+        /*[in]*/ struct IStepProgressor * _arg1 ) = 0;
+};
+
+struct __declspec(uuid("5e091c46-d015-471f-8187-f774c7ad9d48"))
+ITrackCancelSetup : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_TrackCancel (
+        /*[in]*/ struct ITrackCancel * _arg1 ) = 0;
+};
+
+struct __declspec(uuid("bb518176-e7e3-420a-9787-ae6e3487eb68"))
+ISettingsInRegistry : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall RestoreForCurrentUser (
+        /*[in]*/ BSTR bstrRegPath ) = 0;
+      virtual HRESULT __stdcall StoreForCurrentUser (
+        /*[in]*/ BSTR bstrRegPath ) = 0;
+      virtual HRESULT __stdcall RestoreDefault ( ) = 0;
+};
+
+enum __declspec(uuid("96a2648f-506a-49a9-a630-134bc34a3d5d"))
+esriExportColorspace
+{
+    esriExportColorspaceRGB = 0,
+    esriExportColorspaceCMYK = 1
+};
+
+struct __declspec(uuid("c42431dc-237a-4628-996a-39a89af74158"))
+IExportColorspaceSettings : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Colorspace (
+        /*[in]*/ enum esriExportColorspace pcolorspace ) = 0;
+      virtual HRESULT __stdcall get_Colorspace (
+        /*[out,retval]*/ enum esriExportColorspace * pcolorspace ) = 0;
+};
+
+enum __declspec(uuid("b6b75051-5dbb-41f9-9b12-501e362fa5a1"))
+esriOutputSelection
+{
+    esriOutputAll = 0,
+    esriOutputSelected = 1,
+    esriOutputCurrent = 2,
+    esriOutputRange = 3,
+    esriOutputWhereClause = 4
+};
+
+struct __declspec(uuid("1f685f17-704a-4755-834f-4c0d67303a2f"))
+IPrintAndExportPageOptions : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_OutputSelection (
+        /*[in]*/ enum esriOutputSelection pOption ) = 0;
+      virtual HRESULT __stdcall get_OutputSelection (
+        /*[out,retval]*/ enum esriOutputSelection * pOption ) = 0;
+      virtual HRESULT __stdcall put_PageRange (
+        /*[in]*/ BSTR range ) = 0;
+      virtual HRESULT __stdcall get_PageRange (
+        /*[out,retval]*/ BSTR * range ) = 0;
+      virtual HRESULT __stdcall get_OutputPageSelection (
+        /*[out,retval]*/ VARIANT_BOOL * flag ) = 0;
+      virtual HRESULT __stdcall put_OutputPageSelection (
+        /*[in]*/ VARIANT_BOOL flag ) = 0;
+};
+
+struct __declspec(uuid("36673b39-2ecf-4bb9-8304-98f58d829054"))
+PrintAndExportPageOptions;
+    // [ default ] interface IUnknown
+    // interface IPrintAndExportPageOptions
+
+struct __declspec(uuid("7d4881e3-57c6-11d1-945e-080009eebecb"))
+IEmfExporter : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_IsInMemory (
+        /*[in]*/ VARIANT_BOOL pIsInMemory ) = 0;
+      virtual HRESULT __stdcall get_IsInMemory (
+        /*[out,retval]*/ VARIANT_BOOL * pIsInMemory ) = 0;
+      virtual HRESULT __stdcall get_HENHMETAFILE (
+        /*[out,retval]*/ OLE_HANDLE * pHandle ) = 0;
+      virtual HRESULT __stdcall TakeHENHMETAFILE (
+        /*[out,retval]*/ OLE_HANDLE * pHandle ) = 0;
+      virtual HRESULT __stdcall put_Description (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+};
+
+struct __declspec(uuid("20cd4011-8f3d-11d0-8590-0800091a2a72"))
+EmfExporter;
+    // [ default ] interface IUnknown
+    // interface IEmfExporter
+    // interface IExporter
+    // interface IExporterPriority
+    // interface ISupportErrorInfo
+    // interface IOutputCleanup
+
+enum __declspec(uuid("2fb2cab2-23de-11d1-a43c-080009d57b9a"))
+esriPSDriverEmulsion
+{
+    esriPSDriverEmulUP = 0,
+    esriPSDriverEmulDOWN = 1
+};
+
+enum __declspec(uuid("2fb2cab3-23de-11d1-a43c-080009d57b9a"))
+esriPSDriverImage
+{
+    esriPSDriverImagePOS = 0,
+    esriPSDriverImageNEG = 1
+};
+
+enum __declspec(uuid("e73a9503-7143-11d3-9f59-00c04f6bc8dd"))
+esriPSDriverImageCompression
+{
+    esriPSDriverPSLevel1NoCompress = 0,
+    esriPSDriverPSLevel1Compress = 1,
+    esriPSDriverPSLevel2NoCompress = 2,
+    esriPSDriverPSLevel2Compress = 3
+};
+
+enum __declspec(uuid("49f964c1-233b-11d3-9faf-00c04f6bc8dd"))
+esriPSDriverPSLanguageLevel
+{
+    esriPSDriverPSLevel2 = 0,
+    esriPSDriverPSLevel3 = 1
+};
+
+enum __declspec(uuid("64037d33-66f2-11d1-9180-04783b000000"))
+esriPSDriverHalfTone
+{
+    esriPSDriverDPI = 0,
+    esriPSDriverLPI = 1,
+    esriPSDriverLastHalfTone = 2
+};
+
+enum __declspec(uuid("481614e3-9407-11d1-9127-0000f87808ee"))
+esriPSDriverSeparates
+{
+    esriPSDriverSeparateCyan = 1,
+    esriPSDriverSeparateMagenta = 2,
+    esriPSDriverSeparateYellow = 3,
+    esriPSDriverSeparateBlack = 4,
+    esriPSDriverSeparateCustom = 5
+};
+
+enum __declspec(uuid("7fa0b442-204e-11d3-b604-0080c8ea4fd5"))
+esriPSDriverMarks
+{
+    esriPSDriverNone = 0,
+    esriPSDriverRegistration = 1,
+    esriPSDriverCrop = 2,
+    esriPSDriverLabel = 4,
+    esriPSDriverGrayScale = 8
+};
+
+enum __declspec(uuid("80b77a32-4db6-11d3-b654-0080c8ea4fd5"))
+esriColorCorrectionDataType
+{
+    esriColorCorrectionDataTypeTotal = 1,
+    esriColorCorrectionDataTypeRaster = 2,
+    esriColorCorrectionDataTypeVector = 4
+};
+
+enum __declspec(uuid("80b77a33-4db6-11d3-b654-0080c8ea4fd5"))
+esriCMYKIndex
+{
+    esriCMYKIndexCyan = 0,
+    esriCMYKIndexMagenta = 1,
+    esriCMYKIndexYellow = 2,
+    esriCMYKIndexBlack = 3
+};
+
+struct __declspec(uuid("481614e4-9407-11d1-9127-0000f87808ee"))
+ISpotPlate : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Color (
+        /*[in]*/ struct IPostScriptColor * Color ) = 0;
+      virtual HRESULT __stdcall get_Color (
+        /*[out,retval]*/ struct IPostScriptColor * * Color ) = 0;
+      virtual HRESULT __stdcall put_Separate (
+        /*[in]*/ enum esriPSDriverSeparates Separate ) = 0;
+      virtual HRESULT __stdcall get_Separate (
+        /*[out,retval]*/ enum esriPSDriverSeparates * Separate ) = 0;
+      virtual HRESULT __stdcall put_ScreenAngle (
+        /*[in]*/ double angle ) = 0;
+      virtual HRESULT __stdcall get_ScreenAngle (
+        /*[out,retval]*/ double * angle ) = 0;
+};
+
+struct __declspec(uuid("f480e790-2b0f-11d3-9fc3-00c04f6bc8dd"))
+ISpotPlateCollection : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall get_SpotPlate (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct ISpotPlate * * SpotPlate ) = 0;
+      virtual HRESULT __stdcall Add (
+        /*[in]*/ struct ISpotPlate * SpotPlate ) = 0;
+      virtual HRESULT __stdcall Insert (
+        /*[in]*/ long index,
+        /*[in]*/ struct ISpotPlate * SpotPlate ) = 0;
+      virtual HRESULT __stdcall Remove (
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall RemoveAll ( ) = 0;
+};
+
+struct __declspec(uuid("80b77a31-4db6-11d3-b654-0080c8ea4fd5"))
+IColorCorrection : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_SupportedColorCorrections (
+        /*[out,retval]*/ short * val ) = 0;
+      virtual HRESULT __stdcall get_Lightness (
+        /*[in]*/ enum esriColorCorrectionDataType dataType,
+        /*[out,retval]*/ short * val ) = 0;
+      virtual HRESULT __stdcall put_Lightness (
+        /*[in]*/ enum esriColorCorrectionDataType dataType,
+        /*[in]*/ short val ) = 0;
+      virtual HRESULT __stdcall get_Saturation (
+        /*[in]*/ enum esriColorCorrectionDataType dataType,
+        /*[out,retval]*/ short * val ) = 0;
+      virtual HRESULT __stdcall put_Saturation (
+        /*[in]*/ enum esriColorCorrectionDataType dataType,
+        /*[in]*/ short val ) = 0;
+      virtual HRESULT __stdcall get_UnderColorRemoval (
+        /*[in]*/ enum esriColorCorrectionDataType dataType,
+        /*[out,retval]*/ short * val ) = 0;
+      virtual HRESULT __stdcall put_UnderColorRemoval (
+        /*[in]*/ enum esriColorCorrectionDataType dataType,
+        /*[in]*/ short val ) = 0;
+      virtual HRESULT __stdcall get_CMYKCorrection (
+        /*[in]*/ enum esriColorCorrectionDataType dataType,
+        /*[in]*/ enum esriCMYKIndex index,
+        /*[out,retval]*/ short * val ) = 0;
+      virtual HRESULT __stdcall put_CMYKCorrection (
+        /*[in]*/ enum esriColorCorrectionDataType dataType,
+        /*[in]*/ enum esriCMYKIndex index,
+        /*[in]*/ short val ) = 0;
+};
+
+struct __declspec(uuid("cd754684-a222-11d0-a68f-080009d57b9a"))
+IPSDriver : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ImageCompression (
+        /*[out,retval]*/ enum esriPSDriverImageCompression * ImageCompression ) = 0;
+      virtual HRESULT __stdcall put_ImageCompression (
+        /*[in]*/ enum esriPSDriverImageCompression ImageCompression ) = 0;
+      virtual HRESULT __stdcall get_ArcPressSeparateImage (
+        /*[out,retval]*/ VARIANT_BOOL * sepImage ) = 0;
+      virtual HRESULT __stdcall put_ArcPressSeparateImage (
+        /*[in]*/ VARIANT_BOOL sepImage ) = 0;
+      virtual HRESULT __stdcall get_ArcPressSeparateImageRotate (
+        /*[out,retval]*/ VARIANT_BOOL * sepImage ) = 0;
+      virtual HRESULT __stdcall put_ArcPressSeparateImageRotate (
+        /*[in]*/ VARIANT_BOOL sepImage ) = 0;
+      virtual HRESULT __stdcall get_FontMapCollection (
+        /*[out,retval]*/ struct IFontMapCollection * * FontMapCollection ) = 0;
+      virtual HRESULT __stdcall putref_FontMapCollection (
+        /*[in]*/ struct IFontMapCollection * FontMapCollection ) = 0;
+      virtual HRESULT __stdcall get_PPDFile (
+        /*[out,retval]*/ BSTR * PPDFile ) = 0;
+      virtual HRESULT __stdcall put_PPDFile (
+        /*[in]*/ BSTR PPDFile ) = 0;
+      virtual HRESULT __stdcall get_Marks (
+        /*[out,retval]*/ short * Marks ) = 0;
+      virtual HRESULT __stdcall put_Marks (
+        /*[in]*/ short Marks ) = 0;
+      virtual HRESULT __stdcall get_HalfTone (
+        /*[in]*/ enum esriPSDriverHalfTone HalfTone,
+        /*[out,retval]*/ long * value ) = 0;
+      virtual HRESULT __stdcall put_HalfTone (
+        /*[in]*/ enum esriPSDriverHalfTone HalfTone,
+        /*[in]*/ long value ) = 0;
+      virtual HRESULT __stdcall get_FormName (
+        /*[out,retval]*/ BSTR * FormName ) = 0;
+      virtual HRESULT __stdcall put_FormName (
+        /*[in]*/ BSTR FormName ) = 0;
+      virtual HRESULT __stdcall get_PrintableBounds (
+        /*[out,retval]*/ struct IEnvelope * * ppBounds ) = 0;
+      virtual HRESULT __stdcall put_PrintableBounds (
+        /*[in]*/ struct IEnvelope * ppBounds ) = 0;
+      virtual HRESULT __stdcall get_Orientation (
+        /*[out,retval]*/ short * Orientation ) = 0;
+      virtual HRESULT __stdcall put_Orientation (
+        /*[in]*/ short Orientation ) = 0;
+      virtual HRESULT __stdcall get_Emulsion (
+        /*[out,retval]*/ enum esriPSDriverEmulsion * Emulsion ) = 0;
+      virtual HRESULT __stdcall put_Emulsion (
+        /*[in]*/ enum esriPSDriverEmulsion Emulsion ) = 0;
+      virtual HRESULT __stdcall get_Image (
+        /*[out,retval]*/ enum esriPSDriverImage * Image ) = 0;
+      virtual HRESULT __stdcall put_Image (
+        /*[in]*/ enum esriPSDriverImage Image ) = 0;
+      virtual HRESULT __stdcall get_OneBitImageTransparency (
+        /*[out,retval]*/ VARIANT_BOOL * imageTransparency ) = 0;
+      virtual HRESULT __stdcall put_OneBitImageTransparency (
+        /*[in]*/ VARIANT_BOOL imageTransparency ) = 0;
+      virtual HRESULT __stdcall get_UseEMFFrameBoxForPSBoundingBox (
+        /*[out,retval]*/ VARIANT_BOOL * useFrameBox ) = 0;
+      virtual HRESULT __stdcall put_UseEMFFrameBoxForPSBoundingBox (
+        /*[in]*/ VARIANT_BOOL useFrameBox ) = 0;
+      virtual HRESULT __stdcall get_PSLanguageLevel (
+        /*[out,retval]*/ enum esriPSDriverPSLanguageLevel * pslevel ) = 0;
+      virtual HRESULT __stdcall put_PSLanguageLevel (
+        /*[in]*/ enum esriPSDriverPSLanguageLevel pslevel ) = 0;
+      virtual HRESULT __stdcall put_StepProgressor (
+        /*[in]*/ struct IStepProgressor * _arg1 ) = 0;
+      virtual HRESULT __stdcall CreatePS (
+        /*[in]*/ BSTR InputFileName,
+        /*[in]*/ BSTR OutputFileName ) = 0;
+};
+
+struct __declspec(uuid("25164bc3-56da-4af1-a195-1506ecfec53c"))
+IPSDriver2 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Copies (
+        /*[out,retval]*/ short * Copies ) = 0;
+      virtual HRESULT __stdcall put_Copies (
+        /*[in]*/ short Copies ) = 0;
+      virtual HRESULT __stdcall get_ImageCompression (
+        /*[out,retval]*/ enum esriPSDriverImageCompression * ImageCompression ) = 0;
+      virtual HRESULT __stdcall put_ImageCompression (
+        /*[in]*/ enum esriPSDriverImageCompression ImageCompression ) = 0;
+      virtual HRESULT __stdcall get_ArcPressSeparateImage (
+        /*[out,retval]*/ VARIANT_BOOL * sepImage ) = 0;
+      virtual HRESULT __stdcall put_ArcPressSeparateImage (
+        /*[in]*/ VARIANT_BOOL sepImage ) = 0;
+      virtual HRESULT __stdcall get_ArcPressSeparateImageRotate (
+        /*[out,retval]*/ VARIANT_BOOL * sepImage ) = 0;
+      virtual HRESULT __stdcall put_ArcPressSeparateImageRotate (
+        /*[in]*/ VARIANT_BOOL sepImage ) = 0;
+      virtual HRESULT __stdcall get_FontMapCollection (
+        /*[out,retval]*/ struct IFontMapCollection * * FontMapCollection ) = 0;
+      virtual HRESULT __stdcall putref_FontMapCollection (
+        /*[in]*/ struct IFontMapCollection * FontMapCollection ) = 0;
+      virtual HRESULT __stdcall get_PPDFile (
+        /*[out,retval]*/ BSTR * PPDFile ) = 0;
+      virtual HRESULT __stdcall put_PPDFile (
+        /*[in]*/ BSTR PPDFile ) = 0;
+      virtual HRESULT __stdcall get_Marks (
+        /*[out,retval]*/ short * Marks ) = 0;
+      virtual HRESULT __stdcall put_Marks (
+        /*[in]*/ short Marks ) = 0;
+      virtual HRESULT __stdcall get_HalfTone (
+        /*[in]*/ enum esriPSDriverHalfTone HalfTone,
+        /*[out,retval]*/ long * value ) = 0;
+      virtual HRESULT __stdcall put_HalfTone (
+        /*[in]*/ enum esriPSDriverHalfTone HalfTone,
+        /*[in]*/ long value ) = 0;
+      virtual HRESULT __stdcall get_FormName (
+        /*[out,retval]*/ BSTR * FormName ) = 0;
+      virtual HRESULT __stdcall put_FormName (
+        /*[in]*/ BSTR FormName ) = 0;
+      virtual HRESULT __stdcall get_PrintableBounds (
+        /*[out,retval]*/ struct IEnvelope * * ppBounds ) = 0;
+      virtual HRESULT __stdcall put_PrintableBounds (
+        /*[in]*/ struct IEnvelope * ppBounds ) = 0;
+      virtual HRESULT __stdcall get_Orientation (
+        /*[out,retval]*/ short * Orientation ) = 0;
+      virtual HRESULT __stdcall put_Orientation (
+        /*[in]*/ short Orientation ) = 0;
+      virtual HRESULT __stdcall get_Emulsion (
+        /*[out,retval]*/ enum esriPSDriverEmulsion * Emulsion ) = 0;
+      virtual HRESULT __stdcall put_Emulsion (
+        /*[in]*/ enum esriPSDriverEmulsion Emulsion ) = 0;
+      virtual HRESULT __stdcall get_Image (
+        /*[out,retval]*/ enum esriPSDriverImage * Image ) = 0;
+      virtual HRESULT __stdcall put_Image (
+        /*[in]*/ enum esriPSDriverImage Image ) = 0;
+      virtual HRESULT __stdcall get_OneBitImageTransparency (
+        /*[out,retval]*/ VARIANT_BOOL * imageTransparency ) = 0;
+      virtual HRESULT __stdcall put_OneBitImageTransparency (
+        /*[in]*/ VARIANT_BOOL imageTransparency ) = 0;
+      virtual HRESULT __stdcall get_UseEMFFrameBoxForPSBoundingBox (
+        /*[out,retval]*/ VARIANT_BOOL * useFrameBox ) = 0;
+      virtual HRESULT __stdcall put_UseEMFFrameBoxForPSBoundingBox (
+        /*[in]*/ VARIANT_BOOL useFrameBox ) = 0;
+      virtual HRESULT __stdcall get_PSLanguageLevel (
+        /*[out,retval]*/ enum esriPSDriverPSLanguageLevel * pslevel ) = 0;
+      virtual HRESULT __stdcall put_PSLanguageLevel (
+        /*[in]*/ enum esriPSDriverPSLanguageLevel pslevel ) = 0;
+      virtual HRESULT __stdcall put_StepProgressor (
+        /*[in]*/ struct IStepProgressor * _arg1 ) = 0;
+      virtual HRESULT __stdcall CreatePS (
+        /*[in]*/ BSTR InputFileName,
+        /*[in]*/ BSTR OutputFileName ) = 0;
+};
+
+struct __declspec(uuid("cd754683-a222-11d0-a68f-080009d57b9a"))
+PSDriver;
+    // [ default ] interface IUnknown
+    // interface IPSDriver
+    // interface IPSDriver2
+    // interface ISpotPlateCollection
+    // interface IColorCorrection
+    // interface ISupportErrorInfo
+    // interface ITrackCancelSetup
+
+struct __declspec(uuid("7d4881e6-57c6-11d1-945e-080009eebecb"))
+IPsExporter : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall QueryPSDriver (
+        /*[out,retval]*/ struct IPSDriver * * PSDriver ) = 0;
+};
+
+struct __declspec(uuid("20cd4014-8f3d-11d0-8590-0800091a2a72"))
+PsExporter;
+    // [ default ] interface IUnknown
+    // interface IPsExporter
+    // interface IExporter
+    // interface IExporterPriority
+    // interface IFontMapEnvironment
+    // interface ISupportErrorInfo
+    // interface IOutputCleanup
+    // interface IStepProgressorSetup
+    // interface ITrackCancelSetup
+
+struct __declspec(uuid("1f685f18-704a-4755-834f-4c0d67303a2f"))
+IOutputPageOptionsAdmin : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_OutputtingPageLayout (
+        /*[out,retval]*/ VARIANT_BOOL * flag ) = 0;
+      virtual HRESULT __stdcall put_OutputtingPageLayout (
+        /*[in]*/ VARIANT_BOOL flag ) = 0;
+      virtual HRESULT __stdcall get_PageSelectionExists (
+        /*[out,retval]*/ VARIANT_BOOL * flag ) = 0;
+      virtual HRESULT __stdcall put_PageSelectionExists (
+        /*[in]*/ VARIANT_BOOL flag ) = 0;
+      virtual HRESULT __stdcall get_PageCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall put_PageCount (
+        /*[in]*/ long Count ) = 0;
+      virtual HRESULT __stdcall get_SelectedPageCount (
+        /*[out,retval]*/ long * Count ) = 0;
+      virtual HRESULT __stdcall put_SelectedPageCount (
+        /*[in]*/ long Count ) = 0;
+      virtual HRESULT __stdcall get_CurrentIndex (
+        /*[out,retval]*/ long * index ) = 0;
+      virtual HRESULT __stdcall put_CurrentIndex (
+        /*[in]*/ long index ) = 0;
+};
+
+struct __declspec(uuid("481614e5-9407-11d1-9127-0000f87808ee"))
+SpotPlate;
+    // [ default ] interface IUnknown
+    // interface ISpotPlate
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("0201602d-1521-11d3-9f97-00c04f6bc8dd"))
+IPDFDriver : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_FontMapCollection (
+        /*[out,retval]*/ struct IFontMapCollection * * FontMapCollection ) = 0;
+      virtual HRESULT __stdcall putref_FontMapCollection (
+        /*[in]*/ struct IFontMapCollection * FontMapCollection ) = 0;
+      virtual HRESULT __stdcall CreatePDF (
+        /*[in]*/ BSTR InputFileName,
+        /*[in]*/ BSTR OutputFileName ) = 0;
+};
+
+struct __declspec(uuid("02016031-1521-11d3-9f97-00c04f6bc8dd"))
+PDFDriver;
+    // [ default ] interface IUnknown
+    // interface IPDFDriver
+    // interface ISupportErrorInfo
+    // interface IStepProgressorSetup
+    // interface ITrackCancelSetup
+    // interface IFontMapEnvironment
+
+struct __declspec(uuid("76712d91-28cb-11d3-b616-0080c8ea4fd5"))
+IPDFExporter : IUnknown
+{};
+
+struct __declspec(uuid("4aa8cc0e-151d-11d3-9f97-00c04f6bc8dd"))
+PDFExporter;
+    // [ default ] interface IUnknown
+    // interface IPDFExporter
+    // interface IExporter
+    // interface IExporterPriority
+    // interface IFontMapEnvironment
+    // interface ISupportErrorInfo
+    // interface IOutputCleanup
+    // interface IStepProgressorSetup
+    // interface ITrackCancelSetup
+
+enum __declspec(uuid("a34ef1cd-3d63-48f3-a7c3-1adc5e763f9e"))
+esriAIDriverOptions
+{
+    esriAIMapFonts = 1,
+    esriAIPolygonizeMarkers = 2
+};
+
+struct __declspec(uuid("9e790106-4047-4fb3-be12-8f29106a1f86"))
+IAIDriver : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CreateAI (
+        /*[in]*/ BSTR InputFileName,
+        /*[in]*/ BSTR OutputFileName ) = 0;
+      virtual HRESULT __stdcall get_AIDriverOptions (
+        /*[out,retval]*/ enum esriAIDriverOptions * aiOptions ) = 0;
+      virtual HRESULT __stdcall put_AIDriverOptions (
+        /*[in]*/ enum esriAIDriverOptions aiOptions ) = 0;
+};
+
+struct __declspec(uuid("2bd83bf2-eca7-4b7f-9b41-3ad52eae1b1d"))
+AIDriver;
+    // [ default ] interface IUnknown
+    // interface IAIDriver
+    // interface IStepProgressorSetup
+    // interface ITrackCancelSetup
+
+struct __declspec(uuid("722a2714-cd07-4c68-b07a-86a8d7b925e3"))
+IAIExporter : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall QueryAIDriver (
+        /*[out,retval]*/ struct IAIDriver * * AIDriver ) = 0;
+};
+
+struct __declspec(uuid("94512290-b913-4a0b-a509-03f803f19922"))
+AIExporter;
+    // [ default ] interface IUnknown
+    // interface IAIExporter
+    // interface IExporter
+    // interface IExporterPriority
+    // interface IOutputCleanup
+    // interface IStepProgressorSetup
+    // interface ITrackCancelSetup
+
+struct __declspec(uuid("387bc1d1-3f54-11d1-885e-0000f87808ee"))
+IPaper : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Units (
+        /*[out,retval]*/ enum esriUnits * Units ) = 0;
+      virtual HRESULT __stdcall get_PrintableBounds (
+        /*[out,retval]*/ struct IEnvelope * * bounds ) = 0;
+      virtual HRESULT __stdcall get_Orientation (
+        /*[out,retval]*/ short * Orientation ) = 0;
+      virtual HRESULT __stdcall put_Orientation (
+        /*[in]*/ short Orientation ) = 0;
+      virtual HRESULT __stdcall get_Forms (
+        /*[out,retval]*/ struct IEnumNamedID * * Forms ) = 0;
+      virtual HRESULT __stdcall get_FormName (
+        /*[out,retval]*/ BSTR * FormName ) = 0;
+      virtual HRESULT __stdcall get_FormID (
+        /*[out,retval]*/ short * FormID ) = 0;
+      virtual HRESULT __stdcall put_FormID (
+        /*[in]*/ short FormID ) = 0;
+      virtual HRESULT __stdcall get_Trays (
+        /*[out,retval]*/ struct IEnumNamedID * * Trays ) = 0;
+      virtual HRESULT __stdcall get_TrayID (
+        /*[out,retval]*/ short * TrayID ) = 0;
+      virtual HRESULT __stdcall put_TrayID (
+        /*[in]*/ short TrayID ) = 0;
+      virtual HRESULT __stdcall get_PrinterName (
+        /*[out,retval]*/ BSTR * PrinterName ) = 0;
+      virtual HRESULT __stdcall put_PrinterName (
+        /*[in]*/ BSTR PrinterName ) = 0;
+      virtual HRESULT __stdcall Attach (
+        /*[in]*/ OLE_HANDLE hDevMode,
+        /*[in]*/ OLE_HANDLE hDevNames ) = 0;
+      virtual HRESULT __stdcall QueryPaperSize (
+        /*[out]*/ double * Width,
+        /*[out]*/ double * Height ) = 0;
+      virtual HRESULT __stdcall get_PrinterInfo (
+        /*[out]*/ OLE_HANDLE * hDevMode,
+        /*[out,retval]*/ OLE_HANDLE * hDevNames ) = 0;
+};
+
+struct __declspec(uuid("6a319332-d3e2-413a-97f4-f25ce438feda"))
+IPaper2 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Resolution (
+        /*[out,retval]*/ short * Resolution ) = 0;
+};
+
+struct __declspec(uuid("2ab49820-9406-11d0-87ef-080009ec732a"))
+IPrinter : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_Filter (
+        /*[out,retval]*/ BSTR * Filter ) = 0;
+      virtual HRESULT __stdcall get_FileExtension (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall put_PrintToFile (
+        /*[in]*/ BSTR fileName ) = 0;
+      virtual HRESULT __stdcall get_PrintToFile (
+        /*[out,retval]*/ BSTR * fileName ) = 0;
+      virtual HRESULT __stdcall get_DriverName (
+        /*[out,retval]*/ BSTR * DriverName ) = 0;
+      virtual HRESULT __stdcall put_SpoolFileName (
+        /*[in]*/ BSTR SpoolFileName ) = 0;
+      virtual HRESULT __stdcall get_SpoolFileName (
+        /*[out,retval]*/ BSTR * SpoolFileName ) = 0;
+      virtual HRESULT __stdcall put_Resolution (
+        /*[in]*/ short res ) = 0;
+      virtual HRESULT __stdcall get_Resolution (
+        /*[out,retval]*/ short * res ) = 0;
+      virtual HRESULT __stdcall put_StepProgressor (
+        /*[in]*/ struct IStepProgressor * _arg1 ) = 0;
+      virtual HRESULT __stdcall putref_Paper (
+        /*[in]*/ struct IPaper * Paper ) = 0;
+      virtual HRESULT __stdcall get_Paper (
+        /*[out,retval]*/ struct IPaper * * Paper ) = 0;
+      virtual HRESULT __stdcall QueryPaperSize (
+        /*[out]*/ double * Width,
+        /*[out]*/ double * Height ) = 0;
+      virtual HRESULT __stdcall get_PrintableBounds (
+        /*[out,retval]*/ struct IEnvelope * * bounds ) = 0;
+      virtual HRESULT __stdcall get_Units (
+        /*[out,retval]*/ enum esriUnits * Units ) = 0;
+      virtual HRESULT __stdcall VerifyDriverSettings (
+        /*[out,retval]*/ VARIANT_BOOL * ok ) = 0;
+      virtual HRESULT __stdcall DoesDriverSupportPrinter (
+        /*[in]*/ BSTR PrinterName,
+        /*[out,retval]*/ VARIANT_BOOL * supported ) = 0;
+      virtual HRESULT __stdcall StartPrinting (
+        /*[in]*/ struct IEnvelope * PixelBounds,
+        /*[in]*/ OLE_HANDLE hDcPrinter,
+        /*[out,retval]*/ OLE_HANDLE * hDcRet ) = 0;
+      virtual HRESULT __stdcall FinishPrinting ( ) = 0;
+};
+
+struct __declspec(uuid("4004040c-a184-4c77-ba78-0475d93a3803"))
+IPrinterMPage : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall StartMapDocument ( ) = 0;
+      virtual HRESULT __stdcall StartPage (
+        /*[in]*/ struct IEnvelope * PixelBounds,
+        /*[in]*/ OLE_HANDLE hDcPrinter,
+        /*[out,retval]*/ OLE_HANDLE * hDcRet ) = 0;
+      virtual HRESULT __stdcall EndPage ( ) = 0;
+      virtual HRESULT __stdcall EndMapDocument ( ) = 0;
+};
+
+struct __declspec(uuid("de6dcd81-3f54-11d1-885e-0000f87808ee"))
+IEmfPrinter : IUnknown
+{};
+
+struct __declspec(uuid("e28c4e63-3f55-11d1-885e-0000f87808ee"))
+Paper;
+    // [ default ] interface IUnknown
+    // interface IPaper
+    // interface IPaper2
+    // interface IClone
+    // interface IPersistStream
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("ae064d01-d6ce-11d0-867a-0000f8751720"))
+EmfPrinter;
+    // [ default ] interface IUnknown
+    // interface IEmfPrinter
+    // interface IPrinter
+    // interface IPrinterMPage
+    // interface IPersistStream
+    // interface IClone
+    // interface ISupportErrorInfo
+    // interface IOutputCleanup
+    // interface ITrackCancelSetup
+
+struct __declspec(uuid("de6dcd82-3f54-11d1-885e-0000f87808ee"))
+IPsPrinter : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_PPDFile (
+        /*[in]*/ BSTR PPDFile ) = 0;
+      virtual HRESULT __stdcall get_PPDFile (
+        /*[out,retval]*/ BSTR * PPDFile ) = 0;
+};
+
+struct __declspec(uuid("e28c4e61-3f55-11d1-885e-0000f87808ee"))
+PsPrinter;
+    // [ default ] interface IUnknown
+    // interface IPsPrinter
+    // interface IPrinter
+    // interface IPrinterMPage
+    // interface IPSDriver
+    // interface IPSDriver2
+    // interface ISpotPlateCollection
+    // interface IColorCorrection
+    // interface IFontMapEnvironment
+    // interface IPersistStream
+    // interface IClone
+    // interface ISupportErrorInfo
+    // interface IOutputCleanup
+    // interface ITrackCancelSetup
+
+struct __declspec(uuid("55c11165-0c2d-4e2d-afea-10b4186c4364"))
+IExport : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_Filter (
+        /*[out,retval]*/ BSTR * Filter ) = 0;
+      virtual HRESULT __stdcall get_Priority (
+        /*[out,retval]*/ long * pPriority ) = 0;
+      virtual HRESULT __stdcall putref_StepProgressor (
+        /*[in]*/ struct IStepProgressor * _arg1 ) = 0;
+      virtual HRESULT __stdcall putref_TrackCancel (
+        /*[in]*/ struct ITrackCancel * _arg1 ) = 0;
+      virtual HRESULT __stdcall put_PixelBounds (
+        /*[in]*/ struct IEnvelope * PixelBounds ) = 0;
+      virtual HRESULT __stdcall get_PixelBounds (
+        /*[out,retval]*/ struct IEnvelope * * PixelBounds ) = 0;
+      virtual HRESULT __stdcall put_ExportFileName (
+        /*[in]*/ BSTR fileName ) = 0;
+      virtual HRESULT __stdcall get_ExportFileName (
+        /*[out,retval]*/ BSTR * fileName ) = 0;
+      virtual HRESULT __stdcall put_Resolution (
+        /*[in]*/ double res ) = 0;
+      virtual HRESULT __stdcall get_Resolution (
+        /*[out,retval]*/ double * res ) = 0;
+      virtual HRESULT __stdcall StartExporting (
+        /*[out,retval]*/ OLE_HANDLE * hDC ) = 0;
+      virtual HRESULT __stdcall FinishExporting ( ) = 0;
+      virtual HRESULT __stdcall Cleanup ( ) = 0;
+};
+
+enum __declspec(uuid("0924d8dc-9564-4503-83d6-675709be7a99"))
+esriExportImageType
+{
+    esriExportImageTypeBiLevelMask = 1,
+    esriExportImageTypeBiLevelThreshold = 2,
+    esriExportImageTypeGrayscale = 7,
+    esriExportImageTypeIndexed = 8,
+    esriExportImageTypeTrueColor = 24
+};
+
+struct __declspec(uuid("4bf7d12a-5c15-4671-a9e2-11fce89f0873"))
+IExportImage : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_ImageType (
+        /*[in]*/ enum esriExportImageType pimageType ) = 0;
+      virtual HRESULT __stdcall get_ImageType (
+        /*[out,retval]*/ enum esriExportImageType * pimageType ) = 0;
+      virtual HRESULT __stdcall put_BackgroundColor (
+        /*[in]*/ struct IColor * ppBackgroundColor ) = 0;
+      virtual HRESULT __stdcall get_BackgroundColor (
+        /*[out,retval]*/ struct IColor * * ppBackgroundColor ) = 0;
+      virtual HRESULT __stdcall put_Width (
+        /*[in]*/ long pWidth ) = 0;
+      virtual HRESULT __stdcall get_Width (
+        /*[out,retval]*/ long * pWidth ) = 0;
+      virtual HRESULT __stdcall put_Height (
+        /*[in]*/ long pHeight ) = 0;
+      virtual HRESULT __stdcall get_Height (
+        /*[out,retval]*/ long * pHeight ) = 0;
+};
+
+struct __declspec(uuid("759be840-8eb9-45a0-b511-2a297096344b"))
+IExportBMP : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Bitmap (
+        /*[out,retval]*/ OLE_HANDLE * phBmp ) = 0;
+      virtual HRESULT __stdcall get_Palette (
+        /*[out,retval]*/ OLE_HANDLE * phPal ) = 0;
+      virtual HRESULT __stdcall put_RLECompression (
+        /*[in]*/ VARIANT_BOOL compression ) = 0;
+      virtual HRESULT __stdcall get_RLECompression (
+        /*[out,retval]*/ VARIANT_BOOL * compression ) = 0;
+      virtual HRESULT __stdcall put_BiLevelThreshold (
+        /*[in]*/ int threshold ) = 0;
+      virtual HRESULT __stdcall get_BiLevelThreshold (
+        /*[out,retval]*/ int * threshold ) = 0;
+};
+
+struct __declspec(uuid("8746bb14-4c79-42f0-b0f1-3327651eb378"))
+IExportJPEG : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Quality (
+        /*[in]*/ short Quality ) = 0;
+      virtual HRESULT __stdcall get_Quality (
+        /*[out,retval]*/ short * Quality ) = 0;
+      virtual HRESULT __stdcall put_ProgressiveMode (
+        /*[in]*/ VARIANT_BOOL bprogressive ) = 0;
+      virtual HRESULT __stdcall get_ProgressiveMode (
+        /*[out,retval]*/ VARIANT_BOOL * bprogressive ) = 0;
+};
+
+struct __declspec(uuid("3b12ac60-9d1a-45c8-bde5-a2b4cdced76f"))
+IExportPNG : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_InterlaceMode (
+        /*[in]*/ VARIANT_BOOL interlace ) = 0;
+      virtual HRESULT __stdcall get_InterlaceMode (
+        /*[out,retval]*/ VARIANT_BOOL * interlace ) = 0;
+      virtual HRESULT __stdcall put_TransparentColor (
+        /*[in]*/ struct IColor * Color ) = 0;
+      virtual HRESULT __stdcall get_TransparentColor (
+        /*[out,retval]*/ struct IColor * * Color ) = 0;
+      virtual HRESULT __stdcall put_BiLevelThreshold (
+        /*[in]*/ int threshold ) = 0;
+      virtual HRESULT __stdcall get_BiLevelThreshold (
+        /*[out,retval]*/ int * threshold ) = 0;
+};
+
+enum __declspec(uuid("7317d651-d0b7-4847-a5a7-6d5480cb7aee"))
+esriTIFFCompression
+{
+    esriTIFFCompressionNone = 0,
+    esriTIFFCompressionPackBits = 1,
+    esriTIFFCompressionJPEG = 2,
+    esriTIFFCompressionLZW = 3,
+    esriTIFFCompressionDeflate = 4,
+    esriTIFFCompressionFax4 = 5
+};
+
+struct __declspec(uuid("b13d58c7-603f-4610-8538-5b501908ee26"))
+IExportTIFF : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_CompressionType (
+        /*[in]*/ enum esriTIFFCompression type ) = 0;
+      virtual HRESULT __stdcall get_CompressionType (
+        /*[out,retval]*/ enum esriTIFFCompression * type ) = 0;
+      virtual HRESULT __stdcall put_GeoTiff (
+        /*[in]*/ VARIANT_BOOL bGeoTiff ) = 0;
+      virtual HRESULT __stdcall get_GeoTiff (
+        /*[out,retval]*/ VARIANT_BOOL * bGeoTiff ) = 0;
+      virtual HRESULT __stdcall put_JPEGOrDeflateQuality (
+        /*[in]*/ short Quality ) = 0;
+      virtual HRESULT __stdcall get_JPEGOrDeflateQuality (
+        /*[out,retval]*/ short * Quality ) = 0;
+      virtual HRESULT __stdcall put_BiLevelThreshold (
+        /*[in]*/ int threshold ) = 0;
+      virtual HRESULT __stdcall get_BiLevelThreshold (
+        /*[out,retval]*/ int * threshold ) = 0;
+};
+
+enum __declspec(uuid("bdf5b14a-b72d-40e7-844f-0a696f9b3e05"))
+esriGIFCompression
+{
+    esriGIFCompressionNone = 0,
+    esriGIFCompressionRLE = 1,
+    esriGIFCompressionLZW = 3
+};
+
+struct __declspec(uuid("6c43ec0f-352c-42ef-9bd6-83d37529e3e5"))
+IExportGIF : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_InterlaceMode (
+        /*[in]*/ VARIANT_BOOL interlace ) = 0;
+      virtual HRESULT __stdcall get_InterlaceMode (
+        /*[out,retval]*/ VARIANT_BOOL * interlace ) = 0;
+      virtual HRESULT __stdcall put_CompressionType (
+        /*[in]*/ enum esriGIFCompression type ) = 0;
+      virtual HRESULT __stdcall get_CompressionType (
+        /*[out,retval]*/ enum esriGIFCompression * type ) = 0;
+      virtual HRESULT __stdcall put_TransparentColor (
+        /*[in]*/ struct IColor * Color ) = 0;
+      virtual HRESULT __stdcall get_TransparentColor (
+        /*[out,retval]*/ struct IColor * * Color ) = 0;
+      virtual HRESULT __stdcall put_BiLevelThreshold (
+        /*[in]*/ int threshold ) = 0;
+      virtual HRESULT __stdcall get_BiLevelThreshold (
+        /*[out,retval]*/ int * threshold ) = 0;
+};
+
+struct __declspec(uuid("058d2242-918d-4941-a048-8b259aaa1aa7"))
+ExportBMP;
+    // [ default ] interface IUnknown
+    // interface IExportImage
+    // interface IExportBMP
+    // interface IExport
+    // interface IWorldFileSettings
+    // interface IWorldFileSettings2
+    // interface ISettingsInRegistry
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("8e29f55c-f8d2-48b3-8227-34b279de8358"))
+ExportJPEG;
+    // [ default ] interface IUnknown
+    // interface IExportImage
+    // interface IExportJPEG
+    // interface IExport
+    // interface IWorldFileSettings
+    // interface IWorldFileSettings2
+    // interface ISettingsInRegistry
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("69fa668c-58d9-4fd4-805c-964b5c383c8b"))
+ExportPNG;
+    // [ default ] interface IUnknown
+    // interface IExportImage
+    // interface IExportPNG
+    // interface IExport
+    // interface IWorldFileSettings
+    // interface IWorldFileSettings2
+    // interface ISettingsInRegistry
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("77c648d5-c2e1-4ec5-8764-9034181f9858"))
+ExportTIFF;
+    // [ default ] interface IUnknown
+    // interface IExportImage
+    // interface IExportTIFF
+    // interface IExport
+    // interface IWorldFileSettings
+    // interface IWorldFileSettings2
+    // interface ISettingsInRegistry
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("167d909e-2528-4e5d-b5ee-c2e4b553b224"))
+ExportGIF;
+    // [ default ] interface IUnknown
+    // interface IExportImage
+    // interface IExportGIF
+    // interface IExport
+    // interface IWorldFileSettings
+    // interface IWorldFileSettings2
+    // interface ISettingsInRegistry
+    // interface ISupportErrorInfo
+
+struct __declspec(uuid("d29aa471-3e7c-41ec-b502-9e888a3d4bcb"))
+IExportVector : IUnknown
+{};
+
+struct __declspec(uuid("1c16bcac-81dd-4662-a6ab-810a205fc645"))
+IExportVectorOptions : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_PolygonizeMarkers (
+        /*[in]*/ VARIANT_BOOL bPolygonizeMarkers ) = 0;
+      virtual HRESULT __stdcall get_PolygonizeMarkers (
+        /*[out,retval]*/ VARIANT_BOOL * bPolygonizeMarkers ) = 0;
+      virtual HRESULT __stdcall put_MaxVertexNumber (
+        /*[in]*/ long lMaxVertices ) = 0;
+      virtual HRESULT __stdcall get_MaxVertexNumber (
+        /*[out,retval]*/ long * lMaxVertices ) = 0;
+};
+
+struct __declspec(uuid("ccf50555-74e3-4f29-9ffe-1fc489d1552c"))
+IExportVectorOptionsEx : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_ExportPictureSymbolOptions (
+        /*[in]*/ enum esriPictureSymbolOptions opt ) = 0;
+      virtual HRESULT __stdcall get_ExportPictureSymbolOptions (
+        /*[out,retval]*/ enum esriPictureSymbolOptions * opt ) = 0;
+};
+
+struct __declspec(uuid("94123bcd-eae7-42a9-9fef-d09a57b87a0f"))
+IExportEMF : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Handle (
+        /*[out,retval]*/ OLE_HANDLE * pHandle ) = 0;
+      virtual HRESULT __stdcall put_Description (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+};
+
+enum __declspec(uuid("d5102e35-7b5c-4488-a058-f9c97aa52287"))
+esriExportPSEmulsion
+{
+    esriExportPSEmulsionUp = 0,
+    esriExportPSEmulsionDown = 1
+};
+
+enum __declspec(uuid("71f9fcff-49ae-44c7-a9c5-24839b351e60"))
+esriExportPSImage
+{
+    esriExportPSImagePositive = 0,
+    esriExportPSImageNegative = 1
+};
+
+enum __declspec(uuid("91486b68-6259-4c2c-bca8-7f9c7408cf9a"))
+esriExportPSLanguageLevel
+{
+    esriExportPSLevel2 = 2,
+    esriExportPSLevel3 = 3
+};
+
+enum __declspec(uuid("767d819a-3aa1-4bba-b7a7-bf47b83d199c"))
+esriExportImageCompression
+{
+    esriExportImageCompressionNone = 0,
+    esriExportImageCompressionRLE = 1,
+    esriExportImageCompressionDeflate = 2,
+    esriExportImageCompressionLZW = 3,
+    esriExportImageCompressionJPEG = 4,
+    esriExportImageCompressionAdaptive = 0x80000000
+};
+
+struct __declspec(uuid("efcd8d47-8d2a-47a4-b35b-15ca74bce73c"))
+IExportPS : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Emulsion (
+        /*[in]*/ enum esriExportPSEmulsion Emulsion ) = 0;
+      virtual HRESULT __stdcall get_Emulsion (
+        /*[out,retval]*/ enum esriExportPSEmulsion * Emulsion ) = 0;
+      virtual HRESULT __stdcall put_Image (
+        /*[in]*/ enum esriExportPSImage Image ) = 0;
+      virtual HRESULT __stdcall get_Image (
+        /*[out,retval]*/ enum esriExportPSImage * Image ) = 0;
+      virtual HRESULT __stdcall put_LanguageLevel (
+        /*[in]*/ enum esriExportPSLanguageLevel pslevel ) = 0;
+      virtual HRESULT __stdcall get_LanguageLevel (
+        /*[out,retval]*/ enum esriExportPSLanguageLevel * pslevel ) = 0;
+      virtual HRESULT __stdcall put_ImageCompression (
+        /*[in]*/ enum esriExportImageCompression compression ) = 0;
+      virtual HRESULT __stdcall get_ImageCompression (
+        /*[out,retval]*/ enum esriExportImageCompression * compression ) = 0;
+      virtual HRESULT __stdcall put_EmbedFonts (
+        /*[in]*/ VARIANT_BOOL EmbedFonts ) = 0;
+      virtual HRESULT __stdcall get_EmbedFonts (
+        /*[out,retval]*/ VARIANT_BOOL * EmbedFonts ) = 0;
+};
+
+struct __declspec(uuid("36ce3f37-30c9-4544-afa6-89a7315abce7"))
+IExportPS2 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_JPEGCompressionQuality (
+        /*[in]*/ short pImageQuality ) = 0;
+      virtual HRESULT __stdcall get_JPEGCompressionQuality (
+        /*[out,retval]*/ short * pImageQuality ) = 0;
+};
+
+struct __declspec(uuid("6a2a0820-e1b6-4eb0-af9b-6449dae7a952"))
+IExportPDF : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Compressed (
+        /*[out,retval]*/ VARIANT_BOOL * Compressed ) = 0;
+      virtual HRESULT __stdcall put_Compressed (
+        /*[in]*/ VARIANT_BOOL Compressed ) = 0;
+      virtual HRESULT __stdcall put_ImageCompression (
+        /*[in]*/ enum esriExportImageCompression compression ) = 0;
+      virtual HRESULT __stdcall get_ImageCompression (
+        /*[out,retval]*/ enum esriExportImageCompression * compression ) = 0;
+      virtual HRESULT __stdcall put_EmbedFonts (
+        /*[in]*/ VARIANT_BOOL EmbedFonts ) = 0;
+      virtual HRESULT __stdcall get_EmbedFonts (
+        /*[out,retval]*/ VARIANT_BOOL * EmbedFonts ) = 0;
+};
+
+enum __declspec(uuid("2247c8d6-03db-4071-8186-63643fc89319"))
+esriExportPDFLayerOptions
+{
+    esriExportPDFLayerOptionsNone = 0,
+    esriExportPDFLayerOptionsLayersOnly = 1,
+    esriExportPDFLayerOptionsLayersAndFeatureAttributes = 2
+};
+
+struct __declspec(uuid("86d86855-631d-4a75-ad19-725b460208c7"))
+IExportPDF2 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_ExportPDFLayersAndFeatureAttributes (
+        /*[in]*/ enum esriExportPDFLayerOptions pOption ) = 0;
+      virtual HRESULT __stdcall get_ExportPDFLayersAndFeatureAttributes (
+        /*[out,retval]*/ enum esriExportPDFLayerOptions * pOption ) = 0;
+      virtual HRESULT __stdcall put_ExportMeasureInfo (
+        /*[in]*/ VARIANT_BOOL pbMeasureInformation ) = 0;
+      virtual HRESULT __stdcall get_ExportMeasureInfo (
+        /*[out,retval]*/ VARIANT_BOOL * pbMeasureInformation ) = 0;
+};
+
+struct __declspec(uuid("083bc81c-e835-4103-aad6-454aa037966b"))
+IExportPDF3 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_JPEGCompressionQuality (
+        /*[in]*/ short pImageQuality ) = 0;
+      virtual HRESULT __stdcall get_JPEGCompressionQuality (
+        /*[out,retval]*/ short * pImageQuality ) = 0;
+};
+
+enum __declspec(uuid("18971b43-28c7-4d96-9554-10d900a1bfed"))
+esriExportMultipleFiles
+{
+    esriExportMultipleFiles_None = 0,
+    esriExportMultipleFiles_PageNames = 1,
+    esriExportMultipleFiles_PageIndex = 2
+};
+
+struct __declspec(uuid("1a551946-895a-4809-80d8-d417d654f3ac"))
+IExportPagesMultipleFile : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_MultipleFileOutput (
+        /*[in]*/ enum esriExportMultipleFiles pOption ) = 0;
+      virtual HRESULT __stdcall get_MultipleFileOutput (
+        /*[out,retval]*/ enum esriExportMultipleFiles * pOption ) = 0;
+};
+
+struct __declspec(uuid("69822e67-c74b-4138-ab20-aa4e00cb87dd"))
+IExportAI : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_EmbedFonts (
+        /*[in]*/ VARIANT_BOOL EmbedFonts ) = 0;
+      virtual HRESULT __stdcall get_EmbedFonts (
+        /*[out,retval]*/ VARIANT_BOOL * EmbedFonts ) = 0;
+};
+
+struct __declspec(uuid("0ab19cc6-7c0b-4916-8d8d-8b6b9c4e4a8a"))
+IExportAI2 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_ExportFeatureName (
+        /*[in]*/ VARIANT_BOOL pExportAttrs ) = 0;
+      virtual HRESULT __stdcall get_ExportFeatureName (
+        /*[out,retval]*/ VARIANT_BOOL * pExportAttrs ) = 0;
+};
+
+struct __declspec(uuid("0a149c8e-5d95-4a5c-9f48-5d30b3f12fa2"))
+IExportSVG : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Compressed (
+        /*[out,retval]*/ VARIANT_BOOL * Compressed ) = 0;
+      virtual HRESULT __stdcall put_Compressed (
+        /*[in]*/ VARIANT_BOOL Compressed ) = 0;
+      virtual HRESULT __stdcall put_EmbedFonts (
+        /*[in]*/ VARIANT_BOOL EmbedFonts ) = 0;
+      virtual HRESULT __stdcall get_EmbedFonts (
+        /*[out,retval]*/ VARIANT_BOOL * EmbedFonts ) = 0;
+};
+
+enum __declspec(uuid("aad125e3-dfa0-4a5e-afd4-3b016db90470"))
+esriPDFExtensionSecurityEncryptionOption
+{
+    esriPDFExtensionSecurityEncryptionOptionAllContent = 1,
+    esriPDFExtensionSecurityEncryptionOptionNoMetaData = 2,
+    esriPDFExtensionSecurityEncryptionOptionFileAttachmentOnly = 3
+};
+
+enum __declspec(uuid("2e72fd5a-f460-4cf7-9b8b-b3e4ab7292d1"))
+esriPDFExtensionSecurityEncryptionMethod
+{
+    esriPDFExtensionSecurityEncryptionMethodRC4_V2 = 2,
+    esriPDFExtensionSecurityEncryptionMethodAES_V1 = 5,
+    esriPDFExtensionSecurityEncryptionMethodAES_V2 = 6
+};
+
+enum __declspec(uuid("3a9ab2d3-0a76-4c24-9715-2090113bcd14"))
+esriPDFExtensionSecurityPermission
+{
+    esriPDFExtensionSecurityPermissionNone = 0,
+    esriPDFExtensionSecurityPermissionOpen = 1,
+    esriPDFExtensionSecurityPermissionSecure = 2,
+    esriPDFExtensionSecurityPermissionPrint = 4,
+    esriPDFExtensionSecurityPermissionEdit = 8,
+    esriPDFExtensionSecurityPermissionCopy = 16,
+    esriPDFExtensionSecurityPermissionEditNotes = 32,
+    esriPDFExtensionSecurityPermissionFillAndSign = 256,
+    esriPDFExtensionSecurityPermissionAccessible = 512,
+    esriPDFExtensionSecurityPermissionDocAssembly = 1024,
+    esriPDFExtensionSecurityPermissionHighPrint = 2052,
+    esriPDFExtensionSecurityFormSpawnTempl = 131072,
+    esriPDFExtensionSecurityPermissionAll = -268435457,
+    esriPDFExtensionSecurityPermissionAllMaster = 2108
+};
+
+struct __declspec(uuid("6c9a13e6-f9ec-4ebf-af52-bb1d822622df"))
+IExportPDFPasswordSecurity : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_UserPassword (
+        /*[in]*/ BSTR pPasswd ) = 0;
+      virtual HRESULT __stdcall get_UserPassword (
+        /*[out,retval]*/ BSTR * pPasswd ) = 0;
+      virtual HRESULT __stdcall put_MasterPassword (
+        /*[in]*/ BSTR pPasswd ) = 0;
+      virtual HRESULT __stdcall get_MasterPassword (
+        /*[out,retval]*/ BSTR * pPasswd ) = 0;
+      virtual HRESULT __stdcall put_SecurityPermissions (
+        /*[in]*/ long pPermission ) = 0;
+      virtual HRESULT __stdcall get_SecurityPermissions (
+        /*[out,retval]*/ long * pPermission ) = 0;
+      virtual HRESULT __stdcall put_SecurityEncryptionOption (
+        /*[in]*/ enum esriPDFExtensionSecurityEncryptionOption pEncryptionOption ) = 0;
+      virtual HRESULT __stdcall get_SecurityEncryptionOption (
+        /*[out,retval]*/ enum esriPDFExtensionSecurityEncryptionOption * pEncryptionOption ) = 0;
+      virtual HRESULT __stdcall put_SecurityEncryptionMethod (
+        /*[in]*/ enum esriPDFExtensionSecurityEncryptionMethod pEncryptionMethod ) = 0;
+      virtual HRESULT __stdcall get_SecurityEncryptionMethod (
+        /*[out,retval]*/ enum esriPDFExtensionSecurityEncryptionMethod * pEncryptionMethod ) = 0;
+};
+
+struct __declspec(uuid("b4d7ae22-1d09-4b5b-8d37-4ff7d5f9233a"))
+ExportEMF;
+    // [ default ] interface IUnknown
+    // interface IExportVector
+    // interface IExportVectorOptions
+    // interface IExportVectorOptionsEx
+    // interface IExportEMF
+    // interface IExport
+    // interface ISettingsInRegistry
+    // interface IExportColorspaceSettings
+    // interface ISupportErrorInfo
+    // interface IOutputRasterSettings
+
+struct __declspec(uuid("1918f0e0-69ff-4d19-b06d-4c2f8c6067a3"))
+ExportPS;
+    // [ default ] interface IUnknown
+    // interface IExportVector
+    // interface IExportVectorOptions
+    // interface IExportVectorOptionsEx
+    // interface IExportPS
+    // interface IExportPS2
+    // interface IExport
+    // interface ISettingsInRegistry
+    // interface IExportColorspaceSettings
+    // interface ISupportErrorInfo
+    // interface IOutputRasterSettings
+
+struct __declspec(uuid("a0d673ef-bcb9-4c6d-9226-214e4142fbc7"))
+ExportPDF;
+    // [ default ] interface IUnknown
+    // interface IExportVector
+    // interface IExportVectorOptions
+    // interface IExportVectorOptionsEx
+    // interface IExportPDF
+    // interface IExportPDF2
+    // interface IExportPDF3
+    // interface IExportPagesMultipleFile
+    // interface IExportPDFPasswordSecurity
+    // interface IExport
+    // interface ISettingsInRegistry
+    // interface IExportColorspaceSettings
+    // interface ISupportErrorInfo
+    // interface IOutputRasterSettings
+
+struct __declspec(uuid("c5f4e89d-20fc-4c43-922c-b165d09c12aa"))
+ExportAI;
+    // [ default ] interface IUnknown
+    // interface IExportVector
+    // interface IExportVectorOptions
+    // interface IExportVectorOptionsEx
+    // interface IExportAI
+    // interface IExportAI2
+    // interface IExport
+    // interface ISettingsInRegistry
+    // interface IExportColorspaceSettings
+    // interface ISupportErrorInfo
+    // interface IOutputRasterSettings
+
+struct __declspec(uuid("637180af-72cf-4e99-afce-887b9a1091c3"))
+ExportSVG;
+    // [ default ] interface IUnknown
+    // interface IExportVector
+    // interface IExportVectorOptions
+    // interface IExportVectorOptionsEx
+    // interface IExportSVG
+    // interface IExport
+    // interface ISettingsInRegistry
+    // interface IExportColorspaceSettings
+    // interface ISupportErrorInfo
+    // interface IOutputRasterSettings
+
+struct __declspec(uuid("7d4881e5-57c6-11d1-945e-080009eebecb"))
+IDibExporter : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_IsInMemory (
+        /*[in]*/ VARIANT_BOOL pIsInMemory ) = 0;
+      virtual HRESULT __stdcall get_IsInMemory (
+        /*[out,retval]*/ VARIANT_BOOL * pIsInMemory ) = 0;
+      virtual HRESULT __stdcall get_HDIB (
+        /*[out,retval]*/ OLE_HANDLE * pHandle ) = 0;
+      virtual HRESULT __stdcall put_BitsPerPixel (
+        /*[in]*/ short pBitsPerPixel ) = 0;
+      virtual HRESULT __stdcall get_BitsPerPixel (
+        /*[out,retval]*/ short * pBitsPerPixel ) = 0;
+      virtual HRESULT __stdcall put_BackgroundColor (
+        /*[in]*/ struct IColor * ppBackgroundColor ) = 0;
+      virtual HRESULT __stdcall get_BackgroundColor (
+        /*[out,retval]*/ struct IColor * * ppBackgroundColor ) = 0;
+      virtual HRESULT __stdcall put_Width (
+        /*[in]*/ short pWidth ) = 0;
+      virtual HRESULT __stdcall get_Width (
+        /*[out,retval]*/ short * pWidth ) = 0;
+      virtual HRESULT __stdcall put_Height (
+        /*[in]*/ short pHeight ) = 0;
+      virtual HRESULT __stdcall get_Height (
+        /*[out,retval]*/ short * pHeight ) = 0;
+};
+
+struct __declspec(uuid("511ff079-55c4-11d3-9ffd-00c04f6bc8dd"))
+IJpegExporter : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_BackgroundColor (
+        /*[in]*/ struct IColor * ppBackgroundColor ) = 0;
+      virtual HRESULT __stdcall get_BackgroundColor (
+        /*[out,retval]*/ struct IColor * * ppBackgroundColor ) = 0;
+      virtual HRESULT __stdcall put_Width (
+        /*[in]*/ short pWidth ) = 0;
+      virtual HRESULT __stdcall get_Width (
+        /*[out,retval]*/ short * pWidth ) = 0;
+      virtual HRESULT __stdcall put_Height (
+        /*[in]*/ short pHeight ) = 0;
+      virtual HRESULT __stdcall get_Height (
+        /*[out,retval]*/ short * pHeight ) = 0;
+      virtual HRESULT __stdcall put_Quality (
+        /*[in]*/ short Quality ) = 0;
+      virtual HRESULT __stdcall get_Quality (
+        /*[out,retval]*/ short * Quality ) = 0;
+};
+
+struct __declspec(uuid("4c59f34d-db32-11d3-9ff6-00c04f6bc8dd"))
+IBmpExporter : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Bitmap (
+        /*[out,retval]*/ OLE_HANDLE * hBmp ) = 0;
+      virtual HRESULT __stdcall get_Palette (
+        /*[out,retval]*/ OLE_HANDLE * hPal ) = 0;
+};
+
+struct __declspec(uuid("71001418-565a-4588-90b7-3ffb04b74be7"))
+ITiffExporter : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_BackgroundColor (
+        /*[in]*/ struct IColor * ppBackgroundColor ) = 0;
+      virtual HRESULT __stdcall get_BackgroundColor (
+        /*[out,retval]*/ struct IColor * * ppBackgroundColor ) = 0;
+      virtual HRESULT __stdcall put_Width (
+        /*[in]*/ short pWidth ) = 0;
+      virtual HRESULT __stdcall get_Width (
+        /*[out,retval]*/ short * pWidth ) = 0;
+      virtual HRESULT __stdcall put_Height (
+        /*[in]*/ short pHeight ) = 0;
+      virtual HRESULT __stdcall get_Height (
+        /*[out,retval]*/ short * pHeight ) = 0;
+};
+
+struct __declspec(uuid("20cd4013-8f3d-11d0-8590-0800091a2a72"))
+DibExporter;
+    // [ default ] interface IUnknown
+    // interface IDibExporter
+    // interface IBmpExporter
+    // interface IExporter
+    // interface IExporter2
+    // interface IExporterPriority
+    // interface IWorldFileSettings
+    // interface ISupportErrorInfo
+    // interface IOutputCleanup
+    // interface IStepProgressorSetup
+    // interface ITrackCancelSetup
+
+struct __declspec(uuid("511ff07a-55c4-11d3-9ffd-00c04f6bc8dd"))
+JpegExporter;
+    // [ default ] interface IUnknown
+    // interface IJpegExporter
+    // interface IExporter
+    // interface IExporterPriority
+    // interface ISupportErrorInfo
+    // interface IOutputCleanup
+    // interface IStepProgressorSetup
+    // interface ITrackCancelSetup
+
+struct __declspec(uuid("39c10487-b0fa-4f2b-ac7b-c76e0bce9a95"))
+TiffExporter;
+    // [ default ] interface IUnknown
+    // interface IExporter
+    // interface IExporter2
+    // interface ISupportErrorInfo
+    // interface ITiffExporter
+    // interface IExporterPriority
+    // interface IOutputCleanup
+    // interface IStepProgressorSetup
+    // interface ITrackCancelSetup
+    // interface IWorldFileSettings
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_esriOutput =
+    {0x7db92cec,0xcb65,0x420a,{0x87,0x37,0xfc,0xd0,0x72,0x2f,0xd4,0x36}};
+extern "C" const GUID __declspec(selectany) IID_IFontMap =
+    {0x7539e7dc,0x2d89,0x11d3,{0x9f,0xc6,0x00,0xc0,0x4f,0x6b,0xc8,0xdd}};
+extern "C" const GUID __declspec(selectany) IID_IFontMap2 =
+    {0xe4f70d20,0x046d,0x490d,{0xa5,0xe3,0x06,0x6e,0x68,0x1a,0xb5,0xb1}};
+extern "C" const GUID __declspec(selectany) IID_IFontMapCollection =
+    {0x7539e7dd,0x2d89,0x11d3,{0x9f,0xc6,0x00,0xc0,0x4f,0x6b,0xc8,0xdd}};
+extern "C" const GUID __declspec(selectany) IID_IFontMapEnvironment =
+    {0x9ecb85b2,0x6caa,0x11d3,{0xb6,0x85,0x00,0x80,0xc8,0xea,0x4f,0xd5}};
+extern "C" const GUID __declspec(selectany) CLSID_FontMap =
+    {0x0710508f,0x2d9e,0x11d3,{0x9f,0xc6,0x00,0xc0,0x4f,0x6b,0xc8,0xdd}};
+extern "C" const GUID __declspec(selectany) CLSID_FontMapCollection =
+    {0xeb0e7543,0x2d97,0x11d3,{0x9f,0xc6,0x00,0xc0,0x4f,0x6b,0xc8,0xdd}};
+extern "C" const GUID __declspec(selectany) CLSID_FontMapEnvironment =
+    {0x9ecb85b1,0x6caa,0x11d3,{0xb6,0x85,0x00,0x80,0xc8,0xea,0x4f,0xd5}};
+extern "C" const GUID __declspec(selectany) IID_IExporter =
+    {0x7d4881e2,0x57c6,0x11d1,{0x94,0x5e,0x08,0x00,0x09,0xee,0xbe,0xcb}};
+extern "C" const GUID __declspec(selectany) IID_IExporter2 =
+    {0xb87ad35e,0x1242,0x4c30,{0xb6,0x7f,0xff,0x3c,0xfa,0x2f,0x19,0x28}};
+extern "C" const GUID __declspec(selectany) IID_IExporterPriority =
+    {0x10aae67f,0xd5ab,0x4905,{0xa0,0xbf,0x82,0x63,0x6b,0xa2,0xed,0x02}};
+extern "C" const GUID __declspec(selectany) IID_IOutputCleanup =
+    {0x2b8765ec,0x8808,0x474c,{0x8f,0xd3,0x86,0x9d,0x08,0xdf,0x20,0xf6}};
+extern "C" const GUID __declspec(selectany) IID_IWorldFileSettings =
+    {0x27bf29ca,0x71a8,0x422a,{0xa6,0x6d,0xff,0x87,0x5a,0x9d,0xe1,0x3b}};
+extern "C" const GUID __declspec(selectany) IID_IWorldFileSettings2 =
+    {0x167806fc,0x6bcb,0x491e,{0x9f,0xb0,0x82,0x7b,0xaf,0x2c,0x3d,0xec}};
+extern "C" const GUID __declspec(selectany) IID_IStepProgressorSetup =
+    {0x1c538193,0x8806,0x489c,{0x8a,0x79,0x4b,0x54,0xc8,0xc1,0x8b,0x37}};
+extern "C" const GUID __declspec(selectany) IID_ITrackCancelSetup =
+    {0x5e091c46,0xd015,0x471f,{0x81,0x87,0xf7,0x74,0xc7,0xad,0x9d,0x48}};
+extern "C" const GUID __declspec(selectany) IID_ISettingsInRegistry =
+    {0xbb518176,0xe7e3,0x420a,{0x97,0x87,0xae,0x6e,0x34,0x87,0xeb,0x68}};
+extern "C" const GUID __declspec(selectany) IID_IExportColorspaceSettings =
+    {0xc42431dc,0x237a,0x4628,{0x99,0x6a,0x39,0xa8,0x9a,0xf7,0x41,0x58}};
+extern "C" const GUID __declspec(selectany) IID_IPrintAndExportPageOptions =
+    {0x1f685f17,0x704a,0x4755,{0x83,0x4f,0x4c,0x0d,0x67,0x30,0x3a,0x2f}};
+extern "C" const GUID __declspec(selectany) CLSID_PrintAndExportPageOptions =
+    {0x36673b39,0x2ecf,0x4bb9,{0x83,0x04,0x98,0xf5,0x8d,0x82,0x90,0x54}};
+extern "C" const GUID __declspec(selectany) IID_IEmfExporter =
+    {0x7d4881e3,0x57c6,0x11d1,{0x94,0x5e,0x08,0x00,0x09,0xee,0xbe,0xcb}};
+extern "C" const GUID __declspec(selectany) CLSID_EmfExporter =
+    {0x20cd4011,0x8f3d,0x11d0,{0x85,0x90,0x08,0x00,0x09,0x1a,0x2a,0x72}};
+extern "C" const GUID __declspec(selectany) IID_ISpotPlate =
+    {0x481614e4,0x9407,0x11d1,{0x91,0x27,0x00,0x00,0xf8,0x78,0x08,0xee}};
+extern "C" const GUID __declspec(selectany) IID_ISpotPlateCollection =
+    {0xf480e790,0x2b0f,0x11d3,{0x9f,0xc3,0x00,0xc0,0x4f,0x6b,0xc8,0xdd}};
+extern "C" const GUID __declspec(selectany) IID_IColorCorrection =
+    {0x80b77a31,0x4db6,0x11d3,{0xb6,0x54,0x00,0x80,0xc8,0xea,0x4f,0xd5}};
+extern "C" const GUID __declspec(selectany) IID_IPSDriver =
+    {0xcd754684,0xa222,0x11d0,{0xa6,0x8f,0x08,0x00,0x09,0xd5,0x7b,0x9a}};
+extern "C" const GUID __declspec(selectany) IID_IPSDriver2 =
+    {0x25164bc3,0x56da,0x4af1,{0xa1,0x95,0x15,0x06,0xec,0xfe,0xc5,0x3c}};
+extern "C" const GUID __declspec(selectany) CLSID_PSDriver =
+    {0xcd754683,0xa222,0x11d0,{0xa6,0x8f,0x08,0x00,0x09,0xd5,0x7b,0x9a}};
+extern "C" const GUID __declspec(selectany) IID_IPsExporter =
+    {0x7d4881e6,0x57c6,0x11d1,{0x94,0x5e,0x08,0x00,0x09,0xee,0xbe,0xcb}};
+extern "C" const GUID __declspec(selectany) CLSID_PsExporter =
+    {0x20cd4014,0x8f3d,0x11d0,{0x85,0x90,0x08,0x00,0x09,0x1a,0x2a,0x72}};
+extern "C" const GUID __declspec(selectany) IID_IOutputPageOptionsAdmin =
+    {0x1f685f18,0x704a,0x4755,{0x83,0x4f,0x4c,0x0d,0x67,0x30,0x3a,0x2f}};
+extern "C" const GUID __declspec(selectany) CLSID_SpotPlate =
+    {0x481614e5,0x9407,0x11d1,{0x91,0x27,0x00,0x00,0xf8,0x78,0x08,0xee}};
+extern "C" const GUID __declspec(selectany) IID_IPDFDriver =
+    {0x0201602d,0x1521,0x11d3,{0x9f,0x97,0x00,0xc0,0x4f,0x6b,0xc8,0xdd}};
+extern "C" const GUID __declspec(selectany) CLSID_PDFDriver =
+    {0x02016031,0x1521,0x11d3,{0x9f,0x97,0x00,0xc0,0x4f,0x6b,0xc8,0xdd}};
+extern "C" const GUID __declspec(selectany) IID_IPDFExporter =
+    {0x76712d91,0x28cb,0x11d3,{0xb6,0x16,0x00,0x80,0xc8,0xea,0x4f,0xd5}};
+extern "C" const GUID __declspec(selectany) CLSID_PDFExporter =
+    {0x4aa8cc0e,0x151d,0x11d3,{0x9f,0x97,0x00,0xc0,0x4f,0x6b,0xc8,0xdd}};
+extern "C" const GUID __declspec(selectany) IID_IAIDriver =
+    {0x9e790106,0x4047,0x4fb3,{0xbe,0x12,0x8f,0x29,0x10,0x6a,0x1f,0x86}};
+extern "C" const GUID __declspec(selectany) CLSID_AIDriver =
+    {0x2bd83bf2,0xeca7,0x4b7f,{0x9b,0x41,0x3a,0xd5,0x2e,0xae,0x1b,0x1d}};
+extern "C" const GUID __declspec(selectany) IID_IAIExporter =
+    {0x722a2714,0xcd07,0x4c68,{0xb0,0x7a,0x86,0xa8,0xd7,0xb9,0x25,0xe3}};
+extern "C" const GUID __declspec(selectany) CLSID_AIExporter =
+    {0x94512290,0xb913,0x4a0b,{0xa5,0x09,0x03,0xf8,0x03,0xf1,0x99,0x22}};
+extern "C" const GUID __declspec(selectany) IID_IPaper =
+    {0x387bc1d1,0x3f54,0x11d1,{0x88,0x5e,0x00,0x00,0xf8,0x78,0x08,0xee}};
+extern "C" const GUID __declspec(selectany) IID_IPaper2 =
+    {0x6a319332,0xd3e2,0x413a,{0x97,0xf4,0xf2,0x5c,0xe4,0x38,0xfe,0xda}};
+extern "C" const GUID __declspec(selectany) IID_IPrinter =
+    {0x2ab49820,0x9406,0x11d0,{0x87,0xef,0x08,0x00,0x09,0xec,0x73,0x2a}};
+extern "C" const GUID __declspec(selectany) IID_IPrinterMPage =
+    {0x4004040c,0xa184,0x4c77,{0xba,0x78,0x04,0x75,0xd9,0x3a,0x38,0x03}};
+extern "C" const GUID __declspec(selectany) IID_IEmfPrinter =
+    {0xde6dcd81,0x3f54,0x11d1,{0x88,0x5e,0x00,0x00,0xf8,0x78,0x08,0xee}};
+extern "C" const GUID __declspec(selectany) CLSID_Paper =
+    {0xe28c4e63,0x3f55,0x11d1,{0x88,0x5e,0x00,0x00,0xf8,0x78,0x08,0xee}};
+extern "C" const GUID __declspec(selectany) CLSID_EmfPrinter =
+    {0xae064d01,0xd6ce,0x11d0,{0x86,0x7a,0x00,0x00,0xf8,0x75,0x17,0x20}};
+extern "C" const GUID __declspec(selectany) IID_IPsPrinter =
+    {0xde6dcd82,0x3f54,0x11d1,{0x88,0x5e,0x00,0x00,0xf8,0x78,0x08,0xee}};
+extern "C" const GUID __declspec(selectany) CLSID_PsPrinter =
+    {0xe28c4e61,0x3f55,0x11d1,{0x88,0x5e,0x00,0x00,0xf8,0x78,0x08,0xee}};
+extern "C" const GUID __declspec(selectany) IID_IExport =
+    {0x55c11165,0x0c2d,0x4e2d,{0xaf,0xea,0x10,0xb4,0x18,0x6c,0x43,0x64}};
+extern "C" const GUID __declspec(selectany) IID_IExportImage =
+    {0x4bf7d12a,0x5c15,0x4671,{0xa9,0xe2,0x11,0xfc,0xe8,0x9f,0x08,0x73}};
+extern "C" const GUID __declspec(selectany) IID_IExportBMP =
+    {0x759be840,0x8eb9,0x45a0,{0xb5,0x11,0x2a,0x29,0x70,0x96,0x34,0x4b}};
+extern "C" const GUID __declspec(selectany) IID_IExportJPEG =
+    {0x8746bb14,0x4c79,0x42f0,{0xb0,0xf1,0x33,0x27,0x65,0x1e,0xb3,0x78}};
+extern "C" const GUID __declspec(selectany) IID_IExportPNG =
+    {0x3b12ac60,0x9d1a,0x45c8,{0xbd,0xe5,0xa2,0xb4,0xcd,0xce,0xd7,0x6f}};
+extern "C" const GUID __declspec(selectany) IID_IExportTIFF =
+    {0xb13d58c7,0x603f,0x4610,{0x85,0x38,0x5b,0x50,0x19,0x08,0xee,0x26}};
+extern "C" const GUID __declspec(selectany) IID_IExportGIF =
+    {0x6c43ec0f,0x352c,0x42ef,{0x9b,0xd6,0x83,0xd3,0x75,0x29,0xe3,0xe5}};
+extern "C" const GUID __declspec(selectany) CLSID_ExportBMP =
+    {0x058d2242,0x918d,0x4941,{0xa0,0x48,0x8b,0x25,0x9a,0xaa,0x1a,0xa7}};
+extern "C" const GUID __declspec(selectany) CLSID_ExportJPEG =
+    {0x8e29f55c,0xf8d2,0x48b3,{0x82,0x27,0x34,0xb2,0x79,0xde,0x83,0x58}};
+extern "C" const GUID __declspec(selectany) CLSID_ExportPNG =
+    {0x69fa668c,0x58d9,0x4fd4,{0x80,0x5c,0x96,0x4b,0x5c,0x38,0x3c,0x8b}};
+extern "C" const GUID __declspec(selectany) CLSID_ExportTIFF =
+    {0x77c648d5,0xc2e1,0x4ec5,{0x87,0x64,0x90,0x34,0x18,0x1f,0x98,0x58}};
+extern "C" const GUID __declspec(selectany) CLSID_ExportGIF =
+    {0x167d909e,0x2528,0x4e5d,{0xb5,0xee,0xc2,0xe4,0xb5,0x53,0xb2,0x24}};
+extern "C" const GUID __declspec(selectany) IID_IExportVector =
+    {0xd29aa471,0x3e7c,0x41ec,{0xb5,0x02,0x9e,0x88,0x8a,0x3d,0x4b,0xcb}};
+extern "C" const GUID __declspec(selectany) IID_IExportVectorOptions =
+    {0x1c16bcac,0x81dd,0x4662,{0xa6,0xab,0x81,0x0a,0x20,0x5f,0xc6,0x45}};
+extern "C" const GUID __declspec(selectany) IID_IExportVectorOptionsEx =
+    {0xccf50555,0x74e3,0x4f29,{0x9f,0xfe,0x1f,0xc4,0x89,0xd1,0x55,0x2c}};
+extern "C" const GUID __declspec(selectany) IID_IExportEMF =
+    {0x94123bcd,0xeae7,0x42a9,{0x9f,0xef,0xd0,0x9a,0x57,0xb8,0x7a,0x0f}};
+extern "C" const GUID __declspec(selectany) IID_IExportPS =
+    {0xefcd8d47,0x8d2a,0x47a4,{0xb3,0x5b,0x15,0xca,0x74,0xbc,0xe7,0x3c}};
+extern "C" const GUID __declspec(selectany) IID_IExportPS2 =
+    {0x36ce3f37,0x30c9,0x4544,{0xaf,0xa6,0x89,0xa7,0x31,0x5a,0xbc,0xe7}};
+extern "C" const GUID __declspec(selectany) IID_IExportPDF =
+    {0x6a2a0820,0xe1b6,0x4eb0,{0xaf,0x9b,0x64,0x49,0xda,0xe7,0xa9,0x52}};
+extern "C" const GUID __declspec(selectany) IID_IExportPDF2 =
+    {0x86d86855,0x631d,0x4a75,{0xad,0x19,0x72,0x5b,0x46,0x02,0x08,0xc7}};
+extern "C" const GUID __declspec(selectany) IID_IExportPDF3 =
+    {0x083bc81c,0xe835,0x4103,{0xaa,0xd6,0x45,0x4a,0xa0,0x37,0x96,0x6b}};
+extern "C" const GUID __declspec(selectany) IID_IExportPagesMultipleFile =
+    {0x1a551946,0x895a,0x4809,{0x80,0xd8,0xd4,0x17,0xd6,0x54,0xf3,0xac}};
+extern "C" const GUID __declspec(selectany) IID_IExportAI =
+    {0x69822e67,0xc74b,0x4138,{0xab,0x20,0xaa,0x4e,0x00,0xcb,0x87,0xdd}};
+extern "C" const GUID __declspec(selectany) IID_IExportAI2 =
+    {0x0ab19cc6,0x7c0b,0x4916,{0x8d,0x8d,0x8b,0x6b,0x9c,0x4e,0x4a,0x8a}};
+extern "C" const GUID __declspec(selectany) IID_IExportSVG =
+    {0x0a149c8e,0x5d95,0x4a5c,{0x9f,0x48,0x5d,0x30,0xb3,0xf1,0x2f,0xa2}};
+extern "C" const GUID __declspec(selectany) IID_IExportPDFPasswordSecurity =
+    {0x6c9a13e6,0xf9ec,0x4ebf,{0xaf,0x52,0xbb,0x1d,0x82,0x26,0x22,0xdf}};
+extern "C" const GUID __declspec(selectany) CLSID_ExportEMF =
+    {0xb4d7ae22,0x1d09,0x4b5b,{0x8d,0x37,0x4f,0xf7,0xd5,0xf9,0x23,0x3a}};
+extern "C" const GUID __declspec(selectany) CLSID_ExportPS =
+    {0x1918f0e0,0x69ff,0x4d19,{0xb0,0x6d,0x4c,0x2f,0x8c,0x60,0x67,0xa3}};
+extern "C" const GUID __declspec(selectany) CLSID_ExportPDF =
+    {0xa0d673ef,0xbcb9,0x4c6d,{0x92,0x26,0x21,0x4e,0x41,0x42,0xfb,0xc7}};
+extern "C" const GUID __declspec(selectany) CLSID_ExportAI =
+    {0xc5f4e89d,0x20fc,0x4c43,{0x92,0x2c,0xb1,0x65,0xd0,0x9c,0x12,0xaa}};
+extern "C" const GUID __declspec(selectany) CLSID_ExportSVG =
+    {0x637180af,0x72cf,0x4e99,{0xaf,0xce,0x88,0x7b,0x9a,0x10,0x91,0xc3}};
+extern "C" const GUID __declspec(selectany) IID_IDibExporter =
+    {0x7d4881e5,0x57c6,0x11d1,{0x94,0x5e,0x08,0x00,0x09,0xee,0xbe,0xcb}};
+extern "C" const GUID __declspec(selectany) IID_IJpegExporter =
+    {0x511ff079,0x55c4,0x11d3,{0x9f,0xfd,0x00,0xc0,0x4f,0x6b,0xc8,0xdd}};
+extern "C" const GUID __declspec(selectany) IID_IBmpExporter =
+    {0x4c59f34d,0xdb32,0x11d3,{0x9f,0xf6,0x00,0xc0,0x4f,0x6b,0xc8,0xdd}};
+extern "C" const GUID __declspec(selectany) IID_ITiffExporter =
+    {0x71001418,0x565a,0x4588,{0x90,0xb7,0x3f,0xfb,0x04,0xb7,0x4b,0xe7}};
+extern "C" const GUID __declspec(selectany) CLSID_DibExporter =
+    {0x20cd4013,0x8f3d,0x11d0,{0x85,0x90,0x08,0x00,0x09,0x1a,0x2a,0x72}};
+extern "C" const GUID __declspec(selectany) CLSID_JpegExporter =
+    {0x511ff07a,0x55c4,0x11d3,{0x9f,0xfd,0x00,0xc0,0x4f,0x6b,0xc8,0xdd}};
+extern "C" const GUID __declspec(selectany) CLSID_TiffExporter =
+    {0x39c10487,0xb0fa,0x4f2b,{0xac,0x7b,0xc7,0x6e,0x0b,0xce,0x9a,0x95}};
+
+#pragma pack(pop)
